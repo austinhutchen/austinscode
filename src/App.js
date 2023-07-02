@@ -10,12 +10,22 @@ const Head = () => {
         <div className="banner">
           <h1 className="test">Austin Hutchen</h1>
         </div>
-        <u>
-          <hr className="break" />
-        </u>
+
+        <hr className="break" />
+
         <div style={{ margin: -5 }}>
           <img src={img} width="700" height="500" align="top" />
         </div>
+      </header>
+      <hr className="break" />
+    </>
+  );
+};
+
+const Body = () => {
+  return (
+    <>
+      <body>
         <h2 className="hlight">
           <u>About Me:</u>
         </h2>
@@ -29,16 +39,6 @@ const Head = () => {
             CSULB BSCS STUDENT - CLASS OF 2025
           </a>
         </h3>
-      </header>
-      <hr className="break" />
-    </>
-  );
-};
-
-const Body = () => {
-  return (
-    <>
-      <body>
         <h1 className="hlight">
           <i>Work Experience</i>
         </h1>
@@ -67,9 +67,11 @@ const Body = () => {
             </b>
             <article>
               Taught CACLULUS 2 alongside faculty at CU boulder. Also held
-              office hours every week to assist learning of course
-              material. <b>Recieved 97% positive feedback from 103 participants on
-              end of semester survey.</b>
+              office hours every week to assist learning of course material.{" "}
+              <b>
+                Recieved 97% positive feedback from 103 participants on end of
+                semester survey.
+              </b>
             </article>
           </li>
         </ul>
@@ -92,11 +94,11 @@ const Foot = () => {
         <a href="https://github.com/austinhutchen/encrypt.C.git">
           FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
         </a>
-      <br></br>
+        <br></br>
         <a href="https://github.com/austinhutchen/IOS-calculator-app">
           Functional calculator App (FLUTTER/DART)
         </a>
-<br></br>
+        <br></br>
         <a href="https://github.com/austinhutchen/About-Me.git">
           This Webpage (REACT/JS)
         </a>
