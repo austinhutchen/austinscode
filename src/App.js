@@ -8,15 +8,14 @@ const Head = () => {
     <>
       <header>
         <div className="banner">
-        <h1 className="test">Austin Hutchen</h1>
+          <h1 className="test">Austin Hutchen</h1>
         </div>
         <u>
-
-          <hr className="break"/>
+          <hr className="break" />
         </u>
         <div style={{ margin: -5 }}>
-        <img src={img} width="700" height="500" align="top" />
-      </div>
+          <img src={img} width="700" height="500" align="top" />
+        </div>
         <h2 className="hlight">
           <u>About Me:</u>
         </h2>
@@ -31,7 +30,7 @@ const Head = () => {
           </a>
         </h3>
       </header>
-      <hr className="break"/>
+      <hr className="break" />
     </>
   );
 };
@@ -39,10 +38,11 @@ const Head = () => {
 const Body = () => {
   return (
     <>
-
       <body>
-        <h1 className="hlight"><i>Work Experience</i></h1>
-        <hr className="break"/>
+        <h1 className="hlight">
+          <i>Work Experience</i>
+        </h1>
+        <hr className="break" />
         <ul>
           <li className="expitem">
             <b>
@@ -60,7 +60,11 @@ const Body = () => {
             </article>
           </li>
           <li className="expitem">
-            <b><u>Calculus 2 Course Assistant (University Of Colorado Boulder)</u></b>
+            <b>
+              <u>
+                Calculus 2 Course Assistant (University Of Colorado Boulder)
+              </u>
+            </b>
             <article>
               Taught CACLULUS 2 alongside faculty at CU boulder. Also held
               office hours every week to assist learning of course
@@ -70,7 +74,7 @@ const Body = () => {
           </li>
         </ul>
       </body>
-      <hr className="break"/>
+      <hr className="break" />
     </>
   );
 };
@@ -78,47 +82,38 @@ const Body = () => {
 const Foot = () => {
   return (
     <footer>
-      <hr className="break"/>
+      <hr className="break" />
       <div style={{ margin: 15 }}>
         <h2 className="hlight">
           <b>NOTABLE PROJECTS:</b>
         </h2>
       </div>
       <div style={{ margin: 15 }}>
-        <ul>
-          <li>
-            <a href="https://github.com/austinhutchen/levelquest.git">
-              Zelda clone (C++)
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/austinhutchen/IOS-calculator-app">
-              Functional calculator App (FLUTTER/DART)
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/austinhutchen/About-Me.git">
-              This Webpage (REACT/JS)
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/austinhutchen/weather-native.git">
-              Weather app (REACT NATIVE)
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/austinhutchen/redditsearch">
-              Reddit search/statistics engine (PYTHON)
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/austinhutchen/encrypt.C.git">
-              File encryption and I/O command line engine (C)
-            </a>
-          </li>
-        </ul>
+        <a href="https://github.com/austinhutchen/encrypt.C.git">
+          FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
+        </a>
+      <br></br>
+        <a href="https://github.com/austinhutchen/IOS-calculator-app">
+          Functional calculator App (FLUTTER/DART)
+        </a>
+<br></br>
+        <a href="https://github.com/austinhutchen/About-Me.git">
+          This Webpage (REACT/JS)
+        </a>
+        <br></br>
+        <a href="https://github.com/austinhutchen/weather-native.git">
+          Weather app (REACT NATIVE)
+        </a>
+        <br></br>
+        <a href="https://github.com/austinhutchen/redditsearch">
+          Reddit search/statistics engine (PYTHON)
+        </a>
+        <br></br>
+        <a href="https://github.com/austinhutchen/newsletter.rs.git">
+          Rust SQL siteless newsletter webapp
+        </a>
       </div>
-      <hr className="break"/>
+      <hr className="break" />
     </footer>
   );
 };
