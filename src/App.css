@@ -1,13 +1,7 @@
 .App {
   text-align: center;
 }
-.banner{
 
-  text-align: center;
-  background:burlywood;
-  color: white;
-  font-size: 20px;
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -33,7 +27,10 @@
 .App-link {
   color: #61dafb;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -43,26 +40,87 @@
   }
 }
 
-.expitem{
-  font-size: larger;
-}
-
-
-body { 
-  background-color: lightcoral;
-
+ 
+ 
+ header{
+ border:50px;
+ 
+ 
+ }
+ footer{
+  background-color: beige;
+ }
+ body{
+   background-color: burlywood;
+   display:inline;
+   width:auto;
+   height:auto;
+   overflow:auto;
+ }
+ 
+ h1{
+  font-family: "special";
+ font-size:xx-large;
+  color:white;
   
  }
  
- footer{
-  float:left;
-  width:100%;
-  background-color:burlywood;
-  position: fixed;
-  padding-left: auto;
-  bottom: 0;
- 
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 180px;
+  /* must be same height as the footer */
+}
+
+#footer {
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+
+}
+
+
+body:before {
+  content: "";
+  height: 100%;
+  float: left;
+  width: 0;
+  margin-top: -32767px;
+}
+footer{
+
+}
+ .hlight{
+  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, green 65%);
+  display:inline;
  }
- .break{
-  border: 1px solid burlywood;
+ .test{
+  background: repeating-linear-gradient(60deg,blue ,green)
+  
+ }
+ .ribbon-highlight{
+   position:relative;
+   margin:0.1em;
+ }
+ .ribbon-highlight:before{
+   content:"";
+   z-index:-1;
+   left:-0.5em;
+   top:0.1em;
+   border-width:0.5em;
+   border-style:solid;
+   border-color:lightgreen;
+   position:absolute;
+   width:100%;
+   border-left-color:transparent;
+   border-right-color:transparent;
+ }
+ 
+ .circle-sketch-highlight{
+  position:relative;
  }
