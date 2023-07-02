@@ -68,8 +68,8 @@ const Body = () => {
             <article>
               Taught CACLULUS 2 alongside faculty at CU boulder. Also held
               office hours every week to assist learning of course
-              material.Recieved 97% positive feedback from 103 participants on
-              end of semester survey.
+              material. <b>Recieved 97% positive feedback from 103 participants on
+              end of semester survey.</b>
             </article>
           </li>
         </ul>
