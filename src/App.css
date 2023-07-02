@@ -1,7 +1,13 @@
 .App {
   text-align: center;
 }
-
+.banner{
+  padding: 60px;
+  text-align: center;
+  background: royalblue;
+  color: white;
+  font-size: 30px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
