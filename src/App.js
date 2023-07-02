@@ -8,7 +8,7 @@ function App() {
       <ul class="landing">
         <li>
           {" "}
-          <button onclick="document.location = ./views/about.html">
+          <button onclick="window.location.href = './views/about.html'">
             {" "}
             about
           </button>{" "}
