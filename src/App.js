@@ -1,16 +1,22 @@
 import { Component } from "react";
 import "./App.css";
-import img from "./images/me4.jpg"
+import img from "./images/me4.jpg";
 
 // components
 const Head = () => {
   return (
     <>
       <header>
+        <div className="banner">
+        <h1 className="test">Austin Hutchen</h1>
+        </div>
         <u>
-          <h1 className="test">Austin Hutchen</h1>
-          <hr></hr>
+
+          <hr className="break"/>
         </u>
+        <div style={{ margin: -5 }}>
+        <img src={img} width="700" height="500" align="top" />
+      </div>
         <h2 className="hlight">
           <u>About Me:</u>
         </h2>
@@ -25,7 +31,7 @@ const Head = () => {
           </a>
         </h3>
       </header>
-      <hr></hr>
+      <hr className="break"/>
     </>
   );
 };
@@ -33,26 +39,38 @@ const Head = () => {
 const Body = () => {
   return (
     <>
-      <div style={{ margin: -5 }}>
-        <img src={img} width="200" height="280" align="left" />
-      </div>
+
       <body>
-        <h2 className="hlight">Work Experience:</h2>
-        <hr></hr>
+        <h1 className="hlight"><i>Work Experience</i></h1>
+        <hr className="break"/>
         <ul>
-          <li>
+          <li className="expitem">
             <b>
               <u>
                 Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)
               </u>
             </b>
             <article>
-              <p> Made first company sale as Marketing consultant, worked closely with the software engineering team to achieve forecasted results. </p>
+              <p>
+                {" "}
+                Made first company sale as Marketing consultant, worked closely
+                with the software engineering team to achieve forecasted
+                results.{" "}
+              </p>
+            </article>
+          </li>
+          <li className="expitem">
+            <b><u>Calculus 2 Course Assistant (University Of Colorado Boulder)</u></b>
+            <article>
+              Taught CACLULUS 2 alongside faculty at CU boulder. Also held
+              office hours every week to assist learning of course
+              material.Recieved 97% positive feedback from 103 participants on
+              end of semester survey.
             </article>
           </li>
         </ul>
       </body>
-      <hr></hr>
+      <hr className="break"/>
     </>
   );
 };
@@ -60,7 +78,7 @@ const Body = () => {
 const Foot = () => {
   return (
     <footer>
-      <hr></hr>
+      <hr className="break"/>
       <div style={{ margin: 15 }}>
         <h2 className="hlight">
           <b>NOTABLE PROJECTS:</b>
@@ -82,47 +100,46 @@ const Foot = () => {
             <a href="https://github.com/austinhutchen/About-Me.git">
               This Webpage (REACT/JS)
             </a>
-            </li>
-            <li>
-              <a href="https://github.com/austinhutchen/weather-native.git">
-                Weather app (REACT NATIVE)
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/austinhutchen/redditsearch">
-                Reddit search/statistics engine (PYTHON)
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/austinhutchen/encrypt.C.git">
-                File encryption and I/O command line engine (C)
-              </a>
-            </li>
-
+          </li>
+          <li>
+            <a href="https://github.com/austinhutchen/weather-native.git">
+              Weather app (REACT NATIVE)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/austinhutchen/redditsearch">
+              Reddit search/statistics engine (PYTHON)
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/austinhutchen/encrypt.C.git">
+              File encryption and I/O command line engine (C)
+            </a>
+          </li>
         </ul>
       </div>
-      <hr></hr>
+      <hr className="break"/>
     </footer>
   );
 };
 
 // main app
 class MainApp extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.render.bind(this);
-    this.state={
+    this.state = {
       today: new Date(),
       date: "",
     };
   }
   setData(_date) {
     this.setState({
-      date:_date
+      date: _date,
     });
   }
   // javascript goes here
-  render(){
+  render() {
     return (
       <div className="App">
         {this.state.date}
@@ -132,6 +149,6 @@ class MainApp extends Component {
       </div>
     );
   }
-};
+}
 
 export default MainApp;
