@@ -14,7 +14,7 @@ const Head = () => {
         <hr className="break" />
 
         <div style={{ margin: -5 }}>
-          <img src={img} width="700" height="500" align="top" />
+          <img src={img} width="700" height="450" align="auto" />
         </div>
       </header>
       <hr className="break" />
@@ -112,7 +112,7 @@ const Foot = () => {
         </a>
         <br></br>
         <a href="https://github.com/austinhutchen/newsletter.rs.git">
-          Rust SQL siteless newsletter webapp
+          Rust+SQL+Bash siteless webapp
         </a>
       </div>
       <hr className="break" />
