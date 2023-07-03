@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+html {
+  height: 100%;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 20px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,6 +24,21 @@
   }
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+  /* Footer height */
+}
+
+
+#footer {
+  margin-top: auto;
+  background-color: beige;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,44 +53,47 @@
 .App-link {
   color: #61dafb;
 }
+
 * {
   margin: 0;
   padding: 0;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
- 
- 
- header{
- border:50px;
- 
- 
- }
- footer{
-  background-color: beige;
- }
- body{
-   background-color: burlywood;
-   display:inline;
-   width:auto;
-   height:auto;
-   overflow:auto;
- }
- 
- h1{
+
+header {
+  border: 50px;
+
+
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  display: inline;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+title {
   font-family: "special";
- font-size:xx-large;
-  color:white;
-  
- }
- 
+  font-size: xx-large;
+  color: white;
+
+}
+
 #wrap {
   min-height: 100%;
 }
@@ -75,14 +104,7 @@
   /* must be same height as the footer */
 }
 
-#footer {
-  position: relative;
-  margin-top: -180px;
-  /* negative value of footer height */
-  height: 180px;
-  clear: both;
 
-}
 
 
 body:before {
@@ -92,35 +114,36 @@ body:before {
   width: 0;
   margin-top: -32767px;
 }
-footer{
 
+
+.hlight {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
+  display: inline;
 }
- .hlight{
-  background: linear-gradient(180deg, rgba(255,255,255,0) 65%, green 65%);
-  display:inline;
- }
- .test{
-  background: repeating-linear-gradient(60deg,blue ,green)
-  
- }
- .ribbon-highlight{
-   position:relative;
-   margin:0.1em;
- }
- .ribbon-highlight:before{
-   content:"";
-   z-index:-1;
-   left:-0.5em;
-   top:0.1em;
-   border-width:0.5em;
-   border-style:solid;
-   border-color:lightgreen;
-   position:absolute;
-   width:100%;
-   border-left-color:transparent;
-   border-right-color:transparent;
- }
- 
- .circle-sketch-highlight{
-  position:relative;
- }
+
+.test {
+  background: repeating-linear-gradient(60deg, blue, green)
+}
+
+.ribbon-highlight {
+  position: relative;
+  margin: 0.1em;
+}
+
+.ribbon-highlight:before {
+  content: "";
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: lightgreen;
+  position: absolute;
+  width: 100%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.circle-sketch-highlight {
+  position: relative;
+}
