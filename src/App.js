@@ -10,7 +10,6 @@ const Head = () => {
         <h1 className="test">Austin Hutchen</h1>
       </div>
       <header>
-        <hr className="break" />
 
         <div >
           <img src={img} width="700" height="420" align="bottom" />
@@ -126,7 +125,6 @@ const Foot = () => {
         </p>
         <br></br>
       </div>
-      <hr className="break" />
     </footer>
   );
 };
