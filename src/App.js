@@ -7,7 +7,7 @@ const Head = () => {
   return (
     <>
       <div className="banner">
-        <h1 className="test">Austin Hutchen</h1>
+        <h1 id="name">Austin Hutchen</h1>
       </div>
       <header>
         <div>
@@ -22,7 +22,7 @@ const Head = () => {
 const Body = () => {
   return (
     <>
-      <body>
+      <body id="desc">
         <h1 className="hlight">
           <u>About Me:</u>
         </h1>
@@ -62,7 +62,7 @@ const Body = () => {
                 Calculus 2 Course Assistant (University Of Colorado Boulder)
               </u>
             </b>
-            <article>
+            <article id="font"> 
               Taught CACLULUS 2 alongside faculty at CU boulder. Also held
               office hours every week to assist learning of course material.{" "}
               <b>
@@ -87,7 +87,7 @@ const Foot = () => {
           <b>NOTABLE PROJECTS:</b>
         </h2>
       </div>
-      <div style={{ margin: 15 }}>
+      <div style={{ margin: 15 }} id="desc">
         <a href="https://github.com/austinhutchen/encrypt.C.git">
           FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
         </a>
@@ -125,6 +125,8 @@ const Foot = () => {
     </footer>
   );
 };
+
+
 
 // main app
 class MainApp extends Component {
