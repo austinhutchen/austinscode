@@ -10,8 +10,7 @@ const Head = () => {
         <h1 className="test">Austin Hutchen</h1>
       </div>
       <header>
-
-        <div >
+        <div>
           <img src={img} width="700" height="420" align="bottom" />
         </div>
       </header>
@@ -113,18 +112,16 @@ const Foot = () => {
           Rust+SQL+Bash siteless webapp
         </a>
       </div>
-      <div style={{ margin: 15 }}>
-        <h2 className="hlight">
-          <b>OPEN SOURCE:</b>
-        </h2>
-        <br></br>
-        <a href="">TWITTER</a>
-        <p>
-          Advised twitter on optimizations for their recommendation algorithms,
-          most notably the use of floating point vectorisations.
-        </p>
-        <br></br>
-      </div>
+      <h2 className="hlight">
+        <b>OPEN SOURCE:</b>
+      </h2>
+      <br></br>
+      <a href="">TWITTER</a>
+      <p>
+        Advised twitter on optimizations for their recommendation algorithms,
+        most notably the use of floating point vectorisations.
+      </p>
+      <br></br>
     </footer>
   );
 };
