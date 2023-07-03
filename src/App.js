@@ -6,11 +6,10 @@ import img from "./images/me4.jpg";
 const Head = () => {
   return (
     <>
+      <div className="banner">
+        <h1 className="test">Austin Hutchen</h1>
+      </div>
       <header>
-        <div className="banner">
-          <h1 className="test" >Austin Hutchen</h1>
-        </div>
-
         <hr className="break" />
 
         <div style={{ margin: -5 }}>
@@ -120,11 +119,10 @@ const Foot = () => {
           <b>OPEN SOURCE:</b>
         </h2>
         <br></br>
-        <a href="">
-          TWITTER
-        </a>
+        <a href="">TWITTER</a>
         <p>
-          Advised twitter on optimizations for their recommendation algorithms, most notably the use of floating point vectorisations.
+          Advised twitter on optimizations for their recommendation algorithms,
+          most notably the use of floating point vectorisations.
         </p>
         <br></br>
       </div>
