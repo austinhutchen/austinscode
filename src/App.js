@@ -8,13 +8,13 @@ const Head = () => {
     <>
       <header>
         <div className="banner">
-          <h1 className="test">Austin Hutchen</h1>
+          <h1 className="test" >Austin Hutchen</h1>
         </div>
 
         <hr className="break" />
 
         <div style={{ margin: -5 }}>
-          <img src={img} width="700" height="420" align="auto" />
+          <img src={img} width="700" height="420" align="bottom" />
         </div>
       </header>
       <hr className="break" />
@@ -26,9 +26,9 @@ const Body = () => {
   return (
     <>
       <body>
-        <h2 className="hlight">
+        <h1 className="hlight">
           <u>About Me:</u>
-        </h2>
+        </h1>
         <p></p>
         <i>
           Prospective software engineer with passion for development and
@@ -40,7 +40,7 @@ const Body = () => {
           </a>
         </h3>
         <h1 className="hlight">
-          <i>Work Experience</i>
+          <i> Relevant Work Experience</i>
         </h1>
         <hr className="break" />
         <ul>
@@ -83,7 +83,7 @@ const Body = () => {
 
 const Foot = () => {
   return (
-    <footer>
+    <footer id="footer">
       <hr className="break" />
       <div style={{ margin: 15 }}>
         <h2 className="hlight">
