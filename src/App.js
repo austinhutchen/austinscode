@@ -14,7 +14,7 @@ const Head = () => {
         <hr className="break" />
 
         <div style={{ margin: -5 }}>
-          <img src={img} width="700" height="450" align="auto" />
+          <img src={img} width="700" height="420" align="auto" />
         </div>
       </header>
       <hr className="break" />
@@ -114,6 +114,19 @@ const Foot = () => {
         <a href="https://github.com/austinhutchen/newsletter.rs.git">
           Rust+SQL+Bash siteless webapp
         </a>
+      </div>
+      <div style={{ margin: 15 }}>
+        <h2 className="hlight">
+          <b>OPEN SOURCE:</b>
+        </h2>
+        <br></br>
+        <a href="">
+          TWITTER
+        </a>
+        <p>
+          Advised twitter on optimizations for their recommendation algorithms, most notably the use of floating point vectorisations.
+        </p>
+        <br></br>
       </div>
       <hr className="break" />
     </footer>
