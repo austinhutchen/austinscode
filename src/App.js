@@ -12,7 +12,7 @@ const Head = () => {
       <header>
         <hr className="break" />
 
-        <div style={{ margin: -5 }}>
+        <div >
           <img src={img} width="700" height="420" align="bottom" />
         </div>
       </header>
