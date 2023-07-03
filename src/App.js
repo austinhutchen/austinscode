@@ -14,7 +14,6 @@ const Head = () => {
           <img src={img} width="700" height="420" align="bottom" />
         </div>
       </header>
-      <hr className="break" />
     </>
   );
 };
@@ -27,10 +26,13 @@ const Body = () => {
           <u>About Me:</u>
         </h1>
         <p></p>
-        <i>
-          Prospective software engineer with passion for development and
-          experience working with startups!
-        </i>
+        <b>
+          <i>
+            Prospective software engineer with passion for development and
+            experience working with startups!
+          </i>
+        </b>
+
         <h3>
           <a href="https://catalog.colorado.edu/undergraduate/colleges-schools/engineering-applied-science/programs-study/computer-science/computer-science-bachelor-science-bscs/">
             CSULB BSCS STUDENT - CLASS OF 2025
@@ -62,7 +64,7 @@ const Body = () => {
                 Calculus 2 Course Assistant (University Of Colorado Boulder)
               </u>
             </b>
-            <article id="font"> 
+            <article id="font">
               Taught CACLULUS 2 alongside faculty at CU boulder. Also held
               office hours every week to assist learning of course material.{" "}
               <b>
@@ -125,8 +127,6 @@ const Foot = () => {
     </footer>
   );
 };
-
-
 
 // main app
 class MainApp extends Component {
