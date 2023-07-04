@@ -10,6 +10,10 @@ const Head = () => {
         <h1 id="name">Austin Hutchen</h1>
       </div>
       <header>
+        <i style={{ color: "white" }}>
+          Prospective software engineer with passion for development and
+          experience working with startups!
+        </i>
         <div>
           <img src={img} width="700" height="420" align="bottom" />
         </div>
@@ -22,22 +26,6 @@ const Body = () => {
   return (
     <>
       <body id="desc">
-        <h1 className="hlight">
-          <u>About Me:</u>
-        </h1>
-        <p></p>
-        <b>
-          <i>
-            Prospective software engineer with passion for development and
-            experience working with startups!
-          </i>
-        </b>
-
-        <h3>
-          <a href="https://catalog.colorado.edu/undergraduate/colleges-schools/engineering-applied-science/programs-study/computer-science/computer-science-bachelor-science-bscs/">
-            CSULB BSCS STUDENT - CLASS OF 2025
-          </a>
-        </h3>
         <h1 className="hlight">
           <i> Relevant Work Experience</i>
         </h1>
