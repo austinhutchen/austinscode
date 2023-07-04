@@ -4,6 +4,11 @@
 #desc{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
+  margin:50px;
+}
+.styler{
+  border: solid black 1px;
+
 }
 html {
   height: 100%;
@@ -13,7 +18,7 @@ html {
  text-align: center;
  font-weight: bold;
  padding-top: 20px;
- color:white
+ color:black
 }
 .content {
 
@@ -80,7 +85,7 @@ footer {
 
 
 header {
-  margin-top: 50px;
+  margin-top: 30px;
 
 
 }
