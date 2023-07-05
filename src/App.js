@@ -86,7 +86,7 @@ const Foot = () => {
           Functional calculator App (FLUTTER/DART)
         </a>
         <br></br>
-        <a href="https://github.com/austinhutchen/About-Me.git">
+        <a href="https://github.com/austinhutchen/portfolio-rewritten.git">
           This Webpage (REACT/JS)
         </a>
         <br></br>
@@ -112,6 +112,7 @@ const Foot = () => {
         most notably the use of floating point vectorisations.
       </p>
       <br></br>
+      <a href="">Other</a>
     </footer>
   );
 };
