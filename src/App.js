@@ -127,19 +127,23 @@ class MainApp extends Component {
       date: "",
     };
   }
-  setData(_date) {
+  setData() {
     this.setState({
-      date: _date,
+      date:
+        this.state.today.getMonth().toString() + '/'+
+        this.state.today.getDate().toString() + '/'+
+        this.state.today.getFullYear().toString(),
     });
   }
   // javascript goes here
   render() {
+    this.setData();
     return (
       <div className="App">
-        {this.state.date}
         <Head />
         <Body />
         <Foot />
+        {this.state.date}
       </div>
     );
   }
