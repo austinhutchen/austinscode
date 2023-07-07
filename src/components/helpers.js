@@ -1,28 +1,57 @@
 import "../App.css";
 import img from "../images/me4.jpg";
+import { useNavigate } from "react-router-dom";
 
 export const Route = () => {
+  const nav = useNavigate();
   return (
-    <div >
-      <nav class="navbar navbar-dark bg-dark fixed-top" href="../views/hobbies.html">
-  <div>
-    <button class="btn btn-outline-success me-2" type="button" id="navbar"
-      onclick="location.href='../views/index.html'">Home</button>
-    <button class="btn btn-md btn-outline-secondary" type="button" id="navbar"
-      onclick="location.href='../views/resume.html'">Resume</button>
-    <button class="btn btn-md btn-outline-secondary" type="button" id="navbar"
-      onclick="location.href='../views/projects.html'">Projects</button>
-    <button class="btn btn-md btn-outline-secondary" type="button" id="navbar"
-      onclick="location.href='../views/hobbies.html'">Hobbies</button>
-  </div>
-  <a class="navbar-brand">
-    <img src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png" alt="icon" width="30" height="30"/>
-  </a>
-
-</nav>
-
-
-
+    <div>
+      <nav
+        class="navbar navbar-dark bg-dark fixed-top"
+        href="../views/hobbies.html"
+      >
+        <div>
+          <button
+            class="btn btn-outline-success me-2"
+            type="button"
+            id="navbar"
+          >
+            Home
+          </button>
+          <button
+            class="btn btn-md btn-outline-secondary"
+            type="button"
+            id="navbar"
+            onClick={()=>nav("../views/resume.html")}
+          >
+            Resume
+          </button>
+          <button
+            class="btn btn-md btn-outline-secondary"
+            type="button"
+            id="navbar"
+            onClick={()=>nav("../views/projects.html")}
+          >
+            Projects
+          </button>
+          <button
+            class="btn btn-md btn-outline-secondary"
+            type="button"
+            id="navbar"
+            onClick={()=>nav("../views/about.html")}
+          >
+            Hobbies
+          </button>
+        </div>
+        <a class="navbar-brand">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
+            alt="icon"
+            width="30"
+            height="30"
+          />
+        </a>
+      </nav>
     </div>
   );
 };
@@ -30,7 +59,7 @@ export const Route = () => {
 export const Head = () => {
   return (
     <>
-      <div className="banner" style={{marginTop:40}}>
+      <div className="banner" style={{ marginTop: 40 }}>
         <h1 id="name">Austin Hutchen</h1>
       </div>
       <header>
