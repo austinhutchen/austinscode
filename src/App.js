@@ -1,7 +1,10 @@
 import { Head, Body, Foot, Route } from "./components/helpers";
 import { Component } from "react";
+
 // main app
+
 class MainApp extends Component {
+  
   constructor(props) {
     super(props);
     this.render.bind(this);
