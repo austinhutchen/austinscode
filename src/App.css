@@ -6,6 +6,7 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
   margin:50px;
+  color:white
 }
 .styler{
   border: solid black 1px;
@@ -82,9 +83,9 @@ body {
   overflow: auto;
 }
 
-title {
+special {
   font-family: "special";
-  font-size: xx-large;
+  font-size: large;
   color: white;
 
 }
