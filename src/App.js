@@ -4,7 +4,6 @@ import { Component } from "react";
 // main app
 
 class MainApp extends Component {
-  
   constructor(props) {
     super(props);
     this.render.bind(this);
@@ -28,8 +27,7 @@ class MainApp extends Component {
     this.setData();
     return (
       <div className="App">
-
-        <Route/>
+        <Route />
         <Head />
         <Body />
         <Foot />
