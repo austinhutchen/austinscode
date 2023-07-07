@@ -1,4 +1,4 @@
-import {Head,Body,Foot} from "./components/helpers"
+import { Head, Body, Foot, Route } from "./components/helpers";
 import { Component } from "react";
 // main app
 class MainApp extends Component {
@@ -13,8 +13,10 @@ class MainApp extends Component {
   setData() {
     this.setState({
       date:
-        this.state.today.getMonth().toString() + '/'+
-        this.state.today.getDate().toString() + '/'+
+        this.state.today.getMonth().toString() +
+        "/" +
+        this.state.today.getDate().toString() +
+        "/" +
         this.state.today.getFullYear().toString(),
     });
   }
@@ -23,10 +25,12 @@ class MainApp extends Component {
     this.setData();
     return (
       <div className="App">
-        {this.state.date}
+
+        <Route/>
         <Head />
         <Body />
         <Foot />
+        {this.state.date}
       </div>
     );
   }
