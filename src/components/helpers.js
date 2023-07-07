@@ -83,8 +83,6 @@ export const Body = () => {
           <i> Relevant Work Experience</i>
         </h1>
         <hr className="break" />
-        <ul>
-          <li className="expitem">
             <b>
               <u>
                 Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)
@@ -98,8 +96,7 @@ export const Body = () => {
                 results.{" "}
               </p>
             </article>
-          </li>
-          <li className="expitem">
+
             <b>
               <u>
                 Calculus 2 Course Assistant (University Of Colorado Boulder)
@@ -113,8 +110,7 @@ export const Body = () => {
                 semester survey.
               </b>
             </article>
-          </li>
-        </ul>
+
       </body>
       <hr className="break" />
     </>
