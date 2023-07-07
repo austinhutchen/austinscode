@@ -22,7 +22,7 @@ export const Route = () => {
             class="btn btn-md btn-outline-secondary"
             type="button"
             id="navbar"
-            onClick={()=>nav("../views/resume.html")}
+            onClick={()=>{nav("../views/resume.html")}}
           >
             Resume
           </button>
@@ -30,7 +30,7 @@ export const Route = () => {
             class="btn btn-md btn-outline-secondary"
             type="button"
             id="navbar"
-            onClick={()=>nav("../views/projects.html")}
+            onClick={()=>{nav("../views/projects.html")}}
           >
             Projects
           </button>
@@ -38,7 +38,7 @@ export const Route = () => {
             class="btn btn-md btn-outline-secondary"
             type="button"
             id="navbar"
-            onClick={()=>nav("../views/about.html")}
+            onClick={()=>{nav("../views/about.html")}}
           >
             Hobbies
           </button>
