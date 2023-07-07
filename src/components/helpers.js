@@ -1,4 +1,3 @@
-
 import "../App.css";
 import img from "../images/me4.jpg";
 
@@ -78,7 +77,8 @@ export const Foot = () => {
         </h2>
       </div>
       <div style={{ margin: 15 }} id="desc">
-        <a href="https://github.com/austinhutchen/encrypt.C.git">
+       <b>
+       <a href="https://github.com/austinhutchen/encrypt.C.git">
           FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
         </a>
         <br></br>
@@ -101,18 +101,33 @@ export const Foot = () => {
         <a href="https://github.com/austinhutchen/newsletter.rs.git">
           Rust+SQL+Bash siteless webapp
         </a>
+       </b>
+
       </div>
       <h2 className="hlight">
         <b>OPEN SOURCE:</b>
       </h2>
       <br></br>
-      <a href="">TWITTER</a>
+      <a href=""><b>TWITTER</b></a>
+      <br></br>
+      <h2 className="hlight">
+        <b>ACCREDATIONS:</b>
+      </h2>
+      <br></br>
+      <a href="../images/Recommendation Letter_ Austin.pdf">
+<b>
+Calculus 2 Instructor Letter Of Recommendation
+</b>
+
+       </a>
+
       <p>
         Advised twitter on optimizations for their recommendation algorithms,
         most notably the use of floating point vectorisations.
       </p>
       <br></br>
-      <a href="">Other</a>
+       
     </footer>
+    
   );
 };
