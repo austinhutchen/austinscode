@@ -30,7 +30,7 @@ export const Route = () => {
 export const Head = () => {
   return (
     <>
-      <div className="banner">
+      <div className="banner" style={{marginTop:40}}>
         <h1 id="name">Austin Hutchen</h1>
       </div>
       <header>
