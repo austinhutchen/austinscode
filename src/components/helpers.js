@@ -3,13 +3,7 @@ import img from "../images/me4.jpg";
 
 export const Route = () => {
   return (
-    <div className="header">
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
-      <link href="../resources/css/nav-bar.css" rel="stylesheet" />
-      <link href="../resources/css/cards.css" rel="stylesheet" />
+    <div >
       <nav class="navbar navbar-dark bg-dark fixed-top" href="../views/hobbies.html">
   <div>
     <button class="btn btn-outline-success me-2" type="button" id="navbar"
