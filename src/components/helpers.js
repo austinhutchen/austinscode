@@ -160,7 +160,11 @@ export const Foot = () => {
       <a href="">
         <b>TWITTER</b>
       </a>
-      <br></br>
+      <p>
+        Advised twitter on optimizations for their recommendation algorithms,
+        most notably the use of floating point vectorisations.
+      </p>
+   
       <h2 className="hlight">
         <b>ACCREDATIONS:</b>
       </h2>
@@ -169,10 +173,7 @@ export const Foot = () => {
         <b>Calculus 2 Instructor Letter Of Recommendation</b>
       </a>
 
-      <p>
-        Advised twitter on optimizations for their recommendation algorithms,
-        most notably the use of floating point vectorisations.
-      </p>
+     
       <br></br>
     </footer>
   );
