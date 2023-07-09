@@ -1,27 +1,32 @@
 .App {
   text-align: center;
-  
+
 }
-#desc{
+
+#desc {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
-  margin:50px;
-  color:white
+  margin: 50px;
+  color: white
 }
-.styler{
+
+.styler {
   border: solid black 1px;
 
 }
+
 html {
   height: 100%;
 }
-#name{
+
+#name {
   font-size: 50px;
- text-align: center;
- font-weight: bold;
- padding-top: 20px;
- color:black
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  color: black
 }
+
 .content {
 
   flex: 1;
@@ -44,6 +49,7 @@ footer {
   margin-bottom: 0;
   background-color: burlywood;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -76,7 +82,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color:darkolivegreen;
+  background-color: darkolivegreen;
   display: inline;
   width: auto;
   height: auto;
@@ -143,6 +149,7 @@ body:before {
 .circle-sketch-highlight {
   position: relative;
 }
-img{
-  border:50px
+
+img {
+  border: 50px
 }
