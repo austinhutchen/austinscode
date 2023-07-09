@@ -135,7 +135,7 @@ export const Foot = () => {
           <b>NOTABLE PROJECTS:</b>
         </h2>
       </div>
-      <div style={{ margin: 15, fontSize:12}} id="desc">
+      <div style={{ margin: 15, fontSize:14}} id="desc">
         <b >
           <a href="https://github.com/austinhutchen/encrypt.C.git">
             FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
@@ -166,7 +166,7 @@ export const Foot = () => {
         <b>OPEN SOURCE:</b>
       </h2>
       <br></br>
-      <a href="" style={{ margin: 15, fontSize:12}}>
+      <a href="" style={{ margin: 15, fontSize:14}}>
         <b>TWITTER</b>
       </a>
       <br></br>
