@@ -1,7 +1,10 @@
 import "../App.css";
 import img from "../images/me4.jpg";
 import { useNavigate } from "react-router-dom";
-
+//     <p id="paragraph">
+//Advised twitter on optimizations for their recommendation algorithms,
+//most notably the use of floating point vectorisations.
+//</p>
 export const Route = () => {
   const nav = useNavigate();
   return (
@@ -69,10 +72,16 @@ export const Head = () => {
         <h1 id="name">Austin Hutchen</h1>
       </div>
       <header>
-        <i id="desc" style={{marginTop:-20}}>
-          Prospective software engineer with passion for development and
-          experience working with startups!
+        <i
+          id="desc"
+          style={{ fontSize: 14, fontFamily: "verdana" }}
+        >
+          <b>
+            Prospective software engineer with passion for development and
+            experience working with startups!
+          </b>
         </i>
+
         <div>
           <img src={img} width="700" height="420" align="bottom" />
         </div>
@@ -126,8 +135,8 @@ export const Foot = () => {
           <b>NOTABLE PROJECTS:</b>
         </h2>
       </div>
-      <div style={{ margin: 15 }} id="desc">
-        <b>
+      <div style={{ margin: 15, fontSize:12}} id="desc">
+        <b >
           <a href="https://github.com/austinhutchen/encrypt.C.git">
             FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
           </a>
@@ -157,16 +166,14 @@ export const Foot = () => {
         <b>OPEN SOURCE:</b>
       </h2>
       <br></br>
-      <a href="">
+      <a href="" style={{ margin: 15, fontSize:12}}>
         <b>TWITTER</b>
       </a>
-      <p id="paragraph">
-        Advised twitter on optimizations for their recommendation algorithms,
-        most notably the use of floating point vectorisations.
-      </p>
+      <br></br>
+  
 
       <h2 className="hlight">
-        <b style={{margin:10}}>ACCREDATIONS:</b>
+        <b style={{ margin: 10 }}>ACCREDATIONS:</b>
       </h2>
       <br></br>
       <a href="../images/Recommendation Letter_ Austin.pdf">
