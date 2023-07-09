@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 //Advised twitter on optimizations for their recommendation algorithms,
 //most notably the use of floating point vectorisations.
 //</p>
-export const Route = () => {
+export const Nav = () => {
   const nav = useNavigate();
   return (
     <div>
@@ -26,7 +26,7 @@ export const Route = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav("../views/resume.html");
+              nav("/Landing");
             }}
           >
             Resume
@@ -36,7 +36,7 @@ export const Route = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav("../views/projects.html");
+              nav("/");
             }}
           >
             Projects
@@ -46,8 +46,7 @@ export const Route = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav("../views/about.html");
-            }}
+              nav("/");            }}
           >
             Hobbies
           </button>
@@ -135,7 +134,7 @@ export const Foot = () => {
           <b>NOTABLE PROJECTS:</b>
         </h2>
       </div>
-      <div style={{ margin: 15, fontSize:14}} id="desc">
+      <div style={{ margin: 15, fontSize: 14 }} id="desc">
         <b >
           <a href="https://github.com/austinhutchen/encrypt.C.git">
             FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
@@ -166,11 +165,11 @@ export const Foot = () => {
         <b>OPEN SOURCE:</b>
       </h2>
       <br></br>
-      <a href="" style={{ margin: 15, fontSize:14}}>
+      <a href="" style={{ margin: 15, fontSize: 14 }}>
         <b>TWITTER</b>
       </a>
       <br></br>
-  
+
 
       <h2 className="hlight">
         <b style={{ margin: 10 }}>ACCREDATIONS:</b>

@@ -1,6 +1,7 @@
-import { Head, Body, Foot, Route } from "./components/helpers";
+import { Head, Body, Foot, Nav } from "./components/helpers";
 import { Component } from "react";
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Landing} from "./components/landing"
 // main app
 
 class MainApp extends Component {
@@ -26,15 +27,19 @@ class MainApp extends Component {
   render() {
     this.setData();
     return (
-      <div className="App">
-        <Route />
-        <Head />
-        <Body />
-        <Foot />
-  
-      </div>
+      <>
+      <BrowserRouter>
+      <Routes>
+      <Route exact path="/" element={<Landing/>}/>
+      </Routes>
+      </BrowserRouter>
+      </>
+
     );
   }
 }
+
+
+
 
 export default MainApp;
