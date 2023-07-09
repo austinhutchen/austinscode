@@ -160,13 +160,13 @@ export const Foot = () => {
       <a href="">
         <b>TWITTER</b>
       </a>
-      <p>
+      <p id="paragraph">
         Advised twitter on optimizations for their recommendation algorithms,
         most notably the use of floating point vectorisations.
       </p>
 
       <h2 className="hlight">
-        <b>ACCREDATIONS:</b>
+        <b style={{margin:10}}>ACCREDATIONS:</b>
       </h2>
       <br></br>
       <a href="../images/Recommendation Letter_ Austin.pdf">

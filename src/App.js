@@ -31,7 +31,7 @@ class MainApp extends Component {
         <Head />
         <Body />
         <Foot />
-        {this.state.date}
+  
       </div>
     );
   }

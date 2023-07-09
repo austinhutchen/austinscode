@@ -2,7 +2,11 @@
   text-align: center;
 
 }
-
+#paragraph{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 350;
+  color:black
+}
 #desc {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
