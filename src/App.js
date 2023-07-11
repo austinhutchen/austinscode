@@ -2,6 +2,7 @@ import { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Landing} from "./components/landing"
 import {Resume} from "./components/resume"
+import { useNavigate } from "react-router-dom";
 // main app
 
 class MainApp extends Component {
@@ -95,7 +96,6 @@ class MainApp extends Component {
       </Routes>
       </BrowserRouter>
       </>
-
     );
   }
 }
