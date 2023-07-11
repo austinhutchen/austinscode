@@ -173,10 +173,10 @@ export const Foot = () => {
 
 
       <h2 className="hlight">
-        <b style={{ margin: 10 }}>ACCREDATIONS:</b>
+        <b style={{ margin: 15 }}>ACCREDATIONS:</b>
       </h2>
       <br></br>
-      <a style={{margin:10}}href="../images/Recommendation Letter_ Austin.pdf">
+      <a style={{margin:15}}href="../images/Recommendation Letter_ Austin.pdf">
         <b>Calculus 2 Instructor Letter Of Recommendation</b>
       </a>
 
