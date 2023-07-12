@@ -5,11 +5,12 @@
 }
 
 
-#paragraph{
+#paragraph {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
-  color:black
+  color: black
 }
+
 #desc {
   margin: 50px;
   color: white

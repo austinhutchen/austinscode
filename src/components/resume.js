@@ -2,12 +2,12 @@
 
 
 
-export const Resume =()=>{
-return(
- <h1>
-  Hello world this is my resume page
- </h1>
-)
+export const Resume = () => {
+ return (
+  <h1>
+   Hello world this is my resume page
+  </h1>
+ )
 
 
 
