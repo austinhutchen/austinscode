@@ -198,3 +198,14 @@ export const Foot = () => {
     </footer>
   );
 };
+
+
+export const PDFViewer = () => {
+  return (
+   <div>
+    <Nav></Nav>
+    <iframe src="." width="auto" height ="auto" />;
+   </div>
+  )
+ 
+ }
