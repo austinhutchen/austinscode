@@ -2,6 +2,7 @@ import { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {Landing} from "./components/landing"
 import {Resume} from "./components/resume"
+import {Projects} from "./components/projects"
 // main app
 
 class MainApp extends Component {
@@ -34,7 +35,8 @@ class MainApp extends Component {
       <BrowserRouter>
       <Routes>
       <Route exact path="/" element={<Landing/>}/>
-      <Route exact path="./components/resume.js" element={<Resume/>}/>
+      <Route exact path="src/components/resume.js" element={<Resume/>}/>
+      <Route exact path="src/components/projects.js" element={<Projects/>}/>
       </Routes>
       </BrowserRouter>
       </>
