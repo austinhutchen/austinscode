@@ -6,7 +6,7 @@ export const Reader = () => {
  return (
   <div className="App">
       <h1>react</h1>
-      <Iframe source={"../images/Recommendation Letter_ Austin.pdf"} />
+      <Iframe href={"../images/Recommendation Letter_ Austin.pdf"} />
   </div>
 );
 
