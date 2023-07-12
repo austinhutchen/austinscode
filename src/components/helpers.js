@@ -177,7 +177,7 @@ export const Foot = () => {
       </h2>
       <br></br>
       <a href="" style={{ margin: 15, fontSize: 14 }}>
-        <b style ={{margin:15}}>TWITTER</b>
+        <b style={{ margin: 15 }}>TWITTER</b>
       </a>
       <br></br>
 
@@ -186,7 +186,7 @@ export const Foot = () => {
         <b style={{ margin: 15 }}>ACCREDATIONS:</b>
       </h2>
       <br></br>
-      <a style={{margin:15}}href="../images/Recommendation Letter_ Austin.pdf">
+      <a style={{ margin: 15 }} href="../images/Recommendation Letter_ Austin.pdf">
         <b>Calculus 2 Instructor Letter Of Recommendation</b>
       </a>
 
