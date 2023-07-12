@@ -1,6 +1,14 @@
-// export a component that uses a window to read from leter of recommendation pdf file
-import { Viewer } from "./iframe"
+import {Nav} from "../components/helpers"
 
+ const Viewer = () => {
+ return (
+  <div>
+   <Nav></Nav>
+   <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" width="auto" height ="auto" />;
+  </div>
+ )
+
+}
 
 export const Reader = () => {
  return (
