@@ -3,10 +3,10 @@ import { Nav } from "./landing";
 
 
 export const Resume = () => {
- return (
-  <div className="App">
-   <Nav></Nav>
-   <body id="desc">
+  return (
+    <div className="App">
+      <Nav></Nav>
+      <body id="desc">
         <h1 className="hlight">
           <i> Relevant Work Experience</i>
         </h1>
@@ -35,9 +35,9 @@ export const Resume = () => {
         </article>
       </body>
       <hr className="break" />
-  </div>
+    </div>
 
- )
+  )
 
 
 
