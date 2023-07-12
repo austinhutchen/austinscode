@@ -26,7 +26,7 @@ export const Nav = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav('/');
+              nav('/src/components/resume.js');
             }}
           >
             Resume
@@ -36,7 +36,7 @@ export const Nav = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav('/src/components/resume.js');
+              nav('/src/components/projects.js');
             }}
           >
             Projects
@@ -46,7 +46,7 @@ export const Nav = () => {
             type="button"
             id="navbar"
             onClick={() => {
-              nav('/src/components/projects.js');
+              nav('/src/components/hobbies.js');
             }}
           >
             Hobbies
