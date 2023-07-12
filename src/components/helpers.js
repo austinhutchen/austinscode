@@ -18,6 +18,9 @@ export const Nav = () => {
             class="btn btn-outline-success me-2"
             type="button"
             id="navbar"
+            onClick={() => {
+              nav('/src/components/landing.js');
+            }}
           >
             Home
           </button>
