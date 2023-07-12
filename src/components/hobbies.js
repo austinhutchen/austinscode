@@ -1,10 +1,14 @@
+import { Nav } from "./helpers"
 
+export const Hobbies = () => {
 
-export const Hobbies =( )=>{
+ return (
+  <div>
+   <Nav></Nav>
+   <h1>
+    hobbies page
+   </h1>
+  </div>
 
- return(
-  <h1>
-   hobbies page
-  </h1>
  )
 }
