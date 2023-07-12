@@ -5,7 +5,7 @@ import { Viewer } from "./iframe"
 export const Reader = () => {
  return (
   <div className="App">
-   <h1>react</h1>
+
    <Viewer />
   </div>
  );
