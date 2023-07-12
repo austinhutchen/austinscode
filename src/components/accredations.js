@@ -2,9 +2,14 @@
 
 
 
-export const reader =()=>{
+export const Reader =()=>{
 
+return(
 
+ <h1>
+  reader will go here
+ </h1>
+)
  
 
 

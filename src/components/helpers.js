@@ -51,6 +51,16 @@ export const Nav = () => {
           >
             Hobbies
           </button>
+          <button
+            class="btn btn-md btn-outline-secondary"
+            type="button"
+            id="navbar"
+            onClick={() => {
+              nav('/src/components/accredations.js');
+            }}
+          >
+            Accredations
+          </button>
         </div>
         <a class="navbar-brand">
           <img
