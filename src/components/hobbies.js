@@ -1,4 +1,4 @@
-import { Nav } from "./helpers"
+import { Nav } from "./landing"
 
 export const Hobbies = () => {
 
