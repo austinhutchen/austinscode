@@ -1,23 +1,26 @@
-import {Nav} from "../components/helpers"
+import { Nav } from "./landing";
 
- const Viewer = () => {
+
+
+const PDFViewer = () => {
  return (
   <div>
    <Nav></Nav>
-   <iframe src="https://www.youtube.com/embed/cWDJoK8zw58" width="auto" height ="auto" />;
+   <iframe src="." width="auto" height ="auto" />;
   </div>
  )
 
-}
+} 
 
 export const Reader = () => {
  return (
   <div className="App">
 
-   <Viewer />
+   <PDFViewer />
   </div>
  );
 
 
 
 }
+
