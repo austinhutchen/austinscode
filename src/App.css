@@ -6,8 +6,8 @@
   font-size: larger;
 }
 
- /* unvisited link */
- a:link {
+/* unvisited link */
+a:link {
   color: rosybrown;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 /* selected link */
 a:active {
   color: blue;
-} 
+}
 
 
 #desc {
@@ -140,6 +140,7 @@ body:before {
 .hlight {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
   display: inline;
+  margin-top: 20px;
 }
 
 .banner {
