@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import img from"../images/me4.jpg"
+import img from "../images/me4.jpg"
 import "../App.css";
 export const Nav = () => {
  const nav = useNavigate();
@@ -99,6 +99,11 @@ export const Head = () => {
   </>
  );
 };
+
+
+
+
+
 
 export const Landing = () => {
 
