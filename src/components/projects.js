@@ -8,7 +8,7 @@ export const Projects = () => {
 
 
    <div >
-    <h2 className="hlight" style={{marginTop:50}}>
+    <h2 className="hlight" >
      <b>NOTABLE PROJECTS:</b>
     </h2>
    </div>
