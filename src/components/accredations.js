@@ -6,7 +6,7 @@ const PDFViewer = () => {
  return (
   <div>
    <Nav></Nav>
-   <iframe src="." width="auto" height ="auto" />;
+   <iframe src="." width="700" height ="700" />;
   </div>
  )
 
