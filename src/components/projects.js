@@ -8,7 +8,7 @@ export const Projects = () => {
 
 
    <div >
-    <h2 className="hlight">
+    <h2 className="hlight" style={{marginTop:50}}>
      <b>NOTABLE PROJECTS:</b>
     </h2>
    </div>
@@ -43,19 +43,11 @@ export const Projects = () => {
     <b>OPEN SOURCE:</b>
    </h2>
    <br></br>
-   <a href="" style={{ margin: 15, fontSize: 14 }}>
-    <b style={{ margin: 15 }}>TWITTER</b>
+   <a href="" style={{ margin: 25, fontSize: 14 }}>
+    <b style={{ margin: 25 }}>TWITTER</b>
    </a>
    <br></br>
 
-
-   <h2 className="hlight">
-    <b style={{ margin: 15 }}>ACCREDATIONS:</b>
-   </h2>
-   <br></br>
-   <a style={{ margin: 15 }} href="../images/Recommendation Letter_ Austin.pdf">
-    <b>Calculus 2 Instructor Letter Of Recommendation</b>
-   </a>
 
    <br></br>
 
