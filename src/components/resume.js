@@ -5,7 +5,7 @@ import { Nav } from "./landing";
 export const Resume = () => {
   return (
     <div className="App">
-      <Nav></Nav>
+      <Nav/>
       <body id="desc" >
         <h1 className="hlight" >
           <i> Relevant Work Experience</i>
@@ -25,7 +25,7 @@ export const Resume = () => {
         <b>
           <u>Calculus 2 Course Assistant (University Of Colorado Boulder)</u>
         </b>
-        <article id="font">
+        <article>
           Taught CACLULUS 2 alongside faculty at CU boulder. Also held office
           hours every week to assist learning of course material.{" "}
           <b>
