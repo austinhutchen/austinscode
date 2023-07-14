@@ -14,27 +14,27 @@ export const Projects = () => {
    </div>
    <div>
     <b >
-     <a href="https://github.com/austinhutchen/encrypt.C.git">
+     <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank">
       FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
      </a>
      <br></br>
-     <a href="https://github.com/austinhutchen/IOS-calculator-app">
+     <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank">
       Functional calculator App (FLUTTER/DART)
      </a>
      <br></br>
-     <a href="https://github.com/austinhutchen/portfolio-rewritten.git">
+     <a href="https://github.com/austinhutchen/portfolio-rewritten.git" target="_blank">
       This Webpage (REACT/JS)
      </a>
      <br></br>
-     <a href="https://github.com/austinhutchen/weather-native.git">
+     <a href="https://github.com/austinhutchen/weather-native.git" target="_blank">
       Weather app (REACT NATIVE)
      </a>
      <br></br>
-     <a href="https://github.com/austinhutchen/redditsearch">
+     <a href="https://github.com/austinhutchen/redditsearch" target="_blank">
       Reddit search/statistics engine (PYTHON)
      </a>
      <br></br>
-     <a href="https://github.com/austinhutchen/newsletter.rs.git">
+     <a href="https://github.com/austinhutchen/newsletter.rs.git" target="_blank">
       Rust+SQL+Bash siteless webapp
      </a>
     </b>
