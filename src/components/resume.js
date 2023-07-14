@@ -6,8 +6,8 @@ export const Resume = () => {
   return (
     <div className="App">
       <Nav></Nav>
-      <body id="desc">
-        <h1 className="hlight">
+      <body id="desc" >
+        <h1 className="hlight" >
           <i> Relevant Work Experience</i>
         </h1>
         <hr className="break" />

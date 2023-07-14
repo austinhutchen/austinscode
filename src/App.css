@@ -4,6 +4,7 @@
   font-weight: 350;
   color: white;
   font-size: larger;
+  padding-top: 30px;
 }
 
 /* unvisited link */
@@ -30,12 +31,13 @@ a:active {
 #desc {
   margin: 50px;
   color: white;
+
 }
 
 .styler {
   border: solid black 1px;
 
-} 
+}
 
 html {
   height: 100%;
@@ -90,12 +92,6 @@ html {
 }
 
 
-
-header {
-  margin-top: 30px;
-
-
-}
 
 body {
   min-height: 100vh;
@@ -170,6 +166,22 @@ body:before {
   position: relative;
 }
 
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+  transition: all 1s;
+}
+
+
 img {
   border: 50px
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }

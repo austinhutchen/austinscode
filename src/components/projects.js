@@ -7,12 +7,12 @@ export const Projects = () => {
    <Nav></Nav>
 
 
-   <div >
-    <h2 className="hlight" >
-     <b>NOTABLE PROJECTS:</b>
-    </h2>
-   </div>
-   <div>
+
+   <h2 className="hlight" >
+    <b>NOTABLE PROJECTS:</b>
+   </h2>
+
+   <section>
     <b >
      <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
       FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
@@ -38,19 +38,20 @@ export const Projects = () => {
       Rust+SQL+Bash siteless webapp
      </a>
     </b>
-   </div>
-   <h2 className="hlight">
-    <b>OPEN SOURCE:</b>
-   </h2>
-   <br></br>
-   <a href="" style={{ margin: 25, fontSize: 14 }}>
-    <b style={{ margin: 25 }}>TWITTER</b>
-   </a>
-   <br></br>
+<br></br>
+    <h2 className="hlight">
+     <b>OPEN SOURCE:</b>
+    </h2>
+    <br></br>
+    <a href="" style={{ margin: 25, fontSize: 14 }}>
+     <b style={{ margin: 25 }}>TWITTER</b>
+    </a>
+    <br></br>
 
 
-   <br></br>
+    <br></br>
 
+   </section>
   </div>
  )
 }
