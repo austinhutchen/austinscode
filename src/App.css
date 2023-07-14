@@ -7,6 +7,11 @@
   padding-top: 30px;
 }
 
+.resume {
+  display: grid;
+  align-content: center;
+}
+
 /* unvisited link */
 a:link {
   color: rosybrown;
@@ -146,6 +151,13 @@ body:before {
 .ribbon-highlight {
   position: relative;
   margin: 0.1em;
+}
+
+.section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
 }
 
 .ribbon-highlight:before {

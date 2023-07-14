@@ -11,7 +11,7 @@ export const Projects = () => {
    <h2 className="hlight" >
     <b>NOTABLE PROJECTS:</b>
    </h2>
-
+  
    <section>
     <b >
      <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
