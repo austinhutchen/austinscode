@@ -84,7 +84,7 @@ export const Head = () => {
    <header>
     <i
      id="desc"
-     style={{ fontSize: 14, fontFamily: "verdana" }}
+     style={{ fontSize: 14, fontFamily: "verdana", paddingTop:50}}
     >
      <b>
       Prospective software engineer with passion for development and
