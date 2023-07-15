@@ -6,8 +6,6 @@ export const Projects = () => {
         <div className="App">
             <Nav></Nav>
 
-
-
             <h2 className="hlight" >
                 <b>NOTABLE PROJECTS:</b>
             </h2>
@@ -34,8 +32,32 @@ export const Projects = () => {
                         Reddit search/statistics engine (PYTHON)
                     </a>
                     <br></br>
-                    <a href="https://github.com/austinhutchen/newsletter.rs.git" target="_blank" rel="noreferrer">
-                        Rust+SQL+Bash siteless webapp
+                    <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noreferrer">
+                        Kernel Shell (VANILLA C)
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/ArtificalSP.git" target="_blank" rel="noreferrer">
+                        Intelligent Audio Analyzer (C+Tensorflow)
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/cmalloc.git" target="_blank" rel="noreferrer">
+                        Fully functional malloc() implementation
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/2d-walk.git "target="_blank" rel="noreferrer">
+                        Portable Breadboard gaming computer (C)
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noreferrer">
+                        Journalling app (REACT NATIVE/JAVA)
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noreferrer">
+                        Graphing calculator in 2-3 dimensions (JAVASCRIPT)
+                    </a>
+                    <br></br>
+                    <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noreferrer">
+                        Map APP (Flutter/C++)
                     </a>
                 </b>
                 <br></br>

@@ -4,7 +4,7 @@ import "../App.css";
 export const Nav = () => {
  const nav = useNavigate();
  return (
-  <div>
+  <div >
    <nav
     class="navbar navbar-dark bg-dark fixed-top"
     href="../views/hobbies.html"

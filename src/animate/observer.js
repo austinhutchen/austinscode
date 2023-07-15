@@ -11,13 +11,13 @@ useEffect(() => {
    }
    else {
     entry.target.classList.remove('show');
-
    }
   });
  });
- const hidden = new document.querySelectorAll('.hidden');
+ const hidden = new Document.querySelectorAll('.hidden');
  hidden.forEach((el) => observer.observe(el));
-})
+});
+
 
 
 
