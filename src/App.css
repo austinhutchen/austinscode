@@ -187,6 +187,8 @@ body:before {
 .show {
   opacity: 1;
   transition: all 1s;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 
