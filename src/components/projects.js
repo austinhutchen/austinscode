@@ -78,6 +78,15 @@ export const Projects = () => {
 
 
                 <br></br>
+                <div class="loader">
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                    <div class="loader-square"></div>
+                </div>
                 <div className="spinner">
 
                     <div></div>
