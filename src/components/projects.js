@@ -5,15 +5,10 @@ export const Projects = () => {
     return (
         <div className="App">
             <Nav></Nav>
-
             <h2 className="hlight" >
                 <b>NOTABLE PROJECTS:</b>
             </h2>
-
             <section>
-
-
-
                 <div className="lead">
                     <b >
                         <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
@@ -65,7 +60,6 @@ export const Projects = () => {
                         </a>
                     </b>
                 </div>
-
                 <br></br>
                 <h2 className="hlight">
                     <b>OPEN SOURCE:</b>
@@ -75,20 +69,17 @@ export const Projects = () => {
                     <b >TWITTER</b>
                 </a>
                 <br></br>
-
-
                 <br></br>
-                <div class="loader">
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
-                    <div class="loader-square"></div>
+                <div className="loader">
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
+                    <div className="loader-square"></div>
                 </div>
                 <div className="spinner">
-
                     <div></div>
                     <div></div>
                     <div></div>
