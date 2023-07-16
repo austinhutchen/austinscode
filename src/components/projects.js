@@ -11,15 +11,7 @@ export const Projects = () => {
             </h2>
 
             <section>
-                <div className="spinner">
-            
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+
 
 
                 <div className="lead">
@@ -79,14 +71,22 @@ export const Projects = () => {
                     <b>OPEN SOURCE:</b>
                 </h2>
                 <br></br>
-                <a href="" style={{ margin: 25, fontSize: 14 }}>
-                    <b style={{ margin: 25 }}>TWITTER</b>
+                <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank" rel="noreferrer">
+                    <b >TWITTER</b>
                 </a>
                 <br></br>
 
 
                 <br></br>
+                <div className="spinner">
 
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </section>
         </div>
     )
