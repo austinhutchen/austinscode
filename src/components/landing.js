@@ -93,8 +93,9 @@ export const Head = () => {
     </i>
 
     <div>
-     <img src={img} width="auto" height="420" align="bottom" />
+     <img src={img} width="auto" height="420" />
     </div>
+ 
    </header>
   </>
  );
