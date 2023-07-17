@@ -6,7 +6,7 @@ export const Hobbies = () => {
   <div className="App">
    <Nav></Nav>
    <h1>
-    hobbies page
+    A page for my hobbies!
    </h1>
   </div>
 
