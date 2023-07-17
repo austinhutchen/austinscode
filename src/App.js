@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Landing } from "./components/landing"
 import { Resume } from "./components/resume"
 import { Projects } from "./components/projects"
@@ -32,10 +32,11 @@ class MainApp extends Component {
 
   // javascript goes here
   render() {
+    const basename = document.querySelector('base')?.getAttribute('href') ?? '/'  ;
     this.setData();
     return (
       <>
-        <BrowserRouter basename="/${process.env.PUBLIC_URL}">
+        <HashRouter basename={basename}>
           <Routes>
             <Route exact path="" element={<Landing />} />
             <Route exact path="src/components/landing.js" element={<Landing />} />
@@ -44,7 +45,7 @@ class MainApp extends Component {
             <Route exact path="src/components/hobbies.js" element={<Hobbies />} />
             <Route exact path="src/components/accredations.js" element={<Reader />} />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </>
     );
   }
