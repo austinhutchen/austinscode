@@ -36,7 +36,7 @@ class MainApp extends Component {
     this.setData();
     return (
       <>
-        <HashRouter basename={basename}>
+        <HashRouter >
           <Routes>
             <Route exact path="" element={<Landing />} />
             <Route exact path="src/components/landing.js" element={<Landing />} />
