@@ -36,7 +36,7 @@ export const Projects = () => {
                         </a>
                         <br></br>
                         <a href="https://github.com/austinhutchen/ArtificalSP.git" target="_blank" rel="noreferrer">
-                            Intelligent Audio Analyzer (C+Tensorflow)
+                            Artifical Intelligence Environmental  Audio Analyzer (C+Tensorflow)
                         </a>
                         <br></br>
                         <a href="https://github.com/austinhutchen/cmalloc.git" target="_blank" rel="noreferrer">
