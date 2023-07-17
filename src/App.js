@@ -32,7 +32,6 @@ class MainApp extends Component {
 
   // javascript goes here
   render() {
-    const basename = document.querySelector('base')?.getAttribute('href') ?? '/'  ;
     this.setData();
     return (
       <>
