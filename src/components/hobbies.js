@@ -8,7 +8,23 @@ export const Hobbies = () => {
    <h1>
     A page for my hobbies!
    </h1>
+   <Display></Display>
   </div>
 
  )
+}
+
+
+ const Display=()=>{
+// use carousel slide to display hobbies with images
+return(
+ <div>
+<ul className="App">
+ <li>
+  Coding for embedded systems
+ </li>
+</ul>
+
+ </div>
+)
 }
