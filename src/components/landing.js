@@ -84,7 +84,7 @@ export const Head = () => {
    <header>
     <i
      id="desc"
-     style={{ fontSize: 14, fontFamily: "verdana", paddingTop:50}}
+     className="App"
     >
      <b>
       Prospective software engineer with passion for development and
@@ -93,7 +93,7 @@ export const Head = () => {
     </i>
 
     <div>
-     <img src={img} width="auto" height="420" />
+     <img src={img} width="auto" height="600" />
     </div>
  
    </header>
