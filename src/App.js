@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Landing } from "./components/landing"
 import { Resume } from "./components/resume"
 import { Projects } from "./components/projects"
