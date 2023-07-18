@@ -87,7 +87,7 @@ export const Head = () => {
      className="App"
     >
      <b>
-      Prospective software engineer with passion for development and
+      Full-Stack Software Engineer with passion for development and
       experience working with startups!
      </b>
     </i>
