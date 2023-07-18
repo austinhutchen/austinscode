@@ -6,7 +6,7 @@ const PDFViewer = () => {
  return (
   <div style={{textAlign:"center"}}>
    <Nav></Nav>
-   <iframe src="../images/Recommendation Letter_ Austin.pdf" width="700" height="700" />;
+   <iframe src="/src/images/Recommendation Letter_ Austin.pdf" width="700" height="700" />;
   </div>
  )
  
