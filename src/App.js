@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Landing } from "./components/landing"
 import { Resume } from "./components/resume"
 import { Projects } from "./components/projects"
-import { Reader } from "./components/accredations"
+import { PDFViewer } from "./components/accredations"
 import { Hobbies } from "./components/hobbies"
 import { HashRouter } from "react-router-dom";
 // main app
@@ -42,7 +42,7 @@ class MainApp extends Component {
             <Route exact path="src/components/resume.js" element={<Resume />} />
             <Route exact path="src/components/projects.js" element={<Projects />} />
             <Route exact path="src/components/hobbies.js" element={<Hobbies />} />
-            <Route exact path="src/components/accredations.js" element={<Reader />} />
+            <Route exact path="src/components/accredations.js" element={<PDFViewer />} />
           </Routes>
         </HashRouter>
       </>
