@@ -1,23 +1,17 @@
 import { Nav } from "./landing";
+import pdf from "./images/Recommendation Letter_ Austin.pdf"
 
 
 
-const PDFViewer = () => {
+export const PDFViewer = () => {
  return (
-  <div style={{ textAlign: "center" }}>
+  <div style={{textAlign:"center"}} >
    <Nav></Nav>
-   <embed src="/src/images/Recommendation Letter_ Austin.pdf" width="700" height="700" />
+   <embed src={pdf} height="600" width="500" style={{paddingTop:30}} />
   </div>
  )
 
 }
 
-export const Reader = () => {
- return (
-  <div >
-   <PDFViewer />
-  </div>
- );
 
-}
 
