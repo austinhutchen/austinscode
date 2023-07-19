@@ -5,4 +5,4 @@
   <br>
 ORIGINAL AUTHOR: <u><b>Austin Hutchen </b></u> 
 <br>
-*In progress, will be completed by 8/16/23*
+*Animations currently in progress, will be completed by 8/16/23*
