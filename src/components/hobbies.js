@@ -1,5 +1,4 @@
 import { Nav } from "./landing"
-
 export const Hobbies = () => {
 
  return (
@@ -9,8 +8,8 @@ export const Hobbies = () => {
     A page for my hobbies!
    </h1>
    <Display></Display>
+   <img height="500" width="auto" src ="/src/images/me4.jpg"/>
   </div>
-
  )
 }
 
