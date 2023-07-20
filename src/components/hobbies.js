@@ -10,7 +10,7 @@ export const Hobbies = () => {
     A page for my hobbies!
    </h1>
    <Display></Display>
-   <img src={img} height="500" width="auto" />
+   <img src={img} height="500" width="auto"   />
 
   </div>
  )
