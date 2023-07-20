@@ -5,7 +5,7 @@ import pdf from "./images/Recommendation Letter_ Austin.pdf"
 
 export const PDFViewer = () => {
  return (
-  <div style={{textAlign:"center"}} >
+  <div className="App" >
    <Nav></Nav>
    <embed src={pdf} height="600" width="500" style={{paddingTop:30}} />
   </div>
