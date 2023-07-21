@@ -70,23 +70,6 @@ export const Projects = () => {
                 </a>
                 <br></br>
                 <br></br>
-                <div className="loader">
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                    <div className="loader-square"></div>
-                </div>
-                <div className="spinner">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
             </section>
         </div>
     )
