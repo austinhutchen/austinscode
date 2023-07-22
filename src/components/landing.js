@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
-
+import { motion } from 'framer-motion'
 import "../App.css";
+
 export const Nav = () => {
  const nav = useNavigate();
  return (
@@ -156,23 +157,13 @@ const Head = () => {
 // components
 
 
-
-
-
-
-
 export const Landing = () => {
 
 
  return (
-  <div className="App">
+  <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+
    <Head />
-
-
-
-
-
-
    <i
     id="desc"
     className="App"
@@ -182,7 +173,7 @@ export const Landing = () => {
      experience working with startups!
     </b>
    </i>
-  </div>
+  </motion.div>
 
 
 

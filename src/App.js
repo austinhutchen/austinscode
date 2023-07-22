@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { AnimatedRoutes } from "./components/AnimatedRoutes";
+import { HashRouter } from "react-router-dom";
 
 // main app
 
@@ -29,9 +30,9 @@ class MainApp extends Component {
   render() {
     this.setData();
     return (
-      <>
+      <HashRouter>
         <AnimatedRoutes/>
-      </>
+      </HashRouter>
     );
   }
 }

@@ -1,10 +1,11 @@
 
 import { Nav } from "./landing";
-
+import { motion } from "framer-motion";
 
 export const Resume = () => {
   return (
-    <div className="App">
+    <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+
       <Nav />
       <body id="desc" >
         <h1 className="hlight" >
@@ -35,7 +36,7 @@ export const Resume = () => {
         </article>
       </body>
       <hr className="break" />
-    </div>
+    </motion.div>
 
   )
 
