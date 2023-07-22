@@ -5,10 +5,9 @@ export const Projects = () => {
     return (
         <div className="App">
             <Nav></Nav>
-            <h2 className="hlight" >
+            <h2 className="hlight">
                 <b>NOTABLE PROJECTS:</b>
             </h2>
-            <hr></hr>
                 <section>
                     <div className="lead">
                         <b >
