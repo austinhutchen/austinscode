@@ -5,7 +5,7 @@ export const Projects = () => {
     return (
         <section>
             <Nav></Nav>
-            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }}>
+            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}exit={{ x: window.innerWidth, transition:{duration:0.1} }}>
 
                 <h2 className="hlight">
                     <b>NOTABLE PROJECTS:</b>
