@@ -1,10 +1,10 @@
 import { Nav } from "./landing"
 import img from "./images/me4.jpg"
-
+import { motion } from 'framer-motion'
 export const Hobbies = () => {
 
  return (
-  <div className="App">
+  <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
    <Nav></Nav>
    <h1>
     A page for my hobbies!
@@ -28,7 +28,7 @@ export const Hobbies = () => {
     <div></div>
     <div></div>
    </div>
-  </div>
+  </motion.div>
  )
 }
 

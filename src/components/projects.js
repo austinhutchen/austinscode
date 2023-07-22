@@ -1,9 +1,9 @@
-
+import { motion } from 'framer-motion'
 import { Nav } from "./landing";
 export const Projects = () => {
 
     return (
-        <div className="App">
+        <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <Nav></Nav>
             <h2 className="hlight">
                 <b>NOTABLE PROJECTS:</b>
@@ -73,6 +73,6 @@ export const Projects = () => {
                 </section>
           <hr></hr>
 
-        </div>
+        </motion.div>
     )
 }
