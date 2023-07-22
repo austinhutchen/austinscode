@@ -7,9 +7,9 @@ export const PDFViewer = () => {
  return (
   <div className="App"  >
    <Nav></Nav>
-   <h1><b><i><u>Letter of Accredation from Math PHD @ CU Boulder</u></i></b></h1>
+   <h2><b><i><u>Letter of Accredation from Math PHD @ CU Boulder</u></i></b></h2>
    <br></br>
-   <embed src={pdf} height="600" width="500" style={{ paddingTop: 15 }} />
+   <embed src={pdf} height="600" width="500" style={{ paddingTop: 5, alignSelf:"center" }} />
   </div>
  )
 
