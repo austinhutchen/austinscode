@@ -5,7 +5,7 @@ export const Projects = () => {
     return (
         <section>
             <Nav></Nav>
-            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}exit={{ x: window.innerWidth, transition:{duration:0.1} }}>
+            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
 
                 <h2 className="hlight">
                     <b>NOTABLE PROJECTS:</b>
@@ -13,15 +13,15 @@ export const Projects = () => {
                 <section>
                     <div className="lead">
                         <b >
-                            <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
-                                FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
-                            </a>
-                            <br></br>
                             <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank" rel="noreferrer">
                                 Functional calculator App (FLUTTER/DART)
                             </a>
                             <br></br>
-                            <a href="https://github.com/austinhutchen/portfolio-rewritten.git" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noreferrer">
+                                Kernel Shell (VANILLA C)
+                            </a>
+                            <br></br>
+                            <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noreferrer">
                                 This Webpage (REACT/JS)
                             </a>
                             <br></br>
@@ -33,16 +33,16 @@ export const Projects = () => {
                                 Reddit search/statistics engine (PYTHON)
                             </a>
                             <br></br>
-                            <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noreferrer">
-                                Kernel Shell (VANILLA C)
-                            </a>
-                            <br></br>
                             <a href="https://github.com/austinhutchen/ArtificalSP.git" target="_blank" rel="noreferrer">
                                 Artifical Intelligence Environmental  Audio Analyzer (C+Tensorflow)
                             </a>
                             <br></br>
                             <a href="https://github.com/austinhutchen/cmalloc.git" target="_blank" rel="noreferrer">
-                                Fully functional malloc() implementation
+                                Fully functional malloc() implementation (VANILLA C)
+                            </a>
+                            <br></br>
+                            <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
+                                FILE TEXT I/O PARSER AND COMPRESSION ALGORITHM (C++)
                             </a>
                             <br></br>
                             <a href="https://github.com/austinhutchen/2d-walk.git " target="_blank" rel="noreferrer">

@@ -1,12 +1,13 @@
 
 import { Nav } from "./landing";
 import { motion } from "framer-motion";
-
+import { PDFViewer } from "./accredations";
+import pdf from "./images/resume SWE.pdf"
 export const Resume = () => {
   return (
     <section>
       <Nav />
-      <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition:{duration:0.1} }}>
+      <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
 
 
         <body id="desc" >
@@ -38,6 +39,7 @@ export const Resume = () => {
           </article>
         </body>
         <hr className="break" />
+        <PDFViewer data={pdf} />
       </motion.div>
 
     </section>
