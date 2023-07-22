@@ -5,12 +5,16 @@ import { motion } from 'framer-motion'
 
 export const PDFViewer = () => {
  return (
-  <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+  <section>
    <Nav></Nav>
-   <h2><b><i><u>Letter of Accredation from Math PHD @ CU Boulder</u></i></b></h2>
-   <br></br>
-   <embed src={pdf} height="600" width="500" style={{ paddingTop: 5, alignSelf:"center" }} />
-  </motion.div>
+   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }}>
+
+    <h2><b><i><u>Letter of Accredation from Math PHD @ CU Boulder</u></i></b></h2>
+    <br></br>
+    <embed src={pdf} height="600" width="500" style={{ paddingTop: 5, alignSelf: "center" }} />
+   </motion.div>
+  </section>
+
  )
 
 }

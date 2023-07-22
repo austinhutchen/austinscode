@@ -4,31 +4,34 @@ import { motion } from 'framer-motion'
 export const Hobbies = () => {
 
  return (
-  <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+  <section>
    <Nav></Nav>
-   <h1>
-    A page for my hobbies!
-   </h1>
-   <Display></Display>
-   <img src={img} height="500" width="auto" />
-   <div className="loader">
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-    <div className="loader-square"></div>
-   </div>
-   <div className="spinner">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-   </div>
-  </motion.div>
+   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }}>
+    <h1>
+     A page for my hobbies!
+    </h1>
+    <Display></Display>
+    <img src={img} height="500" width="auto" />
+    <div className="loader">
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+     <div className="loader-square"></div>
+    </div>
+    <div className="spinner">
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+     <div></div>
+    </div>
+   </motion.div>
+  </section>
+
  )
 }
 

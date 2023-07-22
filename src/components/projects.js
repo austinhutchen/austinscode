@@ -3,11 +3,13 @@ import { Nav } from "./landing";
 export const Projects = () => {
 
     return (
-        <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+        <section>
             <Nav></Nav>
-            <h2 className="hlight">
-                <b>NOTABLE PROJECTS:</b>
-            </h2>
+            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }}>
+
+                <h2 className="hlight">
+                    <b>NOTABLE PROJECTS:</b>
+                </h2>
                 <section>
                     <div className="lead">
                         <b >
@@ -71,8 +73,10 @@ export const Projects = () => {
                     <br></br>
                     <br></br>
                 </section>
-          <hr></hr>
+                <hr></hr>
 
-        </motion.div>
+            </motion.div>
+        </section>
+
     )
 }

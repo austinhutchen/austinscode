@@ -161,9 +161,11 @@ export const Landing = () => {
 
 
  return (
-  <motion.div className="App" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+  <section>
+ <Head />
+  <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth }}>
 
-   <Head />
+
    <i
     id="desc"
     className="App"
@@ -174,6 +176,8 @@ export const Landing = () => {
     </b>
    </i>
   </motion.div>
+  </section>
+ 
 
 
 
