@@ -6,29 +6,12 @@ export const Hobbies = () => {
  return (
   <section>
    <Nav></Nav>
-   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition:{duration:0.1} }}>
+   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
     <h1>
      A page for my hobbies!
     </h1>
     <Display></Display>
     <img src={img} height="500" width="auto" />
-    <div className="loader">
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-     <div className="loader-square"></div>
-    </div>
-    <div className="spinner">
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
-    </div>
    </motion.div>
   </section>
 
