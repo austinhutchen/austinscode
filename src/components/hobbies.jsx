@@ -1,6 +1,7 @@
 import { Nav } from "./landing"
 import img from "./images/me4.jpg"
 import { motion } from 'framer-motion'
+
 export const Hobbies = () => {
 
  return (
@@ -14,8 +15,8 @@ export const Hobbies = () => {
     <img src={img} height="500" width="auto" />
    </motion.div>
   </section>
-
  )
+
 }
 
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Nav } from "./landing";
+
 export const Projects = () => {
 
     return (
