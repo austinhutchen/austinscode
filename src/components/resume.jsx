@@ -12,7 +12,7 @@ export const Resume = () => {
 
         <body id="desc" >
           <h1 className="hlight" >
-            <i> DIRECT WORK EXPERIENCE</i>
+           <b><i> DIRECT WORK EXPERIENCE</i></b> 
           </h1>
           <hr className="break" />
           <b>
@@ -39,20 +39,23 @@ export const Resume = () => {
           </article>
         </body>
         <br/>
-        <h2 className="hlight" >
-   
-          <b><i>OPEN SOURCE CONTRIBUTIONS</i></b>
+        <h1 className="hlight" >
+        <b><i> OPEN SOURCE CONTRIBUTIONS</i></b>  
+        </h1>
           <hr className="break" />
-        </h2>
+     
 
         <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank" rel="noreferrer">
           <b >TWITTER</b>
         </a>
-        <br></br>
-      <hr/>
+        <hr/>
+
         
         <div>
-          <h1 className="hlight"><b><i>RESUME</i></b></h1>
+          <h1 className="hlight" >
+          <b><i> FULL RESUME</i></b>
+          </h1>
+    
           <PDFViewer data={pdf}></PDFViewer>
         </div>
 
