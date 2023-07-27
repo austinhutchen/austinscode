@@ -156,6 +156,7 @@ const Head = () => {
 }
 // components
 const Player = () => {
+ // uses spotify.css to render
  return (
   <div class="card">
    <div class="top">
@@ -206,6 +207,23 @@ const Player = () => {
   </div>
  )
 }
+const Spinner=()=>{
+ return(
+  <div class="spinner-container">
+  <div class="spinner">
+   <div class="spinner">
+    <div class="spinner">
+      <div class="spinner">
+        <div class="spinner">
+            <div class="spinner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ )
+}
 
 export const Landing = () => {
  return (
@@ -221,9 +239,8 @@ export const Landing = () => {
       experience working with startups!
      </b>
     </i>
-    <Player />
-
    </motion.div>
+
   </section>
 
 
