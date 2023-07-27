@@ -7,7 +7,7 @@ export const Hobbies = () => {
  return (
   <section>
    <Nav></Nav>
-   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}>
+   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0.01 } }}>
     <h1>
      A page for my hobbies!
     </h1>
