@@ -8,7 +8,7 @@ export const Projects = () => {
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
 
-                <h2 className="hlight" style={{paddingTop:-10}}>
+                <h2 className="hlight" style={{ paddingTop: -10 }}>
                     <b>OPEN SOURCE:</b>
                 </h2>
                 <br></br>
@@ -16,7 +16,7 @@ export const Projects = () => {
                     <b >TWITTER</b>
                 </a>
                 <br></br>
-                <h2 className="hlight" style={{paddingTop:20}}>
+                <h2 className="hlight" style={{ paddingTop: 20 }}>
                     <b>PERSONAL PROJECTS:</b>
                 </h2>
                 <section>

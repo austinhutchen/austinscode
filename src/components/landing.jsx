@@ -158,25 +158,21 @@ const Head = () => {
 
 
 export const Landing = () => {
-
-
  return (
   <section>
- <Head />
-  <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition:{duration:0} }}>
-   <i
-    id="desc"
-    className="App"
-   >
-    <b>
-     Full-Stack Software Engineer with passion for development and
-     experience working with startups!
-    </b>
-   </i>
-  </motion.div>
+   <Head />
+   <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+    <i
+     id="desc"
+     className="App"
+    >
+     <b>
+      Full-Stack Software Engineer with passion for development and
+      experience working with startups!
+     </b>
+    </i>
+   </motion.div>
   </section>
- 
-
 
 
  )

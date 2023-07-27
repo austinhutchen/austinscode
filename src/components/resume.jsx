@@ -39,7 +39,7 @@ export const Resume = () => {
           </article>
         </body>
         <hr className="break" />
-
+        <PDFViewer data={pdf}></PDFViewer>
       </motion.div>
 
     </section>
