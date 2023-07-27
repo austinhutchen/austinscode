@@ -226,6 +226,7 @@ const Spinner=()=>{
 }
 
 export const Landing = () => {
+    // add Player and Spinner, get css animations working
  return (
   <section>
    <Head />

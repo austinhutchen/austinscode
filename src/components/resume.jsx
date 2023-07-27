@@ -38,6 +38,14 @@ export const Resume = () => {
             </b>
           </article>
         </body>
+        <h2 className="hlight" style={{ paddingTop: -10 }}>
+          <b>OPEN SOURCE:</b>
+        </h2>
+        <br></br>
+        <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank" rel="noreferrer">
+          <b >TWITTER</b>
+        </a>
+        <br></br>
         <hr className="break" />
         <PDFViewer data={pdf}></PDFViewer>
       </motion.div>

@@ -7,15 +7,7 @@ export const Projects = () => {
         <section>
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-
-                <h2 className="hlight" style={{ paddingTop: -10 }}>
-                    <b>OPEN SOURCE:</b>
-                </h2>
-                <br></br>
-                <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank" rel="noreferrer">
-                    <b >TWITTER</b>
-                </a>
-                <br></br>
+                
                 <h2 className="hlight" style={{ paddingTop: 20 }}>
                     <b>PERSONAL PROJECTS:</b>
                 </h2>
