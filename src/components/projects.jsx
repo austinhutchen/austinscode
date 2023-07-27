@@ -1,20 +1,22 @@
-import { motion } from 'framer-motion'
-import { Nav } from "./landing";
+import {motion} from 'framer-motion'
+import {Nav} from "./landing";
 
 export const Projects = () => {
 
     return (
         <section>
             <Nav></Nav>
-            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+            <motion.div className="App" initial={{width: 0}} animate={{width: "100%"}}
+                        exit={{x: window.innerWidth, transition: {duration: 0}}}>
                 
-                <h2 className="hlight" style={{ paddingTop: 20 }}>
+                <h2 className="hlight" style={{paddingTop: 20}}>
                     <b>PERSONAL PROJECTS:</b>
                 </h2>
                 <section>
                     <div className="lead">
-                        <b >
-                            <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank" rel="noreferrer">
+                        <b>
+                            <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                               rel="noreferrer">
                                 Functional calculator App (FLUTTER/DART)
                             </a>
                             <br></br>
@@ -26,7 +28,8 @@ export const Projects = () => {
                                 This Webpage (REACT/JS)
                             </a>
                             <br></br>
-                            <a href="https://github.com/austinhutchen/weather-native.git" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
+                               rel="noreferrer">
                                 Weather app (REACT NATIVE)
                             </a>
                             <br></br>
@@ -35,7 +38,7 @@ export const Projects = () => {
                             </a>
                             <br></br>
                             <a href="https://github.com/austinhutchen/ArtificalSP.git" target="_blank" rel="noreferrer">
-                                Artifical Intelligence Environmental  Audio Analyzer (C+Tensorflow)
+                                Artifical Intelligence Environmental Audio Analyzer (C+Tensorflow)
                             </a>
                             <br></br>
                             <a href="https://github.com/austinhutchen/cmalloc.git" target="_blank" rel="noreferrer">

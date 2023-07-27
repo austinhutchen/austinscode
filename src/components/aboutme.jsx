@@ -2,7 +2,7 @@ import { Nav } from "./landing"
 import img from "./images/me4.jpg"
 import { motion } from 'framer-motion'
 
-export const Hobbies = () => {
+export const Aboutme = () => {
 
  return (
   <section>
