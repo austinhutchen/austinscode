@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/austinscode/static/css/main.83d7f58a.css",
-    "main.js": "/austinscode/static/js/main.5844aaa9.js",
+    "main.css": "/austinscode/static/css/main.b95dc035.css",
+    "main.js": "/austinscode/static/js/main.e50488cb.js",
     "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
     "static/media/me4.jpg": "/austinscode/static/media/me4.514a52db97c367c11a2f.jpg",
     "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.6231337f5ec7f3e626ae.pdf",
     "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
     "index.html": "/austinscode/index.html",
-    "main.83d7f58a.css.map": "/austinscode/static/css/main.83d7f58a.css.map",
-    "main.5844aaa9.js.map": "/austinscode/static/js/main.5844aaa9.js.map",
+    "main.b95dc035.css.map": "/austinscode/static/css/main.b95dc035.css.map",
+    "main.e50488cb.js.map": "/austinscode/static/js/main.e50488cb.js.map",
     "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83d7f58a.css",
-    "static/js/main.5844aaa9.js"
+    "static/css/main.b95dc035.css",
+    "static/js/main.e50488cb.js"
   ]
 }
