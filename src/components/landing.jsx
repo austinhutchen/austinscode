@@ -162,7 +162,7 @@ const Player = () => {
     // uses spotify.css to render
     return (
         <div class="card" className="App">
-
+          
 
             <div class="controls">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="20" width="24"
@@ -202,6 +202,7 @@ const Player = () => {
             <div class="time">
                 <div class="elapsed"></div>
             </div>
+       
             <p class="timetext time_now">1:31</p>
             <p class="timetext time_full">3:46</p>
         </div>
