@@ -20,7 +20,7 @@ export const View = (props) => {
     return (
         <>
             <Nav></Nav>
-            <h1><b><i><u>Letter of Rec from MATH PHD @CU:</u></i></b></h1>
+            <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD @CU:</u></i></b></h1>
             <PDFViewer data={props.data}/>
         </>
     )
