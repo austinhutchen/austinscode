@@ -11,7 +11,7 @@ export const Aboutme = () => {
     <h1 className="hlight" >
      A page for my hobbies!
     </h1>
-    <Display></Display>
+    <Display/>
     <img src={img} height="520" width="auto" style={{marginTop:20}} />
    </motion.div>
   </section>
@@ -24,7 +24,7 @@ const Display = () => {
  // use carousel slide to display hobbies with images
  return (
   <div className="App">
-
+   
 
   </div>
  )

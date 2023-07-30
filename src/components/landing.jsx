@@ -4,9 +4,10 @@ import "../App.css";
 import "../css/spinner.css"
 import "../css/spotify.css";
 import "../css/nav-bar.css";
-import "../css/search.css"
-import "../css/square.css"
-import "../css/wave.css"
+import "../css/search.css";
+import "../css/square.css";
+import "../css/wave.css";
+
 export const Nav = () => {
     const nav = useNavigate();
     return (
@@ -276,15 +277,15 @@ const Square = () => {
         </div>
     )
 }
-const Wave =()=>{
-    return(
+const Wave = () => {
+    return (
         <div class="loading">
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     )
 }
 export const Landing = () => {
@@ -307,7 +308,5 @@ export const Landing = () => {
             <Player />
             <Spinner />
         </section>
-
-
     )
 }
