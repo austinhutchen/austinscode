@@ -279,7 +279,7 @@ export const Landing = () => {
     // add Player and Spinner, get css animations working
     return (
         <section className="App">
-            <Head />
+            <Nav />
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <i
