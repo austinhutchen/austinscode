@@ -5,6 +5,7 @@ import "../css/spinner.css"
 import "../css/spotify.css";
 import "../css/nav-bar.css";
 import "../css/search.css"
+import "../css/square.css"
 export const Nav = () => {
     const nav = useNavigate();
     return (
@@ -241,7 +242,39 @@ const Search = () => {
         </div>
     )
 }
-
+const Square = () => {
+    return (
+        <div class="loader">
+            <div class="box box0">
+                <div></div>
+            </div>
+            <div class="box box1">
+                <div></div>
+            </div>
+            <div class="box box2">
+                <div></div>
+            </div>
+            <div class="box box3">
+                <div></div>
+            </div>
+            <div class="box box4">
+                <div></div>
+            </div>
+            <div class="box box5">
+                <div></div>
+            </div>
+            <div class="box box6">
+                <div></div>
+            </div>
+            <div class="box box7">
+                <div></div>
+            </div>
+            <div class="ground">
+                <div></div>
+            </div>
+        </div>
+    )
+}
 export const Landing = () => {
     // add Player and Spinner, get css animations working
     return (
@@ -261,7 +294,7 @@ export const Landing = () => {
             </motion.div>
             <Player />
             <Spinner />
-
+            <Square/>
         </section>
 
 
