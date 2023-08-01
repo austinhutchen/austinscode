@@ -28,7 +28,7 @@ const Display = () => {
    <Carousel>
     <div>
      <img src={img} height="500" width="500"  />
-     <p className="desc">Legend 1</p>
+     <p className="legend">Legend 1</p>
     </div>
     <div>
      <img src="" />
