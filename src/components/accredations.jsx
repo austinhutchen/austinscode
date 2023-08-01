@@ -21,7 +21,7 @@ export const View = (props) => {
             <Nav/>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD @CU:</u></i></b></h1>
             <PDFViewer data={props.data}/>
-            <PDFViewer data={props.data}/>
+            <PDFViewer data={''}/>
 
         </>
     )
