@@ -10,7 +10,6 @@ export const Aboutme = () => {
   <section>
    <Nav></Nav>
    <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-
     <Display />
    </motion.div>
   </section>
@@ -27,10 +26,9 @@ const Display = () => {
     More about me!
    </h1>
    <Carousel>
-
     <div>
-     <img src={img} height="520" width="auto" style={{ marginTop: 20 }} />
-     <p className="legend">Legend 1</p>
+     <img src={img} height="500" width="500"  />
+     <p className="desc">Legend 1</p>
     </div>
     <div>
      <img src="" />
