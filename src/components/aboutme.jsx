@@ -24,7 +24,7 @@ const Display = () => {
  return (
   <section className="App">
    <h1 className="hlight" >
-    A page for my hobbies!
+    More about me!
    </h1>
    <Carousel>
 
