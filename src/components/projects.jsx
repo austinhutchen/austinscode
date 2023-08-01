@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Nav } from "./landing";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import img from './images/me4.jpg'
 
 const Display = () => {
     // use carousel slide to display hobbies with images
@@ -14,7 +14,7 @@ const Display = () => {
             <Carousel>
 
                 <div>
-                    <img src={img} height="520" width="auto" style={{ marginTop: 20 }} />
+                    <img src={img} height="auto" width="auto"  />
                     <p className="legend">Legend 1</p>
                 </div>
                 <div>
