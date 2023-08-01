@@ -1,6 +1,8 @@
 import { Nav } from "./landing"
 import img from "./images/me4.jpg"
 import { motion } from 'framer-motion'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export const Aboutme = () => {
 
@@ -11,8 +13,7 @@ export const Aboutme = () => {
     <h1 className="hlight" >
      A page for my hobbies!
     </h1>
-    <Display/>
-    <img src={img} height="520" width="auto" style={{marginTop:20}} />
+    <Display />
    </motion.div>
   </section>
  )
@@ -23,9 +24,21 @@ export const Aboutme = () => {
 const Display = () => {
  // use carousel slide to display hobbies with images
  return (
-  <div className="App">
-   
 
-  </div>
+  <Carousel>
+   <div>
+    <img src={img} height="520" width="auto" style={{ marginTop: 20 }} />
+    <p className="legend">Legend 1</p>
+   </div>
+   <div>
+    <img src="" />
+    <p className="legend">Legend 2</p>
+   </div>
+   <div>
+    <img src="" />
+    <p className="legend">Legend 3</p>
+   </div>
+  </Carousel>
+
  )
 }
