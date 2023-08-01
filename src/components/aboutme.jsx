@@ -10,9 +10,7 @@ export const Aboutme = () => {
   <section>
    <Nav></Nav>
    <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-    <h1 className="hlight" >
-     A page for my hobbies!
-    </h1>
+
     <Display />
    </motion.div>
   </section>
@@ -24,21 +22,27 @@ export const Aboutme = () => {
 const Display = () => {
  // use carousel slide to display hobbies with images
  return (
+  <section className="App">
+   <h1 className="hlight" >
+    A page for my hobbies!
+   </h1>
+   <Carousel>
 
-  <Carousel>
-   <div>
-    <img src={img} height="520" width="auto" style={{ marginTop: 20 }} />
-    <p className="legend">Legend 1</p>
-   </div>
-   <div>
-    <img src="" />
-    <p className="legend">Legend 2</p>
-   </div>
-   <div>
-    <img src="" />
-    <p className="legend">Legend 3</p>
-   </div>
-  </Carousel>
+    <div>
+     <img src={img} height="520" width="auto" style={{ marginTop: 20 }} />
+     <p className="legend">Legend 1</p>
+    </div>
+    <div>
+     <img src="" />
+     <p className="legend">Legend 2</p>
+    </div>
+    <div>
+     <img src="" />
+     <p className="legend">Legend 3</p>
+    </div>
+   </Carousel>
+  </section>
+
 
  )
 }
