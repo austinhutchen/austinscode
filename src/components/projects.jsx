@@ -12,7 +12,6 @@ const Display = () => {
                 More about me!
             </h1>
             <Carousel>
-
                 <div>
                     <img src={img} height="auto" width="auto"  />
                     <p className="legend">Legend 1</p>
@@ -27,8 +26,6 @@ const Display = () => {
                 </div>
             </Carousel>
         </section>
-
-
     )
 }
 
