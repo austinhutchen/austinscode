@@ -3,45 +3,12 @@ import { Nav } from "./landing";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import img from './images/me4.jpg'
+import { Display } from './aboutme';
 
-const Display = () => {
-    // use carousel slide to display hobbies with images
+
+const Body = () => {
     return (
-        <section className="App">
-            <h1 className="hlight" >
-                More about me!
-            </h1>
-            <Carousel>
-                <div>
-                    <img src={img} height="auto" width="auto"  />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="" />
-                    <p className="legend">Legend 3</p>
-                </div>
-            </Carousel>
-        </section>
-    )
-}
-
-
-
-export const Projects = () => {
-
-    return (
-        <section>
-            <Nav></Nav>
-            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-
-                <h2 className="hlight" style={{ paddingTop: 20 }}>
-                    <b>PERSONAL PROJECTS:</b>
-                </h2>
+        <>
                 <section>
                     <div className="lead">
                         <b>
@@ -97,12 +64,25 @@ export const Projects = () => {
                         </b>
                     </div>
                     <br></br>
-
-
                 </section>
+        </>
+    )
+}
+
+export const Projects = () => {
+// integrate display component here
+    return (
+        <section>
+            <Nav></Nav>
+            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+                <h2 className="hlight" style={{ paddingTop: 20 }}>
+                    <b>PERSONAL PROJECTS:</b>
+                </h2>
+                <Body/>
                 <hr></hr>
 
-            </motion.div>
+            </motion.div>         
         </section>
 
     )
