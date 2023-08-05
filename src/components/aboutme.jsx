@@ -25,6 +25,8 @@ export const Aboutme = () => {
 export const Display = (props) => {
  // use carousel slide to display hobbies with images
  const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
+ const height=700;
+ const width= 500;
  return (
   <section className="App">
    <section style={{ paddingBottom: 20 }}>
@@ -35,23 +37,23 @@ export const Display = (props) => {
 
    <Carousel>
     <div>
-     <img src={arr[0]} height="auto" width="auto" />
+     <img src={arr[0]} height={height} width={width} />
      <p className="legend">Me!</p>
     </div>
     <div>
-     <img src={arr[1]} height="auto" width="auto" />
+     <img src={arr[1]} height={height} width={width} />
      <p className="legend">I love cats!</p>
     </div>
     <div>
-     <img src={arr[2]} height="auto" width="auto" />
+     <img src={arr[2]} height={height} width={width} />
      <p className="legend">I love quality family time!</p>
     </div>
     <div>
-     <img src={arr[3]} height="auto" width="auto" />
+     <img src={arr[3]} height={height} width={width} />
      <p className="legend">I love hiking and lifting!</p>
     </div>
     <div>
-     <img src={arr[4]} height="auto" width="auto" />
+     <img src={arr[4]} height={height} width={width} />
      <p className="legend">I love coffee and coding!</p>
     </div>
    </Carousel>
