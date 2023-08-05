@@ -15,7 +15,7 @@ export const PDFViewer = (props) => {
 }
 
 
-export const View = (props) => {
+export const View = (props) => {  
     return (
         <>
             <Nav/>

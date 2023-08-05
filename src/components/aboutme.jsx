@@ -23,21 +23,24 @@ export const Display = (props) => {
  const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
  return (
   <section className="App">
-   <h1 className="hlight" >
+   <section style={{paddingBottom:20}}>
+   <h1 className="hlight"  >
     More about me!
    </h1>
+   </section>
+   
    <Carousel>
     <div>
-     <img src={arr[0]} height="500" width="auto" />
-     <p className="desc">Me!</p>
+     <img src={arr[0]} height="auto" width="auto" />
+     <p className="legend">Me!</p>
     </div>
     <div>
      <img src={arr[1]} />
-     <p className="legend">Legend 2</p>
+     <p className="legend">I love cats!</p>
     </div>
     <div>
      <img src={arr[2]} />
-     <p className="legend">Legend 3</p>
+     <p className="legend">I love hiking, coffee, and coding</p>
     </div>
    </Carousel>
   </section>
