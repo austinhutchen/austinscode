@@ -1,9 +1,7 @@
 import { motion } from 'framer-motion'
 import { Nav } from "./landing";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import img from './images/me4.jpg'
-import { Display } from './aboutme';
+
 
 
 const Body = () => {
