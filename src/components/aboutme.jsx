@@ -40,7 +40,11 @@ export const Display = (props) => {
     </div>
     <div>
      <img src={arr[2]} />
-     <p className="legend">I love hiking, coffee, and coding</p>
+     <p className="legend">I love hiking!</p>
+    </div>
+    <div>
+     <img src={arr[3]} />
+     <p className="legend">I love coffee and coding!</p>
     </div>
    </Carousel>
   </section>
