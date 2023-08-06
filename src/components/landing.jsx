@@ -9,6 +9,7 @@ import "../css/square.css";
 import "../css/wave.css";
 
 export const Nav = () => {
+
     const nav = useNavigate();
     return (
         <div>

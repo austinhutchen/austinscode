@@ -9,7 +9,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 export const Aboutme = () => {
-
  return (
   <section>
    <Nav></Nav>
@@ -18,7 +17,6 @@ export const Aboutme = () => {
    </motion.div>
   </section>
  )
-
 }
 
 
@@ -34,7 +32,6 @@ export const Display = (props) => {
      More about me!
     </h1>
    </section>
-
    <Carousel>
     <div>
      <img src={arr[0]} height={height} width={width} />
@@ -58,7 +55,5 @@ export const Display = (props) => {
     </div>
    </Carousel>
   </section>
-
-
  )
 }
