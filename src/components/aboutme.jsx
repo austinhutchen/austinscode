@@ -35,7 +35,7 @@ export const Display = (props) => {
    <Carousel>
     <div>
      <img src={arr[0]} height={height} width={width} />
-     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. As a software engineer with aspirations of working on embedded systems and machine learning, I have plenty of hobbies! 
+     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, I have plenty of hobbies! Swipe to learn more:s
 </p>
     </div>
     <div>
