@@ -33,6 +33,10 @@ export const Display = (props) => {
     </h1>
    </section>
    <Carousel>
+   <div>
+     <img src={arr[4]} height={height} width={width} />
+     <p className="legend">I love coffee and coding!</p>
+    </div>
     <div>
      <img src={arr[0]} height={height} width={width} />
      <p className="legend">Me!</p>
@@ -47,12 +51,9 @@ export const Display = (props) => {
     </div>
     <div>
      <img src={arr[3]} height={height} width={width} />
-     <p className="legend">I love hiking and lifting!</p>
+     <p className="legend">I love hiking!</p>
     </div>
-    <div>
-     <img src={arr[4]} height={height} width={width} />
-     <p className="legend">I love coffee and coding!</p>
-    </div>
+
    </Carousel>
   </section>
  )
