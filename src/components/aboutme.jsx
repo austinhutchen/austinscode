@@ -9,6 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 export const Aboutme = () => {
+    // optimize motion div with for desktop and mobile HERE
     return (
         <section className="App">
             <Nav />
