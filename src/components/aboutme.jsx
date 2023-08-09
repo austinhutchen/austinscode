@@ -12,7 +12,7 @@ export const Aboutme = () => {
     return (
         <section className="App">
             <Nav />
-            <motion.div initial={{ x: 600, width: 0 }} animate={{ width: "55%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+            <motion.div initial={{ width: 0 }} animate={{ width: "55%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <Display img1={me} img2={mimi} img3={family} img4={nature} img5={coding} />
             </motion.div>
         </section>
