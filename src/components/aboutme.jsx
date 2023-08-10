@@ -7,7 +7,7 @@ import coding from "./images/coding.JPG"
 import { motion } from 'framer-motion'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-
+import { ReactFragment } from "react"
 export const Aboutme = () => {
     // optimize motion div with for desktop and mobile HERE
     return (
@@ -27,7 +27,7 @@ export const Display = (props) => {
     const height = 700;
     const width = 500;
     return (
-        <section >
+        <div >
             <section style={{ paddingBottom: 20 }}>
                 <h1 className="hlight"  >
                     More about me!
@@ -57,6 +57,6 @@ export const Display = (props) => {
                 </div>
 
             </Carousel>
-        </section>
+        </div>
     )
 }
