@@ -34,25 +34,27 @@ export const Display = (props) => {
             </section>
             <Carousel sliderWidth={width/2}
                 itemWidth={width/2}>
+                    
+
                 <div>
-                    <img src={arr[0]} height={height} width="auto" />
+                    <img src={arr[0]} height={height/2} width="auto" />
                     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, I have plenty of hobbies! Swipe to learn more:
                     </p>
                 </div>
                 <div>
-                    <img src={arr[1]} height={height} width="auto" />
+                    <img src={arr[1]} height={height/2} width="auto" />
                     <p className="legend">I love cats!</p>
                 </div>
                 <div>
-                    <img src={arr[2]} height={height} width="auto" />
+                    <img src={arr[2]} height={height/2} width="auto" />
                     <p className="legend">I love quality family time!</p>
                 </div>
                 <div>
-                    <img src={arr[3]} height={height} width="auto" />
+                    <img src={arr[3]} height={height/2} width="auto" />
                     <p className="legend">I love hiking!</p>
                 </div>
                 <div>
-                    <img src={arr[4]} height={height} width="auto" />
+                    <img src={arr[4]} height={height/2} width="auto" />
                     <p className="legend">I love coffee and coding!</p>
                 </div>
 
