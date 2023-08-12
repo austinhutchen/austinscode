@@ -27,12 +27,12 @@ export const Display = (props) => {
     const { height, width } = useWindowDimensions();
     return (
         <div >
-            <section style={{ paddingBottom: 20 }}>
+            <section style={{ paddingBottom: 10 }}>
                 <h1 className="hlight"  >
                     More about me!
                 </h1>
             </section>
-            <Carousel sliderWidth={width / 2}
+            <Carousel sliderWidth={width }
                 itemWidth={width / 2}>
 
 
@@ -61,4 +61,3 @@ export const Display = (props) => {
         </div>
     )
 }
-
