@@ -32,7 +32,7 @@ export const Display = (props) => {
                     More about me!
                 </h1>
             </section>
-            <Carousel sliderWidth={width }
+            <Carousel sliderWidth={width}
                 itemWidth={width / 2}>
 
 
@@ -46,16 +46,16 @@ export const Display = (props) => {
                     <p className="legend">I love coffee and coding!</p>
                 </div>
                 <div>
-                    <img src={arr[1]} height={height / 2} width="auto" />
-                    <p className="legend">I love cats!</p>
-                </div>
-                <div>
                     <img src={arr[2]} height={height / 2} width="auto" />
                     <p className="legend">I love quality family time!</p>
                 </div>
                 <div>
                     <img src={arr[3]} height={height / 2} width="auto" />
                     <p className="legend">I love hiking!</p>
+                </div>
+                <div>
+                    <img src={arr[1]} height={height / 2} width="auto" />
+                    <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
         </div>
