@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
-import { Nav } from "./landing";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+import { Nav } from "./common/navbar";
+import { CommonCarousel } from './common/carousel';
 
 
 const Body = () => {

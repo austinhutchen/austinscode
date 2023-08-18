@@ -1,6 +1,6 @@
-import {Nav} from "./landing";
+import {Nav} from "./common/navbar";
 import {motion} from "framer-motion";
-import {PDFViewer} from "./accredations";
+import {PDFViewer} from "./common/PDFviewer";
 import pdf from "./images/resume SWE.pdf"
 
 export const Resume = () => {
