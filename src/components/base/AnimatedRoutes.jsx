@@ -1,11 +1,11 @@
 import {Routes, Route, useLocation} from "react-router-dom";
-import {Landing} from "./landing"
-import {Resume} from "./resume"
-import {Projects} from "./projects"
-import {View} from "./accredations"
-import {Aboutme} from "./aboutme"
+import {Landing} from "../landing"
+import {Resume} from "../resume"
+import {Projects} from "../projects"
+import {View} from "../accredations"
+import {Aboutme} from "../aboutme"
 import {AnimatePresence} from 'framer-motion'
-import _pdf from "./images/Recommendation Letter_ Austin.pdf"
+import _pdf from "../images/Recommendation Letter_ Austin.pdf"
 
 export let AnimatedRoutes = () => {
     const location = useLocation();

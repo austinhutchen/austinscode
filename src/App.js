@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { AnimatedRoutes } from "./components/AnimatedRoutes";
+import { AnimatedRoutes } from "./components/base/AnimatedRoutes";
 import { HashRouter } from "react-router-dom";
 
 // main app
