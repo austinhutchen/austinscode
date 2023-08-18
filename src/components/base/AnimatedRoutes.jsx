@@ -1,9 +1,9 @@
 import {Routes, Route, useLocation} from "react-router-dom";
-import {Landing} from "../landing"
-import {Resume} from "../resume"
-import {Projects} from "../projects"
-import {View} from "../accredations"
-import {Aboutme} from "../aboutme"
+import {Landing} from "../pages/landing"
+import {Resume} from "../pages/resume"
+import {Projects} from "../pages/projects"
+import {View} from "../pages/accredations"
+import {Aboutme} from "../pages/aboutme"
 import {AnimatePresence} from 'framer-motion'
 import _pdf from "../images/Recommendation Letter_ Austin.pdf"
 

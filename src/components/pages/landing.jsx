@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import  {Nav}  from "./common/navbar";
-import {Player, Spinner} from "./common/symbols"
+import  {Nav}  from "../common/navbar";
+import {Player, Spinner} from "../common/symbols"
 
 const Head = () => {
     return (

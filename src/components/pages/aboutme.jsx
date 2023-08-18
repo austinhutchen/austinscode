@@ -1,12 +1,12 @@
-import { Nav } from "./common/navbar"
-import me from "./images/me4.jpg"
-import mimi from "./images/mimi.jpg"
-import family from "./images/family.jpeg"
-import nature from "./images/nature.jpg"
-import coding from "./images/coding.JPG"
+import { Nav } from "../common/navbar"
+import me from "../images/me4.jpg"
+import mimi from "../images/mimi.jpg"
+import family from "../images/family.jpeg"
+import nature from "../images/nature.jpg"
+import coding from "../images/coding.JPG"
 import { motion } from 'framer-motion'
 import { Carousel } from 'react-responsive-carousel';
-import useWindowDimensions from './base/optimize'
+import useWindowDimensions from '../base/optimize'
 
 export const Aboutme = () => {
     return (

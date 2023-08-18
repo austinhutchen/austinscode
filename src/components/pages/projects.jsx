@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { Nav } from "./common/navbar";
-import { CommonCarousel } from './common/carousel';
+import { Nav } from "../common/navbar";
+import { CommonCarousel } from '../common/carousel';
 
 
 const Body = () => {
