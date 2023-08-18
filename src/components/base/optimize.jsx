@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
   return {
@@ -24,13 +25,3 @@ export default function useWindowDimensions() {
 }
 
 // mobile wrapper 
-export const MyWrapperComponent = (props) => {
-  const isMobile = useMediaQuery({query: '(max-width: 1000px)'});
-  const textStyle = isMobile ? 'text-mobile' : 'text-desktop';
-
-  return (
-      <div className={textStyle}>
-          {props.children}
-      </div>
-  )
-}
