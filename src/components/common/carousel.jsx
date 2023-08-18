@@ -7,7 +7,9 @@ import useWindowDimensions from '../base/optimize'
 export const CommonCarousel=()=>{
 return(
  <>
- 
+ <Carousel>
+  
+ </Carousel>
  
  
  
