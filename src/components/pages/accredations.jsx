@@ -1,5 +1,5 @@
-import {Nav} from "./common/navbar";
-import { PDFViewer } from "./common/PDFviewer";
+import {Nav} from "../common/navbar";
+import { PDFViewer } from "../common/PDFviewer";
 
 
 
