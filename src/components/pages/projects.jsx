@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
-
+import { Footer } from '../common/footer';
 
 const Body = () => {
     return (
@@ -79,7 +79,7 @@ export const Projects = () => {
                 <CommonCarousel/>
                 <Body/>
                 <hr></hr>
-                    
+                <Footer/>
             </motion.div>         
         </section>
 
