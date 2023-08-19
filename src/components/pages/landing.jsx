@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import  {Nav}  from "../common/navbar";
-import {Player, Spinner} from "../common/symbols"
-
+import { Spinner } from '../common/symbols';
+import { Footer } from '../common/footer';
 const Head = () => {
     return (
         <motion.div
@@ -32,8 +32,8 @@ export const Landing = () => {
                     </b>
                 </i>
             </motion.div>
-            <Player />
             <Spinner />
+            <Footer/>
         </section>
     )
 }
