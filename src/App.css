@@ -19,8 +19,9 @@
 /*id = footer*/
 
 #footer {
-    background-color: darkgreen;
+    background-color:     darkslategrey;
     position: absolute;
+    margin-top: auto;
     left: 0;
     bottom: 0;
     height: 95px;
