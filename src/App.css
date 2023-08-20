@@ -7,6 +7,15 @@
 
 }
 
+.showFooter{
+
+opacity: 1;
+}
+
+.hideFooter{
+
+opacity: 0;
+}
 .main-wrapper {
     position: relative;
     min-height: 100vh;
