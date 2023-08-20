@@ -10,12 +10,12 @@ import useWindowDimensions from '../base/optimize'
 import { Footer } from "../common/footer"
 export const Aboutme = () => {
     return (
-        <section className="App">
+        <div className="App">
             <Nav />
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <Display img1={me} img2={mimi} img3={family} img4={nature} img5={coding} />
             </motion.div>
-        </section>
+        </div>
     )
 }
 
@@ -54,6 +54,7 @@ export const Display = (props) => {
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
+            <Footer/>
         </div>
         
     )

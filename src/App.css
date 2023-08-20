@@ -7,6 +7,11 @@
 
 }
 
+.main-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
 /*for text in the upper part of screen */
 .lead {
     padding-top: 5px;
