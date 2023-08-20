@@ -16,17 +16,23 @@
     color: white;
     font-size: larger;
 }
+
 /*id = footer*/
 
 #footer {
-    background-color:     darkslategrey;
+    background-color: darkslategrey;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
     position: absolute;
     margin-top: auto;
     left: 0;
     bottom: 0;
     height: 95px;
     width: 100%;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .img {
@@ -133,5 +139,3 @@ body {
     height: auto;
     overflow: auto;
 }
-
-
