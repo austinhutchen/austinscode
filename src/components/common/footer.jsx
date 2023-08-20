@@ -1,11 +1,16 @@
-import {Player} from "../common/symbols"
+import { Player } from "../common/symbols"
+import { motion } from "framer-motion"
+
+
+
 export const Footer = () => {
  return (
-  <footer>
-   <Player />
-  </footer>
+  <motion.div>
+   <footer>
+    <Player />
+   </footer>
+  </motion.div>
+
  )
-
-
 
 }
