@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/austinscode/static/css/main.ac3c9994.css",
+    "main.css": "/austinscode/static/css/main.5531909a.css",
     "main.js": "/austinscode/static/js/main.adb27e4b.js",
     "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
     "static/media/nature.jpg": "/austinscode/static/media/nature.3f78a443138fe24bc56a.jpg",
@@ -11,12 +11,12 @@
     "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.6231337f5ec7f3e626ae.pdf",
     "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
     "index.html": "/austinscode/index.html",
-    "main.ac3c9994.css.map": "/austinscode/static/css/main.ac3c9994.css.map",
+    "main.5531909a.css.map": "/austinscode/static/css/main.5531909a.css.map",
     "main.adb27e4b.js.map": "/austinscode/static/js/main.adb27e4b.js.map",
     "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac3c9994.css",
+    "static/css/main.5531909a.css",
     "static/js/main.adb27e4b.js"
   ]
 }
