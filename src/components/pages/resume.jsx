@@ -6,7 +6,7 @@ import { Footer } from "../common/footer";
 
 export const Resume = () => {
     return (
-        <section>
+        <div>
             <Nav />
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
@@ -64,7 +64,7 @@ export const Resume = () => {
 
             </motion.div>
             <Footer />
-        </section>
+        </div>
 
     )
 
