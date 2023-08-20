@@ -7,7 +7,7 @@ import coding from "../images/coding.JPG"
 import { motion } from 'framer-motion'
 import { Carousel } from 'react-responsive-carousel';
 import useWindowDimensions from '../base/optimize'
-
+import { Footer } from "../common/footer"
 export const Aboutme = () => {
     return (
         <section className="App">
@@ -54,6 +54,8 @@ export const Display = (props) => {
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
+            <Footer/>
         </div>
+        
     )
 }

@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion'
-import  {Nav}  from "../common/navbar";
+import { Nav } from "../common/navbar";
 import { Spinner } from '../common/symbols';
 import { Footer } from '../common/footer';
+
+
 const Head = () => {
     return (
         <motion.div
@@ -33,7 +35,9 @@ export const Landing = () => {
                 </i>
             </motion.div>
             <Spinner />
-            <Footer/>
+            <section id="footer">
+                <Footer />
+            </section>
         </section>
     )
 }
