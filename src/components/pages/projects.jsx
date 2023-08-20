@@ -79,6 +79,7 @@ export const Projects = () => {
                 <CommonCarousel/>
                 <Body/>
                 <hr></hr>
+                <Footer/>
             </motion.div>         
         </section>
 
