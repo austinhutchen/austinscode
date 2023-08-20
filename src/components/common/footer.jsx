@@ -27,22 +27,24 @@ export const Footer = () => {
 
  return (
   <>
-   <div>content.....</div>
-   <footer className={isBottom ? "showFooter" : "hideFooter"}><motion.div >
-    <footer id="footer" className="App">
-     <wrapper class="d-flex flex-column">
+   <div className={isBottom ? "showFooter" : "hideFooter"}>
+    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+     exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+     <footer className="App">
+      <wrapper class="d-flex flex-column">
 
-      <main class="flex-fill">
-       Hello world!
+       <main class="flex-fill">
+        Hello world!
 
-      </main>
-      <footer>
-       <Player />
-      </footer>
-     </wrapper>
-    </footer>
+       </main>
+       <footer>
+        <Player />
+       </footer>
+      </wrapper>
+     </footer>
 
-   </motion.div></footer>
+    </motion.div>
+   </div>
   </>
 
  )
