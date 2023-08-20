@@ -16,6 +16,17 @@
     color: white;
     font-size: larger;
 }
+/*id = footer*/
+
+#footer {
+    background-color: darkgreen;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 95px;
+    width: 100%;
+    overflow:hidden;
+}
 
 .img {
     border: 50px;

@@ -27,20 +27,20 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/resume.js');
+                            nav('/src/components/aboutme.js');
                         }}
                     >
-                        Resume
+                        About
                     </button>
                     <button
                         class="btn btn-md btn-outline-secondary"
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/aboutme.js');
+                            nav('/src/components/resume.js');
                         }}
                     >
-                        About
+                        Resume
                     </button>
                     <button
                         class="btn btn-md btn-outline-secondary"
