@@ -1,6 +1,8 @@
 import { Player } from "../common/symbols"
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react";
+
+
 export const Footer = () => {
  const [isBottom, setIsBottom] = useState(false);
 
@@ -26,7 +28,6 @@ export const Footer = () => {
  }, []);
 
  return (
-  <>
    <div className={isBottom ? "showFooter" : "hideFooter"}>
     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
      exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
@@ -45,7 +46,6 @@ export const Footer = () => {
 
     </motion.div>
    </div>
-  </>
 
  )
 };
