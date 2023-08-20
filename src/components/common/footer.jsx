@@ -8,7 +8,7 @@ export const Footer = () => {
 
  const handleScroll = () => {
 
-  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight-3
+  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight 
 
   if (bottom) {
    setIsBottom(true)
@@ -27,25 +27,33 @@ export const Footer = () => {
   };
  }, []);
 
- return (
-   <div className={isBottom ? "showFooter" : "hideFooter"}>
-    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-     exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-     <footer className="App">
-      <wrapper class="d-flex flex-column">
+ if (isBottom) {
+  return (<div className={"showFooter"}>
+   <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+    exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+    <footer className="App">
+     <wrapper class="d-flex flex-column">
 
-       <main class="flex-fill">
-        Hello world!
+      <main class="flex-fill">
+       Hello world!
 
-       </main>
-       <footer>
-        <Player />
-       </footer>
-      </wrapper>
-     </footer>
+      </main>
+      <footer>
+       <Player />
+      </footer>
+     </wrapper>
+    </footer>
 
-    </motion.div>
+   </motion.div>
+  </div>);
+ }
+ else {
+  return (
+   <div className={"hideFooter"}>
+
    </div>
+  );
+ }
 
- )
+
 };
