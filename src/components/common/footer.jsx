@@ -35,7 +35,7 @@ export const Footer = () => {
      <wrapper class="d-flex flex-column">
 
       <main class="flex-fill">
-       Hello world!
+      <code className="footercode">printf('%d','Hello World!')</code>
 
       </main>
       <footer>
