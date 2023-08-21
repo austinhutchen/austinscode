@@ -49,7 +49,7 @@ export const Footer = () => {
  }
  else {
   return (
-   <div className={"hideFooter"}/>
+   <div/>
   );
  }
 
