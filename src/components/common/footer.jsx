@@ -8,7 +8,7 @@ export const Footer = () => {
 
  const handleScroll = () => {
 
-  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight 
+  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight
 
   if (bottom) {
    setIsBottom(true)
@@ -35,7 +35,8 @@ export const Footer = () => {
      <wrapper class="d-flex flex-column">
 
       <main class="flex-fill">
-      <code className="footercode">printf('%d','Hello World!')</code>
+      Hello world!
+       <code className="footercode"></code>
 
       </main>
       <footer>
@@ -49,7 +50,7 @@ export const Footer = () => {
  }
  else {
   return (
-   <div/>
+   <div />
   );
  }
 
