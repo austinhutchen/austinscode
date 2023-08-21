@@ -40,6 +40,10 @@
     overflow: hidden;
 }
 
+.footercode {
+    color:        lawngreen
+}
+
 .main-wrapper {
     position: relative;
     min-height: 100vh;
