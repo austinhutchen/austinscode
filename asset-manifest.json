@@ -1,22 +1,24 @@
 {
-  "files": {
-    "main.css": "/austinscode/static/css/main.38df5730.css",
-    "main.js": "/austinscode/static/js/main.ea8358a7.js",
-    "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
-    "static/media/nature.jpg": "/austinscode/static/media/nature.3f78a443138fe24bc56a.jpg",
-    "static/media/family.jpeg": "/austinscode/static/media/family.3ab0dadd8a5df6118f00.jpeg",
-    "static/media/coding.JPG": "/austinscode/static/media/coding.b53c5f6c2c3ed28e21b8.JPG",
-    "static/media/mimi.jpg": "/austinscode/static/media/mimi.96bbd3979b9c561ab30f.jpg",
-    "static/media/me4.jpg": "/austinscode/static/media/me4.514a52db97c367c11a2f.jpg",
-    "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.6231337f5ec7f3e626ae.pdf",
-    "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
-    "index.html": "/austinscode/index.html",
-    "main.38df5730.css.map": "/austinscode/static/css/main.38df5730.css.map",
-    "main.ea8358a7.js.map": "/austinscode/static/js/main.ea8358a7.js.map",
-    "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.38df5730.css",
-    "static/js/main.ea8358a7.js"
-  ]
+  "main.css": "/austinscode/static/css/main.3114c3c0.chunk.css",
+  "main.js": "/austinscode/static/js/main.439ba4f8.chunk.js",
+  "main.js.map": "/austinscode/static/js/main.439ba4f8.chunk.js.map",
+  "runtime~main.js": "/austinscode/static/js/runtime~main.3b44aa28.js",
+  "runtime~main.js.map": "/austinscode/static/js/runtime~main.3b44aa28.js.map",
+  "static/css/2.be2fdc31.chunk.css": "/austinscode/static/css/2.be2fdc31.chunk.css",
+  "static/js/2.0bc7507a.chunk.js": "/austinscode/static/js/2.0bc7507a.chunk.js",
+  "static/js/2.0bc7507a.chunk.js.map": "/austinscode/static/js/2.0bc7507a.chunk.js.map",
+  "static/js/3.37352ce7.chunk.js": "/austinscode/static/js/3.37352ce7.chunk.js",
+  "static/js/3.37352ce7.chunk.js.map": "/austinscode/static/js/3.37352ce7.chunk.js.map",
+  "index.html": "/austinscode/index.html",
+  "precache-manifest.76978d00aedd718d47209de92286136d.js": "/austinscode/precache-manifest.76978d00aedd718d47209de92286136d.js",
+  "service-worker.js": "/austinscode/service-worker.js",
+  "static/css/2.be2fdc31.chunk.css.map": "/austinscode/static/css/2.be2fdc31.chunk.css.map",
+  "static/css/main.3114c3c0.chunk.css.map": "/austinscode/static/css/main.3114c3c0.chunk.css.map",
+  "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.2d20dcf2.pdf",
+  "static/media/coding.JPG": "/austinscode/static/media/coding.6bef9e93.JPG",
+  "static/media/family.jpeg": "/austinscode/static/media/family.10205d0e.jpeg",
+  "static/media/me4.jpg": "/austinscode/static/media/me4.fc48c64b.jpg",
+  "static/media/mimi.jpg": "/austinscode/static/media/mimi.cb34c668.jpg",
+  "static/media/nature.jpg": "/austinscode/static/media/nature.efb036a0.jpg",
+  "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.a472683c.pdf"
 }
