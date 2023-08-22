@@ -1,9 +1,9 @@
 import { Nav } from "../common/navbar";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion"; 
 import { PDFViewer } from "../common/PDFviewer";
 import pdf from "../images/resume SWE.pdf"
 import { Footer } from "../common/footer";
-
+import React  from 'react';
 const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}

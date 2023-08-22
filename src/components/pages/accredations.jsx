@@ -1,7 +1,7 @@
 import { Nav } from "../common/navbar";
 import { PDFViewer } from "../common/PDFviewer";
 import { Footer } from "../common/footer";
-
+import React  from 'react';
 
 export const View = (props) => {
     return (

@@ -2,9 +2,10 @@ import { Nav } from "../common/navbar"
 import me from "../images/me4.jpg"
 import mimi from "../images/mimi.jpg"
 import family from "../images/family.jpeg"
+import React  from 'react';
 import nature from "../images/nature.jpg"
 import coding from "../images/coding.JPG"
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion/dist/framer-motion"; 
 import { Carousel } from 'react-responsive-carousel';
 import useWindowDimensions from '../base/optimize'
 import { Footer } from "../common/footer"
