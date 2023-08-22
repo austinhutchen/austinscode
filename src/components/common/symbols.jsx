@@ -1,4 +1,4 @@
-
+import React  from 'react';
 import "../../css/spinner.css"
 import "../../css/spotify.css";
 import "../../css/nav-bar.css";

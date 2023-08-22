@@ -4,9 +4,9 @@ import { Resume } from "../pages/resume"
 import { Projects } from "../pages/projects"
 import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from "framer-motion/dist/framer-motion"; 
 import _pdf from "../images/Recommendation Letter_ Austin.pdf"
-
+import React  from 'react';
 export let AnimatedRoutes = () => {
     const location = useLocation();
     return (

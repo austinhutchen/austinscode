@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion/dist/framer-motion"; 
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
 import { Footer } from '../common/footer';
-
+import React  from 'react';
 const Body = () => {
     return (
         <>
@@ -15,16 +15,24 @@ const Body = () => {
                         <br></br>
                         <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                             rel="noreferrer">
-                            Functional calculator App (FLUTTER/DART)
+                            FULLY FUNTIONAL C-BASED CALCULATOR APP (FLUTTER/DART)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                             rel="noreferrer">
-                            Weather App (REACT NATIVE)
+                            STATEFUL WEATHER APP (REACT NATIVE)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noreferrer">
-                            This Webpage (REACT/JS)
+                            THIS WEBSITE (REACT/JS)
+                        </a>
+                        <br />
+                        <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noreferrer">
+                            JOURNALLING APP (REACT NATIVE/JAVA)
+                        </a>
+                        <br />
+                        <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noreferrer">
+                            REDDIT STATISTICS ENGINE (PYTHON)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noreferrer">
@@ -33,23 +41,15 @@ const Body = () => {
                         <br />
                         <a href="https://github.com/austinhutchen/myscript.git" target="_blank"
                             rel="noreferrer">
-                            ANALOG BLUETOOTH RECIEVER WITH READ / WRITE
+                            ANALOG BLUETOOTH RECIEVER WITH READ / WRITE (VANILLA C)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noreferrer">
                             .TXT PARSER, COMPRESSION ENGINE & INTERFACE (C++)
                         </a>
                         <br />
-                        <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noreferrer">
-                            Journalling app (REACT NATIVE/JAVA)
-                        </a>
-                        <br />
                         <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noreferrer">
-                            Graphing calculator in 2-3 dimensions (JAVASCRIPT)
-                        </a>
-                        <br />
-                        <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noreferrer">
-                            Reddit search/statistics engine (PYTHON)
+                            2-3 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                         </a>
                         <br />
                     </b>

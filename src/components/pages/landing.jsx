@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion/dist/framer-motion"; 
 import { Nav } from "../common/navbar";
 import { Spinner } from '../common/symbols';
 import { Footer } from '../common/footer';
-
+import React  from 'react';
 
 const Head = () => {
     return (
