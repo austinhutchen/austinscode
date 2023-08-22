@@ -1,8 +1,8 @@
-import { motion } from "framer-motion/dist/framer-motion"; 
+import { motion } from "framer-motion/dist/framer-motion";
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
 import { Footer } from '../common/footer';
-import React  from 'react';
+import React from 'react';
 const Body = () => {
     return (
         <>
@@ -15,7 +15,7 @@ const Body = () => {
                         <br></br>
                         <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                             rel="noreferrer">
-                            FULLY FUNTIONAL C-BASED CALCULATOR APP (FLUTTER/DART)
+                            C-BASED CALCULATOR APP (FLUTTER/DART)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
