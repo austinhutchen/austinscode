@@ -70,6 +70,7 @@ export const Projects = () => {
                 <h2 className="hlight" style={{ paddingTop: 20 }}>
                     <b>PERSONAL PROJECTS:</b>
                 </h2>
+                <hr></hr>
                 <CommonCarousel />
                 <Body />
                 <hr></hr>
