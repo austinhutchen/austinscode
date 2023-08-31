@@ -23,7 +23,9 @@ export const Aboutme = () => {
 
 export const Display = (props) => {
     const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
-    const { height, width } = useWindowDimensions();
+    let { height, width } = useWindowDimensions();
+    height=height/1.5;
+    width=width/1.001;
     return (
         <div >
             <section style={{ paddingBottom: 10 }}>
@@ -31,27 +33,27 @@ export const Display = (props) => {
                     More about me!
                 </h1>
             </section>
-            <Carousel sliderWidth={width/5}
+            <Carousel sliderWidth={width}
                 itemWidth={width}>
                 <div>
-                    <img src={arr[0]} height={height / 3} width='auto' />
+                    <img src={arr[0]} height={height } width='auto' />
                     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:
                     </p>
                 </div>
                 <div>
-                    <img src={arr[4]} height={height / 3} width="auto" />
+                    <img src={arr[4]} height={height } width="auto" />
                     <p className="legend">I love coffee and coding!</p>
                 </div>
                 <div>
-                    <img src={arr[2]} height={height / 3} width="auto" />
+                    <img src={arr[2]} height={height } width="auto" />
                     <p className="legend">I love quality family time!</p>
                 </div>
                 <div>
-                    <img src={arr[3]} height={height / 3} width="auto" />
+                    <img src={arr[3]} height={height } width="auto" />
                     <p className="legend">I love hiking!</p>
                 </div>
                 <div>
-                    <img src={arr[1]} height={height / 3} width="auto" />
+                    <img src={arr[1]} height={height } width="auto" />
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
