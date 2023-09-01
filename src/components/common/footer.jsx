@@ -8,7 +8,7 @@ export const Footer = () => {
 
  const handleScroll = () => {
 
-  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight
+  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight 
 
   if (bottom) {
    setIsBottom(true)

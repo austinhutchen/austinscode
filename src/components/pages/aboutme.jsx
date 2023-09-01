@@ -25,7 +25,8 @@ export const Display = (props) => {
     const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
     let { height, width } = useWindowDimensions();
     height=height/1.5;
-    width=width/1.001;
+    let width_itm=width/2.0;
+    let  width_sldr=height>>4;
     return (
         <div >
             <section style={{ paddingBottom: 10 }}>
@@ -33,8 +34,8 @@ export const Display = (props) => {
                     More about me!
                 </h1>
             </section>
-            <Carousel sliderWidth={width}
-                itemWidth={width}>
+            <Carousel sliderWidth={width_sldr}
+                itemWidth={width_itm}>
                 <div>
                     <img src={arr[0]} height={height } width='auto' />
                     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:
