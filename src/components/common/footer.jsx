@@ -1,14 +1,14 @@
 import { Player } from "../common/symbols"
-import { motion } from "framer-motion/dist/framer-motion"; 
+import { motion } from "framer-motion/dist/framer-motion";
 import { useState, useEffect } from "react";
-import React  from 'react';
+import React from 'react';
 
 export const Footer = () => {
  const [isBottom, setIsBottom] = useState(false);
 
  const handleScroll = () => {
 
-  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight 
+  const bottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight
 
   if (bottom) {
    setIsBottom(true)
@@ -35,7 +35,7 @@ export const Footer = () => {
      <wrapper class="d-flex flex-column">
 
       <main class="flex-fill">
-      Hello world!
+       Hello world!
        <code className="footercode"></code>
 
       </main>
