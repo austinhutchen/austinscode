@@ -2,7 +2,7 @@ import { Player } from "../common/symbols"
 import { motion } from "framer-motion/dist/framer-motion";
 import { useState, useEffect } from "react";
 import React from 'react';
-
+import "../../css/footer.css" 
 export const Footer = () => {
  const [isBottom, setIsBottom] = useState(false);
 
