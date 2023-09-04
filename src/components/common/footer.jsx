@@ -29,7 +29,7 @@ export const Footer = () => {
 
  if (isBottom) {
   return (<div className={"showFooter"}>
-   <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+   <motion.div initial={{ width: 0}} animate={{ width: "100%"}}
     exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
     <footer className="App">
      <wrapper class="d-flex flex-column">
