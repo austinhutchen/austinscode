@@ -58,7 +58,6 @@ export const Display = (props) => {
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
-            <Footer/>
         </div>
         
     )
