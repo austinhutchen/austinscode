@@ -26,7 +26,7 @@ export const Display = (props) => {
     let { height, width } = useWindowDimensions();
     height=height/1.5;
     let width_itm=width/2.0;
-    let  width_sldr=height>>4;
+    let  width_sldr=height>>4  ;
     return (
         <div >
             <section style={{ paddingBottom: 10 }}>
