@@ -30,7 +30,7 @@ const Body = () => {
                         <br />
                         <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                             rel="noopener noreferrer">
-                            EUCLIDIAN SHORTEST PATH DIVIDE AND CONQUER IMPLEMENTATION (C)
+                            SHORTEST DISTANCE DIVIDE AND CONQUER ALGORITHM (C)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
