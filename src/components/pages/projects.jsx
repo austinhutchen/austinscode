@@ -9,13 +9,18 @@ const Body = () => {
             <section>
                 <div className="lead">
                     <b>
-                        <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
-                            GOOGLE MAPS CLONE (Flutter/C++)
+                        <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
+                            THIS WEBSITE (REACT/JS)
                         </a>
-                        <br></br>
+                        <br />
+                        <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
+                            rel="noopener noreferrer">
+                            BREADBOARD MACRO PAD (C)
+                        </a>
+                        <br />
                         <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                             rel="noopener noreferrer">
-                            C-BASED CALCULATOR APP (FLUTTER/DART)
+                            CALCULATOR APP (FLUTTER/DART)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
@@ -23,10 +28,15 @@ const Body = () => {
                             STATEFUL WEATHER APP (REACT NATIVE)
                         </a>
                         <br />
-                        <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
-                            THIS WEBSITE (REACT/JS)
+                        <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
+                            rel="noopener noreferrer">
+                            EUCLIDIAN SHORTEST PATH DIVIDE AND CONQUER IMPLEMENTATION (C)
                         </a>
                         <br />
+                        <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
+                            GOOGLE MAPS CLONE (Flutter/C++)
+                        </a>
+                        <br></br>
                         <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                             JOURNALLING APP (REACT NATIVE/JAVA)
                         </a>
@@ -74,7 +84,7 @@ export const Projects = () => {
                 <CommonCarousel />
                 <Body />
                 <hr></hr>
-              
+
             </motion.div>
         </section>
 
