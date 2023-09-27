@@ -1,7 +1,6 @@
 import { motion } from "framer-motion/dist/framer-motion";
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
-import { Footer } from '../common/footer';
 import React from 'react';
 const Body = () => {
     return (
@@ -46,12 +45,7 @@ const Body = () => {
                         <br />
                         <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                             rel="noopener noreferrer">
-                            SHORTEST DISTANCE DIVIDE + CONQUER ALGORITHM (C)
-                        </a>
-
-                        <br />
-                        <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank" rel="noopener noreferrer">
-                            .TXT PARSER, COMPRESSION ENGINE & INTERFACE (C++)
+                            N-COORDINATE SHORTEST DISTANCE DIVIDE + CONQUER ALGORITHM (C)
                         </a>
                         <br />
                         <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
