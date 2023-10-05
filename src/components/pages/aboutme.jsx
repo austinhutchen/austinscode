@@ -24,9 +24,8 @@ export const Aboutme = () => {
 export const Display = (props) => {
     const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
     let { height, width } = useWindowDimensions();
-    height=height/1.5;
-    let width_itm=width/2.0;
-    let  width_sldr=height>>4  ;
+    let  width_sldr=height<<2  ;
+  let width_itm = width << 2;
     return (
         <div >
             <section style={{ paddingBottom: 10 }}>
