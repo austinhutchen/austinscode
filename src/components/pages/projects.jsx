@@ -27,6 +27,8 @@ const Body = () => {
                             STATEFUL WEATHER APP (REACT NATIVE)
                         </a>
                         <br />
+                      
+
                         <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
                             GOOGLE MAPS CLONE (Flutter/C++)
                         </a>
@@ -43,6 +45,10 @@ const Body = () => {
                             COMPLETE KERNEL SHELL (VANILLA C)
                         </a>
                         <br />
+                        <a href= "https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
+                            STRAUSSENS MATRIX_MULTIPLY DIVIDE AND CONQUER ALGORITHM (C)
+                        </a>
+                        <br /> 
                         <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                             rel="noopener noreferrer">
                             N-COORDINATE SHORTEST DISTANCE DIVIDE + CONQUER ALGORITHM (C)
