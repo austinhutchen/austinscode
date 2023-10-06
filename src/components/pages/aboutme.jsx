@@ -9,6 +9,7 @@ import { motion } from "framer-motion/dist/framer-motion";
 import { Carousel } from 'react-responsive-carousel';
 import useWindowDimensions from '../base/optimize'
 import { Footer } from "../common/footer"
+import "../../css/dimensions.css"
 export const Aboutme = () => {
     return (
         <div className="App">
@@ -34,10 +35,11 @@ export const Display = (props) => {
                     More about me!
                 </h1>
             </section>
+      <div className="slider-container">
             <Carousel sliderWidth={width_sldr}
                 itemWidth={width_itm}>
                 <div>
-                    <img src={arr[0]} height={img_height } width='auto' />
+                    <img src={arr[0]} height={img_height} width='auto' />
                     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:
                     </p>
                 </div>
@@ -46,19 +48,19 @@ export const Display = (props) => {
                     <p className="legend">I love coffee and coding!</p>
                 </div>
                 <div>
-                    <img src={arr[2]} height={img_height } width="auto" />
+                    <img src={arr[2]} height={img_height} width="auto" />
                     <p className="legend">I love quality family time!</p>
                 </div>
                 <div>
-                    <img src={arr[3]} height={img_height } width="auto" />
+                    <img src={arr[3]} height={img_height} width="auto" />
                     <p className="legend">I love hiking!</p>
                 </div>
                 <div>
-                    <img src={arr[1]} height={img_height } width="auto" />
+                    <img src={arr[1]} height={img_height} width="auto" />
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
         </div>
-        
+        </div>
     )
 }
