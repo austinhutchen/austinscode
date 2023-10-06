@@ -1,13 +1,10 @@
+/* Smaller than standard 960 (devices and browsers) */
 
 
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  max-height:  !important 500px;    /* Set slide height here */
+  max-width:400px !important;
+    width: 100% !important;
 
-
-
-
-
-
-
-.slider-container:{
-  max-height : 200px !important;
-  width:80%;
 }
