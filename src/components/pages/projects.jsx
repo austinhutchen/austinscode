@@ -38,11 +38,7 @@ const Body = () => {
                                     GOOGLE MAPS CLONE (Flutter/C++)
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    JOURNALLING APP (REACT NATIVE/JAVA)
-                                </a>
-                            </li>
+                           
                             <li>
                                 <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
                                     REDDIT STATISTICS ENGINE (PYTHON)
@@ -52,16 +48,20 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     COMPLETE KERNEL SHELL (VANILLA C)
                                 </a>
+                            </li> <li>
+                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                    MENTAL HEALTH + JOURNALLING APP (REACT NATIVE/JAVA)
+                                </a>
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
-                                    STRAUSSENS MATRIX_MULTIPLY DIVIDE AND CONQUER ALGORITHM (C)
+                                    O(N*LOG(N)) MATRIX MULTIPLICATION ALGORITHM (C)
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    N-COORDINATE SHORTEST DISTANCE DIVIDE + CONQUER ALGORITHM (C)
+                                   O(N*LOG(N)) N-COORDINATE SHORTEST DISTANCE ALGORITHM (C)
                                 </a>
                             </li>
                             <li>
