@@ -32,7 +32,13 @@ const Body = () => {
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
                             </li>
+                           <li>
+                         <a href= "https://github.com/austinhutchen/Journal.NET.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    STATEFUL DAILY JOURNAL WEBSITE (C#)
+</a>
 
+      </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
                                     GOOGLE MAPS CLONE (Flutter/C++)
@@ -48,16 +54,14 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     COMPLETE KERNEL SHELL (VANILLA C)
                                 </a>
-                            </li>                             <li>
+                            </li>                            
+                            <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
-                                    O(N*LOG(N)) MATRIX MULTIPLY ALGORITHM (C)
+                                    O(N*LOG(N)) NxN MATRIX MULTIPLY ALGORITHM (C)
                                 </a>
                             </li>
-<li>
-                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    MENTAL HEALTH + JOURNALLING APP (REACT NATIVE/JAVA)
-                                </a>
-                            </li>
+                           
+                        
 
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
@@ -70,7 +74,11 @@ const Body = () => {
                                     2-3 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
                             </li>
-
+ <li>
+                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                    MENTAL HEALTH QUOTE GENERATOR + JOURNALLING APP (REACT NATIVE/JAVA)
+      </a>
+                           </li> 
                         </b>
                     </ul>
                 </div>
