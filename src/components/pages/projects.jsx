@@ -89,9 +89,9 @@ export const Projects = () => {
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
       <div style ={{paddingBottom:15}}>
 
-<h2 className="hlight">
+<h1 className="hlight" >
                     <b>PERSONAL PROJECTS:</b>
-                </h2>
+                </h1>
 
       </div>
                 
