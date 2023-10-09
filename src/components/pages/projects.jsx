@@ -1,4 +1,4 @@
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
 import React from 'react';
@@ -50,7 +50,7 @@ const Body = () => {
                                 </a>
                             </li>                             <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
-                                    O(N*LOG(N)) MATRIX MULTIPLICATION ALGORITHM (C)
+                                    O(N*LOG(N)) MATRIX MULTIPLY ALGORITHM (C)
                                 </a>
                             </li>
 <li>

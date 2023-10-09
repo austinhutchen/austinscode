@@ -1,5 +1,5 @@
 import { Nav } from "../common/navbar";
-import { motion } from "framer-motion/dist/framer-motion"; 
+import { motion } from "framer-motion"; 
 import { PDFViewer } from "../common/PDFviewer";
 import pdf from "../images/resume SWE.pdf"
 import React  from 'react';
