@@ -7,7 +7,7 @@ const Body = () => {
         <>
             <section>
                 <div className="lead">
-                    <ul>
+                    <ul style ={{listStyleType: "List-Square"}}>
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
@@ -86,10 +86,14 @@ export const Projects = () => {
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-                <h2 className="hlight" style={{ paddingTop: 20 }}>
+      <div style ={{paddingBottom:15}}>
+
+<h2 className="hlight">
                     <b>PERSONAL PROJECTS:</b>
                 </h2>
-                <br/>
+
+      </div>
+                
                 <CommonCarousel />
                 <Body />
                 <br/>
