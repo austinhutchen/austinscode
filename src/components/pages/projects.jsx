@@ -7,7 +7,7 @@ const Body = () => {
         <>
             <section>
                 <div className="lead">
-                    <ul style ={{listStyleType: "List-Square"}}>
+                    <ul style ={{listStyleType: "disc"}}>
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
@@ -48,16 +48,17 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     COMPLETE KERNEL SHELL (VANILLA C)
                                 </a>
-                            </li> <li>
-                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    MENTAL HEALTH + JOURNALLING APP (REACT NATIVE/JAVA)
-                                </a>
-                            </li>
-                            <li>
+                            </li>                             <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
                                     O(N*LOG(N)) MATRIX MULTIPLICATION ALGORITHM (C)
                                 </a>
                             </li>
+<li>
+                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                    MENTAL HEALTH + JOURNALLING APP (REACT NATIVE/JAVA)
+                                </a>
+                            </li>
+
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                                     rel="noopener noreferrer">
