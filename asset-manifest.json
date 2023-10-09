@@ -1,24 +1,22 @@
 {
-  "main.css": "/austinscode/static/css/main.b1f30d94.chunk.css",
-  "main.js": "/austinscode/static/js/main.963601a7.chunk.js",
-  "main.js.map": "/austinscode/static/js/main.963601a7.chunk.js.map",
-  "runtime~main.js": "/austinscode/static/js/runtime~main.93c11b60.js",
-  "runtime~main.js.map": "/austinscode/static/js/runtime~main.93c11b60.js.map",
-  "static/css/2.e6330067.chunk.css": "/austinscode/static/css/2.e6330067.chunk.css",
-  "static/js/2.6a6648ef.chunk.js": "/austinscode/static/js/2.6a6648ef.chunk.js",
-  "static/js/2.6a6648ef.chunk.js.map": "/austinscode/static/js/2.6a6648ef.chunk.js.map",
-  "static/js/3.e660b796.chunk.js": "/austinscode/static/js/3.e660b796.chunk.js",
-  "static/js/3.e660b796.chunk.js.map": "/austinscode/static/js/3.e660b796.chunk.js.map",
-  "index.html": "/austinscode/index.html",
-  "precache-manifest.68bf306b3a7de70df40b115542e4aed1.js": "/austinscode/precache-manifest.68bf306b3a7de70df40b115542e4aed1.js",
-  "service-worker.js": "/austinscode/service-worker.js",
-  "static/css/2.e6330067.chunk.css.map": "/austinscode/static/css/2.e6330067.chunk.css.map",
-  "static/css/main.b1f30d94.chunk.css.map": "/austinscode/static/css/main.b1f30d94.chunk.css.map",
-  "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.2d20dcf2.pdf",
-  "static/media/coding.JPG": "/austinscode/static/media/coding.6bef9e93.JPG",
-  "static/media/family.jpeg": "/austinscode/static/media/family.10205d0e.jpeg",
-  "static/media/me4.jpg": "/austinscode/static/media/me4.fc48c64b.jpg",
-  "static/media/mimi.jpg": "/austinscode/static/media/mimi.cb34c668.jpg",
-  "static/media/nature.jpg": "/austinscode/static/media/nature.efb036a0.jpg",
-  "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.0fa3326c.pdf"
+  "files": {
+    "main.css": "/austinscode/static/css/main.38ba8d1f.css",
+    "main.js": "/austinscode/static/js/main.dfc0d477.js",
+    "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
+    "static/media/nature.jpg": "/austinscode/static/media/nature.3f78a443138fe24bc56a.jpg",
+    "static/media/family.jpeg": "/austinscode/static/media/family.3ab0dadd8a5df6118f00.jpeg",
+    "static/media/coding.JPG": "/austinscode/static/media/coding.b53c5f6c2c3ed28e21b8.JPG",
+    "static/media/mimi.jpg": "/austinscode/static/media/mimi.96bbd3979b9c561ab30f.jpg",
+    "static/media/me4.jpg": "/austinscode/static/media/me4.514a52db97c367c11a2f.jpg",
+    "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.75a94b4e45f37950cdf6.pdf",
+    "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
+    "index.html": "/austinscode/index.html",
+    "main.38ba8d1f.css.map": "/austinscode/static/css/main.38ba8d1f.css.map",
+    "main.dfc0d477.js.map": "/austinscode/static/js/main.dfc0d477.js.map",
+    "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38ba8d1f.css",
+    "static/js/main.dfc0d477.js"
+  ]
 }
