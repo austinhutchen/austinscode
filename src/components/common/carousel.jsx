@@ -48,6 +48,7 @@ super();
       dots: true,
       infinite: true,
       speed: 500,
+      lazyLoad: false,
         slidesToShow: 2,
       slidesToScroll: 1,
 
