@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 export const Aboutme = () =>
  {
     return (
-      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+      <motion.div initial={{ width: 0 }} animate={{ width: "95%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
             <Nav />
                 <Display  />
