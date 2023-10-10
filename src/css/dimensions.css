@@ -1,9 +1,13 @@
 /* Smaller than standard 960 (devices and browsers) */ 
 
+.slider-container{
+display: inline-block;
+  margin: 0 auto;
+  padding: 70px;
+  width: 70%;
 
-
-
-
+  
+}
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {

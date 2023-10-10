@@ -1,72 +1,76 @@
 import { Nav } from "../common/navbar"
-import me from "../images/me4.jpg"
-import mimi from "../images/mimi.jpg"
-import family from "../images/family.jpeg"
-import React  from 'react';
-import nature from "../images/nature.jpg"
-import coding from "../images/coding.JPG"
+
+import React, { Component } from "react";
+
 import { motion } from "framer-motion"; 
-import { Carousel } from 'react-responsive-carousel';
-import useWindowDimensions from '../base/optimize'
+
 import { Footer } from "../common/footer"
 import "../../css/dimensions.css"
-export const Aboutme = () => {
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+export const Aboutme = () =>
+ {
     return (
         <div className="App">
             <Nav />
-            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-                <Display img1={me} img2={mimi} img3={family} img4={nature} img5={coding} />
-            </motion.div>
+                <Display  />
         </div>
     )
 }
 
 
-export const Display = (props) => {
-    const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
-    let { height, width } = useWindowDimensions();
-   // media query for area of height and width
-  let vA = (height * width )/2 ;
-  /*
-switch(va){
-  case 
-}
-*/
-  let width_itm = vA >> 1;
-  let img_height = vA >> 10;
-    return( 
-        <div >
-            <section style={{ paddingBottom: 10 }}>
-                <h1 className="hlight"  >
-                    More about me!
-                </h1>
-            </section>
-      <div className="slider-container">
-            <Carousel sliderWidth={width<<5}
-                itemWidth={width_itm<<5}>
-                <div>
-                    <img src={arr[0]} height={img_height} width={img_height} loading="lazy" />
-                    <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:
-                    </p>
+export default class Display extends Component  
+{
+  constructor(){
+super();
+        this.state = {
+          key:[
+            
+          ],
+            sliders: [
+              '../images/me4.jpg',
+                "../images/coding.JPG",
+                "../images/family.jpeg",
+                "../images/mimi.jpg",
+              "../images/nature.jpg"]
+        }
+
+
+  }
+            
+    sliders() {
+        return this.state.sliders.map(data => {
+            return (
+           
+                <div key={data}>
+                    <img alt="key" src={data} />
                 </div>
-                <div>
-                    <img src={arr[4]} height={img_height} width={img_height} loading="lazy" />
-                    <p className="legend">I love coffee and coding!</p>
-                </div>
-                <div>
-                    <img src={arr[2]} height={img_height} width={img_height} loading="lazy"/>
-                    <p className="legend">I love quality family time!</p>
-                </div>
-                <div>
-                    <img src={arr[3]} height={img_height} width={img_height} loading="lazy" />
-                    <p className="legend">I love hiking!</p>
-                </div>
-                <div>
-                    <img src={arr[1]} height= {img_height} width={img_height} loading="lazy" />
-                    <p className="legend">I love cats!</p>
-                </div>
-            </Carousel>
-        </div>
-        </div>
+                         )
+        });
+    }
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+        slidesToShow: 2,
+      slidesToScroll: 1,
+
+    };
+    return (
+      <div className="slider-container" style={{paddingTop: 10}}> 
+<h1 className="hlight">
+              About me!
+              </h1>
+        <Slider {...settings}> 
+      
+                    {this.sliders()}
+                </Slider>     
+
+      </div>
     );
+  }
 }
+
