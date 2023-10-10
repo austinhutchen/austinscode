@@ -3,8 +3,10 @@
 .slider img{ width: 100%;     height: auto ; object-fit: cover;}
 .slick-slide {
    height:80vh;
+   position:relative;
 }
 
 .slick-slide img {
    height:80vh;
+   
 }
