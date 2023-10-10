@@ -53,7 +53,7 @@ super();
 
     };
     return (
-      <div className="slider-container" style={{paddingTop: 10}}> 
+      <div style={{paddingTop: 10}}> 
 <h1 className="hlight">
               About me!
               </h1>

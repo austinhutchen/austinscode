@@ -5,7 +5,6 @@ import React, { Component } from "react";
 import { motion } from "framer-motion"; 
 
 import { Footer } from "../common/footer"
-import "../../css/dimensions.css"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,10 +12,11 @@ import "slick-carousel/slick/slick-theme.css";
 export const Aboutme = () =>
  {
     return (
-        <div className="App">
+      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
             <Nav />
                 <Display  />
-        </div>
+        </motion.div>
     )
 }
 
@@ -30,11 +30,11 @@ super();
             
           ],
             sliders: [
-              '../images/me4.jpg',
-                "../images/coding.JPG",
-                "../images/family.jpeg",
-                "../images/mimi.jpg",
-              "../images/nature.jpg"]
+              '/images/me4.jpg',
+                "/images/coding.JPG",
+                "/images/family.jpeg",
+                "/images/mimi.jpg",
+              "/images/nature.jpg"]
         }
 
 
