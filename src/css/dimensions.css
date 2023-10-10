@@ -1,17 +1,10 @@
 /* Smaller than standard 960 (devices and browsers) */ 
 
-.slider-container{
-display: inline-block;
-  margin: 0 auto;
-  padding: 70px;
-  width: 70%;
-
-  
+.slider img{ width: 100%;     height: auto ; object-fit: cover;}
+.slick-slide {
+   height:70vh;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  max-height:  250px !important;    /* Set slide height here */
-  max-width: 200px !important;
-    width: 85% !important;
+.slick-slide img {
+   height:70vh;
 }
