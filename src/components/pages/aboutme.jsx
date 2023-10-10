@@ -26,10 +26,14 @@ export const Display = (props) => {
     const arr = [props.img1, props.img2, props.img3, props.img4, props.img5, props.img6, props.img7, props.img8]
     let { height, width } = useWindowDimensions();
    // media query for area of height and width
-  let vA = height * width ;
-
+  let vA = (height * width )/2 ;
+  /*
+switch(va){
+  case 
+}
+*/
   let width_itm = vA >> 1;
-  let img_height = vA >> 11;
+  let img_height = vA >> 10;
     return( 
         <div >
             <section style={{ paddingBottom: 10 }}>
@@ -38,27 +42,27 @@ export const Display = (props) => {
                 </h1>
             </section>
       <div className="slider-container">
-            <Carousel sliderWidth={width}
-                itemWidth={width_itm}>
+            <Carousel sliderWidth={width<<5}
+                itemWidth={width_itm<<5}>
                 <div>
-                    <img src={arr[0]} height={img_height} width='auto' loading="lazy" />
+                    <img src={arr[0]} height={img_height} width={img_height} loading="lazy" />
                     <p className="legend">  My name is <i><b></b>Austin Hutchen</i>. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:
                     </p>
                 </div>
                 <div>
-                    <img src={arr[4]} height={img_height} width="auto" loading="lazy" />
+                    <img src={arr[4]} height={img_height} width={img_height} loading="lazy" />
                     <p className="legend">I love coffee and coding!</p>
                 </div>
                 <div>
-                    <img src={arr[2]} height={img_height} width="auto" loading="lazy"/>
+                    <img src={arr[2]} height={img_height} width={img_height} loading="lazy"/>
                     <p className="legend">I love quality family time!</p>
                 </div>
                 <div>
-                    <img src={arr[3]} height={img_height} width="auto" loading="lazy" />
+                    <img src={arr[3]} height={img_height} width={img_height} loading="lazy" />
                     <p className="legend">I love hiking!</p>
                 </div>
                 <div>
-                    <img src={arr[1]} height= {img_height} width="auto" loading="lazy" />
+                    <img src={arr[1]} height= {img_height} width={img_height} loading="lazy" />
                     <p className="legend">I love cats!</p>
                 </div>
             </Carousel>
