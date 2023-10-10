@@ -1,9 +1,13 @@
-/* Smaller than standard 960 (devices and browsers) */
-@media query 
+/* Smaller than standard 960 (devices and browsers) */ 
+
+
+
+
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  max-height:  400px !important;    /* Set slide height here */
-  max-width: 300px !important;
-    width: 100% !important;
+  max-height:  250px !important;    /* Set slide height here */
+  max-width: 200px !important;
+    width: 85% !important;
 }
