@@ -28,7 +28,7 @@ export const Display = (props) => {
    // media query for area of height and width
   let vA = height * width ;
 
-  let width_itm = vA >> 2;
+  let width_itm = vA >> 1;
   let img_height = vA >> 11;
     return( 
         <div >
