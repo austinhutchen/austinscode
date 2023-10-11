@@ -73,7 +73,7 @@ super(props);
    const settings = {
       dots: true,
       infinite: true,
-      speed: 200,
+      speed: 150,
         slidesToShow: 1,
       slidesToScroll: 1,
 lazyLoad:false,
@@ -83,13 +83,18 @@ lazyLoad:false,
 <h1 className="hlight" >
               About me!
               </h1>
-        
+          <div className="sc">
         <Slider {...settings}> 
-                         { this.render_image() }
-     
+  
 
+          { this.render_image() }
+       {this.render_caption()}
+
+    
+   
+                                        
                 </Slider>     
-
+     </div>
       </div>
     );
   }
