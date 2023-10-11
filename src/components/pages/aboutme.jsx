@@ -13,6 +13,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
+
 export const Aboutme = () =>
  {
     return (
@@ -27,52 +28,41 @@ export const Aboutme = () =>
 
 export default class Display extends Component  
 {
-  constructor(){
-super();
+  constructor(props){
+super(props);
         this.state = {
-          _index:0,
           keys:[
-            "1"
-            ,"2",
+            "1",
+            "2",
             "3",
-            "4"
-            ,"5"
+            "4",
+            "5"
           ],
         images: [me,coding,family,mimi,nature],
-          
   }; 
   }
-    sliders(_index) {
-         return this.state.keys.map(function(element,index,array)
-           {
+    sliders() {
+         return this.state.keys.map( data =>{   
              return(
                <div>
                  <h1>
-             {array[_index]}
+             {data}
                </h1>
                </div>
-             )
-        }
-   );
+             );   
+    } );
     }
   images(_index){
- return this.state.images.map(function(element,index,array){
+ return this.state.images.map(data => {
         return(
                <div>
-                 <h1>
-             {array[_index]}
-               </h1>
+                 <img src ={data}/>
                </div>
-             )
+             );
        }
       );
   }
-      
-    
-  
-incrind(ind){
-this.setState({_index: ind });
-}
+ 
   render() {
    const settings = {
       dots: true,
@@ -82,15 +72,14 @@ this.setState({_index: ind });
       slidesToScroll: 1,
 lazyLoad:false
     };
- this.incrind(this.state.index + 1);  
        return (<div> 
 <h1 className="hlight" style={{padding:20}}>
               About me!
               </h1>
         
         <Slider {...settings}> 
-         {this.images(this.state.index)}
-                    {this.sliders(this.state.index)}
+                         {this.sliders()}
+                         {this.images()}
 
                 </Slider>     
 
