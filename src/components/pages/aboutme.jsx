@@ -32,13 +32,13 @@ export default class Display extends Component
 super(props);
         this.state = {
           keys:[
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"
+            "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:",
+            "I love coffee and coding!",
+            "I love quality family time!",
+            "I love hiking!",
+            "I love cats!"
           ],
-        images: [me,coding,family,mimi,nature],
+        images: [me,coding,family,mimi,nature]
   }; 
   }
     sliders() {
