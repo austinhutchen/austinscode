@@ -8,7 +8,7 @@ import coding from "../images/coding.JPG";
 import family from "../images/family.jpeg";
 import nature from "../images/nature.jpg";
 import mimi from "../images/mimi.jpg";
-import { Footer } from "../common/footer"
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,10 +38,16 @@ super(props);
             "I love hiking!",
             "I love cats!"
           ],
-        images: [me,coding,family,mimi,nature]
+        images: [
+          me,
+          coding,
+          family,
+          mimi,
+          nature
+        ]
   }; 
   }
-    sliders() {
+   render_caption() {
          return this.state.keys.map( data =>{   
              return(
                <div>
@@ -52,11 +58,11 @@ super(props);
              );   
     } );
     }
-  images(){
+  render_image(){
  return this.state.images.map(data => {
         return(
                <div>
-                 <img src ={data}/>
+                 <img src ={data} alignItems="center"/>
                </div>
              );
        }
@@ -72,13 +78,13 @@ super(props);
       slidesToScroll: 1,
 lazyLoad:false
     };
-       return (<div> 
+       return (<div style={{padding:10}}> 
 <h1 className="hlight" >
               About me!
               </h1>
         
         <Slider {...settings}> 
-                         { this.images() }
+                         { this.render_image() }
      
 
                 </Slider>     
