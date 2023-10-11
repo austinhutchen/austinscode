@@ -17,7 +17,13 @@ const Body = () => {
                             <li>
                                 <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    BREADBOARD MACRO PAD (C)
+                                    BREADBOARD MACRO PAD (ARDUINO)
+                                </a>
+                            </li>
+ <li>
+                                <a href= "https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                 ENCRYPTED TEXT EDITOR (C++)
                                 </a>
                             </li>
                             <li>
@@ -26,13 +32,15 @@ const Body = () => {
                                     CALCULATOR APP (FLUTTER/DART)
                                 </a>
                             </li>
+
+
                             <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
                             </li>
-                           <li>
+                            <li>
                          <a href= "https://github.com/austinhutchen/Journal.NET.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
@@ -57,7 +65,7 @@ const Body = () => {
                             </li>                            
                             <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
-                                    O(N*LOG(N)) NxN MATRIX MULTIPLY ALGORITHM (C)
+                                    O(N*LOG(N)) NxN MATRIX MULTIPLY ALGORITHM (C++)
                                 </a>
                             </li>
                            
@@ -66,7 +74,7 @@ const Body = () => {
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                                     rel="noopener noreferrer">
-                                   O(N*LOG(N)) N-COORDINATE SHORTEST DISTANCE ALGORITHM (C)
+                                   O(N*LOG(N)) N-COORDINATE SHORTEST DISTANCE ALGORITHM (C++)
                                 </a>
                             </li>
                             <li>
