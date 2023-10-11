@@ -4,7 +4,7 @@
   margin: 0 auto; /* it centers any block level element */
 }
 .slick-slide{
-  /* ... */   height:90vh;
+  /* ... */   height:100vh;
   position: relative;
   z-index:100;
 }
