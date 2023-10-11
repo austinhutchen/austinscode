@@ -10,3 +10,8 @@
    height:80vh;
    
 }
+.sc img {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto; /* it centers any block level element */
+}
