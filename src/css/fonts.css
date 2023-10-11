@@ -1,0 +1,9 @@
+.hlight {
+ background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
+ display: inline;
+}
+
+.safe_text{
+ font-family: Arial ;
+
+}
