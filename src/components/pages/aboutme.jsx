@@ -1,14 +1,11 @@
 import { Nav } from "../common/navbar"
-// th to change theme in visual mode
 import React, { Component } from "react";
-
 import { motion } from "framer-motion"; 
 import me from "../images/me4.jpg";
 import coding from "../images/coding.JPG";
 import family from "../images/family.jpeg";
 import nature from "../images/nature.jpg";
 import mimi from "../images/mimi.jpg";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -35,7 +32,6 @@ super(props);
        }
 
     }
-
 
   render() {
 
@@ -70,7 +66,7 @@ super(props);
       speed: 150,
         slidesToShow: 1,
       slidesToScroll: 1,
-lazyLoad:false,
+lazyLoad:true,
    centerMode: true,
 
     };
