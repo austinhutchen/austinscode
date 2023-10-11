@@ -5,7 +5,7 @@
 
 
 .sc img {
-  height: calc(65vh - 100px);
+  height: calc(75vh - 100px);
   width: auto;
   margin: 0 auto; /* it centers any block level element */
 }
@@ -19,11 +19,27 @@ h2 {
  position: absolute;
  top: 50%;
  left: 50%;
+     text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  display:inline-block;
  -webkit-transform: translate(-50%, -50%);
  transform: translate(-50%, -50%);
- color: white;
- font-size: 15px;
+   color:#fff;     border-bottom: 2px solid rgb(136, 136, 136);
+ font-size: 10px;
+
+  background:#000;
  -webkit-transition: all 300ms ease;
  transition: all 300ms ease;
  text-transform: uppercase;
+}
+
+h2:after{ /* the line under H2 */
+  left:0px;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:3px;
+  margin-top:2px;
+  content: " ";
+  background:#000;
 }
