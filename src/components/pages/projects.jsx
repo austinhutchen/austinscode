@@ -20,18 +20,19 @@ const Body = () => {
                                   NON-SORT SORTER (C++)
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    BREADBOARD MACRO PAD (ARDUINO)
-                                </a>
-                            </li>
  <li>
                                 <a href= "https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                                     rel="noopener noreferrer">
                                  ENCRYPTED TEXT EDITOR (C++)
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    BREADBOARD MACRO PAD (ARDUINO)
+                                </a>
+                            </li>
+
      
                             <li>
                                 <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
