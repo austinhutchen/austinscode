@@ -45,14 +45,14 @@ super(props);
          return this.state.keys.map( data =>{   
              return(
                <div>
-                 <h1>
+                <h1> 
              {data}
                </h1>
                </div>
              );   
     } );
     }
-  images(_index){
+  images(){
  return this.state.images.map(data => {
         return(
                <div>
@@ -78,9 +78,8 @@ lazyLoad:false
               </h1>
         
         <Slider {...settings}> 
-                         {this.images() }
-         /* {this.sliders()}
-                         */
+                         { this.images() }
+     
 
                 </Slider>     
 
