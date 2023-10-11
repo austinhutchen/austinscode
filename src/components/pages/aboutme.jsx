@@ -50,11 +50,11 @@ super(props);
               url:family
             },
             {
-              desc:    "I love hiking!",
+              desc:    "I love cats!",
               url:mimi
             },
             {
-              desc:  "I love cats!",
+              desc:  "I love hiking!",
               url:nature
             }
          
