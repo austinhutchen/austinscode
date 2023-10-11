@@ -1,6 +1,6 @@
 /* Smaller than standard 960 (devices and browsers) */ 
 
-.slider img{ width: 100%;     height: 85vh ; object-fit: cover;}
+.slider img{ width: 100%;     height: 100vh ;}
 .slick-slide {
    height:80vh;
    position:relative;
@@ -23,6 +23,7 @@ slick-slide, .slick-track, .slick-list, .slick-slide-fade {
 .slide {
   position: relative;
 }
+
 h2 {
  position: absolute;
  top: 50%;
