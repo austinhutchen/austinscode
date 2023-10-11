@@ -1,5 +1,5 @@
 import { Nav } from "../common/navbar"
-
+// th to change theme in visual mode
 import React, { Component } from "react";
 
 import { motion } from "framer-motion"; 
@@ -30,46 +30,68 @@ export default class Display extends Component
   constructor(){
 super();
         this.state = {
-          key:[
-            
+          _index:0,
+          keys:[
+            "1"
+            ,"2",
+            "3",
+            "4"
+            ,"5"
           ],
-            sliders: [
-             me,
-               coding,
-                family,
-                mimi,
-              nature]
-        }
-
-
+        images: [me,coding,family,mimi,nature],
+          
+  }; 
   }
-            
-    sliders() {
-        return this.state.sliders.map(data => {
-            return (
-           
-                <div key={data}>
-                    <img alt="key" src={data} />
-                </div>
-                         )
-        });
+    sliders(_index) {
+         return this.state.keys.map(function(element,index,array)
+           {
+             return(
+               <div>
+                 <h1>
+             {array[_index]}
+               </h1>
+               </div>
+             )
+        }
+   );
     }
+  images(_index){
+ return this.state.images.map(function(element,index,array){
+        return(
+               <div>
+                 <h1>
+             {array[_index]}
+               </h1>
+               </div>
+             )
+       }
+      );
+  }
+      
+    
+  
+incrind(ind){
+this.setState({_index: ind });
+}
   render() {
-    const settings = {
+   const settings = {
       dots: true,
       infinite: true,
       speed: 500,
         slidesToShow: 1,
       slidesToScroll: 1,
-
+lazyLoad:false
     };
-    return (<div> 
-<h1 className="hlight">
+ this.incrind(this.state.index + 1);  
+       return (<div> 
+<h1 className="hlight" style={{padding:20}}>
               About me!
               </h1>
+        
         <Slider {...settings}> 
-      
-                    {this.sliders()}
+         {this.images(this.state.index)}
+                    {this.sliders(this.state.index)}
+
                 </Slider>     
 
       </div>
