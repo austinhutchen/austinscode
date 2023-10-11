@@ -78,9 +78,9 @@ lazyLoad:false
               </h1>
         
         <Slider {...settings}> 
-                         {this.images()
-                         }
-                         
+                         {this.images() }
+         /* {this.sliders()}
+                         */
 
                 </Slider>     
 
