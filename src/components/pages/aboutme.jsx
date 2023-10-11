@@ -76,7 +76,8 @@ super(props);
       speed: 200,
         slidesToShow: 1,
       slidesToScroll: 1,
-lazyLoad:false
+lazyLoad:false,
+   centerMode: true
     };
        return (<div style={{padding:10}}> 
 <h1 className="hlight" >
