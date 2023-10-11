@@ -73,13 +73,14 @@ super(props);
 lazyLoad:false
     };
        return (<div> 
-<h1 className="hlight" style={{padding:20}}>
+<h1 className="hlight" >
               About me!
               </h1>
         
         <Slider {...settings}> 
-                         {this.sliders()}
-                         {this.images()}
+                         {this.images()
+                         }
+                         
 
                 </Slider>     
 
