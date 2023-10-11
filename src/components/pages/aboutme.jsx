@@ -79,9 +79,9 @@ lazyLoad:true,
          {keys.map( data =>{   
              return(
                <div className="slick-slide">
-                <h1> 
+                <h2> 
              {data.desc}
-               </h1>
+               </h2>
                <img src={data.url}/>
                </div>
              ); }) }                                  
