@@ -88,8 +88,11 @@ lazyLoad:false,
   
 
           { this.render_image() }
-       {this.render_caption()}
+         <div>
+ {this.render_caption()}
 
+         </div>
+      
     
    
                                         

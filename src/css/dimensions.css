@@ -7,17 +7,11 @@
 }
 
 .slick-slide img {
-   height:80vh;
+   height:100vh;
    
 }
-.carousel-caption {
-  top: 50%;
-  transform: translateY(-50%);
-  bottom: initial;
-  z-index: 1200;
-}
 .sc img {
-  height: calc(55vh - 100px);
+  height: calc(65vh - 100px);
   width: auto;
   margin: 0 auto; /* it centers any block level element */
 }
