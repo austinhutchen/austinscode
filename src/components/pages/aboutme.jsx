@@ -70,10 +70,12 @@ lazyLoad:true,
    centerMode: true,
 
     };
-       return (<div style={{paddingTop:10}}> 
+       return (<div> 
 <h1 className="hlight" >
               About me!
               </h1>
+         <br/>
+         <br/>
           <div className="sc">
         <Slider {...settings}>    
          {keys.map( data =>{   

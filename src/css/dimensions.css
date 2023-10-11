@@ -5,8 +5,8 @@
 
 
 .sc img {
-  height: calc(75vh - 100px);
-  width: auto;
+  height: calc(62vh - 100px);
+
   margin: 0 auto; /* it centers any block level element */
 }
 .slick-slide{
