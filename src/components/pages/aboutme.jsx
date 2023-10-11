@@ -31,45 +31,39 @@ export default class Display extends Component
   constructor(props){
 super(props);
         this.state = {
-          keys:[
-            "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:",
-            "I love coffee and coding!",
-            "I love quality family time!",
-            "I love hiking!",
-            "I love cats!"
-          ],
-        images: [
-          me,
-          coding,
-          family,
-          mimi,
-          nature
-        ]
-  }; 
-  }
-   render_caption() {
-         return this.state.keys.map( data =>{   
-             return(
-               <div>
-                <h1> 
-             {data}
-               </h1>
-               </div>
-             );   
-    } );
-    }
-  render_image(){
- return this.state.images.map(data => {
-        return(
-               <div>
-                 <img src ={data} alignItems="center"/>
-               </div>
-             );
+           user:""
        }
-      );
-  }
- 
+
+    }
+
+
   render() {
+
+    var keys=[
+            {
+              desc:"My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:",
+              url:me
+            }
+            ,
+            {
+              desc:             "I love coffee and coding!",
+              url:coding
+            },
+            {
+              desc:             "I love quality family time!",
+              url:family
+            },
+            {
+              desc:    "I love hiking!",
+              url:mimi
+            },
+            {
+              desc:  "I love cats!",
+              url:nature
+            }
+         
+           
+          ] ;
    const settings = {
       dots: true,
       infinite: true,
@@ -77,25 +71,24 @@ super(props);
         slidesToShow: 1,
       slidesToScroll: 1,
 lazyLoad:false,
-   centerMode: true
+   centerMode: true,
+
     };
-       return (<div style={{padding:10}}> 
+       return (<div style={{paddingTop:10}}> 
 <h1 className="hlight" >
               About me!
               </h1>
           <div className="sc">
-        <Slider {...settings}> 
-  
-
-          { this.render_image() }
-         <div>
- {this.render_caption()}
-
-         </div>
-      
-    
-   
-                                        
+        <Slider {...settings}>    
+         {keys.map( data =>{   
+             return(
+               <div className="slick-slide">
+                <h1> 
+             {data.desc}
+               </h1>
+               <img src={data.url}/>
+               </div>
+             ); }) }                                  
                 </Slider>     
      </div>
       </div>
