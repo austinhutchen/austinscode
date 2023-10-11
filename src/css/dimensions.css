@@ -1,27 +1,18 @@
 /* Smaller than standard 960 (devices and browsers) */ 
 
 .slider img{ width: 100%;     height: 100vh ;}
-.slick-slide {
-   height:80vh;
-   position:relative;
-}
 
-.slick-slide img {
-   height:100vh;
-   
-}
+
+
 .sc img {
   height: calc(65vh - 100px);
   width: auto;
   margin: 0 auto; /* it centers any block level element */
 }
-slick-slide, .slick-track, .slick-list, .slick-slide-fade {
-  /* ... */
+.slick-slide{
+  /* ... */   height:80vh;
   position: relative;
   z-index:100;
-}
-.slide {
-  position: relative;
 }
 
 h2 {
