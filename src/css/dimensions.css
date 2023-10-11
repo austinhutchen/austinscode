@@ -10,8 +10,14 @@
    height:80vh;
    
 }
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+  z-index: 1200;
+}
 .sc img {
-  height: calc(50vh - 100px);
+  height: calc(55vh - 100px);
   width: auto;
   margin: 0 auto; /* it centers any block level element */
 }
