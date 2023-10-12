@@ -1,6 +1,6 @@
 
 .showFooter {
-    background-color: darkslategrey;
+    background-color:olive;  
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
@@ -10,7 +10,7 @@
     margin-top: auto;
     left: 0;
     bottom: 0;
-    height: 95px;
+    height: 90px;
     width: 100%;
     overflow: hidden;
     opacity: 1;
@@ -27,7 +27,7 @@
     margin-top: auto;
     left: 0;
     bottom: 0;
-    height: 95px;
+    height: 90px;
     width: 100%;
     overflow: hidden;
 }

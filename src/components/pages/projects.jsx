@@ -80,18 +80,18 @@ const Body = () => {
                                 </a>
                             </li>
 
-                           
+                            <li>
+                                <a href= "https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
+                                  O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
+                                </a>
+</li>
+
    <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                                     2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
                             </li>
 
- <li>
-                                <a href= "https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
-                                  O(N*LOG(N)) UNIVERSITY AUXILLARY SEARCH SYSTEM  (C++)
-                                </a>
-</li>
 
                            
                                        
