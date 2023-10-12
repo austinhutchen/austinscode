@@ -27,10 +27,12 @@ export const Landing = () => {
                     id="desc"
                     className="App"
                 >
+      <h1 style={{padding :30}}>
                     <b>
                         Full-Stack Software Engineer with passion for development and
                         experience working with startups!
                     </b>
+      </h1>
                 </i>
             </motion.div>
             <Spinner />
