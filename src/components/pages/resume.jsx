@@ -42,15 +42,22 @@ const Body = () => {
                 </article>
      <h3>
                 <b>
-                    <u>Ebay Electronics & Repairs + Reseller (May 2018 -  October 2023)</u>
+                    <u>Ebay Electronics Repairs + Reseller (May 2018 -  October 2023)</u>
                 </b>
       </h3>
 
             <article>
       <b>
-                    I sell refurbished electronics, have handled over 200 customer sales to-date with 100% positive feedback rate from 87 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @:             
+                    I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 200 customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @             
                       </b>
-    <a href="https://www.ebay.com/usr/gadgetsllcc">gadgetsllcc </a>
+      <b>
+      <h3>
+    <a href="https://www.ebay.com/usr/gadgetsllcc">gadgetsllcc
+
+      </a>
+      </h3>
+
+      </b>
                 </article>
 
     </body>
