@@ -72,8 +72,8 @@ export const Nav = () => {
                     />
                 </a>
             </nav>
-            <div className="banner" style={{ marginTop: 40 }}>
-                <h1 id="name">Austin Hutchen</h1>
+            <div className="banner" style={{ marginTop: 10 }}>
+                <h3 id="name">Austin Hutchen</h3>
             </div>
         </div>
 
