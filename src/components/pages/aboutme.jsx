@@ -69,8 +69,11 @@ export default class Display extends Component {
     };
     return (<div>
       <h1 className="hlight" >
+      <b>
         About me!
-      </h1>
+
+      </b>
+            </h1>
       <br />
       <br />
       <div className="sc">
