@@ -13,11 +13,10 @@ import "../../css/dimensions.css";
 import "../../css/fonts.css";
 export const Aboutme = () => {
   return (
-    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+    <div>
       <Nav />
       <Display />
-    </motion.div>
+    </div>
   )
 }
 
