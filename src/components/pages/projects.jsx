@@ -73,11 +73,17 @@ const Body = () => {
                             </li>
                            
                      
+                            <li>
+                                <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                   O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
+                                </a>
+                            </li>
 
                            
    <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2-3 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
+                                    2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
                             </li>
 
@@ -90,12 +96,6 @@ const Body = () => {
                            
                                        
 
-                            <li>
-                                <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                   O(N*LOG(N)) N-COORDINATE SHORTEST DISTANCE ALGORITHM (C++)
-                                </a>
-                            </li>
           
  <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
