@@ -54,7 +54,8 @@ const Body = () => {
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
 </a>
 
-      </li>
+      </li >
+                            </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
                                     GOOGLE MAPS CLONE (Flutter/C++)
@@ -70,7 +71,13 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     COMPLETE KERNEL SHELL (VANILLA C)
                                 </a>
-                            </li>                            
+                            </li>     
+ <li>
+                                <a href= "https://github.com/austinhutchen/AuxillarySearch.git target="_blank"
+                                    rel="noopener noreferrer">
+                                  O(N*LOG(N)) UNIVERSITY AUXILLARY SEARCH SYSTEM  (C++)
+                                </a>
+
                             <li>
                                 <a href="https://github.com/austinhutchen/FASTmatrixmult-c.git" target="_blank" rel="noopener noreferrer">
                                     O(N*LOG(N)) NxN MATRIX MULTIPLY ALGORITHM (C++)
