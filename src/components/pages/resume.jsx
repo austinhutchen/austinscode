@@ -12,26 +12,33 @@ const Body = () => {
                     <b><i> DIRECT WORK EXPERIENCE</i></b>
                 </h1>
                 <hr className="break" />
+      <h3>
                 <b>
                     <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                 </b>
+      </h3>
                 <article>
                     <p>
+      <b>
                         {" "}
                         Made first company sale as Marketing consultant, worked closely with
                         the software engineering team to achieve forecasted results.{" "}
+      </b>
                     </p>
                 </article>
+      <h3>
                 <b>
-                    <u>Calculus 2 Course Assistant (University Of Colorado Boulder)</u>
+                    <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                 </b>
+      </h3>
                 <article>
+      <b>
                     Taught CACLULUS 2 alongside faculty at CU boulder. Also held office
                     hours every week to assist learning of course material.{" "}
-                    <b>
+                   
                         Recieved 97% positive feedback from 103 participants on end of
                         semester survey.
-                    </b>
+                   </b>
                 </article>
             </body>
             <br />
