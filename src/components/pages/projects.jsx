@@ -20,12 +20,30 @@ const Body = () => {
                                   NON-SORT SORTER (C++)
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                    COMPLETE KERNEL SHELL (C)
+                                </a>
+                            </li>     
+
  <li>
                                 <a href= "https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                                     rel="noopener noreferrer">
                                  ENCRYPTED TEXT EDITOR (C++)
                                 </a>
                             </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    GOOGLE MAPS CLONE (Flutter/C++)
+                                </a>
+                            </li>
+                           <li>
+                                <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    CALCULATOR APP (FLUTTER/DART)
+                                </a>
+                            </li>
+
                             <li>
                                 <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
                                     rel="noopener noreferrer">
@@ -34,44 +52,35 @@ const Body = () => {
                             </li>
 
      
+ 
                             <li>
-                                <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
-                                    rel="noopener noreferrer">
-                                    CALCULATOR APP (FLUTTER/DART)
+                                <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
+                                    REDDIT STATISTICS ENGINE (PYTHON)
                                 </a>
                             </li>
-
-
-                            <li>
-                                <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    STATEFUL WEATHER APP (REACT NATIVE)
-                                </a>
-                            </li>
-                            <li>
+ <li>
                          <a href= "https://github.com/austinhutchen/Journal.NET.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
 </a>
 
       </li >
-                     
                             <li>
-                                <a href="https://github.com/austinhutchen/map-app.git" target="_blank" rel="noopener noreferrer">
-                                    GOOGLE MAPS CLONE (Flutter/C++)
+                                <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
                             </li>
                            
-                            <li>
-                                <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
-                                    REDDIT STATISTICS ENGINE (PYTHON)
+                     
+
+                           
+   <li>
+                                <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
+                                    2-3 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                                    COMPLETE KERNEL SHELL (VANILLA C)
-                                </a>
-                            </li>     
+
  <li>
                                 <a href= "https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
                                   O(N*LOG(N)) UNIVERSITY AUXILLARY SEARCH SYSTEM  (C++)
@@ -79,7 +88,7 @@ const Body = () => {
 </li>
 
                            
-                        
+                                       
 
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
@@ -87,11 +96,7 @@ const Body = () => {
                                    O(N*LOG(N)) N-COORDINATE SHORTEST DISTANCE ALGORITHM (C++)
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2-3 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
-                                </a>
-                            </li>
+          
  <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     MENTAL HEALTH QUOTE GENERATOR + JOURNALLING APP (REACT NATIVE/JAVA)
