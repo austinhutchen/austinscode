@@ -64,7 +64,7 @@ export default class Display extends Component {
       speed: 150,
       slidesToShow: 1,
       slidesToScroll: 1,
-      lazyLoad: true,
+      lazyLoad: false,
       centerMode: true,
 
     };
