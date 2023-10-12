@@ -40,7 +40,20 @@ const Body = () => {
                         semester survey.
                    </b>
                 </article>
-            </body>
+     <h3>
+                <b>
+                    <u>Ebay Electronics & Repairs + Reseller (May 2018 -  October 2023)</u>
+                </b>
+      </h3>
+
+            <article>
+      <b>
+                    I sell refurbished electronics, have handled over 200 customer sales to-date with 100% positive feedback rate from 87 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @:             
+                      </b>
+    <a href="https://www.ebay.com/usr/gadgetsllcc">gadgetsllcc </a>
+                </article>
+
+    </body>
             <br />
             <h1 className="hlight">
                 <b><i> OPEN SOURCE CONTRIBUTIONS</i></b>
