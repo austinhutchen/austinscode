@@ -6,6 +6,7 @@ import coding from "../images/coding.JPG";
 import family from "../images/family.jpeg";
 import nature from "../images/nature.jpg";
 import mimi from "../images/mimi.jpg";
+import math from "../images/IMG_0913.JPG"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -42,6 +43,11 @@ export default class Display extends Component {
         desc: "I love coffee and coding!",
         url: coding
       },
+    {
+        desc: "I love Mathematics!",
+        url: math
+      }
+,
       {
         desc: "I love quality family time!",
         url: family
@@ -54,7 +60,6 @@ export default class Display extends Component {
         desc: "I love hiking!",
         url: nature
       }
-
 
     ];
     const settings = {
