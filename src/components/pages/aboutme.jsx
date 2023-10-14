@@ -23,6 +23,7 @@ export const Aboutme = () => {
 
 
 export default class Display extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +36,7 @@ export default class Display extends Component {
 
     var keys = [
       {
-        desc: "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more:",
+        desc: "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more: ",
         url: me
       }
       ,
