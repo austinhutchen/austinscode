@@ -18,8 +18,10 @@
     transition: all 300ms ease;
 
   }
-
-
+.pdf{
+  height: 40vh;
+  width : 30vh;
+}
 }
 
 @media (min-width:481px) {
@@ -119,7 +121,7 @@
 
 @media (min-width:1281px) {
   h2 {
-
+  
     position: absolute;
     top: 75%;
     left: 50%;
@@ -136,7 +138,10 @@
     transition: all 300ms ease;
 
   }
-
+.pdf{
+  height: 50vh;
+  width: 50vh ;
+}
   /* hi-res laptops and desktops */
 
 }
@@ -152,6 +157,8 @@
   /* ... */
   height: 100vh;
   position: relative;
-  z-index: 80;
+  z-index: 60;
 
 }
+.slick-slide img{margin:auto;left:auto;}
+p.img-slide-text{margin:2rem auto 0;}
