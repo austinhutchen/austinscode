@@ -11,7 +11,7 @@ const Body = () => {
                 <h1 className="hlight">
                     <b><i> DIRECT WORK EXPERIENCE</i></b>
                 </h1>
-                <hr className="break" />
+
       <h3>
                 <b>
                     <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
