@@ -81,7 +81,6 @@ export default class Display extends Component {
       </b>
             </h1>
       <br />
-      <br />
       <div className="sc">
         <Slider {...settings}>
           {keys.map(data => {
