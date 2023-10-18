@@ -30,6 +30,8 @@ const TextSphere = () => {
       "Rust",
       "Node.JS",
       "Algorithm Analysis",
+      "AWS",
+
       "and more!.."
     ];
     const options = {
