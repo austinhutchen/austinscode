@@ -15,7 +15,7 @@
  font-family : 'Arial', ' sans-serif';
 font-weight : 600;
 letter-spacing : 0.0625em;
-font-size: 3.0em;
+font-size: 4.0em;
 
 }
 
@@ -23,6 +23,6 @@ font-size: 3.0em;
   text-transform: uppercase;
 }
 .tagCloud--item:hover{
-  color: purple ;
+  color: hotpink ;
 }
 
