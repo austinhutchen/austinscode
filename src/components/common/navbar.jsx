@@ -40,6 +40,16 @@ export const Nav = () => {
                     >
                         About
                     </button>
+        <button
+                        class="btn btn-md btn-outline-primary me-1"
+                        type="button"
+                        id="navbar"
+                        onClick={() => {
+                            nav('/src/components/projects.js');
+                        }}
+                    >
+                        Projects
+                    </button>
                     <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
@@ -50,16 +60,7 @@ export const Nav = () => {
                     >
                         Resume
                     </button>
-                    <button
-                        class="btn btn-md btn-outline-primary me-1"
-                        type="button"
-                        id="navbar"
-                        onClick={() => {
-                            nav('/src/components/projects.js');
-                        }}
-                    >
-                        Projects
-                    </button>
+                  
                     <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
