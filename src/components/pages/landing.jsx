@@ -4,7 +4,7 @@ import { Spinner } from '../common/symbols';
 import { Footer } from '../common/footer';
 import React, { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
-import "../../css/TextSphere.css"
+import "../../css/TextSphere.css";
 const Head = () => {
     return (
         <motion.div
@@ -31,11 +31,10 @@ const TextSphere = () => {
       "Node.JS",
       "Algorithm Analysis",
       "AWS",
-
       "and more!.."
     ];
     const options = {
-      radius: 250,
+      radius: 300,
       maxSpeed: "normal",
       initSpeed: "normal",
       keep: true,
@@ -54,26 +53,35 @@ const TextSphere = () => {
   return (
     <div className="text-sphere">
     <b>
-      <span className="tagcloud" ref={containerRef}></span>
+      <span className="tagcloud" ref={containerRef}/>
     </b>
     </div>
   );
 };
 
+const Body =() =>{
+
+
+  return(
+
+  <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+       <Spinner />
+         <TextSphere/>
+
+                         </motion.div>
+
+
+  )
+}
+
 // landing page 
 export const Landing = () => {
-    // add Player and Spinner, get css animations working
+
     return (
         <div >
             <Head />
-
-            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
- 
-       <Spinner />
-                         </motion.div>
-         <TextSphere/>
-
+         <Body/> 
             <section id="footer">
                 <Footer />
             </section>
