@@ -4,6 +4,12 @@
 	http://jedwatson.github.io/classnames
 */
 
+/*!
+ * TagCloud.js v2.4.0
+ * Copyright (c) 2016-2023 @ Cong Min
+ * MIT License - https://github.com/mcc108/TagCloud
+ */
+
 /**
  * @license React
  * react-dom.production.min.js
