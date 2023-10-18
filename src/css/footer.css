@@ -1,13 +1,13 @@
 
 .showFooter {
-    background-color:olive;  
+    background-color:orange;  
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
     bottom: 0pt;
     left: 0pt;
     position: absolute;
-    margin-top: auto;
+
     left: 0;
     bottom: 0;
     height: 90px;
@@ -24,7 +24,7 @@
     bottom: 0pt;
     left: 0pt;
     position: absolute;
-    margin-top: auto;
+
     left: 0;
     bottom: 0;
     height: 90px;
