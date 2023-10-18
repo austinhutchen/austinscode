@@ -7,10 +7,9 @@ import TagCloud from "TagCloud";
 import "../../css/TextSphere.css";
 const Head = () => {
   return (
-    <motion.div
-    >
+  
       <Nav />
-    </motion.div >
+
   )
 }
 // components
