@@ -4,14 +4,24 @@ import "../../App.css";
 import React  from 'react';
 export const Nav = () => {
     const nav = useNavigate();
+  // <div class="collapse navbar-collapse" id="navbarNav">
+   // <ul class="navbar-nav">
+    //<li class="nav-item d-none d-md-block">
+      //  <a href="#" class="nav-link">Visible on Medium and larger</a>
+    //</li>
+    //<li class="nav-item d-md-none">
+      //  <a href="#" class="nav-link">Visible when smaller than Medium</a>
+    //</li> 
+    //</ul>
+//</div>
     return (
         <div>
             <nav
-                class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-lg "
+                class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-lg justify-content-center "
             >
                 <div>
                     <button
-                        class="btn btn-outline-success"
+                        class="btn btn-outline-success me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -21,7 +31,7 @@ export const Nav = () => {
                         Home
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary"
+                        class="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -31,7 +41,7 @@ export const Nav = () => {
                         About
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary"
+                        class="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -41,7 +51,7 @@ export const Nav = () => {
                         Resume
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary"
+                        class="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -51,7 +61,7 @@ export const Nav = () => {
                         Projects
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary"
+                        class="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
