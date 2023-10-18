@@ -3,13 +3,11 @@ import "../../App.css";
 
 import React  from 'react';
 export const Nav = () => {
-
     const nav = useNavigate();
     return (
         <div>
             <nav
-                class="navbar navbar-dark bg-dark fixed-top"
-                href="../views/hobbies.html"
+                class="navbar navbar-dark bg-dark fixed"
             >
                 <div>
                     <button
@@ -67,12 +65,12 @@ export const Nav = () => {
                     <img
                         src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
                         alt="icon"
-                        width="30"
-                        height="30"
+                        width="40vh"
+                        height="40vh"
                     />
                 </a>
             </nav>
-            <div className="banner" style={{ marginTop: 10 }}>
+            <div className="banner" >
                 <h3 id="name">Austin Hutchen</h3>
             </div>
         </div>

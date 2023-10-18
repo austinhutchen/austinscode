@@ -44,11 +44,11 @@ export default class Display extends Component {
         desc: "I love coffee and coding!",
         url: coding
       },
-    {
+      {
         desc: "I love Mathematics!",
         url: math
       }
-,
+      ,
       {
         desc: "I love quality family time!",
         url: family
@@ -75,11 +75,11 @@ export default class Display extends Component {
     };
     return (<div>
       <h1 className="hlight" >
-      <b>
-        About me!
+        <b>
+          About me!
 
-      </b>
-            </h1>
+        </b>
+      </h1>
       <br />
       <div className="sc">
         <Slider {...settings}>

@@ -7,29 +7,29 @@ const Body = () => {
         <>
             <section>
                 <div className="lead">
-                    <ul style ={{listStyleType: "disc"}}>
+                    <ul style={{ listStyleType: "disc" }}>
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/JS)
                                 </a>
                             </li>
- <li>
+                            <li>
                                 <a href="" target="_blank"
                                     rel="noopener noreferrer">
-                                  NON-SORT SORTER (C++)
+                                    NON-SORT SORTER (C++)
                                 </a>
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     COMPLETE KERNEL SHELL (C)
                                 </a>
-                            </li>     
+                            </li>
 
- <li>
-                                <a href= "https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                            <li>
+                                <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                                     rel="noopener noreferrer">
-                                 ENCRYPTED TEXT EDITOR (C++)
+                                    ENCRYPTED TEXT EDITOR (C++)
                                 </a>
                             </li>
                             <li>
@@ -37,7 +37,7 @@ const Body = () => {
                                     GOOGLE MAPS CLONE (Flutter/C++)
                                 </a>
                             </li>
-                           <li>
+                            <li>
                                 <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
                                     CALCULATOR APP (FLUTTER/DART)
@@ -51,57 +51,57 @@ const Body = () => {
                                 </a>
                             </li>
 
-     
- 
+
+
                             <li>
                                 <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
                                     REDDIT STATISTICS ENGINE (PYTHON)
                                 </a>
                             </li>
- <li>
-                         <a href= "https://github.com/austinhutchen/Journal.NET.git" target="_blank"
+                            <li>
+                                <a href="https://github.com/austinhutchen/Journal.NET.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
-</a>
+                                </a>
 
-      </li >
+                            </li >
                             <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
                             </li>
-                           
-                     
+
+
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                                     rel="noopener noreferrer">
-                                   O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
+                                    O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
                                 </a>
                             </li>
 
                             <li>
-                                <a href= "https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
-                                  O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
+                                <a href="https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
+                                    O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
                                 </a>
-</li>
+                            </li>
 
-   <li>
+                            <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                                     2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
                             </li>
 
 
-                           
-                                       
 
-          
- <li>
+
+
+
+                            <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     MENTAL HEALTH QUOTE GENERATOR + JOURNALLING APP (REACT NATIVE/JAVA)
-      </a>
-                           </li> 
+                                </a>
+                            </li>
                         </b>
                     </ul>
                 </div>
@@ -118,17 +118,17 @@ export const Projects = () => {
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-      <div style ={{paddingBottom:8}}>
+                <div style={{ paddingBottom: 8 }}>
 
-<h1 className="hlight" >
-                    <b>PERSONAL PROJECTS:</b>
-                </h1>
+                    <h1 className="hlight" >
+                        <b>PERSONAL PROJECTS:</b>
+                    </h1>
 
-      </div>
-                
+                </div>
+
                 <CommonCarousel />
                 <Body />
-                <br/>
+                <br />
 
             </motion.div>
         </section>

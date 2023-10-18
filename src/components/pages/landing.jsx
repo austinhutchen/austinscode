@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { Nav } from "../common/navbar";
 import { Spinner } from '../common/symbols';
 import { Footer } from '../common/footer';
@@ -6,12 +6,12 @@ import React, { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
 import "../../css/TextSphere.css";
 const Head = () => {
-    return (
-        <motion.div
-        >
-            <Nav />
-        </motion.div >
-    )
+  return (
+    <motion.div
+    >
+      <Nav />
+    </motion.div >
+  )
 }
 // components
 
@@ -54,24 +54,24 @@ const TextSphere = () => {
 
   return (
     <div className="text-sphere">
-    <b>
-      <span className="tagcloud" ref={containerRef}/>
-    </b>
+      <b>
+        <span className="tagcloud" ref={containerRef} />
+      </b>
     </div>
   );
 };
 
-const Body =() =>{
+const Body = () => {
 
 
-  return(
+  return (
 
-  <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-       <Spinner />
-         <TextSphere/>
+    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <Spinner />
+      <TextSphere />
 
-                         </motion.div>
+    </motion.div>
 
 
   )
@@ -80,15 +80,15 @@ const Body =() =>{
 // landing page 
 export const Landing = () => {
 
-    return (
-        <div >
-            <Head />
-         <Body/> 
-            <section id="footer">
-                <Footer />
-            </section>
-      
-      </div>
-    )
+  return (
+    <div >
+      <Head />
+      <Body />
+      <section id="footer">
+        <Footer />
+      </section>
+
+    </div>
+  )
 }
 
