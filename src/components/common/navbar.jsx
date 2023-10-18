@@ -7,7 +7,7 @@ export const Nav = () => {
     return (
         <div>
             <nav
-                class="navbar navbar-dark bg-dark fixed"
+                class="navbar navbar-dark bg-dark navbar-fixed-top"
             >
                 <div>
                     <button
