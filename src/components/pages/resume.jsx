@@ -42,7 +42,7 @@ const Body = () => {
                 </article>
                 <h3>
                     <b>
-                        <u>Ebay Electronics Repairs + Reseller (May 2018 -  October 2023)</u>
+                        <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                     </b>
                 </h3>
 
@@ -54,6 +54,24 @@ const Body = () => {
                         <h3>
                             <a href="https://www.ebay.com/usr/gadgetsllcc">gadgetsllcc
 
+                            </a>
+                        </h3>
+
+                    </b>
+                </article>
+   <h3>
+                    <b>
+                        <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
+                    </b>
+                </h3>
+
+                <article>
+                    <b>
+                       I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and much more at my account below. </b>
+                    <b>
+                        <h3>
+                            <a href= "https://github.com/austinhutchen">
+      github
                             </a>
                         </h3>
 
