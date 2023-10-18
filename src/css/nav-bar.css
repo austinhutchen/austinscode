@@ -76,7 +76,6 @@ body:before {
 }
 
 .ribbon-highlight:before {
- content: "";
  z-index: -1;
  left: -0.5em;
  top: 0.1em;

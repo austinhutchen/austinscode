@@ -1,7 +1,7 @@
 import { Nav } from "../common/navbar"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import me from "../images/me4.jpg";
+import me from "../images/me4.JPG";
 import coding from "../images/coding.JPG";
 import family from "../images/family.jpeg";
 import nature from "../images/nature.jpg";
