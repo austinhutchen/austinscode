@@ -92,3 +92,6 @@ body:before {
 .circle-sketch-highlight {
  position: relative;
 }
+.name{
+  font-size: 20px;
+}
