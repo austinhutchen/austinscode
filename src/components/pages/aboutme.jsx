@@ -6,7 +6,8 @@ import coding from "../images/coding.JPG";
 import family from "../images/family.jpeg";
 import nature from "../images/nature.jpg";
 import mimi from "../images/mimi.jpg";
-import math from "../images/IMG_0913.JPG"
+import math from "../images/IMG_0913.JPG";
+import systems from "../images/systems.JPG";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -41,8 +42,12 @@ export default class Display extends Component {
       }
       ,
       {
-        desc: "I love coffee and coding!",
+        desc: "I love coffee and algorithms!",
         url: coding
+      },
+  {
+        desc: "I love embedded systems!",
+        url: systems
       },
       {
         desc: "I love Mathematics!",
@@ -60,7 +65,8 @@ export default class Display extends Component {
       {
         desc: "I love hiking!",
         url: nature
-      }
+      },
+    
 
     ];
     const settings = {
