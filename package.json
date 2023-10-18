@@ -43,7 +43,8 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0",
-    "react-slick": "^0.29.0"
+    "react-slick": "^0.29.0",
+    "TagCloud": "^2.4.0"
   },
   "bundleDependencies": [
     "framer-motion"
