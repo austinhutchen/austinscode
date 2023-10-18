@@ -22,7 +22,8 @@ const TextSphere = () => {
   useEffect(() => {
     const container = containerRef.current;
     const texts = [
-      "Full-Stack Software Engineer with passion for development and experience working with startups!",
+      "Full-Stack Software & Systems Engineer!",
+      "Passion for development and experience working with startups!",
       "Python",
       "React",
       "C++",
@@ -31,6 +32,7 @@ const TextSphere = () => {
       "Node.JS",
       "Algorithm Analysis",
       "AWS",
+      "X86 Assembly",
       "and more!.."
     ];
     const options = {
