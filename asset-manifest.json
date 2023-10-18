@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austinscode/static/css/main.54cac0cf.css",
-    "main.js": "/austinscode/static/js/main.25027a72.js",
+    "main.css": "/austinscode/static/css/main.b558baa2.css",
+    "main.js": "/austinscode/static/js/main.9e1b4c2e.js",
     "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
     "static/media/nature.jpg": "/austinscode/static/media/nature.3f78a443138fe24bc56a.jpg",
     "static/media/IMG_0913.JPG": "/austinscode/static/media/IMG_0913.0119d955863e062032e5.JPG",
@@ -11,17 +11,17 @@
     "static/media/me4.jpg": "/austinscode/static/media/me4.514a52db97c367c11a2f.jpg",
     "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.75a94b4e45f37950cdf6.pdf",
     "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
-    "index.html": "/austinscode/index.html",
     "static/media/slick.svg": "/austinscode/static/media/slick.2630a3e3eab21c607e21.svg",
+    "index.html": "/austinscode/index.html",
     "static/media/slick.eot": "/austinscode/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/austinscode/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
-    "main.54cac0cf.css.map": "/austinscode/static/css/main.54cac0cf.css.map",
-    "main.25027a72.js.map": "/austinscode/static/js/main.25027a72.js.map",
+    "main.b558baa2.css.map": "/austinscode/static/css/main.b558baa2.css.map",
+    "main.9e1b4c2e.js.map": "/austinscode/static/js/main.9e1b4c2e.js.map",
     "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54cac0cf.css",
-    "static/js/main.25027a72.js"
+    "static/css/main.b558baa2.css",
+    "static/js/main.9e1b4c2e.js"
   ]
 }
