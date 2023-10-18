@@ -62,7 +62,7 @@ const TextSphere = () => {
 export const Landing = () => {
     // add Player and Spinner, get css animations working
     return (
-        <div className="App">
+        <div >
             <Head />
 
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
