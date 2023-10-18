@@ -73,7 +73,9 @@ export default class Display extends Component {
       centerMode: true,
 
     };
-    return (<div>
+    return (
+
+      <div>
       <h1 className="hlight" >
         <b>
           About me!
