@@ -11,7 +11,7 @@ export const Nav = () => {
             >
                 <div>
                     <button
-                        class="btn btn-outline-success me-2"
+                        class="btn btn-outline-success"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -21,7 +21,7 @@ export const Nav = () => {
                         Home
                     </button>
                     <button
-                        class="btn btn-md btn-outline-secondary"
+                        class="btn btn-md btn-outline-primary"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -31,7 +31,7 @@ export const Nav = () => {
                         About
                     </button>
                     <button
-                        class="btn btn-md btn-outline-secondary"
+                        class="btn btn-md btn-outline-primary"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -41,7 +41,7 @@ export const Nav = () => {
                         Resume
                     </button>
                     <button
-                        class="btn btn-md btn-outline-secondary"
+                        class="btn btn-md btn-outline-primary"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -51,7 +51,7 @@ export const Nav = () => {
                         Projects
                     </button>
                     <button
-                        class="btn btn-md btn-outline-secondary"
+                        class="btn btn-md btn-outline-primary"
                         type="button"
                         id="navbar"
                         onClick={() => {
