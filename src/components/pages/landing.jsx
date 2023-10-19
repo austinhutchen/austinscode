@@ -84,7 +84,7 @@ export const Landing = () => {
       <Head />
       <Body />
       <section id="footer">
-        <Footer />
+    
       </section>
 
     </div>
