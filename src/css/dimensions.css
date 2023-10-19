@@ -9,7 +9,7 @@
     font-family: "Arial", "Helvetica", "sans-serif";
     display: inline-block;
     -webkit-transform: translate(-50%, -50%);
-
+  border-radius: 25px;
     color: #fff;
     border-bottom: 1px solid rgb(136, 136, 136);
     font-size: 14px;
@@ -29,6 +29,7 @@
 @media (min-width:481px) {
   h2 {
 
+  border-radius: 25px;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -36,6 +37,7 @@
     display: inline-block;
     -webkit-transform: translate(-50%, -50%);
 
+  border-radius: 25px;
     color: #fff;
     border-bottom: 1px solid rgb(136, 136, 136);
     font-size: 26px;
@@ -52,6 +54,7 @@
 @media (min-width:641px) {
   h2 {
 
+  border-radius: 25px;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -76,6 +79,7 @@
 @media (min-width:961px) {
   h2 {
 
+  border-radius: 25px;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -100,6 +104,7 @@
 @media (min-width:1025px) {
   h2 {
 
+  border-radius: 25px;
     position: absolute;
     top: 75%;
     left: 50%;
@@ -124,6 +129,7 @@
 @media (min-width:1281px) {
   h2 {
 
+  border-radius: 25px;
     position: absolute;
     top: 85%;
     left: 50%;
