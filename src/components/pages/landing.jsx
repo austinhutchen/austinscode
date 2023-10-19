@@ -11,7 +11,7 @@ const Head = () => {
       <Nav />
     
     <h3>     <b> Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b></h3>
-<h5> <i><b> Through building my projects, I have learned and practiced rigorously the topics in the  wordcloud. </b> </i> </h5>
+<h5 className="subtext"> <i><b> Through building my projects, I have learned and practiced rigorously the topics below. </b> </i> </h5>
     
     </div>
   )
