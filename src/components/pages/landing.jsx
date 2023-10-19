@@ -7,9 +7,10 @@ import TagCloud from "TagCloud";
 import "../../css/TextSphere.css";
 const Head = () => {
   return (
-  
+ <div> 
       <Nav />
-
+    <h1>    <b>  Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b> </h1>
+    </div>
   )
 }
 // components
@@ -21,8 +22,6 @@ const TextSphere = () => {
   useEffect(() => {
     const container = containerRef.current;
     const texts = [
-      "Full-Stack Software & Systems Engineer!",
-      "Passion for development and experience working with startups!",
       "Python",
       "React",
       "C++",
@@ -35,7 +34,7 @@ const TextSphere = () => {
       "and more!.."
     ];
     const options = {
-      radius: 300,
+      radius: 250,
       maxSpeed: "normal",
       initSpeed: "normal",
       keep: true,
@@ -83,9 +82,7 @@ export const Landing = () => {
     <div >
       <Head />
       <Body />
-      <section id="footer">
     
-      </section>
 
     </div>
   )
