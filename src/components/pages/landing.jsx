@@ -9,7 +9,10 @@ const Head = () => {
   return (
  <div> 
       <Nav />
-    <h3>    <b>  Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b> </h3>
+    
+    <h3>     <b> Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b></h3>
+<h5> <i><b> Through building my projects, I have learned and practiced rigorously the topics in the  wordcloud. </b> </i> </h5>
+    
     </div>
   )
 }
@@ -23,14 +26,21 @@ const TextSphere = () => {
     const container = containerRef.current;
     const texts = [
       "Python",
-      "React",
+      "Data Structures ",
+      "ReactJS",
       "C++",
       "Embedded Systems",
       "Rust",
+      "Dart",
+      "C#",
       "Node.JS",
       "Algorithm Analysis",
       "AWS",
       "X86 Assembly",
+      "Java",
+      "SQL",
+      "PHP",
+      "BASH",
       "and more!.."
     ];
     const options = {
