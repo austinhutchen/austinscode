@@ -2,6 +2,7 @@ import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
 import { PDFViewer } from "../common/PDFviewer";
 import pdf from "../images/resume SWE.pdf"
+import "../../css/resume.css"
 import React from 'react';
 const Body = () => {
     return (
@@ -18,7 +19,7 @@ const Body = () => {
                     </b>
                 </h3>
                 <article>
-                    <p>
+                    <p className="projdesc">
                         <b>
                             {" "}
                             Made first company sale as Marketing consultant, worked closely with
@@ -32,13 +33,15 @@ const Body = () => {
                     </b>
                 </h3>
                 <article>
-                    <b>
+                 < p className="projdesc">
+                    <b >
                         Taught CACLULUS 2 alongside faculty at CU boulder. Also held office
                         hours every week to assist learning of course material.{" "}
 
                         Recieved 97% positive feedback from 103 participants on end of
                         semester survey.
                     </b>
+                 </p>
                 </article>
                 <h3>
                     <b>
@@ -46,7 +49,7 @@ const Body = () => {
                     </b>
                 </h3>
 
-                <article>
+                <p className="projdesc">
                     <b>
                         I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 200 customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @
                     </b>
@@ -58,14 +61,14 @@ const Body = () => {
                         </h3>
 
                     </b>
-                </article>
+                </p>
    <h3>
                     <b>
                         <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
                     </b>
                 </h3>
 
-                <article>
+                <article className="projdesc">
                     <b>
                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and much more at my account below. </b>
                     <b>
