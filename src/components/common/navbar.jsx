@@ -69,7 +69,7 @@ export const Nav = () => {
                             nav('/src/components/accredations.js');
                         }}
                     >
-                        Accredations
+                        Accredidations
                     </button>
                 </div>
                 <a class="navbar-brand">
