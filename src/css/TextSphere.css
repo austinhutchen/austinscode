@@ -25,4 +25,6 @@ font-size: 4.0em;
 .tagCloud--item:hover{
   color: hotpink ;
 }
-
+.subtext{
+  color: yellow
+}
