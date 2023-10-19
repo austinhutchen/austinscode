@@ -9,7 +9,7 @@ const Head = () => {
   return (
  <div> 
       <Nav />
-    <h1>    <b>  Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b> </h1>
+    <h3>    <b>  Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b> </h3>
     </div>
   )
 }
