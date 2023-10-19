@@ -21,13 +21,33 @@
     
     font-weight: 350;
     color: white;
-    @media (min-width:320px) {
-
-  /* PHONE */
-
-    font-size: large;
-
+    font-size : larger ;
+@media only screen and (min-device-width: 480px){
+  font-size: large;
 }
+  @media only screen and (min-width : 320px) {
+font-size : Medium;        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+font-size: large;
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+font-size:large;
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+font-size: larger;
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+font-size : larger;
+    }
 
 }
 
