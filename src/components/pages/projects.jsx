@@ -7,7 +7,7 @@ const Body = () => {
         <>
             <section>
                 <div className="lead">
-                    <ul style={{ listStyleType: "disc" }}>
+                    <ul >
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
