@@ -55,7 +55,7 @@ const Body = () => {
                     </b>
                     <b>
                         <h3>
-                            <a href="https://www.ebay.com/usr/gadgetsllcc">gadgetsllcc
+                            <a href="https://www.ebay.com/usr/gadgetsllcc" className="referral">gadgetsllcc
 
                             </a>
                         </h3>
@@ -73,7 +73,7 @@ const Body = () => {
                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and much more at my account below. </b>
                     <b>
                         <h3>
-                            <a href= "https://github.com/austinhutchen">
+                            <a href= "https://github.com/austinhutchen" className="referral">
       github
                             </a>
                         </h3>
