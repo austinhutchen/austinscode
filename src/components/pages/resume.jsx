@@ -1,7 +1,7 @@
 import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
 import { PDFViewer } from "../common/PDFviewer";
-import pdf from "../images/resume SWE.pdf"
+import pdf from "./images/resume SWE.pdf"
 import "../../css/resume.css"
 import React from 'react';
 const Body = () => {

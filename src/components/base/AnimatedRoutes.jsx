@@ -5,10 +5,8 @@ import { Projects } from "../pages/projects"
 import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
 import { AnimatePresence } from "framer-motion"; 
-import _pdf from "../images/Recommendation Letter_ Austin.pdf"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import _pdf from "../pages/images/Recommendation Letter_ Austin.pdf"
+
 import React  from 'react';
 export let AnimatedRoutes = () => {
     const location = useLocation();
