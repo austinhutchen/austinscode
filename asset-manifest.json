@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/austinscode/static/css/main.2dd8b81e.css",
-    "main.js": "/austinscode/static/js/main.51f48f64.js",
+    "main.css": "/austinscode/static/css/main.1e174340.css",
+    "main.js": "/austinscode/static/js/main.104cd847.js",
     "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
     "static/media/nature.jpg": "/austinscode/static/media/nature.3f78a443138fe24bc56a.jpg",
     "static/media/IMG_0913.JPG": "/austinscode/static/media/IMG_0913.0119d955863e062032e5.JPG",
@@ -11,18 +11,20 @@
     "static/media/mimi.jpg": "/austinscode/static/media/mimi.96bbd3979b9c561ab30f.jpg",
     "static/media/me4.JPG": "/austinscode/static/media/me4.c00d91f0d7ae3b8e45a1.JPG",
     "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.75a94b4e45f37950cdf6.pdf",
+    "static/media/ghicon.png": "/austinscode/static/media/ghicon.ddaf6f0cf3380f5adc98.png",
     "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
+    "static/media/ebay.png": "/austinscode/static/media/ebay.950b0cedb41b8d7ce875.png",
     "static/media/slick.svg": "/austinscode/static/media/slick.2630a3e3eab21c607e21.svg",
     "index.html": "/austinscode/index.html",
     "static/media/slick.eot": "/austinscode/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/austinscode/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
-    "main.2dd8b81e.css.map": "/austinscode/static/css/main.2dd8b81e.css.map",
-    "main.51f48f64.js.map": "/austinscode/static/js/main.51f48f64.js.map",
+    "main.1e174340.css.map": "/austinscode/static/css/main.1e174340.css.map",
+    "main.104cd847.js.map": "/austinscode/static/js/main.104cd847.js.map",
     "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dd8b81e.css",
-    "static/js/main.51f48f64.js"
+    "static/css/main.1e174340.css",
+    "static/js/main.104cd847.js"
   ]
 }
