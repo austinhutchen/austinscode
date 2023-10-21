@@ -55,8 +55,8 @@ const Body = () => {
                     </b>
                     <b>
                         <h3>
-                            <a href="https://www.ebay.com/usr/gadgetsllcc" className="referral">gadgetsllcc
-
+                            <a href="https://www.ebay.com/usr/gadgetsllcc" className="referral">
+<b> My Electronics Marketplace </b>
                             </a>
                         </h3>
 
@@ -74,7 +74,7 @@ const Body = () => {
                     <b>
                         <h3>
                             <a href= "https://github.com/austinhutchen" className="referral">
-      github
+      <b> My Github Profile </b>
                             </a>
                         </h3>
 
@@ -89,7 +89,7 @@ const Body = () => {
             <hr className="break" />
             <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank"
                 rel="noreferrer">
-                <b>TWITTER</b>
+                <b>TWITTER COMPILER OPTIMIZATIONS</b>
             </a>
             <hr />
             <div>
