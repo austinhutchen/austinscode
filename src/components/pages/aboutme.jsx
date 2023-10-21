@@ -82,6 +82,7 @@ export default class Display extends Component {
     return (
 
       <div>
+
       <h1 className="hlight" >
         <b>
           About me!
