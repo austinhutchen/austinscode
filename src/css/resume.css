@@ -4,4 +4,8 @@ color: beige
  .referral{
    color:hotpink
  }
-
+.icon{
+padding-top:10px;
+height : 5vh;
+width : auto;
+}
