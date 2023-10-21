@@ -2,6 +2,8 @@ import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
 import { PDFViewer } from "../common/PDFviewer";
 import pdf from "./images/resume SWE.pdf"
+import ghicon from "./images/ghicon.png"
+import ebayicon from "./images/ebay.png"
 import "../../css/resume.css"
 import React from 'react';
 const Body = () => {
@@ -56,7 +58,7 @@ const Body = () => {
                     <b>
                         <h3>
                             <a href="https://www.ebay.com/usr/gadgetsllcc" className="referral">
-<b> My Electronics Marketplace </b>
+<img src ={ebayicon} className= "icon"/>
                             </a>
                         </h3>
 
@@ -73,8 +75,9 @@ const Body = () => {
                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and much more at my account below. </b>
                     <b>
                         <h3>
-                            <a href= "https://github.com/austinhutchen" className="referral">
-      <b> My Github Profile </b>
+                            <a href= "https://github.com/austinhutchen"  target="_blank"
+                rel="noreferrer">
+     <img src={ghicon} className="icon" /> 
                             </a>
                         </h3>
 
