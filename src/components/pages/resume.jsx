@@ -57,7 +57,8 @@ const Body = () => {
                     </b>
                     <b>
                         <h3>
-                            <a href="https://www.ebay.com/usr/gadgetsllcc" className="referral">
+                            <a href="https://www.ebay.com/usr/gadgetsllcc"  target="_blank"
+                rel="noreferrer" className="referral">
 <img src ={ebayicon} className= "icon"/>
                             </a>
                         </h3>
