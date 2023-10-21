@@ -53,7 +53,7 @@ const Body = () => {
 
                 <p className="projdesc">
                     <b>
-                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 200 customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @
+                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @
                     </b>
                     <b>
                         <h3>
