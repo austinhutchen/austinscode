@@ -53,7 +53,7 @@ const Body = () => {
 
                 <p className="projdesc">
                     <b>
-                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account @
+                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account by <b> <i> <u> clicking the image below: </u></i></b>
                     </b>
                     <b>
                         <h3>
@@ -73,7 +73,7 @@ const Body = () => {
 
                 <article className="projdesc">
                     <b>
-                       I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and much more at my account below. </b>
+                       I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and<i><u> much more below.</u></i> </b>
                     <b>
                         <h3>
                             <a href= "https://github.com/austinhutchen"  target="_blank"
