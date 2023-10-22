@@ -26,8 +26,8 @@ const TextSphere = () => {
     const container = containerRef.current;
     const texts = [
       "Python",
-      "Data Structures ",
-      "ReactJS",
+      "Data Structures / Leetcode ",
+      "React.JS",
       "C++",
       "Embedded Systems",
       "Rust",
@@ -40,6 +40,8 @@ const TextSphere = () => {
       "Java",
       "SQL",
       "PHP",
+      "GraphQL",
+      "React Native",
       "BASH",
       "and more!.."
     ];
