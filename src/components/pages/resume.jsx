@@ -88,14 +88,29 @@ const Body = () => {
             </body>
             <br />
             <h1 className="hlight">
-                <b><i> OPEN SOURCE CONTRIBUTIONS</i></b>
+                <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
             </h1>
             <hr className="break" />
-            <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 25 }} target="_blank"
+           
+
+      <ul>
+<li>
+ <a href="https://leetcode.com/austinhutchen/" style={{ margin: 15 }} target="_blank"
+                rel="noreferrer">
+                <b>MY LEETCODE </b>
+            </a>
+
+      </li>
+      <li>
+ <a href="https://github.com/twitter/the-algorithm/issues/162" style={{ margin: 15 }} target="_blank"
                 rel="noreferrer">
                 <b>TWITTER COMPILER OPTIMIZATIONS</b>
             </a>
-            <hr />
+
+</li>
+      </ul>
+                       <hr />
+
             <div>
                 <h1 className="hlight">
                     <b><i> FULL RESUME</i></b>
