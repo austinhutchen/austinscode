@@ -13,3 +13,6 @@
 h5{
 
 }
+img{
+  loading: "lazy"
+}
