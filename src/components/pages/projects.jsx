@@ -68,17 +68,7 @@ const Body = () => {
       <h5>A machine learning model implemented on an arduino nano that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h5> 
     
                             </li>
-   <li>
-                                <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    ENCRYPTED TEXT EDITOR (C++)
-                                </a>
-  <br/>
-       <img src = {encryptc} height ="140vh" width ="auto"/> 
 
-      <h5> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also encrypt text and other formats in the future. Coded fully in c.</h5> 
-    
-                            </li>
    <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                    ARDUINO BYTE ANIMATIONS (FOR FUN, C) 
