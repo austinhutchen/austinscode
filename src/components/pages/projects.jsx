@@ -60,7 +60,7 @@ const Body = () => {
 
    <h5> A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h5> 
           </li>
-  <br/>
+
    <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                    ARDUINO BYTE ANIMATIONS (FOR FUN, C) 
