@@ -58,7 +58,7 @@ const Body = () => {
    <h5> A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h5> 
           </li>
    <li>
-                                <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                                <a href="https://github.com/austinhutchen/gestureAI.git target="_blank"
                                     rel="noopener noreferrer">
                                     EMBEDDED GESTURE SENSOR (C++/MACHINE LEARNING)
                                 </a>
