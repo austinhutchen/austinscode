@@ -19,13 +19,13 @@ const Body = () => {
         <>
             <section>
                 <div className="lead">
-                    <ul >
+                    <ul className="projectdesc">
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/JS)
                                 </a>
-      <h5> Click the title text for a link to the source code. </h5>
+      <h5 > Click the title text for a link to the source code. </h5>
                                                        </li>
 
                             <li>
@@ -35,7 +35,7 @@ const Body = () => {
       <br/>
    <img src = {shell} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h5> 
+   <h5 > A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h5> 
                             </li>
 
 
@@ -47,7 +47,7 @@ const Body = () => {
   <br/>
        <img src = {encryptc} height ="140vh" width ="auto"/> 
 
-      <h5> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also encrypt text and other formats in the future. Coded fully in c.</h5> 
+      <h5> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h5> 
      </li>
                            
                             <li>
@@ -57,7 +57,7 @@ const Body = () => {
       <br/>
  <img src = {maps} height ="140vh" width ="auto"/> 
 
-   <h5> A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h5> 
+   <h5 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h5> 
           </li>
    <li>
                                 <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
@@ -67,7 +67,7 @@ const Body = () => {
   <br/>
        <img src = {gesture} height ="140vh" width ="auto"/> 
 
-      <h5>A machine learning model implemented on an arduino nano that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h5> 
+      <h5>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h5> 
     
                             </li>
 
@@ -89,7 +89,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bitwise square root formulas that performed faster calculations. Written in C and programmed for IOS.</h5> 
+   <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h5> 
 
                             </li>
 
@@ -125,7 +125,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A website I build using C#, which used local storage to store journal entries and data under a user's login information, and prompts the user with new quotes every day. </h5> 
+   <h5> A website I built using C#, which used local storage to store journal entries and data under a user's login information, and prompts the user with new quotes every day. </h5> 
 
                             </li >
    <li>
