@@ -10,6 +10,7 @@ import React from 'react';
 import shell from './images/shell.PNG'
 import encryptc from './images/encryptc.JPG'
 import maps from './images/maps.jpg'
+import butterfly from './images/animate.MOV'
 const Body = () => {
     return (
         <>
@@ -32,6 +33,15 @@ const Body = () => {
    <img src = {shell} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h5> 
+                            </li>
+   <li>
+                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                   ARDUINO BYTE ANIMATIONS (FOR FUN, C) 
+                                </a>
+      <br/>
+   <img src = {butterfly} height ="140vh" width ="auto"/> 
+
+   <h5> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h5> 
                             </li>
 
                             <li>
