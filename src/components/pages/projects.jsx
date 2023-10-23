@@ -9,7 +9,7 @@ import "../../css/fonts.css";
 import React from 'react';
 import shell from './images/shell.PNG'
 import encryptc from './images/encryptc.JPG'
-
+import maps from './images/maps.jpg'
 const Body = () => {
     return (
         <>
@@ -54,9 +54,9 @@ const Body = () => {
                                     GOOGLE MAPS CLONE (Flutter/C++)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {maps} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h5> 
 
                             </li>
                             <li>
@@ -65,9 +65,9 @@ const Body = () => {
                                     CALCULATOR APP (FLUTTER/DART)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bitwise square root formulas that performed faster calculations. Written in C and programmed for IOS.</h5> 
 
                             </li>
 
@@ -77,7 +77,7 @@ const Body = () => {
                                     BREADBOARD MACRO PAD (ARDUINO)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -90,7 +90,7 @@ const Body = () => {
                                     REDDIT STATISTICS ENGINE (PYTHON)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -101,7 +101,7 @@ const Body = () => {
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -112,7 +112,7 @@ const Body = () => {
                                    ZELDA CLI CLONE (C) 
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -123,7 +123,7 @@ const Body = () => {
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -136,7 +136,7 @@ const Body = () => {
                                     O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -147,7 +147,7 @@ const Body = () => {
                                     O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
@@ -158,7 +158,7 @@ const Body = () => {
                                     2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
   <br/>
-  <img src = {shell} height ="140vh" width ="auto"/> 
+  <img src = {""} height ="140vh" width ="auto"/> 
 
    <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
