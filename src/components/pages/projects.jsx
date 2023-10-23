@@ -79,7 +79,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5></h5> 
 
                             </li>
 
@@ -92,7 +92,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
 
                             </li>
                             <li>
@@ -103,7 +103,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> A website I build using C#, which used local storage to store journal entries and data under a user's login information, and prompts the user with new quotes every day. </h5> 
 
                             </li >
    <li>
@@ -114,7 +114,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5>One of my first projects. Utilized fundamentals of OOP like inheritance and encapsulation. Written fully to run in the terminal in c. </h5> 
 
                             </li>
                             <li>
@@ -125,7 +125,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5></h5> 
 
                             </li>
 
@@ -133,12 +133,12 @@ const Body = () => {
                             <li>
                                 <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
+                                    O(N*LOG(N)) ALL PAIR SHORTEST PATH ALGORITHM (C++)
                                 </a>
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> </h5> 
 
                             </li>
 
@@ -149,7 +149,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> </h5> 
 
                             </li>
 
@@ -160,7 +160,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5></h5> 
 
                             </li>
 
