@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import { Nav } from "../common/navbar";
 import { CommonCarousel } from '../common/carousel';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../css/dimensions.css";
+import "../../css/fonts.css";
 import React from 'react';
+import shell from './images/shell.PNG'
+
+
 const Body = () => {
     return (
         <>
@@ -13,7 +21,7 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/JS)
                                 </a>
-                            </li>
+                                                       </li>
                             <li>
                                 <a href="" target="_blank"
                                     rel="noopener noreferrer">
@@ -22,8 +30,12 @@ const Body = () => {
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                                    COMPLETE KERNEL SHELL (C)
+                                    UNIX KERNEL SHELL (C)
                                 </a>
+      <br/>
+   <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
                             </li>
 
                             <li>
@@ -31,17 +43,32 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     ENCRYPTED TEXT EDITOR (C++)
                                 </a>
+  <br/>
+       <img src = {shell} height ="140vh" width ="auto"/> 
+
+      <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+    
                             </li>
                             <li>
                                 <a href="" target="_blank" rel="noopener noreferrer">
                                     GOOGLE MAPS CLONE (Flutter/C++)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
                                     CALCULATOR APP (FLUTTER/DART)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
                             <li>
@@ -49,6 +76,11 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     BREADBOARD MACRO PAD (ARDUINO)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
 
@@ -57,19 +89,44 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
                                     REDDIT STATISTICS ENGINE (PYTHON)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/Journal.NET.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL DAILY JOURNAL WEBSITE (C#)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
 
                             </li >
+   <li>
+                                <a href="https://github.com/austinhutchen/journey.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                   ZELDA CLI CLONE (C) 
+                                </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
+                            </li>
                             <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
 
@@ -78,18 +135,33 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     O(N*LOG(N)) SHORTEST DISTANCE ALGORITHM (C++)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
                             <li>
                                 <a href="https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
                                     O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
                             <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                                     2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
+  <br/>
+  <img src = {shell} height ="140vh" width ="auto"/> 
+
+   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+
                             </li>
 
 
