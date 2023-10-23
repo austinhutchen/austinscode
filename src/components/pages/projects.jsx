@@ -13,6 +13,7 @@ import maps from './images/maps.jpg'
 import butterfly from './images/animate.mov'
 import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
+
 const Body = () => {
     return (
         <>
