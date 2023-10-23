@@ -8,7 +8,7 @@ import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import React from 'react';
 import shell from './images/shell.PNG'
-
+import encryptc from './images/encryptc.JPG'
 
 const Body = () => {
     return (
@@ -35,7 +35,7 @@ const Body = () => {
       <br/>
    <img src = {shell} height ="140vh" width ="auto"/> 
 
-   <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+   <h5> A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h5> 
                             </li>
 
                             <li>
@@ -44,9 +44,9 @@ const Body = () => {
                                     ENCRYPTED TEXT EDITOR (C++)
                                 </a>
   <br/>
-       <img src = {shell} height ="140vh" width ="auto"/> 
+       <img src = {encryptc} height ="140vh" width ="auto"/> 
 
-      <h5> A shell is the user's primary interface into a UNIX operating system. Coding this provided me with a wealth of systems and UNIX knowledge. </h5> 
+      <h5> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also encrypt text and other formats in the future. Coded fully in c.</h5> 
     
                             </li>
                             <li>
