@@ -21,13 +21,9 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/JS)
                                 </a>
+      <h5> Click the title text for a link to the source code. </h5>
                                                        </li>
-                            <li>
-                                <a href="" target="_blank"
-                                    rel="noopener noreferrer">
-                                    NON-SORT SORTER (C++)
-                                </a>
-                            </li>
+
                             <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                     UNIX KERNEL SHELL (C)
