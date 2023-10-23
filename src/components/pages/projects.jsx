@@ -181,7 +181,7 @@ const Body = () => {
   <br/>
   <img src = {graph} height ="140vh" width ="auto"/> 
 
-   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of a defined function.  Coded for integration with the calculator app. </h5> 
+   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
 
                             </li>
 
