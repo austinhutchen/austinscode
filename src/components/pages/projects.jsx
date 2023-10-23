@@ -12,6 +12,7 @@ import encryptc from './images/encryptc.JPG'
 import maps from './images/maps.jpg'
 import butterfly from './images/animate.mov'
 import gesture from './images/gesture.mov'
+import graph from './images/graph.mov'
 const Body = () => {
     return (
         <>
@@ -175,12 +176,12 @@ const Body = () => {
 
                             <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2 DIMENSIONAL GRAPHING CALCULATOR (JAVASCRIPT)
+                                    2-D GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
   <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
+  <img src = {graph} height ="140vh" width ="auto"/> 
 
-   <h5></h5> 
+   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of a defined function.  Coded for integration with the calculator app. </h5> 
 
                             </li>
 
