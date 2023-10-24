@@ -144,13 +144,14 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
-      <li/>
-  <br/>
+
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5></h5> 
+   <h5>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h5> 
 
-                            </li>
+       </li>  <br/>
+
+                         
 
 
                             <li>
@@ -161,7 +162,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> </h5> 
+   <h5>Floyd-Warshall All-Pairs-Shortest-Paths algorithm, which determines the distance between any given pair of vertices in a supplied .txt file with N coordinates in N*log(n) time, using a dynamic programming memoization/tabulation technique. </h5> 
 
                             </li>
 
@@ -172,7 +173,7 @@ const Body = () => {
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> </h5> 
+   <h5> A comprehensive university search engine backend, much like CU's own class search. This project involved the use of various hard-coded data structures,  implementing a BST class with functions for adding professor nodes, and a hash table with class numbers and information (stored in the forms of linked lists). The algorithm allowed for efficient searching, dropping, and listing of information related to any given course, supplied through a .txt file for the parser to read.</h5> 
 
                             </li>
 
@@ -196,6 +197,8 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     MENTAL HEALTH QUOTE GENERATOR + JOURNALLING APP (REACT NATIVE/JAVA)
                                 </a>
+  <img src = {""} height ="140vh" width ="auto"/> 
+      <h5> An app I made for personal use, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
                             </li>
                         </b>
                     </ul>
