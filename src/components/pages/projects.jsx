@@ -151,7 +151,25 @@ const Body = () => {
 
        </li>  <br/>
 
+                            <li>
+                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                    MENTAL HEALTH CARE + JOURNALLING APP (REACT NATIVE/JAVA)
+                                </a>
+  <img src = {""} height ="140vh" width ="auto"/> 
+      <h5> An app I made for personal use, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
+                            </li>
                          
+<br/>
+    <li>
+                                <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
+                                    2-D GRAPHING CALCULATOR (JAVASCRIPT)
+                                </a>
+  <br/>
+  <img src = {graph} height ="140vh" width ="auto"/> 
+
+   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
+
+                            </li>
 
 
                             <li>
@@ -177,29 +195,12 @@ const Body = () => {
 
                             </li>
 
-                            <li>
-                                <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2-D GRAPHING CALCULATOR (JAVASCRIPT)
-                                </a>
-  <br/>
-  <img src = {graph} height ="140vh" width ="auto"/> 
-
-   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
-
-                            </li>
+                        
 
 
 
 
 
-
-                            <li>
-                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    MENTAL HEALTH QUOTE GENERATOR + JOURNALLING APP (REACT NATIVE/JAVA)
-                                </a>
-  <img src = {""} height ="140vh" width ="auto"/> 
-      <h5> An app I made for personal use, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
-                            </li>
                         </b>
                     </ul>
                 </div>
