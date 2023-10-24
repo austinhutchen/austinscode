@@ -37,7 +37,7 @@ const Body = () => {
                 <article>
                  < p className="projdesc">
                     <b >
-                        Taught CACLULUS 2 alongside faculty at CU boulder. Also held office
+                        Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
                         hours every week to assist learning of course material.{" "}
 
                         Recieved 97% positive feedback from 103 participants on end of
