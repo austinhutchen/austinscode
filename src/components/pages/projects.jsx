@@ -144,6 +144,7 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
                                 </a>
+      <li/>
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
 

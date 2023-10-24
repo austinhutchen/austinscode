@@ -162,6 +162,10 @@
   /* it centers any block level element */
 }
 
+html.has-scroll-smooth {
+	backface-visibility: hidden;
+	transform: translateZ(0);
+}
 
 .slick-slide {
   /* ... */
