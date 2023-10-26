@@ -13,7 +13,7 @@ import maps from './images/maps.jpg'
 import butterfly from './images/animate.mov'
 import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
-
+import calculator from './images/calculator.PNG'
 const Body = () => {
     return (
         <>
@@ -87,7 +87,7 @@ const Body = () => {
                                     CALCULATOR APP (FLUTTER/DART)
                                 </a>
   <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
+  <img src = {calculator} height ="140vh" width ="auto"/> 
 
    <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h5> 
 
