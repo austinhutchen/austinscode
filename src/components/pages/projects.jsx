@@ -14,6 +14,7 @@ import butterfly from './images/animate.mov'
 import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
 import calculator from './images/calculator.PNG'
+import '../../css/projects.css'
 const Body = () => {
     return (
         <>
@@ -116,18 +117,7 @@ const Body = () => {
 
    <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
 
-                            </li>
-                            <li>
-                                <a href="https://github.com/austinhutchen/Journal.NET.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    STATEFUL DAILY JOURNAL WEBSITE (C#)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5> A website I built using C#, which used local storage to store journal entries and data under a user's login information, and prompts the user with new quotes every day. </h5> 
-
-                            </li >
+                            </li> 
                              <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
