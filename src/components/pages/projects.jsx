@@ -128,18 +128,7 @@ const Body = () => {
    <h5> A website I built using C#, which used local storage to store journal entries and data under a user's login information, and prompts the user with new quotes every day. </h5> 
 
                             </li >
-   <li>
-                                <a href="https://github.com/austinhutchen/journey.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                   ZELDA CLI CLONE (C) 
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5>One of my first projects. Utilized fundamentals of OOP like inheritance and encapsulation. Written fully to run in the terminal in c. </h5> 
-
-                            </li>
-                            <li>
+                             <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     STATEFUL WEATHER APP (REACT NATIVE)
@@ -153,7 +142,7 @@ const Body = () => {
 
                             <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    MENTAL HEALTH CARE + JOURNALLING APP (REACT NATIVE/JAVA)
+                                    MINDFUL JOURNALLING APP (REACT NATIVE/JAVA)
                                 </a>
   <img src = {""} height ="140vh" width ="auto"/> 
       <h5> An app I made for personal use, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
@@ -162,7 +151,7 @@ const Body = () => {
 <br/>
     <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2-D GRAPHING CALCULATOR (JAVASCRIPT)
+                                    2D GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
   <br/>
   <img src = {graph} height ="140vh" width ="auto"/> 
@@ -171,18 +160,6 @@ const Body = () => {
 
                             </li>
 
-
-                            <li>
-                                <a href="https://github.com/austinhutchen/euclidshortest-c.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    O(N*LOG(N)) ALL PAIR SHORTEST PATH ALGORITHM (C++)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5>Floyd-Warshall All-Pairs-Shortest-Paths algorithm, which determines the distance between any given pair of vertices in a supplied .txt file with N coordinates in N*log(n) time, using a dynamic programming memoization/tabulation technique. </h5> 
-
-                            </li>
 
                             <li>
                                 <a href="https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
