@@ -94,19 +94,7 @@ const Body = () => {
 
                             </li>
 
-                            <li>
-                                <a href="https://github.com/austinhutchen/brdboard-companion.git" target="_blank"
-                                    rel="noopener noreferrer">
-                                    BREADBOARD MACRO PAD (ARDUINO)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5></h5> 
-
-                            </li>
-
-
+                        
 
                             <li>
                                 <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
