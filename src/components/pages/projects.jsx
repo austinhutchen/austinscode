@@ -15,6 +15,7 @@ import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
 import calculator from './images/calculator.PNG'
 import my_interface from './images/interface.JPG'
+import notable from './images/journalapp.jpg'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -133,7 +134,8 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     MINDFUL JOURNALLING APP (REACT NATIVE/JAVA)
                                 </a>
-  <img src = {""} height ="140vh" width ="auto"/> 
+      <br/>
+  <img src = {notable} height ="140vh" width ="auto"/> 
       <h5> An app I made for personal use, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
                             </li>
                          
