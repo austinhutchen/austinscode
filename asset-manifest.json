@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/austinscode/static/css/main.9d346d19.css",
-    "main.js": "/austinscode/static/js/main.d298907c.js",
+    "main.js": "/austinscode/static/js/main.6ad3a37c.js",
     "static/js/787.035aefef.chunk.js": "/austinscode/static/js/787.035aefef.chunk.js",
     "static/media/graph.mov": "/austinscode/static/media/graph.9af073184de5dd5811cc.mov",
     "static/media/gesture.mov": "/austinscode/static/media/gesture.801325423ef0750a96d3.mov",
@@ -19,9 +19,12 @@
     "static/media/calculator.PNG": "/austinscode/static/media/calculator.1667105695e770a4cb1e.PNG",
     "static/media/maps.jpg": "/austinscode/static/media/maps.510a73b1fc62d09b4c9a.jpg",
     "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.75a94b4e45f37950cdf6.pdf",
+    "static/media/stat1.png": "/austinscode/static/media/stat1.e4e36549ca584a759b65.png",
+    "static/media/stat2.png": "/austinscode/static/media/stat2.27bb3852f829ea9c1767.png",
     "static/media/ghicon.png": "/austinscode/static/media/ghicon.ddaf6f0cf3380f5adc98.png",
     "static/media/shell.PNG": "/austinscode/static/media/shell.3fb6a9219c92a029a569.PNG",
     "static/media/Recommendation Letter_ Austin.pdf": "/austinscode/static/media/Recommendation Letter_ Austin.324f17cb9ff6b8c0eca2.pdf",
+    "static/media/inclusion.png": "/austinscode/static/media/inclusion.4f861e76b0c9254c6f49.png",
     "static/media/ebay.png": "/austinscode/static/media/ebay.950b0cedb41b8d7ce875.png",
     "index.html": "/austinscode/index.html",
     "static/media/slick.svg": "/austinscode/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -29,11 +32,11 @@
     "static/media/slick.ttf": "/austinscode/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "main.9d346d19.css.map": "/austinscode/static/css/main.9d346d19.css.map",
-    "main.d298907c.js.map": "/austinscode/static/js/main.d298907c.js.map",
+    "main.6ad3a37c.js.map": "/austinscode/static/js/main.6ad3a37c.js.map",
     "787.035aefef.chunk.js.map": "/austinscode/static/js/787.035aefef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d346d19.css",
-    "static/js/main.d298907c.js"
+    "static/js/main.6ad3a37c.js"
   ]
 }
