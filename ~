@@ -118,14 +118,16 @@ const Body = () => {
    <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
 
                             </li> 
-     <li>
+
+                            <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    ZEN JOURNALLING APP (REACT NATIVE/JAVA)
+                                    MINDFUL JOURNALLING APP (REACT NATIVE/JAVA)
                                 </a>
       <br/>
   <img src = {notable} height ="140vh" width ="auto"/> 
       <h5> An app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h5>
                             </li>
+
                              <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
@@ -137,8 +139,6 @@ const Body = () => {
    <h5>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h5> 
 
        </li>  <br/>
-
-                       
                          
 <br/>
     <li>
