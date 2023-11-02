@@ -74,7 +74,7 @@ const Body = () => {
                             </li>
    <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                                    4x4 INTERRUPT DISPLAY UART INTERFACE (C)
+                                    4x4 INTERRUPT UART INTERFACE (C)
                                 </a>
       <br/>
    <img src = {my_interface} height ="140vh" width ="auto"/> 
