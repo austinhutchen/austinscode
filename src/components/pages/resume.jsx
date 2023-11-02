@@ -14,22 +14,7 @@ const Body = () => {
                 <h1 className="hlight">
                     <b><i> DIRECT WORK EXPERIENCE</i></b>
                 </h1>
-
-                <h3>
-                    <b>
-                        <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
-                    </b>
-                </h3>
-                <article>
-                    <p className="projdesc">
-                        <b>
-                            {" "}
-                            Made first company sale as Marketing consultant, worked closely with
-                            the software engineering team to achieve forecasted results.{" "}
-                        </b>
-                    </p>
-                </article>
-                <h3>
+  <h3>
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                     </b>
@@ -45,7 +30,22 @@ const Body = () => {
                     </b>
                  </p>
                 </article>
+
                 <h3>
+                    <b>
+                        <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
+                    </b>
+                </h3>
+                <article>
+                    <p className="projdesc">
+                        <b>
+                            {" "}
+                            Made first company sale as Marketing consultant, worked closely with
+                            the software engineering team to achieve forecasted results.{" "}
+                        </b>
+                    </p>
+                </article>
+                              <h3>
                     <b>
                         <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                     </b>

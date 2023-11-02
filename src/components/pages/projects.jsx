@@ -14,6 +14,7 @@ import butterfly from './images/animate.mov'
 import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
 import calculator from './images/calculator.PNG'
+import my_interface from './images/interface.JPG'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -71,6 +72,16 @@ const Body = () => {
       <h5>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h5> 
     
                             </li>
+   <li>
+                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                    4x4 INTERRUPT DISPLAY UART INTERFACE (C)
+                                </a>
+      <br/>
+   <img src = {my_interface} height ="140vh" width ="auto"/> 
+
+   <h5 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h5> 
+                            </li>
+
 
    <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
