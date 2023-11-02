@@ -129,7 +129,7 @@ const Body = () => {
                              <li>
                                 <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    STATEFUL WEATHER APP (REACT NATIVE)
+                                    WEATHER APP (REACT NATIVE)
                                 </a>
 
   <img src = {""} height ="140vh" width ="auto"/> 
