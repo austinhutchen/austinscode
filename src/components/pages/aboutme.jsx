@@ -2,12 +2,12 @@ import { Nav } from "../common/navbar"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
 import me from "./images/me4.JPG";
-import coding from "./images/coding.JPG";
+import coding from "./images/coding.webp";
 import family from './images/family.webp';
-import nature from "./images/nature.jpg";
+import nature from "./images/nature.webp";
 import mimi from "./images/mimi.jpg";
-import math from "./images/IMG_0913.JPG";
-import systems from "./images/systems.JPG";
+import math from "./images/IMG_0913.webp";
+import systems from "./images/systems.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
