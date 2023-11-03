@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { motion } from "framer-motion";
 import me from "./images/me4.JPG";
 import coding from "./images/coding.JPG";
-import family from "./images/family.jpeg";
+import family from './images/family.webp';
 import nature from "./images/nature.jpg";
 import mimi from "./images/mimi.jpg";
 import math from "./images/IMG_0913.JPG";
