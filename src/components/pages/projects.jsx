@@ -153,16 +153,7 @@ const Body = () => {
                             </li>
 
 
-                            <li>
-                                <a href="https://github.com/austinhutchen/AuxillarySearch.git" target="_blank" rel="noopener noreferrer">
-                                    O(N*LOG(N)) UNIVERSITY SEARCH PROBE SYSTEM  (C++)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5> A comprehensive university search engine backend, much like CU's own class search. This project involved the use of various hard-coded data structures,  implementing a BST class with functions for adding professor nodes, and a hash table with class numbers and information (stored in the forms of linked lists). The algorithm allowed for efficient searching, dropping, and listing of information related to any given course, supplied through a .txt file for the parser to read.</h5> 
-
-                            </li>
+                  
 
                         
 

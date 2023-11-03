@@ -45,11 +45,12 @@
     ]
   },
   "devDependencies": {
-    "TagCloud": "^2.4.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0",
     "react-pdf": "^7.5.1",
     "react-slick": "^0.29.0",
-    "sizeme": "^1.0.2"
+    "sizeme": "^1.0.2",
+    "TagCloud": "^2.4.0"
   },
   "bundleDependencies": [
     "framer-motion"

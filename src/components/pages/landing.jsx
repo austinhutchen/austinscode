@@ -37,14 +37,12 @@ const TextSphere = () => {
       "Algorithm Analysis",
       "Dynamic Programming",
       "C#",
-      "AWS",
       "X86 Assembly",
       "Java",
       "SQL",
       "PHP",
       "GraphQL",
       "React Native",
-      "BASH",
       "and more!.."
     ];
     const options = {
