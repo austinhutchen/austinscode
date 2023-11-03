@@ -8,15 +8,15 @@ import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import React from 'react';
 import shell from './images/shell.PNG'
-import encryptc from './images/encryptc.JPG'
+import encryptc from './images/encryptc.webp'
 import maps from './images/maps.jpg'
-import butterfly from './images/animate.MOV'
-import gesture from './images/gesture.mov'
+import butterfly from './images/animate.mp4'
+import gesture from './images/gesture.mp4'
 import family from './images/family.webp'
-import graph from './images/graph.mov'
+import graph from './images/graph.mp4'
 import calculator from './images/calculator.PNG'
-import my_interface from './images/interface.JPG'
-import notable from './images/journalapp.jpg'
+import my_interface from './images/interface.webp'
+import notable from './images/journalapp.webp'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -119,6 +119,8 @@ const Body = () => {
    <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
 
                             </li> 
+
+                         
      <li>
                                 <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     ZEN JOURNALLING APP (REACT NATIVE/JAVA)
