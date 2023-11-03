@@ -10,7 +10,7 @@ import React from 'react';
 import shell from './images/shell.PNG'
 import encryptc from './images/encryptc.JPG'
 import maps from './images/maps.jpg'
-import butterfly from './images/animate.mov'
+import butterfly from './images/animate.MOV'
 import gesture from './images/gesture.mov'
 import graph from './images/graph.mov'
 import calculator from './images/calculator.PNG'
