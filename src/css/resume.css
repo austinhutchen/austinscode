@@ -9,3 +9,7 @@ padding-top:10px;
 height : 5vh;
 width : auto;
 }
+.styledimg{
+   height: calc(90vh - 100px);    
+}
+
