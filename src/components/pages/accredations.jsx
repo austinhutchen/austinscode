@@ -25,11 +25,12 @@ export const View= () => {
 <section>
    <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>
-
       <br/>
-      <img src= {stat1} />
-      <img src= {stat2} />
-      <img src= {inclusion} />
+      <div>
+      <img src= {stat1} className="format-img" />
+      <img src= {stat2} className="format-img" />
+      <img src= {inclusion} className="format-img" />
+      </div>
       </section>
    </motion.div>
 
