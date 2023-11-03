@@ -15,8 +15,19 @@ import "../../css/dimensions.css";
 import "../../css/fonts.css";
 export const Aboutme = () => {
   return (
-    <div>
+   <div> 
       <Nav />
+     <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+            exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+   <h1 className="hlight" >
+        <b>
+          About me!
+
+        </b>
+      </h1>
+    </motion.div>
+      <br />
+
       <Display />
     </div>
   )
@@ -83,13 +94,7 @@ export default class Display extends Component {
 
       <div>
 
-      <h1 className="hlight" >
-        <b>
-          About me!
-
-        </b>
-      </h1>
-      <br />
+   
       <div className="sc">
         <Slider {...settings}>
           {keys.map(data => {
@@ -104,7 +109,7 @@ export default class Display extends Component {
           })}
         </Slider>
       </div>
-    </div>
+</div>
     );
   }
 }
