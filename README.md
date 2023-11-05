@@ -1,4 +1,4 @@
-<h2>My personal website, documenting all of my programming-related achievements!</h2>
+<h2>My personal website, documenting my programming-related achievements!</h2>
   <br>
 ORIGINAL AUTHOR: <u><b>Austin Hutchen </b></u> 
 <br>
