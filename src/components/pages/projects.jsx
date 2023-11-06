@@ -18,7 +18,7 @@ import calculator from './images/calculator.PNG'
 import my_interface from './images/interface.webp'
 import notable from './images/journalapp.webp'
 import PLANT_WATERER from './images/PLANT_WATERER.jpg'
-import weather from './images/WEATHER.JPG'
+import weather from './images/WEATHER.jpg'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -122,7 +122,7 @@ const Body = () => {
 
                             <li>
                                 <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
-                                    REDDIT STATISTICS ENGINE (PYTHON)
+                                    REDDIT STATISTICS CLI (PYTHON)
                                 </a>
   <br/>
   <img src = {""} height ="140vh" width ="auto"/> 
