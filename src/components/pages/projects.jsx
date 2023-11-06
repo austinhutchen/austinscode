@@ -18,6 +18,7 @@ import calculator from './images/calculator.PNG'
 import my_interface from './images/interface.webp'
 import notable from './images/journalapp.webp'
 import PLANT_WATERER from './images/PLANT_WATERER.jpg'
+import weather from './images/WEATHER.JPG'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -28,7 +29,7 @@ const Body = () => {
                         <b>
                             <li>
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
-                                    THIS WEBSITE (REACT/JS)
+                                    THIS WEBSITE (REACT/HTML/CSS)
                                 </a>
       <h5 > Click the title text for a link to the source code. </h5>
                                                        </li>
@@ -65,8 +66,20 @@ const Body = () => {
 
       
                             <li>
+                                <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    CALCULATOR APP (FLUTTER/C)
+                                </a>
+  <br/>
+  <img src = {calculator} height ="140vh" width ="auto"/> 
+
+   <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h5> 
+
+                            </li>
+
+                            <li>
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                    GOOGLE MAPS CLONE (Flutter/C++)
+                                    GOOGLE MAPS CLONE (FLUTTER/C)
                                 </a>
       <br/>
  <img src = {maps} height ="140vh" width ="auto"/> 
@@ -76,7 +89,7 @@ const Body = () => {
    <li>
                                 <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    EMBEDDED GESTURE SENSOR (C++/MACHINE LEARNING)
+                                    EMBEDDED GESTURE SENSOR (C++/NANOLIB )
                                 </a>
   <br/>
        <img src = {gesture} height ="140vh" width ="auto"/> 
@@ -97,7 +110,7 @@ const Body = () => {
 
    <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                                   ARDUINO BYTE ANIMATIONS (FOR FUN, C) 
+                                   ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
    <img src = {butterfly} height ="140vh" width ="auto"/> 
@@ -105,18 +118,6 @@ const Body = () => {
    <h5> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h5> 
                             </li>
  
-                            <li>
-                                <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
-                                    rel="noopener noreferrer">
-                                    CALCULATOR APP (FLUTTER/DART)
-                                </a>
-  <br/>
-  <img src = {calculator} height ="140vh" width ="auto"/> 
-
-   <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h5> 
-
-                            </li>
-
                         
 
                             <li>
@@ -144,12 +145,12 @@ const Body = () => {
                                     rel="noopener noreferrer">
                                     WEATHER APP (REACT NATIVE)
                                 </a>
-
-  <img src = {""} height ="140vh" width ="auto"/> 
+<br/>
+  <img src = {weather} height ="140vh" width ="auto"/> 
 
    <h5>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h5> 
 
-       </li>  <br/>
+       </li> 
 
                        
                          
