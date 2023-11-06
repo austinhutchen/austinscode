@@ -5,7 +5,7 @@ import { Projects } from "../pages/projects"
 import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
 import { AnimatePresence } from "framer-motion"; 
-import _pdf from "../pages/images/Recommendation Letter_ Austin.pdf"
+import _pdf from "../pages/images/Recommendation Letter_Austin.pdf"
 
 import React  from 'react';
 export let AnimatedRoutes = () => {
