@@ -26,7 +26,6 @@ export const Aboutme = () => {
         </b>
       </h1>
     </motion.div>
-      <br />
 
       <Display />
     </div>
