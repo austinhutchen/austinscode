@@ -9,7 +9,7 @@ import React from 'react';
 const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.001   } }}>
             <body id="desc">
                 <h1 className="hlight">
                     <b><i> DIRECT WORK EXPERIENCE</i></b>
