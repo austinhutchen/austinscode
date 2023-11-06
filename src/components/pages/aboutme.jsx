@@ -1,11 +1,11 @@
 import { Nav } from "../common/navbar"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import me from "./images/me4.JPG";
+import me from "./images/me4.webp";
 import coding from "./images/coding.webp";
 import family from './images/family.webp';
 import nature from "./images/nature.webp";
-import mimi from "./images/mimi.jpg";
+import mimi from "./images/mimi.webp";
 import math from "./images/IMG_0913.webp";
 import systems from "./images/systems.webp";
 import Slider from "react-slick";

@@ -7,19 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import React from 'react';
-import shell from './images/shell.PNG'
+import shell from './images/shell.webp'
 import encryptc from './images/encryptc.webp'
-import maps from './images/maps.jpg'
+import maps from './images/maps.webp'
 import butterfly from './images/animate.mp4'
 import gesture from './images/gesture.mp4'
 import family from './images/family.webp'
 import graph from './images/graph.mp4'
-import calculator from './images/calculator.PNG'
+import calculator from './images/calculator.webp'
 import my_interface from './images/interface.webp'
 import notable from './images/journalapp.webp'
-import PLANT_WATERER from './images/PLANT_WATERER.jpg'
-import weather from './images/WEATHER.jpg'
+import PLANT_WATERER from './images/PLANT_WATERER.webp'
+import weather from './images/WEATHER.webp'
 import '../../css/projects.css'
+
 const Body = () => {
     return (
         <>
