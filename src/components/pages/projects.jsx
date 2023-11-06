@@ -17,6 +17,7 @@ import graph from './images/graph.mp4'
 import calculator from './images/calculator.PNG'
 import my_interface from './images/interface.webp'
 import notable from './images/journalapp.webp'
+import PLANT_WATERER from './images/PLANT_WATERER.jpg'
 import '../../css/projects.css'
 const Body = () => {
     return (
@@ -53,7 +54,16 @@ const Body = () => {
 
       <h5> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h5> 
      </li>
-                           
+                      <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                  ESP32 AUTO-PLANT WATERER 
+                                </a>
+      <br/>
+      <img src ={PLANT_WATERER}  height ="140vh" width ="auto" />
+      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the bytes and watering (true) or remaining asleep (false) based on a union of booleans.</h5>
+                                                       </li>
+
+      
                             <li>
                                 <a href="" target="_blank" rel="noopener noreferrer">
                                     GOOGLE MAPS CLONE (Flutter/C++)
