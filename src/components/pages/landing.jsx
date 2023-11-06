@@ -90,7 +90,7 @@ export const Landing = () => {
     <>
    <Nav />
    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.001  } }}>
       
     <h3>     <b> Full-Stack Embedded Software Engineer & CS student with passion for development and experience working with startups! </b></h3>
 <h5 className="subtext"> <i><b> Through building my projects, I have learned and practiced rigorously the topics below. </b> </i> </h5>
