@@ -56,11 +56,11 @@ const Body = () => {
      </li>
                       <li>
                                 <a href="" target="_blank" rel="noopener noreferrer">
-                                  ESP32 AUTO-PLANT WATERER 
+                                  ESP32 AUTO-PLANT WATERER (C) 
                                 </a>
       <br/>
       <img src ={PLANT_WATERER}  height ="140vh" width ="auto" />
-      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the bytes and watering (true) or remaining asleep (false) based on a union of booleans.</h5>
+      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the bytes and watering the plant (true) or remaining asleep to conserve power (false) based on a union of booleans. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
                                                        </li>
 
       
