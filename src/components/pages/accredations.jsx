@@ -5,7 +5,7 @@ import {PDFViewer} from "../common/PDFviewer.jsx"
 import { motion } from "framer-motion";
 import React from 'react';
 
-import _pdf from "./images/Recommendation Letter_ Austin.pdf"
+import _pdf from "./images/Recommendation Letter_Austin.pdf"
 import stat1 from "./images/stat1.png"
 import stat2 from "./images/stat2.png"
 import inclusion from "./images/inclusion.png"
