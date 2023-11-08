@@ -61,8 +61,8 @@ const Body = () => {
                                   ESP32 AUTO-PLANT WATERER (C) 
                                 </a>
       <br/>
-      <img src ={PLANT_WATERER}  height ="140vh" width ="auto" />
-      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the bytes and watering the plant (true) or remaining asleep to conserve power (false) based on a union of booleans. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
+      <img src ={PLANT_WATERER}  height ="200vh" width ="auto" />
+      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and watering the plant based on a boolean threshold. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
                                                        </li>
 
       
@@ -72,7 +72,7 @@ const Body = () => {
                                     CALCULATOR APP (FLUTTER/C)
                                 </a>
   <br/>
-  <img src = {calculator} height ="140vh" width ="auto"/> 
+  <img src = {calculator} height ="170vh" width ="auto"/> 
 
    <h5> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h5> 
 
