@@ -32,11 +32,11 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/HTML/CSS)
                                 </a>
-      <h5 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community here:
-      </h5>
-   <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-     <h4> <i>Programming instagram</i></h4>
+      <h5 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+     <h5><b> <i>Programming Instagram</i> </b> </h5>
       </a>
+      </h5>
+ 
                                              </li>
 
                             <li>
