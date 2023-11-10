@@ -32,10 +32,10 @@ const Body = () => {
                                 <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/HTML/CSS)
                                 </a>
-      <h5 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-     <h5><b> <i>Programming Instagram</i> </b> </h5>
+      <h6 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
+     <h7><b> <i>Programming Instagram</i> </b> </h7>
       </a>
-      </h5>
+      </h6>
  
                                              </li>
 
@@ -156,7 +156,7 @@ const Body = () => {
 <br/>
     <li>
                                 <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                                    2D GRAPHING CALCULATOR (JAVASCRIPT)
+                                    SIMPLE 2D->3D T(x) GRAPHER (JAVASCRIPT)
                                 </a>
   <br/>
 
@@ -167,7 +167,7 @@ const Body = () => {
         </video>
 
            
-   <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
+   <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5> 
 
                             </li>
    <li>
