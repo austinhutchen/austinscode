@@ -124,16 +124,7 @@ const Body = () => {
  
                         
 
-                            <li>
-                                <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
-                                    REDDIT STATISTICS CLI (PYTHON)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
-
-   <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
-
-                            </li> 
+                         
 
                          
      <li>
@@ -175,7 +166,16 @@ const Body = () => {
    <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
 
                             </li>
+   <li>
+                                <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
+                                    REDDIT STATISTICS CLI (PYTHON)
+                                </a>
+  <br/>
+  <img src = {""} height ="140vh" width ="auto"/> 
 
+   <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
+
+                            </li> 
 
                   
 
