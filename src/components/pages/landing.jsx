@@ -39,13 +39,14 @@ const TextSphere = () => {
       "SQL",
       "PHP",
       "GraphQL",
+      "C#",
       "React Native",
       "and more!.."
     ];
     const options = {
-      radius: 250,
-      maxSpeed: "normal",
-      initSpeed: "normal",
+      radius: 280,
+      maxSpeed: "high",
+      initSpeed: "low",
       keep: true,
       loop: true,
       lockX: true,
