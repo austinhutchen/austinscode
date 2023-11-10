@@ -9,5 +9,8 @@ list-style-type: none;
   width: auto ;
 }
 h5{
-  font-size: large
+  font-size:0.8em 
+}
+li{
+  font-size: 1.1em;
 }
