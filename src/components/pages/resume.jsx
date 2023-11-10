@@ -5,6 +5,7 @@ import pdf from "./images/resume SWE.pdf"
 import ghicon from "./images/ghicon.png"
 import ebayicon from "./images/ebay.png"
 import "../../css/resume.css"
+import "../../App.css"
 import React from 'react';
 const Body = () => {
     return (
@@ -128,10 +129,12 @@ const Body = () => {
 
 export const Resume = () => {
     return (
-        <div className="App">
-            <Nav />
+<>
+ <Nav />
+           
             <Body />
-        </div>
+        
+      </>
     )
 
 }

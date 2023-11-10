@@ -79,10 +79,11 @@ html {
 }
 
 #name {
-    font-size: 45px;
+    font-size: 2.5em;
     text-align: center;
     font-weight: bold;
-    color: black
+    font-family: futura;
+    color: black; 
 }
 
 .content {
