@@ -4,3 +4,7 @@ img{
 ul{
 list-style-type: none;
 }
+.video_container{
+  height: 5vh ;
+  width: auto ;
+}

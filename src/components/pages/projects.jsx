@@ -62,7 +62,7 @@ const Body = () => {
                                 </a>
       <br/>
       <img src ={PLANT_WATERER}  height ="200vh" width ="auto" />
-      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and watering the plant based on a boolean threshold. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
+      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant based on a boolean threshold. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
                                                        </li>
 
       
@@ -93,7 +93,9 @@ const Body = () => {
                                     EMBEDDED GESTURE SENSOR (C++/NANOLIB )
                                 </a>
   <br/>
-       <img src = {gesture} height ="140vh" width ="auto"/> 
+   <video controls autoPlay loop muted  height ="140vh" width ="auto">
+ <source src={gesture} type="video/mp4" ></source>
+</video>
 
       <h5>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h5> 
     
@@ -114,8 +116,9 @@ const Body = () => {
                                    ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
-   <img src = {butterfly} height ="140vh" width ="auto"/> 
-
+  <video controls autoPlay loop muted  height ="140vh" width ="auto">
+          <source src={butterfly} type="video/mp4" ></source>
+        </video>
    <h5> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h5> 
                             </li>
  
@@ -161,8 +164,14 @@ const Body = () => {
                                     2D GRAPHING CALCULATOR (JAVASCRIPT)
                                 </a>
   <br/>
-  <img src = {graph} height ="140vh" width ="auto"/> 
 
+
+
+  <video controls autoPlay loop muted  height ="140vh" width ="auto">
+          <source src={graph} type="video/mp4" ></source>
+        </video>
+
+           
    <h5>   A graphing calculator coded in javascript which utilized the plotjs library to plot real-valued functions in up to 3 dimensions. Seen in the video is the zoom function, which works by analyzing the many derivatives of the given function. Coded for integration with the calculator app. </h5> 
 
                             </li>
