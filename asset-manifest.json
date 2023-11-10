@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/austinscode/static/css/main.2e484edb.css",
-    "main.js": "/austinscode/static/js/main.6fc035df.js",
+    "main.js": "/austinscode/static/js/main.8186ce06.js",
     "static/js/988.4365257a.chunk.js": "/austinscode/static/js/988.4365257a.chunk.js",
     "static/media/nature.webp": "/austinscode/static/media/nature.92ba7864fa0d4e1b2279.webp",
     "static/media/interface.webp": "/austinscode/static/media/interface.4504954ed9daaee5e176.webp",
@@ -22,7 +22,7 @@
     "static/media/stat1.png": "/austinscode/static/media/stat1.e4e36549ca584a759b65.png",
     "static/media/stat2.png": "/austinscode/static/media/stat2.27bb3852f829ea9c1767.png",
     "static/media/calculator.webp": "/austinscode/static/media/calculator.1c257dcddcdb499855bc.webp",
-    "static/media/resume SWE.pdf": "/austinscode/static/media/resume SWE.037eb8ab79501e8be5a7.pdf",
+    "static/media/package.pdf": "/austinscode/static/media/package.afbc77b65b85527aafc0.pdf",
     "static/media/ghicon.png": "/austinscode/static/media/ghicon.ddaf6f0cf3380f5adc98.png",
     "static/media/inclusion.png": "/austinscode/static/media/inclusion.4f861e76b0c9254c6f49.png",
     "static/media/Recommendation Letter_Austin.pdf": "/austinscode/static/media/Recommendation Letter_Austin.56698f715cb3e44845c1.pdf",
@@ -34,11 +34,11 @@
     "static/media/slick.ttf": "/austinscode/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "main.2e484edb.css.map": "/austinscode/static/css/main.2e484edb.css.map",
-    "main.6fc035df.js.map": "/austinscode/static/js/main.6fc035df.js.map",
+    "main.8186ce06.js.map": "/austinscode/static/js/main.8186ce06.js.map",
     "988.4365257a.chunk.js.map": "/austinscode/static/js/988.4365257a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e484edb.css",
-    "static/js/main.6fc035df.js"
+    "static/js/main.8186ce06.js"
   ]
 }
