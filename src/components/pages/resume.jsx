@@ -15,13 +15,14 @@ const Body = () => {
                 <h1 className="hlight">
                     <b><i> DIRECT WORK EXPERIENCE</i></b>
                 </h1>
+      <ul className ="projdesc">
   <h4>
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                     </b>
                 </h4>
-                <article>
-                 < p className="projdesc">
+                <li>
+                 < p>
                     <b >
                         Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
                         hours every week to assist learning of course material.{" "}
@@ -30,14 +31,14 @@ const Body = () => {
                         semester survey.
                     </b>
                  </p>
-                </article>
+                </li>
 
                 <h4>
                     <b>
                         <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                     </b>
                 </h4>
-                <article>
+                <li>
                     <p className="projdesc">
                         <b>
                             {" "}
@@ -45,18 +46,17 @@ const Body = () => {
                             the software engineering team to achieve forecasted results.{" "}
                         </b>
                     </p>
-                </article>
+                </li>
                               <h4>
                     <b>
                         <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                     </b>
                 </h4>
-
-                <p className="projdesc">
+<li>
+                <p>
                     <b>
                         I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account by <b> <i> <u> clicking the image below: </u></i></b>
-                    </b>
-                    <b>
+
                         <h4>
                             <a href="https://www.ebay.com/usr/gadgetsllcc"  target="_blank"
                 rel="noreferrer" className="referral">
@@ -66,13 +66,16 @@ const Body = () => {
 
                     </b>
                 </p>
+
+</li>
+      <li>
    <h4>
                     <b>
                         <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
                     </b>
                 </h4>
-
-                <article className="projdesc">
+</li>
+                <li> 
                     <b>
                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and<i><u> much more below.</u></i> </b>
                     <b>
@@ -84,16 +87,16 @@ const Body = () => {
                         </h4>
 
                     </b>
-                </article>
+                </li>
 
         
-            </body>
+
             <br />
             <h1 className="hlight">
                 <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
             </h1>
 <br/>
-      <ul>
+      
 <li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                 rel="noreferrer">
@@ -108,16 +111,21 @@ const Body = () => {
             </a>
 
 </li>
-      </ul>
+   
             <div>
                 <h1 className="hlight">
-                    <b><i> FULL RESUME (Live view, in progress)</i></b>
+                    <b><i> FULL RESUME ( in progress)</i></b>
                 </h1>
 
 <br/>
                 <PDFViewer data={pdf} />
             </div>
 
+
+   </ul>
+            </body>
+
+      
         </motion.div>
     )
 }
