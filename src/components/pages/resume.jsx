@@ -1,7 +1,7 @@
 import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
 import { PDFViewer } from "../common/PDFviewer";
-import pdf from "./images/package.pdf"
+import pdf from "./images/RESUME_SWE.pdf"
 import ghicon from "./images/ghicon.png"
 import ebayicon from "./images/ebay.png"
 import "../../css/resume.css"
