@@ -13,7 +13,7 @@ const Body = () => {
             exit={{ x: window.innerWidth, transition: { duration: 0.001   } }}>
             <body id="desc">
                 <h1 className="hlight">
-                    <b><i> DIRECT WORK EXPERIENCE</i></b>
+                    <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
       <ul className ="projdesc">
   <h4>
@@ -75,7 +75,7 @@ const Body = () => {
                     </b>
                 </h4>
 </li>
-                <li> 
+<li>
                     <b>
                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and<i><u> much more below.</u></i> </b>
                     <b>
