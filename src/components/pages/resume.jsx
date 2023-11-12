@@ -15,7 +15,7 @@ const Body = () => {
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
-      <ul className ="projdesc">
+      <ul >
   <h4>
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
