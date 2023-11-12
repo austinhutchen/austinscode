@@ -1,12 +1,14 @@
 import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
-import { PDFViewer } from "../common/PDFviewer";
+
 import pdf from "./images/RESUME_SWE.pdf"
 import ghicon from "./images/ghicon.png"
 import ebayicon from "./images/ebay.png"
+import {PDFViewer} from "../common/PDFviewer.jsx"
 import "../../css/resume.css"
 import "../../App.css"
 import React from 'react';
+
 const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
@@ -16,11 +18,11 @@ const Body = () => {
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
       <ul >
-  <h4>
+  <h3>
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                     </b>
-                </h4>
+                </h3>
                 <li>
                  < p>
                     <b >
@@ -33,11 +35,11 @@ const Body = () => {
                  </p>
                 </li>
 
-                <h4>
+                <h3>
                     <b>
                         <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                     </b>
-                </h4>
+                </h3>
                 <li>
                     <p className="projdesc">
                         <b>
@@ -89,7 +91,7 @@ const Body = () => {
                     </b>
                 </li>
 
-        
+      
 
             <br />
             <h1 className="hlight">
@@ -118,7 +120,7 @@ const Body = () => {
                 </h1>
 
 <br/>
-                <PDFViewer data={pdf} />
+    
             </div>
 
 
@@ -134,11 +136,14 @@ const Body = () => {
 
 
 export const Resume = () => {
+
+
     return (
 <>
  <Nav />
-           
-            <Body />
+   <Body />
+        <PDFViewer data ={pdf} /> 
+
         
       </>
     )
