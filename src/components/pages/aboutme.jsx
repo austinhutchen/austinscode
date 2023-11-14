@@ -52,7 +52,7 @@ export default class Display extends Component {
       }
       ,
       {
-        desc: "I love coffee and algorithms!",
+        desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my algorithmic runtimes and read often on the problems of code protability and optimization, especially in languages like C (~My favorite~). ",
         url: coding
       },
   {
@@ -99,9 +99,9 @@ export default class Display extends Component {
           {keys.map(data => {
             return (
               <div className="slick-slide">
-                <h2>
+                <h4 >
                   {data.desc}
-                </h2>
+                </h4>
                 <img src={data.url} />
               </div>
             );
