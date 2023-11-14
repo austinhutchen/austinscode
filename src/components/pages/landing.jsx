@@ -101,7 +101,7 @@ export const Landing = () => {
 
         <p className="text-gray-500 py-4 max-w-md">
     <>
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science CO 2025) who enjoys working with Backend server development languages, creating optimized & stateful frontend applications, and embedded systems development. Currently, I love to work on web application using technologies like React, Tailwind, Next.js and Mongodb.
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science CO 2025) who enjoys working with backend server, systems, & embedded development development languages, creating optimized & stateful frontend applications. Currently, I love to work on web application using technologies like React, Tailwind, Next.js and Mongodb.
     </>
         </p>
           <Link
@@ -112,7 +112,7 @@ export const Landing = () => {
           >
             About Me
             <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight size={35} className="ml-3" />
+              <HiArrowNarrowRight size={32} className="ml-3" />
             </span>
           </Link>
         </div>
