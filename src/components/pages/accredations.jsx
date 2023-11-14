@@ -1,17 +1,16 @@
 import { Nav } from "../common/navbar";
-import {PDFViewer} from "../common/PDFviewer.jsx"
 
 // Plugins
 import { motion } from "framer-motion";
 import React from 'react';
 
-import _pdf from "./images/Recommendation Letter_Austin.pdf"
+
 import stat1 from "./images/stat1.png"
 import stat2 from "./images/stat2.png"
 import inclusion from "./images/inclusion.png"
 import "../../css/resume.css"
 
-export const View= () => {
+export const View= (props) => {
     return (
         <div>
         <Nav />
@@ -20,7 +19,7 @@ export const View= () => {
             exit={{ x: window.innerWidth, transition: { duration: 0.001  } }}>
 <section>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
-      <PDFViewer data= {_pdf} />
+      <embed src= {props.data} />
       </section>
 <section>
    <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>

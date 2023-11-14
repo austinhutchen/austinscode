@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import pdf from "./images/RESUME_SWE.pdf"
 import ghicon from "./images/ghicon.png"
 import ebayicon from "./images/ebay.png"
-import {PDFViewer} from "../common/PDFviewer.jsx"
 import "../../css/resume.css"
 import "../../App.css"
 import React from 'react';
@@ -131,7 +130,7 @@ export const Resume = () => {
 <>
  <Nav />
    <Body />
-        <PDFViewer data ={pdf} /> 
+        <embed className="pdf" src ={pdf} /> 
 
         
       </>
