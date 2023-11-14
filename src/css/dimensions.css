@@ -157,7 +157,7 @@
 }
 
 .sc img {
-  height: calc(75vh - 100px);
+  height: calc(65vh - 100px);
 
   /* it centers any block level element */
 }
