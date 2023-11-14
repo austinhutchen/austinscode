@@ -100,7 +100,7 @@ export const Landing = () => {
       <div className="flex flex-col justify-center h-full">
 
         <p className="text-gray-500 py-4 max-w-md">
-           I have 4 years of experience in web development, backend server development, and more recently, embedded systems development.
+           I'm a CU Boulder (Bachelor's of Science Computer Science) Student who enjoys working with startups in web development, backend server development, and more recently, embedded systems development.
           Currently, I love to work on web application using technologies like
           React, Tailwind, Next.js and Mongodb.
         </p>
