@@ -17,7 +17,7 @@ const Body = () => {
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
-      <ul >
+      <ul style={{paddingTop: '0.6em'}}>
   <h3 className="hlight">
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
@@ -84,11 +84,11 @@ const Body = () => {
       
 
             <br />
-            <h1 className="hlight">
+            <h1 className="hlight" >
                 <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
             </h1>
       
-<li>
+<li style={{paddingTop:'0.7em'}}>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                 rel="noreferrer" >
                <h4> <b>MY LEETCODE </b> </h4>
