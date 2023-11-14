@@ -11,8 +11,6 @@ import systems from "./images/systems.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../css/dimensions.css";
-import "../../css/fonts.css";
 export const Aboutme = () => {
   return (
    <div> 
@@ -87,8 +85,8 @@ export default class Display extends Component {
       slidesToScroll: 1,
       lazyLoad: true,
       centerMode: true,
-      Width: "35%",
-      Height: "25%"
+      Width: "75%",
+      Height: "65%"
     };
     return (
 
@@ -101,10 +99,12 @@ export default class Display extends Component {
             return (
               <div className="slick-slide">
                 <img src={data.url} />
-                 <h4 className="hlight-mini"> 
+                 <h4 className="hlight-mini">
+              <fieldset>
               <b>
                   {data.desc}
               </b>
+              </fieldset>
                 </h4>
               </div>
             );

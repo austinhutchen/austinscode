@@ -1,8 +1,8 @@
 import React  from 'react';
-import "../../css/spinner.css"
+import "../../css/spinner.css";
 import "../../css/spotify.css";
 import "../../css/nav-bar.css";
-import "../../css/wave.css";
+
 export const Wave = () => {
     return (
         <div class="loading">

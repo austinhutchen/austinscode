@@ -28,7 +28,7 @@ const Body = () => {
                         Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
                         hours every week to assist learning of course material.{" "}
 
-                        Recieved 97% positive feedback from 103 participants on end of
+                        Recieved 97% positive feedback from 63 participants on end of
                         semester survey.
                  </h4>
                 </li>
