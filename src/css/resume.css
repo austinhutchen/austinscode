@@ -1,8 +1,10 @@
  .projdesc{
+  padding-top: 1.7em;
   color: white;
   font-size: 1.2em;
-  font-family: "Arial";
-  font-weight:1.0em;
+  
+  font-weight:1.5em;
+  
  }
  .referral{
    color:hotpink

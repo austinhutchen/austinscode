@@ -24,13 +24,13 @@ const Body = () => {
                     </b>
                 </h3>
                 <li>
-                 < h3 className="projdesc">
+                 < h4 className="projdesc">
                         Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
                         hours every week to assist learning of course material.{" "}
 
                         Recieved 97% positive feedback from 103 participants on end of
                         semester survey.
-                 </h3>
+                 </h4>
                 </li>
 
                 <h3 className="hlight">
