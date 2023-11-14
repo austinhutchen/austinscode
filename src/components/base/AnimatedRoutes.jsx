@@ -6,7 +6,7 @@ import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
 import { AnimatePresence } from "framer-motion"; 
 import _pdf from "../pages/images/Recommendation Letter_Austin.pdf"
-
+import _pdf2 from "../pages/images/RESUME_SWE.pdf"
 import React  from 'react';
 export let AnimatedRoutes = () => {
     const location = useLocation();
@@ -17,7 +17,7 @@ export let AnimatedRoutes = () => {
                     <Routes location={location} key={location.pathname}>
                         <Route exact path="" element={<Landing />} />
                         <Route exact path="src/components/landing.js" element={<Landing />} />
-                        <Route exact path="src/components/resume.js" element={<Resume />} />
+                        <Route exact path="src/components/resume.js" element={<Resume data={_pdf2} />} />
                         <Route exact path="src/components/projects.js" element={<Projects />} />
                         <Route exact path="src/components/aboutme.js" element={<Aboutme />} />
                         <Route exact path="src/components/accredations.js" element={<View data={_pdf} />} />

@@ -1,6 +1,6 @@
 import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
-import pdf from "./images/RESUME_SWE.pdf"
+
 import ghicon from "./images/ghicon.png"
 import ebayicon from "./images/ebay.png"
 import "../../css/resume.css"
@@ -122,7 +122,7 @@ const Body = () => {
 
 
 
-export const Resume = () => {
+export const Resume = (props) => {
 
 
     return (
@@ -130,7 +130,7 @@ export const Resume = () => {
  <Nav />
    <Body />
    
-   <iframe src={pdf+"#view=FitH"} className="pdf" frameborder='0' allowfullscreen></iframe>
+   <iframe src={props.data+"#view=FitW"} className="pdf" frameborder='0' allowfullscreen></iframe>
 
 
         
