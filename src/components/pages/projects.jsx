@@ -28,7 +28,7 @@ const Body = () => {
                     <ul className="projectdesc">
                         <b>
                             <li>
-                                <a href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                                     THIS WEBSITE (REACT/HTML/CSS)
                                 </a>
       <h6 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ const Body = () => {
                                              </li>
 
                             <li>
-                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
                                     UNIX KERNEL SHELL (C)
                                 </a>
       <br/>
@@ -50,7 +50,7 @@ const Body = () => {
 
 
                             <li>
-                                <a href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                                     rel="noopener noreferrer">
                                     ENCRYPTED TEXT EDITOR (C++)
                                 </a>
@@ -60,7 +60,7 @@ const Body = () => {
       <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4> 
      </li>
                       <li>
-                                <a href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                                   ESP32 AUTO-PLANT WATERER (C) 
                                 </a>
       <br/>
@@ -70,7 +70,7 @@ const Body = () => {
 
       
                             <li>
-                                <a href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
                                     CALCULATOR APP (FLUTTER/C)
                                 </a>
@@ -82,7 +82,7 @@ const Body = () => {
                             </li>
 
                             <li>
-                                <a href="" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer">
                                     GOOGLE MAPS CLONE (FLUTTER/C)
                                 </a>
       <br/>
@@ -92,7 +92,7 @@ const Body = () => {
           </li>
    <li>
                                 <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
-                                    rel="noopener noreferrer">
+                                    rel="noopener noreferrer" className="hlight-mini">
                                     EMBEDDED GESTURE SENSOR (C++/NANOLIB )
                                 </a>
   <br/>
@@ -104,7 +104,7 @@ const Body = () => {
     
                             </li>
    <li>
-                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
                                     4x4 INTERRUPT UART INTERFACE (C)
                                 </a>
       <br/>
@@ -115,7 +115,7 @@ const Body = () => {
 
 
    <li>
-                                <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
                                    ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
@@ -131,7 +131,7 @@ const Body = () => {
 
                          
      <li>
-                                <a href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
                                     ZEN JOURNALLING APP (REACT NATIVE/JAVA)
                                 </a>
       <br/>
@@ -139,7 +139,7 @@ const Body = () => {
       <h4> An app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                             </li>
                              <li>
-                                <a href="https://github.com/austinhutchen/weather-native.git" target="_blank"
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     WEATHER APP (REACT NATIVE)
                                 </a>
@@ -154,7 +154,7 @@ const Body = () => {
                          
 <br/>
     <li>
-                                <a href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                                     SIMPLE 2D->3D T(x) GRAPHER (JAVASCRIPT)
                                 </a>
   <br/>
@@ -170,7 +170,7 @@ const Body = () => {
 
                             </li>
    <li>
-                                <a href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
                                     REDDIT STATISTICS CLI (PYTHON)
                                 </a>
   <br/>

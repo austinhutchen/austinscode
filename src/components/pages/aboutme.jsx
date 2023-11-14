@@ -106,7 +106,7 @@ export default class Display extends Component {
             return (
               <div className="slick-slide">
                 <img src={data.url} />
-                 <h4 className="hlight-mini">
+                 <h4 style={{fontSize:'1em', color:'cornsilk'}} >
               <fieldset style={{paddingTop:'-3em'}}>
               <b>
                   {data.desc}
