@@ -1,3 +1,4 @@
+
 import { Nav } from "../common/navbar"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
@@ -11,6 +12,7 @@ import systems from "./images/systems.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 export const Aboutme = () => {
   return (
    <> 
@@ -78,8 +80,10 @@ export default class Display extends Component {
     
 
     ];
+
+
     const settings = {
-      dots: true,
+   dots: true,
       infinite: true,
       speed: 250,
       slidesToShow: 1,
@@ -87,15 +91,17 @@ export default class Display extends Component {
       lazyLoad: true,
       centerMode: true,
       Width: "75%",
-      Height: "65%"
-    };
+      Height: "65%",
+      arrows:true, 
+ autoplaySpeed: 1000,
+                className: 'slides'
+    }
     return (
 
-      <div>
 
    
       <div className="sc">
-        <Slider {...settings}>
+        <Slider {...settings} >
           {keys.map(data => {
             return (
               <div className="slick-slide">
@@ -112,8 +118,6 @@ export default class Display extends Component {
           })}
         </Slider>
       </div>
-</div>
     );
   }
 }
-
