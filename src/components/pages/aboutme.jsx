@@ -99,10 +99,13 @@ export default class Display extends Component {
           {keys.map(data => {
             return (
               <div className="slick-slide">
-                <h4 >
-                  {data.desc}
-                </h4>
                 <img src={data.url} />
+                 <h4 className="hlight">
+              
+              <b>
+                  {data.desc}
+              </b>
+                </h4>
               </div>
             );
           })}
