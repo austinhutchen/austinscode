@@ -85,7 +85,7 @@ const Body = () => {
 
             <br />
             <h1 className="hlight" >
-                <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
+                <b><i> OPEN SOURCE CONTRIBUTIONS & MORE</i></b>
             </h1>
      <ul style={{paddingTop:'0.7em'}}> 
 <li>
