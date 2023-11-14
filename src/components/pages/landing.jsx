@@ -87,7 +87,7 @@ const Body = () => {
 
 // landing page 
 export const Landing = () => {
-
+// LINK IN BELOW STATEMENT IS TO BE USED TO NAVIGATE TO ABOUT PAGE 
   return (
     <>
    <Nav />
@@ -99,11 +99,10 @@ export const Landing = () => {
        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
 
-        <p className="text-gray-500 py-4 max-w-md">
-    <>
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science CO 2025) who enjoys working with backend server, systems, & embedded development development languages, creating optimized & stateful frontend applications. Currently, I love to work on web application using technologies like React, Tailwind, Next.js and Mongodb.
-    </>
+        <p className="intro">
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science CO 2025) who enjoys working with backend server, systems, & embedded development languages, and creating optimized & stateful frontend applications. Currently, I love to work on web applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
         </p>
+    
           <Link
             to="about"
             smooth
