@@ -66,7 +66,7 @@ const Body = () => {
                                 </a>
       <br/>
       <img src ={PLANT_WATERER}  height ="200vh" width ="auto" />
-      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
+      <h5 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h5>
                                                        </li>
 
       
