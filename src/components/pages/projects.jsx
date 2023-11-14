@@ -97,7 +97,7 @@ const Body = () => {
                                     EMBEDDED GESTURE SENSOR (C++/NANOLIB )
                                 </a>
   <br/>
-   <video controls autoPlay loop muted  height ="140vh" width ="auto">
+   <video controls  loop muted  height ="140vh" width ="auto">
  <source src={gesture} type="video/mp4" ></source>
 </video>
 
@@ -120,7 +120,7 @@ const Body = () => {
                                    ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
-  <video controls autoPlay loop muted  height ="140vh" width ="auto">
+  <video controls  loop muted  height ="140vh" width ="auto">
           <source src={butterfly} type="video/mp4" ></source>
         </video>
    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4> 
@@ -162,7 +162,7 @@ const Body = () => {
 
 
 
-  <video controls autoPlay loop muted  height ="140vh" width ="auto">
+  <video controls  loop muted  height ="140vh" width ="auto">
           <source src={graph} type="video/mp4" ></source>
         </video>
 
