@@ -93,7 +93,7 @@ export const Landing = () => {
    <Nav />
  <h3 className="text-4xl sm:text-7xl text-white" style={{paddingTop:'10', fontSize: '1.7em'}} className="hlight">
 
-         <b> Welcome to my website! I'm Austin, and I'm a Full Stack Web Developer. </b>
+         <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
         </h3>
    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0.001  } }}>
@@ -102,7 +102,7 @@ export const Landing = () => {
 
         <p className="intro">
     <b>
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. <br/> Currently, I love to work on applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. Currently, I love to work on applications using cutting-edge technologies like C, Rust, Java, C#, React (&Native), Tailwind, Next.js and Mongodb.
     </b>
         </p>
     

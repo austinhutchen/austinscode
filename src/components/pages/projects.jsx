@@ -25,7 +25,6 @@ const Body = () => {
     return (
         <>
             <section>
-                <div className="lead">
                     <ul className="projectdesc">
                         <b>
                             <li>
@@ -191,7 +190,6 @@ const Body = () => {
 
                         </b>
                     </ul>
-                </div>
                 <br></br>
             </section>
         </>
