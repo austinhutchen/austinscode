@@ -87,11 +87,10 @@ const Body = () => {
             <h1 className="hlight">
                 <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
             </h1>
-<br/>
       
 <li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
-                rel="noreferrer">
+                rel="noreferrer" >
                <h4> <b>MY LEETCODE </b> </h4>
             </a>
 
