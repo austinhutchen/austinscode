@@ -71,8 +71,7 @@ export const Nav = () => {
                     >
                         Accredidations
                     </button>
-                </div>
-                <a class="navbar-brand">
+  <a class="navbar-brand">
                     <img
                         src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
                         alt="icon"
@@ -80,6 +79,8 @@ export const Nav = () => {
                         height="40vh"
                     />
                 </a>
+                </div>
+              
             </nav>
             <div className="banner" >
                 <h3 id="name">Austin  Hutchen</h3>
