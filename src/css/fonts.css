@@ -28,7 +28,7 @@ loading : "lazy";
 fieldset {
   margin: 20px;
   padding: 0 10px 10px;
-  border: 1px solid #666;
+  border: 3px solid #666;
   border-radius: 8px;
   box-shadow: 0 0 10px #666;
   padding-top: 10px;

@@ -13,20 +13,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export const Aboutme = () => {
   return (
-   <div> 
+   <> 
       <Nav />
+
      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0.0001  } }}>
-   <h1 className="hlight" >
+  <h1 className="hlight" >
         <b>
           About me!
 
         </b>
       </h1>
     </motion.div>
+       <Display />
 
-      <Display />
-    </div>
+    </>
   )
 }
 
