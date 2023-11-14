@@ -15,12 +15,14 @@
 
 }
 .projectdesc{
+  /* FOR SCALING ENTIRE PAGE BODY */
   color:white;
-font-size: 0.9em;
+font-size: 1.em;
 text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
 h4{
-font-size: 0.9em;
+  /* FOR SPECIFICALLY H4 PROJECT DESCRIPTIONS, TITLES EXCLUDED */
+font-size: 0.7em;
 }
 img{
 loading : "lazy";
