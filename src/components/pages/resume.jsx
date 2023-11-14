@@ -17,7 +17,7 @@ const Body = () => {
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
-      <ul style={{paddingTop: '0.6em'}}>
+      <ul style={{paddingTop: '0.6em'}} >
   <h3 className="hlight">
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
@@ -45,7 +45,7 @@ const Body = () => {
                             the software engineering team to achieve forecasted results.{" "}
                     </h3>
                 </li>
-                              <h3 className="hlight">
+                              <h3 className="hlight" >
                     <b>
                         <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                     </b>
@@ -87,22 +87,22 @@ const Body = () => {
             <h1 className="hlight" >
                 <b><i> OPEN SOURCE CONTRIBUTIONS / FOR FUN</i></b>
             </h1>
-      
-<li style={{paddingTop:'0.7em'}}>
+     <ul style={{paddingTop:'0.7em'}}> 
+<li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                 rel="noreferrer" >
-               <h4> <b>MY LEETCODE </b> </h4>
+               <h3> <b> LEETCODE </b> </h3>
             </a>
 
       </li>
       <li>
  <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                 rel="noreferrer">
-               <h4> <b>TWITTER COMPILER OPTIMIZATIONS</b> </h4>
+               <h3> <b> COMPILER OPTIMIZATIONS</b> </h3>
             </a>
 
 </li>
-   
+   </ul>
             <div>
                 <h1 className="hlight">
                     <b><i> FULL RESUME ( in progress)</i></b>

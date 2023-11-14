@@ -102,7 +102,7 @@ export const Landing = () => {
 
         <p className="intro">
     <b>
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science 2025) who enjoys working with backend server, systems, & embedded development languages, and creating optimized & stateful frontend applications. Currently, I love to work on web applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. <br/> Currently, I love to work on applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
     </b>
         </p>
     
