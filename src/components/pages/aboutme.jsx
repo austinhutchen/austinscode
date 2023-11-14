@@ -87,8 +87,8 @@ export default class Display extends Component {
       slidesToScroll: 1,
       lazyLoad: true,
       centerMode: true,
-      Width: "75%",
-      Height: "65%"
+      Width: "35%",
+      Height: "25%"
     };
     return (
 
