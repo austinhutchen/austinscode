@@ -100,7 +100,7 @@ export const Landing = () => {
       <div className="flex flex-col justify-center h-full">
 
         <p className="intro">
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science CO 2025) who enjoys working with backend server, systems, & embedded development languages, and creating optimized & stateful frontend applications. Currently, I love to work on web applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science 2025) who enjoys working with backend server, systems, & embedded development languages, and creating optimized & stateful frontend applications. Currently, I love to work on web applications using technologies like React (&Native), Tailwind, Next.js and Mongodb.
         </p>
     
           <Link
