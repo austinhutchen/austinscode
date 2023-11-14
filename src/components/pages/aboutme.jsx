@@ -82,13 +82,13 @@ export default class Display extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 150,
+      speed: 250,
       slidesToShow: 1,
       slidesToScroll: 1,
       lazyLoad: true,
       centerMode: true,
-      Width: "85%",
-      Height: "75%"
+      Width: "75%",
+      Height: "65%"
     };
     return (
 
@@ -101,8 +101,7 @@ export default class Display extends Component {
             return (
               <div className="slick-slide">
                 <img src={data.url} />
-                 <h4 className="hlight">
-              
+                 <h4 className="hlight-mini"> 
               <b>
                   {data.desc}
               </b>
