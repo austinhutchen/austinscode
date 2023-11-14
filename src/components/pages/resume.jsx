@@ -130,7 +130,7 @@ export const Resume = () => {
  <Nav />
    <Body />
    
-   <iframe src={pdf} className="pdf" frameborder='0' allowfullscreen></iframe>
+   <iframe src={pdf+"#zoom=FitW"} className="pdf" frameborder='0' allowfullscreen></iframe>
 
 
         
