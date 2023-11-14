@@ -16,11 +16,11 @@
 }
 .projectdesc{
   color:white;
-font-size: 0.90em;
+font-size: 0.9em;
 text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
-h5{
-
+h4{
+font-size: 0.9em;
 }
 img{
 loading : "lazy";

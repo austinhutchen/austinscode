@@ -82,7 +82,7 @@ export const Nav = () => {
                 </a>
             </nav>
             <div className="banner" >
-                <h3 id="name">Austin Morozane Hutchen</h3>
+                <h3 id="name">Austin  Hutchen</h3>
             </div>
         </div>
 
