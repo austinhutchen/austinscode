@@ -64,12 +64,18 @@ html.has-scroll-smooth {
 	transform: translateZ(0);
 }
 
-.slick-slide {
-  /* ... */
-  height: 100vh;
+.slides {
   position: relative;
-  z-index: 60;
-
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+  }
+  .slick-prev {
+    left: 5%;
+  }
+  .slick-next {
+    right: 5%;
+  }
 }
 
 .slick-slide img {
