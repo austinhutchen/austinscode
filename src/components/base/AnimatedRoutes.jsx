@@ -38,7 +38,7 @@ import graph from './fast_imgs/graph.mp4'
 import React  from 'react';
 export let AnimatedRoutes = () => {
   const aboutme_props = [me,coding,systems,math,family,mimi,nature]
-  const projects_props = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, notable, weather, graph]
+  const projects_props = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph]
     const location = useLocation();
     return (
         <div className="main-wrapper">
