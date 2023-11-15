@@ -2,18 +2,12 @@
 import { Nav } from "../common/navbar"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import me from "./images/me4.webp";
-import coding from "./images/coding.webp";
-import family from './images/family.webp';
-import nature from "./images/nature.webp";
-import mimi from "./images/mimi.webp";
-import math from "./images/IMG_0913.webp";
-import systems from "./images/systems.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export const Aboutme = () => {
+export const Aboutme = (props) => {
+  
   return (
    <> 
       <Nav />
@@ -27,7 +21,7 @@ export const Aboutme = () => {
         </b>
       </h1>
     </motion.div>
-       <Display />
+       <Display data={props.data} />
 
     </>
   )
@@ -38,10 +32,7 @@ export default class Display extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      user: ""
-    }
-
+   this.propkeys = props.data
   }
 
   render() {
@@ -49,33 +40,33 @@ export default class Display extends Component {
     var keys = [
       {
         desc: "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more: ",
-        url: me
+        url: this.propkeys[0] 
       }
       ,
       {
         desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my algorithmic runtimes and read often on the problems of code protability and optimization, especially in languages like C (~My favorite~). ",
-        url: coding
+        url: this.propkeys[1]
       },
   {
         desc: "I love embedded systems!",
-        url: systems
+        url: this.propkeys[2]
       },
       {
         desc: "I love Mathematics!",
-        url: math
+        url: this.propkeys[3]
       }
       ,
       {
         desc: "I love quality family time!",
-        url: family
+        url: this.propkeys[4]
       },
       {
         desc: "I love cats!",
-        url: mimi
+        url: this.propkeys[5]
       },
       {
         desc: "I love hiking!",
-        url: nature
+        url: this.propkeys[6]
       },
     
 
