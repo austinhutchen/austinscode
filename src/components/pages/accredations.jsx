@@ -20,15 +20,10 @@ export const View= (props) => {
 <section>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>
-      <br/>
-      <div className="iframe-container">
-
-   <iframe src={props.data+"#view=FitW"} className="pdf" height="100%" width="100%" frameborder='0' allowfullscreen></iframe>
-
-      </div>
+     <img src ={props.data} className="format-img"/> 
 
       </section>
-<section>
+<>
    <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>
 
@@ -38,7 +33,7 @@ export const View= (props) => {
       <img src= {stat2} className="format-img" />
       <img src= {inclusion} className="format-img" />
       </div>
-      </section>
+      </>
    </motion.div>
 
 

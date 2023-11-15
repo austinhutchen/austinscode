@@ -20,21 +20,7 @@ width : auto;
 }
 .format-img{
 
-   height: calc(45vh - 100px);    
+   height: calc(60vh - 100px);    
 }
 
-.iframe-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 50%;
-}
 
-.iframe-container iframe {
-  position: absolute;
-  width: 50%;
-  height: 90%;
-  top: 0;
-  left: 45vh;
-  right: 0;
-  bottom: 0;
-}

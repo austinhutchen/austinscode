@@ -5,8 +5,8 @@ import { Projects } from "../pages/projects"
 import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
 import { AnimatePresence } from "framer-motion"; 
-import _pdf from "../pages/images/Recommendation Letter_Austin.pdf"
-import _pdf2 from "../pages/images/RESUME_SWE.pdf"
+import _pdf from "../pages/images/REC_LETTER.png"
+import _pdf2 from "../pages/images/RESUME_SWE.png"
 import React  from 'react';
 export let AnimatedRoutes = () => {
     const location = useLocation();
