@@ -124,14 +124,15 @@ const Body = () => {
 
 export const Resume = (props) => {
 
-
     return (
 <>
+
  <Nav />
    <Body />
-   
+      <br/>
+  <div className ="iframe-container" >
    <iframe src={props.data+"#view=FitW"} className="pdf" frameborder='0' allowfullscreen></iframe>
-
+      </div>
 
         
       </>

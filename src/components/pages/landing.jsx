@@ -91,7 +91,7 @@ export const Landing = () => {
   return (
     <>
    <Nav />
- <h3 className="text-4xl sm:text-7xl text-white" style={{paddingTop:'10', fontSize: '1.7em'}} className="hlight">
+ <h3 className="text-4xl sm:text-7xl text-white" style={{paddingTop:'10', fontSize: '1.5em'}} className="hlight">
 
          <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
         </h3>
