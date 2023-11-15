@@ -18,11 +18,27 @@ import family from './fast_imgs/family.webp';
 import mimi from "./fast_imgs/mimi.webp";
 import nature from "./fast_imgs/nature.webp";
 
+import shell from './fast_imgs/shell.webp'
+import encryptc from './fast_imgs/encryptc.webp'
+import PLANT_WATERER from './fast_imgs/PLANT_WATERER.webp'
 
+import calculator from './fast_imgs/calculator.webp'
+import maps from './fast_imgs/maps.webp'
+
+import gesture from './fast_imgs/gesture.mp4'
+
+import my_interface from './fast_imgs/interface.webp'
+import butterfly from './fast_imgs/animate.mp4'
+
+import notable from './fast_imgs/journalapp.webp'
+
+import weather from './fast_imgs/WEATHER.webp'
+import graph from './fast_imgs/graph.mp4'
 
 import React  from 'react';
 export let AnimatedRoutes = () => {
   const aboutme_props = [me,coding,systems,math,family,mimi,nature]
+  const projects_props = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, notable, weather, graph]
     const location = useLocation();
     return (
         <div className="main-wrapper">
@@ -32,7 +48,7 @@ export let AnimatedRoutes = () => {
                         <Route exact path="" element={<Landing />} />
                         <Route exact path="src/components/landing.js" element={<Landing />} />
                         <Route exact path="src/components/resume.js" element={<Resume data={_pdf2} />} />
-                        <Route exact path="src/components/projects.js" element={<Projects />} />
+                        <Route exact path="src/components/projects.js" element={<Projects data ={projects_props} />} />
                         <Route exact path="src/components/aboutme.js" element={<Aboutme data={aboutme_props} />} />
                         <Route exact path="src/components/accredations.js" element={<View data={_pdf} />} />
                     </Routes>
