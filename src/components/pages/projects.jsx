@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
-import React from 'react';
 import '../../css/projects.css'
 
 const Body = (props) => {
@@ -108,7 +107,7 @@ const Body = (props) => {
                                    ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
-  <video controls  loop muted  height ="140vh" width ="auto">
+  <video controls  loop muted  height ="140vh" width ="auto" >
           <source src={props.data[7]} type="video/mp4" ></source>
         </video>
    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4> 
@@ -151,7 +150,7 @@ const Body = (props) => {
 
 
   <video controls  loop muted  height ="140vh" width ="auto">
-          <source src={props.data[10]} type="video/mp4" ></source>
+          <source src={props.data[10]} type="video/mp4," ></source>
         </video>
 
            
