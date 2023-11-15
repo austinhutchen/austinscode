@@ -85,7 +85,8 @@ const Body = () => {
             <h1 className="hlight" >
                 <b><i> OPEN SOURCE CONTRIBUTIONS & MORE</i></b>
             </h1>
-     <ul style={{paddingTop:'0.7em'}}> 
+      <br/>
+     <ul > 
 <li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                 rel="noreferrer" >
@@ -106,8 +107,8 @@ const Body = () => {
                     <b><i> FULL RESUME ( in progress)</i></b>
                 </h1>
 
-<br/>
     
+
             </div>
 
 
@@ -129,11 +130,9 @@ export const Resume = (props) => {
 
  <Nav />
    <Body />
-      <br/>
-  <div className ="iframe-container" >
-   <iframe src={props.data+"#view=FitW"} className="pdf" frameborder='0' allowfullscreen></iframe>
-      </div>
+   <img src ={props.data} className="format-img"/>
 
+  
         
       </>
     )
