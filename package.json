@@ -14,12 +14,9 @@
     "react-doc-viewer": "^0.1.5",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "react-pdf-viewer": "^0.1.0",
-    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
-    "react-sizeme": "^3.0.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
@@ -45,16 +42,15 @@
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "last 1 edge version"
     ]
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "TagCloud": "^2.4.0",
     "gh-pages": "^5.0.0",
-    "react-pdf": "^7.5.1",
-    "react-slick": "^0.29.0",
-    "sizeme": "^1.0.2"
+    "react-slick": "^0.29.0"
   },
   "bundleDependencies": [
     "framer-motion"
