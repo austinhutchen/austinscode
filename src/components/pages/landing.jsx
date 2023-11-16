@@ -7,6 +7,7 @@ import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from "react-scroll"; 
 import "../../css/TextSphere.css";
+import { useNavigate } from "react-router-dom";
 const Head = () => {
   return (
  <div> 
@@ -88,7 +89,8 @@ const Body = () => {
 
 // landing page 
 export const Landing = () => {
-// LINK IN BELOW STATEMENT IS TO BE USED TO NAVIGATE TO ABOUT PAGE 
+// LINK IN BELOW STATEMENT IS TO BE USED TO NAVIGATE TO ABOUT PAGE
+  const nav = useNavigate();
   return (
     <>
    <Nav />
@@ -97,7 +99,7 @@ export const Landing = () => {
          <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
         </h3>
    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0  } }}>
        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
 
@@ -106,9 +108,16 @@ export const Landing = () => {
            I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. Currently, I love to work on applications using cutting-edge technologies like C, Rust, Java, C#, React (&Native), Tailwind, Next.js and Mongodb.
     </b>
         </p>
-    
-          <Link
-            to="about"
+     <button
+                        class="btn btn-outline-success me-1"
+                        type="button"
+                        id="navbar"
+                        onClick={() => {
+                            nav('/src/components/aboutme.js');
+                        }}
+                    >
+                         <Link
+            to="../pages/aboutme.jsx"
             smooth
             duration={500}
             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -118,7 +127,10 @@ export const Landing = () => {
               <HiArrowNarrowRight size={32} className="ml-3" />
             </span>
           </Link>
-        </div>
+
+                    </button>
+ 
+                 </div>
       </div>
       <Body />
     
