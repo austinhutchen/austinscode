@@ -1,8 +1,6 @@
 import { Nav } from "../common/navbar";
 import { motion } from "framer-motion";
 
-import ghicon from "./images/ghicon.png"
-import ebayicon from "./images/ebay.png"
 import "../../css/resume.css"
 import "../../App.css"
 import "../../css/dimensions.css"
@@ -10,7 +8,7 @@ import "../../css/dimensions.css"
 const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.00001   } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.000000001   } }}>
             <body id="desc">
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
@@ -56,7 +54,7 @@ const Body = () => {
 
                             <a href="https://www.ebay.com/usr/gadgetsllcc"  target="_blank"
                 rel="noreferrer" className="referral">
-<img src ={ebayicon} className= "icon"/>
+<img src ={props.data[1]} className= "icon"/>
                             </a>
                         
 
@@ -74,7 +72,7 @@ const Body = () => {
                         </h3>
                             <a href= "https://github.com/austinhutchen"  target="_blank"
                 rel="noreferrer">
-     <img src={ghicon} className="icon" /> 
+     <img src={props.data[2]} className="icon" /> 
                             </a>
 
                 </li>

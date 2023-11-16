@@ -37,12 +37,14 @@ import notable from './fast_imgs/journalapp.webp'
 import weather from './fast_imgs/WEATHER.webp'
 import graph from './fast_imgs/graph.mp4'
 
+import ghicon from "./fast_imgs/ghicon.png"
+import ebayicon from "./fast_imgs/ebay.png"
 import React  from 'react';
 export let AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph]
   const PDF_PAYLOAD = [ rec_letter, stat1,stat2,inclusion ]
-  const RESUME_PAYLOAD = [resume]
+  const RESUME_PAYLOAD = [resume,ebayicon,ghicon]
     const location = useLocation();
     return (
         <div className="main-wrapper">
