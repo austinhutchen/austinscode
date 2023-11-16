@@ -5,9 +5,6 @@ import { motion } from "framer-motion";
 import React from 'react';
 
 
-import stat1 from "./images/stat1.png"
-import stat2 from "./images/stat2.png"
-import inclusion from "./images/inclusion.png"
 import "../../css/resume.css"
 
 export const View= (props) => {
@@ -20,7 +17,7 @@ export const View= (props) => {
 <section>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>
-     <img src ={props.data} className="format-img"/> 
+     <img src ={props.data[0]} className="format-img"/> 
 
       </section>
 <>
@@ -29,9 +26,9 @@ export const View= (props) => {
 
       <br/>
       <div>
-      <img src= {stat1} className="format-img" />
-      <img src= {stat2} className="format-img" />
-      <img src= {inclusion} className="format-img" />
+      <img src= {props.data[1]} className="format-img" />
+      <img src= {props.data[2]} className="format-img" />
+      <img src= {props.data[3]} className="format-img" />
       </div>
       </>
    </motion.div>
