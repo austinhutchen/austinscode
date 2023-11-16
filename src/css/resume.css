@@ -14,13 +14,10 @@ padding-top:10px;
 height : 5vh;
 width : auto;
 }
-#desc {
 
-
-}
 .format-img{
 
-   height: calc(60vh - 100px);    
+   height: calc(75vh - 100px);    
 }
 
 
