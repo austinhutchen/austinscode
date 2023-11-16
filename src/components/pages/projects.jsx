@@ -116,17 +116,7 @@ const Body = (props) => {
                         
 
                          
-
-                         
-     <li>
-                                <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    ZEN JOURNALLING APP (REACT NATIVE/JAVA)
-                                </a>
-      <br/>
-  <img src = {props.data[8]} height ="140vh" width ="auto"/> 
-      <h4> An app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
-                            </li>
-                             <li>
+      <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     WEATHER APP (REACT NATIVE)
@@ -134,10 +124,20 @@ const Body = (props) => {
 <br/>
   <img src = {props.data[9]} height ="140vh" width ="auto"/> 
 
-   <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
+   <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying info through a carousel slide to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
 
        </li> 
 
+                         
+     <li>
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                                    NOTES & JOURNAL APP (REACT NATIVE/JAVA)
+                                </a>
+      <br/>
+  <img src = {props.data[8]} height ="140vh" width ="auto"/> 
+      <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
+                            </li>
+                       
                        
                          
 <br/>
@@ -157,16 +157,7 @@ const Body = (props) => {
    <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5> 
 
                             </li>
-   <li>
-                                <a className="hlight-mini" href="https://github.com/austinhutchen/redditsearch" target="_blank" rel="noopener noreferrer">
-                                    REDDIT STATISTICS CLI (PYTHON)
-                                </a>
-  <br/>
-  <img src = {""} height ="140vh" width ="auto"/> 
 
-   <h5> A statistics engine coded with numpy and python which runs in the terminal, has a fully functional built-in search engine, and many different graphical display options for reddit data analysis. </h5> 
-
-                            </li> 
 
                   
 
@@ -190,7 +181,7 @@ export const Projects = (props) => {
         <section>
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
+                exit={{ x: window.innerWidth, transition: { duration: 0.000000001  } }}>
                 <div style={{ paddingBottom: 8 }}>
 
                     <h1 className="hlight" >
