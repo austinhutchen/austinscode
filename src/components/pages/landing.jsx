@@ -24,6 +24,7 @@ const TextSphere = () => {
   useEffect(() => {
     const container = containerRef.current;
     const texts = [
+      "Go",
       "Python",
       "Flutter",
       "React.JS",
