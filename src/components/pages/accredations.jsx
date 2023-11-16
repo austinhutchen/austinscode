@@ -16,7 +16,7 @@ export const View= (props) => {
         <Nav />
 
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.001  } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
 <section>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>

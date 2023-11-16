@@ -96,7 +96,7 @@ export const Landing = () => {
          <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
         </h3>
    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.001  } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
       <div className="flex flex-col justify-center h-full">
 
