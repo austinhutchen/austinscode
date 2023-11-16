@@ -9,7 +9,7 @@ const Body = (props) => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0   } }}>
-            <body id="desc">
+            <body >
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
