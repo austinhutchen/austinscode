@@ -87,8 +87,8 @@ const Body = (props) => {
                                     EMBEDDED GESTURE SENSOR (C++/NANOLIB )
                                 </a>
   <br/>
-   <video controls  loop muted  height ="140vh" width ="auto">
- <source src={props.data[5]} type="video/mp4" ></source>
+   <video controls  loop muted  height ="140vh" width ="auto" preload ="metadata">
+ <source src={props.data[5]+"#t=0.5"} type="video/mp4" ></source>
 </video>
 
       <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4> 
