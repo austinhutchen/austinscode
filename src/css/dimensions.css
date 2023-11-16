@@ -55,7 +55,6 @@
 
 .sc img {
   height: calc(65vh - 100px);
-  padding-top: 0.6em;
   /* it centers any block level element */
 }
 
@@ -84,5 +83,4 @@ html.has-scroll-smooth {
 }
 
 p.img-slide-text {
-  margin: 2rem auto 0;
 }
