@@ -32,7 +32,7 @@ overflow: 'hidden';
 loading : "lazy";
 }
 fieldset {
-  margin: 0.1vh;
+  margin: 0.1svh;
   border: 5px solid #666;
   border-radius: 8px;
   box-shadow: 0 0 10px #666;
