@@ -17,9 +17,10 @@ const Body = (props) => {
                         <b>
                             <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
-                                    THIS WEBSITE (REACT/HTML/CSS)
+                                    THIS WEBSITE (REACT.JS/NODE.JS)
                                 </a>
       <h6 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
+      <br/>
      <h7><b> <i>Programming Instagram</i> </b> </h7>
       </a>
       </h6>
