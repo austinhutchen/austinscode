@@ -25,6 +25,17 @@ const Body = (props) => {
       </h6>
  
                                              </li>
+   <li>
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
+                                  ESP32 "PLANT KERNEL" (C) 
+                                </a>
+      <br/>
+  <video controls  loop muted  height ="200vh" width ="auto">
+          <source src={props.data[2]} type="video/mp4," ></source>
+        </video>
+      <h4 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
+                                                       </li>
+
 
                             <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
@@ -47,16 +58,7 @@ const Body = (props) => {
 
       <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4> 
      </li>
-                      <li>
-                                <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
-                                  ESP32 AUTO-PLANT WATERER (C) 
-                                </a>
-      <br/>
-      <img src ={props.data[2]}  height ="200vh" width ="auto" />
-      <h4 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
-                                                       </li>
-
-      
+                         
                             <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
