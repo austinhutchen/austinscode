@@ -64,7 +64,7 @@ const Body = (props) => {
                             <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
-                                    CALCULATOR APP (FLUTTER/C)
+                                    CALCULATOR APP (DART/FLUTTER/C)
                                 </a>
   <br/>
   <img src = {props.data[3]} height ="170vh" width ="auto"/> 
@@ -75,7 +75,7 @@ const Body = (props) => {
 
                             <li>
                                 <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer">
-                                    GOOGLE MAPS CLONE (FLUTTER/C)
+                                    GOOGLE MAPS CLONE (DART/FLUTTER/C)
                                 </a>
       <br/>
  <img src = {props.data[4]} height ="140vh" width ="auto"/> 
