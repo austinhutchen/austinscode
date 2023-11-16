@@ -28,6 +28,7 @@ h4{
 font-size: 0.76em;
 }
 img{
+overflow: 'hidden';
 loading : "lazy";
 }
 fieldset {
