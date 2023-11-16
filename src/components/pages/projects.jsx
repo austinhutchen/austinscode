@@ -25,17 +25,6 @@ const Body = (props) => {
       </h6>
  
                                              </li>
-   <li>
-                                <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
-                                  ESP32 "PLANT KERNEL" (C) 
-                                </a>
-      <br/>
-  <video controls  loop muted  height ="200vh" width ="auto">
-          <source src={props.data[2]} type="video/mp4," ></source>
-        </video>
-      <h4 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
-                                                       </li>
-
 
                             <li>
                                 <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
@@ -46,6 +35,18 @@ const Body = (props) => {
 
    <h4 > A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h4> 
                             </li>
+
+
+   <li>
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
+                                  ESP32 "PLANT KERNEL" (C) 
+                                </a>
+      <br/>
+  <video controls  loop muted  height ="170vh" width ="auto">
+          <source src={props.data[2]} type="video/mp4" ></source>
+        </video>
+      <h4 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
+                                                       </li>
 
 
                             <li>
