@@ -17,7 +17,6 @@ export const Aboutme = (props) => {
   <h1 className="hlight" >
         <b>
           About me!
-
         </b>
       </h1>
     </motion.div>
@@ -95,12 +94,14 @@ export default class Display extends Component {
           {keys.map(data => {
             return (
               <div className="slick-slide">
-                <img src={data.url} style={{borderRadius: 400/ 2 }}/>
+                <img src={data.url} style={{borderRadius: 330/ 2, borderStyle:"solid"}}/>
                  <h4 style={{fontSize:'1em', color:'cornsilk'}} >
-              <fieldset style={{paddingTop:'-3em'}}>
+              <fieldset >
+              <p className ="projdesc" style={{color:'cornsilk' ,size:"medium"}}>
               <b>
                   {data.desc}
               </b>
+              </p>
               </fieldset>
                 </h4>
               </div>
