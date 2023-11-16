@@ -13,7 +13,7 @@ export const Aboutme = (props) => {
       <Nav />
 
      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.000000000000000001  } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0  } }}>
   <h1 className="hlight" >
         <b>
           About me!

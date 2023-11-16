@@ -51,12 +51,12 @@ export let AnimatedRoutes = () => {
             <div className="App">
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
-                        <Route exact path="" element={<Landing />} />
-                        <Route exact path="src/components/landing.js" element={<Landing />} />
-                        <Route exact path="src/components/resume.js" element={<Resume data={RESUME_PAYLOAD} />} />
-                        <Route exact path="src/components/projects.js" element={<Projects data ={PROJECTS_PAYLOAD} />} />
-                        <Route exact path="src/components/aboutme.js" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
-                        <Route exact path="src/components/accredations.js" element={<View data={PDF_PAYLOAD} />} />
+                        <Route  path="" element={<Landing />} />
+                        <Route  path="src/components/landing.js" element={<Landing />} />
+                        <Route  path="src/components/resume.js" element={<Resume data={RESUME_PAYLOAD} />} />
+                        <Route  path="src/components/projects.js" element={<Projects data ={PROJECTS_PAYLOAD} />} />
+                        <Route  path="src/components/aboutme.js" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
+                        <Route  path="src/components/accredations.js" element={<View data={PDF_PAYLOAD} />} />
                     </Routes>
                 </AnimatePresence>
 
