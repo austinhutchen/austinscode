@@ -32,7 +32,6 @@ export default class Display extends Component {
 
   constructor(props) {
     super(props);
-   this.propkeys = props.data
   }
 
   render() {
@@ -40,33 +39,33 @@ export default class Display extends Component {
     var keys = [
       {
         desc: "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more: ",
-        url: this.propkeys[0] 
+        url: this.props.data[0] 
       }
       ,
       {
         desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my algorithmic runtimes and read often on the problems of code protability and optimization, especially in languages like C (~My favorite~). ",
-        url: this.propkeys[1]
+        url: this.props.data[1]
       },
   {
         desc: "I love embedded systems!",
-        url: this.propkeys[2]
+        url: this.props.data[2]
       },
       {
         desc: "I love Mathematics!",
-        url: this.propkeys[3]
+        url: this.props.data[3]
       }
       ,
       {
         desc: "I love quality family time!",
-        url: this.propkeys[4]
+        url: this.props.data[4]
       },
       {
         desc: "I love cats!",
-        url: this.propkeys[5]
+        url: this.props.data[5]
       },
       {
         desc: "I love hiking!",
-        url: this.propkeys[6]
+        url: this.props.data[6]
       },
     
 
