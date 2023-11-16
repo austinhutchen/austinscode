@@ -5,11 +5,10 @@ import { Projects } from "../pages/projects"
 import { View } from "../pages/accredations"
 import { Aboutme } from "../pages/aboutme"
 import { AnimatePresence } from "framer-motion"; 
-import _pdf from "./fast_imgs/REC_LETTER.png"
-import _pdf2 from "../pages/images/RESUME_SWE.png"
+import rec_letter from "./fast_imgs/REC_LETTER.png"
 import me from "./fast_imgs/me4.webp";
 import coding from "./fast_imgs/coding.webp";
-
+import resume from "./fast_imgs/RESUME_SWE.png";
 import systems from "./fast_imgs/systems.webp";
 
 import stat1 from "./fast_imgs/stat1.png"
@@ -42,7 +41,8 @@ import React  from 'react';
 export let AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph]
-  const PDF_PAYLOAD = [ _pdf, stat1,stat2,inclusion ]
+  const PDF_PAYLOAD = [ rec_letter, stat1,stat2,inclusion ]
+  const RESUME_PAYLOAD = [resume]
     const location = useLocation();
     return (
         <div className="main-wrapper">
@@ -51,7 +51,7 @@ export let AnimatedRoutes = () => {
                     <Routes location={location} key={location.pathname}>
                         <Route exact path="" element={<Landing />} />
                         <Route exact path="src/components/landing.js" element={<Landing />} />
-                        <Route exact path="src/components/resume.js" element={<Resume data={_pdf2} />} />
+                        <Route exact path="src/components/resume.js" element={<Resume data={RESUME_PAYLOAD} />} />
                         <Route exact path="src/components/projects.js" element={<Projects data ={PROJECTS_PAYLOAD} />} />
                         <Route exact path="src/components/aboutme.js" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
                         <Route exact path="src/components/accredations.js" element={<View data={PDF_PAYLOAD} />} />

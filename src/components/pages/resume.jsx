@@ -130,7 +130,7 @@ export const Resume = (props) => {
 
  <Nav />
    <Body />
-   <img src ={props.data} className="format-img"/>
+   <img src ={props.data[0]} className="format-img"/>
 
   
         
