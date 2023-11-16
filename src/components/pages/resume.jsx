@@ -10,7 +10,7 @@ import "../../css/dimensions.css"
 const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.001   } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0.00001   } }}>
             <body id="desc">
                 <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>

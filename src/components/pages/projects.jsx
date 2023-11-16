@@ -190,7 +190,7 @@ export const Projects = (props) => {
         <section>
             <Nav></Nav>
             <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0.0001  } }}>
+                exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
                 <div style={{ paddingBottom: 8 }}>
 
                     <h1 className="hlight" >
