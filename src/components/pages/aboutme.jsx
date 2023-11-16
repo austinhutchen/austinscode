@@ -94,7 +94,7 @@ export default class Display extends Component {
           {keys.map(data => {
             return (
               <div className="slick-slide">
-                <img src={data.url} style={{borderRadius: 100/ 2, borderStyle:"solid", overflow: "hidden", resizeMode:"cover"}}/>
+                <img src={data.url} style={{borderRadius: 1, borderStyle:"solid", overflow: "hidden", resizeMode:"cover", paddingTop:"-100vh"}}/>
                  <h4 style={{fontSize:'1em', color:'cornsilk'}} >
               <fieldset >
               <p className ="projdesc" style={{color:'cornsilk' ,size:"small"}}>
