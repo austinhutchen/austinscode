@@ -95,16 +95,6 @@ const Body = (props) => {
       <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4> 
     
                             </li>
-   <li>
-                                <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
-                                    4x4 INTERRUPT UART INTERFACE (C)
-                                </a>
-      <br/>
-   <img src = {props.data[6]} height ="140vh" width ="auto"/> 
-
-   <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4> 
-                            </li>
-
 
    <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
@@ -116,11 +106,8 @@ const Body = (props) => {
         </video>
    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4> 
                             </li>
- 
-                        
 
-                         
-      <li>
+    <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
                                     WEATHER APP (REACT NATIVE)
@@ -131,6 +118,23 @@ const Body = (props) => {
    <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying info through a carousel slide to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
 
        </li> 
+   <li>
+                                <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
+                                    4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
+                                </a>
+      <br/>
+   <img src = {props.data[6]} height ="140vh" width ="auto"/> 
+
+   <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4> 
+                            </li>
+
+
+
+ 
+                        
+
+                         
+  
 
                          
      <li>
