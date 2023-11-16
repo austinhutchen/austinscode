@@ -22,7 +22,7 @@ import nature from "./fast_imgs/nature.webp";
 
 import shell from './fast_imgs/shell.webp'
 import encryptc from './fast_imgs/encryptc.webp'
-import PLANT_WATERER from './fast_imgs/PLANT_WATERER.webp'
+import PLANT_WATERER from './fast_imgs/PLANT_KERNEL.mp4'
 
 import calculator from './fast_imgs/calculator.webp'
 import maps from './fast_imgs/maps.webp'
