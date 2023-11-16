@@ -42,8 +42,8 @@ const Body = (props) => {
                                   ESP32 "PLANT KERNEL" (C) 
                                 </a>
       <br/>
-  <video controls  loop muted  height ="170vh" width ="auto">
-          <source src={props.data[2]} type="video/mp4" ></source>
+  <video controls  loop muted  height ="170vh" width ="auto" preload="metadata">
+          <source src={props.data[2]+"#t=0.5"} type="video/mp4" ></source>
         </video>
       <h4 > An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
                                                        </li>
@@ -110,8 +110,8 @@ const Body = (props) => {
                                    ARDUINO BYTE ANIMATIONS (C) 
                                 </a>
       <br/>
-  <video controls  loop muted  height ="140vh" width ="auto" >
-          <source src={props.data[7]} type="video/mp4" ></source>
+  <video controls  loop muted  height ="140vh" width ="auto" preload="metadata" >
+          <source src={props.data[7]+"#t=0.5"} type="video/mp4" ></source>
         </video>
    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4> 
                             </li>
@@ -152,8 +152,8 @@ const Body = (props) => {
 
 
 
-  <video controls  loop muted  height ="140vh" width ="auto">
-          <source src={props.data[10]} type="video/mp4," ></source>
+  <video controls  loop muted  height ="140vh" width ="auto" type="metadata">
+          <source src={props.data[10]+"#t=0.5"} type="video/mp4" ></source>
         </video>
 
            
