@@ -5,7 +5,7 @@ import "../../css/resume.css"
 import "../../App.css"
 import "../../css/dimensions.css"
 
-const Body = () => {
+const Body = (props) => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0.000000001   } }}>
@@ -127,7 +127,7 @@ export const Resume = (props) => {
 <>
 
  <Nav />
-   <Body />
+   <Body data= {props} />
    <img src ={props.data[0]} className="format-img"/>
 
   
