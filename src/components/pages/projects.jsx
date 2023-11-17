@@ -6,8 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import '../../css/projects.css'
-import {Suspense} from "React"
+import {Suspense} from "react"
 
+import React from "react"
 const Body = (props) => {
 
     return (
