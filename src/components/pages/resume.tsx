@@ -1,9 +1,8 @@
 import { Nav } from "../common/navbar.tsx";
 import { motion } from "framer-motion";
 
-import "../../css/resume.css"
-import "../../App.css"
-import "../../css/dimensions.css"
+import "../../css/resume.scss"
+import "../../css/dimensions.scss"
 
 const Body = (props) => {
     return (

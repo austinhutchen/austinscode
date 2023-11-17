@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from "react-scroll"; 
-import "../../css/TextSphere.css";
+import "../../css/TextSphere.scss";
 import { useNavigate } from "react-router-dom";
 const Head = () => {
   return (

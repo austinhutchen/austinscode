@@ -4,7 +4,7 @@ import {Suspense} from "react";
 import { motion } from "framer-motion";
 
 
-import "../../css/resume.css"
+import "../../css/resume.scss"
 
 export const View= (props) => {
     return (
