@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import '../../css/projects.css'
+import {Suspense} from "react"
 
 const Body = (props) => {
 
@@ -71,7 +72,7 @@ const Body = (props) => {
    <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4> 
 
                             </li>
-
+<Suspense fallback ={<p> Loading.. </p>}>
                             <li>
                                 <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer" loading="lazy">
                                     GOOGLE MAPS CLONE (DART/FLUTTER/C)
@@ -166,7 +167,7 @@ const Body = (props) => {
                             </li>
 
 
-                  
+          </Suspense>        
 
                         
 
