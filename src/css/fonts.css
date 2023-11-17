@@ -30,13 +30,16 @@ font-size: 0.76em;
 }
 img{
 overflow: 'hidden';
-loading : "lazy";
+
 }
 fieldset {
   margin: 0.1svh;
-  border: 5px solid #666;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #666;
+
+border: 0.08em solid #CCA; 
+  -moz-border-radius: 0.09em;  
+  border-radius: 0.09em;  
+  -webkit-border-radius: 0.09em;
+  box-shadow: 0 0 0.1em #CCA;
 }
 legend {
   padding: 2px 4px;
