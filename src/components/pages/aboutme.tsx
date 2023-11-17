@@ -46,7 +46,7 @@ export default class Display extends Component {
       {
         desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms, P/NP runtimes and read often on the problems of code portability and optimization, especially in languages like C (~My favorite~). ",
         url: this.props.data[1],
-        loading:"lazy"
+        loading:"eager"
       },
   {
         desc: "I love embedded systems!",
@@ -56,25 +56,25 @@ export default class Display extends Component {
       {
         desc: "I love Mathematics!",
         url: this.props.data[3],
-        loading: "lazy"
+        loading: "eager"
       }
       ,
       {
         desc: "I love quality family time!",
         url: this.props.data[4],
-        loading: "lazy"
+        loading: "eager"
 
       },
       {
         desc: "I love cats!",
         url: this.props.data[5],
-        loading: "lazy"
+        loading: "eager"
 
       },
       {
         desc: "I love hiking!",
         url: this.props.data[6],
-        loading: "lazy"
+        loading: "eager"
 
       },
     
