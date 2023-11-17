@@ -35,10 +35,10 @@ overflow: 'hidden';
 fieldset {
 
 border: 0.08em solid #CCA; 
-  -moz-border-radius: 0.09em;  
-  border-radius: 0.09em;  
-  -webkit-border-radius: 0.09em;
-  box-shadow: 0.1em 0.1em 0.1em #CCA;
+  -moz-border-radius: 0.4em;  
+  border-radius: 0.4em;  
+  -webkit-border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em #CCA;
 }
 legend {
   padding: 2px 4px;
