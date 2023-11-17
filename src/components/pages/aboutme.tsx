@@ -97,7 +97,7 @@ export default class Display extends Component {
                 <img src={data.url} style={{borderRadius: 450/ 2, borderStyle:"solid", border: "0.8vh solid #0BA" }}/>
 
                             <fieldset >
-              <p className ="projdesc" style={{color:'cornsilk' ,    fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif"   , fontWeight: 350,textShadow: "2px 3px 5px rgba(0,0,0,0.5)"}}>
+              <p className ="projdesc" style={{color:'cornsilk' ,  fontSize:"1.2em",  fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif"   , fontWeight: 350,textShadow: "2px 3px 5px rgba(0,0,0,0.5)"}}>
 
 
 <b>
