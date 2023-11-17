@@ -1,8 +1,7 @@
 import { Nav } from "../common/navbar.tsx";
-
+import {Suspense} from "React";
 // Plugins
 import { motion } from "framer-motion";
-import React from 'react';
 
 
 import "../../css/resume.css"
@@ -13,7 +12,8 @@ export const View= (props) => {
         <Nav />
 
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0.00001  } }}>
+            exit={{ x: window.innerWidth, transition: { duration: 0  } }}>
+
 <section>
             <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
       <br/>
@@ -25,11 +25,11 @@ export const View= (props) => {
       <br/>
 
       <br/>
-      <div>
+      <Suspense fallback={<p> loading.. </p>}>
       <img src= {props.data[1]} className="format-img" loading ="lazy"/>
       <img src= {props.data[2]} className="format-img"  loading ="lazy"/>
       <img src= {props.data[3]} className="format-img" loading ="lazy" />
-      </div>
+      </Suspense>
       </>
    </motion.div>
 
