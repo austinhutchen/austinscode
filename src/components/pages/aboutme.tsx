@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import {Suspense} from "react"
 export const Aboutme = (props) => {
   
   return (
@@ -101,7 +101,9 @@ export default class Display extends Component {
 
    
       <div className="sc">
+      <Suspense fallback={<p> loading.. </p>}>
         <Slider {...settings} >
+     
           {keys.map(data => {
             return (
               <div className="slick-slide" >
@@ -119,7 +121,9 @@ export default class Display extends Component {
                   </div>
             );
           })}
+
         </Slider>
+        </Suspense>
       </div>
     );
   }
