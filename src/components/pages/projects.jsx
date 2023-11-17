@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Nav } from "../common/navbar";
-import { CommonCarousel } from '../common/carousel';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -198,7 +197,6 @@ export const Projects = (props) => {
 
                 </div>
 
-                <CommonCarousel />
                 <Body data = {props.data}/>
                 <br />
 
