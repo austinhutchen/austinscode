@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Nav } from "../common/navbar";
-import { Spinner } from '../common/symbols';
-import { Footer } from '../common/footer';
-import React, { useEffect, useRef } from "react";
+import { Nav } from "../common/navbar.tsx";
+import { Spinner } from '../common/symbols.tsx';
+import { Footer } from '../common/footer.tsx';
+import { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from "react-scroll"; 
@@ -119,7 +119,7 @@ export const Landing = () => {
                         }}
                     >
                          <Link
-            to="../pages/aboutme.jsx"
+            to="../pages/aboutme.tsx"
             smooth
             duration={500}
             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Nav } from "../common/navbar";
+import { Nav } from "../common/navbar.tsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
