@@ -16,7 +16,7 @@ const Body = (props) => {
                         <b>
                             <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
-                                    THIS WEBSITE (REACT.JS/NODE.JS)
+                                    THIS WEBSITE (TYPESCRIPT/REACT.TSX/NODE.JSX)
                                 </a>
       <h6 > Click the title text for a link to the source code. You can also see more on my projects and personal programming community on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
       <br/>
@@ -109,12 +109,12 @@ const Body = (props) => {
     <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/weather-native.git" target="_blank"
                                     rel="noopener noreferrer">
-                                    WEATHER APP (REACT NATIVE)
+                                    ESP32-FETCH WEATHER APP (REACT NATIVE/TYPESCRIPT)
                                 </a>
 <br/>
   <img src = {props.data[9]} height ="140vh" width ="auto" loading="lazy"/> 
 
-   <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying info through a carousel slide to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
+   <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally onto an ESP32 microcontroller and displaying info through a carousel slide to a user's app over wifi. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
 
        </li> 
    <li>
