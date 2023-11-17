@@ -3,9 +3,9 @@ import { Nav } from "../common/navbar.tsx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../css/dimensions.css";
-import "../../css/fonts.css";
-import '../../css/projects.css'
+import "../../css/dimensions.scss";
+import "../../css/fonts.scss";
+import '../../css/projects.scss'
 import {Suspense} from "react"
 
 import React from "react"

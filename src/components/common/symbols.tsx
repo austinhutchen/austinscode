@@ -1,7 +1,6 @@
-import React  from 'react';
-import "../../css/spinner.css";
+import "../../css/spinner.scss";
 import "../../css/spotify.css";
-import "../../css/nav-bar.css";
+import "../../css/nav-bar.scss";
 
 export const Wave = () => {
     return (
