@@ -46,7 +46,7 @@ export default class Display extends Component {
       {
         desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms, P/NP runtimes and read often on the problems of code portability and optimization, especially in languages like C (~My favorite~). ",
         url: this.props.data[1],
-        loading:"eager"
+        loading:"lazy"
       },
   {
         desc: "I love embedded systems!",
