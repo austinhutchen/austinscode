@@ -1,9 +1,9 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { Landing } from "../pages/landing"
-import { Resume } from "../pages/resume"
-import { Projects } from "../pages/projects"
-import { View } from "../pages/accredations"
-import { Aboutme } from "../pages/aboutme"
+import { Landing } from "../pages/landing.tsx"
+import { Resume } from "../pages/resume.tsx"
+import { Projects } from "../pages/projects.tsx"
+import { View } from "../pages/accredations.tsx"
+import { Aboutme } from "../pages/aboutme.tsx"
 import { AnimatePresence } from "framer-motion"; 
 import rec_letter from "./fast_imgs/REC_LETTER.png"
 import me from "./fast_imgs/me4.webp";
