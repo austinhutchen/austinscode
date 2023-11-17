@@ -138,7 +138,7 @@ const Body = (props) => {
                          
      <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    NOTES & JOURNAL APP (REACT NATIVE/JAVA)
+                                    NOTES & JOURNAL APP (JAVA)
                                 </a>
       <br/>
   <img src = {props.data[8]} height ="140vh" width ="auto" loading="lazy"/> 
