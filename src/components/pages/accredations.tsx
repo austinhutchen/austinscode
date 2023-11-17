@@ -26,9 +26,9 @@ export const View= (props) => {
 
       <br/>
       <div>
-      <img src= {props.data[1]} className="format-img" />
-      <img src= {props.data[2]} className="format-img" />
-      <img src= {props.data[3]} className="format-img" />
+      <img src= {props.data[1]} className="format-img" loading ="lazy"/>
+      <img src= {props.data[2]} className="format-img"  loading ="lazy"/>
+      <img src= {props.data[3]} className="format-img" loading ="lazy" />
       </div>
       </>
    </motion.div>

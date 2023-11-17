@@ -78,7 +78,7 @@ const Body = (props) => {
                                     GOOGLE MAPS CLONE (DART/FLUTTER/C)
                                 </a>
       <br/>
- <img src = {props.data[4]} height ="140vh" width ="auto"/> 
+ <img src = {props.data[4]} height ="140vh" width ="auto" loading ="lazy"/> 
 
    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4> 
           </li>
@@ -113,7 +113,7 @@ const Body = (props) => {
                                     WEATHER APP (REACT NATIVE)
                                 </a>
 <br/>
-  <img src = {props.data[9]} height ="140vh" width ="auto"/> 
+  <img src = {props.data[9]} height ="140vh" width ="auto" loading="lazy"/> 
 
    <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally and displaying info through a carousel slide to the user. Incorporated state and event-handling, and was my introduction into mobile programming. </h4> 
 
@@ -123,7 +123,7 @@ const Body = (props) => {
                                     4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
                                 </a>
       <br/>
-   <img src = {props.data[6]} height ="140vh" width ="auto"/> 
+   <img src = {props.data[6]} height ="140vh" width ="auto" loading ="lazy"/> 
 
    <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4> 
                             </li>

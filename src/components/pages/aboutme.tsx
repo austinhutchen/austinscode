@@ -96,16 +96,14 @@ export default class Display extends Component {
               <div className="slick-slide" >
                 <img src={data.url} style={{borderRadius: 450/ 2, borderStyle:"solid", border: "0.8vh solid #0BA" }}/>
 
-                 <h4 style={{fontSize:'1em', color:'cornsilk'}} >
-              <fieldset >
-              <p className ="projdesc" style={{color:'cornsilk' ,size:"small"}}>
-              <b>
+                            <fieldset >
+              <p className ="projdesc" style={{color:'cornsilk' ,    fontFamily: 'Trebuchet MS', fontWeight: 350,textShadow: "2px 3px 5px rgba(0,0,0,0.5)"}}>
+<b>
                   {data.desc}
               </b>
               </p>
               </fieldset>
-                </h4>
-              </div>
+                  </div>
             );
           })}
         </Slider>
