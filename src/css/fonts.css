@@ -33,13 +33,12 @@ overflow: 'hidden';
 
 }
 fieldset {
-  margin: 0.1svh;
 
 border: 0.08em solid #CCA; 
   -moz-border-radius: 0.09em;  
   border-radius: 0.09em;  
   -webkit-border-radius: 0.09em;
-  box-shadow: 0 0 0.1em #CCA;
+  box-shadow: 0.1em 0.1em 0.1em #CCA;
 }
 legend {
   padding: 2px 4px;
