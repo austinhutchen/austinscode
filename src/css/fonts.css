@@ -1,15 +1,16 @@
 .hlight {
  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
  display: inline;
- color: cornsilk;
- 
+ color: cornsilk; 
 }
 .hlight-mini {
  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
  display: inline;
  color: cornsilk;
- font-size: 0.95em;
+ font-size: 1em;
  font-weight: 2em;
+
+text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
 
 .projectdesc{

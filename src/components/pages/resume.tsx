@@ -14,7 +14,7 @@ const Body = (props) => {
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
       <ul style={{paddingTop: '0.6em'}} >
-  <h3 className="hlight">
+  <h3 className="hlight-mini">
                     <b>
                         <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                     </b>
@@ -29,7 +29,7 @@ const Body = (props) => {
                  </h4>
                 </li>
 
-                <h3 className="hlight">
+                <h3 className="hlight-mini">
                     <b>
                         <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                     </b>
@@ -41,7 +41,7 @@ const Body = (props) => {
                             the software engineering team to achieve forecasted results.{" "}
                     </h3>
                 </li>
-                              <h3 className="hlight" >
+                              <h3 className="hlight-mini" >
                     <b>
                         <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                     </b>
@@ -60,7 +60,7 @@ const Body = (props) => {
 
 </li>
       <li>
-   <h3 className="hlight">
+   <h3 className="hlight-mini">
                     <b>
                         <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
                     </b>
