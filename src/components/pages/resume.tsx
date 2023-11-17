@@ -1,4 +1,4 @@
-import { Nav } from "../common/navbar";
+import { Nav } from "../common/navbar.tsx";
 import { motion } from "framer-motion";
 
 import "../../css/resume.css"

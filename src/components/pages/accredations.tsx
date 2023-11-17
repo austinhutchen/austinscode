@@ -1,4 +1,4 @@
-import { Nav } from "../common/navbar";
+import { Nav } from "../common/navbar.tsx";
 
 // Plugins
 import { motion } from "framer-motion";

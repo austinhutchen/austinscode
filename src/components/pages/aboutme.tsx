@@ -1,5 +1,5 @@
 
-import { Nav } from "../common/navbar"
+import { Nav } from "../common/navbar.tsx"
 import React, { Component } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
