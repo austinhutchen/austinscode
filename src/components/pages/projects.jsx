@@ -66,14 +66,14 @@ const Body = (props) => {
                                     CALCULATOR APP (DART/FLUTTER/C)
                                 </a>
   <br/>
-  <img src = {props.data[3]} height ="170vh" width ="auto"/> 
+  <img src = {props.data[3]} height ="170vh" width ="auto" loading="lazy"/> 
 
    <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4> 
 
                             </li>
 
                             <li>
-                                <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer">
+                                <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer" loading="lazy">
                                     GOOGLE MAPS CLONE (DART/FLUTTER/C)
                                 </a>
       <br/>
@@ -141,7 +141,7 @@ const Body = (props) => {
                                     NOTES & JOURNAL APP (REACT NATIVE/JAVA)
                                 </a>
       <br/>
-  <img src = {props.data[8]} height ="140vh" width ="auto"/> 
+  <img src = {props.data[8]} height ="140vh" width ="auto" loading="lazy"/> 
       <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                             </li>
                        
