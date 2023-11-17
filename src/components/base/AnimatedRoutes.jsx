@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Landing } from "../pages/landing.tsx"
 import { Resume } from "../pages/resume.tsx"
-import { Projects } from "../pages/projects.tsx"
+import { Projects } from "../pages/projects.jsx"
 import { View } from "../pages/accredations.tsx"
 import { Aboutme } from "../pages/aboutme.tsx"
 import { AnimatePresence } from "framer-motion"; 
