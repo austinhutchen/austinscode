@@ -1,5 +1,5 @@
 import { Nav } from "../common/navbar.tsx";
-import {Suspense} from "React";
+import {Suspense} from "react";
 // Plugins
 import { motion } from "framer-motion";
 
