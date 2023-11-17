@@ -25,6 +25,7 @@ const TextSphere = () => {
   useEffect(() => {
     const container = containerRef.current;
     const texts = [
+      "Typescript",
       "Go",
       "Python",
       "Flutter",
@@ -105,7 +106,8 @@ export const Landing = () => {
 
         <p className="intro">
     <b>
-           I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. Currently, I love to work on applications using cutting-edge technologies like C, Rust, Java, C#, React (&Native), Tailwind, Next.js and Mongodb.
+           I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, and creating optimized frontend applications. Currently, I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
+
     </b>
         </p>
      <button
