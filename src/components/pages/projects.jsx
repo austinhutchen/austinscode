@@ -6,14 +6,12 @@ import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
 import '../../css/projects.scss'
-import {Suspense} from "react"
 
 import React from "react"
 const Body = (props) => {
 
     return (
         <>
-            <section>
                     <ul className="projectdesc">
                         <b>
                             <li>
@@ -39,28 +37,26 @@ const Body = (props) => {
                             </li>
 
 
-   <li>
+ 
+
+
+  <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                                   ESP32 PLANT INTERFACE (C) 
                                 </a>
       <br/>
-<section className ="container">
-  <img src = {props.data[11]} height ="200dvh" width ="auto" /> 
-  <video controls  loop muted  height ="200dvh" width ="auto" preload="metadata">
+  <img src = {props.data[11]} height ="200vh" width ="auto" /> 
+  <video controls  loop muted  height ="200vh" width ="auto" preload="metadata">
           <source src={props.data[2]+"#t=0.5"} type="video/mp4" ></source>
         </video>
 
 
-      </section>
 
 
 
 
        <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
                                                        </li>
-
-
-<Suspense fallback ={<p> Loading additionals.. </p>}>
      <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
@@ -168,7 +164,7 @@ const Body = (props) => {
 
 
 
-  <video controls  loop muted  height ="140vh" width ="auto" type="metadata">
+  <video controls  loop muted  height ="140vh" width ="auto" preload="metadata">
           <source src={props.data[10]+"#t=0.5"} type="video/mp4" ></source>
         </video>
 
@@ -178,7 +174,6 @@ const Body = (props) => {
                             </li>
 
 
-          </Suspense>        
 
                         
 
@@ -188,8 +183,6 @@ const Body = (props) => {
 
                         </b>
                     </ul>
-                <br></br>
-            </section>
         </>
     )
 }
@@ -197,11 +190,11 @@ const Body = (props) => {
 export const Projects = (props) => {
     // integrate display component here
     return (
-        <section>
-            <Nav></Nav>
-            <motion.div className="App" initial={{ width: 0 }} animate={{ width: "100%" }}
+        <>
+            <Nav/>
+            <motion.div  initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0  } }}>
-                <div style={{ paddingBottom: 8 }}>
+                <div style={{ paddingBottom: '0.1em' }}>
 
                     <h1 className="hlight" >
                         <b>PERSONAL PROJECTS:</b>
@@ -213,7 +206,7 @@ export const Projects = (props) => {
                 <br />
 
             </motion.div>
-        </section>
+        </>
 
     )
 }
