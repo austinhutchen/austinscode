@@ -47,7 +47,6 @@ export let AnimatedRoutes = () => {
   const RESUME_PAYLOAD = [resume,ebayicon,ghicon]
     const location = useLocation();
     return (
-        <div className="main-wrapper">
             <div className="App">
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
@@ -61,7 +60,6 @@ export let AnimatedRoutes = () => {
                 </AnimatePresence>
 
             </div>
-        </div>
 
     )
 
