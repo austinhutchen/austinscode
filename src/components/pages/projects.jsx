@@ -52,7 +52,17 @@ const Body = (props) => {
 
 
 <Suspense fallback ={<p> Loading additionals.. </p>}>
+     <li>
+                                <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    CALCULATOR APP (DART/FLUTTER/C)
+                                </a>
+  <br/>
+  <img src = {props.data[3]} height ="170vh" width ="auto" loading="lazy"/> 
 
+   <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4> 
+
+                            </li>
                             <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                                     rel="noopener noreferrer">
@@ -64,17 +74,7 @@ const Body = (props) => {
       <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4> 
      </li>
                          
-                            <li>
-                                <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
-                                    rel="noopener noreferrer">
-                                    CALCULATOR APP (DART/FLUTTER/C)
-                                </a>
-  <br/>
-  <img src = {props.data[3]} height ="170vh" width ="auto" loading="lazy"/> 
-
-   <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4> 
-
-                            </li>
+                       
                             <li>
                                 <a className="hlight-mini" href="" target="_blank" rel="noopener noreferrer" loading="lazy">
                                     GOOGLE MAPS CLONE (DART/FLUTTER/C)
