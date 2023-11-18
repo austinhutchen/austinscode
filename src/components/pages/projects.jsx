@@ -39,7 +39,6 @@ const Body = (props) => {
                             </li>
 
 
-<Suspense fallback ={<p> Loading additionals.. </p>}>
    <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                                   ESP32 PLANT KERNEL (C) 
@@ -52,7 +51,7 @@ const Body = (props) => {
                                                        </li>
 
 
-
+<Suspense fallback ={<p> Loading additionals.. </p>}>
      <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                                     rel="noopener noreferrer">
