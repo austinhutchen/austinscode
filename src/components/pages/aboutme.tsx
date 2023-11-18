@@ -56,19 +56,19 @@ export default class Display extends Component {
       {
         desc: "I love Mathematics!",
         url: this.props.data[3],
-        loading: "eager"
+        loading: "lazy"
       }
       ,
       {
         desc: "I love quality family time!",
         url: this.props.data[4],
-        loading: "eager"
+        loading: "lazy"
 
       },
       {
         desc: "I love cats!",
         url: this.props.data[5],
-        loading: "eager"
+        loading: "lazy"
 
       },
       {
