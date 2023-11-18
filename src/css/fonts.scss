@@ -7,13 +7,15 @@
  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
  display: inline;
  color: cornsilk;
- font-size: 1em;
- font-weight: 2em;
 
-text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8) ;
 }
+h4{
+text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8);
 
+}
 .projectdesc{
+
   /* FOR SCALING ENTIRE PAGE BODY */
   color:white;
 font-size: 1.05em;
@@ -22,7 +24,7 @@ font-size: 1.05em;
     
     font-weight: 350;
     color: white;
-text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8);
 }
 h4{
   /* FOR SPECIFICALLY H4 PROJECT DESCRIPTIONS, TITLES EXCLUDED */

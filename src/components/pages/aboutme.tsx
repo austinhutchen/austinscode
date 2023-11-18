@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { HiArrowNarrowRight } from 'react-icons/hi';
 export const Aboutme = (props) => {
   
   return (
@@ -80,16 +81,13 @@ export default class Display extends Component {
       slidesToShow: 1,
         centerMode: true,
       lazyLoad: 'progressive',
-  Width: '75%', 
+  Width: '60%', 
       arrows:true, 
   fade: true,
   cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
   adaptiveHeight: true,
     }
     return (
-
-
-   
       <div className="sc">
         <Slider {...settings} >
 
@@ -102,9 +100,13 @@ export default class Display extends Component {
                             <fieldset >
               <p style={{color:'cornsilk' ,  fontSize:"0.95em", paddingTop:'0.8em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif"   , fontWeight: 350,textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)"}}>
 
-
+          
 <b>
                   {data.desc}
+  <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight size={32} className="ml-3" />
+            </span>
+
               </b>
               </p>
               </fieldset>
