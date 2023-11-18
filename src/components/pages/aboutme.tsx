@@ -32,11 +32,9 @@ export const Aboutme = (props) => {
 
 export default class Display extends Component {
 
-  constructor(props) {
-    super(props);
-  }
+ 
 
-  render() {
+  render(props) {
 
     var keys = [
       {
@@ -82,8 +80,7 @@ export default class Display extends Component {
       slidesToShow: 1,
         centerMode: true,
       lazyLoad: 'progressive',
-
-   
+  Width: '75%', 
       arrows:true, 
   fade: true,
   cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
