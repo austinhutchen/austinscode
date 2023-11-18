@@ -14,27 +14,9 @@
 
 
 
-.img {
-    border: 50px;
-    padding-top: 5;
-    align-self: "center";
-}
 
 
-
-
-#desc {
-
-    color: white;
-
-}
-
-.styler {
-    border: solid black 1px;
-
-}
-
-html {
+.html {
     height: 100%;
 }
 
