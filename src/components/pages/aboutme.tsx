@@ -80,14 +80,12 @@ export default class Display extends Component {
 
     const settings = {
    dots: true,
-      infinite: true,
-      speed: 250,
       slidesToShow: 1,
       slidesToScroll: 1,
       lazyLoad: true,
       centerMode: true,
-      Width: "75%",
-      Height: "65%",
+      Width: "55%",
+      Height: "45%",
       arrows:true, 
  autoplaySpeed: 1000,
                 className: 'slides'
