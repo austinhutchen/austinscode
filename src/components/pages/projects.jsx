@@ -45,10 +45,23 @@ const Body = (props) => {
                                   ESP32 PLANT INTERFACE (C) 
                                 </a>
       <br/>
-  <img src = {props.data[11]} height ="200vh" width ="auto" /> 
-  <video controls  loop muted  height ="200vh" width ="auto" preload="metadata">
-          <source src={props.data[2]+"#t=0.5"} type="video/mp4" ></source>
-        </video>
+  <table className="style-table"> 
+        <tr> 
+      <td>
+  <img src = {props.data[11]} height ="185em" width ="auto" />
+      </td>
+      </tr>
+      <tr> 
+      <td>
+             <video controls  loop muted  height ="185m" width ="auto" preload="metadata">
+
+          <source src={props.data[2]+"#t=0.7"} type="video/mp4" ></source>
+        </video>      
+      </td>
+      </tr> 
+
+    </table> 
+
 
 
 
@@ -96,7 +109,7 @@ const Body = (props) => {
                                 </a>
   <br/>
    <video controls  loop muted  height ="140vh" width ="auto" preload ="metadata">
- <source src={props.data[5]+"#t=0.5"} type="video/mp4" ></source>
+ <source src={props.data[5]+"#t=0.5"} type="video/mp4" />
 </video>
 
       <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4> 
@@ -109,7 +122,7 @@ const Body = (props) => {
                                 </a>
       <br/>
   <video controls  loop muted  height ="140vh" width ="auto" preload="metadata" >
-          <source src={props.data[7]+"#t=0.5"} type="video/mp4" ></source>
+          <source src={props.data[7]+"#t=0.5"} type="video/mp4" />
         </video>
    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4> 
                             </li>
@@ -146,7 +159,7 @@ const Body = (props) => {
                          
      <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                                    NOTES & JOURNAL APP (JAVA)
+                                    NOTES & JOURNAL APP (JAVA, IN PROGRESS)
                                 </a>
       <br/>
   <img src = {props.data[8]} height ="140vh" width ="auto" loading="lazy"/> 
@@ -165,7 +178,7 @@ const Body = (props) => {
 
 
   <video controls  loop muted  height ="140vh" width ="auto" preload="metadata">
-          <source src={props.data[10]+"#t=0.5"} type="video/mp4" ></source>
+          <source src={props.data[10]+"#t=0.5"} type="video/mp4" />
         </video>
 
            

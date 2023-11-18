@@ -1,9 +1,4 @@
 
-  /* big landscape tablets, laptops, and desktops */
-.container{
-display: flex;
-  align-items: center;
-}
 .sc img {
   height: calc(55vh - 100px);
   margin :0 auto;
@@ -11,7 +6,9 @@ display: flex;
 
   /* it centers any block level element */
 }
-
+video{
+  margin:auto ;
+}
 html.has-scroll-smooth {
 	backface-visibility: hidden;
 	transform: translateZ(0);
@@ -31,4 +28,8 @@ html.has-scroll-smooth {
   }
 }
 
-
+.style-table{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
