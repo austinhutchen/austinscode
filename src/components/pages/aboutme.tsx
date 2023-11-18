@@ -102,10 +102,11 @@ export default class Display extends Component {
    
       <div className="sc">
         <Slider {...settings} >
-     
+
           {keys.map(data => {
             return (
-              <div className="slick-slide" >
+
+     <>
                 <img src={data.url} loading={data.loading} style={{borderRadius: 450/ 2, borderStyle:"solid", border: "0.5vh solid #0BA" }} />
 
                             <fieldset >
@@ -117,7 +118,7 @@ export default class Display extends Component {
               </b>
               </p>
               </fieldset>
-                  </div>
+              </>
             );
           })}
 
