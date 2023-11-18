@@ -40,7 +40,7 @@ export default class Display extends Component {
 
     var keys = [
       {
-        desc: "My name is Austin Hutchen. I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! Swipe for more: ",
+        desc: "Welcome again to my site! I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! ",
         url: this.props.data[0],
 
       }
@@ -81,13 +81,15 @@ export default class Display extends Component {
     const settings = {
    dots: true,
       slidesToShow: 1,
-      slidesToScroll: 1,
+        centerMode: true,
       lazyLoad: true,
       centerMode: true,
-      Width: "55%",
-      Height: "45%",
+      Width: "50%",
+      Height: "40%",
       arrows:true, 
- autoplaySpeed: 1000,
+  fade: true,
+  cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
+  adaptiveHeight: true,
                 className: 'slides'
     }
     return (
@@ -101,10 +103,10 @@ export default class Display extends Component {
             return (
 
      <>
-                <img src={data.url} style={{borderRadius: 200/ 2, borderStyle:"solid", border: "0.5vh solid #0BA" }} />
+                <img src={data.url} style={{borderRadius: 200/ 2, borderStyle:"solid", fontSize: '1.2em', border: "0.5vh solid #0BA" }} />
 
                             <fieldset >
-              <p className ="projdesc" style={{color:'cornsilk' ,  fontSize:"0.95em",  fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif"   , fontWeight: 350,textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)"}}>
+              <p style={{color:'cornsilk' ,  fontSize:"0.95em", paddingTop:'0.8em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif"   , fontWeight: 350,textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)"}}>
 
 
 <b>
