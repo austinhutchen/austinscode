@@ -41,13 +41,22 @@ const Body = (props) => {
 
    <li>
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
-                                  ESP32 PLANT KERNEL (C) 
+                                  ESP32 PLANT INTERFACE (C) 
                                 </a>
       <br/>
-  <video controls  loop muted  height ="220vh" width ="auto" preload="metadata">
+<section className ="container">
+  <img src = {props.data[11]} height ="200dvh" width ="auto" /> 
+  <video controls  loop muted  height ="200dvh" width ="auto" preload="metadata">
           <source src={props.data[2]+"#t=0.5"} type="video/mp4" ></source>
         </video>
-      <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
+
+
+      </section>
+
+
+
+
+       <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
                                                        </li>
 
 

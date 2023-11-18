@@ -22,8 +22,8 @@ import nature from "../../fast_imgs/nature.webp";
 
 import shell from '../../fast_imgs/shell.webp'
 import encryptc from '../../fast_imgs/encryptc.webp'
-import PLANT_WATERER from '../../fast_imgs/PLANT_KERNEL.mp4'
-
+import PLANT_WATERER from "../../fast_imgs/PLANT_KERNEL.mp4"
+import PLANT_WATERER_2 from "../../fast_imgs/PLANT_KERNEL.jpg"
 import calculator from '../../fast_imgs/calculator.webp'
 import maps from '../../fast_imgs/maps.webp'
 
@@ -42,7 +42,7 @@ import ebayicon from "../../fast_imgs/ebay.png"
 import React  from 'react';
 export let AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
-  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph]
+  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2 ]
   const PDF_PAYLOAD = [ rec_letter, stat1,stat2,inclusion ]
   const RESUME_PAYLOAD = [resume,ebayicon,ghicon]
     const location = useLocation();
