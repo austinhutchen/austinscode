@@ -40,9 +40,8 @@ export default class Display extends Component {
 
     var keys = [
       {
-        desc: "Welcome again to my site! I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! ",
+        desc: "Welcome! I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! ",
         url: this.props.data[0],
-
       }
       ,
       {
@@ -82,15 +81,13 @@ export default class Display extends Component {
    dots: true,
       slidesToShow: 1,
         centerMode: true,
-      lazyLoad: true,
-      centerMode: true,
+      lazyLoad: 'progressive',
       Width: "50%",
       Height: "40%",
       arrows:true, 
   fade: true,
   cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
   adaptiveHeight: true,
-                className: 'slides'
     }
     return (
 
