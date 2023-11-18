@@ -2,7 +2,6 @@ import { Nav } from "../common/navbar.tsx";
 import { motion } from "framer-motion";
 
 import "../../css/resume.scss"
-import "../../css/dimensions.scss"
 
 const Body = (props) => {
     return (
