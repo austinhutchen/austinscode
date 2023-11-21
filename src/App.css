@@ -90,5 +90,5 @@ body {
     display: inline;
     width: auto;
     height: auto;
-    overflow: auto;
+    overscroll-behavior: contain;
 }
