@@ -45,14 +45,14 @@ const Body = (props) => {
                     </b>
                 </h3>
 <li>
-                <h3 className="projdesc">
-                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account by <b> <i> <u> clicking the image below: </u></i></b>
-</h3>
+            
 
 
                             <a href="https://www.ebay.com/usr/gadgetsllcc"  target="_blank"
                 rel="noreferrer" className="referral">
-<img src ={props.data[1]} className= "icon"/>
+    <h3 className="projdesc">
+                        I sell refurbished and custom-built Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can read the reviews and find my account by <b> <i> <u> clicking the image below: </u></i></b>
+</h3>
                             </a>
                         
 
@@ -65,12 +65,12 @@ const Body = (props) => {
                 </h3>
 </li>
 <li>
-    <h3 className="projdesc">
-                       I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and<b><i><u> much more below.</u></i> </b>
-                        </h3>
-                            <a href= "https://github.com/austinhutchen"  target="_blank"
+ <a href= "https://github.com/austinhutchen"  target="_blank"
                 rel="noreferrer">
-     <img src={props.data[2]} className="icon" /> 
+
+    <h3 className="projdesc">
+                       I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and <b><i><u> much more! </u></i> </b>
+                        </h3>
                             </a>
 
                 </li>
