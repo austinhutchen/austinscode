@@ -1,6 +1,6 @@
 
 .sc img {
-  height: calc(55vh - 100px);
+  height: calc(62vh - 100px);
   margin :0 auto;
   left: auto;
 
@@ -21,10 +21,16 @@ html.has-scroll-smooth {
     top: 60%;
   }
   .slick-prev {
-    left: 0%;
+left: 3%;
+  background: red; /*to notice it, is white*/
+  z-index: 1;
+
   }
   .slick-next {
-    right: 0%;
+
+  background: red; /*to notice it, is white*/
+    right: 3%;
+    z-index:1;
   }
 }
 
