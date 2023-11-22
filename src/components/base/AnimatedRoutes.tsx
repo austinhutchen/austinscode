@@ -1,43 +1,43 @@
-import { Routes, Route, useLocation } from "react-router-dom";
 import { Landing } from "../pages/landing.tsx"
-import { Resume } from "../pages/resume.tsx"
-import { Projects } from "../pages/projects.jsx"
-import { View } from "../pages/accredations.tsx"
-import { Aboutme } from "../pages/aboutme.tsx"
 import { AnimatePresence } from "framer-motion"; 
+import {Resume} from '../pages/resume.tsx'
+import {Projects} from '../pages/projects.jsx'
+import {Aboutme} from '../pages/aboutme.tsx'
+import {View} from '../pages/accredations.tsx'
 import rec_letter from "../../fast_imgs/REC_LETTER.png"
 import me from "../../fast_imgs/me4.webp";
 import coding from "../../fast_imgs/coding.webp";
 import resume from "../../fast_imgs/RESUME_SWE.png";
 import systems from "../../fast_imgs/systems.webp";
-
 import stat1 from "../../fast_imgs/stat1.png"
 import stat2 from "../../fast_imgs/stat2.png"
 import inclusion from "../../fast_imgs/inclusion.png"
-
+import loadable from '@loadable/component'
 import math from "../../fast_imgs/IMG_0913.webp";
 import family from '../../fast_imgs/family.webp';
 import mimi from "../../fast_imgs/mimi.webp";
 import nature from "../../fast_imgs/nature.webp";
-
 import shell from '../../fast_imgs/shell.webp'
 import encryptc from '../../fast_imgs/encryptc.webp'
 import PLANT_WATERER from "../../fast_imgs/PLANT_KERNEL.mp4"
 import PLANT_WATERER_2 from "../../fast_imgs/PLANT_KERNEL.jpg"
 import calculator from '../../fast_imgs/calculator.webp'
 import maps from '../../fast_imgs/maps.webp'
-
 import gesture from '../../fast_imgs/gesture.mp4'
-
 import my_interface from '../../fast_imgs/interface.webp'
 import butterfly from '../../fast_imgs/animate.mp4'
-
 import notable from '../../fast_imgs/journalapp.webp'
-
 import weather from '../../fast_imgs/WEATHER.webp'
 import graph from '../../fast_imgs/graph.mp4'
+import React from 'react'
+import { Routes, Route, useLocation } from "react-router-dom";
+/*
+const {Resume} =loadable(() => import('../pages/resume.tsx'))
+const {Projects} = loadable(()=> import('../pages/projects.jsx'))
+const {Aboutme} =loadable(() => import('../pages/aboutme.tsx'))
+const {View} =loadable(()=>import('../pages/accredations.tsx'))
+*/
 
-import React  from 'react';
 export let AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2 ]

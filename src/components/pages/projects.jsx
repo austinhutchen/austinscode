@@ -143,7 +143,7 @@ const Body = (props) => {
                                     4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
                                 </a>
       <br/>
-   <img src = {props.data[6]} height ="140vh" width ="auto" loading ="lazy"/> 
+      <img src = {props.data[6]} height ="140vh" width ="auto" loading ="lazy"/> 
 
    <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4> 
                             </li>
@@ -173,7 +173,8 @@ const Body = (props) => {
                                 <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                                     SIMPLE 2D->3D T(x) GRAPHER (JAVASCRIPT)
                                 </a>
-  <br/>
+  <br>
+  </br>
 
 
 
@@ -183,7 +184,6 @@ const Body = (props) => {
 
            
    <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5> 
-
                             </li>
 
 

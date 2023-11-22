@@ -1,11 +1,10 @@
 
 import { Nav } from "../common/navbar.tsx"
-import React, { Component } from "react";
+import  { Component } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import { HiArrowNarrowRight } from 'react-icons/hi';
 export const Aboutme = (props) => {
   
@@ -81,7 +80,7 @@ export default class Display extends Component {
       slidesToShow: 1,
         centerMode: true,
       lazyLoad: 'anticipated',
-  Width: '70%', 
+  Width: '60%', 
       arrows:true, 
   fade: true,
   cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
