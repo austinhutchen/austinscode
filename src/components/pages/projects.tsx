@@ -213,7 +213,7 @@ export const Projects = (props) => {
     return (
         <>
             <Nav />
-            <motion.div initial={{ width: 1 }} animate={{ width: "100%" }}
+            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <div style={{ paddingBottom: '0.1em' }}>
 
@@ -222,7 +222,6 @@ export const Projects = (props) => {
                     </h1>
 
                 </div>
-
                 <Body data={props.data} />
                 <br />
 
