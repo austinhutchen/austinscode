@@ -25,7 +25,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/landing.js');
+                            nav('/Landing');
                         }}
                     >
                         Home
@@ -35,7 +35,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/aboutme.js');
+                            nav('/AboutMe');
                         }}
                     >
                         About
@@ -45,7 +45,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/projects.js');
+                            nav('/Projects');
                         }}
                     >
                         Projects
@@ -55,7 +55,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/resume.js');
+                            nav('/Resume');
                         }}
                     >
                         Resume
@@ -66,7 +66,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/src/components/accredations.js');
+                            nav('/Accredidations');
                         }}
                     >
                         Accredidations
