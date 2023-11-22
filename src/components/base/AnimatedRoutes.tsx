@@ -41,7 +41,7 @@ export const AnimatedRoutes = () => {
             <div className="App">
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
-                        <Route  path="/Landing" element={<Landing />} />
+                        <Route  path="/" element={<Landing />} />
                         <Route   path="/Resume" element={<Resume data={RESUME_PAYLOAD} />} />
                         <Route   path="/Projects" element={<Projects data ={PROJECTS_PAYLOAD} />} />
                         <Route  path="/AboutMe" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
