@@ -1,7 +1,7 @@
 import { Landing } from "../pages/landing.tsx"
 import { AnimatePresence } from "framer-motion"; 
 import {Resume} from '../pages/resume.tsx'
-import {Projects} from '../pages/projects.jsx'
+import {Projects} from '../pages/projects.tsx'
 import {Aboutme} from '../pages/aboutme.tsx'
 import {View} from '../pages/accredations.tsx'
 import rec_letter from "../../fast_imgs/REC_LETTER.png"
@@ -12,7 +12,6 @@ import systems from "../../fast_imgs/systems.webp";
 import stat1 from "../../fast_imgs/stat1.png"
 import stat2 from "../../fast_imgs/stat2.png"
 import inclusion from "../../fast_imgs/inclusion.png"
-import loadable from '@loadable/component'
 import math from "../../fast_imgs/IMG_0913.webp";
 import family from '../../fast_imgs/family.webp';
 import mimi from "../../fast_imgs/mimi.webp";
@@ -31,14 +30,8 @@ import weather from '../../fast_imgs/WEATHER.webp'
 import graph from '../../fast_imgs/graph.mp4'
 import React from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
-/*
-const {Resume} =loadable(() => import('../pages/resume.tsx'))
-const {Projects} = loadable(()=> import('../pages/projects.jsx'))
-const {Aboutme} =loadable(() => import('../pages/aboutme.tsx'))
-const {View} =loadable(()=>import('../pages/accredations.tsx'))
-*/
 
-export let AnimatedRoutes = () => {
+export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2 ]
   const PDF_PAYLOAD = [ rec_letter, stat1,stat2,inclusion ]
@@ -48,12 +41,11 @@ export let AnimatedRoutes = () => {
             <div className="App">
                 <AnimatePresence mode="wait">
                     <Routes location={location} key={location.pathname}>
-                        <Route  path="" element={<Landing />} />
-                        <Route  path="src/components/landing.js" element={<Landing />} />
-                        <Route  path="src/components/resume.js" element={<Resume data={RESUME_PAYLOAD} />} />
-                        <Route  path="src/components/projects.js" element={<Projects data ={PROJECTS_PAYLOAD} />} />
-                        <Route  path="src/components/aboutme.js" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
-                        <Route  path="src/components/accredations.js" element={<View data={PDF_PAYLOAD} />} />
+                        <Route  path="/Landing" element={<Landing />} />
+                        <Route   path="/Resume" element={<Resume data={RESUME_PAYLOAD} />} />
+                        <Route   path="/Projects" element={<Projects data ={PROJECTS_PAYLOAD} />} />
+                        <Route  path="/AboutMe" element={<Aboutme data={ABOUTME_PAYLOAD} />} />
+                        <Route   path="/Accredidations" element={<View data={PDF_PAYLOAD} />} />
                     </Routes>
                 </AnimatePresence>
 
