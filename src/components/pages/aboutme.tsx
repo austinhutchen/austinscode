@@ -76,7 +76,7 @@ export const Aboutme = (props) => {
       centerMode: true,
       lazyLoad: 'anticipated',
       Width: '60%',
-      arrows: true,
+      arrows: false,
       fade: true,
       cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
       adaptiveHeight: true,
@@ -91,8 +91,8 @@ export const Aboutme = (props) => {
 
               <>
                 <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid", fontSize: '1.2em', border: "0.5vh solid #0BA" }} />
-<button onClick={() => slider?.current?.slickPrev()}>Prev</button>
-<button onClick={() => slider?.current?.slickNext()}>Next</button>
+<button className="prev-slick" onClick={() => slider?.current?.slickPrev()}>Prev</button>
+<button className="next-slick" onClick={() => slider?.current?.slickNext()}>Next</button>
                 <fieldset >
                   <p style={{ color: 'cornsilk', fontSize: "0.95em", paddingTop: '0.8em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)" }}>
 
