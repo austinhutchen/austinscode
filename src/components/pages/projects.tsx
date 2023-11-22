@@ -79,6 +79,17 @@ const Body = (props) => {
                     <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4>
 
                 </li>
+ <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                        rel="noopener noreferrer">
+                        ESP32 PORTABLE WEATHER STATION(C)
+                    </a>
+                    <br />
+                    <img src={props.data[12]} height="140vh" width="auto" />
+
+                    <h4> Used a DHT11 and the adafruit display library in combination with 8V of battery power to display real-time information over wifi to an app. Coded fully in c.</h4>
+                </li>
+
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
