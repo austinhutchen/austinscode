@@ -36,9 +36,9 @@ const Body = () => {
                         <h3 className="projdesc">
                             {" "}
                             Made first company sale as Marketing consultant, worked closely with
-                            the software engineering team to achieve forecasted results. See my most popular medium article, and more posts on sustainability and the threat of e-waste
-                            <a href=">https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
-"> here </a>                    </h3>
+                            the software engineering team to achieve forecasted results. See my most popular medium article, and other (science, environment, and tech-related) research pieces written by me on the threat of e-waste 
+                           <b> <a href=">https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
+"> here </a>   </b>                 </h3>
                     </li>
                     <h3 className="hlight-mini" >
                         <b>
@@ -49,12 +49,12 @@ const Body = () => {
 
 
 
-                        <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
-                            rel="noreferrer" className="referral">
-                            <h3 className="projdesc">
-                                I have sold, built, and repaired Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests.
-                            </h3>
-                        </a>
+                                                 <h3 className="projdesc">
+                                I have sold, built, and repaired Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a clasName ="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
+                            rel="noreferrer" className="referral"> 
+here </a>
+                     </b></h3>    
+                            
 
 
                     </li>
@@ -66,13 +66,13 @@ const Body = () => {
                         </h3>
                     </li>
                     <li>
-                        <a href="https://github.com/austinhutchen" target="_blank"
-                            rel="noreferrer">
+                    
 
                             <h3 className="projdesc">
-                                I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and <b><i><u> much more! </u></i> </b>
+                                I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and    <a href="https://github.com/austinhutchen" target="_blank"
+                            rel="noreferrer"> <b><i><u> much more! </u></i> </b>  </a>
                             </h3>
-                        </a>
+                       
 
                     </li>
 
