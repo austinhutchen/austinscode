@@ -25,7 +25,7 @@ export const Nav = () => {
                         type="button"
                         id="navbar"
                         onClick={() => {
-                            nav('/Landing');
+                            nav('/');
                         }}
                     >
                         Home
