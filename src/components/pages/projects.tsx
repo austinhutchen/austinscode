@@ -80,14 +80,14 @@ const Body = (props) => {
 
                 </li>
  <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
                         rel="noopener noreferrer">
                         ESP32 PORTABLE WEATHER STATION(C)
                     </a>
                     <br />
                     <img src={props.data[12]} height="140vh" width="auto" />
 
-                    <h4> Used a DHT11 and the adafruit display library in combination with 8V of battery power to display real-time information over wifi to an app. Coded fully in c.</h4>
+                    <h4> Used a DHT11 serial temperature & humidity sensor along with an adafruitSSD1306 OLED I2C interface 9V of power to display real-time information over wifi to a react app. Coded fully in c using the platformio platform.</h4>
                 </li>
 
                 <li>
