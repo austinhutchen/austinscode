@@ -49,3 +49,16 @@ fieldset > legend {
 fieldset > legend + * {
   clear: both;
 }
+@media all and (min-width:320px) {
+.name{
+
+    font-size: 1.8em;
+}
+}
+
+@media not all and (min-width:320px){
+.name{
+
+    font-size: 3.0em ;
+}
+}
