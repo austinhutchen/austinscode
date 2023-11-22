@@ -27,13 +27,14 @@ import my_interface from '../../fast_imgs/interface.webp'
 import butterfly from '../../fast_imgs/animate.mp4'
 import notable from '../../fast_imgs/journalapp.webp'
 import weather from '../../fast_imgs/WEATHER.webp'
+import WEATHER_SENSOR from '../../fast_imgs/ESP_WEATHER.webp'
 import graph from '../../fast_imgs/graph.mp4'
 import React from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
-  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2 ]
+  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR ]
   const PDF_PAYLOAD = [ rec_letter, stat1,stat2,inclusion ]
   const RESUME_PAYLOAD = [resume]
     const location = useLocation();

@@ -37,8 +37,9 @@ const Body = () => {
                             {" "}
                             Made first company sale as Marketing consultant, worked closely with
                             the software engineering team to achieve forecasted results. See my most popular medium article, and other (science, environment, and tech-related) research pieces written by me on the threat of e-waste 
-                           <b> <a href=">https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
-"> here </a>   </b>                 </h3>
+                           <b> <a href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
+"  target="_blank"
+                            rel="noreferrer"> here </a>   </b>                 </h3>
                     </li>
                     <h3 className="hlight-mini" >
                         <b>
