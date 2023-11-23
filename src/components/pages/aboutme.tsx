@@ -91,18 +91,15 @@ export const Aboutme = (props) => {
 
               <>
                 <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid", fontSize: '1.2em', border: "0.45vh solid #0BA" }} />
-<button className="prev-slick" onClick={() => slider?.current?.slickPrev()}><b> &#8592;</b></button>
-<button className="next-slick" onClick={() => slider?.current?.slickNext()}><b> &#8594;</b></button>
+
                 <fieldset >
-                  <p style={{ color: 'cornsilk', fontSize: "1.05em", paddingTop: '0.7em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8);" }}>
+                  <p style={{ color: 'cornsilk', fontSize: "1.05em", paddingTop: '0.em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
 
 
                     <b>
                       {data.desc}
-                      <span className="group-hover:rotate-90 duration-300">
-                        <HiArrowNarrowRight size={32} className="ml-3" />
-                      </span>
-
+                    
+<button className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.8em'} className="ml-3" /> </button>
                     </b>
                   </p>
                 </fieldset>
