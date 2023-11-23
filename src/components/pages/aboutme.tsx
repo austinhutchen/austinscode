@@ -14,7 +14,7 @@ export const Aboutme = (props) => {
       <Nav />
 
       <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+        exit={{ x: window.innerWidth, transition: { duration: 0 } }}> 
         <h1 className="hlight" >
           <b>
             About me!
@@ -94,7 +94,7 @@ export const Aboutme = (props) => {
 <button className="prev-slick" onClick={() => slider?.current?.slickPrev()}><b> &#8592;</b></button>
 <button className="next-slick" onClick={() => slider?.current?.slickNext()}><b> &#8594;</b></button>
                 <fieldset >
-                  <p style={{ color: 'cornsilk', fontSize: "0.95em", paddingTop: '0.8em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)" }}>
+                  <p style={{ color: 'cornsilk', fontSize: "0.95em", paddingTop: '0.4em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "2px 3px 5px rgba(0.8,0.8,0.8,0.8)" }}>
 
 
                     <b>
