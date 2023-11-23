@@ -75,8 +75,8 @@ export const Nav = () => {
                     <img
                         src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
                         alt="icon"
-                        width="40vh"
-                        height="40vh"
+                        width="30vh"
+                        height="30vh"
                     />
                 </a>
                 </div>

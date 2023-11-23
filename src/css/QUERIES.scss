@@ -1,26 +1,40 @@
   /* PHONE */
 @media all and (max-device-width:320px) {
 #name{
-    font-size: 1.6em;
+    font-size: 1.7em;
 }
-  .slider_container{
+  .sc p{
 
 
 
 
   }
 
+.sc img {
+  height: calc(52vh - 100px);
+  margin :0 auto;
+  left: auto;
+
+  /* it centers any block level element */
+}
+
 }
 
 @media not all and (max-device-width:320px){
 #name{
-    font-size: 2.5em;
+    font-size: 2.4em;
 }
+.sc p{
 
+
+
+
+  }
 .sc img {
   height: calc(60vh - 100px);
   margin :0 auto;
   left: auto;
 
   /* it centers any block level element */
-}}
+}
+}
