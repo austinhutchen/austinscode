@@ -53,7 +53,7 @@ const Body = (props) => {
                             <td>
                                 <video controls loop muted height="185m" width="auto" preload="metadata">
 
-                                    <source src={props.data[2] + "#t=0.7"} type="video/mp4" ></source>
+                                    <source src={props.data[2] + "#t=0.1"} type="video/mp4" ></source>
                                 </video>
                             </td>
                         </tr>
@@ -114,7 +114,7 @@ const Body = (props) => {
                 <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
                         rel="noopener noreferrer" className="hlight-mini">
-                        EMBEDDED GESTURE SENSOR (C++/NANOLIB )
+                        EMBEDDED GESTURE SENSOR (C++)
                     </a>
                     <br />
                     <video controls loop muted height="140vh" width="auto" preload="metadata">
@@ -133,7 +133,7 @@ const Body = (props) => {
                     <video controls loop muted height="140vh" width="auto" preload="metadata" >
                         <source src={props.data[7] + "#t=0.5"} type="video/mp4" />
                     </video>
-                    <h4> I coded many byte-level animations for embedded systems. The animations utilized a bit mask, and a frame buffer for displaying the images into local register memory. You can see the demo above.</h4>
+                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized a frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
                 <li>
@@ -188,7 +188,7 @@ const Body = (props) => {
 
 
                     <video controls loop muted height="140vh" width="auto" preload="metadata">
-                        <source src={props.data[10] + "#t=0.5"} type="video/mp4" />
+                        <source src={props.data[10] + "#t=0.1"} type="video/mp4" />
                     </video>
 
 
@@ -215,7 +215,7 @@ export const Projects = (props) => {
             <Nav />
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-                <div style={{ paddingBottom: '0.1em' }}>
+                <div style={{ paddingBottom: '0.2em' }}>
 
                     <h1 className="hlight" >
                         <b>PERSONAL PROJECTS:</b>
@@ -223,7 +223,6 @@ export const Projects = (props) => {
 
                 </div>
                 <Body data={props.data} />
-                <br />
 
             </motion.div>
         </>
