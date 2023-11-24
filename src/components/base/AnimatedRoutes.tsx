@@ -7,7 +7,7 @@ import {View} from '../pages/accredations.tsx'
 import rec_letter from "../../fast_imgs/REC_LETTER.png"
 import me from "../../fast_imgs/me4.webp";
 import coding from "../../fast_imgs/coding.webp";
-import resume from "../../fast_imgs/RESUME_SWE.png";
+import resume from "../../fast_imgs/RESUME_SWE.webp";
 import systems from "../../fast_imgs/systems.webp";
 import stat1 from "../../fast_imgs/stat1.png"
 import stat2 from "../../fast_imgs/stat2.png"

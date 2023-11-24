@@ -5,9 +5,7 @@ special {
 
 }
 
-#wrap {
- min-height: 100%;
-}
+
 
 
 
@@ -37,13 +35,7 @@ a:active {
  color: blue;
 }
 
-body:before {
- content: "";
- height: 100%;
- float: left;
- width: 0;
- margin-top: -32767px;
-}
+
 
 
 
@@ -58,7 +50,7 @@ body:before {
  text-align: center;
  font-weight: bold;
  color: yellowgreen;
-text-shadow: 5px 5px 7px rgba(0,0,0,0.5);
+text-shadow: 5px 5px 7px rgba(0.5,0.5,0.5,0.5);
 
 }
 
