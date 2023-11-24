@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 export const Aboutme = (props) => {
 
   return (
@@ -92,7 +92,9 @@ export const Aboutme = (props) => {
               <>
                 <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid", fontSize: '1.2em', border: "0.45vh solid #0BA" }} />
 
-<button className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.8em'} className="ml-3" /> </button>
+<button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'0.5em'} className="ml-3" /> </button>
+<button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.5em'} className="ml-3" /> </button>
+
                 <fieldset >
                   <p style={{ color: 'cornsilk', fontSize: "1.05em", paddingTop: '0.em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
 

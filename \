@@ -37,7 +37,7 @@ const Body = (props) => {
 
                     <img src={props.data[9]} height="140vh" width="auto"  />
 
-                    <h4> Used a DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes data correction for imprecise measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
+                    <h4> Used a DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying bit-by-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes data correction for imprecise measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
                 </li>
 
      <li>
@@ -59,16 +59,6 @@ const Body = (props) => {
 
                     <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4>
 
-                </li>
-
-    <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
-                        PAPER-LIKE ESP32 ANIMATOR (C)
-                    </a>
-                    <br />
-                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
-
-                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
                 </li>
 
                 <li>
@@ -170,7 +160,16 @@ const Body = (props) => {
                     <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                 </li>
 
-            
+                <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
+                        4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
+                    </a>
+                    <br />
+                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
+
+                    <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4>
+                </li>
+
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                         SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)
