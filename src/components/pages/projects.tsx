@@ -24,7 +24,23 @@ const Body = (props) => {
 
                 </li>
 
-                <li>
+           
+
+
+ <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
+                        rel="noopener noreferrer">
+                        ESP32 MOBILE WEATHER INTERFACE (C&TYPESCRIPT)
+                    </a>
+                    <br />
+                    <img src={props.data[12]} height="140vh" width="auto" />
+
+                    <img src={props.data[9]} height="140vh" width="auto"  />
+
+                    <h4> Used a DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying bit transmission over the network) with 9V of portable battery power to display real-time information over wifi to a react app. Includes data correction for imprecise measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
+                </li>
+
+     <li>
                     <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
                         UNIX KERNEL SHELL (C)
                     </a>
@@ -33,10 +49,17 @@ const Body = (props) => {
 
                     <h4 > A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h4>
                 </li>
+ <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
+                        rel="noopener noreferrer">
+                        CALCULATOR APP (DART/FLUTTER/C)
+                    </a>
+                    <br />
+                    <img src={props.data[3]} height="170vh" width="auto" loading="lazy" />
 
+                    <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4>
 
-
-
+                </li>
 
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
@@ -68,50 +91,7 @@ const Body = (props) => {
 
                     <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
                 </li>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
-                        rel="noopener noreferrer">
-                        CALCULATOR APP (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[3]} height="170vh" width="auto" loading="lazy" />
-
-                    <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4>
-
-                </li>
- <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
-                        rel="noopener noreferrer">
-                        ESP32 PORTABLE WEATHER STATION(C)
-                    </a>
-                    <br />
-                    <img src={props.data[12]} height="140vh" width="auto" />
-
-                    <h4> Used a DHT11 serial temperature & humidity sensor along with an adafruitSSD1306 OLED I2C interface 9V of power to display real-time information over wifi to a react app. Coded fully in c using the platformio platform.</h4>
-                </li>
-
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
-                        rel="noopener noreferrer">
-                        ENCRYPTED TEXT EDITOR (C++)
-                    </a>
-                    <br />
-                    <img src={props.data[1]} height="140vh" width="auto" />
-
-                    <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4>
-                </li>
-
-
-                <li>
-                    <a className="hlight-mini" href={""} target="_blank" rel="noopener noreferrer" >
-                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
-
-                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
-                </li>
-                <li>
+      <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
                         rel="noopener noreferrer" className="hlight-mini">
                         EMBEDDED GESTURE SENSOR (C++)
@@ -136,26 +116,31 @@ const Body = (props) => {
                     <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized a frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
+               
                 <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/weather-native.git" target="_blank"
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
-                        ESP32-FETCH WEATHER APP (REACT NATIVE/TYPESCRIPT)
+                        ENCRYPTED TEXT EDITOR (C++)
                     </a>
                     <br />
-                    <img src={props.data[9]} height="140vh" width="auto" loading="lazy" />
+                    <img src={props.data[1]} height="140vh" width="auto" />
 
-                    <h4>One of my first apps, fetched information about the weather from a javascript API before caching locally onto an ESP32 microcontroller and displaying info through a carousel slide to a user's app over wifi. Incorporated state and event-handling, and was my introduction into mobile programming. </h4>
-
+                    <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4>
                 </li>
+
+
                 <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
-                        4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
+                    <a className="hlight-mini" href={""} target="_blank" rel="noopener noreferrer" >
+                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
                     </a>
                     <br />
-                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
+                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
 
-                    <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4>
+                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
                 </li>
+          
+
+       
 
 
 
@@ -175,9 +160,16 @@ const Body = (props) => {
                     <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                 </li>
 
+                <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
+                        4x4 INTERRUPT UART CIRCUIT INTERFACE (C)
+                    </a>
+                    <br />
+                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
 
+                    <h4 > Using my knowledge of systems processes, I utilized a display interface to work directly with a 4x4 button matrix, and print messages and calculations to the screen, with an arduino nano. </h4>
+                </li>
 
-                <br />
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                         SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)

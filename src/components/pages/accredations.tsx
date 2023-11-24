@@ -8,7 +8,7 @@ export const View = (props) => {
         <>
             <Nav />
 
-            <motion.div initial={{ width: 1 }} animate={{ width: "100%" }}
+            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
 
                 <section>
@@ -21,12 +21,17 @@ export const View = (props) => {
             </motion.div>
             <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>
             <br />
+<ul>
+<li>
 
-            <br />
-            <img src={props.data[1]} className="format-img" loading="lazy" />
-            <img src={props.data[2]} className="format-img" loading="lazy" />
-            <img src={props.data[3]} className="format-img" loading="lazy" />
+  <img src={props.data[1]} className="format-img" loading="lazy" height="140vh" width="auto" />
+            <img src={props.data[2]} className="format-img" loading="lazy" height ="140vh" width="auto" />
+            <img src={props.data[3]} className="format-img" loading="lazy" height ="140vh" width="auto"/>
 
+</li>
+</ul>
+
+          
 
 
 
