@@ -1,4 +1,4 @@
-
+import React from 'react'
 import { Nav } from "../common/navbar.tsx"
 import { motion } from "framer-motion";
 import Slider from "react-slick";
