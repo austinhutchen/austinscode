@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/austinscode/static/css/main.a9321af2.css",
-    "main.js": "/austinscode/static/js/main.e35b7e8c.js",
+    "main.js": "/austinscode/static/js/main.ae084a2c.js",
     "static/js/496.8a7a1a03.chunk.js": "/austinscode/static/js/496.8a7a1a03.chunk.js",
     "static/media/PLANT_KERNEL.mp4": "/austinscode/static/media/PLANT_KERNEL.fd734439b44d38f687f6.mp4",
     "static/media/nature.webp": "/austinscode/static/media/nature.92ba7864fa0d4e1b2279.webp",
@@ -19,13 +19,13 @@
     "static/media/mimi.webp": "/austinscode/static/media/mimi.55ca65409cac1bd11386.webp",
     "static/media/animate.mp4": "/austinscode/static/media/animate.109a891a3c7e7a3091b5.mp4",
     "static/media/maps.webp": "/austinscode/static/media/maps.423e63825d65a629e4e9.webp",
-    "static/media/WEATHER.webp": "/austinscode/static/media/WEATHER.414892124d8098270f23.webp",
     "static/media/REC_LETTER.png": "/austinscode/static/media/REC_LETTER.b60f6cd399b7288e9f78.png",
     "static/media/journalapp.webp": "/austinscode/static/media/journalapp.4652094d2f8eff0ada05.webp",
     "static/media/RESUME_SWE.webp": "/austinscode/static/media/RESUME_SWE.67840ec185290956fdcd.webp",
     "static/media/stat1.png": "/austinscode/static/media/stat1.e4e36549ca584a759b65.png",
     "static/media/stat2.png": "/austinscode/static/media/stat2.27bb3852f829ea9c1767.png",
     "static/media/calculator.webp": "/austinscode/static/media/calculator.1c257dcddcdb499855bc.webp",
+    "static/media/WEATHER.webp": "/austinscode/static/media/WEATHER.bce3d95f032965673eaa.webp",
     "static/media/inclusion.png": "/austinscode/static/media/inclusion.4f861e76b0c9254c6f49.png",
     "static/media/shell.webp": "/austinscode/static/media/shell.c111f47c903b419e8fca.webp",
     "static/media/slick.svg": "/austinscode/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -34,11 +34,11 @@
     "index.html": "/austinscode/index.html",
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "main.a9321af2.css.map": "/austinscode/static/css/main.a9321af2.css.map",
-    "main.e35b7e8c.js.map": "/austinscode/static/js/main.e35b7e8c.js.map",
+    "main.ae084a2c.js.map": "/austinscode/static/js/main.ae084a2c.js.map",
     "496.8a7a1a03.chunk.js.map": "/austinscode/static/js/496.8a7a1a03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9321af2.css",
-    "static/js/main.e35b7e8c.js"
+    "static/js/main.ae084a2c.js"
   ]
 }
