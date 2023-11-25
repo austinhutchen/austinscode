@@ -1,7 +1,5 @@
 
-import React from 'react'
 import { Nav } from "../common/navbar.tsx"
-import { Component } from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -21,7 +19,7 @@ export const Aboutme = (props) => {
           </b>
         </h1>
       </motion.div>
-      <div style={{ paddingTop: '0.4em' }}>
+      <div style={{ paddingTop: '0.15em' }}>
         <Display data={props.data} />
 
       </div>
@@ -71,11 +69,10 @@ export const Aboutme = (props) => {
     ];
 
    const settings = {
-      dots: true,
       slidesToShow: 1,
       centerMode: true,
       lazyLoad: 'anticipated',
-      Width: '60%',
+      Width: '70%',
       arrows: false,
       fade: true,
       cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
@@ -96,10 +93,10 @@ export const Aboutme = (props) => {
 <button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.5em'} className="ml-3" /> </button>
 
                 <fieldset >
-                  <p style={{ color: 'cornsilk', fontSize: "1.05em", paddingTop: '0.em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
+                  <p style={{ color: 'cornsilk', fontSize: "0.98em", paddingTop:'0.2em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
 
 
-                    <b>
+                    <b className="legend">
                       {data.desc}
                     
 
