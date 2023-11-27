@@ -89,11 +89,11 @@ export const Aboutme = (props) => {
               <>
                 <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid",border: "0.45vh solid #0BA" }} />
 
-<button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'0.5em'} className="ml-3" /> </button>
-<button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.5em'} className="ml-3" /> </button>
+<button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'1vh'} className="ml-3" /> </button>
+<button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'1vh'} className="ml-3" /> </button>
 
                 <fieldset >
-                  <p style={{ color: 'cornsilk', fontSize: "0.98em", paddingTop:'0.2em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
+                  <p style={{ color: 'cornsilk', fontSize: "2.3vh", paddingTop:'0.2em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
 
 
                     <b className="legend">
