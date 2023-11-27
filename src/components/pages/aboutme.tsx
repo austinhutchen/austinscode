@@ -87,7 +87,7 @@ export const Aboutme = (props) => {
             return (
 
               <>
-                <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid", fontSize: '1.2em', border: "0.45vh solid #0BA" }} />
+                <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid",border: "0.45vh solid #0BA" }} />
 
 <button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'0.5em'} className="ml-3" /> </button>
 <button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'0.5em'} className="ml-3" /> </button>
