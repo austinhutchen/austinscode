@@ -21,19 +21,21 @@ export const View = (props) => {
             </motion.div>
             <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>
             <br />
-<table>
-<td>
-<tc>
-  <img src={props.data[1]} className="format-img" loading="lazy" height="140vh" width="auto" />
-            <img src={props.data[2]} className="format-img" loading="lazy" height ="140vh" width="auto" />
-            <img src={props.data[3]} className="format-img" loading="lazy" height ="140vh" width="auto"/>
+<ul className="format-img">
 
-            <img src={props.data[4]} className="format-img" loading="lazy" height ="140vh" width="auto"/>
-                        <img src={props.data[5]} className="format-img" loading="lazy" height ="140vh" width="auto"/>
-</tc>
-</td>
-</table>
+                        <img src={props.data[5]} className="format-img" loading="lazy" height ="auto" width="auto"/>
+<li>
+  <img src={props.data[1]} className="format-img" loading="lazy" height="auto" width="auto" />
+            <img src={props.data[2]} className="format-img" loading="lazy" height ="auto" width="auto" />
+            </li>
+          <li>
+            <img src={props.data[3]} className="format-img" loading="lazy" height ="auto" width="auto"/>
 
+            <img src={props.data[4]} className="format-img" loading="lazy" height ="auto" width="auto"/>
+
+            </li>
+
+</ul>
           
 
 
