@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "homepage": "https://austinhutchen.github.io/austinscode",
   "resolutions": {
-  "@types/react": "17.0.2",
-  "@types/react-dom": "17.0.2"
-},
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.4",
@@ -51,13 +51,13 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "TagCloud": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^8.54.0",
     "gh-pages": "^6.0.0",
     "react-icons": "^4.12.0",
     "react-slick": "^0.29.0",
     "sass": "^1.69.5",
-    "TagCloud": "^2.4.0",
     "typescript": "^5.3.2"
   },
   "bundleDependencies": [
