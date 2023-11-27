@@ -93,7 +93,7 @@ export const Aboutme = (props) => {
 <button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'1vh'} className="ml-3" /> </button>
 
                 <fieldset >
-                  <p style={{ color: 'cornsilk', fontSize: "2.3vh", paddingTop:'0.2em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350, textShadow: "0.4em 0.6em 0.7em rgba(0.8,0.8,0.8,0.8);" }}>
+                  <p style={{ color: 'cornsilk', fontSize: "2.5vh", paddingTop:'0.1em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350}}>
 
 
                     <b className="legend">

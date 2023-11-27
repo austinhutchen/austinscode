@@ -37,11 +37,12 @@ border: 0.25em solid #CCA;
   border-radius: 1em;  
   -webkit-border-radius: 1em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #CCA;
+
 }
-legend {
-  padding: 2px 4px;
-  background: #fff;
-  /* For better legibility against the box-shadow */
+.legend {
+  /* For better legibility against the box-shadow */ 
+  text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8);
+
 }
 fieldset > legend {
   float: left;
