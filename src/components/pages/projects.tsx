@@ -80,17 +80,14 @@ const Body = (props) => {
                     <table className="style-table">
                         <tr>
                             <td>
-                                <img src={props.data[11]} height="185em" width="auto" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <video controls loop muted height="185m" width="auto" preload="metadata">
 
-                                    <source src={props.data[2] + "#t=0.1"} type="video/mp4" ></source>
-                                </video>
+       
+
+                                <img src={props.data[11]} height="185em" width="auto" />
+     
                             </td>
                         </tr>
+                    
 
                     </table>
 
