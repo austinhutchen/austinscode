@@ -89,9 +89,8 @@ export const Aboutme = (props) => {
               <>
                 <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid",border: "0.45vh solid #0BA" }} />
 
-<button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'1vh'} className="ml-3" /> </button>
-<button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'1vh'} className="ml-3" /> </button>
-
+<button type="button" class="fas" className="Prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft/>  </button>
+<button type="button"  class="fas" className="Next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight/> </button>
                 <fieldset >
                   <p style={{ color: 'cornsilk', fontSize: "2.5vh", paddingTop:'0.3em',fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350}}>
 
