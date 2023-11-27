@@ -39,7 +39,7 @@ const TextSphere = () => {
       "and more!.."
     ];
     const options = {
-      radius: 250,
+      radius: 200,
       initSpeed: "high",
       keep: true,
       loop: true,
