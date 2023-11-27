@@ -4,11 +4,9 @@ import { Spinner } from '../common/symbols.tsx';
 import { useEffect, useRef } from "react";
 import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from "react-scroll";
 import "../../css/TextSphere.scss";
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-
 // components
 
 
@@ -91,25 +89,20 @@ export const Landing = () => {
               </b>
             </p>
             <button
-              className="btn btn-outline-success me-1"
+              className="btn btn-md btn-outline-primary me-1"
               type="button"
               id="navbar"
               onClick={() => {
-                nav('/src/components/aboutme.js');
+                nav('/AboutMe');
+
               }}
             >
-              <Link
-                to="../pages/aboutme.tsx"
-                smooth
-                duration={500}
-                className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
-              >
-                About Me
+                         About Me
                 <span className="group-hover:rotate-90 duration-300">
-                  <HiArrowNarrowRight size={32} className="ml-3" />
+                  <HiArrowNarrowRight size={
+                    '1.2em'} className="ml-3" />
                 </span>
-              </Link>
-
+            
             </button>
 
           </div>
