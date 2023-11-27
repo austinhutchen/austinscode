@@ -83,11 +83,11 @@ here </a>
                     <h1 className="hlight" >
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
-                    <br />
+                    <hr/>
                     <ul >
  <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                                 rel="noreferrer">
-                                <h3> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
+                                <h3 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
                             </a>
  <li >
                            
@@ -95,7 +95,7 @@ here </a>
                         </li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                                 rel="noreferrer" >
-                                <h3> <b> LEETCODE </b> </h3>
+                                <h3 className="hlight-mini"> <b> LEETCODE </b> </h3>
                             </a>
      <li>
                            
@@ -103,7 +103,7 @@ here </a>
                         </li>
  <a href="https://leetcode.com/austinhutchen/" target="_blank"
                                 rel="noreferrer" >
-                                <h3> <b> READING PARTNERS FOUNDATION </b> </h3>
+                                <h3 className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </h3>
                               
                             </a>
      <li>
@@ -113,7 +113,7 @@ here </a>
                         </li>
    <a href= "https://gardenschoolfoundation.org/" target="_blank"
                                 rel="noreferrer" >
-                                <h3> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
+                                <h3 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
   
                             </a>
  <li>
