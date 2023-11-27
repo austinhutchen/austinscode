@@ -69,10 +69,10 @@ here </a>
                     <li>
                     
 
-                            <h3 className="projdesc">
+                            <h4 className="projdesc">
                                 I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and    <a href="https://github.com/austinhutchen" target="_blank"
                             rel="noreferrer"> <b><i><u> much more! </u></i> </b>  </a>
-                            </h3>
+                            </h4>
                        
 
                     </li>
@@ -85,37 +85,41 @@ here </a>
                     </h1>
                     <br />
                     <ul >
- <li >
-                            <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
+ <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                                 rel="noreferrer">
                                 <h3> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
                             </a>
+ <li >
+                           
 
                         </li>
-     <li>
-                            <a href="https://leetcode.com/austinhutchen/" target="_blank"
+ <a href="https://leetcode.com/austinhutchen/" target="_blank"
                                 rel="noreferrer" >
                                 <h3> <b> LEETCODE </b> </h3>
                             </a>
+     <li>
+                           
 
                         </li>
-     <li>
-                            <a href="https://leetcode.com/austinhutchen/" target="_blank"
+ <a href="https://leetcode.com/austinhutchen/" target="_blank"
                                 rel="noreferrer" >
                                 <h3> <b> READING PARTNERS FOUNDATION </b> </h3>
                               
                             </a>
-  <h3 className="projdesc">
-                                Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h3>
+     <li>
+                           
+  <h4 className="projdesc">
+                                Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
                         </li>
- <li>
-                            <a href= "https://gardenschoolfoundation.org/" target="_blank"
+   <a href= "https://gardenschoolfoundation.org/" target="_blank"
                                 rel="noreferrer" >
                                 <h3> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
   
                             </a>
- <h3 className="projdesc">
-                               Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h3>
+ <li>
+                         
+ <h4 className="projdesc">
+                               Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
 
 
                         </li>
@@ -146,7 +150,7 @@ here </a>
 export const Resume = (props) => {
 
     return (
-        <>
+        <div className="App">
 
             <Nav />
             <Body />
@@ -154,7 +158,7 @@ export const Resume = (props) => {
 
 
 
-        </>
+        </div>
     )
 
 }
