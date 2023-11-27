@@ -61,16 +61,17 @@ const Body = (props) => {
 
                 </li>
 
-    <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
-                        PAPER-LIKE ESP32 ANIMATOR (C)
+     <li>
+                    <a href= "https://github.com/austinhutchen/redditsearch.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
+
+                        SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)
                     </a>
                     <br />
-                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
+                    <img src={props.data[13]} height="140vh" width="auto" />
 
-                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
+                    <h4 > A reddit search engine I built using an older version of python, that functioned using a bianry search to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.</h4>
                 </li>
-
+ 
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                         ESP32 PLANT INTERFACE (C)
@@ -99,8 +100,19 @@ const Body = (props) => {
 
 
 
-                    <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to servo pump the water into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
+                    <h4 > My custom"Plant Kernel", An economical and power-efficient ESP-32 powered project that reads in data from a custom soil sensor, before checking the capacative sensor byte response and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-32. </h4>
                 </li>
+   <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
+                        PAPER-LIKE ESP32 ANIMATOR (C)
+                    </a>
+                    <br />
+                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
+
+                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
+                </li>
+
+
       <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
                         rel="noopener noreferrer" className="hlight-mini">
