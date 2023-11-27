@@ -32,35 +32,35 @@ export const Aboutme = (props) => {
  const Display =(props)=>{
    const keys = [
       {
-        desc: "Welcome! I'm a software engineer with aspirations of working on embedded systems and machine learning, and I have plenty of hobbies! ",
+        desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page software applications, and I have plenty of hobbies! ",
         url: props.data[0],
       }
       ,
       {
-        desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms, P/NP runtimes and read often on the problems of code portability and optimization, especially in languages like C (~My favorite~). ",
+        desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms and P vs NP runtimes. ",
         url: props.data[1],
       },
       {
-        desc: "I love embedded systems!",
+        desc: "I spend most of my time building embedded systems, to automate daily tasks. I stick to using e-waste materials for the junction boxes, for recycling purposes.",
         url: props.data[2],
       },
       {
-        desc: "I love Mathematics!",
+        desc: "I read mathematics from my extensive collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
         url: props.data[3],
       }
       ,
       {
-        desc: "I love quality family time!",
+        desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
         url: props.data[4],
 
       },
       {
-        desc: "I love cats!",
+        desc: "I love my cats!",
         url: props.data[5],
 
       },
       {
-        desc: "I love hiking!",
+        desc: "I love to spend time out in nature!",
         url: props.data[6],
 
       },
@@ -87,7 +87,7 @@ export const Aboutme = (props) => {
             return (
 
               <>
-                <img src={data.url} style={{ borderRadius: 200 / 2, borderStyle: "solid",border: "0.45vh solid #0BA" }} />
+                <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid",border: "0.45vh solid #0BA" }} />
 
 <button className="next-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft size={'1vh'} className="ml-3" /> </button>
 <button className="prev-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight size={'1vh'} className="ml-3" /> </button>

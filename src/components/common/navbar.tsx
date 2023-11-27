@@ -77,6 +77,7 @@ export const Nav = () => {
                         alt="icon"
                         width="30vh"
                         height="30vh"
+                        className="nav-icon"
                     />
                 </a>
                 </div>
