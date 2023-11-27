@@ -13,7 +13,7 @@
 margin: 0.5em;
 }
 .next-slick{
-margin: 0.1em;
+margin: 0.5em;
 
 }
 video{
@@ -30,18 +30,7 @@ html.has-scroll-smooth {
     position: absolute;
     top: 60%;
   }
-  .slick-prev {
-left: 3%;
-  background: red; /*to notice it, is white*/
-  z-index: 1;
 
-  }
-  .slick-next {
-
-  background: red; /*to notice it, is white*/
-    right: 3%;
-    z-index:1;
-  }
 }
 
 .style-table{
