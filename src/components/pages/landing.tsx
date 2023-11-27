@@ -89,7 +89,7 @@ export const Landing = () => {
               </b>
             </p>
             <button
-              className="btn btn-md btn-outline-primary me-1"
+              className="btn btn-success"
               type="button"
               id="navbar"
               onClick={() => {
@@ -98,10 +98,9 @@ export const Landing = () => {
               }}
             >
                          About Me
-                <span className="group-hover:rotate-90 duration-300">
+               
                   <HiArrowNarrowRight size={
                     '1.2em'} className="ml-3" />
-                </span>
             
             </button>
 
