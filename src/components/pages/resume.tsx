@@ -81,25 +81,47 @@ here </a>
 
                     <br />
                     <h1 className="hlight" >
-                        <b><i> OPEN SOURCE CONTRIBUTIONS & MORE</i></b>
+                        <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
                     <br />
                     <ul >
-                        <li>
+ <li >
+                            <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
+                                rel="noreferrer">
+                                <h3> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
+                            </a>
+
+                        </li>
+     <li>
                             <a href="https://leetcode.com/austinhutchen/" target="_blank"
                                 rel="noreferrer" >
                                 <h3> <b> LEETCODE </b> </h3>
                             </a>
 
                         </li>
-                        <li>
-                            <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
-                                rel="noreferrer">
-                                <h3> <b> COMPILER OPTIMIZATIONS</b> </h3>
+     <li>
+                            <a href="https://leetcode.com/austinhutchen/" target="_blank"
+                                rel="noreferrer" >
+                                <h3> <b> READING PARTNERS FOUNDATION </b> </h3>
+                              
                             </a>
+  <h3 className="projdesc">
+                                Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h3>
+                        </li>
+ <li>
+                            <a href= "https://gardenschoolfoundation.org/" target="_blank"
+                                rel="noreferrer" >
+                                <h3> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
+  
+                            </a>
+ <h3 className="projdesc">
+                               Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h3>
+
 
                         </li>
-                    </ul>
+
+                   
+                                           </ul>
                     <div>
                         <h1 className="hlight">
                             <b><i> FULL RESUME ( in progress)</i></b>
