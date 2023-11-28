@@ -19,8 +19,7 @@ export const Nav = () => {
             <nav
                 class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center "
             >
-                <div class="">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" >
                 <li>
                     <button
                         class="btn btn-outline-success me-1"
@@ -89,7 +88,6 @@ export const Nav = () => {
                     />
                 </a>
                 </ul>
-                </div>
               
             </nav>
             <div className="banner" >
