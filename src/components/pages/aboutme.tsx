@@ -19,7 +19,7 @@ export const Aboutme = (props) => {
           </b>
         </h1>
       </motion.div>
-      <div style={{ paddingTop: '0.07em' }}>
+      <div style={{ paddingTop: '0.03em' }}>
         <Display data={props.data} />
 
       </div>
