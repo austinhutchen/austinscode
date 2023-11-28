@@ -152,7 +152,7 @@ export const Resume = (props) => {
 <div className="resume-body">
             <Nav />
             <Body />
-            <img src={props.data[0]} className="format-img" />
+            <img src={props.data[0]} style={{height:"55dvh", width:"0 auto"}} />
 
 </div>
 
