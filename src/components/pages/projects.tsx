@@ -149,7 +149,7 @@ const Body = (props) => {
 
 
                 <li>
-                    <a className="hlight-mini" href={""} target="_blank" rel="noopener noreferrer" >
+                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
                         GOOGLE MAPS CLONE (DART/FLUTTER/C)
                     </a>
                     <br />
