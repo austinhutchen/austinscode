@@ -14,7 +14,7 @@ export const View = (props) => {
                 <section>
                     <h1 className="hlight"><b><i><u>Letter of Rec from MATH PHD students @ University Of Colorado Boulder:</u></i></b></h1>
                     <br />
-                    <img src={props.data[0]} className="format-img" loading="eager" />
+                    <img src={props.data[0]} style={{height:"55dvh", width:"0 auto"}} loading="eager" />
 
                 </section>
 
@@ -22,14 +22,28 @@ export const View = (props) => {
             <h1 className="hlight"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h1>
             <br />
 <div className="format-img">
-<section>
+<ul>
+<li>
                         <img src={props.data[5]} className="format-img" loading="lazy" height ="auto" width="auto"/>
-  <img src={props.data[1]} className="format-img" loading="lazy" height="auto" width="auto" />
-            <img src={props.data[2]} className="format-img" loading="lazy" height ="auto" width="auto" />
-            <img src={props.data[3]} className="format-img" loading="lazy" height ="auto" width="auto"/>
 
             <img src={props.data[4]} className="format-img" loading="lazy" height ="auto" width="auto"/>
-</section>
+
+
+
+
+
+</li> 
+<li>
+
+<img src={props.data[2]} className="format-img" loading="lazy" height ="auto" width="auto" />
+            <img src={props.data[3]} className="format-img" loading="lazy" height ="auto" width="auto"/>
+  <img src={props.data[1]} className="format-img" loading="lazy" height="auto" width="auto" />
+
+</li>
+
+
+
+</ul>
 
 </div>
           
