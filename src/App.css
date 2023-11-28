@@ -5,8 +5,8 @@
     color: white;
     font-size: larger;
  height: 100svh;
-overflow-x:hidden;
-overflow-y: hidden;
+overflow-x: hidden;
+overflow-y: auto;
 }
 
 
