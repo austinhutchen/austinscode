@@ -15,7 +15,7 @@ export const Aboutme = (props) => {
         exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight" >
           <b>
-            About me!
+            ABOUT!
           </b>
         </h1>
       </motion.div>

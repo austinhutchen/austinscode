@@ -30,14 +30,14 @@ const Body = (props) => {
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
                         rel="noopener noreferrer">
-                        ESP32 MOBILE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)
+                        PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)
                     </a>
                     <br />
                     <img src={props.data[12]} height="140vh" width="auto" />
 
                     <img src={props.data[9]} height="140vh" width="auto" />
 
-                    <h4> Used a DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
+                    <h4> Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
                 </li>
 
                 <li>
