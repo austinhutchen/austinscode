@@ -149,12 +149,12 @@ here </a>
 export const Resume = (props) => {
 
     return (
-<>
+<div className="resume-body">
             <Nav />
             <Body />
             <img src={props.data[0]} className="format-img" />
 
-</>
+</div>
 
     )
 

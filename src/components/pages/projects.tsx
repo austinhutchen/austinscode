@@ -216,7 +216,7 @@ export const Projects = (props) => {
         <>
             <Nav />
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+                exit={{ x: window.innerWidth, transition: { duration: 0.000001 } }}>
                 <div style={{ paddingBottom: '0.2em' }}>
 
                     <h1 className="hlight" >
