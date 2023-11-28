@@ -4,22 +4,13 @@
     font-weight: 340;
     color: white;
     font-size: larger;
-
+ height: 100svh;
+overflow-x:hidden;
+overflow-y: hidden;
 }
 
 
 
-
-
-
-
-
-
-html {
-    height: 100svh;
-        overscroll-behavior: contain;
-
-}
 
   #name{
  text-align: center;
