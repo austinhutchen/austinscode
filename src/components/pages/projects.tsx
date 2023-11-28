@@ -16,21 +16,22 @@ const Body = (props) => {
                     <a className="hlight-mini" href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
                         THIS WEBSITE (TYPESCRIPT/REACT.TSX)
                     </a>
-                    <h4 > My website is designed and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-                        <br />
+                    <h4 > My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
+
                         <b> <i>Programming Instagram</i> </b>
                     </a>
                     </h4>
 
                 </li>
 
-           
+                                   <br />
+
 
 
  <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
                         rel="noopener noreferrer">
-                        ESP32 MOBILE WEATHER INTERFACE (C&TYPESCRIPT)
+                        ESP32 MOBILE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)
                     </a>
                     <br />
                     <img src={props.data[12]} height="140vh" width="auto" />
@@ -216,7 +217,7 @@ export const Projects = (props) => {
         <>
             <Nav />
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0.000001 } }}>
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <div style={{ paddingBottom: '0.2em' }}>
 
                     <h1 className="hlight" >
