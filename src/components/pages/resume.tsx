@@ -6,33 +6,33 @@ const Body = () => {
     return (
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-            <body >
-                <h1 className="hlight">
+              <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
-                <ul style={{ paddingTop: '0.6em' }} >
-                    <h3 className="hlight-mini">
+              
+                <ul style={{ paddingTop: '0.6em' }} className="projectdesc" >
+                    <h2 className="hlight-mini">
                         <b>
                             <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                         </b>
-                    </h3>
+                    </h2>
                     <li>
-                        < h4 className="projdesc">
+                        < h3  >
                             Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
                             hours every week to assist learning of course material.{" "}
 
                             Recieved 97% positive feedback from 63 participants on end of
                             semester survey.
-                        </h4>
+                        </h3>
                     </li>
-
-                    <h3 className="hlight-mini">
+<br/>
+                    <h2 className="hlight-mini">
                         <b>
                             <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                         </b>
-                    </h3>
+                    </h2>
                     <li>
-                        <h3 className="projdesc">
+                        <h3 >
                             {" "}
                             Made first company sale as Marketing consultant, worked closely with
                             the software engineering team to achieve forecasted results. See my most popular medium article, and other (science, environment, and tech-related) research pieces written by me on the threat of e-waste
@@ -40,16 +40,17 @@ const Body = () => {
 "  target="_blank"
                                 rel="noreferrer"> here </a>   </b>                 </h3>
                     </li>
-                    <h3 className="hlight-mini" >
+                    <br/>
+                    <h2 className="hlight-mini" >
                         <b>
                             <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                         </b>
-                    </h3>
+                    </h2>
                     <li>
 
 
 
-                        <h3 className="projdesc">
+                        <h3 >
                             I have sold, built, and repaired Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a clasName="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
                                 rel="noreferrer" className="referral">
                                 here </a>
@@ -58,6 +59,7 @@ const Body = () => {
 
 
                     </li>
+                    <br/>
                     <li>
                         <h3 className="hlight-mini">
                             <b>
@@ -68,10 +70,10 @@ const Body = () => {
                     <li>
 
 
-                        <h4 className="projdesc">
+                        <h3 >
                             I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and    <a href="https://github.com/austinhutchen" target="_blank"
                                 rel="noreferrer"> <b><i><u> much more! </u></i> </b>  </a>
-                        </h4>
+                        </h3>
 
 
                     </li>
@@ -107,7 +109,7 @@ const Body = () => {
                         </a>
                         <li>
 
-                            <h4 className="projdesc">
+                            <h4 >
                                 Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
                         </li>
                         <a href="https://gardenschoolfoundation.org/" target="_blank"
@@ -117,7 +119,7 @@ const Body = () => {
                         </a>
                         <li>
 
-                            <h4 className="projdesc">
+                            <h4 >
                                 Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
 
 
@@ -136,7 +138,6 @@ const Body = () => {
 
 
                 </ul>
-            </body>
 
 
         </motion.div>

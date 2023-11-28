@@ -10,10 +10,10 @@ export const View = (props) => {
 
             <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-                                    <h1 className="hlight"><b><i><u>~ACCREDIDATIONS~</u></i></b></h1>
+                                    <h1 className="hlight"><b>~ACCREDIDATIONS~ </b></h1>
 
 
-                    <hr/>
+                    <br/>
 <ul>
 
 
