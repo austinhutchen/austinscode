@@ -97,17 +97,17 @@ export const Landing = () => {
 
               }}
             >
-                         About Me
-               
-                  <HiArrowNarrowRight size={
-                    '1.2em'} className="ml-3" />
-            
+              About Me
+
+              <HiArrowNarrowRight size={
+                '1.2em'} className="ml-3" />
+
             </button>
 
           </div>
         </div>
         <Spinner />
-      <TextSphere />
+        <TextSphere />
       </motion.div>
     </>
   )

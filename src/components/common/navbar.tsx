@@ -4,7 +4,7 @@ import "../../App.css";
 import React  from 'react';
 export const Nav = () => {
     const nav = useNavigate();
-  // <div class="collapse navbar-collapse" id="navbarNav">
+  // 
    // <ul class="navbar-nav">
     //<li class="nav-item d-none d-md-block">
       //  <a href="#" class="nav-link">Visible on Medium and larger</a>
@@ -19,7 +19,7 @@ export const Nav = () => {
             <nav
                 class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center "
             >
-                <ul class="navbar-nav" >
+                <ul class= "navbar-nav">
                 <li>
                     <button
                         class="btn btn-outline-success me-1"
