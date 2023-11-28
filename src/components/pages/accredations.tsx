@@ -54,7 +54,6 @@ export const View = (props) => {
 
                         <img src={props.data[2]} className="format-img" loading="lazy" height="auto" width="auto" />
                         <img src={props.data[3]} className="format-img" loading="lazy" height="auto" width="auto" />
-                        <img src={props.data[1]} className="format-img" loading="lazy" height="auto" width="auto" />
 
                     </li>
 

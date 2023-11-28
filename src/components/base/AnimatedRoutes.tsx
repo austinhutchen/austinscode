@@ -9,7 +9,6 @@ import me from "../../fast_imgs/me4.webp";
 import coding from "../../fast_imgs/coding.webp";
 import resume from "../../fast_imgs/RESUME_SWE.webp";
 import systems from "../../fast_imgs/systems.webp";
-import comments1 from "../../fast_imgs/comments(1).png"
 import comments2 from "../../fast_imgs/comments(2).png"
 import comments3 from "../../fast_imgs/comments(3).png"
 import inclusion from "../../fast_imgs/inclusion.webp"
@@ -38,7 +37,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search]
-  const PDF_PAYLOAD = [ rec_letter, comments1,comments2,comments3, inclusion,support ]
+  const PDF_PAYLOAD = [ rec_letter, "",comments2,comments3, inclusion,support ]
   const RESUME_PAYLOAD = [resume]
     const location = useLocation();
     return (
