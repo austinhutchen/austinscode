@@ -2,8 +2,8 @@
 display: block;
     margin-left: auto;
     margin-right: auto;
- width: 120px;
- height: 120px;
+width: 12.8068303094984svh;
+ height:  12.8068303094984svh;
  position: relative;
  margin: 15px auto;
  overflow: hidden;
@@ -12,9 +12,9 @@ display: block;
 .spinner {
 
  position: absolute;
- width: calc(100% - 9.9px);
- height: calc(100% - 9.9px);
- border: 5px solid transparent;
+ width: calc(100% - 1.056563500533618svh);
+ height: calc(100% - 1.056563500533618svh);
+ border: 0.5336179295624333svh solid transparent;
  border-radius: 50%;
  border-top-color: #fff;
  animation: spin 3s cubic-bezier(0.17, 0.49, 0.96, 0.79) infinite;
