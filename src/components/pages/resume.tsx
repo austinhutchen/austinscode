@@ -85,39 +85,47 @@ const Body = () => {
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
                     <hr />
-                    <ul >
+                                            <li >
+
                         <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                             rel="noreferrer">
                             <h3 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
                         </a>
-                        <li >
 
+<h4> Assisted twitter with optimizing their JAVA code for IEE floating point parallelism, which can significantly speed up build and runtime. You can read my full contribution at the link. </h4>
 
                         </li>
+                        <br/>
+                                                <li>
+
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
                             <h3 className="hlight-mini"> <b> LEETCODE </b> </h3>
                         </a>
-                        <li>
 
+I love leetcode
 
                         </li>
+                        <br/>
+                                                <li>
+
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
                             <h3 className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </h3>
 
                         </a>
-                        <li>
+
 
                             <h4 >
                                 Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
                         </li>
+                        <br/>
+                        <li>
                         <a href="https://gardenschoolfoundation.org/" target="_blank"
                             rel="noreferrer" >
                             <h3 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
 
                         </a>
-                        <li>
 
                             <h4 >
                                 Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
@@ -126,7 +134,6 @@ const Body = () => {
                         </li>
 
 
-                    </ul>
                     <div>
                         <h1 className="hlight">
                             <b><i> FULL RESUME ( in progress)</i></b>
@@ -137,9 +144,8 @@ const Body = () => {
                     </div>
 
 
-                </ul>
 
-
+</ul>
         </motion.div>
     )
 }
