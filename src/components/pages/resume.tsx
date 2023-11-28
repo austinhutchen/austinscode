@@ -61,11 +61,11 @@ const Body = () => {
                     </li>
                     <br/>
                     <li>
-                        <h3 className="hlight-mini">
+                        <h2 className="hlight-mini">
                             <b>
                                 <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
                             </b>
-                        </h3>
+                        </h2>
                     </li>
                     <li>
 
@@ -89,10 +89,10 @@ const Body = () => {
 
                         <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                             rel="noreferrer">
-                            <h3 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h3>
+                            <h2 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h2>
                         </a>
 
-<h4> Assisted twitter with optimizing their JAVA code for IEE floating point parallelism, which can significantly speed up build and runtime. You can read my full contribution at the link. </h4>
+<h4> Assisted twitter with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
 
                         </li>
                         <br/>
@@ -100,10 +100,10 @@ const Body = () => {
 
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
-                            <h3 className="hlight-mini"> <b> LEETCODE </b> </h3>
+                            <h2 className="hlight-mini"> <b> LEETCODE </b> </h2>
                         </a>
 
-I love leetcode
+ <h4>I love leetcode </h4>
 
                         </li>
                         <br/>
@@ -111,7 +111,7 @@ I love leetcode
 
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
-                            <h3 className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </h3>
+                            <h2 className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </h2>
 
                         </a>
 
@@ -123,7 +123,7 @@ I love leetcode
                         <li>
                         <a href="https://gardenschoolfoundation.org/" target="_blank"
                             rel="noreferrer" >
-                            <h3 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h3>
+                            <h2 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h2>
 
                         </a>
 
@@ -132,7 +132,7 @@ I love leetcode
 
 
                         </li>
-
+<br/>
 
                     <div>
                         <h1 className="hlight">
