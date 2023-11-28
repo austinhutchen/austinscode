@@ -1,6 +1,5 @@
 import { Nav } from "../common/navbar.tsx";
 import { motion } from "framer-motion";
-import React from "react";
 import "../../css/resume.scss"
 
 const Body = () => {
@@ -150,15 +149,13 @@ here </a>
 export const Resume = (props) => {
 
     return (
-        <div className="App">
-
+<>
             <Nav />
             <Body />
             <img src={props.data[0]} className="format-img" />
 
+</>
 
-
-        </div>
     )
 
 }
