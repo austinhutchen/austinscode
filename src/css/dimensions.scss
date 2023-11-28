@@ -30,15 +30,14 @@ html.has-scroll-smooth {
     margin: 0 auto;
 
 }
-.accredidation{
-  min-width: 100%;
-  max-width: 100%;
-}
+
 img,video{
    border-radius: calc(400 / 2)em;
-   border: 0.45vh solid #0BA ; 
+   border: 0.45dvh solid #0BA ; 
 }
 .nav-icon{
      border-style: none ;
 
 }
+li{display: block;}
+

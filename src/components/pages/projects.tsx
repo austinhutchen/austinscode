@@ -27,7 +27,7 @@ const Body = (props) => {
 
 
 
- <li>
+                <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
                         rel="noopener noreferrer">
                         ESP32 MOBILE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)
@@ -35,12 +35,12 @@ const Body = (props) => {
                     <br />
                     <img src={props.data[12]} height="140vh" width="auto" />
 
-                    <img src={props.data[9]} height="140vh" width="auto"  />
+                    <img src={props.data[9]} height="140vh" width="auto" />
 
                     <h4> Used a DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
                 </li>
 
-     <li>
+                <li>
                     <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
                         UNIX KERNEL SHELL (C)
                     </a>
@@ -49,7 +49,7 @@ const Body = (props) => {
 
                     <h4 > A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h4>
                 </li>
- <li>
+                <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
                         rel="noopener noreferrer">
                         CALCULATOR APP (DART/FLUTTER/C)
@@ -61,8 +61,8 @@ const Body = (props) => {
 
                 </li>
 
-     <li>
-                    <a href= "https://github.com/austinhutchen/redditsearch.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
+                <li>
+                    <a href="https://github.com/austinhutchen/redditsearch.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
 
                         SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)
                     </a>
@@ -71,7 +71,7 @@ const Body = (props) => {
 
                     <h4 > A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.</h4>
                 </li>
- 
+
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                         ESP32 PLANT INTERFACE (C)
@@ -81,13 +81,13 @@ const Body = (props) => {
                         <tr>
                             <td>
 
-       
+
 
                                 <img src={props.data[11]} height="185em" width="auto" />
-     
+
                             </td>
                         </tr>
-                    
+
 
                     </table>
 
@@ -99,7 +99,7 @@ const Body = (props) => {
 
                     <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
                 </li>
-   <li>
+                <li>
                     <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
                         PAPER-LIKE ESP32 ANIMATOR (C)
                     </a>
@@ -110,7 +110,7 @@ const Body = (props) => {
                 </li>
 
 
-      <li>
+                <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
                         rel="noopener noreferrer" className="hlight-mini">
                         EMBEDDED GESTURE SENSOR (C++)
@@ -135,7 +135,7 @@ const Body = (props) => {
                     <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized a frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
-               
+
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
@@ -157,9 +157,9 @@ const Body = (props) => {
 
                     <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
                 </li>
-          
 
-       
+
+
 
 
 
@@ -179,7 +179,7 @@ const Body = (props) => {
                     <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                 </li>
 
-            
+
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                         SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)
