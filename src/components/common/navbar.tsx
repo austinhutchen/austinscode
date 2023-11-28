@@ -19,7 +19,9 @@ export const Nav = () => {
             <nav
                 class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center "
             >
-                <div>
+                <div class="">
+                <ul class="navbar-nav">
+                <li>
                     <button
                         class="btn btn-outline-success me-1"
                         type="button"
@@ -30,6 +32,8 @@ export const Nav = () => {
                     >
                         Home
                     </button>
+                    </li>
+                    <li>
                     <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
@@ -40,6 +44,7 @@ export const Nav = () => {
                     >
                         About
                     </button>
+                    </li>
         <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
@@ -50,6 +55,7 @@ export const Nav = () => {
                     >
                         Projects
                     </button>
+                    <li>
                     <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
@@ -60,7 +66,8 @@ export const Nav = () => {
                     >
                         Resume
                     </button>
-                  
+                  </li>
+                  <li>
                     <button
                         class="btn btn-md btn-outline-primary me-1"
                         type="button"
@@ -71,6 +78,7 @@ export const Nav = () => {
                     >
                         Accredidations
                     </button>
+                    </li>
   <a class="navbar-brand">
                     <img
                         src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
@@ -80,6 +88,7 @@ export const Nav = () => {
                         className="nav-icon"
                     />
                 </a>
+                </ul>
                 </div>
               
             </nav>

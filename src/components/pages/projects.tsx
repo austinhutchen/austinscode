@@ -24,7 +24,6 @@ const Body = (props) => {
 
                 </li>
 
-                                   <br />
 
 
 
