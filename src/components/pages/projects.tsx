@@ -123,16 +123,33 @@ const Body = (props) => {
                     <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4>
 
                 </li>
+  <li>
+                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
+                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
+                    </a>
+                    <br />
+                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
+
+                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
+                </li>
+                <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                        NOTES & JOURNAL APP (JAVA, IN PROGRESS)
+                    </a>
+                    <br />
+                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
+                    <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
+                </li>
 
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                        ARDUINO BYTE ANIMATIONS (C)
+                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
                     </a>
                     <br />
                     <video controls loop muted height="140vh" width="auto" preload="metadata" >
                         <source src={props.data[7] + "#t=0.5"} type="video/mp4" />
                     </video>
-                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized a frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
+                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
 
@@ -148,36 +165,7 @@ const Body = (props) => {
                 </li>
 
 
-                <li>
-                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
-                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
-
-                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
-                </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                        NOTES & JOURNAL APP (JAVA, IN PROGRESS)
-                    </a>
-                    <br />
-                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
-                    <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
-                </li>
+              
 
 
                 <li>
