@@ -134,11 +134,11 @@ const Body = (props) => {
                 </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                        NOTES & JOURNAL APP (JAVA, IN PROGRESS)
+                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
                     </a>
                     <br />
                     <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
-                    <h4> A (rudimentary) app made for my personal journaling use utilizing the iphone and android local cache storage, that promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
+                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
                 </li>
 
                 <li>
