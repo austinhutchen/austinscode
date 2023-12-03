@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -203,7 +203,7 @@ export const Projects = (props) => {
     return (
         <>
             <Nav />
-            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+            <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                 <div style={{ paddingBottom: '0.2em' }}>
 
@@ -214,7 +214,7 @@ export const Projects = (props) => {
                 </div>
                 <Body data={props.data} />
 
-            </motion.div>
+            </m.div>
         </>
 
     )

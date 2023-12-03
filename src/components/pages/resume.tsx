@@ -1,10 +1,10 @@
 import { Nav } from "../common/navbar.tsx";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import "../../css/resume.scss"
 
 const Body = () => {
     return (
-        <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+        <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
               <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
@@ -146,7 +146,7 @@ const Body = () => {
 
 
 </ul>
-        </motion.div>
+        </m.div>
     )
 }
 

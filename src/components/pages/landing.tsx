@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import { Spinner } from '../common/symbols.tsx';
 import { useEffect, useRef } from "react";
@@ -77,14 +77,14 @@ export const Landing = () => {
 
         <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
       </h3>
-      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+      <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
 
             <p className="intro">
               <b>
-                I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabble in shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
+                I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
 3,600 github contributions to date!
               </b>
             </p>
@@ -108,7 +108,7 @@ export const Landing = () => {
         </div>
         <Spinner />
         <TextSphere />
-      </motion.div>
+      </m.div>
     </>
   )
 }
