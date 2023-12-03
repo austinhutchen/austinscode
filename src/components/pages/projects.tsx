@@ -1,4 +1,4 @@
-import { m } from "framer-motion";
+import { LazyMotion, domAnimation,m } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -198,10 +198,11 @@ const Body = (props) => {
     )
 }
 
+
 export const Projects = (props) => {
     // integrate display component here
     return (
-        <>
+        <LazyMotion features={domAnimation}>
             <Nav />
             <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
@@ -215,7 +216,7 @@ export const Projects = (props) => {
                 <Body data={props.data} />
 
             </m.div>
-        </>
+        </LazyMotion>
 
     )
 }
