@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav } from "../common/navbar.tsx";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 
 export const View = (props) => {
@@ -8,7 +8,7 @@ export const View = (props) => {
         <>
             <Nav />
 
-            <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+            <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                                     <h1 className="hlight"><b>~ACCREDIDATIONS~ </b></h1>
 
@@ -63,7 +63,7 @@ export const View = (props) => {
 
             </div>
 
-            </motion.div>
+            </m.div>
 
 
 

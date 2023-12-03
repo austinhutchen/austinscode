@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav } from "../common/navbar.tsx"
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,14 +11,14 @@ export const Aboutme = (props) => {
     <>
       <Nav />
 
-      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}
+      <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight" >
           <b>
             ABOUT!
           </b>
         </h1>
-      </motion.div>
+      </m.div>
       <About data={props.data} />
 
 
