@@ -1,4 +1,4 @@
-import { m } from "framer-motion";
+import { LazyMotion, domAnimation,m } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import { Spinner } from '../common/symbols.tsx';
 import { useEffect, useRef } from "react";
@@ -70,7 +70,7 @@ export const Landing = () => {
   // LINK IN BELOW STATEMENT IS TO BE USED TO NAVIGATE TO ABOUT PAGE
   const nav = useNavigate();
   return (
-    <>
+    <LazyMotion features={domAnimation}>
       <Nav />
       <h3 className="hlight-mini" style={{ paddingTop: '10', fontSize: '1.5em' }} >
 
@@ -109,7 +109,7 @@ export const Landing = () => {
         <Spinner />
         <TextSphere />
       </m.div>
-    </>
+    </LazyMotion>
   )
 }
 

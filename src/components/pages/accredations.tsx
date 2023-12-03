@@ -1,13 +1,13 @@
 import React from 'react'
 import { Nav } from "../common/navbar.tsx";
-import { m } from "framer-motion";
+import { LazyMotion, domAnimation,m } from "framer-motion";
 
 
 export const View = (props) => {
     return (
-        <>
+    <>
             <Nav />
-
+<LazyMotion features={domAnimation}>
             <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
                                     <h1 className="hlight"><b>~ACCREDIDATIONS~ </b></h1>
@@ -69,6 +69,7 @@ export const View = (props) => {
 
 
 
+        </LazyMotion>
         </>
     )
 }

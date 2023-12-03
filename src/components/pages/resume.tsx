@@ -1,9 +1,11 @@
 import { Nav } from "../common/navbar.tsx";
-import { m } from "framer-motion";
+import { LazyMotion, domAnimation,m } from "framer-motion";
+
 import "../../css/resume.scss"
 
 const Body = () => {
     return (
+    <LazyMotion features={domAnimation}>
         <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
               <h1 className="hlight">
@@ -147,6 +149,7 @@ const Body = () => {
 
 </ul>
         </m.div>
+        </LazyMotion>
     )
 }
 
