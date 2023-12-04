@@ -38,7 +38,7 @@ export const View = (props) => {
 
             <h2 className="hlight-mini"><b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b></h2>
             <br />
-            <div className="format-img">
+            <div >
                 <ul>
                     <li>
                         <img src={props.data[5]} className="format-img" loading="lazy" height="auto" width="auto" />
