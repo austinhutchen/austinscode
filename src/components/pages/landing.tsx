@@ -107,6 +107,8 @@ export const Landing = () => {
           </div>
         </div>
         <Spinner />
+        <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,c,Objective-C++"/> 
+         <img align="center" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false"/>
         <TextSphere />
       </m.div>
     </LazyMotion>
