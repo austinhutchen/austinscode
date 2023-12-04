@@ -85,7 +85,6 @@ export const Landing = () => {
             <p className="intro">
               <b>
                 I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
-3,600 github contributions to date!
               </b>
             </p>
             <button
