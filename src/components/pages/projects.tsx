@@ -24,9 +24,6 @@ const Body = (props) => {
 
                 </li>
 
-
-
-
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
                         rel="noopener noreferrer">
@@ -88,14 +85,7 @@ const Body = (props) => {
                             </td>
                         </tr>
 
-
                     </table>
-
-
-
-
-
-
 
                     <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
                 </li>
@@ -105,10 +95,8 @@ const Body = (props) => {
                     </a>
                     <br />
                     <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
-
                     <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
                 </li>
-
 
                 <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
@@ -152,7 +140,6 @@ const Body = (props) => {
                     <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
-
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
@@ -164,10 +151,6 @@ const Body = (props) => {
                     <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4>
                 </li>
 
-
-              
-
-
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
                         SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)
@@ -175,23 +158,12 @@ const Body = (props) => {
                     <br>
                     </br>
 
-
-
                     <video controls loop muted height="140vh" width="auto" preload="metadata">
                         <source src={props.data[10] + "#t=0.1"} type="video/mp4" />
                     </video>
 
-
                     <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5>
                 </li>
-
-
-
-
-
-
-
-
 
             </b>
         </ul>

@@ -9,7 +9,6 @@ import React from 'react'
 import { useNavigate } from "react-router-dom";
 // components
 
-
 const TextSphere = () => {
   const containerRef = useRef(null);
   useEffect(() => {
@@ -64,7 +63,6 @@ const TextSphere = () => {
 };
 
 
-
 // landing page 
 export const Landing = () => {
   // LINK IN BELOW STATEMENT IS TO BE USED TO NAVIGATE TO ABOUT PAGE
@@ -87,7 +85,11 @@ export const Landing = () => {
                 I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
               </b>
             </p>
+             <img align="center" height="150svh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,c,Objective-C++"/> 
+         <img align="center" height="150svh" width ="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false"/>
+         <br/>
             <button
+            style={{margin:' 0.6em'}}
               className="btn btn-success"
               type="button"
               id="navbar"
@@ -106,8 +108,7 @@ export const Landing = () => {
           </div>
         </div>
         <Spinner />
-        <img align="center" height="160vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,c,Objective-C++"/> 
-         <img align="center" height="160vh" width ="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false"/>
+       
         <TextSphere />
       </m.div>
     </LazyMotion>

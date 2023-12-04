@@ -86,6 +86,9 @@ const Body = () => {
                     <h1 className="hlight" >
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
+<br/>
+                     <img align = "center" src= "https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{margin:'0.5em'}}/>
+
                     <hr />
                                             <li >
 
