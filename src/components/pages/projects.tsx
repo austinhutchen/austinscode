@@ -68,7 +68,14 @@ const Body = (props) => {
 
                     <h4 > A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.</h4>
                 </li>
-
+       <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/newsletter.rs.git" target="_blank" rel="noopener noreferrer" >
+                        NEWSLETTER SERVER BACKEND (RUST)
+                    </a>
+                    <br />
+                    <img src={props.data[-1]} height="140vh" width="auto" loading="lazy" />
+                    <h4 > A secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend.</h4>
+                </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                         ESP32 PLANT INTERFACE (C)
@@ -89,6 +96,10 @@ const Body = (props) => {
 
                     <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
                 </li>
+                
+         
+
+     
                 <li>
                     <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
                         PAPER-LIKE ESP32 ANIMATOR (C)
