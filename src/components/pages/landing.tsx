@@ -16,6 +16,7 @@ const TextSphere = () => {
     const texts = [
       "Typescript",
       "Go",
+      "Bash",
       "Python",
       "Flutter",
       "React.JS",
@@ -82,7 +83,7 @@ export const Landing = () => {
 
             <p className="intro">
               <b>
-                I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
+                I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in bash shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Go, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
               </b>
             </p>
              <img align="center" height="150svh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,c,Objective-C++"/> 
