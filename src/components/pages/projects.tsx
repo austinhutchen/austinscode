@@ -80,8 +80,8 @@ const Body = (props) => {
                     <a className="hligh-mini" href="https://github.com/austinhutchen/scripts.git" target="_blank" rel="noopener noreferrer" >
                         VARIOUS BASH SHELL SCRIPTS                  </a>
                     <br />
-                    <img src={props.data[14]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > Coded using bash and kernel commands on mac OSX capable systems, I coded aVARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the command line.   </h4>
+                    <img src={props.data[15]} height="140vh" width="auto" loading="lazy" />
+                    <h4 > Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the command line.   </h4>
                 </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
