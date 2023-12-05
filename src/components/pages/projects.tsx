@@ -76,6 +76,13 @@ const Body = (props) => {
                     <img src={props.data[14]} height="140vh" width="auto" loading="lazy" />
                     <h4 > Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice building test cases for server-based tasks. </h4>
                 </li>
+                    <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/scripts.git" target="_blank" rel="noopener noreferrer" >
+                        VARIOUS BASH SHELL SCRIPTS                  </a>
+                    <br />
+                    <img src={props.data[14]} height="140vh" width="auto" loading="lazy" />
+                    <h4 > Coded using bash and kernel commands on mac OSX capable systems, I coded an NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the command line.   </h4>
+                </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
                         ESP32 PLANT INTERFACE (C)
@@ -97,9 +104,36 @@ const Body = (props) => {
                     <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
                 </li>
                 
-         
+           <li>
+                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
+                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
+                    </a>
+                    <br />
+                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
 
-     
+                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
+                </li>
+     <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
+                    </a>
+                    <br />
+                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
+                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
+                </li>
+
+      
+                <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
+                    </a>
+                    <br />
+                    <video controls loop muted height="140vh" width="auto" preload="metadata" >
+                        <source src={props.data[7] + "#t=0.5"} type="video/mp4" />
+                    </video>
+                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
+                </li>
+
                 <li>
                     <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
                         PAPER-LIKE ESP32 ANIMATOR (C)
@@ -122,35 +156,8 @@ const Body = (props) => {
                     <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4>
 
                 </li>
-  <li>
-                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
-                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
 
-                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
-                </li>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
-                    </a>
-                    <br />
-                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
-                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
-                </li>
-
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
-                    </a>
-                    <br />
-                    <video controls loop muted height="140vh" width="auto" preload="metadata" >
-                        <source src={props.data[7] + "#t=0.5"} type="video/mp4" />
-                    </video>
-                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
-                </li>
-
+          
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
