@@ -70,11 +70,11 @@ const Body = (props) => {
                 </li>
        <li>
                     <a className="hligh-mini" href="https://github.com/austinhutchen/newsletter.rs.git" target="_blank" rel="noopener noreferrer" >
-                        NEWSLETTER SERVER BACKEND (RUST)
+                        MULTITHREADED E-MAIL SERVER BACKEND (RUST)
                     </a>
                     <br />
-                    <img src={props.data[-1]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > A secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend.</h4>
+                    <img src={props.data[14]} height="140vh" width="auto" loading="lazy" />
+                    <h4 > Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice building test cases for server-based tasks. </h4>
                 </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
