@@ -89,7 +89,7 @@ const About = (props) => {
     slidesToShow: 1,
     centerMode: true,
     Width: '70%',
-    arrows: true,
+    arrows: false,
    slidesToScroll:1,
    infinite: true,
     fade: true,
