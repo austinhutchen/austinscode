@@ -87,7 +87,7 @@ const Body = () => {
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
 <br/>
-                     <img  src= "https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{marginTop:'0.25em', marginBottom:'0.25em'}}/>
+                     <img  height="110svh" width="auto" src= "https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{marginTop:'0.25em', marginBottom:'0.25em'}}/>
 
                     <hr />
                                             <li >
