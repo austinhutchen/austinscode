@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
-import '../../css/projects.scss'
 import "../../css/QUERIES.scss"
 import React from "react"
 const Body = (props) => {
