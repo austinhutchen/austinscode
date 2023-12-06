@@ -9,7 +9,9 @@ font-size: 0.65em;
 
 
   }
-
+.sc{
+  width: 1px; min-width: 100%; *width: 100%;
+}
 .sc img {
   height: 42svh; 
   margin :0 auto;
@@ -50,5 +52,8 @@ font-size: 1.2em;
   left: auto;
 
   /* it centers any block level element */
+}
+.sc{
+  width: 1px; min-width: 100%; *width: 100%;
 }
 }
