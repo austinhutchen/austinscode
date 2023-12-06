@@ -79,16 +79,17 @@ const About = (props) => {
             type: "image"
 
     },
+      {
+      desc: "I love to make electronics and art with my girlfriend!",
+      url: props.data[8],
+      type: "image"
+    },
     {
       desc: "I love to spend time out in nature!",
       url: props.data[6],
       type: "image"
     },
-        {
-      desc: "I love to make electronics and art with my girlfriend!",
-      url: props.data[8],
-      type: "image"
-    },
+      
      
   ];  
 
