@@ -115,10 +115,10 @@ return(
               { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :
                  <video autoPlay playsInLine loop muted preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} src={ data.url+ "#t=0.5"}  />
               }
-              <button style={{opacity: "0.95"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
-              <button style={{opacity:"0.95"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
+            
               <fieldset >
-                <p style={{ color: 'cornsilk', fontSize: "2.5vh", paddingTop: '0.3em', fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350 }}>
+               
+                <p style={{ color: 'cornsilk', fontSize: "2.5vh", fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350 }}>
 
 
                   <b className="legend">
@@ -128,6 +128,8 @@ return(
 
                   </b>
                 </p>
+                 <button style={{opacity: "0.95"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
+              <button style={{opacity:"0.95"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
               </fieldset>
             </div>
 
