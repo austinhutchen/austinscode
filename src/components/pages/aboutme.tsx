@@ -113,7 +113,7 @@ return(
 
             <div>
               { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :
-                 <video autoPlay playsInLine loop muted preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} src={ data.url}  />
+                 <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid" , border: "0.45vh solid #0BA" }} src={ data.url}  />
               }
             
               <fieldset >
