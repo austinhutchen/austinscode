@@ -90,7 +90,7 @@ const About = (props) => {
     slidesToShow: 1,
     centerMode: true,
     Width: '70%',
-    arrows: false,
+    arrows: true,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
@@ -105,9 +105,10 @@ const About = (props) => {
 
 return(
 
-            <>
-              { data.type == "video"? <> <iframe src={data.url} height="500svh" width="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }}/> <br/> </>
-              :<> <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> </>  }
+            <div>
+              { data.type == "image"?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />: <>
+              <iframe src={data.url} height="500svh" width="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> <br/> </> 
+              }
               <button style={{opacity: "0.99"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
               <button style={{opacity:"0.99"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
               <fieldset >
@@ -122,7 +123,7 @@ return(
                   </b>
                 </p>
               </fieldset>
-            </>
+            </div>
 
           );
         })}
