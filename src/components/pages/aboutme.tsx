@@ -111,9 +111,13 @@ return(
 
             <div>
               { data.type == "image"?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />: <>
-              <video  controls loop muted preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} >
-             <source src={data.url + "#t=0.5"} type="video/mp4" src={data.url}/> 
+              <video  allowfullscreen autoplay loop muted controls style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} >
+             <source id="vid" src={data.url } type="video/mp4" src={data.url}/> 
              </video>
+             <script>
+          document.getElementById('').play();
+</script>
+
              <br/> </> 
 
               }
