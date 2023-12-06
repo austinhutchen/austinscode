@@ -21,10 +21,12 @@ export const Aboutme = (props) => {
           </b>
         </h1>
       </m.div>
-      <About data={props.data} />
 
 
-    </LazyMotion>
+
+    </LazyMotion>     
+    <About data={props.data} />
+
     </>
   )
 }
@@ -35,39 +37,52 @@ const About = (props) => {
     {
       desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page software applications, and I have plenty of hobbies! ",
       url: props.data[0],
+            type: "image"
+
     }
     ,
     {
       desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms and P vs NP runtimes. ",
       url: props.data[1],
+            type: "image"
+
     },
     {
       desc: "I spend most of my time building embedded systems, to automate daily tasks. I stick to using e-waste materials for the junction boxes, for recycling purposes.",
       url: props.data[2],
+            type: "image"
+
     },
     {
       desc: "I read mathematics from my extensive collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
       url: props.data[3],
+            type: "image"
+
     }
     ,
     {
       desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
       url: props.data[4],
+      type: "image"
 
     },
     {
       desc: "I love my cats!",
       url: props.data[5],
+            type: "image"
 
     },
     {
       desc: "I love to spend time out in nature!",
       url: props.data[6],
-
+      type: "image"
     },
-
-
-  ];
+      {
+      desc: "I love to solder !",
+      url: props.data[7]+"#t=0.5",
+      type: "video"
+    },
+  ];  
 
   const settings = {
     slidesToShow: 1,
@@ -82,14 +97,20 @@ const About = (props) => {
   const slider = React.useRef(null);
   return (
     <div className="sc">
-      <Slider ref={slider} {...settings} >
 
+      <Slider ref={slider} {...settings} >
         {keys.map(data => {
-          return (
+
+return(
 
             <>
-              <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />
+              { data.type == "image"? <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />
+              :<> <video  muted playsinline autoplay loop type="video/mp4" height="450svh" width="400svh"  style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }}> 
+ <source src ={data.url}/>
+ </video>
+      <br/> 
 
+      </>}
               <button style={{opacity: "0.99"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
               <button style={{opacity:"0.99"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
               <fieldset >
@@ -104,9 +125,8 @@ const About = (props) => {
                   </b>
                 </p>
               </fieldset>
-
-
             </>
+
           );
         })}
 
@@ -115,5 +135,3 @@ const About = (props) => {
   );
 
 }
-
-
