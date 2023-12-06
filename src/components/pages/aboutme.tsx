@@ -84,7 +84,11 @@ const About = (props) => {
       url: props.data[6],
       type: "image"
     },
-    
+        {
+      desc: "I love to make electronics and art with my girlfriend!",
+      url: props.data[8],
+      type: "image"
+    },
      
   ];  
 
