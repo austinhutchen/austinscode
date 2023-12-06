@@ -110,15 +110,9 @@ const About = (props) => {
 return(
 
             <div>
-              { data.type == "image"?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />: <>
-              <video  allowfullscreen autoplay loop muted controls style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} >
-             <source id="vid" src={data.url } type="video/mp4" src={data.url}/> 
-             </video>
-             <script>
-          document.getElementById('').play();
-</script>
-
-             <br/> </> 
+              { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :<>
+              <video src={data.url } controls  loop muted style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />
+  <br/> </> 
 
               }
               <button style={{opacity: "0.99"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>

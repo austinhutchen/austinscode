@@ -5,8 +5,11 @@ import { LazyMotion, domAnimation,m } from "framer-motion";
 
 export const View = (props) => {
     return (
-    <>
-            <Nav />
+
+<>
+       <Nav />
+    <div className="accredidations">
+         
 <LazyMotion features={domAnimation}>
             <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
@@ -70,6 +73,7 @@ export const View = (props) => {
 
 
         </LazyMotion>
+        </div>
         </>
     )
 }

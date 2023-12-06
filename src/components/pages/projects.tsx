@@ -10,6 +10,7 @@ import React from "react"
 const Body = (props) => {
 
     return (
+    <div className = "projects">
         <ul className="projectdesc">
             <b>
                 <li>
@@ -128,7 +129,7 @@ const Body = (props) => {
                         ARDUINO 8-BIT BITMASK ANIMATOR (C)
                     </a>
                     <br />
-                    <video controls loop muted height="140vh" width="auto" preload="metadata" >
+                    <video controls autoplay loop muted height="140vh" width="auto" preload="metadata" >
                         <source src={props.data[7] + "#t=0.5"} type="video/mp4" />
                     </video>
                     <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
@@ -149,7 +150,7 @@ const Body = (props) => {
                         EMBEDDED GESTURE SENSOR (C++)
                     </a>
                     <br />
-                    <video controls loop muted height="140vh" width="auto" preload="metadata">
+                    <video controls autoplay loop muted height="140vh" width="auto" preload="metadata">
                         <source src={props.data[5] + "#t=0.5"} type="video/mp4" />
                     </video>
 
@@ -176,7 +177,7 @@ const Body = (props) => {
                     <br>
                     </br>
 
-                    <video controls loop muted height="140vh" width="auto" preload="metadata">
+                    <video controls autoplay loop muted height="140vh" width="auto" preload="metadata">
                         <source src={props.data[10] + "#t=0.1"} type="video/mp4" />
                     </video>
 
@@ -185,6 +186,7 @@ const Body = (props) => {
 
             </b>
         </ul>
+        </div>
     )
 }
 

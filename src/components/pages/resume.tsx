@@ -6,7 +6,7 @@ import "../../css/resume.scss"
 const Body = () => {
     return (
     <LazyMotion features={domAnimation}>
-        <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
+        <m.div  initial={{ width: 0 }} animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
               <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
@@ -162,13 +162,17 @@ const Body = () => {
 export const Resume = (props) => {
 
     return (
-        <div className="resume-body">
-            <Nav />
+
+<>
+                <Nav />
+
+        <div className="resume">
+
             <Body />
             <img src={props.data[0]} style={{ height: "55dvh", width: "0 auto" }} />
 
-        </div>
-
+</div>
+</>
     )
 
 }

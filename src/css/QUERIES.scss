@@ -20,14 +20,26 @@ font-size: 0.65em;
   /* it centers any block level element */
 }
 .sc video {
-  height: 60svh;
+  height: 42svh;
   margin :0 auto;
     width: 0 auto;
-
   left: auto;
-
   /* it centers any block level element */
 }
+
+}
+.projects img,video{
+   border-radius: calc(400 / 2)em;
+   border: 0.45dvh solid #0BA ; 
+}
+.accredidations img,video{
+   border-radius: calc(400 / 2)em;
+   border: 0.45dvh solid #0BA ; 
+
+}
+.resume img,video{
+   border-radius: calc(400 / 2)em;
+   border: 0.45dvh solid #0BA ; 
 
 }
 
