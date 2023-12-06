@@ -1,6 +1,6 @@
 
 .prev-slick{
-  size: 30em;
+  size: 40em;
     background-color: #07c;
 
   border: 1px solid transparent;
@@ -28,7 +28,7 @@
 
 }
 .next-slick{
-size: 30em;
+size: 40em;
   background-color: #07c;
 
   border: 1px solid transparent;
@@ -81,9 +81,7 @@ size: 30em;
   background-color: #0064bd;
   box-shadow: none;
 }
-video{
-  margin:auto ;
-}
+
 html.has-scroll-smooth {
 	backface-visibility: hidden;
 	transform: translateZ(0);
@@ -103,9 +101,14 @@ html.has-scroll-smooth {
 
 }
 
-img,video{
+.projects img,video{
    border-radius: calc(400 / 2)em;
    border: 0.45dvh solid #0BA ; 
+}
+.accredidations img,video{
+   border-radius: calc(400 / 2)em;
+   border: 0.45dvh solid #0BA ; 
+
 }
 .nav-icon{
      border-style: none ;
