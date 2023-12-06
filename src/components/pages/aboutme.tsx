@@ -52,6 +52,12 @@ const About = (props) => {
             type: "image"
 
     },
+     {
+      desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
+      url: props.data[7],
+      type: "video"
+    },
+
    
     {
       desc: "I read mathematics from my extensive collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
@@ -60,12 +66,13 @@ const About = (props) => {
 
     }
     ,
-    {
+        {
       desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
       url: props.data[4],
       type: "image"
 
     },
+     
     {
       desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
       url: props.data[5],
@@ -77,11 +84,7 @@ const About = (props) => {
       url: props.data[6],
       type: "image"
     },
-      {
-      desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
-      url: props.data[7],
-      type: "video"
-    },
+    
      
   ];  
 
@@ -89,7 +92,7 @@ const About = (props) => {
     slidesToShow: 1,
     centerMode: true,
     Width: '70%',
-    arrows: false,
+    arrows: true, 
    slidesToScroll:1,
    infinite: true,
     fade: true,
@@ -109,12 +112,8 @@ const About = (props) => {
 return(
 
             <div>
-              { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :<>
-                 <video controls autoPlay loop playsInLine  muted height="auto" width="auto" preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} >
-                        <source src={ data.url+ "#t=0.5"} type="video/mp4" />
-                    </video>
-                    <br/>
-                    </>
+              { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :
+                 <video autoPlay playsInLine loop muted preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} src={ data.url+ "#t=0.5"}  />
               }
               <button style={{opacity: "0.95"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
               <button style={{opacity:"0.95"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
