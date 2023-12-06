@@ -2,3 +2,4 @@
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/> Updated Bundle Size: <b> 110KB </b>
 <br/> Link: <b <a href="https://bit.ly/3MHcbzY">Click me!</a> </b>
+[My Site](https://bit.ly/3MHcbzY).
