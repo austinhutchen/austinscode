@@ -1,6 +1,5 @@
 import React from 'react'
 import { Nav } from "../common/navbar.tsx"
-
 import { LazyMotion, domAnimation,m } from "framer-motion";
 
 import Slider from "react-slick";
@@ -94,9 +93,7 @@ const About = (props) => {
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
-    infinite:false,
-          autoplay: true,
-      dots: true,
+    dots: true,
 
   }
 
@@ -111,7 +108,9 @@ return(
 
             <div>
               { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :<>
-              <video src={data.url } controls  loop muted style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />
+                 <video controls autoplay loop muted height="auto" width="auto" preload="metadata" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} >
+                        <source src={ data.url+ "#t=0.5"} type="video/mp4" />
+                    </video>
   <br/> </> 
 
               }
