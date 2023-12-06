@@ -53,6 +53,7 @@ const About = (props) => {
             type: "image"
 
     },
+   
     {
       desc: "I read mathematics from my extensive collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
       url: props.data[3],
@@ -79,21 +80,22 @@ const About = (props) => {
     },
       {
       desc: "I love to solder !",
-      url: props.data[7]+"#t=0.5",
+      url: props.data[7],
       type: "video"
     },
+     
   ];  
 
   const settings = {
     slidesToShow: 1,
     centerMode: true,
-    lazyLoad: 'anticipated',
     Width: '70%',
     arrows: false,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
   }
+
   const slider = React.useRef(null);
   return (
     <div className="sc">
@@ -104,13 +106,8 @@ const About = (props) => {
 return(
 
             <>
-              { data.type == "image"? <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />
-              :<> <video  muted playsinline autoplay loop type="video/mp4" height="450svh" width="400svh"  style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }}> 
- <source src ={data.url}/>
- </video>
-      <br/> 
-
-      </>}
+              { data.type == "video"? <> <iframe src={data.url} height="500svh" width="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }}/> <br/> </>
+              :<> <img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> </>  }
               <button style={{opacity: "0.99"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
               <button style={{opacity:"0.99"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
               <fieldset >
