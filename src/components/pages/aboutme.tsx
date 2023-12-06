@@ -94,6 +94,10 @@ const About = (props) => {
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
+    infinite:false,
+          autoplay: true,
+      dots: true,
+
   }
 
   const slider = React.useRef(null);
