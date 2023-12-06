@@ -128,7 +128,7 @@ const Body = (props) => {
                         ARDUINO 8-BIT BITMASK ANIMATOR (C)
                     </a>
                     <br />
-                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" src={props.data[7]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
+                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[7]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
                     <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
                 </li>
 
@@ -147,7 +147,7 @@ const Body = (props) => {
                         EMBEDDED GESTURE SENSOR (C++)
                     </a>
                     <br />
-                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" src={props.data[5]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
+                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[5]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
 
 
                     <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4>
@@ -173,7 +173,7 @@ const Body = (props) => {
                     <br>
                     </br>
 
-                     <video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto" src={props.data[10]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
+                     <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[10]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
 
                     <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5>
                 </li>
