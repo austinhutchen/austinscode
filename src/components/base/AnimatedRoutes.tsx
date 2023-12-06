@@ -33,11 +33,12 @@ import search from '../../fast_imgs/PYCLI.webp'
 import actix from "../../fast_imgs/concurrency-model.webp"
 import graph from '../../fast_imgs/graph.mp4'
 import bash from "../../fast_imgs/BASH.png"
+import solder from "../../fast_imgs/SOLDER.mp4"
 import React from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 
 export const AnimatedRoutes = () => {
-  const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature]
+  const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature,solder]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash]
   const PDF_PAYLOAD = [ rec_letter, "",comments2,comments3, inclusion,support ]
   const RESUME_PAYLOAD = [resume]

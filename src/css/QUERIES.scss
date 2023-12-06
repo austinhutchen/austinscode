@@ -6,12 +6,8 @@
   .sc p{
 font-size: 0.65em;
 
-
-
   }
-.sc{
-  width: 1px; min-width: 100%; *width: 100%;
-}
+
 .sc img {
   height: 42svh; 
   margin :0 auto;
@@ -20,9 +16,9 @@ font-size: 0.65em;
   /* it centers any block level element */
 }
 .sc video {
-  height: 42svh;
+   height: 52svh;
+  width: 0 auto;
   margin :0 auto;
-    width: 0 auto;
   left: auto;
   /* it centers any block level element */
 }
@@ -68,7 +64,5 @@ font-size: 1.2em;
 
   /* it centers any block level element */
 }
-.sc{
-  width: 1px; min-width: 100%; *width: 100%;
-}
+
 }
