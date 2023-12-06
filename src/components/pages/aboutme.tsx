@@ -35,7 +35,7 @@ export const Aboutme = (props) => {
 const About = (props) => {
   const keys = [
     {
-      desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page software applications, and I have plenty of hobbies! ",
+      desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page PHP and TS-based software applications, and I have plenty of hobbies! ",
       url: props.data[0],
             type: "image"
 
@@ -48,7 +48,7 @@ const About = (props) => {
 
     },
     {
-      desc: "I spend most of my time building embedded systems, to automate daily tasks. I stick to using e-waste materials for the junction boxes, for recycling purposes.",
+      desc: "I spend most of my time building embedded systems, to automate daily tasks. I stick to using e-waste materials for the junction boxes, for recycling purposes, and make scripts using bash & PHP.",
       url: props.data[2],
             type: "image"
 
@@ -68,7 +68,7 @@ const About = (props) => {
 
     },
     {
-      desc: "I love my cats!",
+      desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
       url: props.data[5],
             type: "image"
 
@@ -79,7 +79,7 @@ const About = (props) => {
       type: "image"
     },
       {
-      desc: "I love to solder !",
+      desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
       url: props.data[7],
       type: "video"
     },
@@ -90,7 +90,7 @@ const About = (props) => {
     slidesToShow: 1,
     centerMode: true,
     Width: '70%',
-    arrows: true,
+    arrows: false,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
@@ -107,7 +107,7 @@ return(
 
             <div>
               { data.type == "image"?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} />: <>
-              <iframe src={data.url} height="500svh" width="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> <br/> </> 
+              <iframe src={data.url}  style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> <br/> </> 
               }
               <button style={{opacity: "0.99"}}type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
               <button style={{opacity:"0.99"}}type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
