@@ -89,7 +89,7 @@ export const Landing = () => {
             </p>
 
               <button
-            style={{margin:' 0.6em'}}
+            style={{marginBottom:' 0.6em'}}
               className="btn btn-success"
               type="button"
               id="navbar"
