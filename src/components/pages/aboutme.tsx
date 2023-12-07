@@ -47,7 +47,7 @@ const About = (props) => {
 
     },
     {
-      desc: "I spend most of my time building embedded systems, to automate daily tasks. I stick to using e-waste materials for the junction boxes, for recycling purposes, and make scripts using bash & PHP.",
+      desc: "I spend most of my time building embedded systems, to automate daily tasks. I use e-waste materials forjunction boxes to save the planet, and make scripts using bash, PHP, and C.",
       url: props.data[2],
             type: "image"
 
@@ -60,7 +60,7 @@ const About = (props) => {
 
    
     {
-      desc: "I read mathematics from my extensive collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
+      desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
       url: props.data[3],
             type: "image"
 
