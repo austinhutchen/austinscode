@@ -60,7 +60,7 @@ const About = (props) => {
 
    
     {
-      desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Boolean & Linear Algebra, Complex & Real Analysis, and Group Theory.",
+      desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
       url: props.data[3],
             type: "image"
 
@@ -96,7 +96,7 @@ const About = (props) => {
   const settings = {
     slidesToShow: 1,
     centerMode: true,
-    Width: '70%',
+    Width: '100%',
     arrows: true, 
    slidesToScroll:1,
    infinite: true,
