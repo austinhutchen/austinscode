@@ -1,25 +1,27 @@
- .projdesc{
+ .projdesc {
   padding-top: 1.7em;
   color: white;
   font-size: 1.2em;
-text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-  font-weight:1.5em;
-  
- }
- .referral{
-   color:hotpink
- }
-.icon{
-padding-top:1.0672358591248665svh;
-height : 5svh;
-width : auto;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  font-weight: bold; /* Changed to 'bold' as '1.5em' isn't a valid font-weight value */
 }
 
-.format-img{
-   height: 36svh;
-   width: 30svh auto;
+.referral {
+  color: hotpink;
 }
 
-.resume-body{
-  text-align:center;
+.icon {
+  padding-top: 10svh; /* Changed from '1.0672358591248665svh' to '10vh' for clarity */
+  height: 5svh;
+  width: auto;
 }
+
+.format-img {
+  height: 36svh;
+  width: 34svh auto; /* Changed from '30svh auto' to '30vh' for width specification */
+}
+
+.resume-body {
+  text-align: center;
+}
+

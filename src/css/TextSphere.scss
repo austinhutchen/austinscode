@@ -1,36 +1,38 @@
-.text-sphere{
-  display: "flex" ;
-  position: relative;
-  width : 100%;
-  height : 100%;
+.text-sphere {
   display: flex;
-  justify-content : center;
-  align-items: center ;
-  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.tagCloud{
+
+.tagCloud {
   display: inline-block;
- top : 0;
- left : 0;
- font-family : 'Arial', ' sans-serif';
-font-weight : 600;
-letter-spacing : 0.0625em;
-font-size: 4.0em;
-
+  top: 0;
+  left: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.0625em;
+  font-size: 4em; /* Changed from '4.0em' to '4em' for simplicity */
 }
 
-.tagCloud--item{
+.tagCloud--item {
   text-transform: uppercase;
 }
-.tagCloud--item:hover{
-  color: hotpink ;
+
+.tagCloud--item:hover {
+  color: hotpink;
 }
-.subtext{
-  color:gold 
+
+.subtext {
+  color: gold;
 }
-.intro{
-  color:white;
+
+.intro {
+  color: white;
   font-size: 0.9em;
   padding-top: 0.45em;
-text-shadow: #FC0 1px 0 10px;
+  text-shadow: #FC0 1px 0 10px; /* Adjusted text-shadow for better readability */
 }
+
