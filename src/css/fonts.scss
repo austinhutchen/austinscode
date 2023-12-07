@@ -1,60 +1,42 @@
-
-
-.hlight {
- background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
- display: inline;
- color: cornsilk; 
- text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8) ;
-
-}
-.hlight-mini {
- background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
- display: inline;
- color: cornsilk;
-
-text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8) ;
-}
-h4{
-text-shadow: 2px 2px 3px rgba(0.8,0.8,0.8,0.8);
-
-font-size: 0.98em;
-}
-h3{
-text-shadow: 2px 2px 3px rgba(0.8,0.8,0.8,0.8);
-
-font-size: 0.98em;
-
-}
-.projectdesc{
-
-  /* FOR SCALING ENTIRE PAGE BODY */
-  color:white;
-font-size: 1.10em;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
-    font-weight: 350;
-    color: white;
-text-shadow: 5px 5px 5px rgba(0.9,0.9,0.9,0.9);
+/* Shared styles for .hlight and .hlight-mini */
+.hlight, .hlight-mini {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
+  display: inline;
+  color: cornsilk;
+  text-shadow: 2px 3px 5px rgba(0.8, 0.8, 0.8, 0.8);
 }
 
+/* Common styles for h4 and h3 */
+h4, h3 {
+  text-shadow: 2px 2px 3px rgba(0.8, 0.8, 0.8, 0.8);
+  font-size: 0.98em;
+}
 
+/* Styling for .projectdesc */
+.projectdesc {
+  color: white;
+  font-size: 1.10em;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 350;
+  text-shadow: 5px 5px 5px rgba(0.9, 0.9, 0.9, 0.9);
+}
+
+/* Styling for fieldset and legend */
 fieldset {
-
-border: 0.25em solid #CCA; 
-  border-radius: 0.25em;  
+  border: 0.25em solid #CCA;
+  border-radius: 0.25em;
   -webkit-border-radius: 0.3em;
   box-shadow: 0.1em 0.1em 0.1em 0.1em #CCA;
-
 }
+
 .legend {
-  /* For better legibility against the box-shadow */ 
-  text-shadow: 2px 3px 5px rgba(0.8,0.8,0.8,0.8);
-
+  /* For better legibility against the box-shadow */
+  text-shadow: 2px 3px 5px rgba(0.8, 0.8, 0.8, 0.8);
 }
 
-
-
-.landing{
-color: beige;
+/* Styling for .landing */
+.landing {
+  color: beige;
 }
+

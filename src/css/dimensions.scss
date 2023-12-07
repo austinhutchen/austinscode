@@ -1,29 +1,10 @@
-
-.prev-slick{
-  size: 64em;
-    background-color: #07c;
-
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  color: #fff;
-  cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 1.0em;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-
-}
-.next-slick{
-size: 64em;
+/* Shared styles for .prev-slick and .next-slick */
+.prev-slick, .next-slick {
   background-color: #07c;
-
   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
   color: #fff;
   cursor: pointer;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
   font-size: 1.0em;
   font-weight: 400;
   text-align: center;
@@ -31,71 +12,60 @@ size: 64em;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
-
 }
 
+/* Hover and focus styles for .prev-slick and .next-slick */
 .prev-slick:hover,
-.prev-slick:focus {
-  background-color: #07c;
-    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-
-}
-
-
-.prev-slick:active {
-  background-color: #0064bd;
-  box-shadow: none;
-}
 .next-slick:hover,
+.prev-slick:focus,
 .next-slick:focus {
   background-color: #07c;
-    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
 }
 
-
+/* Active styles for .prev-slick and .next-slick */
+.prev-slick:active,
 .next-slick:active {
   background-color: #0064bd;
   box-shadow: none;
 }
 
+/* Additional styles */
 html.has-scroll-smooth {
-	backface-visibility: hidden;
-	transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .slides {
   position: relative;
-  .slick-prev, .slick-next {
-    position: absolute;
-    top: 60%;
-  }
-
 }
 
-.style-table{
-    margin: 0 auto;
-
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 60%;
 }
 
-.projects img,video{
-   border-radius: calc(400 / 2)em;
-   border: 0.45dvh solid #0BA ; 
+.style-table {
+  margin: 0 auto;
 }
-.accredidations img,video{
-   border-radius: calc(400 / 2)em;
-   border: 0.45dvh solid #0BA ; 
 
+.projects img,
+.accredidations img,
+.resume img,
+.projects video,
+.accredidations video,
+.resume video {
+  border-radius: 100/2; /* To create a circular border */
+  border: 0.45em solid #0BA; /* Adjusted border width unit */
 }
-.resume img,video{
-   border-radius: calc(400 / 2)em;
-   border: 0.45dvh solid #0BA ; 
 
+.nav-icon {
+  border-style: none;
 }
-.nav-icon{
-     border-style: none ;
 
+/* Additional styles for list items */
+li {
+  display: block;
 }
-li{display: block;}
 

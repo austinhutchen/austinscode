@@ -1,60 +1,54 @@
-
-/* unvisited link */
+/* Link styles */
 a:link {
- color: #cbf078;
+  color: #cbf078;
 }
 
-/* visited link */
 a:visited {
- color: #f1b963
+  color: #f1b963;
 }
 
-/* mouse over link */
 a:hover {
- color: hotpink;
+  color: hotpink;
 }
 
-/* selected link */
 a:active {
- color: blue;
+  color: blue;
 }
 
-
-
-
+/* Styles for .banner */
 .banner {
- background: repeating-linear-gradient(60deg, darkkhaki, darkolivegreen);
-}
-#name{
- text-align: center;
- font-weight: bold;
- color: yellowgreen;
-text-shadow: 5px 5px 7px rgba(0.5,0.5,0.5,0.5);
-
+  background: repeating-linear-gradient(60deg, darkkhaki, darkolivegreen);
 }
 
+/* Styles for #name */
+#name {
+  text-align: center;
+  font-weight: bold;
+  color: yellowgreen;
+  text-shadow: 5px 5px 7px rgba(0.5, 0.5, 0.5, 0.5);
+}
 
+/* Styles for .ribbon-highlight */
 .ribbon-highlight {
- position: relative;
- margin: 0.1em;
+  position: relative;
+  margin: 0.1em;
 }
-
-
 
 .ribbon-highlight:before {
- z-index: -1;
- left: -0.5em;
- top: 0.1em;
- border-width: 0.5em;
- border-style: solid;
- border-color: lightgreen;
- position: absolute;
- width: 100%;
- border-left-color: transparent;
- border-right-color: transparent;
+  z-index: -1;
+  left: -0.5em;
+  top: 0.1em;
+  border-width: 0.5em;
+  border-style: solid;
+  border-color: lightgreen;
+  position: absolute;
+  width: 100%;
+  border-left-color: transparent;
+  border-right-color: transparent;
 }
 
+/* Styles for .circle-sketch-highlight */
 .circle-sketch-highlight {
- position: relative;
+  position: relative;
 }
 

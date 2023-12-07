@@ -1,24 +1,36 @@
-  /* PHONE */
-@media all and (max-device-width:767px) {
-#name{
+ /* PHONE styles */
+@media all and (max-device-width: 767px) {
+  #name {
     font-size: 1.9em;
-}
-  .sc p{
-font-size: 0.60em;
-
   }
-
-.sc img {
-  height: 42svh; 
-  margin :0 auto;
-  left: auto;
-  /* it centers any block level element */
+  .sc p {
+    font-size: 0.60em;
+  }
+  .sc img,
+  .sc video {
+    height: 42vh;
+    margin: 0 auto;
+    left: auto;
+border-radius: calc(400 / 2)em;
+   border: 0.26dvh solid #0BA ; 
+  }
 }
-.sc video {
-   height: 42svh;
-  /* it centers any block level element */
-}
 
+/* Default styles */
+@media not all and (max-device-width: 767px) {
+  #name {
+    font-size: 2.5em;
+  }
+  .sc p {
+    font-size: 1.2em;
+  }
+  .sc img,
+  .sc video {
+    height: 60vh;
+    margin: 0 auto;
+    border-radius: calc(400 / 2)em;
+   border: 0.26dvh solid #0BA ; 
+    }
 }
 .projects img,video{
    border-radius: calc(400 / 2)em;
@@ -35,28 +47,3 @@ font-size: 0.60em;
 
 }
 
-@media not all and (max-device-width:767px){
-#name{
-    font-size: 2.5em;
-}
-.sc p{
-
-font-size: 1.2em;
-
-
-  }
-.sc img {
-  height: 60svh;
-  margin :0 auto;
-  left: auto;
-
-  /* it centers any block level element */
-}
-.sc video {
-  height: 60svh;
-
-
-  /* it centers any block level element */
-}
-
-}
