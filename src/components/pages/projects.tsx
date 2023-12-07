@@ -104,42 +104,7 @@ const Body = (props) => {
                     <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
                 </li>
                 
-           <li>
-                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
-                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
-
-                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
-                </li>
-     <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
-                    </a>
-                    <br />
-                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
-                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
-                </li>
-
-      
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
-                    </a>
-                    <br />
-                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[7]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
-                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
-                </li>
-
-                <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
-                        PAPER-LIKE ESP32 ANIMATOR (C)
-                    </a>
-                    <br />
-                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
-                </li>
+            
 
                 <li>
                     <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
@@ -154,7 +119,55 @@ const Body = (props) => {
 
                 </li>
 
-          
+
+           <li>
+                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
+                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
+                    </a>
+                    <br />
+                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
+
+                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
+                </li>
+                  <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
+                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
+                    </a>
+                    <br />
+                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[7]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
+                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
+                </li>
+
+     <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
+                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
+                    </a>
+                    <br />
+                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
+                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
+                </li>
+
+      
+              
+                <li>
+                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
+                        PAPER-LIKE ESP32 ANIMATOR (C)
+                    </a>
+                    <br />
+                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
+                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
+                </li>
+
+              <li>
+                    <a className="hlight-mini" href="https://github.com/austinhutchen/FLOATING_PARSER.C.git" target="_blank"
+                        rel="noopener noreferrer">
+                       REGEX FLOATING POINT PARSER CLONE (C) 
+                    </a>
+                    <br />
+                    <img src={props.data[16]} height="140vh" width="auto" />
+
+                    <h4>A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file. </h4>
+                </li>
                 <li>
                     <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
                         rel="noopener noreferrer">
