@@ -72,11 +72,11 @@ export const Landing = () => {
   return (
     <LazyMotion features={domAnimation}>
       <Nav />
-      <h3 className="hlight-mini" style={{ paddingTop: '10', fontSize: '1.5em' }} >
+      <h2 className="hlight-mini" style={{ paddingTop: '10', fontSize: '1.8em' }} >
 
 
         <b> Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer. </b>
-      </h3>
+      </h2>
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
@@ -84,7 +84,7 @@ export const Landing = () => {
 
             <p className="intro">
               <b>
-                I'm a CU Boulder Student (Bachelor's of Science Computer Science, Math Minor 2025) who enjoys working with backend servers, operating & embedded systems, dabbling in bash shell scripting & optimization, and creating optimized frontend applications. I love to work on applications using cutting-edge technologies like Typescript, Bash & ZSH, Go, PHP, C, C#, React (&Native), Tailwind, Next.js and Mongodb.
+               I'm a CU Boulder Computer Science student (BSc 2025) passionate about backend scripting, operating & embedded systems, frontend design, and code optimization. I excel in using Typescript, Bash, Go, PHP, C, C#, React (incl. Native), Tailwind, Next.js, and MongoDB for multi-page application development.
               </b>
             </p>
 
