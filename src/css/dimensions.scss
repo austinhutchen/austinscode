@@ -1,21 +1,18 @@
 
 .prev-slick{
-  size: 60em;
+  size: 56em;
     background-color: #07c;
 
-  border: 1px solid transparent;
-  border-radius: 3px;
   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0;
   outline: none;
-  padding:  .65em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -25,10 +22,9 @@
 
 }
 .next-slick{
-size: 60em;
+size: 56em;
   background-color: #07c;
 
-  border: 1px solid transparent;
   border-radius: 3px;
   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
   box-sizing: border-box;
@@ -36,11 +32,10 @@ size: 60em;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 13px;
+  font-size: 0.8em;
   font-weight: 400;
   margin: 0;
   outline: none;
-  padding:  .65em;
   position: relative;
   text-align: center;
   text-decoration: none;
