@@ -6,226 +6,212 @@ import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
 import "../../css/QUERIES.scss"
 import React from "react"
-const Body = (props) => {
-
-    return (
-    <div className = "projects">
-        <ul className="projectdesc">
-            <b>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/austinscode" target="_blank" rel="noopener noreferrer">
-                        THIS WEBSITE (TYPESCRIPT/REACT.TSX)
-                    </a>
-                    <h4 > My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my   <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-
-                        <b> <i>Programming Instagram</i> </b>
-                    </a>
-                    </h4>
-
-                </li>
-
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/WEATHER_32.git" target="_blank"
-                        rel="noopener noreferrer">
-                        PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)
-                    </a>
-                    <br />
-                    <img src={props.data[12]} height="140vh" width="auto" />
-
-                    <img src={props.data[9]} height="140vh" width="auto" />
-
-                    <h4> Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.</h4>
-                </li>
-
-                <li>
-                    <a href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
-                        UNIX KERNEL SHELL (C)
-                    </a>
-                    <br />
-                    <img src={props.data[0]} height="140vh" width="auto" />
-
-                    <h4 > A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal. </h4>
-                </li>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/IOS-calculator-app" target="_blank"
-                        rel="noopener noreferrer">
-                        CALCULATOR APP (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[3]} height="170vh" width="auto" loading="lazy" />
-
-                    <h4> A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.</h4>
-
-                </li>
-
-                <li>
-                    <a href="https://github.com/austinhutchen/redditsearch.git" target="_blank" rel="noopener noreferrer" className="hlight-mini">
-
-                        SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)
-                    </a>
-                    <br />
-                    <img src={props.data[13]} height="140vh" width="auto" />
-
-                    <h4 > A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.</h4>
-                </li>
-                  <li>
-                    <a className="hligh-mini" href= "https://github.com/austinhutchen/PHPland.git" target="_blank" rel="noopener noreferrer" >
-                        PHPLAND (PHP)
-                    </a>
-                    <br />
-                    <img src={props.data[16]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.</h4>
-                </li>
-
-       <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/newsletter.rs.git" target="_blank" rel="noopener noreferrer" >
-                        MULTITHREADED E-MAIL SERVER BACKEND (RUST)
-                    </a>
-                    <br />
-                    <img src={props.data[14]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice building test cases for server-based tasks. </h4>
-                </li>
-                    <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/scripts.git" target="_blank" rel="noopener noreferrer" >
-                        VARIOUS BASH SHELL SCRIPTS                  </a>
-                    <br />
-                    <img src={props.data[15]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the command line.   </h4>
-                </li>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/PLANT_COMPUTER_32.git" target="_blank" rel="noopener noreferrer">
-                        ESP32 PLANT INTERFACE (C)
-                    </a>
-                    <br />
-                    <table className="style-table">
-                        <tr>
-                            <td>
 
 
 
-                                <img src={props.data[11]} height="185em" width="auto" />
-
-                            </td>
-                        </tr>
-
-                    </table>
-
-                    <h4 > My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacative sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266. </h4>
-                </li>
-                
-            
-
-                <li>
-                    <a href="https://github.com/austinhutchen/gestureAI.git" target="_blank"
-                        rel="noopener noreferrer" className="hlight-mini">
-                        EMBEDDED GESTURE SENSOR (C++)
-                    </a>
-                    <br />
-                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[5]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
-
-
-                    <h4>A machine learning model implemented on an arduino nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures, as seen above in the video. </h4>
-
-                </li>
-
-
-           <li>
-                    <a className="hlight-mini" href={"https://github.com/austinhutchen/map-app.git"} target="_blank" rel="noopener noreferrer" >
-                        GOOGLE MAPS CLONE (DART/FLUTTER/C)
-                    </a>
-                    <br />
-                    <img src={props.data[4]} height="140vh" width="auto" loading="lazy" />
-
-                    <h4 > A google maps app clone that I coded using flutter and the dart framework. Spent the most time organizing and dealing with location data from google's maps API endpoint, and building a usable interface simialar to google maps. </h4>
-                </li>
-                  <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer">
-                        ARDUINO 8-BIT BITMASK ANIMATOR (C)
-                    </a>
-                    <br />
-                    <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[7]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
-                    <h4> I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.</h4>
-                </li>
-
-     <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/notable.git" target="_blank" rel="noopener noreferrer">
-                        NOTE-SHARING  APP (REACT NATIVE / JAVA)
-                    </a>
-                    <br />
-                    <img src={props.data[8]} height="140vh" width="auto" loading="lazy" />
-                    <h4> An app made for note-sharing purposes, which utilized the asyncstorage library to interface with  iphone and android local cache storage. The app promped the user with daily quotes fetched from an API, and stored journal entries in the user's local cache system. </h4>
-                </li>
-
-      
-              
-                <li>
-                    <a className="hligh-mini" href="https://github.com/austinhutchen/shell.git" target="_blank" rel="noopener noreferrer" >
-                        PAPER-LIKE ESP32 ANIMATOR (C)
-                    </a>
-                    <br />
-                    <img src={props.data[6]} height="140vh" width="auto" loading="lazy" />
-                    <h4 > I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand. </h4>
-                </li>
-
-              <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/FLOATING_PARSER.C.git" target="_blank"
-                        rel="noopener noreferrer">
-                       REGEX FLOATING POINT PARSER CLONE (C) 
-                    </a>
-                    <br />
-                    <img src={props.data[16]} height="140vh" width="auto" />
-
-                    <h4>A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file. </h4>
-                </li>
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/encrypt.C.git" target="_blank"
-                        rel="noopener noreferrer">
-                        ENCRYPTED TEXT EDITOR (C++)
-                    </a>
-                    <br />
-                    <img src={props.data[1]} height="140vh" width="auto" />
-
-                    <h4> A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.</h4>
-                </li>
-
-                <li>
-                    <a className="hlight-mini" href="https://github.com/austinhutchen/GAMMA.JS.git" target="_blank" rel="noopener noreferrer">
-                        SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)
-                    </a>
-                    <br>
-                    </br>
-
-                     <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline  oncontextmenu="return false;"  preload="auto" src={props.data[10]} type="video/mp4" height="140vh" width="auto" preload="metadata" />
-
-                    <h5>   A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless. </h5>
-                </li>
-
-            </b>
-        </ul>
-        </div>
-    )
+interface Project {
+  title: string;
+  link: string;
+  description: string;
+  images: string[];
+  video: string[];
 }
 
+interface BodyProps {
+  data: string[];
+}
 
-export const Projects = (props) => {
-    // integrate display component here
-    return (
-        <LazyMotion features={domAnimation}>
-            <Nav />
-            <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
+export const Projects: React.FC<BodyProps> = (props) => {
+const projectsData:Project = [
+{
+    title: "THIS WEBSITE (TYPESCRIPT/REACT.TSX)",
+    link: "https://github.com/austinhutchen/austinscode",
+    description:
+      "My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
+    images: [],
+    video: [],
+  },
+  {
+    title:    " PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)",
+    link: "https://github.com/austinhutchen/austinscode",
+    description:
+"Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
+    images: [props.data[12], props.data[9] ],
+    video: [],
+  },
+{ title: "UNIX KERNEL SHELL (C)" ,
+    link: "https://github.com/austinhutchen/shell.git",
+    description:
+      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal." ,
+    images: [props.data[0]],
+    video: [],
+},
+
+  {    title: "CALCULATOR APP (DART/FLUTTER/C)",
+    link: "https://github.com/austinhutchen/austinscode",
+    description:
+      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
+    images: [props.data[3] ],
+       video: [],
+
+},       {  title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
+    link: "https://github.com/austinhutchen/redditsearch.git",
+    description:
+    "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
+    images: [props.data[13]], video: [],  } 
+,
+  { title: "PHPLAND (PHP)",
+    link:  "https://github.com/austinhutchen/PHPland.git",
+    description:
+     "A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.",
+    images: [props.data[16 ]],
+    video: [],
+  },
+
+  { title:                       "VARIOUS BASH SHELL SCRIPTS",
+  link:"https://github.com/austinhutchen/scripts.git" ,
+    description: "Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the CLI." ,
+    images: [props.data[15] ],
+    video: [], 
+    },
+
+ {
+      title: "ESP32 PLANT INTERFACE (C)",
+      link: "https://github.com/austinhutchen/austinscode",
+      description:
+        "My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacitive sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
+      images: [props.data[11] ], // Insert your image paths here
+   video: [], 
+    },
+    {
+      title: "EMBEDDED GESTURE SENSOR (C++)",
+      link: "https://github.com/austinhutchen/austinscode",
+      description:
+        "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures.",
+      images: [], // Insert your image paths here
+
+   video: [props.data[5] ], 
+
+    },
+    {
+      title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
+      link: "https://github.com/austinhutchen/austinscode",
+      description:
+        "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
+      images: [props.data[4] ], // Insert your image paths here,
+       video: [], // Insert your video path here,
+
+    }     ,
+  {
+      title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
+      link: "https://github.com/austinhutchen/austinscode",
+      description:
+        "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
+      images: [ ], // Insert your image paths here
+      video: [props.data[7] ], // Insert your video path here
+    },
+      { title:                       " MULTITHREADED E-MAIL SERVER BACKEND (RUST)",
+  link: "https://github.com/austinhutchen/austinscode",
+    description:
+    "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice building test cases for server-based tasks.",
+    images: [props.data[14] ],
+      video: [], // Insert your video path here
+
+},
+    {
+      title: "NOTE-SHARING APP (REACT NATIVE / JAVA)",
+      link: "https://github.com/austinhutchen/notable.git" ,
+      description:
+        "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
+      images: [props.data[8] ], // Insert your image paths here
+      video: [], // Insert your video path here
+    },
+    {
+      title: "PAPER-LIKE ESP32 ANIMATOR (C)",
+      link: "https://github.com/austinhutchen/austinscode",
+      description:
+        "I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand.",
+      images: [props.data[6]], // Insert your image paths here
+
+      video: [], // Insert your video path here
+
+    },
+  {
+      title: "REGEX-LIKE IEE FLOATING POINT PARSER (C)",
+      link:"https://github.com/austinhutchen/FLOATING_PARSER.C.git",
+      description:
+     " A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file.",
+      images: [props.data[16]], // Insert your image paths here
+      video: [], // Insert your video path here
+    },
+    {
+      title:                         
+      "ENCRYPTED TEXT EDITOR (C++)",
+      link:"https://github.com/austinhutchen/encrypt.C.git",
+      description:
+       "A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
+      images: [props.data[1]], // Insert your image paths here
+      video: [], // Insert your video path here
+    },
+    {
+      title: "SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)",
+      link: "https://github.com/austinhutchen/GAMMA.JS.git",
+      description:
+        "A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless.",
+      images: [], // Insert your image paths here
+      video: [props.data[10]], // Insert your video path here
+    },
+  
+
+
+];
+
+
+  return (
+       <LazyMotion features={domAnimation}>
+    <Nav/>
+     <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-                <div style={{ paddingBottom: '0.2em' }}>
+    <div className="projects">
+      <ul className="projectdesc">
+        <b>
+          {projectsData.map((project, index) => (
+            <li key={index}>
+              <a className="hlight-mini" href={project.link} target="_blank" rel="noopener noreferrer">
+                {project.title}
+              </a>
+              <br />
+              {/* Render images */}
+              {project.images.map((src, imgIndex) => (
+                <img key={imgIndex} src={src} height="150vh" width="auto" loading="lazy" />
+              ))}
+              {/* Render video */}
+              {project.video.length > 0 && (
+                <video
+                  key={index}
+                  autoPlay
+                  loop
+                  muted
+                  defaultMuted
+                  playsInline
+                  onContextMenu={(e) => e.preventDefault()}
+                  preload="auto"
+                  src={project.video[0]} // Assuming there is only one video URL in the array
+                  type="video/mp4"
+                  height="150vh"
+                  width="auto"
+                  preload="metadata"
+                />
+              )}
+              <h4>{project.description}</h4>
+            </li>
+          ))}
+        </b>
+      </ul>
+    </div>
+      </m.div>
+    </LazyMotion>
+  );
+};
 
-                    <h1 className="hlight" >
-                        <b>PERSONAL PROJECTS:</b>
-                    </h1>
-
-                </div>
-                <Body data={props.data} />
-
-            </m.div>
-        </LazyMotion>
-
-    )
-}
 

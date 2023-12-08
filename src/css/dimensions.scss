@@ -6,11 +6,9 @@
   cursor: pointer;
   font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
   font-size: 1.0em;
+  padding: 6px 8px;
   font-weight: 400;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
 
@@ -56,8 +54,8 @@ html.has-scroll-smooth {
 .projects video,
 .accredidations video,
 .resume video {
-  border-radius: 100/2; /* To create a circular border */
-  border: 0.45em solid #0BA; /* Adjusted border width unit */
+  border-radius: 200/2; /* To create a circular border */
+  border: 0.12em solid #0BA; /* Adjusted border width unit */
 }
 
 .nav-icon {
