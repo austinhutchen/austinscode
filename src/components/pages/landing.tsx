@@ -89,7 +89,7 @@ export const Landing = () => {
             </p>
 
               <button
-            style={{marginBottom:' 0.6em'}}
+            style={{marginBottom:' 0.4em'}}
               className="btn btn-success"
               type="button"
               id="navbar"
@@ -98,10 +98,10 @@ export const Landing = () => {
 
               }}
             >
-              More About Me
+              More About Me 
 
               <HiArrowNarrowRight size={
-                '1.2em'} className="ml-3" />
+                '1em'} className="ml-3" />
 
             </button>
                         <br/>

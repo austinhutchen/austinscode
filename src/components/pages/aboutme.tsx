@@ -47,7 +47,7 @@ const About = (props) => {
 
     },
     {
-      desc: "I spend most of my time building embedded systems, to automate daily tasks. I use e-waste materials forjunction boxes to save the planet, and make scripts using bash, PHP, and C.",
+      desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
       url: props.data[2],
             type: "image"
 
