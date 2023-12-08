@@ -1,38 +1,24 @@
-import React from 'react'
-import { Nav } from "../common/navbar.tsx"
-import { LazyMotion, domAnimation,m } from "framer-motion";
-
+import React, { useRef } from 'react';
+import { Nav } from "../common/navbar.tsx";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
-export const Aboutme = (props) => {
 
-  return (
-    <>
-      <Nav />
-<LazyMotion features ={domAnimation}>
-      <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-        <h1 className="hlight" >
-          <b>
-            ABOUT!
-          </b>
-        </h1>
-      </m.div>
-
-
-
-    </LazyMotion>     
-    <About data={props.data} />
-
-    </>
-  )
+interface AboutProps {
+  data: string[];
 }
 
+interface KeyItem {
+  desc: string;
+  url: string;
+  type: string;
+}
 
-const About = (props) => {
-  const keys = [
+const About: React.FC<AboutProps> = (props) => {
+  const keys: KeyItem[] = [
+   
+
+ 
     {
       desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page PHP and TS-based software applications, and I have plenty of hobbies! ",
       url: props.data[0],
@@ -91,58 +77,83 @@ const About = (props) => {
     },
       
      
-  ];  
+  
+
+
+  ];
 
   const settings = {
     slidesToShow: 1,
     centerMode: true,
-    Width: '100%',
-    arrows: true, 
-   slidesToScroll:1,
-   infinite: true,
+    width: '100%',
+    arrows: true,
+    slidesToScroll: 1,
+    infinite: true,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
     dots: true,
+  };
 
-  }
+  const slider = useRef<Slider>(null);
 
-  const slider = React.useRef(null);
   return (
     <div className="sc">
+      <Slider ref={slider} {...settings}>
+        {keys.map((data, index) => (
+          <div key={index}>
+            {data.type === "image" ? (
+              <img src={data.url} style={{ borderRadius: '50%', border: "0.45vh solid #0BA" }} alt="Project Image" />
+            ) : (
+              <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '50%', border: "0.45vh solid #0BA" }} src={data.url} />
+            )}
 
-      <Slider ref={slider} {...settings} >
-        {keys.map(data => {
-
-return(
-
-            <div>
-              { (data.type == "image")?<img src={data.url} style={{ borderRadius: '(200 / 2)em', borderStyle: "solid", border: "0.45vh solid #0BA" }} /> :
-                 <video autoplay="autoplay" loop="loop" muted defaultMuted playsInline     webkit-playsInline oncontextmenu="return false;"  preload="auto" style={{ borderRadius: '(200 / 2)em', borderStyle: "solid" , border: "0.45vh solid #0BA" }} src={ data.url}  />
-              }
-            
-              <fieldset >
-               
-                <p style={{ color: 'cornsilk', fontSize: "2.5vh", fontFamily: "Gill Sans, Gill Sans MT,Calibri,Trebuchet MS,sans-serif", fontWeight: 350 }}>
-
-
-                  <b className="legend">
-                    {data.desc}
-
-
-
-                  </b>
-                </p>
-                 <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}> <HiArrowNarrowLeft />  </button>
-              <button type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}> <HiArrowNarrowRight /> </button>
-              </fieldset>
-            </div>
-
-          );
-        })}
-
+            <fieldset>
+              <p style={{ color: 'cornsilk', fontSize: "2.5vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
+                <b className="legend">{data.desc}</b>
+              </p>
+              <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}>
+                <HiArrowNarrowLeft />
+              </button>
+              <button type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}>
+                <HiArrowNarrowRight />
+              </button>
+            </fieldset>
+          </div>
+        ))}
       </Slider>
     </div>
   );
+};
 
+interface AboutMeProps {
+  data: string[];
 }
+
+export const Aboutme: React.FC<AboutMeProps> = (props) => {
+  return (
+    <>
+      <Nav />
+      <LazyMotion features={domAnimation}>
+        <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+          <h1 className="hlight">
+            <b>ABOUT!</b>
+          </h1>
+        </m.div>
+      </LazyMotion>
+      <About data={props.data} />
+    </>
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
