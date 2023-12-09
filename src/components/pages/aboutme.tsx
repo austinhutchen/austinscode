@@ -105,7 +105,7 @@ const About: React.FC<AboutProps> = (props) => {
             {data.type === "image" ? (
               <img src={data.url} style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} alt="Project Image" />
             ) : (
-              <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '100%', border: "0.45vh solid #0BA" }} src={data.url} />
+              <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} src={data.url} />
             )}
 
             <fieldset>
