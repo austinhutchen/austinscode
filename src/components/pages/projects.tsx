@@ -172,6 +172,9 @@ const projectsData:Project = [
     <Nav/>
      <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                 exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+           <h1 className="hlight" >
+                        <b>PERSONAL PROJECTS:</b>
+                    </h1>
     <div className="projects">
       <ul className="projectdesc">
         <b>

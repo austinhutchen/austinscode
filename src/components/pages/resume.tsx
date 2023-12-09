@@ -12,7 +12,7 @@ const Body = () => {
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
               
-                <ul style={{ paddingTop: '0.6em' }} className="projectdesc" >
+                <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
                     <h2 className="hlight-mini">
                         <b>
                             <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
