@@ -177,7 +177,7 @@ const projectsData:Project = [
         <b>
           {projectsData.map((project, index) => (
             <li key={index}>
-              <a className="hlight-mini" href={project.link} target="_blank" rel="noopener noreferrer">
+              <a className="hlight-mini" style={{fontSize:"1.1em"}} href={project.link} target="_blank" rel="noopener noreferrer">
                 {project.title}
               </a>
               <br />
