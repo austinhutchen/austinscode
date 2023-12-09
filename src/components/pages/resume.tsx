@@ -2,8 +2,7 @@ import { Nav } from "../common/navbar.tsx";
 import { LazyMotion, domAnimation,m } from "framer-motion";
 
 import "../../css/resume.scss"
-
-const Body = () => {
+const Body:React.FC = () => {
     return (
     <LazyMotion features={domAnimation}>
         <m.div  initial={{ width: 0 }} animate={{ width: "100%" }}
