@@ -8,6 +8,7 @@
   },
   "private": false,
   "dependencies": {
+    "@react-pdf/renderer": "^3.1.14",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.1.0",
     "@testing-library/user-event": "^14.5.1",
@@ -49,12 +50,15 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@mikecousins/react-pdf": "^6.1.1",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
     "babel-eslint": "^10.1.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^8.54.0",
     "gh-pages": "^6.0.0",
     "react-icons": "^4.12.0",
+    "react-pdf": "^7.5.1",
     "react-slick": "^0.29.0",
     "sass": "^1.69.5",
     "TagCloud": "^2.4.0",
@@ -63,5 +67,10 @@
   },
   "bundleDependencies": [
     "framer-motion"
-  ]
+  ],
+  "overrides": {
+    "@react-pdf/renderer": {
+      "react": "^18.0.0"
+    }
+  }
 }

@@ -75,11 +75,11 @@ export const Landing: React.FC = () => {
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
+            <b>
             <p className="intro">
-              <b>
-                I'm a CU Boulder Computer Science student (BSc & MATH 2025) passionate about backend scripting, operating & embedded systems, frontend design, and code optimization. I excel in programming with Typescript, PHP, C#, Bash, C, Go, React (incl. Native), Tailwind, SQL, Next.js, and MongoDB for multi-page application development.
-              </b>
+              CU Boulder Computer Science & MATH student (BSc 2025), software developer, and acclaimed Calculus teacher who loves to build long-lasting software & tech. Skilled in Typescript, PHP, C#, Bash, C, Go, React (incl. React Native), Tailwind, Next.js, SQL, and MongoDB. I specialize in multi-page app development, server scripting, code optimization, shell scripting, and embedded systems! 
             </p>
+            </b>
             <button
               style={{ marginBottom: '0.4em' }}
               className="btn btn-success"

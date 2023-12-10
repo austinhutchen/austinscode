@@ -1,16 +1,62 @@
+import React,{useState,useRef } from 'react';
 import { Nav } from "../common/navbar.tsx";
-import { LazyMotion, domAnimation,m } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
+import ReactDOM from "react-dom";
+import {pdfjs} from "react-pdf";
+import pdf from "../../fast_imgs/SUBMIT_1.pdf";
+import {usePdf } from "@mikecousins/react-pdf"; // Import PdfDocument type from react-pdf
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-import "../../css/resume.scss"
-const Body:React.FC = () => {
+
+const MyPdfViewer: React.FC = (props) => {
+    console.log(props.data);
+     const [page, setPage] = useState(1);
+  const canvasRef = useRef(null);
+const { pdfDocument, pdfPage } = usePdf({
+    file: pdf,
+    page,
+    canvasRef,
+  });
+  return (
+        <>
+          {!pdfDocument && <span>Loading...</span>}
+          <canvas ref={canvasRef} />
+          {Boolean(pdfDocument && pdfDocument.numPages) && (
+            <nav>
+              <ul className="pager">
+                  <button
+                    disabled={page === 1}
+                    onClick={() => setPage((prevPage) => prevPage - 1)} // Use functional update for setPage
+                  >
+                    Previous
+                  </button>
+                  <button
+                    disabled={page === (pdfDocument?.numPages ?? 0)} // Use optional chaining and nullish coalescing
+                    onClick={() => setPage((prevPage) => prevPage + 1)} // Use functional update for setPage
+                  >
+                    Next
+                  </button>
+              </ul>
+            </nav>
+          )}
+        </>
+  );
+};
+
+
+
+export const Resume: React.FC  = (props) => {
+
     return (
-    <LazyMotion features={domAnimation}>
-        <m.div  initial={{ width: 0 }} animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-              <h1 className="hlight">
+        <div>
+            <Nav />
+        <LazyMotion features={domAnimation}>
+            <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+                <h1 className="hlight">
                     <b> DIRECT WORK EXPERIENCE </b>
                 </h1>
-              
+
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
                     <h2 className="hlight-mini">
                         <b>
@@ -20,13 +66,13 @@ const Body:React.FC = () => {
                     <li>
                         < h3  >
                             Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
-                            hours every week to assist learning of course material.{" "}
+                                hours every week to assist learning of course material.{" "}
 
                             Recieved 97% positive feedback from 63 participants on end of
                             semester survey.
                         </h3>
                     </li>
-<br/>
+                    <br />
                     <h2 className="hlight-mini">
                         <b>
                             <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
@@ -41,7 +87,7 @@ const Body:React.FC = () => {
 "  target="_blank"
                                 rel="noreferrer"> here </a>   </b>                 </h3>
                     </li>
-                    <br/>
+                    <br />
                     <h2 className="hlight-mini" >
                         <b>
                             <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
@@ -60,7 +106,7 @@ const Body:React.FC = () => {
 
 
                     </li>
-                    <br/>
+                    <br />
                     <li>
                         <h2 className="hlight-mini">
                             <b>
@@ -85,33 +131,33 @@ const Body:React.FC = () => {
                     <h1 className="hlight" >
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
-<br/>
-                     <img  height="110svh" width="auto" src= "https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{marginTop:'0.25em', marginBottom:'0.25em'}}/>
+                    <br />
+                    <img height="110svh" width="auto" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
 
                     <hr />
-                                            <li >
+                    <li >
 
                         <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
                             rel="noreferrer">
                             <h2 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h2>
                         </a>
 
-<h4> Assisted twitter with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
+                        <h4> Assisted twitter with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
 
-                        </li>
-                        <br/>
-                                                <li>
+                    </li>
+                    <br />
+                    <li>
 
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
                             <h2 className="hlight-mini"> <b> LEETCODE </b> </h2>
                         </a>
 
- <h4>I love leetcode </h4>
+                        <h4>I love leetcode </h4>
 
-                        </li>
-                        <br/>
-                                                <li>
+                    </li>
+                    <br />
+                    <li>
 
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
@@ -120,58 +166,39 @@ const Body:React.FC = () => {
                         </a>
 
 
-                            <h4 >
-                                Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
-                        </li>
-                        <br/>
-                        <li>
+                        <h4 >
+                            Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
+                    </li>
+                    <br />
+                    <li>
                         <a href="https://gardenschoolfoundation.org/" target="_blank"
                             rel="noreferrer" >
                             <h2 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h2>
 
                         </a>
 
-                            <h4 >
-                                Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
+                        <h4 >
+                            Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
 
 
-                        </li>
-<br/>
+                    </li>
+                    <br />
 
-                    <div>
-                        <h1 className="hlight">
-                            <b><i> FULL RESUME ( in progress)</i></b>
-                        </h1>
-
-
-
-                    </div>
+                    <h1 className="hlight">
+                        <b><i> FULL RESUME ( in progress)</i></b>
+                    </h1>
+                        <br/>
+                            <MyPdfViewer data={props}/>
 
 
 
-</ul>
-        </m.div>
+
+                </ul>
+            </m.div>
         </LazyMotion>
-    )
-}
+        </div>
+    );
 
-
-
-
-export const Resume = (props) => {
-
-    return (
-
-<>
-                <Nav />
-
-        <div className="resume">
-
-            <Body />
-            <img src={props.data[0]} style={{ height: "55dvh", width: "0 auto" }} />
-
-</div>
-</>
-    )
+    
 
 }
