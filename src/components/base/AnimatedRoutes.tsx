@@ -36,7 +36,7 @@ import graph from '../../fast_imgs/graph.mp4'
 import bash from "../../fast_imgs/BASH.png"
 import liv from"../../fast_imgs/liv.webp"
 import php from "../../fast_imgs/PHP.webp"
-import pdf from "../../fast_imgs/SUBMIT_1.pdf";
+import pdf from "../../fast_imgs/Resume.webp";
 import solder from "../../fast_imgs/SOLDER.mp4"
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature,solder,liv]
