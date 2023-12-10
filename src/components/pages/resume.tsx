@@ -1,19 +1,18 @@
-import React,{useState,useRef } from 'react';
+import React,{useState,useRef, useMemo } from 'react';
 import { Nav } from "../common/navbar.tsx";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import ReactDOM from "react-dom";
 import {pdfjs} from "react-pdf";
-import pdf from "../../fast_imgs/SUBMIT_1.pdf";
+
 import {usePdf } from "@mikecousins/react-pdf"; // Import PdfDocument type from react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 
-const MyPdfViewer: React.FC = (props) => {
-    console.log(props.data);
+const MyPdfViewer: React.FC = ({ data }) => {
+console.log(data);
      const [page, setPage] = useState(1);
   const canvasRef = useRef(null);
 const { pdfDocument, pdfPage } = usePdf({
-    file: pdf,
+    file: data,
     page,
     canvasRef,
   });
@@ -45,8 +44,8 @@ const { pdfDocument, pdfPage } = usePdf({
 
 
 
-export const Resume: React.FC  = (props) => {
-
+export const Resume: React.FC  = ({data}) => {
+  const file = useMemo(() => ({ data }), [data]);
     return (
         <div>
             <Nav />
@@ -188,7 +187,7 @@ export const Resume: React.FC  = (props) => {
                         <b><i> FULL RESUME ( in progress)</i></b>
                     </h1>
                         <br/>
-                            <MyPdfViewer data={props}/>
+                            <MyPdfViewer data={data}/>
 
 
 
