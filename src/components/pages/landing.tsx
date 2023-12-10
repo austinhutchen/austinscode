@@ -77,9 +77,9 @@ export const Landing: React.FC = () => {
           <div className="flex flex-col justify-center h-full">
             <b>
             <p className="intro">
-              CU Boulder Computer Science & MATH student (BSc 2025), software developer, and acclaimed Calculus teacher who loves to build long-lasting software & tech. Skilled in Typescript, PHP, C#, Bash, C, Go, React (incl. React Native), Tailwind, Next.js, SQL, and MongoDB. I specialize in multi-page app development, server scripting, code optimization, shell scripting, and embedded systems! 
-            </p>
-            </b>
+              "Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for software development and teaching Calculus. Proficient in Typescript, PHP, C#, React (incl. React Native), and more. I specialize in multi-page app development, code optimization, and building embedded systems."            
+              </p>
+              </b>
             <button
               style={{ marginBottom: '0.4em' }}
               className="btn btn-success"
