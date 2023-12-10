@@ -17,11 +17,11 @@ export const Nav = () => {
     return (
    <div>
             <nav
-                class="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-md justify-content-center "
+                className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-md justify-content-center "
             >
                 <div>
                     <button
-                        class="btn btn-outline-success me-1"
+                        className="btn btn-outline-success me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -31,7 +31,7 @@ export const Nav = () => {
                         Home
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary me-1"
+                        className="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -41,7 +41,7 @@ export const Nav = () => {
                         About
                     </button>
         <button
-                        class="btn btn-md btn-outline-primary me-1"
+                        className="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -51,7 +51,7 @@ export const Nav = () => {
                         Projects
                     </button>
                     <button
-                        class="btn btn-md btn-outline-primary me-1"
+                        className="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
@@ -62,7 +62,7 @@ export const Nav = () => {
                     </button>
                   
                     <button
-                        class="btn btn-md btn-outline-primary me-1"
+                        className="btn btn-md btn-outline-primary me-1"
                         type="button"
                         id="navbar"
                         onClick={() => {
