@@ -20,14 +20,14 @@ const About: React.FC<AboutProps> = (props) => {
 
  
     {
-      desc: "Welcome! I'm a software engineer who builds embedded systems and multi-page PHP and TS-based software applications, and I have plenty of hobbies! ",
+      desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
       url: props.data[0],
             type: "image"
 
     }
     ,
     {
-      desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms and P vs NP runtimes. ",
+      desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms and enjoy studying computational complexities.. ",
       url: props.data[1],
             type: "image"
 
@@ -109,7 +109,7 @@ const About: React.FC<AboutProps> = (props) => {
             )}
 
             <fieldset>
-              <p style={{ color: 'cornsilk', fontSize: "2.5vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
+              <p style={{ color: 'cornsilk', fontSize: "2.2vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>
               <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}>
