@@ -34,12 +34,12 @@ export const View: React.FC<ViewData> = ({ data }) => {
                   <ul>
                     <li>
                       {data.slice(4, 6).map((src, index) => (
-                        <img key={`img_${index}`} src={src} className="format-img" loading="lazy" height="auto" width="auto" />
+                        <img key={`img_${index}`} src={src} className="format-img"  style={{ height: "55dvh", width: "0 auto" }} loading="lazy" height="auto" width="auto" />
                       ))}
                     </li>
                     <li>
                       {data.slice(2, 4).map((src, index) => (
-                        <img key={`img_${index}`} src={src} className="format-img" loading="lazy" height="auto" width="auto" />
+                        <img key={`img_${index}`} src={src} className="format-img"  style={{ height: "55dvh", width: "0 auto" }} loading="lazy" height="auto" width="auto" />
                       ))}
                     </li>
                   </ul>
