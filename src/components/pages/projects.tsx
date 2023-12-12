@@ -171,7 +171,7 @@ const projectsData:Project = [
        <LazyMotion features={domAnimation}>
     <Nav/>
      <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+                exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}>
            <h1 className="hlight" >
                         <b>PERSONAL PROJECTS:</b>
                     </h1>
@@ -186,7 +186,7 @@ const projectsData:Project = [
               <br />
               {/* Render images */}
               {project.images.map((src, imgIndex) => (
-                <img key={imgIndex} src={src} height="150vh" width="auto" loading="lazy" />
+                <img key={imgIndex} src={src} height="150vh" width="auto" loading="eager" />
               ))}
               {/* Render video */}
               {project.video.length > 0 && (
@@ -198,8 +198,7 @@ const projectsData:Project = [
                   defaultMuted
                   playsInline
                   onContextMenu={(e) => e.preventDefault()}
-                  preload="auto"
-                  src={project.video[0]} // Assuming there is only one video URL in the array
+                  src={project.video[0]}
                   type="video/mp4"
                   height="150vh"
                   width="auto"
