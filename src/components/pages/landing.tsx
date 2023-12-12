@@ -77,7 +77,7 @@ export const Landing: React.FC = () => {
           <div className="flex flex-col justify-center h-full">
             <b>
             <p className="intro">
-              I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for software development, robotics engineering, and teaching Calculus. Proficient in Typescript, PHP, C#, React(&Native).JSX(&.TSX), C++, Bash, dabble in debugging X86 assembly binaries, and work with many other programming languages. I specialize in multi-page app development, software code optimization, and building embedded systems.            
+              I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, robotics engineering, and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in multi-page app development, software code optimization, and building embedded systems.            
               </p>
               </b>
             <button
