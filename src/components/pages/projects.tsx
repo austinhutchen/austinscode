@@ -33,7 +33,7 @@ const projectsData:Project = [
   },
   {
     title:    " PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)",
-    link: "https://github.com/austinhutchen/austinscode",
+    link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
 "Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
     images: [props.data[12], props.data[9] ],
@@ -48,7 +48,7 @@ const projectsData:Project = [
 },
 
   {    title: "CALCULATOR APP (DART/FLUTTER/C)",
-    link: "https://github.com/austinhutchen/austinscode",
+    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description:
       "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
     images: [props.data[3] ],
@@ -77,7 +77,7 @@ const projectsData:Project = [
 
  {
       title: "ESP32 PLANT INTERFACE (C)",
-      link: "https://github.com/austinhutchen/austinscode",
+      link: "https://github.com/austinhutchen/plant_interface.git",
       description:
         "My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacitive sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
       images: [props.data[11] ], // Insert your image paths here
@@ -85,7 +85,7 @@ const projectsData:Project = [
     },
     {
       title: "EMBEDDED GESTURE SENSOR (C++)",
-      link: "https://github.com/austinhutchen/austinscode",
+      link: "https://github.com/austinhutchen/ArtificalSP.git",
       description:
         "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures.",
       images: [], // Insert your image paths here
@@ -95,7 +95,7 @@ const projectsData:Project = [
     },
     {
       title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
-      link: "https://github.com/austinhutchen/austinscode",
+      link: "https://github.com/austinhutchen/map-app.git",
       description:
         "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
       images: [props.data[4] ], // Insert your image paths here,
