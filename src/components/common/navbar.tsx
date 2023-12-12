@@ -10,6 +10,7 @@ export const Nav: React.FC = () => {
   };
 
   return (
+        <>
     <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-md justify-content-center">
       <div>
         <button className="btn btn-outline-success me-1" type="button" onClick={() => navigateTo('/')}>
@@ -42,6 +43,10 @@ export const Nav: React.FC = () => {
         </a>
       </div>
     </nav>
+           <div className="banner" >
+                <h3 id="name">Austin  Hutchen</h3>
+            </div>
+              </>
   );
 };
 
