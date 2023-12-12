@@ -170,8 +170,8 @@ const projectsData:Project = [
   return (
        <LazyMotion features={domAnimation}>
     <Nav/>
-     <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}>
+     <m.div initial={{ width: 0, transition:{duration:0.5 } }} animate={{ width: "100%" }}
+                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
            <h1 className="hlight" >
                         <b>PERSONAL PROJECTS:</b>
                     </h1>
