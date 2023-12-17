@@ -58,7 +58,7 @@ const projectsData:Project = [
      title: "ALGORITHMS (C++)",
     link:  "https://github.com/austinhutchen/PHPland.git",
     description:
-     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary tress, graphs,and much more.",
+     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
     images: [props.data[17 ]],
     video: [],
   },
