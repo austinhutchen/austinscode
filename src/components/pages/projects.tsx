@@ -54,37 +54,7 @@ const projectsData:Project = [
     images: [props.data[3] ],
        video: [],
 
-},      {
-     title: "ALGORITHMS (C++)",
-    link:  "https://github.com/austinhutchen/PHPland.git",
-    description:
-     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
-    images: [props.data[17 ]],
-    video: [],
-  },
-
-    {  title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
-    link: "https://github.com/austinhutchen/redditsearch.git",
-    description:
-    "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
-    images: [props.data[13]], video: [],  } 
-,
-  { title: "PHPLAND (PHP)",
-    link:  "https://github.com/austinhutchen/PHPland.git",
-    description:
-     "A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.",
-    images: [props.data[16 ]],
-    video: [],
-  },
-
-  { title:                       "VARIOUS BASH SHELL SCRIPTS",
-  link:"https://github.com/austinhutchen/scripts.git" ,
-    description: "Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the CLI." ,
-    images: [props.data[15] ],
-    video: [], 
-    },
-
- {
+},     {
       title: "ESP32 PLANT INTERFACE (C)",
       link: "https://github.com/austinhutchen/plant_interface.git",
       description:
@@ -119,6 +89,37 @@ const projectsData:Project = [
       images: [ ], // Insert your image paths here
       video: [props.data[7] ], // Insert your video path here
     },
+      {
+     title: "ALGORITHMS (C++)",
+    link:  "https://github.com/austinhutchen/PHPland.git",
+    description:
+     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
+    images: [props.data[17 ]],
+    video: [],
+  },
+
+    {  title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
+    link: "https://github.com/austinhutchen/redditsearch.git",
+    description:
+    "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
+    images: [props.data[13]], video: [],  } 
+,
+  { title: "PHPLAND (PHP)",
+    link:  "https://github.com/austinhutchen/PHPland.git",
+    description:
+     "A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.",
+    images: [props.data[16 ]],
+    video: [],
+  },
+
+  { title:                       "VARIOUS BASH SHELL SCRIPTS",
+  link:"https://github.com/austinhutchen/scripts.git" ,
+    description: "Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the CLI." ,
+    images: [props.data[15] ],
+    video: [], 
+    },
+
+
       { title:                       " MULTITHREADED E-MAIL SERVER BACKEND (RUST)",
   link: "https://github.com/austinhutchen/austinscode",
     description:
