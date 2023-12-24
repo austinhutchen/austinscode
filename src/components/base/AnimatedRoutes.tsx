@@ -10,7 +10,6 @@ import rec_letter from "../../fast_imgs/REC_LETTER.png"
 import me from "../../fast_imgs/me4.webp";
 import coding from "../../fast_imgs/coding.webp";
 import systems from "../../fast_imgs/systems.webp";
-import comments2 from "../../fast_imgs/comments(2).png"
 import comments3 from "../../fast_imgs/comments(3).png"
 import inclusion from "../../fast_imgs/inclusion.webp"
 import support from "../../fast_imgs/support.webp"
@@ -40,11 +39,12 @@ import pdf from "../../fast_imgs/Resume.webp";
 import solder from "../../fast_imgs/SOLDER.mp4";
 import algos from "../../fast_imgs/ALGOS.PNG";
 import wled from "../../fast_imgs/WLED.mp4";
-import wled2 from "../../fast_imgs/WLED2.mp4"
+import wled2 from "../../fast_imgs/WLED2.mp4";
+
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature,solder,liv]
   const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos,wled,wled2]
-  const PDF_PAYLOAD = [ rec_letter, "",comments2,comments3, inclusion,support ]
+  const PDF_PAYLOAD = [ rec_letter, "",comments3, inclusion,support ]
   const RESUME_PAYLOAD = [pdf]
     const location = useLocation();
     return (

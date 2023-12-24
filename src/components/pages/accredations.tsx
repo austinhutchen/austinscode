@@ -13,7 +13,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
         <img
           src={src}
           className="format-img"
-          style={{ height: "90svh", width: "80%", maxWidth: "90%" }}
+          style={{ height: "87svh", width: "87%", maxWidth: "90%" }}
           loading="lazy"
           alt={`Image_${index}`}
         />
@@ -47,7 +47,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
                 <br />
                 <img
                   src={mathPhDStudents}
-                  style={{ height: "90svh", width: "85%", maxWidth: "95%" }}
+                  style={{ height: "85svh", width: "76%", maxWidth: "85%" }}
                   loading="eager"
                   alt="Math_PhD_Students_Letter"
                 />
