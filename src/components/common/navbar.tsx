@@ -1,7 +1,6 @@
     import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
-import insta from "../../fast_imgs/Me.png"
 import gh from "../../fast_imgs/github.png"
 export const Nav: React.FC = () => {
   const nav = useNavigate();
@@ -44,7 +43,7 @@ export const Nav: React.FC = () => {
         </a>
         <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
           <img
-            src= {insta}
+            src= {"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/768px-Instagram-Icon.png"}
             width="auto"
             height="40vh"
             className="nav-icon"
