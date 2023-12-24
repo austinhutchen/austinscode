@@ -16,9 +16,7 @@ interface KeyItem {
 
 const About: React.FC<AboutProps> = (props) => {
   const keys: KeyItem[] = [
-   
 
- 
     {
       desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
       url: props.data[0],
@@ -27,10 +25,16 @@ const About: React.FC<AboutProps> = (props) => {
     }
     ,
     {
-      desc: "In my free time, I love to optimize code! I practice leetcode frequently to refine my understanding of algorithms and enjoy studying computational complexities.. ",
+      desc: "In my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
+
       url: props.data[1],
             type: "image"
 
+    },
+      {
+      desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
+      url: props.data[6],
+      type: "image"
     },
     {
       desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",

@@ -1,7 +1,8 @@
     import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
-
+import insta from "../../fast_imgs/Me.png"
+import gh from "../../fast_imgs/github.png"
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
@@ -32,15 +33,27 @@ export const Nav: React.FC = () => {
         >
           Accredidations
         </button>
-        <a className="navbar-brand">
+
+                <a className="navbar-brand" href="https://github.com/austinhutchen">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/5024/5024509.png"
+            src={gh}
             alt="icon"
-            width="30vh"
-            height="30vh"
+            width="auto"
+            height="40vh"
             className="nav-icon"
           />
         </a>
+        <a className="navbar-brand" href="https://www.instagram.com/austinscode/">
+          <img
+            src= {insta}
+            alt="icon"
+            width="auto"
+            height="40vh"
+            className="nav-icon"
+          />
+        </a>
+              
+
       </div>
     </nav>
            <div className="banner" >
