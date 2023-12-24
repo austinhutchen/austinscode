@@ -39,9 +39,11 @@ import php from "../../fast_imgs/PHP.webp"
 import pdf from "../../fast_imgs/Resume.webp";
 import solder from "../../fast_imgs/SOLDER.mp4";
 import algos from "../../fast_imgs/ALGOS.PNG";
+import wled from "../../fast_imgs/WLED.mp4";
+import wled2 from "../../fast_imgs/WLED2.mp4"
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature,solder,liv]
-  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos]
+  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos,wled,wled2]
   const PDF_PAYLOAD = [ rec_letter, "",comments2,comments3, inclusion,support ]
   const RESUME_PAYLOAD = [pdf]
     const location = useLocation();

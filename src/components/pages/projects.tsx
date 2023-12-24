@@ -31,6 +31,14 @@ const projectsData:Project = [
     images: [],
     video: [],
   },
+      {
+    title:    "SOUND_REACTIVE WIFI-CONTROLLED 16x16 LED ANIMATION MATRIX (C)",
+    link: "https://github.com/austinhutchen/weather-sense.ts.git",
+    description:
+"Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
+    images: [],
+    video: [props.data[18],props.data[19] ],
+  },
   {
     title:    " PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
@@ -199,22 +207,26 @@ const projectsData:Project = [
                 <img key={imgIndex} src={src} height="150vh" width="auto" loading="eager" />
               ))}
               {/* Render video */}
-              {project.video.length > 0 && (
-                <video
+                                   {project.video.map((src, Index) => (
+           <video
                   key={index}
+                  src={src}
                   autoPlay
                   loop
                   muted
                   defaultMuted
                   playsInline
                   onContextMenu={(e) => e.preventDefault()}
-                  src={project.video[0]}
+
                   type="video/mp4"
-                  height="150vh"
+                  height="170vh"
                   width="auto"
                   preload="metadata"
+                      loading ="eager"
                 />
-              )}
+              ))}
+
+                             
               <h4>{project.description}</h4>
             </li>
           ))}
