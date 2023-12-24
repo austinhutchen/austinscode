@@ -34,19 +34,17 @@ export const Nav: React.FC = () => {
           Accredidations
         </button>
 
-                <a className="navbar-brand" href="https://github.com/austinhutchen">
+                <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
           <img
             src={gh}
-            alt="icon"
             width="auto"
             height="40vh"
             className="nav-icon"
           />
         </a>
-        <a className="navbar-brand" href="https://www.instagram.com/austinscode/">
+        <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
           <img
             src= {insta}
-            alt="icon"
             width="auto"
             height="40vh"
             className="nav-icon"
