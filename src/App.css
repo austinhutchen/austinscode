@@ -65,6 +65,7 @@ html {
   color: #61dafb;
 }
 
+<<<<<<< Updated upstream
 * {
   margin: 0;
   padding: 0;
@@ -153,3 +154,41 @@ body:before {
 img {
   border: 50px
 }
+=======
+              
+
+
+              .hamburger{
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-flow: column nowrap;
+                    z-index: 10;
+                }
+
+                .burger{
+                    width: 2rem;
+                    height: 0.25rem;
+                    border-radius: 10px;
+                    background-color: black;
+                    transform-origin: 1px;
+                    transition: all 0.3s linear;
+                }
+
+                @media (max-width: 767px){
+                     
+                    .navigation ul{
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                                            height: 10vh;
+                        width: 30vw;
+                        margin-top: 50px;
+                        position: fixed;
+                        
+
+                    }
+                }
+          
+
+
+>>>>>>> Stashed changes
