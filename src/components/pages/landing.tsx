@@ -70,14 +70,14 @@ export const Landing: React.FC = () => {
     <LazyMotion features={domAnimation}>
       <Nav />
       <h2 className="hlight-mini" style={{ paddingTop: '10px', fontSize: '1.50em' }}>
-        <b>Welcome to my website! I'm Austin, and I'm a Computer Systems & Software Engineer.</b>
+        <b>Welcome to my website! I'm Austin, and I'm a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
             <b>
             <p className="intro">
-              I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, serverless computing, robotics engineering, and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in single-page app development, software code optimization, and building embedded systems.            
+              I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, serverless computing, robotics engineering, and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in single-page application development, software code optimization, and building embedded systems.            
               </p>
               </b>
             <button
