@@ -70,7 +70,7 @@ export const Landing: React.FC = () => {
     <LazyMotion features={domAnimation}>
       <Nav />
       <h2 className="hlight-mini" style={{ paddingTop: '10px', fontSize: '1.50em' }}>
-        <b>Welcome to my website! I'm Austin, and I'm a Full Stack Software & Systems Engineer.</b>
+        <b>Welcome to my website! I'm Austin, and I'm a Computer Systems & Software Engineer.</b>
       </h2>
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
