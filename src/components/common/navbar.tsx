@@ -58,15 +58,23 @@ export const Nav: React.FC = () => {
             className="nav-icon"
           />
         </a>
- <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
+
+ <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/"target="_blank"  >
           <img
-            src= {"https://assets.stickpng.com/images/58e91afdeb97430e81906504.png"}
+            src= {"https://www.iconpacks.net/icons/2/free-linkedin-logo-icon-2430-thumb.png"}
             width="auto"
             height="40vh"
             className="nav-icon"
           />
         </a>
-              
+               <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
+          <img
+            src= {"https://upload.wikimedia.org/wikipedia/commons/3/33/LeetCode_Logo_3.png"}
+            width="auto"
+            height="40vh"
+            className="nav-icon"
+          />
+        </a>
 
       </div>
     </nav>
