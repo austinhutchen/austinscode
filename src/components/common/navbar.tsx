@@ -49,6 +49,23 @@ export const Nav: React.FC = () => {
             className="nav-icon"
           />
         </a>
+
+ <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
+          <img
+            src= {"https://static-00.iconduck.com/assets.00/upwork-icon-2048x2048-rrxq98us.png"}
+            width="auto"
+            height="40vh"
+            className="nav-icon"
+          />
+        </a>
+ <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
+          <img
+            src= {"https://assets.stickpng.com/images/58e91afdeb97430e81906504.png"}
+            width="auto"
+            height="40vh"
+            className="nav-icon"
+          />
+        </a>
               
 
       </div>
