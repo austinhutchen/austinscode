@@ -24,7 +24,7 @@ interface BodyProps {
 export const Projects: React.FC<BodyProps> = (props) => {
 const projectsData:Project = [
 {
-    title: "THIS WEBSITE (TYPESCRIPT/REACT.TSX)",
+    title: "THIS WEBSITE (TYPESCRIPT)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
@@ -32,7 +32,7 @@ const projectsData:Project = [
     video: [],
   },
       {
-    title:    "SOUND_REACTIVE WIFI-CONTROLLED 16x16 LED ANIMATION MATRIX (C)",
+    title:    "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
 "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
@@ -40,10 +40,10 @@ const projectsData:Project = [
     video: [props.data[18],props.data[19] ],
   },
   {
-    title:    " PORTABLE WEATHER INTERFACE (C/TYPESCRIPT/REACT.TSX)",
+    title:    "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
-"Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
+"Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app, and display reading accuracy levels on the display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
     images: [props.data[12], props.data[9] ],
     video: [],
   },
@@ -63,10 +63,10 @@ const projectsData:Project = [
        video: [],
 
 },     {
-      title: "ESP32 PLANT INTERFACE (C)",
+      title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
       link: "https://github.com/austinhutchen/plant_interface.git",
       description:
-        "My custom Plant Interface, a cheap and power-efficient ESP-8266 powered project that reads in data from a custom soil sensor, before checking the capacitive sensor moisture threshold and choosing whether or not to pump the water through a servo motor and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
+        "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
       images: [props.data[11] ], // Insert your image paths here
    video: [], 
     },
@@ -97,22 +97,34 @@ const projectsData:Project = [
       images: [ ], // Insert your image paths here
       video: [props.data[7] ], // Insert your video path here
     },
-      {
-     title: "ALGORITHMS (C++)",
-    link:  "https://github.com/austinhutchen/PHPland.git",
-    description:
-     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
-    images: [props.data[17 ]],
-    video: [],
-  },
-
+   
     {  title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
     link: "https://github.com/austinhutchen/redditsearch.git",
     description:
     "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
     images: [props.data[13]], video: [],  } 
 ,
-  { title: "PHPLAND (PHP)",
+        {
+      title: "NOTE-SHARING APP (REACT NATIVE / JAVA)",
+      link: "https://github.com/austinhutchen/notable.git" ,
+      description:
+        "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
+      images: [props.data[8] ], // Insert your image paths here
+      video: [], // Insert your video path here
+    },
+  
+        {
+      title:                         
+      "ENCRYPTED TEXT EDITOR (C++)",
+      link:"https://github.com/austinhutchen/encrypt.C.git",
+      description:
+       "A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
+      images: [props.data[1]], // Insert your image paths here
+      video: [], // Insert your video path here
+    },
+
+
+  { title: "PHPLIB (PHP)",
     link:  "https://github.com/austinhutchen/PHPland.git",
     description:
      "A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.",
@@ -136,15 +148,25 @@ const projectsData:Project = [
       video: [], // Insert your video path here
 
 },
-    {
-      title: "NOTE-SHARING APP (REACT NATIVE / JAVA)",
-      link: "https://github.com/austinhutchen/notable.git" ,
+       {
+     title: "ALGORITHMS (C++)",
+    link:  "https://github.com/austinhutchen/PHPland.git",
+    description:
+     "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
+    images: [props.data[17 ]],
+    video: [],
+  },
+
+  {
+      title: "REGEX-LIKE IEE FLOATING POINT PARSER (C)",
+      link:"https://github.com/austinhutchen/FLOATING_PARSER.C.git",
       description:
-        "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
-      images: [props.data[8] ], // Insert your image paths here
+     " A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file.",
+      images: [props.data[16]], // Insert your image paths here
       video: [], // Insert your video path here
     },
-    {
+
+      {
       title: "PAPER-LIKE ESP32 ANIMATOR (C)",
       link: "https://github.com/austinhutchen/austinscode",
       description:
@@ -154,25 +176,8 @@ const projectsData:Project = [
       video: [], // Insert your video path here
 
     },
-  {
-      title: "REGEX-LIKE IEE FLOATING POINT PARSER (C)",
-      link:"https://github.com/austinhutchen/FLOATING_PARSER.C.git",
-      description:
-     " A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file.",
-      images: [props.data[16]], // Insert your image paths here
-      video: [], // Insert your video path here
-    },
     {
-      title:                         
-      "ENCRYPTED TEXT EDITOR (C++)",
-      link:"https://github.com/austinhutchen/encrypt.C.git",
-      description:
-       "A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
-      images: [props.data[1]], // Insert your image paths here
-      video: [], // Insert your video path here
-    },
-    {
-      title: "SIMPLE 2D∼3D T(x) GRAPHER (JAVASCRIPT)",
+      title: "LINEAR TRANSFORMATION GRAPH ENGINE (JAVASCRIPT)",
       link: "https://github.com/austinhutchen/GAMMA.JS.git",
       description:
         "A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless.",

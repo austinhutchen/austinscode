@@ -69,7 +69,7 @@ export const Landing: React.FC = () => {
   return (
     <LazyMotion features={domAnimation}>
       <Nav />
-      <h2 className="hlight-mini" style={{ paddingTop: '10px', fontSize: '1.50em' }}>
+      <h2 className="hlight-mini" style={{ paddingTop: '6px', fontSize: '1.50em' }}>
         <b>Welcome to my website! I'm Austin, and I'm a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
@@ -81,7 +81,7 @@ export const Landing: React.FC = () => {
               </p>
               </b>
             <button
-              style={{ marginBottom: '0.4em' }}
+              style={{ marginBottom: '0.2em' }}
               className="btn btn-success"
               type="button"
               id="navbar"
