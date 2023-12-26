@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/austinscode/static/css/main.804c55b0.css",
-    "main.js": "/austinscode/static/js/main.787604be.js",
+    "main.js": "/austinscode/static/js/main.1cad2c6c.js",
     "static/js/496.8a7a1a03.chunk.js": "/austinscode/static/js/496.8a7a1a03.chunk.js",
     "static/media/PLANT_KERNEL.mp4": "/austinscode/static/media/PLANT_KERNEL.fd734439b44d38f687f6.mp4",
     "static/media/WLED2.mp4": "/austinscode/static/media/WLED2.ff96ad003e0ce622eba0.mp4",
     "static/media/nature.webp": "/austinscode/static/media/nature.92ba7864fa0d4e1b2279.webp",
     "static/media/IMG_0913.webp": "/austinscode/static/media/IMG_0913.fd91399ef2f7ba7aac60.webp",
-    "static/media/BASH.png": "/austinscode/static/media/BASH.a68f9efb066414578c0f.png",
     "static/media/ESP_WEATHER.webp": "/austinscode/static/media/ESP_WEATHER.e948a8e6e412b8da0d52.webp",
     "static/media/PLANT_KERNEL.jpg": "/austinscode/static/media/PLANT_KERNEL.199ed1515391db1fe69e.jpg",
     "static/media/SOLDER.mp4": "/austinscode/static/media/SOLDER.6d38a099489ded38a0dd.mp4",
@@ -22,7 +21,9 @@
     "static/media/interface.webp": "/austinscode/static/media/interface.22ef60f673c8bf880f2d.webp",
     "static/media/me4.webp": "/austinscode/static/media/me4.60afda1b89a2898063a4.webp",
     "static/media/mimi.webp": "/austinscode/static/media/mimi.55ca65409cac1bd11386.webp",
+    "static/media/BASH.webp": "/austinscode/static/media/BASH.6dd67dc30e4d402f9ae9.webp",
     "static/media/animate.mp4": "/austinscode/static/media/animate.109a891a3c7e7a3091b5.mp4",
+    "static/media/GITHUBME.webp": "/austinscode/static/media/GITHUBME.59aa4a8da66399601762.webp",
     "static/media/maps.webp": "/austinscode/static/media/maps.423e63825d65a629e4e9.webp",
     "static/media/REC_LETTER.png": "/austinscode/static/media/REC_LETTER.b60f6cd399b7288e9f78.png",
     "static/media/PHP.webp": "/austinscode/static/media/PHP.5cb0572fd0a1068c03fd.webp",
@@ -44,11 +45,11 @@
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/austinscode/index.html",
     "main.804c55b0.css.map": "/austinscode/static/css/main.804c55b0.css.map",
-    "main.787604be.js.map": "/austinscode/static/js/main.787604be.js.map",
+    "main.1cad2c6c.js.map": "/austinscode/static/js/main.1cad2c6c.js.map",
     "496.8a7a1a03.chunk.js.map": "/austinscode/static/js/496.8a7a1a03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.804c55b0.css",
-    "static/js/main.787604be.js"
+    "static/js/main.1cad2c6c.js"
   ]
 }
