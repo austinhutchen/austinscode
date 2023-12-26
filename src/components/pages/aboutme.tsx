@@ -33,7 +33,7 @@ const About: React.FC<AboutProps> = (props) => {
     },
       {
       desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
-      url: props.data[6],
+      url: props.data[9],
       type: "image"
     },
     {

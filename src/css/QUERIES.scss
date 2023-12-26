@@ -10,7 +10,9 @@
   .sc video {
     height: 42vh;
     margin: 0 auto;
+
     left: auto;
+        max-width: 48svh;
 border-radius: calc(400 / 2)em;
    border: 0.26dvh solid #0BA ; 
   }
@@ -26,8 +28,9 @@ border-radius: calc(400 / 2)em;
   }
   .sc img,
   .sc video {
-    height: 60vh;
+    height: 55vh;
     margin: 0 auto;
+    max-width: 60svh;
     border-radius: calc(400 / 2)em;
    border: 0.26dvh solid #0BA ; 
     }
