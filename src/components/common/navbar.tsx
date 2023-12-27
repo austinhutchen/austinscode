@@ -82,7 +82,16 @@ export const Nav: React.FC = () => {
             className="nav-icon"
           />
         </a>
+                      <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
+          <img
+            src= {"https://cdn.iconscout.com/icon/free/png-256/free-medium-52-461817.png"}
+            width="auto"
+                              max-width = "40vh"
 
+            height="40vh"
+            className="nav-icon"
+          />
+        </a>
       </div>
     </nav>
            <div className="banner" >
