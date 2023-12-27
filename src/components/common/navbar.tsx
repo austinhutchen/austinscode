@@ -11,18 +11,18 @@ export const Nav: React.FC = () => {
 
   return (
         <>
-    <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-md justify-content-center">
+    <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
       <div>
-        <button className="btn btn-outline-success me-1" type="button" onClick={() => navigateTo('/')}>
+        <button className="btn btn-outline-success px-2" type="button" onClick={() => navigateTo('/')}>
           Home
         </button>
-        <button className="btn btn-md btn-outline-primary me-1" type="button" onClick={() => navigateTo('/AboutMe')}>
+        <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/AboutMe')}>
           About
         </button>
-        <button className="btn btn-md btn-outline-primary me-1" type="button" onClick={() => navigateTo('/Projects')}>
+        <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/Projects')}>
           Projects
         </button>
-        <button className="btn btn-md btn-outline-primary me-1" type="button" onClick={() => navigateTo('/Resume')}>
+        <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/Resume')}>
           Resume
         </button>
         <button
@@ -45,6 +45,7 @@ export const Nav: React.FC = () => {
           <img
             src= {"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/768px-Instagram-Icon.png"}
             width="auto"
+            max-width = "40vh"
             height="40vh"
             className="nav-icon"
           />
@@ -54,6 +55,8 @@ export const Nav: React.FC = () => {
           <img
             src= {"https://static-00.iconduck.com/assets.00/upwork-icon-2048x2048-rrxq98us.png"}
             width="auto"
+                              max-width = "40vh"
+
             height="40vh"
             className="nav-icon"
           />
@@ -63,6 +66,8 @@ export const Nav: React.FC = () => {
           <img
             src= {"https://www.iconpacks.net/icons/2/free-linkedin-logo-icon-2430-thumb.png"}
             width="auto"
+                              max-width = "40vh"
+
             height="40vh"
             className="nav-icon"
           />
@@ -71,6 +76,8 @@ export const Nav: React.FC = () => {
           <img
             src= {"https://upload.wikimedia.org/wikipedia/commons/3/33/LeetCode_Logo_3.png"}
             width="auto"
+                              max-width = "40vh"
+
             height="40vh"
             className="nav-icon"
           />
