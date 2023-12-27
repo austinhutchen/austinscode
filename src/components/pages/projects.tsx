@@ -37,7 +37,7 @@ const projectsData:Project = [
     description:
 "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
-    video: [props.data[18],props.data[19] ],
+    video: [props.data[18],props.data[19],props.data[20] ],
   },
   {
     title:    "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
