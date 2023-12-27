@@ -47,7 +47,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
                 <br />
                 <img
                   src={mathPhDStudents}
-                  style={{ height: "85svh", maxWidth: "90%" }}
+                  style={{ height: "55svh", maxWidth: "90%" }}
                   loading="eager"
                   alt="Math_PhD_Students_Letter"
                 />
