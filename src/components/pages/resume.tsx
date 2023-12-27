@@ -4,39 +4,6 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 
 
 
-const MyPdfViewer: React.FC = ({ data }) => {
-     const [page, setPage] = useState(1);
-  const canvasRef = useRef(null);
-const { pdfDocument, pdfPage } = usePdf({
-    file: data,
-    page,
-    canvasRef,
-  });
-  return (
-        <div className="resume">
-          {!pdfDocument && <span>Loading...</span>}
-          <canvas ref={canvasRef} />
-          {Boolean(pdfDocument && pdfDocument.numPages) && (
-            <nav>
-              <ul className="pager">
-                  <button
-                    disabled={page === 1}
-                    onClick={() => setPage((prevPage) => prevPage - 1)} // Use functional update for setPage
-                  >
-                    Previous
-                  </button>
-                  <button
-                    disabled={page === (pdfDocument?.numPages ?? 0)} // Use optional chaining and nullish coalescing
-                    onClick={() => setPage((prevPage) => prevPage + 1)} // Use functional update for setPage
-                  >
-                    Next
-                  </button>
-              </ul>
-            </nav>
-          )}
-        </div>
-  );
-};
 
 
 
