@@ -224,7 +224,7 @@ const projectsData:Project = [
                   onContextMenu={(e) => e.preventDefault()}
 
                   type="video/mp4"
-                  height="170vh"
+                  height="150vh"
                   width="auto"
                   preload="metadata"
                       loading ="eager"
