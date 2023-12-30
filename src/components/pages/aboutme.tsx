@@ -113,7 +113,7 @@ const About: React.FC<AboutProps> = (props) => {
             )}
 
             <fieldset>
-              <p style={{ color: 'cornsilk', fontSize: "2.2vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
+              <p style={{ color: 'cornsilk', fontSize: "2.1vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>
               <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}>
@@ -141,7 +141,7 @@ export const Aboutme: React.FC<AboutMeProps> = (props) => {
       <LazyMotion features={domAnimation}>
         <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
           <h1 className="hlight">
-            <b>ABOUT!</b>
+            <b>ABOUT:</b>
           </h1>
         </m.div>
       </LazyMotion>
