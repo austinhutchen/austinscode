@@ -113,7 +113,7 @@ const About: React.FC<AboutProps> = (props) => {
             )}
 
             <fieldset>
-              <p style={{ color: 'cornsilk', fontSize: "2.1vh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
+              <p style={{ color: 'cornsilk', fontSize: "2svh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>
               <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}>

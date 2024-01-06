@@ -21,16 +21,17 @@ border-radius: calc(400 / 2)em;
 /* Default styles */
 @media not all and (max-device-width: 767px) {
   #name {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
   .sc p {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
   .sc img,
   .sc video {
     height: 55vh;
     margin: 0 auto;
     max-width: 60svh;
+    max-height: 100%;
     border-radius: calc(400 / 2)em;
    border: 0.26dvh solid #0BA ; 
     }
