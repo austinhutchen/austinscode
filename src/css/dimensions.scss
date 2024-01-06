@@ -5,8 +5,7 @@
   color: #fff;
   cursor: pointer;
   font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
-  font-size: 1.3em;
-  padding: 1px 2px;
+  font-size: 1.1em;
   font-weight: 400;
   text-align: center;
   touch-action: manipulation;
@@ -41,7 +40,7 @@ html.has-scroll-smooth {
 .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
-  top: 60%;
+  top: 100%;
 }
 
 .style-table {
