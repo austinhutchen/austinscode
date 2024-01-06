@@ -93,7 +93,7 @@ export const Landing: React.FC = () => {
               <HiArrowNarrowRight size={'1em'} className="ml-3" />
             </button>
             <br />
-            <img align="center" height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,Objective-C++" alt="GitHub Stats" /> 
+            <img align="center" height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=10&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" /> 
             <img align="center" height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
           </div>
         </div>
