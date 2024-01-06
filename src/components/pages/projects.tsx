@@ -47,7 +47,7 @@ const projectsData:Project = [
     images: [props.data[12], props.data[9] ],
     video: [],
   },
-{ title: "UNIX KERNEL SHELL (C)" ,
+{ title: "UNIX KERNEL SHELL (C/BASH)" ,
     link: "https://github.com/austinhutchen/shell.git",
     description:
       " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal." ,
