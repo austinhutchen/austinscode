@@ -89,7 +89,7 @@ const projectsData:Project = [
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
       "One of my biggest projects, and also one of my first. Built a turn-based dungeon crawler with graphics embedded within a display matrix. Used to practice foundations of object-oriented programming and memory reference.",
-    images: [props.data[21] ],
+    images: [props.data[20] ],
        video: [],
 
 },    
