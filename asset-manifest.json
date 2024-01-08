@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/austinscode/static/css/main.7b8e9c81.css",
-    "main.js": "/austinscode/static/js/main.1138a396.js",
+    "main.js": "/austinscode/static/js/main.52334f06.js",
     "static/js/496.8a7a1a03.chunk.js": "/austinscode/static/js/496.8a7a1a03.chunk.js",
     "static/media/PLANT_KERNEL.mp4": "/austinscode/static/media/PLANT_KERNEL.fd734439b44d38f687f6.mp4",
     "static/media/WLED2.mp4": "/austinscode/static/media/WLED2.ff96ad003e0ce622eba0.mp4",
@@ -33,6 +33,7 @@
     "static/media/calculator.webp": "/austinscode/static/media/calculator.4560b10f99a681e73800.webp",
     "static/media/comments(3).png": "/austinscode/static/media/comments(3).99653a538a0ac631a77a.png",
     "static/media/ALGOS.PNG": "/austinscode/static/media/ALGOS.a25e5de4b610750d83a0.PNG",
+    "static/media/tinker.webp": "/austinscode/static/media/tinker.65194cf7407aa84c56af.webp",
     "static/media/github.png": "/austinscode/static/media/github.0e607e68d68c38bba80f.png",
     "static/media/PYCLI.webp": "/austinscode/static/media/PYCLI.367876519e8c8089f375.webp",
     "static/media/WEATHER.webp": "/austinscode/static/media/WEATHER.bce3d95f032965673eaa.webp",
@@ -47,11 +48,11 @@
     "static/media/slick.woff": "/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/austinscode/index.html",
     "main.7b8e9c81.css.map": "/austinscode/static/css/main.7b8e9c81.css.map",
-    "main.1138a396.js.map": "/austinscode/static/js/main.1138a396.js.map",
+    "main.52334f06.js.map": "/austinscode/static/js/main.52334f06.js.map",
     "496.8a7a1a03.chunk.js.map": "/austinscode/static/js/496.8a7a1a03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b8e9c81.css",
-    "static/js/main.1138a396.js"
+    "static/js/main.52334f06.js"
   ]
 }
