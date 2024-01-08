@@ -46,7 +46,7 @@ import game from "../../fast_imgs/game1.webp";
 import tinker from "../../fast_imgs/tinker.webp";
 export const AnimatedRoutes = () => {
   const ABOUTME_PAYLOAD = [me,coding,systems,math,family,mimi,nature,solder,liv,github,tinker]
-  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos,wled,wled2,hole2,game]
+  const PROJECTS_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos,wled2,hole2,game]
   const PDF_PAYLOAD = [ rec_letter, "",comments3, inclusion,support ]
   const RESUME_PAYLOAD = [pdf]
     const location = useLocation();
