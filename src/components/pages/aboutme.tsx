@@ -114,7 +114,7 @@ const About: React.FC<AboutProps> = (props) => {
         {keys.map((data, index) => (
           <div key={index}>
             {data.type === "image" ? (
-              <img src={data.url} style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} alt="Project Image" />
+              <img src={data.url} style={{ borderRadius: '10%', border: "0.45svh solid #0BA" }} alt="Project Image" />
             ) : (
               <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} src={data.url} />
             )}
