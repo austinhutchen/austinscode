@@ -228,7 +228,7 @@ const projectsData:Project = [
               {/* Render video */}
                                    {project.video.map((src, Index) => (
            <video
-                  key={index}
+                  key={Index}
                   src={src}
                   autoPlay
                   loop
