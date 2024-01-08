@@ -21,11 +21,18 @@ const About: React.FC<AboutProps> = (props) => {
       desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
       url: props.data[0],
             type: "image"
-
     }
     ,
+   {
+      desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials, at the age of 11.",
+      url: props.data[10],
+            type: "image"
+    }
+    ,
+
+
     {
-      desc: "In my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
+      desc: "Today in my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
 
       url: props.data[1],
             type: "image"
