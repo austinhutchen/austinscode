@@ -8,12 +8,11 @@
   }
   .sc img,
   .sc video {
-    height: 42vh;
+     height: 43svh;
     margin: 0 auto;
-
-    left: auto;
-        max-width: 48svh;
-border-radius: calc(400 / 2)em;
+    max-width: 100%;
+    max-height: 45svh;
+    border-radius: 400 / 2 ;
    border: 0.26dvh solid #0BA ; 
   }
 }
