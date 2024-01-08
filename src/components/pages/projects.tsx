@@ -223,7 +223,7 @@ const projectsData:Project = [
               <br />
               {/* Render images */}
               {project.images.map((src, imgIndex) => (
-                <img key={imgIndex} src={src} height="150vh" width="auto" loading="lazy" type="image/webp" />
+                <img key={imgIndex} src={src} height="145vh" width="auto" loading="lazy"  />
               ))}
               {/* Render video */}
                                    {project.video.map((src, Index) => (
@@ -236,7 +236,7 @@ const projectsData:Project = [
                   defaultMuted
                   playsInline
                   onContextMenu={(e) => e.preventDefault()}
-
+                  loading ="eager"
                   type="video/mp4"
                   height="150vh"
                   width="auto"
