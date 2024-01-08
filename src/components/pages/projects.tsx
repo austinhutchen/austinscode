@@ -39,6 +39,32 @@ const projectsData:Project = [
     images: [],
     video: [props.data[18],props.data[19],props.data[20] ],
   },
+ {
+      title: "ARTIFICALLY INTELLIGENT GESTURE SENSOR (C++)",
+      link: "https://github.com/austinhutchen/ArtificalSP.git",
+      description:
+        "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. Trained on data provided by the arduino nano ble sense rev2 sensors.",
+      images: [], // Insert your image paths here
+
+   video: [props.data[5] ], 
+
+    },
+ {
+      title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
+      link: "https://github.com/austinhutchen/plant_interface.git",
+      description:
+        "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
+      images: [props.data[11] ], // Insert your image paths here
+   video: [], 
+    },
+  {    title: "CALCULATOR APP (DART/FLUTTER/C)",
+    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
+    description:
+      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
+    images: [props.data[3] ],
+       video: [],
+
+}, 
   {
     title:    "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
@@ -58,14 +84,7 @@ const projectsData:Project = [
 
 
 
-  {    title: "CALCULATOR APP (DART/FLUTTER/C)",
-    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
-    description:
-      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
-    images: [props.data[3] ],
-       video: [],
 
-}, 
   {    title: "ZELDA TERMINAL GAME (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
@@ -73,24 +92,8 @@ const projectsData:Project = [
     images: [props.data[21] ],
        video: [],
 
-},     {
-      title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
-      link: "https://github.com/austinhutchen/plant_interface.git",
-      description:
-        "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
-      images: [props.data[11] ], // Insert your image paths here
-   video: [], 
-    },
-    {
-      title: "EMBEDDED GESTURE SENSOR (C++)",
-      link: "https://github.com/austinhutchen/ArtificalSP.git",
-      description:
-        "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures.",
-      images: [], // Insert your image paths here
-
-   video: [props.data[5] ], 
-
-    },
+},    
+   
     {
       title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
       link: "https://github.com/austinhutchen/map-app.git",
