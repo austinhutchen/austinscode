@@ -38,7 +38,6 @@ import php from "../../fast_imgs/PHP.webp"
 import pdf from "../../fast_imgs/Resume.webp";
 import solder from "../../fast_imgs/SOLDER.mp4";
 import algos from "../../fast_imgs/ALGOS.PNG";
-import wled from "../../fast_imgs/WLED.mp4";
 import wled2 from "../../fast_imgs/WLED2.mp4";
 import github from "../../fast_imgs/GITHUBME.webp";
 import hole2 from "../../fast_imgs/hole2.mp4";
