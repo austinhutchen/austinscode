@@ -20,7 +20,7 @@ import nature from "../../fast_imgs/nature.webp";
 import shell from '../../fast_imgs/shell.webp'
 import encryptc from '../../fast_imgs/encryptc.webp'
 import PLANT_WATERER from "../../fast_imgs/PLANT_KERNEL.mp4"
-import PLANT_WATERER_2 from "../../fast_imgs/PLANT_KERNEL.jpg"
+import PLANT_WATERER_2 from "../../fast_imgs/PLANT_KERNEL.webp"
 import calculator from '../../fast_imgs/calculator.webp'
 import maps from '../../fast_imgs/maps.webp'
 import gesture from '../../fast_imgs/gesture.mp4'
