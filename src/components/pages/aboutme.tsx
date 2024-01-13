@@ -98,6 +98,7 @@ const About: React.FC<AboutProps> = (props) => {
     centerMode: true,
     width: '100%',
     arrows: true,
+    lazyLoad: 'progressive',
     slidesToScroll: 1,
     infinite: true,
     fade: true,
