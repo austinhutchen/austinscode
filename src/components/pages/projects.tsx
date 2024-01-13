@@ -1,11 +1,47 @@
 import { LazyMotion, domAnimation,m } from "framer-motion";
+import LazyLoad from 'react-lazyload';
+
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
 import "../../css/QUERIES.scss"
-import React from "react"
+import React, { memo } from "react"
+
+const ProjectItem = memo(({ project }) => (
+  <li>
+    <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
+      {project.title}
+    </a>
+    <br />
+    {/* Lazy load images */}
+    <LazyLoad height={200} offset={100}>
+      {projectsData.images.map((src, imgIndex) => (
+        <img key={imgIndex} src={src} height="145vh" width="auto" loading="lazy" />
+      ))}
+    </LazyLoad>
+    {/* Lazy load videos */}
+{projectsData.video.map((src, Index) => (
+      <LazyLoad height={200} offset={100} key={Index}>
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          defaultMuted
+          playsInline
+          onContextMenu={(e) => e.preventDefault()}
+          loading="eager"
+          type="video/mp4"
+          height="150vh"
+          width="auto"
+          preload="metadata"
+        />
+      </LazyLoad>
+    ))}
+</li>
+));
 
 
 
@@ -17,11 +53,9 @@ interface Project {
   video: string[];
 }
 
-interface BodyProps {
-  data: string[];
-}
 
 export const Projects: React.FC<BodyProps> = (props) => {
+
 const projectsData:Project = [
 {
     title: "THIS WEBSITE (TYPESCRIPT)",
@@ -46,7 +80,7 @@ const projectsData:Project = [
         "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. Trained on data provided by the arduino nano ble sense rev2 sensors.",
       images: [], // Insert your image paths here
 
-   video: [props.data[5] ], 
+   video: [props.data[5] ],
 
     },
  {
@@ -55,7 +89,7 @@ const projectsData:Project = [
       description:
         "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
       images: [props.data[11] ], // Insert your image paths here
-   video: [], 
+   video: [],
     },
   {    title: "CALCULATOR APP (DART/FLUTTER/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
@@ -64,7 +98,7 @@ const projectsData:Project = [
     images: [props.data[3] ],
        video: [],
 
-}, 
+},
   {
     title:    "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
@@ -92,8 +126,8 @@ const projectsData:Project = [
     images: [props.data[20] ],
        video: [],
 
-},    
-   
+},
+
     {
       title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
       link: "https://github.com/austinhutchen/map-app.git",
@@ -111,12 +145,12 @@ const projectsData:Project = [
       images: [ ], // Insert your image paths here
       video: [props.data[7] ], // Insert your video path here
     },
-   
+
     {  title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
     link: "https://github.com/austinhutchen/redditsearch.git",
     description:
     "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
-    images: [props.data[13]], video: [],  } 
+    images: [props.data[13]], video: [],  }
 ,
         {
       title: "NOTE-SHARING APP (REACT NATIVE / JAVA)",
@@ -126,9 +160,9 @@ const projectsData:Project = [
       images: [props.data[8] ], // Insert your image paths here
       video: [], // Insert your video path here
     },
-  
+
         {
-      title:                         
+      title:
       "ENCRYPTED TEXT EDITOR (C++)",
       link:"https://github.com/austinhutchen/encrypt.C.git",
       description:
@@ -150,7 +184,7 @@ const projectsData:Project = [
   link:"https://github.com/austinhutchen/scripts.git" ,
     description: "Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the CLI." ,
     images: [props.data[15] ],
-    video: [], 
+    video: [],
     },
 
 
@@ -198,62 +232,31 @@ const projectsData:Project = [
       images: [], // Insert your image paths here
       video: [props.data[10]], // Insert your video path here
     },
-  
+
 
 
 ];
-
+const ProjectList = ({ projectsData }) => (
+  <ul className="projectdesc">
+    {projectsData.map((project, index) => (
+      <ProjectItem key={index} project={project} />
+    ))}
+  </ul>
+);
 
   return (
-       <LazyMotion features={domAnimation}>
-    <Nav/>
-     <m.div initial={{ width: 0.5 }} animate={{ width: "100%" }}
-                exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-           <h1 className="hlight" >
-                        <b>PERSONAL PROJECTS:</b>
-                    </h1>
-    <div className="projects">
-      <ul className="projectdesc">
-        <b>
-          {projectsData.map((project, index) => (
-            <li key={index}>
-              <a className="hlight-mini" style={{fontSize:"1.1em"}} href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </a>
-              <br />
-              {/* Render images */}
-              {project.images.map((src, imgIndex) => (
-                <img key={imgIndex} src={src} height="145vh" width="auto" loading="lazy"  />
-              ))}
-              {/* Render video */}
-                                   {project.video.map((src, Index) => (
-           <video
-                  key={Index}
-                  src={src}
-                  autoPlay
-                  loop
-                  muted
-                  defaultMuted
-                  playsInline
-                  onContextMenu={(e) => e.preventDefault()}
-                  loading ="eager"
-                  type="video/mp4"
-                  height="150vh"
-                  width="auto"
-                  preload="metadata"
-                />
-              ))}
-
-                             
-              <h4>{project.description}</h4>
-            </li>
-          ))}
-        </b>
-      </ul>
-    </div>
-      </m.div>
-    </LazyMotion>
-  );
+ <LazyMotion features={domAnimation}>
+    <Nav />
+    <m.div initial={{ width: 0}} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <h1 className="hlight">
+        <b>PERSONAL PROJECTS:</b>
+      </h1>
+      <div className="projects">
+        <ProjectList projectsData={projectsData} />
+      </div>
+    </m.div>
+  </LazyMotion>
+);
 };
 
 

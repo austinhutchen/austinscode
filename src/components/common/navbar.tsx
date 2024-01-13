@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 import gh from "../../fast_imgs/github.png"
-import me from "../../fast_imgs/Me.png";
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
@@ -89,9 +88,9 @@ export const Nav: React.FC = () => {
               className="nav-icon"
             />
           </a>
-          <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank"  >
+          <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
             <img
-              src={me}
+              src={"https://www.librarieslearn.org/wp-content/uploads/instructables-logo.png"}
               width="auto"
               max-width="40vh"
               height="40vh"
