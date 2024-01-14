@@ -9,41 +9,9 @@ import "../../css/fonts.scss";
 import "../../css/QUERIES.scss"
 import React, { memo } from "react"
 
-const ProjectItem = memo(({ project }) => (
-  <li>
-    <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
-      {project.title}
-    </a>
-    <br />
-    {/* Lazy load images */}
-    <LazyLoad height={200} offset={100}>
-      {projectsData.images.map((src, imgIndex) => (
-        <img key={imgIndex} src={src} height="145vh" width="auto" loading="lazy" />
-      ))}
-    </LazyLoad>
-    {/* Lazy load videos */}
-{projectsData.video.map((src, Index) => (
-      <LazyLoad height={200} offset={100} key={Index}>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          defaultMuted
-          playsInline
-          onContextMenu={(e) => e.preventDefault()}
-          loading="eager"
-          type="video/mp4"
-          height="150vh"
-          width="auto"
-          preload="metadata"
-        />
-      </LazyLoad>
-    ))}
-</li>
-));
 
 
+export const Projects: React.FC<BodyProps> = (props) => {
 
 interface Project {
   title: string;
@@ -53,8 +21,6 @@ interface Project {
   video: string[];
 }
 
-
-export const Projects: React.FC<BodyProps> = (props) => {
 
 const projectsData:Project = [
 {
@@ -233,9 +199,44 @@ const projectsData:Project = [
       video: [props.data[10]], // Insert your video path here
     },
 
-
-
 ];
+
+const ProjectItem = memo(({ project }) => (
+
+ <li>
+    <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
+      {project.title}
+    </a>
+    <br />
+    {/* Lazy load images */}
+    <LazyLoad height={200} offset={100}>
+      {projectsData.images && projectsData.images.map((src, imgIndex) => (
+        <img key={imgIndex} src={src} height="145vh" width="auto" loading="lazy" />
+      ))}
+    </LazyLoad>
+    {/* Lazy load videos */}
+{projectsData.video && projectsData.video.map((src, Index) => (
+      <LazyLoad height={200} offset={100} key={Index}>
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          defaultMuted
+          playsInline
+          onContextMenu={(e) => e.preventDefault()}
+          loading="eager"
+          type="video/mp4"
+          height="150vh"
+          width="auto"
+          preload="metadata"
+        />
+      </LazyLoad>
+    ))}
+</li>
+));
+
+
 const ProjectList = ({ projectsData }) => (
   <ul className="projectdesc">
     {projectsData.map((project, index) => (
