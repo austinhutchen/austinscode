@@ -76,10 +76,10 @@ export const Landing: React.FC = () => {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
             <b>
-            <p className="intro">
-              I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, server computing, robotics engineering, working with Generative Artificial Intelligence (Think ChatGPT), and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in single-page application development, software code optimization, database management with PHP, and building embedded systems.            
+<p className ="intro">
+I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, blockchain, server computing, robotics engineering, working with Artificial Intelligence, and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in single-page application development, software code optimization, database management, and building embedded systems.
               </p>
-              </b>
+</b>
             <button
               style={{ marginBottom: '0.2em' }}
               className="btn btn-success"
