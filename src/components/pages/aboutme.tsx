@@ -114,7 +114,7 @@ const About: React.FC<AboutProps> = (props) => {
     slidesToScroll: 1,
     infinite: true,
     fade: true,
-    loading: 'progressive',
+    loading: 'anticipated',
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
     dots: true,
