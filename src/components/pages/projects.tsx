@@ -247,11 +247,17 @@ const ProjectItem = memo(({ project }) => (
       {project.title}
     </a>
     <br />
-    <div className="App">
+
       {project.images && project.images.map((src, imgIndex) => (
+      <>
         <img src={src} key={imgIndex} height="145vh" width="auto" loading="lazy" />
-      ))}
+	<br/>
+	</>
+      ))
+
+      }
       {project.video && project.video.map((src, index) => (
+      <>
         <video
           key={index}
           src={src}
@@ -267,13 +273,13 @@ const ProjectItem = memo(({ project }) => (
           preload="metadata"
         />
 
+</>
       ))}
-      <br/>
 
 
       {project.description}
 
-    </div>
+
   </li>
 ));
 
