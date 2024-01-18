@@ -16,7 +16,7 @@ const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
 const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
 const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
 
-const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.mp4';
+const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
 interface AboutProps {
   data: string[];
 }
