@@ -250,7 +250,7 @@ const ProjectItem = memo(({ project }) => (
 
       {project.images && project.images.map((src, imgIndex) => (
       <>
-        <img src={src} key={imgIndex} height="145vh" width="auto" loading="lazy" />
+        <img src={src} key={imgIndex} height="145vh" width="auto" loading="eager" />
 	<br/>
 	</>
       ))
@@ -266,7 +266,6 @@ const ProjectItem = memo(({ project }) => (
           defaultMuted
           playsInline
           onContextMenu={(e) => e.preventDefault()}
-          loading="eager"
           type="video/mp4"
           height="150svh"
           width="auto"
