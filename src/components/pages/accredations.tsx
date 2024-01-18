@@ -22,7 +22,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
           src={src}
           className="format-img"
           style={{ height: "55svh", maxWidth: "100%" }}
-          loading="lazy"
+          loading="eager"
           alt={`Image_${index}`}
         />
       </li>
