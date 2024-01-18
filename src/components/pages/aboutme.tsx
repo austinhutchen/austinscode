@@ -33,13 +33,13 @@ const About: React.FC<AboutProps> = (props) => {
     {
       desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
       url: me,
-            type: "image"
+      type: "image"
     }
     ,
-   {
+    {
       desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials, at the age of 11.",
       url: tinker,
-            type: "image"
+      type: "image"
     }
     ,
 
@@ -48,10 +48,10 @@ const About: React.FC<AboutProps> = (props) => {
       desc: "Today in my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
 
       url: coding,
-            type: "image"
+      type: "image"
 
     },
-      {
+    {
       desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
       url: github,
       type: "image"
@@ -59,49 +59,49 @@ const About: React.FC<AboutProps> = (props) => {
     {
       desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
       url: systems,
-            type: "image"
+      type: "image"
 
     },
-     {
+    {
       desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
       url: solder,
       type: "video"
     },
 
-   
+
     {
       desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
       url: math,
-            type: "image"
+      type: "image"
 
     }
     ,
-        {
+    {
       desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
       url: family,
       type: "image"
 
     },
-     
+
     {
       desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
       url: mimi,
-            type: "image"
+      type: "image"
 
     },
-      {
+    {
       desc: "I love to make electronics and art with my girlfriend!",
       url: liv,
       type: "image"
     },
     {
       desc: "I love to spend time out in nature!",
-      url:  nature,
+      url: nature,
       type: "image"
     },
-      
-     
-  
+
+
+
 
 
   ];
@@ -128,7 +128,7 @@ const About: React.FC<AboutProps> = (props) => {
         {keys.map((data, index) => (
           <div key={index}>
             {data.type === "image" ? (
-              <img src={data.url} loading ="eager" style={{ borderRadius: '10%', border: "0.45svh solid #0BA" }} alt="Project Image" />
+              <img src={data.url} loading="eager" style={{ borderRadius: '10%', border: "0.45svh solid #0BA" }} alt="Project Image" />
             ) : (
               <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} src={data.url} />
             )}
