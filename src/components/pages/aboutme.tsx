@@ -114,6 +114,7 @@ const About: React.FC<AboutProps> = (props) => {
     slidesToScroll: 1,
     infinite: true,
     fade: true,
+    loading: 'progressive',
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,
     dots: true,
@@ -150,11 +151,8 @@ const About: React.FC<AboutProps> = (props) => {
   );
 };
 
-interface AboutMeProps {
-  data: string[];
-}
 
-export const Aboutme: React.FC<AboutMeProps> = (props) => {
+export const Aboutme: React.FC = () => {
   return (
     <>
       <Nav />
@@ -165,7 +163,7 @@ export const Aboutme: React.FC<AboutMeProps> = (props) => {
           </h1>
         </m.div>
       </LazyMotion>
-      <About data={props.data} />
+      <About />
     </>
   );
 };
