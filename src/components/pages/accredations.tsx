@@ -2,6 +2,14 @@ import React from 'react';
 import { Nav } from '../common/navbar.tsx';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
+const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
+
+const comments3 = process.env.PUBLIC_URL+'/fast_imgs/comments(3).png';
+const inclusion = process.env.PUBLIC_URL+'/fast_imgs/inclusion.webp';
+const support = process.env.PUBLIC_URL+'/fast_imgs/support.webp';
+
+
+
 interface ViewData {
   data: string[];
 }
@@ -22,10 +30,11 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
   </ul>
 );
 
- export const View: React.FC<ViewData> = ({ data }) => {
-  const mathPhDStudents = data[0];
-  const studentComments1 = data.slice(4, 6);
-  const studentComments2 = data.slice(2, 4);
+ export const View: React.FC = () => {
+  const mathPhDStudents = rec_letter;
+
+const data = [rec_letter, comments3,inclusion,support]
+  const studentComments1 = data.slice(0,3);
 
   return (
     <>
@@ -60,7 +69,6 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
                 <br />
                 <div>
                   <ImageList images={studentComments1} />
-                  <ImageList images={studentComments2} />
                 </div>
               </li>
             </ul>

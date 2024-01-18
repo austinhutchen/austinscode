@@ -1,5 +1,4 @@
 import { LazyMotion, domAnimation,m } from "framer-motion";
-import LazyLoad from 'react-lazyload';
 
 import React, { memo } from "react"
 import { Nav } from "../common/navbar.tsx";
@@ -15,7 +14,7 @@ const maps = process.env.PUBLIC_URL + '/fast_imgs/maps.webp';
 const gesture = process.env.PUBLIC_URL + '/fast_imgs/gesture.mp4';
 const PLANT_WATERER = process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.mp4';
 const encryptc = process.env.PUBLIC_URL + '/fast_imgs/encryptc.webp';
-const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp2';
+const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp4';
 const hole2 = process.env.PUBLIC_URL + '/fast_imgs/hole2.mp4';
 const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.mp4';
 
@@ -227,11 +226,11 @@ const projectsData:Project[] = [
 
 
 const ProjectList = () => (
-  <ul className="projectdesc">
+  <div>
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
-  </ul>
+  </div>
 );
 
 const ProjectItem = memo(({ project }) => (
@@ -240,13 +239,11 @@ const ProjectItem = memo(({ project }) => (
       {project.title}
     </a>
     <br />
+    <div className="App">
     {project.images.map((src, imgIndex) => (
-      <LazyLoad height={150} offset={100} key={imgIndex}>
-        <img src={src} height="145vh" width="auto" loading="lazy" />
-      </LazyLoad>
+        <img src={src} key={imgIndex} height="145vh" width="auto" loading="lazy" />
     ))}
     {project.video.map((src, index) => (
-      <LazyLoad height={150} offset={100} key={index}>
         <video
           key={index}
           src={src}
@@ -261,9 +258,13 @@ const ProjectItem = memo(({ project }) => (
           width="auto"
           preload="metadata"
         />
-      </LazyLoad>
+
     ))}
+
+
     {project.description}
+
+        </div>
   </li>
 ));
 
