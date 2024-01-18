@@ -4,7 +4,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 
 
 
-
+const resume =process.env.PUBLIC_URL+'/fast_imgs/Resume.webp';
 
 
 export const Resume: React.FC  = ({data}) => {
@@ -150,7 +150,7 @@ export const Resume: React.FC  = ({data}) => {
                     </h1>
                         <br/>
 <div className="resume">
-                          <img  src ={data[0]} /> 
+                          <img  src ={resume} /> 
                           </div>
 
 

@@ -3,7 +3,20 @@ import { Nav } from "../common/navbar.tsx";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
+const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
 
+
+const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
+const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
+const systems = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
+const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
+const family = process.env.PUBLIC_URL + '/fast_imgs/family.webp';
+const mimi = process.env.PUBLIC_URL + '/fast_imgs/mimi.webp';
+const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
+const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
+const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
+
+const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.mp4';
 interface AboutProps {
   data: string[];
 }
@@ -19,13 +32,13 @@ const About: React.FC<AboutProps> = (props) => {
 
     {
       desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
-      url: props.data[0],
+      url: me,
             type: "image"
     }
     ,
    {
       desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials, at the age of 11.",
-      url: props.data[10],
+      url: tinker,
             type: "image"
     }
     ,
@@ -34,56 +47,56 @@ const About: React.FC<AboutProps> = (props) => {
     {
       desc: "Today in my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
 
-      url: props.data[1],
+      url: coding,
             type: "image"
 
     },
       {
       desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
-      url: props.data[9],
+      url: github,
       type: "image"
     },
     {
       desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
-      url: props.data[2],
+      url: systems,
             type: "image"
 
     },
      {
       desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
-      url: props.data[7],
+      url: solder,
       type: "video"
     },
 
    
     {
       desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
-      url: props.data[3],
+      url: math,
             type: "image"
 
     }
     ,
         {
       desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
-      url: props.data[4],
+      url: family,
       type: "image"
 
     },
      
     {
       desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
-      url: props.data[5],
+      url: mimi,
             type: "image"
 
     },
       {
       desc: "I love to make electronics and art with my girlfriend!",
-      url: props.data[8],
+      url: liv,
       type: "image"
     },
     {
       desc: "I love to spend time out in nature!",
-      url: props.data[6],
+      url:  nature,
       type: "image"
     },
       

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
-import gh from "../../fast_imgs/github.png"
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
@@ -35,7 +34,7 @@ export const Nav: React.FC = () => {
 
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
             <img
-              src={gh}
+              src={"https://cdn.dribbble.com/userupload/4447859/file/original-95d09c6028ad7ce02e4127b9ef51b6c7.png?resize=400x300&vertical=center"}
               width="auto"
               height="40vh"
               className="nav-icon"
