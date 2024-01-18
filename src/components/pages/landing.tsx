@@ -78,6 +78,7 @@ export const Landing: React.FC = () => {
             <b>
 <p className ="intro">
 I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a passion for eco-friendly software development, blockchain, server computing, robotics engineering, working with Artificial Intelligence, and teaching Calculus! I'm proficient in Typescript, PHP, C#, React(&Native), C++, Bash, and enjoy working with many other programming languages. I specialize in single-page application development, software code optimization, database management, and building embedded systems.
+          
               </p>
 </b>
             <button
@@ -93,8 +94,8 @@ I'm a Computer Science & Mathematics student at CU Boulder (BSc 2025) with a pas
               <HiArrowNarrowRight size={'1em'} className="ml-3" />
             </button>
             <br />
-            <img align="center" height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=12&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" /> 
-            <img align="center" height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
+            <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=12&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" /> 
+            <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
           </div>
         </div>
         <Spinner />
