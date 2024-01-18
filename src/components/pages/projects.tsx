@@ -278,9 +278,10 @@ const ProjectItem = memo(({ project }) => (
 
 
 export const Projects = () => (
+  <>
   <LazyMotion features={domAnimation}>
     <Nav />
-    <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+    <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }} >
       <h1 className="hlight">
         <b>PERSONAL PROJECTS:</b>
       </h1>
@@ -289,5 +290,6 @@ export const Projects = () => (
       </div>
     </m.div>
   </LazyMotion>
+  </>
 );
 
