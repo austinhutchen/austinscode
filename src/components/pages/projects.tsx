@@ -1,6 +1,7 @@
 import { LazyMotion, domAnimation,m } from "framer-motion";
 import LazyLoad from 'react-lazyload';
 
+import React, { memo } from "react"
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,30 +9,33 @@ import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
 import "../../css/QUERIES.scss"
 
-import shell from '../../fast_imgs/shell.webp'
-import encryptc from '../../fast_imgs/encryptc.webp'
-import PLANT_WATERER from "../../fast_imgs/PLANT_KERNEL.mp4"
-import calculator from '../../fast_imgs/calculator.webp'
-import maps from '../../fast_imgs/maps.webp'
-import gesture from '../../fast_imgs/gesture.mp4'
-import my_interface from '../../fast_imgs/interface.webp'
-import notable from '../../fast_imgs/journalapp.webp'
-import weather from '../../fast_imgs/WEATHER.webp'
-import butterfly from '../../fast_imgs/animate.mp4'
-import graph from '../../fast_imgs/graph.mp4'
-import PLANT_WATERER_2 from "../../fast_imgs/PLANT_KERNEL.webp"
-import WEATHER_SENSOR from '../../fast_imgs/ESP_WEATHER.webp'
-import search from '../../fast_imgs/PYCLI.webp'
-import actix from "../../fast_imgs/concurrency-model.webp"
-import bash from "../../fast_imgs/BASH.webp"
-import php from "../../fast_imgs/PHP.webp"
-import algos from "../../fast_imgs/ALGOS.PNG";
-import wled2 from "../../fast_imgs/WLED2.mp4";
-import hole2 from "../../fast_imgs/hole2.mp4";
-import game from "../../fast_imgs/game1.webp";
+const shell = process.env.PUBLIC_URL + '/fast_imgs/shell.webp';
+const calculator = process.env.PUBLIC_URL + '/fast_imgs/calculator.webp';
+const maps = process.env.PUBLIC_URL + '/fast_imgs/maps.webp';
+const gesture = process.env.PUBLIC_URL + '/fast_imgs/gesture.mp4';
+const PLANT_WATERER = process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.mp4';
+const encryptc = process.env.PUBLIC_URL + '/fast_imgs/encryptc.webp';
+const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp2';
+const hole2 = process.env.PUBLIC_URL + '/fast_imgs/hole2.mp4';
+const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.mp4';
+
+const notable = process.env.PUBLIC_URL + '/fast_imgs/journalapp.webp';
+
+const weather = process.env.PUBLIC_URL + '/fast_imgs/WEATHER.webp';
+const butterfly = process.env.PUBLIC_URL + '/fast_imgs/animate.mp4';
+const graph = process.env.PUBLIC_URL + '/fast_imgs/graph.mp4';
+const PLANT_WATERER_2 =  process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.webp';
+const WEATHER_SENSOR =  process.env.PUBLIC_URL + '/fast_imgs/ESP_WEATHER.webp';
+const search = process.env.PUBLIC_URL +  '/fast_imgs/PYCLI.webp';
+const actix = process.env.PUBLIC_URL + '/fast_imgs/concurrency-model.webp';
+const bash = process.env.PUBLIC_URL + '/fast_imgs/BASH.webp';
+const php = process.env.PUBLIC_URL + '/fast_imgs/PHP.webp';
+const algos = process.env.PUBLIC_URL + '/fast_imgs/ALGOS.PNG';
+
+const game = process.env.PUBLIC_URL + '/fast_imgs/game1.webp';
 
 
-import React, { memo } from "react"
+
 
 interface Project {
   title: string;
@@ -42,7 +46,7 @@ interface Project {
 }
   const PROJ_PAYLOAD = [shell,encryptc,PLANT_WATERER, calculator, maps, gesture, my_interface, butterfly, notable, weather, graph,PLANT_WATERER_2, WEATHER_SENSOR, search,actix,bash,php, algos,wled2,hole2,game]
 
-const projectsData:Project = [
+const projectsData:Project[] = [
 {
     title: "THIS WEBSITE (TYPESCRIPT)",
     link: "https://github.com/austinhutchen/austinscode",
@@ -57,7 +61,7 @@ const projectsData:Project = [
     description:
 "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
-    video: [PROJ_PAYLOAD[18],PROJ_PAYLOAD[19] ],
+    video: [wled2,hole2],
   },
  {
       title: "ARTIFICALLY INTELLIGENT GESTURE SENSOR (C++)",
@@ -66,7 +70,7 @@ const projectsData:Project = [
         "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. Trained on data provided by the arduino nano ble sense rev2 sensors.",
       images: [], // Insert your image paths here
 
-   video: [PROJ_PAYLOAD[5] ],
+   video: [gesture ],
 
     },
  {
@@ -74,14 +78,14 @@ const projectsData:Project = [
       link: "https://github.com/austinhutchen/plant_interface.git",
       description:
         "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
-      images: [PROJ_PAYLOAD[11] ], // Insert your image paths here
+      images: [PLANT_WATERER ], // Insert your image paths here
    video: [],
     },
   {    title: "CALCULATOR APP (DART/FLUTTER/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description:
       "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
-    images: [PROJ_PAYLOAD[3]],
+    images: [calculator],
        video: [],
 
 },
@@ -230,24 +234,37 @@ const ProjectList = () => (
   </ul>
 );
 
-const ProjectItem = memo(({project})=>(
-<li>
-<a className ="hlight-mini" style ={{fontSize: "1.1em"}} href={project.link} target="_blank" rel="noopener noreferrer">
-{project.title}
-</a>
-<br/>
-<LazyLoad height ={200} offset={100}>
-{projectsData.images.map((src,imgIndex)=>(
-<img key ={imgIndex} src ={src} height ="145vh" width="auto" loading="lazy" />
-))}
-</LazyLoad>
-
-{projectsData.video.map((src,Index)=>(
-<LazyLoad height={200} offset={100} key={Index}>
-<video src={src} autoPlay loop muted defaultMuted playsINline onContextMenu={ (e)=> e.preventDefault()} loading="eager" type="video/mp4" height="150vh" width="auto" preload="metadata"/>
-</LazyLoad>
-))}
-</li>
+const ProjectItem = memo(({ project }) => (
+  <li>
+    <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
+      {project.title}
+    </a>
+    <br />
+    {project.images.map((src, imgIndex) => (
+      <LazyLoad height={150} offset={100} key={imgIndex}>
+        <img src={src} height="145vh" width="auto" loading="lazy" />
+      </LazyLoad>
+    ))}
+    {project.video.map((src, index) => (
+      <LazyLoad height={150} offset={100} key={index}>
+        <video
+          key={index}
+          src={src}
+          loop
+          muted
+          defaultMuted
+          playsInline
+          onContextMenu={(e) => e.preventDefault()}
+          loading="eager"
+          type="video/mp4"
+          height="150svh"
+          width="auto"
+          preload="metadata"
+        />
+      </LazyLoad>
+    ))}
+    {project.description}
+  </li>
 ));
 
 
@@ -259,12 +276,17 @@ const ProjectItem = memo(({project})=>(
 
 
 
-
-export const Projects=()=>(
-
-<LazyMotion features ={domAnimation}>
-<ProjectList/>
-</LazyMotion>
+export const Projects = () => (
+  <LazyMotion features={domAnimation}>
+    <Nav />
+    <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <h1 className="hlight">
+        <b>PERSONAL PROJECTS:</b>
+      </h1>
+      <div className="projects">
+        <ProjectList />
+      </div>
+    </m.div>
+  </LazyMotion>
 );
-
 
