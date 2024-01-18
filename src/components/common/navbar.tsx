@@ -34,8 +34,10 @@ export const Nav: React.FC = () => {
 
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
             <img
-              src={"https://cdn.dribbble.com/userupload/4447859/file/original-95d09c6028ad7ce02e4127b9ef51b6c7.png?resize=400x300&vertical=center"}
+              src={"https://fs.buttercms.com/resize=width:940/I351RMgSjC6YAj1Ra8pE"}
               width="auto"
+              max-width="40vh"
+
               height="40vh"
               className="nav-icon"
             />
