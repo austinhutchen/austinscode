@@ -33,8 +33,8 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
  export const View: React.FC = () => {
   const mathPhDStudents = rec_letter;
 
-const data = [rec_letter, comments3,inclusion,support]
-  const studentComments1 = data.slice(0,3);
+const data = [comments3,inclusion,support]
+  const studentComments1 = data.slice(0,2);
 
   return (
     <>
