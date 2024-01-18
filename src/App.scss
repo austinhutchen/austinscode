@@ -9,11 +9,14 @@
   overflow-y: auto;
   background-color: darkolivegreen;
 }
-
+video{
+display: block;
+margin: 0 auto;
+}
 #name {
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: white;
   text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
 }
 
