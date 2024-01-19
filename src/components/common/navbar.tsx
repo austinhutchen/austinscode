@@ -7,7 +7,7 @@ import "../../App.scss"
 
 const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUB.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
-const  upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
+const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.jpg';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/linkedin.png';
@@ -19,7 +19,7 @@ export const Nav: React.FC = () => {
   const navigateTo = (path: string) => {
     nav(path);
   };
-const icon_size = '36';
+  const icon_size = '38';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
@@ -43,66 +43,65 @@ const icon_size = '36';
           >
             Accredidations
           </button>
-
-          <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
-            <img
-              src={github}
-              width={icon_size}
-              height={icon_size}
-              className="nav-icon"
-            />
-          </a>
-          <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
-            <img
-              src={instagram}
-               width={icon_size}
-              height={icon_size}
-              className="nav-icon"
-            />
-          </a>
-
-          <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
-            <img
-              src={upwork}
-                   width={icon_size}
-              height={icon_size}
-              className="nav-icon"
-            />
-          </a>
-
-          <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
-            <img
-              src={linkedin}
+            <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
+              <img
+                src={github}
                 width={icon_size}
-              height= {icon_size}
-              className="nav-icon"
-            />
-          </a>
-          <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
-            <img
-              src={leetcode}
-               width= {icon_size}
-              height= {icon_size}
-              className="nav-icon"
-            />
-          </a>
-          <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
-            <img
-              src={medium}
-              width= {icon_size}
-              height= {icon_size}
-              className="nav-icon"
-            />
-          </a>
-          <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
-            <img
-              src={instructables}
-              
-              width= {icon_size}
-              height= {icon_size}
-              className="nav-icon"
-            />
-          </a>
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+            <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
+              <img
+                src={instagram}
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+
+            <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
+              <img
+                src={upwork}
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+
+            <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
+              <img
+                src={linkedin}
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+            <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
+              <img
+                src={leetcode}
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+            <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
+              <img
+                src={medium}
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
+            <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
+              <img
+                src={instructables}
+
+                width={icon_size}
+                height={icon_size}
+                className="nav-icon"
+              />
+            </a>
         </div>
       </nav>
       <div className="banner" >
