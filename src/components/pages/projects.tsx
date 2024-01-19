@@ -219,9 +219,9 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand.",
-    images: [], // Insert your image paths here
+    images: [my_interface], // Insert your image paths here
 
-    video: [my_interface], // Insert your video path here
+    video: [], // Insert your video path here
 
   },
   {
