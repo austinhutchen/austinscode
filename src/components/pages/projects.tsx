@@ -16,7 +16,7 @@ const PLANT_WATERER = process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.mp4';
 const encryptc = process.env.PUBLIC_URL + '/fast_imgs/encryptc.webp';
 const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp4';
 const hole2 = process.env.PUBLIC_URL + '/fast_imgs/hole2.mp4';
-const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.mp4';
+const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.webp';
 
 const notable = process.env.PUBLIC_URL + '/fast_imgs/journalapp.webp';
 
