@@ -17,7 +17,7 @@ const encryptc = process.env.PUBLIC_URL + '/fast_imgs/encryptc.webp';
 const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp4';
 const hole2 = process.env.PUBLIC_URL + '/fast_imgs/hole2.mp4';
 const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.mp4';
- 
+
 const notable = process.env.PUBLIC_URL + '/fast_imgs/journalapp.webp';
 
 const weather = process.env.PUBLIC_URL + '/fast_imgs/WEATHER.webp';
@@ -54,12 +54,29 @@ const projectsData: Project[] = [
     video: [],
   },
   {
+    title: "CALCULATOR APP (DART/FLUTTER/C)",
+    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
+    description:
+      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
+    images: [calculator],
+    video: [],
+
+  },
+  {
     title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
       "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
     video: [wled2, hole2],
+  },
+  {
+    title: "UNIX KERNEL SHELL (C/BASH)",
+    link: "https://github.com/austinhutchen/shell.git",
+    description:
+      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
+    images: [shell],
+    video: [],
   },
   {
     title: "ARTIFICALLY INTELLIGENT GESTURE SENSOR (C++)",
@@ -71,24 +88,7 @@ const projectsData: Project[] = [
     video: [gesture],
 
   },
-  {
-    title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
-    link: "https://github.com/austinhutchen/plant_interface.git",
-    description:
-      "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
-    images: [PLANT_WATERER_2], // Insert your image paths here
-    video: [PLANT_WATERER],
-  },
-  {
-    title: "CALCULATOR APP (DART/FLUTTER/C)",
-    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
-    description:
-      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
-    images: [calculator],
-    video: [],
-
-  },
-  {
+{
     title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
@@ -97,13 +97,16 @@ const projectsData: Project[] = [
     video: [],
   },
   {
-    title: "UNIX KERNEL SHELL (C/BASH)",
-    link: "https://github.com/austinhutchen/shell.git",
+    title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
+    link: "https://github.com/austinhutchen/plant_interface.git",
     description:
-      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
-    images: [shell],
-    video: [],
+      "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
+    images: [PLANT_WATERER_2], // Insert your image paths here
+    video: [PLANT_WATERER],
   },
+
+  
+
 
 
 
@@ -142,7 +145,7 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/redditsearch.git",
     description:
       "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
-    images: [search], 
+    images: [search],
     video: [],
   }
   ,
@@ -248,15 +251,15 @@ const ProjectItem = memo(({ project }) => (
     </a>
     <br />
 
-      {project.images && project.images.map((src, imgIndex) => (
+    {project.images && project.images.map((src, imgIndex) => (
       <>
         <img src={src} key={imgIndex} height="145vh" width="auto" loading="eager" />
-	<br/>
-	</>
-      ))
+        <br />
+      </>
+    ))
 
-      }
-      {project.video && project.video.map((src, index) => (
+    }
+    {project.video && project.video.map((src, index) => (
       <>
         <video
           key={index}
@@ -265,6 +268,7 @@ const ProjectItem = memo(({ project }) => (
           muted
           defaultMuted
           playsInline
+          loading="eager"
           onContextMenu={(e) => e.preventDefault()}
           type="video/mp4"
           height="150svh"
@@ -272,13 +276,13 @@ const ProjectItem = memo(({ project }) => (
           preload="metadata"
         />
 
-</>
-      ))}
+      </>
+    ))}
 
+<b>
+    {project.description}
 
-      {project.description}
-
-
+</b>
   </li>
 ));
 
@@ -292,18 +296,18 @@ const ProjectItem = memo(({ project }) => (
 
 
 export const Projects = () => (
-  <>
+  <div className="hlight-mini">
     <LazyMotion features={domAnimation}>
       <Nav />
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }} >
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
-        
-          <ProjectList />
-        
+
+        <ProjectList />
+
       </m.div>
     </LazyMotion>
-  </>
+  </div>
 );
 
