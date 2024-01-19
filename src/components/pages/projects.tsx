@@ -15,7 +15,6 @@ const gesture = process.env.PUBLIC_URL + '/fast_imgs/gesture.mp4';
 const PLANT_WATERER = process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.mp4';
 const encryptc = process.env.PUBLIC_URL + '/fast_imgs/encryptc.webp';
 const wled2 = process.env.PUBLIC_URL + '/fast_imgs/WLED2.mp4';
-const hole2 = process.env.PUBLIC_URL + '/fast_imgs/hole2.mp4';
 const my_interface = process.env.PUBLIC_URL + '/fast_imgs/interface.webp';
 
 const notable = process.env.PUBLIC_URL + '/fast_imgs/journalapp.webp';
@@ -23,7 +22,6 @@ const notable = process.env.PUBLIC_URL + '/fast_imgs/journalapp.webp';
 const weather = process.env.PUBLIC_URL + '/fast_imgs/WEATHER.webp';
 const butterfly = process.env.PUBLIC_URL + '/fast_imgs/animate.mp4';
 const graph = process.env.PUBLIC_URL + '/fast_imgs/graph.mp4';
-const PLANT_WATERER_2 = process.env.PUBLIC_URL + '/fast_imgs/PLANT_KERNEL.webp';
 const WEATHER_SENSOR = process.env.PUBLIC_URL + '/fast_imgs/ESP_WEATHER.webp';
 const search = process.env.PUBLIC_URL + '/fast_imgs/PYCLI.webp';
 const actix = process.env.PUBLIC_URL + '/fast_imgs/concurrency-model.webp';
@@ -68,7 +66,7 @@ const projectsData: Project[] = [
     description:
       "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
-    video: [wled2, hole2],
+    video: [wled2],
   },
   {
     title: "UNIX KERNEL SHELL (C/BASH)",
@@ -88,7 +86,7 @@ const projectsData: Project[] = [
     video: [gesture],
 
   },
-{
+  {
     title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
@@ -101,16 +99,9 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
       "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
-    images: [PLANT_WATERER_2], // Insert your image paths here
+    images: [], // Insert your image paths here
     video: [PLANT_WATERER],
   },
-
-  
-
-
-
-
-
 
   {
     title: "ZELDA TERMINAL GAME (C++)",
@@ -254,7 +245,7 @@ const ProjectItem = memo(({ project }) => (
     {project.images && project.images.map((src, imgIndex) => (
       <>
         <img src={src} key={imgIndex} height="145vh" width="auto" loading="eager" />
-        <br />
+	<br/>
       </>
     ))
 
@@ -267,6 +258,7 @@ const ProjectItem = memo(({ project }) => (
           loop
           muted
           defaultMuted
+          autoplay
           playsInline
           loading="eager"
           onContextMenu={(e) => e.preventDefault()}
@@ -279,10 +271,10 @@ const ProjectItem = memo(({ project }) => (
       </>
     ))}
 
-<b>
-    {project.description}
+    <b>
+      {project.description}
 
-</b>
+    </b>
   </li>
 ));
 
