@@ -1,13 +1,25 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../../App.scss"
+
+
+
+
+const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUB_LOGO.png';
+const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
+const  upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
+const instagram = process.env.PUBLIC_URL + '/fast_imgs/instagram.png';
+const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
+const linkedin = process.env.PUBLIC_URL + '/fast_imgs/linkedin.png';
+const medium = process.env.PUBLIC_URL + '/fast_imgs/medium.png';
+
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
   const navigateTo = (path: string) => {
     nav(path);
   };
-const icon_size = '40em';
+const icon_size = '36';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
@@ -34,7 +46,7 @@ const icon_size = '40em';
 
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
             <img
-              src={"https://fs.buttercms.com/resize=width:940/I351RMgSjC6YAj1Ra8pE"}
+              src={github}
               width={icon_size}
               height={icon_size}
               className="nav-icon"
@@ -42,7 +54,7 @@ const icon_size = '40em';
           </a>
           <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
             <img
-              src={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/768px-Instagram-Icon.png"}
+              src={instagram}
                width={icon_size}
               height={icon_size}
               className="nav-icon"
@@ -51,7 +63,7 @@ const icon_size = '40em';
 
           <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
             <img
-              src={"https://static-00.iconduck.com/assets.00/upwork-icon-2048x2048-rrxq98us.png"}
+              src={upwork}
                    width={icon_size}
               height={icon_size}
               className="nav-icon"
@@ -60,7 +72,7 @@ const icon_size = '40em';
 
           <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
             <img
-              src={"https://www.iconpacks.net/icons/2/free-linkedin-logo-icon-2430-thumb.png"}
+              src={linkedin}
                 width={icon_size}
               height= {icon_size}
               className="nav-icon"
@@ -68,7 +80,7 @@ const icon_size = '40em';
           </a>
           <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
             <img
-              src={"https://upload.wikimedia.org/wikipedia/commons/3/33/LeetCode_Logo_3.png"}
+              src={leetcode}
                width= {icon_size}
               height= {icon_size}
               className="nav-icon"
@@ -76,7 +88,7 @@ const icon_size = '40em';
           </a>
           <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
             <img
-              src={"https://cdn.iconscout.com/icon/free/png-256/free-medium-52-461817.png"}
+              src={medium}
               width= {icon_size}
               height= {icon_size}
               className="nav-icon"
@@ -84,7 +96,7 @@ const icon_size = '40em';
           </a>
           <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
             <img
-              src={"https://www.librarieslearn.org/wp-content/uploads/instructables-logo.png"}
+              src={instructables}
               
               width= {icon_size}
               height= {icon_size}
