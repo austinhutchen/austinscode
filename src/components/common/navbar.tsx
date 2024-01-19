@@ -5,13 +5,13 @@ import "../../App.scss"
 
 
 
-const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUB.png';
+const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
-const instagram = process.env.PUBLIC_URL + '/fast_imgs/instagram.png';
+const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.jpg';
-const linkedin = process.env.PUBLIC_URL + '/fast_imgs/linkedin.png';
-const medium = process.env.PUBLIC_URL + '/fast_imgs/medium.png';
+const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
+const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
 
 export const Nav: React.FC = () => {
   const nav = useNavigate();
@@ -19,7 +19,7 @@ export const Nav: React.FC = () => {
   const navigateTo = (path: string) => {
     nav(path);
   };
-  const icon_size = '38';
+  const icon_size = '38svh';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
