@@ -8,7 +8,7 @@ const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.jpg';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
 const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
-
+const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
@@ -21,7 +21,12 @@ export const Nav: React.FC = () => {
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
         <div>
           <button className="btn btn-outline-success px-2" type="button" onClick={() => navigateTo('/')}>
-            Home
+            <img
+              src={home}
+  width={'27vh' }
+              height={'27vh'}
+
+            />
           </button>
           <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/AboutMe')}>
             About
@@ -39,65 +44,65 @@ export const Nav: React.FC = () => {
           >
             Accredidations
           </button>
-            <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
-              <img
-                src={github}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
-            <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
-              <img
-                src={instagram}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
+          <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
+            <img
+              src={github}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
+          <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
+            <img
+              src={instagram}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
 
-            <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
-              <img
-                src={upwork}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
+          <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
+            <img
+              src={upwork}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
 
-            <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
-              <img
-                src={linkedin}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
-            <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
-              <img
-                src={leetcode}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
-            <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
-              <img
-                src={medium}
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
-            <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
-              <img
-                src={instructables}
+          <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
+            <img
+              src={linkedin}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
+          <a className="navbar-brand" href="https://leetcode.com/austinhutchen/" target="_blank"  >
+            <img
+              src={leetcode}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
+          <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
+            <img
+              src={medium}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
+          <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
+            <img
+              src={instructables}
 
-                width={icon_size}
-                height={icon_size}
-                className="nav-icon"
-              />
-            </a>
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+          </a>
         </div>
       </nav>
       <div className="banner" >
