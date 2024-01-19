@@ -56,6 +56,7 @@ const About: React.FC<AboutProps> = (props) => {
       url: github,
       type: "image"
     },
+
     {
       desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
       url: systems,
@@ -68,7 +69,12 @@ const About: React.FC<AboutProps> = (props) => {
       type: "video"
     },
 
+    {
+      desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
+      url: mimi,
+      type: "image"
 
+    },
     {
       desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
       url: math,
@@ -83,12 +89,7 @@ const About: React.FC<AboutProps> = (props) => {
 
     },
 
-    {
-      desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
-      url: mimi,
-      type: "image"
 
-    },
     {
       desc: "I love to make electronics and art with my girlfriend!",
       url: liv,
@@ -112,6 +113,7 @@ const About: React.FC<AboutProps> = (props) => {
     width: '100%',
     arrows: true,
     slidesToScroll: 1,
+    loading: 'progressive',
     infinite: true,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
