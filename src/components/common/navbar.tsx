@@ -5,11 +5,11 @@ import "../../App.scss"
 
 
 
-const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUB_LOGO.png';
+const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUB.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const  upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/instagram.png';
-const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
+const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.jpg';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/linkedin.png';
 const medium = process.env.PUBLIC_URL + '/fast_imgs/medium.png';
 
