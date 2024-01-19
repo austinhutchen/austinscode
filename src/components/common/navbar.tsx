@@ -1,10 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../../App.scss"
-
-
-
-
 const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
@@ -19,7 +15,7 @@ export const Nav: React.FC = () => {
   const navigateTo = (path: string) => {
     nav(path);
   };
-  const icon_size = '38svh';
+  const icon_size = '38vh';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
