@@ -5,7 +5,7 @@ const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
-const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.jpg';
+const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
 const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
 const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
@@ -15,7 +15,7 @@ export const Nav: React.FC = () => {
   const navigateTo = (path: string) => {
     nav(path);
   };
-  const icon_size = '38vh';
+  const icon_size = '40vh';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
@@ -23,8 +23,8 @@ export const Nav: React.FC = () => {
           <button className="btn btn-outline-success px-2" type="button" onClick={() => navigateTo('/')}>
             <img
               src={home}
-  width={'27vh' }
-              height={'27vh'}
+  width={'28em' }
+              height={'28em'}
 
             />
           </button>
@@ -38,7 +38,7 @@ export const Nav: React.FC = () => {
             Resume
           </button>
           <button
-            className="btn btn-md btn-outline-primary me-1"
+            className="btn btn-md btn-outline-primary"
             type="button"
             onClick={() => navigateTo('/Accredidations')}
           >
