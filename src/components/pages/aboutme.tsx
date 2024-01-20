@@ -146,10 +146,10 @@ const About: React.FC = () => {
               <p style={{ color: 'cornsilk', fontSize: "2svh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>
-              <button {...buttonStyles} onClick={() => handleSliderNavigation('prev')}>
+              <button  onClick={() => handleSliderNavigation('prev')}>
                 <HiArrowNarrowLeft />
               </button>
-              <button {...buttonStyles} onClick={() => handleSliderNavigation('next')}>
+              <button onClick={() => handleSliderNavigation('next')}>
                 <HiArrowNarrowRight />
               </button>
             </fieldset>
