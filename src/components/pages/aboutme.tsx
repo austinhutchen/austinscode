@@ -147,10 +147,10 @@ const About: React.FC = () => {
                 <b className="legend">{data.desc}</b>
               </p>
               <button  onClick={() => handleSliderNavigation('prev')}>
-                <HiArrowNarrowLeft />
+                <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
               </button>
               <button onClick={() => handleSliderNavigation('next')}>
-                <HiArrowNarrowRight />
+                <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
               </button>
             </fieldset>
           </div>
