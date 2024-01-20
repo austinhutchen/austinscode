@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
 
+
 const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
@@ -16,9 +17,20 @@ const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
 const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
 
 const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
-// Define image and video URLs directly in the keys array
-const keys:KeyItem  = [
- {
+interface AboutProps {
+  data: string[];
+}
+
+interface KeyItem {
+  desc: string;
+  url: string;
+  type: string;
+}
+
+const About: React.FC<AboutProps> = (props) => {
+  const keys: KeyItem[] = [
+
+    {
       desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
       url: me,
       type: "image"
@@ -89,26 +101,12 @@ const keys:KeyItem  = [
       type: "image"
     },
 
-  // ... other items ...
-];
 
-// Common styles for image and video components
-const imageStyles = {
-  borderRadius: '10%',
-  border: '0.45svh solid #0BA',
-};
 
-const videoStyles = {
-  borderRadius: '10%',
-  border: '0.45vh solid #0BA',
-};
 
-const buttonStyles = {
-  type: "button",
-  className: "slick-button",
-};
 
-const About: React.FC = () => {
+  ];
+
   const settings = {
     slidesToShow: 1,
     centerMode: true,
@@ -125,30 +123,25 @@ const About: React.FC = () => {
 
   const slider = useRef<Slider>(null);
 
-  const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    slider?.current?.slickPrev();
-    // Or slider?.current?.slickNext();
-  };
-
   return (
     <div className="sc">
       <Slider ref={slider} {...settings}>
         {keys.map((data, index) => (
           <div key={index}>
             {data.type === "image" ? (
-              <img src={data.url} loading="eager" style={imageStyles} alt="Project Image" />
+              <img src={data.url} loading="eager" style={{ borderRadius: '10%', border: "0.45svh solid #0BA" }} alt="Project Image" />
             ) : (
-              <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={videoStyles} src={data.url} />
+              <video autoPlay loop muted playsInline onContextMenu={(e) => e.preventDefault()} preload="auto" style={{ borderRadius: '10%', border: "0.45vh solid #0BA" }} src={data.url} />
             )}
 
             <fieldset>
               <p style={{ color: 'cornsilk', fontSize: "2svh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>
-              <button {...buttonStyles} onClick={() => handleSliderNavigation('prev')}>
+              <button type="button" className="prev-slick" onClick={() => slider?.current?.slickPrev()}>
                 <HiArrowNarrowLeft />
               </button>
-              <button {...buttonStyles} onClick={() => handleSliderNavigation('next')}>
+              <button type="button" className="next-slick" onClick={() => slider?.current?.slickNext()}>
                 <HiArrowNarrowRight />
               </button>
             </fieldset>
@@ -158,6 +151,7 @@ const About: React.FC = () => {
     </div>
   );
 };
+
 
 export const Aboutme: React.FC = () => {
   return (
@@ -174,4 +168,15 @@ export const Aboutme: React.FC = () => {
     </>
   );
 };
+
+
+
+
+
+
+
+
+
+
+
 
