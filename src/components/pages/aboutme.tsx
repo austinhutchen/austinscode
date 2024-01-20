@@ -126,8 +126,9 @@ const About: React.FC = () => {
   const slider = useRef<Slider>(null);
 
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    slider?.current?.slickPrev();
-    // Or slider?.current?.slickNext();
+    if (slider?.current) {
+      direction === 'prev' ? slider.current.slickPrev() : slider.current.slickNext();
+    }
   };
 
   return (
