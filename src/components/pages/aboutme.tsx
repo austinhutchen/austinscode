@@ -8,7 +8,7 @@ const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
 
 const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
-const systems = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
+const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
 const family = process.env.PUBLIC_URL + '/fast_imgs/family.webp';
 const mimi = process.env.PUBLIC_URL + '/fast_imgs/mimi.webp';
