@@ -52,7 +52,7 @@ const projectsData: Project[] = [
     title: "CALCULATOR APP (DART/FLUTTER/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description:
-      "A calculator app with support for many different functions, such as factorials, transcendental functions like sin and cosine that utilized taylor series approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
+      "A calculator app with support for many different functions such as factorials, transcendental functions like cosine that utilise taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
     images: ["calculator"],
     video: [],
 
@@ -61,7 +61,7 @@ const projectsData: Project[] = [
     title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
-      "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED firmware flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy, or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
+      "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED binary flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
     video: ["wled2"],
   },
@@ -87,7 +87,7 @@ const projectsData: Project[] = [
     title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
-      "Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display (displaying 7-bit I2C transmission to ESP32) with 9V of portable battery power to display real-time information over wifi to a react app, and display reading accuracy levels on the display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
+      "Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
     images: ["WEATHER_SENSOR", "weather"],
     video: [],
   },
@@ -95,7 +95,7 @@ const projectsData: Project[] = [
     title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
-      "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched off directly from the ESP-8266.",
+      "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched into deep sleep remotely.",
     images: [], // Insert your image paths here
     video: ["PLANT_WATERER"],
   },
@@ -104,7 +104,7 @@ const projectsData: Project[] = [
     title: "ZELDA TERMINAL GAME (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
-      "One of my biggest projects, and also one of my first. Built a turn-based dungeon crawler with graphics embedded within a display matrix. Used to practice foundations of object-oriented programming and memory reference.",
+      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a CLI vector display matrix. Used to practice foundations of object-oriented programming and memory reference.",
     images: ["game"],
     video: [],
 
