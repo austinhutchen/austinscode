@@ -23,7 +23,7 @@ export const Nav: React.FC = () => {
           <button className="btn btn-outline-success px-2" type="button" onClick={() => navigateTo('/')}>
             <img
               src={home}
-  width={'28em' }
+  width={'32em' }
               height={'28em'}
 
             />
