@@ -4,10 +4,8 @@ import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
 
-const comments3 = process.env.PUBLIC_URL+'/fast_imgs/comments(3).png';
 const inclusion = process.env.PUBLIC_URL+'/fast_imgs/inclusion.webp';
 const support = process.env.PUBLIC_URL+'/fast_imgs/support.webp';
-
 
 
 interface ViewData {
@@ -33,8 +31,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
  export const View: React.FC = () => {
   const mathPhDStudents = rec_letter;
 
-const data = [comments3,inclusion,support]
-  const studentComments1 = data.slice(0,2);
+const data = [inclusion,support]
 
   return (
     <>
@@ -51,7 +48,7 @@ const data = [comments3,inclusion,support]
             <ul>
               <li>
                 <h2 className="hlight-mini">
-                  <b><i><u>Letter of Rec from MATH PHD & my students @ University Of Colorado Boulder:</u></i></b>
+                  <b><i><u>Letter of Rec from MATH PHD Ezzedine El Sai:</u></i></b>
                 </h2>
                 <br />
                 <img
@@ -68,7 +65,7 @@ const data = [comments3,inclusion,support]
                 </h2>
                 <br />
                 <div>
-                  <ImageList images={studentComments1} />
+                  <ImageList images={data} />
                 </div>
               </li>
             </ul>
