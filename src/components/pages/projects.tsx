@@ -16,7 +16,7 @@ const images = {
   gesture: getImgPath('gesture.mp4'),
   PLANT_WATERER: getImgPath('PLANT_KERNEL.mp4'),
   encryptc: getImgPath('encryptc.webp'),
-  wled2: getImgPath('WLED2.mp4'),
+  wled2: getImgPath('wled2.mp4'),
   my_interface: getImgPath('interface.webp'),
   notable: getImgPath('journalapp.webp'),
   weather: getImgPath('WEATHER.webp'),
