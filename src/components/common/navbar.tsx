@@ -55,7 +55,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
             <img
               src={instagram}
-              width={icon_size}
+               width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -64,7 +64,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
             <img
               src={upwork}
-              width={icon_size}
+                  width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -73,7 +73,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
             <img
               src={linkedin}
-              width={icon_size}
+                width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -89,7 +89,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
             <img
               src={medium}
-              width={icon_size}
+                      width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -97,8 +97,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
             <img
               src={instructables}
-
-              width={icon_size}
+             width={icon_size}
               height={icon_size}
               className="nav-icon"
             />

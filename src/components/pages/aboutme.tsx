@@ -116,7 +116,7 @@ const About: React.FC = () => {
     arrows: true,
     slidesToScroll: 1,
     infinite: true,
-    loading: 'lazy',
+    loading: 'progressive',
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     adaptiveHeight: true,

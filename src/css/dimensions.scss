@@ -56,7 +56,9 @@ html.has-scroll-smooth {
 }
 
 .nav-icon {
-  border-style: none;
+  
+  background-image: url('../../public/fast_imgs/border.png');
+  background-size: 2vh
 }
 
 /* Additional styles for list items */
