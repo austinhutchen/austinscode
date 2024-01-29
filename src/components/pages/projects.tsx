@@ -21,13 +21,9 @@ const images = {
   notable: getImgPath('journalapp.webp'),
   weather: getImgPath('WEATHER.webp'),
   butterfly: getImgPath('animate.mp4'),
-  graph: getImgPath('graph.mp4'),
   WEATHER_SENSOR: getImgPath('ESP_WEATHER.webp'),
   search: getImgPath('PYCLI.webp'),
   actix: getImgPath('concurrency-model.webp'),
-  bash: getImgPath('BASH.webp'),
-  php: getImgPath('PHP.webp'),
-  algos: getImgPath('ALGOS.PNG'),
   game: getImgPath('game1.webp'),
 };
 
@@ -74,7 +70,7 @@ const projectsData: Project[] = [
     video: [],
   },
   {
-    title: "ARTIFICALLY INTELLIGENT GESTURE SENSOR (C++)",
+    title: "ARDUINO NANO INTELLIGENT GESTURE SENSOR (C++)",
     link: "https://github.com/austinhutchen/ArtificalSP.git",
     description:
       "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. Trained on data provided by the arduino nano ble sense rev2 sensors.",
@@ -124,8 +120,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
-    images: ["butterfly"], // Insert your image paths here
-    video: [], // Insert your video path here
+    images: [], // Insert your image paths here
+    video: ["butterfly"], // Insert your video path here
   },
 
   {
@@ -157,69 +153,23 @@ const projectsData: Project[] = [
   },
 
 
-  {
-    title: "PHPLIB (PHP)",
-    link: "https://github.com/austinhutchen/PHPland.git",
-    description:
-      "A collection of various PHP server scripting projects. Among them are a serving system for uploading data directly from an ESP32 into a MYSQLI database storage using PHP scripting, and a system for communicating data directly WITH an ESP32 using HTTP protocol and interpretation. PHP is one of my favorite languages.",
-    images: ["php"],
-    video: [],
-  },
-
-  {
-    title: "VARIOUS BASH SHELL SCRIPTS",
-    link: "https://github.com/austinhutchen/scripts.git",
-    description: "Coded using bash and kernel commands on mac OSX capable systems, I coded a VARIABLE-BIT PASSWORD GENERATOR, NMAP SCANNER, FILE TREE PRINTER, and SQL database initialization from within the CLI.",
-    images: ["bash"],
-    video: [],
-  },
+ 
 
 
   {
     title: " MULTITHREADED E-MAIL SERVER BACKEND (RUST)",
-    link: "https://github.com/austinhutchen/austinscode",
+    link: "https://github.com/austinhutchen/newsletter.rs.git",
     description:
-      "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of users on a quick ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice building test cases for server-based tasks.",
+      "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of requests from users on an ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
     images: ["actix"],
     video: [], // Insert your video path here
 
   },
-  {
-    title: "ALGORITHMS (C++)",
-    link: "https://github.com/austinhutchen/CALGORITHMS.git",
-    description:
-      "A library I created to store data structures and algorithms that I use in my projects frequently or like to have on hand, coded by me from scratch using pointers in c++. Included is straussen's matrix multiplication algorithm, a fast-fourier-transform implementation, various implementations of hash tables with collision-checking, binary trees, graphs,and much more.",
-    images: ["algos"],
-    video: [],
-  },
+ 
 
-  {
-    title: "REGEX-LIKE IEE FLOATING POINT PARSER (C)",
-    link: "https://github.com/austinhutchen/FLOATING_PARSER.C.git",
-    description:
-      " A parser I built for parsing +/- floating point values from a .txt file and storing them in a matrix. Works similar to the REGEX <code> [+-]?([0-9]+([.][0-9]*)?|[.][0-9]+).</code> Initially used in a matrix multiplication algorithm, before I patched and extended capability to allow for interfacing with any .txt comma-seperated file.",
-    images: [], // Insert your image paths here
-    video: [], // Insert your video path here
-  },
+ 
 
-  {
-    title: "PAPER-LIKE ESP32 ANIMATOR (C)",
-    link: "https://github.com/austinhutchen/austinscode",
-    description:
-      "I used a 2.9-inch e-paper display and an ESP8266 directly with a 4x4 button matrix to display various on-screen paper-like animations (from 5 bit-masks displayed frame-by-frame), in the palm of your hand.",
-    images: ["my_interface"], // Insert your image paths here
 
-    video: [], // Insert your video path here
-
-  },
-  {
-    title: "LINEAR TRANSFORMATION GRAPH ENGINE (JAVASCRIPT)",
-    link: "https://github.com/austinhutchen/GAMMA.JS.git",
-    description:
-      "A graphing calculator coded in javascript which utilized a plotjs library to plot real-valued linear transformations on both a 2-dimensional and 3-dimensional domain/range, respectively. Helped to visualize many linear algebra concepts like rank, vector spaces, span, and determinants while I took the class. Seen in the video is the ability to also zoom in and localize the transformation, e.g. take the derivative of the function. A simple project, but one that I was grateful to put my love for math into nonetheless.",
-    images: [], // Insert your image paths here
-    video: ["graph"], // Insert your video path here
-  },
 
 ];
 
@@ -241,7 +191,7 @@ const ProjectItem = memo(({ project }) => (
 
     {project.images && project.images.map((imageName, imgIndex) => (
       <React.Fragment key={imgIndex}>
-        <img src={images[imageName]} height="145vh" width="auto" loading="eager" />
+        <img src={images[imageName]} height="160vh" maxHeight= "100%" maxWidth= "100%" width="auto" loading="eager" />
         <br />
       </React.Fragment>
     ))}
@@ -254,11 +204,10 @@ const ProjectItem = memo(({ project }) => (
           defaultMuted
           autoPlay
           playsInline
-          loading="eager"
           onContextMenu={(e) => e.preventDefault()}
           type="video/mp4"
-          height="150svh"
-          width="auto"
+          height="160vh" maxHeight= "100%" maxWidth= "100%" width="auto" 
+    
           preload="metadata"
         />
       </React.Fragment>
