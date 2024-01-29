@@ -2,7 +2,7 @@
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/> Full Bundle Size: <b> 124KB </b>
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
-
+<hr/>
  <b> LOCAL FILE STRUCTURE: </b>
 <br/>
 |____App.tsx <br/>
