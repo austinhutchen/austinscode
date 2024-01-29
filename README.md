@@ -4,7 +4,7 @@ Original Author: <u><b>Me! (Austin Hutchen) </b></u>
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
  </h3>
 <hr/>
- <h1> LOCAL FILE STRUCTURE: </h1>
+ <h1> Local File Structure: </h1>
 <hr/>
 |____App.tsx <br/>
 |____css <br/>
