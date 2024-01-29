@@ -5,35 +5,35 @@
 
 LOCAL FILE STRUCTURE:
 .
-|____App.tsx
-|____.DS_Store
-|____css
-| |____fonts.scss
-| |____.DS_Store
-| |____resume.scss
-| |____dimensions.scss
-| |____nav-bar.scss
-| |____TextSphere.scss
-| |____spinner.scss
-| |____QUERIES.scss
-|____reportWebVitals.jsx
-|____index.css
-|____components
-| |____.DS_Store
-| |____common
-| | |____navbar.tsx
-| | |____.DS_Store
-| | |____symbols.tsx
-| |____pages
-| | |____projects.tsx
-| | |____accredations.tsx
-| | |____aboutme.tsx
-| | |____.DS_Store
-| | |____resume.tsx
-| | |____blog.tsx
-| | |____landing.tsx
-| |____base
-| | |____.DS_Store
-| | |____AnimatedRoutes.tsx
-|____index.jsx
-|____App.scss
+|____App.tsx <br/>
+|____.DS_Store <br/>
+|____css <br/>
+| |____fonts.scss <br/>
+| |____.DS_Store <br/>
+| |____resume.scss <br/>
+| |____dimensions.scss <br/>
+| |____nav-bar.scss <br/>
+| |____TextSphere.scss <br/>
+| |____spinner.scss <br/>
+| |____QUERIES.scss <br/>
+|____reportWebVitals.jsx <br/>
+|____index.css <br/>
+|____components <br/>
+| |____.DS_Store <br/>
+| |____common <br/>
+| | |____navbar.tsx <br/>
+| | |____.DS_Store <br/>
+| | |____symbols.tsx <br/>
+| |____pages <br/>
+| | |____projects.tsx <br/>
+| | |____accredations.tsx <br/>
+| | |____aboutme.tsx <br/>
+| | |____.DS_Store <br/>
+| | |____resume.tsx <br/>
+| | |____blog.tsx <br/>
+| | |____landing.tsx <br/>
+| |____base <br/>
+| | |____.DS_Store <br/>
+| | |____AnimatedRoutes.tsx <br/>
+|____index.jsx <br/>
+|____App.scss <br/>
