@@ -3,7 +3,7 @@
 <br/> Full Bundle Size: <b> 124KB </b>
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
 
-LOCAL FILE STRUCTURE:
+ <b> LOCAL FILE STRUCTURE: </b>
 <br/>
 |____App.tsx <br/>
 |____css <br/>
