@@ -1,5 +1,5 @@
 <h2>My React-loaded website, documenting personal achievements!</h2>  <hr/> Website Version: <i>Matte</i> <b> 10.2 ☕️🎉👨🏾‍💻 </b>
- Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
+<br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/> Full Bundle Size: <b> 124KB </b>
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
 <hr/>
