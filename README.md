@@ -4,8 +4,7 @@
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
  </h3>
 <hr/>
- <h1> Local File Structure: </h1>
-<hr/>
+ <h1> Local File Structure: </h1> <br/>
 |____App.tsx <br/>
 |____css <br/>
 | |____fonts.scss <br/>
