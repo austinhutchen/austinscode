@@ -92,7 +92,7 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
       "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched into deep sleep remotely.",
-    images: [], // Insert your image paths here
+    images: [], 
     video: ["PLANT_WATERER"],
   },
 
@@ -111,8 +111,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/map-app.git",
     description:
       "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
-    images: ["maps"], // Insert your image paths here,
-    video: [], // Insert your video path here,
+    images: ["maps"],
+    video: [], 
 
   },
   {
@@ -120,8 +120,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
-    images: [], // Insert your image paths here
-    video: ["butterfly"], // Insert your video path here
+    images: [], 
+    video: ["butterfly"], 
   },
 
   {
@@ -138,8 +138,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/notable.git",
     description:
       "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
-    images: ["notable"], // Insert your image paths here
-    video: [], // Insert your video path here
+    images: ["notable"], 
+    video: [],
   },
 
   {
@@ -148,8 +148,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/encrypt.C.git",
     description:
       "A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
-    images: ["encryptc"], // Insert your image paths here
-    video: [], // Insert your video path here
+    images: ["encryptc"],
+    video: [],
   },
 
 
@@ -162,7 +162,7 @@ const projectsData: Project[] = [
     description:
       "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of requests from users on an ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
     images: ["actix"],
-    video: [], // Insert your video path here
+    video: [], 
 
   },
  
