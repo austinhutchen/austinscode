@@ -4,7 +4,7 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 
 
 
-const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
+const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.webp';
 
 
 export const Resume: React.FC = ({ data }) => {
