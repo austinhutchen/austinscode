@@ -1,10 +1,10 @@
-<h1>My React-loaded website, documenting personal achievements!</h1>  <hr/> <h3>Website Version: <i>Matte</i> <b> 11.0 ☕️🎉👨🏾‍💻 </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <hr/> <h3>Website Version: <i>Matte</i> <b> 11.0 ☕️🎉👨🏾‍💻 </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/> Full Bundle Size: <b> 124KB </b>
 <br/> Link: <b> [My Site](https://bit.ly/3MHcbzY). </b>
  </h3>
 <hr/>
- <h1> Local File Structure: </h1> <br/>
+ <h2> Local File Structure: </h2> <br/>
 |____App.tsx <br/>
 |____css <br/>
 | |____fonts.scss <br/>
