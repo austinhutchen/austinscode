@@ -25,6 +25,8 @@ const images = {
   search: getImgPath('PYCLI.webp'),
   actix: getImgPath('concurrency-model.webp'),
   game: getImgPath('game1.webp'),
+ nano2: getImgPath('nano2.mp4'),
+
 };
 
 interface Project {
@@ -70,13 +72,13 @@ const projectsData: Project[] = [
     video: [],
   },
   {
-    title: "ARDUINO NANO INTELLIGENT GESTURE SENSOR (C++)",
+    title: "ARDUINO NANO BLE GESTURE SENSOR (C++)",
     link: "https://github.com/austinhutchen/ArtificalSP.git",
     description:
-      "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. Trained on data provided by the arduino nano ble sense rev2 sensors.",
+      "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. As seen in the second video, it is also able to recognize distinct RGB values using the onboard sensors. Trained on data provided by the arduino nano ble sense rev2 sensors.",
     images: [], // Insert your image paths here
 
-    video: ["gesture"],
+    video: ["gesture","nano2"],
 
   },
   {
