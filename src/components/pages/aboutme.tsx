@@ -11,10 +11,9 @@ const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
 const family = process.env.PUBLIC_URL + '/fast_imgs/family.webp';
 const mimi = process.env.PUBLIC_URL + '/fast_imgs/mimi.webp';
-const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
 const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
 const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
-
+const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
 const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
 // Define image and video URLs directly in the keys array
 const keys:KeyItem  = [
