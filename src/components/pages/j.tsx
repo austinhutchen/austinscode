@@ -4,7 +4,11 @@ import { LazyMotion, domAnimation, motion } from "framer-motion";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
-const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
+
+
+// Define image and video URLs directly in the keys array
+const keys: KeyItem = [
+  const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
 const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
@@ -15,65 +19,6 @@ const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
 const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
 const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
 const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
-
-// Define image and video URLs directly in the keys array
-const keys: KeyItem[] = [
-  {
-    desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
-    url: me,
-    type: "image"
-  },
-  {
-    desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials, at the age of 11.",
-    url: tinker,
-    type: "image"
-  },
-  {
-    desc: "Today in my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
-    url: coding,
-    type: "image"
-  },
-  {
-    desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
-    url: github,
-    type: "image"
-  },
-  {
-    desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
-    url: systems,
-    type: "image"
-  },
-  {
-    desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
-    url: solder,
-    type: "video"
-  },
-  {
-    desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
-    url: mimi,
-    type: "image"
-  },
-  {
-    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
-    url: math,
-    type: "image"
-  },
-  {
-    desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
-    url: family,
-    type: "image"
-  },
-  {
-    desc: "I love to make electronics and art with my girlfriend!",
-    url: liv,
-    type: "image"
-  },
-  {
-    desc: "I love to spend time out in nature!",
-    url: nature,
-    type: "image"
-  },
-  // ... other items ...
 ];
 
 // Common styles for image and video components
