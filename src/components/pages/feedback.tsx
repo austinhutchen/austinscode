@@ -28,7 +28,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
   </ul>
 );
 
- export const View: React.FC = () => {
+ export const Feedback: React.FC = () => {
   const mathPhDStudents = rec_letter;
 
 const data = [inclusion,support]
@@ -43,7 +43,7 @@ const data = [inclusion,support]
             animate={{ width: "100%" }}
             exit={{ x: window.innerWidth, transition: { duration: 0 } }}
           >
-            <h1 className="hlight"><b>~ACCREDITATIONS~ </b></h1>
+            <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
             <br />
             <ul>
               <li>
