@@ -1,6 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import {Nav} from "../common/navbar.tsx";
+ 
+
+
+
+
+
+
+
+
 
 const ThreeDShapeVisualizer: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -13,44 +22,44 @@ const ThreeDShapeVisualizer: React.FC = () => {
 
     // Camera
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(0, 0, 5); // Update camera position
+    camera.position.set(0, 0, 5);
 
     // Renderer
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(400, 300);
+    renderer.setSize(800, 600);
     containerRef.current.appendChild(renderer.domElement);
 
     // Geometry and Material
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    
-    // Mesh
-    const cube = new THREE.Mesh(geometry, material);
+    const cubeGeometry = new THREE.BoxGeometry();
+    const torusKnotGeometry = new THREE.TorusKnotGeometry(1, 0.4, 100, 16);
+
+    const material = new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: 0.5, metalness: 0.5 });
+
+    // Meshes
+    const cube = new THREE.Mesh(cubeGeometry, material);
+    const torusKnot = new THREE.Mesh(torusKnotGeometry, material);
+
+    // Position shapes
+    cube.position.set(-2, 0, 0);
+    torusKnot.position.set(2, 0, 0);
+
+    // Add shapes to the scene
     scene.add(cube);
+    scene.add(torusKnot);
 
-    // Function to center the cube
-    const centerCube = () => {
-      const containerWidth = window.innerWidth;
-      const containerHeight = window.innerHeight;
-
-      // Center the cube by adjusting camera position
-      camera.aspect = containerWidth / containerHeight;
-      camera.position.set(0, 0, 5);
-      camera.updateProjectionMatrix();
-
-      renderer.setSize(containerWidth, containerHeight);
-    };
-
-    // Initial centering
-    centerCube();
+    // Ambient light
+    const ambientLight = new THREE.AmbientLight(0xfffff);
+    scene.add(ambientLight);
 
     // Animation
     const animate = () => {
       requestAnimationFrame(animate);
 
-      // Rotate the cube
+      // Rotate shapes
       cube.rotation.x += 0.01;
       cube.rotation.y += 0.01;
+      torusKnot.rotation.x -= 0.01;
+      torusKnot.rotation.y -= 0.01;
 
       renderer.render(scene, camera);
     };
@@ -59,7 +68,13 @@ const ThreeDShapeVisualizer: React.FC = () => {
 
     // Handle window resize
     const handleResize = () => {
-      centerCube();
+      const containerWidth = 800;
+      const containerHeight = 800;
+
+      camera.aspect = containerWidth / containerHeight;
+      camera.updateProjectionMatrix();
+
+      renderer.setSize(containerWidth, containerHeight);
     };
 
     window.addEventListener('resize', handleResize);
@@ -70,8 +85,11 @@ const ThreeDShapeVisualizer: React.FC = () => {
     };
   }, []);
 
-  return <div ref={containerRef} />;
+  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />;
 };
+
+
+
 export const Visualizer:React.FC=()=>{
 return(
 <div >
