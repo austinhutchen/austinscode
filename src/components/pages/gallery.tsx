@@ -55,8 +55,8 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
     animate();
 
     const handleResize = () => {
-      const containerWidth = 800;
-      const containerHeight = 600;
+      const containerWidth = window.innerWidth;
+      const containerHeight = window.innerHeight;
 
       camera.aspect = containerWidth / containerHeight;
       camera.updateProjectionMatrix();
@@ -71,17 +71,17 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} />;
+  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50svh' }} />;
 };
 
 export const Visualizer: React.FC = () => {
   return (
     <div>
       <Nav />
-      <h1 className="hlight"> Trippy Web Gallery </h1>
+      <h1 className="hlight"> Web Gallery </h1>
       <hr />
       <b>
-        <h2> The Craziest 3D VISUALIZER (THREE.JS) </h2>
+        <h2> Polygon Blob Isomorphism Machine (THREE.JS) </h2>
       </b>
       <CraziestThreeDShapeVisualizer />
     </div>
