@@ -39,11 +39,9 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
       icosahedron.rotation.x -= 0.03;
       icosahedron.rotation.y -= 0.03;
 
-      // Add a funky color pulsation effect
       dodecahedron.material.color.setHSL(Math.sin(Date.now() * 0.001), 1, 0.5);
       icosahedron.material.color.setHSL(Math.cos(Date.now() * 0.001), 1, 0.5);
 
-      // Add a mind-bending scaling effect
       dodecahedron.scale.x = 1 + Math.sin(Date.now() * 0.002) * 0.5;
       dodecahedron.scale.y = 1 + Math.cos(Date.now() * 0.002) * 0.5;
       icosahedron.scale.x = 1 + Math.sin(Date.now() * 0.002) * 0.5;
@@ -71,7 +69,7 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50svh' }} />;
+  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '63svh' }} />;
 };
 
 export const Visualizer: React.FC = () => {
