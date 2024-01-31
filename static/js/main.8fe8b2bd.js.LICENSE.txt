@@ -5,20 +5,6 @@
 */
 
 /*!
- * @kurkle/color v0.3.2
- * https://github.com/kurkle/color#readme
- * (c) 2023 Jukka Kurkela
- * Released under the MIT License
- */
-
-/*!
- * Chart.js v4.4.1
- * https://www.chartjs.org
- * (c) 2023 Chart.js Contributors
- * Released under the MIT License
- */
-
-/*!
  * TagCloud.js v2.4.0
  * Copyright (c) 2016-2023 @ Cong Min
  * MIT License - https://github.com/mcc108/TagCloud
