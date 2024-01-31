@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import "../../App.scss"
 import "../../css/navBar.scss"
 const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
-const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
@@ -100,14 +99,7 @@ export const Nav: React.FC = () => {
               className="nav-icon"
             />
           </a>
-          <a className="navbar-brand" href="https://www.instructables.com/member/hutchencodes/" target="_blank"  >
-            <img
-              src={instructables}
-             width={icon_size}
-              height={icon_size}
-              className="nav-icon"
-            />
-          </a>
+     
         </div>
       </nav>
       <div className="banner" >
