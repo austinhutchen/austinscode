@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import "../../App.scss"
 import "../../css/navBar.scss"
 const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
-const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
@@ -44,11 +43,11 @@ className="nav-icon"
           <button
             className="btn btn-md btn-outline-primary"
             type="button"
-            onClick={() => navigateTo('/Accredidations')}
+            onClick={() => navigateTo('/Feedback')}
           >
             Feedback
           </button>
-          <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/')}>
+          <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/Gallery')}>
             Tutorials
           </button>
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
@@ -68,14 +67,6 @@ className="nav-icon"
             />
           </a>
 
-          <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
-            <img
-              src={upwork}
-              width={icon_size}
-              height={icon_size}
-              className="nav-icon"
-            />
-          </a>
 
           <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
             <img
