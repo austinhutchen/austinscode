@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../../App.scss"
+import "../../css/navBar.scss"
 const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 const instructables = process.env.PUBLIC_URL + '/fast_imgs/instructables.png';
 const upwork = process.env.PUBLIC_URL + '/fast_imgs/upwork.png';
@@ -37,12 +38,17 @@ export const Nav: React.FC = () => {
           <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/Resume')}>
             Resume
           </button>
+ 
+
           <button
             className="btn btn-md btn-outline-primary"
             type="button"
             onClick={() => navigateTo('/Accredidations')}
           >
-            Accredidations
+           Feedback 
+          </button>
+  <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/')}>
+           Tutorials 
           </button>
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
             <img

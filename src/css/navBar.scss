@@ -52,4 +52,8 @@ a:active {
 .circle-sketch-highlight {
   position: relative;
 }
-
+.nav-icon {
+  
+  border-image-source: url('../../public/fast_imgs/border.png');
+  border-image-width: 6svh ;
+}
