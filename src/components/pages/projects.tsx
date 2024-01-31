@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
-import "../../css/QUERIES.scss";
+import "../../css/slider.scss";
 
 type Images = Record<string, string>;
 
@@ -181,7 +181,7 @@ const projectsData: Project[] = [
 ];
 
 const ProjectList: React.FC = () => (
-  <motion.ul initial="hidden" animate="visible" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} exit={{ opacity: 0 }} style={{ listStyleType: "none" }}>
+  <motion.ul initial="hidden" animate="visible" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} exit={{ opacity: 1 }} style={{ listStyleType: "none" }}>
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}

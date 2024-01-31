@@ -1,5 +1,4 @@
 import "../../css/spinner.scss";
-import "../../css/nav-bar.scss";
 
 
 export const Spinner = () => {

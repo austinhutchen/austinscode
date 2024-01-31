@@ -119,7 +119,7 @@ const About: React.FC = () => {
     <div className="sc">
       <Slider ref={slider} {...settings}>
         {keys.map((data, index) => (
-          <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
+          <motion.div key={index} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 1 }}>
             {data.type === "image" ? (
               <motion.img
                 src={data.url}

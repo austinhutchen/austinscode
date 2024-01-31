@@ -3,7 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import {Resume} from '../pages/resume.tsx'
 import {Projects} from '../pages/projects.tsx'
 import {Aboutme} from '../pages/aboutme.tsx'
-import {View} from '../pages/accredations.tsx'
+import {View} from '../pages/feedback.tsx'
 import React from 'react'
 import { Routes, Route, useLocation } from "react-router-dom";
 
