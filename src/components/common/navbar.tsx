@@ -15,18 +15,20 @@ export const Nav: React.FC = () => {
   const navigateTo = (path: string) => {
     nav(path);
   };
-  const icon_size = '40vh';
+  const icon_size = '40svh';
   return (
     <>
       <nav className="navbar navbar-dark bg-dark navbar-fixed-top navbar-expand-sm justify-content-center">
         <div>
           <button className="btn btn-outline-success px-2" type="button" onClick={() => navigateTo('/')}>
-            <img
-              src={home}
-  width={'32em' }
-              height={'28em'}
-
-            />
+            <a>
+              <img
+                src={home}
+                width={'40svh'}
+                height={'35svh'}
+className="nav-icon"
+              />
+            </a>
           </button>
           <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/AboutMe')}>
             About
@@ -37,17 +39,17 @@ export const Nav: React.FC = () => {
           <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/Resume')}>
             Resume
           </button>
- 
+
 
           <button
             className="btn btn-md btn-outline-primary"
             type="button"
             onClick={() => navigateTo('/Accredidations')}
           >
-           Feedback 
+            Feedback
           </button>
-  <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/')}>
-           Tutorials 
+          <button className="btn btn-md btn-outline-primary px-2" type="button" onClick={() => navigateTo('/')}>
+            Tutorials
           </button>
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
             <img
@@ -60,7 +62,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
             <img
               src={instagram}
-               width={icon_size}
+              width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -69,7 +71,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.upwork.com/freelancers/~01df5eabf2773916cc" target="_blank"  >
             <img
               src={upwork}
-                  width={icon_size}
+              width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -78,7 +80,7 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank"  >
             <img
               src={linkedin}
-                width={icon_size}
+              width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
@@ -94,12 +96,12 @@ export const Nav: React.FC = () => {
           <a className="navbar-brand" href="https://mobiusblogr.medium.com/" target="_blank"  >
             <img
               src={medium}
-                      width={icon_size}
+              width={icon_size}
               height={icon_size}
               className="nav-icon"
             />
           </a>
-     
+
         </div>
       </nav>
       <div className="banner" >
