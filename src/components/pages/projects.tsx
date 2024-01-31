@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { LazyMotion, domAnimation, m } from "framer-motion";
+import { motion, LazyMotion, domAnimation, m } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,9 +7,23 @@ import "../../css/dimensions.scss";
 import "../../css/fonts.scss";
 import "../../css/QUERIES.scss";
 
-const getImgPath = (imageName) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
+type Images = Record<string, string>;
 
-const images = {
+interface Project {
+  title: string;
+  link: string;
+  description: string;
+  images: string[];
+  video: string[];
+}
+
+interface ProjectItemProps {
+  project: Project;
+}
+
+const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
+
+const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
   maps: getImgPath('maps.webp'),
@@ -25,17 +39,9 @@ const images = {
   search: getImgPath('PYCLI.webp'),
   actix: getImgPath('concurrency-model.webp'),
   game: getImgPath('game1.webp'),
- nano2: getImgPath('nano2.mp4'),
-
+  nano2: getImgPath('nano2.mp4'),
+  // Add other images here
 };
-
-interface Project {
-  title: string;
-  link: string;
-  description: string;
-  images: string[];
-  video: string[];
-}
 
 const projectsData: Project[] = [
   {
@@ -57,7 +63,7 @@ const projectsData: Project[] = [
   },
   {
     title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
-    link: "https://github.com/austinhutchen/weather-sense.ts.git",
+    link: "https://github.com/austinhutchen/WledStream.git",
     description:
       "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED binary flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
     images: [],
@@ -78,7 +84,7 @@ const projectsData: Project[] = [
       "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. As seen in the second video, it is also able to recognize distinct RGB values using the onboard sensors. Trained on data provided by the arduino nano ble sense rev2 sensors.",
     images: [], // Insert your image paths here
 
-    video: ["gesture","nano2"],
+    video: ["gesture", "nano2"],
 
   },
   {
@@ -94,7 +100,7 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
       "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched into deep sleep remotely.",
-    images: [], 
+    images: [],
     video: ["PLANT_WATERER"],
   },
 
@@ -114,7 +120,7 @@ const projectsData: Project[] = [
     description:
       "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
     images: ["maps"],
-    video: [], 
+    video: [],
 
   },
   {
@@ -122,8 +128,8 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
-    images: [], 
-    video: ["butterfly"], 
+    images: [],
+    video: ["butterfly"],
   },
 
   {
@@ -140,7 +146,7 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/notable.git",
     description:
       "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
-    images: ["notable"], 
+    images: ["notable"],
     video: [],
   },
 
@@ -155,7 +161,7 @@ const projectsData: Project[] = [
   },
 
 
- 
+
 
 
   {
@@ -164,27 +170,25 @@ const projectsData: Project[] = [
     description:
       "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of requests from users on an ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
     images: ["actix"],
-    video: [], 
+    video: [],
 
   },
- 
-
- 
 
 
 
+
+  // ... (unchanged)
 ];
 
-
-const ProjectList = () => (
-  <div>
+const ProjectList: React.FC = () => (
+  <motion.ul initial="hidden" animate="visible" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} exit={{ opacity: 0 }} style={{ listStyleType: "none" }}>
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
-  </div>
+  </motion.ul>
 );
 
-const ProjectItem = memo(({ project }) => (
+const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
   <li>
     <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
       {project.title}
@@ -193,7 +197,7 @@ const ProjectItem = memo(({ project }) => (
 
     {project.images && project.images.map((imageName, imgIndex) => (
       <React.Fragment key={imgIndex}>
-        <img src={images[imageName]} height="160vh" maxHeight= "100%" maxWidth= "100%" width="auto" loading="eager" />
+        <img src={images[imageName]} height="160vh" maxHeight="100%" maxWidth="100%" width="auto" loading="eager" alt={project.title} />
         <br />
       </React.Fragment>
     ))}
@@ -208,8 +212,7 @@ const ProjectItem = memo(({ project }) => (
           playsInline
           onContextMenu={(e) => e.preventDefault()}
           type="video/mp4"
-          height="160vh" maxHeight= "100%" maxWidth= "100%" width="auto" 
-    
+          height="160vh" maxHeight="100%" maxWidth="100%" width="auto"
           preload="metadata"
         />
       </React.Fragment>
@@ -219,17 +222,19 @@ const ProjectItem = memo(({ project }) => (
   </li>
 ));
 
-export const Projects = () => (
+export const Projects: React.FC = () => (
   <div className="hlight-mini">
+
     <LazyMotion features={domAnimation}>
+
       <Nav />
-      <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
         <ProjectList />
-      </m.div>
+      </motion.div>
     </LazyMotion>
   </div>
 );
