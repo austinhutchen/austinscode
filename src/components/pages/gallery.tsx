@@ -74,15 +74,24 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
 
 export const Visualizer: React.FC = () => {
   return (
-    <div>
+<>
       <Nav />
-      <h1 className="hlight"> Web Gallery </h1>
-      <hr />
+    <div className="jumbotron">
+  <h1 className="hlight">Web Gallery</h1>
+  <p className="lead"> <b> A gallery of more projects and tutorials, by me! </b> </p>
+
+  <p className="lead">
+    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+      
+  <hr className="my-4"/>
       <b>
-        <h2> Polygon Blob Isomorphism Machine (THREE.JS) </h2>
+        <h2> Polygon NonLinear Transformer (THREE.JS) </h2>
       </b>
       <CraziestThreeDShapeVisualizer />
-    </div>
+</div>
+
+  </>   
   );
 };
 
