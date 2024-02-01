@@ -20,7 +20,16 @@ export const Nav: React.FC = () => {
     <>
 
       <nav className="navbar  navbar-expand-lg navbar-dark bg-dark justify-content-center " >
-        <div className="btn-group btn-group-toggle" data-toggle="buttons">
+        <div >
+  <button className= "btn btn-outline-warning btn-sm 2px" type="button" onClick={() => navigateTo('/')}>
+            <a>
+              <img
+                src={home}
+                width={icon_size}
+                height={icon_size}
+              />
+            </a>
+          </button>
                   <button className={button_styles} type="button" onClick={() => navigateTo('/AboutMe')}>
             About
           </button>
@@ -42,15 +51,7 @@ export const Nav: React.FC = () => {
           <button className={button_styles} type="button" onClick={() => navigateTo('/Gallery')}>
             Tutorials
           </button>
-  <button className={  "btn btn-outline-warning btn-sm 2px"} type="button" onClick={() => navigateTo('/')}>
-            <a>
-              <img
-                src={home}
-                width={icon_size}
-                height={icon_size}
-              />
-            </a>
-          </button>
+
 
 
           <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
