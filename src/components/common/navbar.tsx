@@ -15,13 +15,13 @@ export const Nav: React.FC = () => {
     nav(path);
   };
   const icon_size = '40svh';
-  const button_styles="btn btn-outline-success btn-sm";
+  const button_styles="btn btn-outline-primary btn-sm";
   return (
     <>
 
       <nav className="navbar  navbar-expand-lg navbar-dark bg-dark justify-content-center " >
         <div >
-  <button className= "btn btn-outline-warning btn-sm 2px" type="button" onClick={() => navigateTo('/')}>
+  <button className= "btn btn-outline-warning btn-sm " type="button" onClick={() => navigateTo('/')}>
             <a>
               <img
                 src={home}

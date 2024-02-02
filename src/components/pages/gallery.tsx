@@ -1,52 +1,70 @@
 import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import { Nav } from "../common/navbar.tsx";
+import { Scene, PerspectiveCamera, WebGLRenderer, BufferGeometry, Float32BufferAttribute, Points, PointsMaterial, AmbientLight, PointLight } from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { Nav } from '../common/navbar.tsx';
 
-const CraziestThreeDShapeVisualizer: React.FC = () => {
+const ChaosAttractorVisualizer: React.FC = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(0, 0, 5);
+    const scene = new Scene();
+    const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set(0, 0, 50);
 
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(800, 600);
+    const renderer = new WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
     containerRef.current.appendChild(renderer.domElement);
 
-    const dodecahedronGeometry = new THREE.DodecahedronGeometry();
-    const icosahedronGeometry = new THREE.IcosahedronGeometry(1, 0);
+    const generateChaosAttractorGeometry = () => {
+      const geometry = new BufferGeometry();
+      const vertices = [];
+      const numPoints = 5000;
+      const dt = 0.01; // time step
+      const sigma = 10.0;
+      const rho = 28.0;
+      const beta = 8.0 / 3.0;
+      let x = 0.1, y = 0.0, z = 0.0;
 
-    const dodecahedronMaterial = new THREE.MeshStandardMaterial({ color: 0xff00ff, roughness: 0.5, metalness: 0.5 });
-    const icosahedronMaterial = new THREE.MeshStandardMaterial({ color: 0x00ffff, roughness: 0.5, metalness: 0.5 });
+      for (let i = 0; i < numPoints; i++) {
+        const dx = sigma * (y - x) * dt;
+        const dy = (x * (rho - z) - y) * dt;
+        const dz = (x * y - beta * z) * dt;
 
-    const dodecahedron = new THREE.Mesh(dodecahedronGeometry, dodecahedronMaterial);
-    const icosahedron = new THREE.Mesh(icosahedronGeometry, icosahedronMaterial);
+        x += dx;
+        y += dy;
+        z += dz;
 
-    scene.add(dodecahedron);
-    scene.add(icosahedron);
+        vertices.push(x, y, z);
+      }
 
-    const ambientLight = new THREE.AmbientLight(0xFFFFFF);
+      geometry.setAttribute('position', new Float32BufferAttribute(vertices, 3));
+      return geometry;
+    };
+
+    const chaosAttractorGeometry = generateChaosAttractorGeometry();
+    const chaosAttractorMaterial = new PointsMaterial({ color: 0xff0000, size: 0.03 });
+
+    const chaosAttractorPoints = new Points(chaosAttractorGeometry, chaosAttractorMaterial);
+    scene.add(chaosAttractorPoints);
+
+    const ambientLight = new AmbientLight(0xFFFFFF, 0.5);
     scene.add(ambientLight);
+
+    const pointLight = new PointLight(0xFFFFFF, 1);
+    pointLight.position.set(0, 0, 50);
+    scene.add(pointLight);
+
+    const controls = new OrbitControls(camera, renderer.domElement);
 
     const animate = () => {
       requestAnimationFrame(animate);
 
-      dodecahedron.rotation.x += 0.03;
-      dodecahedron.rotation.y += 0.03;
-      icosahedron.rotation.x -= 0.03;
-      icosahedron.rotation.y -= 0.03;
+      // Rotate the chaos attractor
+      chaosAttractorPoints.rotation.z += 0.005;
 
-      dodecahedron.material.color.setHSL(Math.sin(Date.now() * 0.001), 1, 0.5);
-      icosahedron.material.color.setHSL(Math.cos(Date.now() * 0.001), 1, 0.5);
-
-      dodecahedron.scale.x = 1 + Math.sin(Date.now() * 0.002) * 0.5;
-      dodecahedron.scale.y = 1 + Math.cos(Date.now() * 0.002) * 0.5;
-      icosahedron.scale.x = 1 + Math.sin(Date.now() * 0.002) * 0.5;
-      icosahedron.scale.y = 1 + Math.cos(Date.now() * 0.002) * 0.5;
-
+      // Render the scene
       renderer.render(scene, camera);
     };
 
@@ -69,29 +87,49 @@ const CraziestThreeDShapeVisualizer: React.FC = () => {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '63svh' }} />;
+  return <div ref={containerRef} style={{ height: '50vh', overflow: 'hidden' }} />;
+};
+
+const ScrollAnimation: React.FC = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const chaosContainer = document.getElementById('chaos-container');
+      if (chaosContainer) {
+        const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        chaosContainer.style.transform = `scale(${1 - scrollPercentage})`;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return null;
 };
 
 export const Visualizer: React.FC = () => {
   return (
-<>
+    <>
       <Nav />
-    <div className="jumbotron">
-  <h1 className="hlight">Web Gallery</h1>
-  <p className="lead"> <b> A gallery of more projects and tutorials, by me! </b> </p>
+      <ScrollAnimation />
+      <div id="chaos-container" className="jumbotron">
+        <h1 className="hlight">Web Gallery</h1>
+        <p className="lead"> <b> A gallery of more projects and tutorials, by me! </b> </p>
 
-  <p className="lead">
-    <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
-      
-  <hr className="my-4"/>
-      <b>
-        <h2> Polygon NonLinear Transformer (THREE.JS) </h2>
-      </b>
-      <CraziestThreeDShapeVisualizer />
-</div>
+        <p className="lead">
+          <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
 
-  </>   
+        <hr className="my-4"/>
+        <b>
+          <h2> 2D Chaos Attractor Visualizer (THREE.JS) </h2>
+        </b>
+        <ChaosAttractorVisualizer />
+      </div>
+    </>
   );
 };
 
