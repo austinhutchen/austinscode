@@ -8,9 +8,7 @@ const inclusion = process.env.PUBLIC_URL+'/fast_imgs/inclusion.webp';
 const support = process.env.PUBLIC_URL+'/fast_imgs/support.webp';
 
 
-interface ViewData {
-  data: string[];
-}
+
 
 const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
   <ul>

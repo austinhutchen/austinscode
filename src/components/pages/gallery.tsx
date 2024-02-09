@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from 'react';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import React from 'react';
 import { Nav } from '../common/navbar.tsx';
 
 export const Visualizer: React.FC = () => {

@@ -87,11 +87,6 @@ const videoStyles = {
   border: '0.45vh solid #0BA',
 };
 
-const buttonStyles = {
-  type: "button",
-  className: "slick-button",
-};
-
 const About: React.FC = () => {
   const settings = {
     slidesToShow: 1,
