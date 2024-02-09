@@ -250,13 +250,13 @@ export const Projects: React.FC = () => (
     <LazyMotion features={domAnimation}>
 
       <Nav />
-      <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
         <ProjectList />
-      </m.div>
+      </motion.div>
     </LazyMotion>
   </div>
 );
