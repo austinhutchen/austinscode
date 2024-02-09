@@ -40,6 +40,8 @@ const images: Images = {
   actix: getImgPath('concurrency-model.webp'),
   game: getImgPath('game1.webp'),
   nano2: getImgPath('nano2.mp4'),
+  firecam: getImgPath('firecam.jpg'),
+  malloc: getImgPath('malloc.png'),
   // Add other images here
 };
 
@@ -52,6 +54,15 @@ const projectsData: Project[] = [
     images: [],
     video: [],
   },
+
+  {
+    title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
+    link: "https://github.com/austinhutchen/WledStream.git",
+    description:
+      "Used a Sound-reactive low-power ESP8266, HTTP proxy, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED binary flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
+    images: [],
+    video: ["wled2"],
+  },
   {
     title: "CALCULATOR APP (DART/FLUTTER/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
@@ -61,14 +72,25 @@ const projectsData: Project[] = [
     video: [],
 
   },
-  {
-    title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
-    link: "https://github.com/austinhutchen/WledStream.git",
+
+   {
+    title: "ANGULAR WEBCAM APP (TYPESCRIPT/FIREBASE)",
+    link: "https://github.com/austinhutchen/angularCamFirebase.git",
     description:
-      "Used a Sound-reactive low-power ESP8266, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED binary flashed directly onto the esp8266. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
-    images: [],
-    video: ["wled2"],
+      "Built a webcam uploader and streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database.",
+    images: ["firecam"],
+    video: [],
+
   },
+ {
+    title: "MEMORY ALLOCATION ALGORITHM (C/BASH)",
+    link: "https://github.com/austinhutchen/shell.git",
+    description:
+      " A custom memory allocation algorithm that I coded in C, that utilized a custom malloc and free function to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and various larger programs.",
+    images: ["malloc"],
+    video: [],
+  },
+
   {
     title: "UNIX KERNEL SHELL (C/BASH)",
     link: "https://github.com/austinhutchen/shell.git",
