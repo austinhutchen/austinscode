@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { motion, LazyMotion, domAnimation} from "framer-motion";
+import { motion, LazyMotion, m,domAnimation} from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -250,13 +250,13 @@ export const Projects: React.FC = () => (
     <LazyMotion features={domAnimation}>
 
       <Nav />
-      <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+      <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
         <ProjectList />
-      </motion.div>
+      </m.div>
     </LazyMotion>
   </div>
 );
