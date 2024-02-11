@@ -1,4 +1,4 @@
-import "../../css/spinner.scss";
+import "../../css/spinner.css";
 import React from "react";
 
 export const Spinner = () => {

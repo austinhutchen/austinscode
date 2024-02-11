@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import "../../css/TextSphere.scss";
+import "../../css/TextSphere.css";
 import { Nav } from "../common/navbar.tsx";
 import { Spinner } from '../common/symbols.tsx';
 

@@ -1,11 +1,11 @@
 import React, { memo } from "react";
-import { motion, LazyMotion, domAnimation, m } from "framer-motion";
+import { motion, LazyMotion, domAnimation} from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../../css/dimensions.scss";
-import "../../css/fonts.scss";
-import "../../css/slider.scss";
+import "../../css/dimensions.css";
+import "../../css/fonts.css";
+import "../../css/slider.css";
 
 type Images = Record<string, string>;
 
