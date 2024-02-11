@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import "../../App.scss"
-import "../../css/navBar.scss"
+import "../../App.css"
+import "../../css/navBar.css"
 const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
 const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
