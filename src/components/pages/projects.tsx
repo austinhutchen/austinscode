@@ -74,25 +74,16 @@ const projectsData: Project[] = [
   },
 
    {
-    title: "ANGULAR WEBCAM APP (TYPESCRIPT/FIREBASE)",
+    title: "WEBCAM STREAMING WEB APPLICATION (ANGULAR/TYPESCRIPT/FIREBASE)",
     link: "https://github.com/austinhutchen/angularCamFirebase.git",
     description:
-      "Built a webcam uploader and streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database.",
+      "Built a webcam uploader and streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database. I used the typescript programming language for application security and compile-time debug checks. The program took in an instance(frame) of a video uri, converted it into a blob of binary data, and then streamed it to a firebase realtime database. ",
     images: ["firecam"],
     video: [],
 
   },
- {
-    title: "MEMORY ALLOCATION ALGORITHM (C/BASH)",
-    link: "https://github.com/austinhutchen/shell.git",
-    description:
-      " A custom memory allocation algorithm that I coded in C, that utilized a custom malloc and free function to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and various larger programs.",
-    images: ["malloc"],
-    video: [],
-  },
-
   {
-    title: "UNIX KERNEL SHELL (C/BASH)",
+    title: "MINI KERNEL SHELL (C/BASH)",
     link: "https://github.com/austinhutchen/shell.git",
     description:
       " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
@@ -109,6 +100,16 @@ const projectsData: Project[] = [
     video: ["gesture", "nano2"],
 
   },
+ {
+    title: "MALLOC() ALGORITHM (C/BASH)",
+    link: "https://github.com/austinhutchen/shell.git",
+    description:
+      " All computers are nothing without the memory afforded to them by RAM, and a good algorithm to properly retrieve and store data in this land of RAM. As such, this is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and several embedded linux projects.",
+    images: ["malloc"],
+    video: [],
+  },
+
+
   {
     title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
