@@ -1,6 +1,6 @@
 <h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Lime</i> <b> 12.1 ☕️🎉👨🏾‍💻 </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
-<br/> Full-Feature Bundle Size: <b> 220KB </b>
+<br/> Full-Feature <i> Lime </i>Bundle Size: <b> 220KB </b>
 <br/> Limited Bundle: <b> 90KB <b>
 <br/> Link: <b> [landing page](https://bit.ly/3MHcbzY). </b>
  </h3>
