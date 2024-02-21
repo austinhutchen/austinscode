@@ -6,29 +6,34 @@
  </h3>
 <hr/>
  <u> <h4> Local File Structure: </h4> </u> <br/>
-|____App.tsx <br/>
-|____css <br/>
-| |____fonts.scss <br/>
-| |____resume.scss <br/>
-| |____dimensions.scss <br/>
-| |____nav-bar.scss <br/>
-| |____TextSphere.scss <br/>
-| |____spinner.scss <br/>
-| |____QUERIES.scss <br/>
-|____reportWebVitals.jsx <br/>
-|____index.css <br/>
-|____components <br/>
-| |____common <br/>
-| | |____navbar.tsx <br/>
-| | |____symbols.tsx <br/>
-| |____pages <br/>
-| | |____projects.tsx <br/>
-| | |____accredations.tsx <br/>
-| | |____aboutme.tsx <br/>
-| | |____resume.tsx <br/>
-| | |____blog.tsx <br/>
-| | |____landing.tsx <br/>
-| |____base <br/>
-| | |____AnimatedRoutes.tsx <br/>
-|____index.jsx <br/>
-|____App.scss <br/>
+.
+|____App.tsx
+|____.DS_Store
+|____css
+| |____dimensions.css
+| |____.DS_Store
+| |____resume.css
+| |____slider.css
+| |____navBar.css
+| |____spinner.css
+| |____fonts.css
+| |____TextSphere.css
+|____reportWebVitals.jsx
+|____App.css
+|____index.css
+|____components
+| |____.DS_Store
+| |____common
+| | |____navbar.tsx
+| | |____symbols.tsx
+| |____pages
+| | |____projects.tsx
+| | |____gallery.tsx
+| | |____aboutme.tsx
+| | |____resume.tsx
+| | |____ghRouter.tsx
+| | |____landing.tsx
+| | |____feedback.tsx
+| |____base
+| | |____AnimatedRoutes.tsx
+|____index.jsx
