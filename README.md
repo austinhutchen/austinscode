@@ -6,7 +6,7 @@
  </h3>
 <hr/>
  <u> <h4> Local File Structure: </h4> </u> <br/>
-. <br/>
+. 
 |____App.tsx <br/>
 |____.DS_Store <br/>
 |____css <br/>
