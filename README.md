@@ -2,7 +2,7 @@
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/> Full-Feature <i> Lime </i>Bundle Size: <b> 220KB </b>
 <br/> Limited Bundle: <b> 90KB <b>
-<br/> Link: <b> [landing page](https://bit.ly/3MHcbzY). </b>
+<br/> Link: <b> https://austinscode.vercel.app </b>
  </h3>
 <hr/>
  <u> <h4> Local File Structure: </h4> </u> <br/>
