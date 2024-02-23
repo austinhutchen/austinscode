@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { motion, LazyMotion, m,domAnimation} from "framer-motion";
+import { motion, LazyMotion, m, domAnimation } from "framer-motion";
 import { Nav } from "../common/navbar.tsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,7 +73,7 @@ const projectsData: Project[] = [
 
   },
 
-   {
+  {
     title: "WEBCAM STREAMING WEB APPLICATION (ANGULAR/TYPESCRIPT/FIREBASE)",
     link: "https://github.com/austinhutchen/angularCamFirebase.git",
     description:
@@ -96,11 +96,18 @@ const projectsData: Project[] = [
     description:
       "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. As seen in the second video, it is also able to recognize distinct RGB values using the onboard sensors. Trained on data provided by the arduino nano ble sense rev2 sensors.",
     images: [], // Insert your image paths here
-
     video: ["gesture", "nano2"],
 
   },
- {
+  {
+    title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
+    link: "https://github.com/austinhutchen/austinscode",
+    description:
+      "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
+    images: [],
+    video: ["butterfly"],
+  },
+  {
     title: "MALLOC() ALGORITHM (C/BASH)",
     link: "https://github.com/austinhutchen/cMalloc",
     description:
@@ -146,14 +153,7 @@ const projectsData: Project[] = [
     video: [],
 
   },
-  {
-    title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
-    link: "https://github.com/austinhutchen/austinscode",
-    description:
-      "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
-    images: [],
-    video: ["butterfly"],
-  },
+
 
   {
     title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
@@ -217,29 +217,31 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
       {project.title}
     </a>
     <br />
+    <div className="projContent">
+      {project.images && project.images.map((imageName, imgIndex) => (
+        <React.Fragment key={imgIndex}>
 
-    {project.images && project.images.map((imageName, imgIndex) => (
-      <React.Fragment key={imgIndex}>
-        <img src={images[imageName]} height="160vh" maxHeight="100%" maxWidth="100%" width="auto" loading="eager" alt={project.title} />
-        <br />
-      </React.Fragment>
-    ))}
-    {project.video && project.video.map((videoName, videoIndex) => (
-      <React.Fragment key={videoIndex}>
-        <video
-          src={images[videoName]}
-          loop
-          muted
-          defaultMuted
-          autoPlay
-          playsInline
-          onContextMenu={(e) => e.preventDefault()}
-          type="video/mp4"
-          height="160vh" maxHeight="100%" maxWidth="100%" width="auto"
-          preload="metadata"
-        />
-      </React.Fragment>
-    ))}
+          <img src={images[imageName]} height="160vh" maxHeight="100%" maxWidth="100%" width="auto" loading="eager" alt={project.title} />
+          <br />
+        </React.Fragment>
+      ))}
+      {project.video && project.video.map((videoName, videoIndex) => (
+        <React.Fragment key={videoIndex}>
+          <video
+            src={images[videoName]}
+            loop
+            muted
+            defaultMuted
+            autoPlay
+            playsInline
+            onContextMenu={(e) => e.preventDefault()}
+            type="video/mp4"
+            height="160vh" maxHeight="100%" maxWidth="100%" width="auto"
+            preload="metadata"
+          />
+        </React.Fragment>
+      ))}
+    </div>
 
     <b>{project.description}</b>
   </li>
