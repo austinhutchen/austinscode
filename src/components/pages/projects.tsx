@@ -102,7 +102,7 @@ const projectsData: Project[] = [
   },
  {
     title: "MALLOC() ALGORITHM (C/BASH)",
-    link: "https://github.com/austinhutchen/shell.git",
+    link: "https://github.com/austinhutchen/cMalloc",
     description:
       " All computers are nothing without the memory afforded to them by RAM, and a good algorithm to properly retrieve and store data in this land of RAM. As such, this is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and several embedded linux projects.",
     images: ["malloc"],
