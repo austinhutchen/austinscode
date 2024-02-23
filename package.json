@@ -24,7 +24,7 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
-    "deploy": "npm run build && vercel build && gh-pages -d build",
+    "deploy": "npm run build && vercel deploy && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
