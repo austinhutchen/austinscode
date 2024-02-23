@@ -1,33 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Austin Hutchen's portfolio website" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="slick-carousel/slick/slick.css" refl="stylesheet" />
-  <link href="slick-carousel/slick/slick-theme.css"  refl="stylesheet" />
-
-
-
-  <base href="%PUBLIC_URL%" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>austinscode </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Screen</title>
 <style>
   body {
     margin: 0;
@@ -41,11 +17,11 @@
   }
 
   .loader {
-    border: 16px solid #f3f3f3;
+    border: calc(10vw - 2px) solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
-    width: 120px;
-    height: 120px;
+    border-top: calc(10vw - 2px) solid #3498db;
+    width: calc(20vw - 4px);
+    height: calc(20vw - 4px);
     animation: spin 2s linear infinite;
   }
 
@@ -60,9 +36,6 @@
 </style>
 </head>
 <body>
- <noscript>Hi! This is Austin. You need to enable your web's javascript capability to run my app.</noscript>
-  <div id="root"> SERVER LOADING.. </div>
-
   <div id="loadingScreen" class="loader"></div>
 
   <!-- Your page content goes here -->
