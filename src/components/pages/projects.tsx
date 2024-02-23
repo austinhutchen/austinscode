@@ -103,7 +103,7 @@ const projectsData: Project[] = [
     title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
-      "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an ESP8266 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
+      "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an arduino uno r3 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
     images: [],
     video: ["butterfly"],
   },
@@ -111,7 +111,7 @@ const projectsData: Project[] = [
     title: "MALLOC() ALGORITHM (C/BASH)",
     link: "https://github.com/austinhutchen/cMalloc",
     description:
-      " All computers are nothing without the memory afforded to them by RAM, and a good algorithm to properly retrieve and store data in this land of RAM. As such, this is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and several embedded linux projects.",
+      " This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and several embedded linux projects.",
     images: ["malloc"],
     video: [],
   },
@@ -129,7 +129,7 @@ const projectsData: Project[] = [
     title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
-      "My custom Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery that can be switched into deep sleep remotely.",
+      "My custom Automatix Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery and a remote deep sleep switch.",
     images: [],
     video: ["PLANT_WATERER"],
   },
@@ -138,7 +138,7 @@ const projectsData: Project[] = [
     title: "ZELDA TERMINAL GAME (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
-      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a CLI vector display matrix. Used to practice foundations of object-oriented programming and memory reference.",
+      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a CLI vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
     images: ["game"],
     video: [],
 
@@ -259,7 +259,6 @@ export const Projects: React.FC = () => (
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
-
         <ProjectList />
       </m.div>
     </LazyMotion>
