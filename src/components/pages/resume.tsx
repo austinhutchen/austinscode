@@ -149,9 +149,9 @@ export const Resume: React.FC = () => {
                             <b><i> FULL RESUME ( in progress)</i></b>
                         </h1>
                         <br />
-                        <div className="resume">
+
                             <img src={resume} />
-                        </div>
+
 
 
 
