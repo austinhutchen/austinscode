@@ -1,10 +1,12 @@
 import React from 'react';
 import { Nav } from "../common/navbar.tsx";
 import { LazyMotion, domAnimation, m } from "framer-motion";
+const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
 
 
-const resume = process.env.PUBLIC_URL + '/public/fast_imgs/Resume.webp';
+const resume = getImgPath('Resume.webp');
+
 
 
 export const Resume: React.FC = () => {
@@ -149,8 +151,10 @@ export const Resume: React.FC = () => {
                             <b><i> FULL RESUME ( in progress)</i></b>
                         </h1>
                         <br />
-
-                            <img src={resume} />
+<div className="resume">
+<img src={resume} />
+</div>
+                            
 
 
 

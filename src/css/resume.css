@@ -26,6 +26,6 @@
 }
 .resume {
     margin: 0 auto;
-    max-height: 100% !important;
+    max-height: 25svh !important;
     width: 65svh;
 }
