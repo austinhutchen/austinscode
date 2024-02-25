@@ -8,6 +8,10 @@ const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
 const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
 const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
 const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
+const about = process.env.PUBLIC_URL + '/fast_imgs/About.png';
+const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.png';
+const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.png';
+const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
 export const Nav: React.FC = () => {
   const nav = useNavigate();
 
@@ -15,7 +19,7 @@ export const Nav: React.FC = () => {
     nav(path);
   };
   const icon_size = '40svh';
-  const button_styles="btn btn-outline-primary btn-sm";
+  const button_styles="btn btn-outline-success btn-sm";
   return (
     <>
 
@@ -31,13 +35,29 @@ export const Nav: React.FC = () => {
             </a>
           </button>
                   <button className={button_styles} type="button" onClick={() => navigateTo('/AboutMe')}>
-            About
+ <img
+              src={about}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
+
           </button>
           <button className={ button_styles} type="button" onClick={() => navigateTo('/Projects')}>
-            Projects
+        <img
+              src={projects}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            />
           </button>
           <button className= {button_styles} type="button" onClick={() => navigateTo('/Resume')}>
-            Resume
+              <img
+              src={resume}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            /> 
           </button>
 
 
@@ -46,11 +66,14 @@ export const Nav: React.FC = () => {
             type="button"
             onClick={() => navigateTo('/Feedback')}
           >
-            Feedback
+             <img
+              src={feedback}
+              width={icon_size}
+              height={icon_size}
+              className="nav-icon"
+            /> 
           </button>
-          <button className={button_styles} type="button" onClick={() => navigateTo('/Gallery')}>
-            Tutorials
-          </button>
+        
 
 
 
