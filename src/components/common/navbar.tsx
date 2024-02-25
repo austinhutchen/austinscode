@@ -10,7 +10,7 @@ const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
 const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
 const about = process.env.PUBLIC_URL + '/fast_imgs/About.png';
 const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.png';
-const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.png';
+const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
 const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
 export const Nav: React.FC = () => {
   const nav = useNavigate();
