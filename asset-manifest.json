@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://austinhutchen.github.io/austinscode/static/css/main.d8f167ad.css",
-    "main.js": "https://austinhutchen.github.io/austinscode/static/js/main.f794b1ff.js",
+    "main.js": "https://austinhutchen.github.io/austinscode/static/js/main.263a0535.js",
     "static/js/916.386f480a.chunk.js": "https://austinhutchen.github.io/austinscode/static/js/916.386f480a.chunk.js",
     "static/media/border.png": "https://austinhutchen.github.io/austinscode/static/media/border.deb7022333084757fa4b.png",
     "static/media/slick.svg": "https://austinhutchen.github.io/austinscode/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -10,11 +10,11 @@
     "static/media/slick.woff": "https://austinhutchen.github.io/austinscode/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://austinhutchen.github.io/austinscode/index.html",
     "main.d8f167ad.css.map": "https://austinhutchen.github.io/austinscode/static/css/main.d8f167ad.css.map",
-    "main.f794b1ff.js.map": "https://austinhutchen.github.io/austinscode/static/js/main.f794b1ff.js.map",
+    "main.263a0535.js.map": "https://austinhutchen.github.io/austinscode/static/js/main.263a0535.js.map",
     "916.386f480a.chunk.js.map": "https://austinhutchen.github.io/austinscode/static/js/916.386f480a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8f167ad.css",
-    "static/js/main.f794b1ff.js"
+    "static/js/main.263a0535.js"
   ]
 }
