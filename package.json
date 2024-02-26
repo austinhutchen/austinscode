@@ -58,7 +58,7 @@
     "TagCloud": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0",
     "react-icons": "^5.0.1",

@@ -23,7 +23,7 @@ export const Nav: React.FC = () => {
   return (
     <>
 
-      <nav className="navbar  navbar-expand-lg navbar-dark bg-dark justify-content-center " >
+      <nav className="navbar  navbar-expand-lg navbar navbar-dark bg-dark justify-content-center" >
         <div >
   <button className= "btn btn-outline-warning btn-sm " type="button" onClick={() => navigateTo('/')}>
             <a>
