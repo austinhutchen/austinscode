@@ -213,13 +213,15 @@ const ProjectList: React.FC = () => (
 );
 
 const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
-  <div className="projContent">
+  <>
+
 
   <li>
     <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
       {project.title}
     </a>
     <br />
+  <div className="projContent">
       {project.images && project.images.map((imageName, imgIndex) => (
         <React.Fragment key={imgIndex}>
 
@@ -244,10 +246,13 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
         </React.Fragment>
       ))}
 
+ </div>
     <b>{project.description}</b>
-  </li>
-  </div>
+    </li>
 
+
+ 
+</>
 ));
 
 export const Projects: React.FC = () => (
