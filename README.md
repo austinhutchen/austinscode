@@ -1,4 +1,4 @@
-<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Lime</i> <b> 12.2 ☕️🎉👨🏾‍💻 </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Lime</i> <b> 12.3 ☕️🎉👨🏾‍💻 </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/>  <i> Lime </i>Bundle Size: <b> 120KB </b>
 <br/> Link: <b> https://austinscode.vercel.app </b>
