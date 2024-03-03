@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from '../common/navbar.tsx';
+import { Nav } from '../common/navbar';
 
 export const Visualizer: React.FC = () => {
   return (

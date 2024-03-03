@@ -1,0 +1,2 @@
+exec pnpm upgrade --latest
+```

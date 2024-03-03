@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from '../common/navbar.tsx';
+import { Nav } from '../common/navbar';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
@@ -17,7 +17,7 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
         <img
           src={src}
           className="format-img"
-          style={{ maxheight: "60svh", maxWidth: "60svh" }}
+          style={{ maxHeight: "60svh", maxWidth: "60svh" }}
           loading="eager"
           alt={`Image_${index}`}
         />

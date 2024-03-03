@@ -74,17 +74,22 @@ export const Nav: React.FC = () => {
             /> 
           </button>
         
-
-
-
-          <a className="navbar-brand" href="https://github.com/austinhutchen" target="_blank" >
-            <img
+<a href= "https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer"  >
+          <button
+            className={button_styles}
+            type="button"
+            onClick={() => navigateTo("https://github.com/austinhutchen")}
+          >
+	
+             <img
               src={github}
               width={icon_size}
               height={icon_size}
               className="nav-icon"
-            />
-          </a>
+            /> 
+          </button>
+
+</a>
           <a className="navbar-brand" href="https://www.instagram.com/austinscode/" target="_blank"  >
             <img
               src={instagram}

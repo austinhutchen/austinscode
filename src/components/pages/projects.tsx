@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { motion, LazyMotion, m, domAnimation } from "framer-motion";
-import { Nav } from "../common/navbar.tsx";
+import { Nav } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
@@ -60,7 +60,7 @@ const projectsData: Project[] = [
     title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
     link: "https://github.com/austinhutchen/WledStream.git",
     description:
-      "Used a Sound-reactive low-power ESP8266, HTTP proxy, I2S MEMS microphone breakout & 16x16 LED matrix to display various animations using a WLED binary flashed directly onto the esp8266. Also pictured is a later espressif esp32-based low power portable version, wiht an 8x8 matrix and an option for battery power. Images could be uploaded and display could be communicated with wirelessly over a wifi app, an HTTP proxy or with an infrared reciever, and even respond with different bounce effects to music (Using the Fast Fourier Transform Signal Decomposition algorithm!)",
+      "I used a sound-reactive low-power ESP8266 along with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded, and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music, utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
     images: [],
     video: ["wled2","matrix"],
   },
@@ -130,7 +130,7 @@ const projectsData: Project[] = [
     title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
-      "My custom Automatix Plant Irrigation System, a cheap and power-efficient ESP-8266 powered system that reads in data from a custom soil sensor.It then checks the capacitive sensor moisture threshold and chooses whether or not to pump the water using a relay and water tube into the plant. I aim to upgrade this project with a solar-powered portable battery and a remote deep sleep switch.",
+      "My custom Automatix Plant Irrigation System is a low-cost and power-efficient ESP-8266 powered system that reads data from a custom soil sensor. It then checks the capacitive sensor moisture threshold and decides whether to pump water using a relay and water tube into the plant. I plan to upgrade this project with a solar-powered portable battery and a remote deep sleep switch",
     images: [],
     video: ["PLANT_WATERER"],
   },
@@ -225,7 +225,7 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
       {project.images && project.images.map((imageName, imgIndex) => (
         <React.Fragment key={imgIndex}>
 
-          <img src={images[imageName]} height="160vh" maxHeight="100%" maxWidth="100%" width="auto" loading="eager" alt={project.title} />
+          <img src={images[imageName]} height="160vh" width="auto" loading="eager" alt={project.title} />
           <br />
         </React.Fragment>
       ))}
@@ -235,12 +235,12 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
             src={images[videoName]}
             loop
             muted
-            defaultMuted
             autoPlay
             playsInline
             onContextMenu={(e) => e.preventDefault()}
-            type="video/mp4"
-            height="160vh" maxHeight="100%" maxWidth="100%" width="auto"
+            typeof="video/mp4"
+            height="160vh"  
+            width="auto"
             preload="metadata"
           />
         </React.Fragment>
