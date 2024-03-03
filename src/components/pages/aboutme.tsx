@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Nav } from "../common/navbar.tsx";
+import { Nav } from "../common/navbar";
 import { LazyMotion, domAnimation, motion } from "framer-motion";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
@@ -17,7 +17,7 @@ const nature = process.env.PUBLIC_URL + '/fast_imgs/nature.webp';
 const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
 
 // Define image and video URLs directly in the keys array
-const keys: KeyItem[] = [
+const keys = [
   {
     desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
     url: me,
