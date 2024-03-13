@@ -8,7 +8,7 @@ import { Nav } from "../common/navbar";
 import { Spinner } from '../common/symbols';
 
 const TextSphere: React.FC = () => {
-  const containerRef = useRef<HTMLSpanElement>(null);
+  const containerRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -47,10 +47,14 @@ const TextSphere: React.FC = () => {
       lockY: true,
     };
 
-    TagCloud(container, texts, options);
+    if (container) {
+      TagCloud(container, texts, options);
+    }
 
     return () => {
-      TagCloud(container, [], {});
+      if (container) {
+        TagCloud(container, [], {});
+      }
     };
   }, []);
 
@@ -62,6 +66,7 @@ const TextSphere: React.FC = () => {
     </div>
   );
 };
+
 
 export const Landing: React.FC = () => {
   const nav = useNavigate();

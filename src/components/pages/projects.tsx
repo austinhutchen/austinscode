@@ -42,7 +42,8 @@ const images: Images = {
   nano2: getImgPath('nano2.mp4'),
   firecam: getImgPath('firecam.jpg'),
   malloc: getImgPath('malloc.png'),
-  matrix: getImgPath('matrix.mp4')
+  matrix: getImgPath('matrix.mp4'),
+  sine: getImgPath('sinMic.mp4')
   // Add other images here
 };
 
@@ -62,7 +63,7 @@ const projectsData: Project[] = [
     description:
       "I used a sound-reactive low-power ESP8266 along with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded, and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music, utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
     images: [],
-    video: ["wled2","matrix"],
+    video: ["wled2", "matrix"],
   },
   {
     title: "CALCULATOR APP (DART/FLUTTER/C)",
@@ -83,6 +84,7 @@ const projectsData: Project[] = [
     video: [],
 
   },
+
   {
     title: "MINI KERNEL SHELL (C/BASH)",
     link: "https://github.com/austinhutchen/shell.git",
@@ -99,6 +101,14 @@ const projectsData: Project[] = [
     images: [], // Insert your image paths here
     video: ["gesture", "nano2"],
 
+  },
+  {
+    title: "MICROPHONE SOUND SPECTRUM ANALYZER (ANGULAR/TYPESCRIPT)",
+    link: "https://github.com/austinhutchen/wavPlay.git",
+    description:
+      "A simple microphone spectrum analyzer that displays the soundwaves of your device's microphone input, using the webMedia API, html 2-d canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
+    images: [],
+    video: ["sine"],
   },
   {
     title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
@@ -216,43 +226,43 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
   <>
 
 
-  <li>
-    <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
-      {project.title}
-    </a>
-    <br />
-  <div className="projContent">
-      {project.images && project.images.map((imageName, imgIndex) => (
-        <React.Fragment key={imgIndex}>
+    <li>
+      <a className="hlight-mini" style={{ fontSize: "1.1em" }} href={project.link} target="_blank" rel="noopener noreferrer">
+        {project.title}
+      </a>
+      <br />
+      <div className="projContent">
+        {project.images && project.images.map((imageName, imgIndex) => (
+          <React.Fragment key={imgIndex}>
 
-          <img src={images[imageName]} height="160vh" width="auto" loading="eager" alt={project.title} />
-          <br />
-        </React.Fragment>
-      ))}
-      {project.video && project.video.map((videoName, videoIndex) => (
-        <React.Fragment key={videoIndex}>
-          <video
-            src={images[videoName]}
-            loop
-            muted
-            autoPlay
-            playsInline
-            onContextMenu={(e) => e.preventDefault()}
-            typeof="video/mp4"
-            height="160vh"  
-            width="auto"
-            preload="metadata"
-          />
-        </React.Fragment>
-      ))}
+            <img src={images[imageName]} height="160vh" width="auto" loading="eager" alt={project.title} />
+            <br />
+          </React.Fragment>
+        ))}
+        {project.video && project.video.map((videoName, videoIndex) => (
+          <React.Fragment key={videoIndex}>
+            <video
+              src={images[videoName]}
+              loop
+              muted
+              autoPlay
+              playsInline
+              onContextMenu={(e) => e.preventDefault()}
+              typeof="video/mp4"
+              height="160vh"
+              width="auto"
+              preload="metadata"
+            />
+          </React.Fragment>
+        ))}
 
- </div>
-    <b>{project.description}</b>
+      </div>
+      <b>{project.description}</b>
     </li>
 
 
- 
-</>
+
+  </>
 ));
 
 export const Projects: React.FC = () => (
