@@ -22,7 +22,7 @@ interface ProjectItemProps {
 }
 
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
-
+const getSubDir = (projName: string) => `/sub/subProj/${projName}`;
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
@@ -84,14 +84,13 @@ const projectsData: Project[] = [
     video: [],
 
   },
-
   {
-    title: "MINI KERNEL SHELL (C/BASH)",
-    link: "https://github.com/austinhutchen/shell.git",
+    title: "MICROPHONE SOUND SPECTRUM ANALYZER (ANGULAR/TYPESCRIPT)",
+    link: "https://github.com/austinhutchen/wavPlay.git",
     description:
-      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
-    images: ["shell"],
-    video: [],
+      "A simple microphone spectrum analyzer that displays the soundwaves of your device's microphone input using the Typescript webMedia API, html 2-d canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
+    images: [],
+    video: ["sine"],
   },
   {
     title: "ARDUINO NANO BLE GESTURE SENSOR (C++)",
@@ -103,13 +102,15 @@ const projectsData: Project[] = [
 
   },
   {
-    title: "MICROPHONE SOUND SPECTRUM ANALYZER (ANGULAR/TYPESCRIPT)",
-    link: "https://github.com/austinhutchen/wavPlay.git",
+    title: "MINI KERNEL SHELL (C/BASH)",
+    link: "https://github.com/austinhutchen/shell.git",
     description:
-      "A simple microphone spectrum analyzer that displays the soundwaves of your device's microphone input, using the webMedia API, html 2-d canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
-    images: [],
-    video: ["sine"],
+      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
+    images: ["shell"],
+    video: [],
   },
+ 
+  
   {
     title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
     link: "https://github.com/austinhutchen/austinscode",
