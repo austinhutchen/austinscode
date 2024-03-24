@@ -5,8 +5,8 @@
 */
 
 /*!
- * TagCloud.js v2.4.0
- * Copyright (c) 2016-2023 @ Cong Min
+ * TagCloud.js v2.5.0
+ * Copyright (c) 2016-2024 @ Cong Min
  * MIT License - https://github.com/mcc108/TagCloud
  */
 
@@ -51,7 +51,7 @@
  */
 
 /**
- * @remix-run/router v1.15.2
+ * @remix-run/router v1.15.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -62,7 +62,7 @@
  */
 
 /**
- * React Router v6.22.2
+ * React Router v6.22.3
  *
  * Copyright (c) Remix Software Inc.
  *
