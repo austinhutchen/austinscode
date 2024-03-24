@@ -1,9 +1,10 @@
 /* Shared styles for .hlight and .hlight-mini */
 .hlight, .hlight-mini {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, green 65%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(0, 128, 0, 0.5) 65%); /* Increase the opacity of the green color */
   display: inline;
-  color: cornsilk;
-  text-shadow: 2px 3px 5px rgba(0.8, 0.8, 0.8, 0.8);
+  color: rgba(245, 245, 220, 1); /* Make the text color smoother */
+
+  text-shadow: 1px 1px 3px rgba(0.8, 0.8, 0.8, 1); /* Make the text shadow smoother */
 }
 
 /* Common styles for h4 and h3 */
@@ -19,7 +20,8 @@ h4, h3 {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
-  text-shadow: 5px 5px 5px rgba(0.9, 0.9, 0.9, 0.9);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Use a darker color and larger blur radius */
+
 }
 
 /* Styling for fieldset and legend */

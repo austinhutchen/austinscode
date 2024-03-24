@@ -7,9 +7,6 @@ a:visited {
   color: #f1b963;
 }
 
-.navbar-toggler-icon {
-  animation: linesIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
 @keyframes linesIn {
   0% {
@@ -21,25 +18,6 @@ a:visited {
   }
 }
 
-.custom-navbar {
-
-  background-color: rgba(3, 3, 3, 0.05);
-  /* Semi-opaque black background */
-
-  /* Keep the navbar at the top */
-  width: 50%;
-  /* Full width */
-  margin:auto;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  top: 0;
-  /* Position at the top */
-  animation: slideIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  z-index: 1000;
-  /* Ensure the navbar is above other elements */
-  border-radius: 2svw;
-}
 
 @keyframes slideIn {
   0% {
@@ -57,7 +35,43 @@ a:hover {
   color: hotpink;
 }
 
+.navbar-toggler-icon {
+  animation: linesIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
 
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 100%; /* Add this line */
+
+}
+
+.custom-navbar {
+  display: flex;
+  margin: auto;
+  background-color: rgba(3, 3, 3, 0.055);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  /* Position at the top */
+  animation: slideIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: 1000;
+  max-width: 100%;
+  /* Ensure the navbar is above other elements */
+  border-radius: 8vw;
+}
+@media (max-width: 600px) {
+  .navBrand {
+    font-size: 0.1em; /* Reduce the font size */
+  }
+  .navbar-header, .custom-navbar,.navBrand {
+    max-width: 80%; /* Reduce the max-width */
+  }
+}
 .navBrand {
   background: linear-gradient(to right, lightgreen, lightblue);
   -webkit-background-clip: text;
@@ -66,32 +80,17 @@ a:hover {
   font-weight: bold;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /* green with 0.8 opacity */
-  display: flex;
-  font-size: 2.0em;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a:active {
   color: blue;
 }
 
-.navbar-toggler {
-  border: none !important;
-}
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
-}
 
-.navbar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 56svh;
-  margin: auto;
-}
+
 
 .nav-item {
   color: rgba(0, 128, 0, 0.8);
@@ -108,19 +107,16 @@ a:active {
 }
 
 /* Styles for #name */
-.name {
+#name {
   text-align: center;
   font-weight: bold;
-  padding-top: 1.2em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: rgba(202, 202, 14, 0.8);
-  text-shadow: 5px 8px 7px rgba(0.5, 0.5, 0.5, 0.9);
+  color: rgba(202, 202, 14, 1);
+  text-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
+  font-size:x-large;
 }
 
-.navbar {
-  border-radius: 2svw;
-  border-width: 2svw;
-}
+
 
 /* Styles for .ribbon-highlight */
 .ribbon-highlight {
@@ -132,7 +128,7 @@ a:active {
   z-index: -1;
   left: -0.5em;
   top: 0.1em;
-  border-width: 0.5em;
+  border-width: 1em;
   border-style: solid;
   border-color: lightgreen;
   position: absolute;
