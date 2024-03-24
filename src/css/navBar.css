@@ -113,6 +113,7 @@ a:hover {
   color: rgba(#fff, #fff, #fff, 0.9);
   /* green with 0.8 opacity */
   display: flex;
+  font-size: 1.6em;
   justify-content: space-between;
   align-items: center;
   text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
