@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import TagCloud from "TagCloud";
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import "../../css/TextSphere.css";
-import { Nav } from "../common/navbar";
+import { NavBar } from "../common/navbar";
 import { Spinner } from '../common/symbols';
 
 const TextSphere: React.FC = () => {
@@ -74,8 +74,8 @@ export const Landing: React.FC = () => {
 
   return (
     <LazyMotion features={domAnimation}>
-      <Nav />
-      <h2 className="hlight-mini" style={{ paddingTop: '6px', fontSize: '4.0svh' }}>
+      <NavBar />
+      <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
         <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>

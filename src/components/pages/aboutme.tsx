@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Nav } from "../common/navbar";
+import { NavBar } from "../common/navbar";
 import { LazyMotion, domAnimation, motion } from "framer-motion";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
@@ -156,7 +156,7 @@ const About: React.FC = () => {
 export const Aboutme: React.FC = () => {
   return (
     <>
-      <Nav />
+      <NavBar />
       <LazyMotion features={domAnimation}>
         <motion.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
           <h1 className="hlight">

@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import { motion, LazyMotion, m, domAnimation } from "framer-motion";
-import { Nav } from "../common/navbar";
+import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
@@ -22,7 +22,7 @@ interface ProjectItemProps {
 }
 
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
-const getSubDir = (projName: string) => `/sub/subProj/${projName}`;
+//const getSubDir = (projName: string) => `/sub/subProj/${projName}`;
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
@@ -271,7 +271,7 @@ export const Projects: React.FC = () => (
 
     <LazyMotion features={domAnimation}>
 
-      <Nav />
+      <NavBar />
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>

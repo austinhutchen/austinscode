@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { AnimatedRoutes } from "./components/base/AnimatedRoutes";
 import { HashRouter } from "react-router-dom";
-import React  from 'react';
+import './App.css';
 // main app
 
 class MainApp extends Component {

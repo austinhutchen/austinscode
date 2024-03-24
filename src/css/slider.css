@@ -1,61 +1,69 @@
  /* PHONE styles */
-@media all and (max-device-width: 767px) {
-  #name {
-    font-size: 1.9em;
-  }
-  .sc p {
-    font-size: 0.60em;
-  }
-  .sc img,
-  .sc video {
+ @media all and (max-device-width: 767px) {
+   #name {
+     font-size: 1.9em;
+   }
+
+   .sc p {
+     font-size: 0.60em;
+   }
+
+   .sc img,
+   .sc video {
      height: 43svh;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 45svh;
-    border-radius: 400 / 2 ;
-   border: 0.26dvh solid #0BA ; 
-  }
-}
+     margin: 0 auto;
+     max-width: 100%;
+     max-height: 45svh;
+     border-radius: 400 / 2;
+     border: 0.26dvh solid #0BA;
+   }
+ }
 
-/* Default styles */
-@media not all and (max-device-width: 767px) {
-  #name {
-    font-size: 2.4em;
-  }
-  .sc p {
-    font-size: 1.25em;
-  }
-  .sc img,
-  .sc video {
-    height: 44vh;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 50svh;
-    border-radius: 400 / 2 ;
-   border: 0.26dvh solid #0BA ; 
-    }
-}
-.projects img,video{
-  max-width: 100%;
-  max-height: 50svh;
-   border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA ; 
-}
-.accredidations img,video{
-  max-width: 100%;
-  max-height: 50svh;
-   border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA ; 
+ /* Default styles */
+ @media not all and (max-device-width: 767px) {
+   #name {
+     font-size: 2.4em;
+   }
 
-}
-.resume img{
-  max-width: 100%;
-  max-height: 50svh;
+   .sc p {
+     font-size: 1.25em;
+   }
+
+   .sc img,
+   .sc video {
+     height: 44vh;
+     margin: 0 auto;
+     max-width: 100%;
+     max-height: 50svh;
+     border-radius: 400 / 2;
+     border: 0.26dvh solid #0BA;
+   }
+ }
+
+ .projects img,
+ video {
+   max-width: 100%;
+   max-height: 50svh;
    border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA ; 
+   border: 0.26dvh solid #0BA;
+ }
+
+ .accredidations img,
+ video {
+   max-width: 100%;
+   max-height: 50svh;
+   border-radius: 400 / 2;
+   border: 0.26dvh solid #0BA;
+
+ }
+
+ .resume img {
+   max-width: 100%;
+   max-height: 50svh;
+   border-radius: 400 / 2;
+   border: 0.26dvh solid #0BA;
    height: 55svh;
- max-width: 100%;
- 
-    margin: 0 auto;
-}
+   max-width: 100%;
 
+   margin: 0 auto;
+ }

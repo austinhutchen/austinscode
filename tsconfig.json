@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "react", // Use "react" for JSX transformation
+    "jsx": "react-jsx", // Use "react" for JSX transformation
     "esModuleInterop": true, // Allow default imports from modules with a default export, even if there's no default export
     "strict": true, // Enable all strict type-checking options
-    "module": "esnext", // Specify module code generation
+    "module": "commonjs", // Specify module code generation
     "target": "es5", // Specify ECMAScript target version
     "moduleResolution": "node", // Specify module resolution strategy
     "resolveJsonModule": true, // Enable importing JSON modules

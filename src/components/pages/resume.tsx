@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from "../common/navbar";
+import { NavBar } from "../common/navbar";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
@@ -12,7 +12,7 @@ const resume = getImgPath('Resume.webp');
 export const Resume: React.FC = () => {
     return (
         <div>
-            <Nav />
+            <NavBar />
             <LazyMotion features={domAnimation}>
                 <m.div initial={{ width: 0 }} animate={{ width: "100%" }}
                     exit={{ x: window.innerWidth, transition: { duration: 0 } }}>

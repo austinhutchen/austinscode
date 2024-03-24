@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from '../common/navbar';
+import { NavBar } from '../common/navbar';
 import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
@@ -33,7 +33,7 @@ const data = [inclusion,support]
 
   return (
     <>
-      <Nav />
+      <NavBar />
       <div className="accreditations">
         <LazyMotion features={domAnimation}>
           <m.div
