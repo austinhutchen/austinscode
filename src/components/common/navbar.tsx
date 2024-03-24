@@ -24,7 +24,7 @@ export const NavBar: React.FC = () => {
       <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }} >
         <div className="navbar-header">
 
-          <NavbarBrand className='navBrand' href="/"><h1 >Austin Hutchen </h1> </NavbarBrand>
+          <NavbarBrand className='navBrand' href="/">Austin Hutchen </NavbarBrand>
 
           <NavbarToggler className="navbar-toggler" onClick={toggle} />
         </div>
