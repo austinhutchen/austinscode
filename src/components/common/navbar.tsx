@@ -61,6 +61,12 @@ export const NavBar: React.FC = () => {
                 Feedback
               </Button>
             </NavItem>
+              <NavItem className="nav-item">
+              <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
+                <img src={feedback} width={icon_size} height={icon_size}  />
+                Gallery
+              </Button>
+            </NavItem>
             <NavItem className="nav-item" style={{ border: '1px solid white' }}>
               <a  href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size}  />
