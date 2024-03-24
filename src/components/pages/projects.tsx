@@ -267,11 +267,13 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
 ));
 
 export const Projects: React.FC = () => (
+  <>
+  <NavBar />
   <div className="hlight-mini">
 
     <LazyMotion features={domAnimation}>
 
-      <NavBar />
+
       <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
@@ -280,5 +282,6 @@ export const Projects: React.FC = () => (
       </m.div>
     </LazyMotion>
   </div>
+  </>
 );
 
