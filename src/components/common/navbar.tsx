@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Collapse, Navbar, Nav, NavItem,NavbarBrand,NavbarToggler, Button } from 'reactstrap';
+import { Collapse, Navbar, Nav, NavItem, NavbarBrand, NavbarToggler, Button } from 'reactstrap';
 import "../../css/navBar.css";
 export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +22,12 @@ export const NavBar: React.FC = () => {
   return (
     <div className="custom-navbar">
       <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }} >
-      <NavbarBrand  href="/"><h1 className='navBrand'>Austin Hutchen </h1> </NavbarBrand>
+        <div className="navbar-header">
 
-      <NavbarToggler onClick={toggle} />
+          <NavbarBrand className='navBrand' href="/"><h1 >Austin Hutchen </h1> </NavbarBrand>
+
+          <NavbarToggler onClick={toggle} />
+        </div>
 
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto d-flex justify-content-center align-items-center" navbar>
@@ -64,7 +67,7 @@ export const NavBar: React.FC = () => {
                 Github
               </a>
             </NavItem>
-            <NavItem className="nav-item"> 
+            <NavItem className="nav-item">
               <a style={{ border: '1px solid white', display: 'inline-block', padding: '10px' }} href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
                 Instagram
