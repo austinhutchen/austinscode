@@ -26,7 +26,7 @@ export const NavBar: React.FC = () => {
 
           <NavbarBrand className='navBrand' href="/"><h1 >Austin Hutchen </h1> </NavbarBrand>
 
-          <NavbarToggler onClick={toggle} />
+          <NavbarToggler className="navbar-toggler" onClick={toggle} />
         </div>
 
         <Collapse isOpen={isOpen} navbar>
