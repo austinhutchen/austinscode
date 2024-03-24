@@ -6,30 +6,130 @@ a:link {
 a:visited {
   color: #f1b963;
 }
+.navbar-toggler-icon {
+  animation: linesIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
+@keyframes linesIn {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.custom-navbar{
+  background-color: rgba(0, 0, 0, 0.005); /* Semi-opaque black background */
+  position: sticky; /* Keep the navbar at the top */
+  width: 100%; /* Full width */
+  align-items: center;
+  display:flex;
+  justify-content: center;
+  top: 0; /* Position at the top */
+  animation: slideIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  border-radius: 2svw;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 a:hover {
   color: hotpink;
+}
+.hamburger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2), .hamburger span:nth-child(3) {
+  top: 9px;
+}
+
+.hamburger span:nth-child(4) {
+  top: 18px;
+}
+
+.hamburger.open span:nth-child(1) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+  top: 9px;
+  width: 0%;
+  left: 50%;
+}
+.navBrand{
+  color: rgba(#fff, #fff, #fff, 0.9) ; /* green with 0.8 opacity */
+  text-align: center ;
+  align-items: center;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+
 }
 
 a:active {
   color: blue;
 }
-
+.nav-item {
+  color: rgba(0, 128, 0, 0.8); /* green with 0.8 opacity */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow */
+}
 /* Styles for .banner */
 .banner {
   transform: perspective(500);
-  background-image: linear-gradient(60deg, #717D7E, #19814C);
   border-radius: 4vw;
 }
 
 /* Styles for #name */
-#name {
+.name {
   text-align: center;
   font-weight: bold;
-  color: yellowgreen;
-  text-shadow: 5px 5px 7px rgba(0.5, 0.5, 0.5, 0.5);
+  padding-top: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(202, 202, 14,0.8);
+  text-shadow: 5px 8px 7px rgba(0.5, 0.5, 0.5, 0.9);
 }
-
+.navbar{
+  border-radius: 2svw;
+  border-width: 2svw;
+}
 /* Styles for .ribbon-highlight */
 .ribbon-highlight {
   position: relative;
@@ -56,4 +156,12 @@ a:active {
 .nav-icon {
   border-image-source: url('../../public/fast_imgs/border.png');
   border-image-width: 6svh ;
+}
+
+.intro {
+  margin-top: 0.3em;
+  color: #F3ECEC; /* Lighter color for better contrast against purple */
+  font-size: 1.0rem; /* Use rem units for your font sizes */
+border-width: 400/2;
+  text-shadow: gold 3px 3px 5px; /* Dark text shadow for contrast */ /* Adjusted text-shadow for better readability */
 }

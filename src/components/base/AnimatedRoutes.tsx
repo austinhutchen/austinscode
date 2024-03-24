@@ -12,7 +12,7 @@ export const AnimatedRoutes: React.FC = () => {
     const location = useLocation();
     return (
         <div className="App">
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence mode='sync'>
                 <Routes location={location}>
                     <Route path="" element={<Landing />} />
                     <Route path="/Resume" element={<Resume />} />

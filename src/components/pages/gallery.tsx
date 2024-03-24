@@ -1,10 +1,10 @@
 import React from 'react';
-import { Nav } from '../common/navbar';
+import { NavBar } from '../common/navbar';
 
 export const Visualizer: React.FC = () => {
   return (
     <>
-      <Nav />
+      <NavBar />
       <div id="chaos-container" className="jumbotron">
         <h1 className="hlight">Web Gallery</h1>
         <p className="lead"> <b> A gallery with live demos of more projects and tutorials, by me! </b> </p>
