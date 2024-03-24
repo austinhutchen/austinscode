@@ -20,8 +20,8 @@ export const NavBar: React.FC = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="custom-navbar">
-      <Navbar style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }} >
+    <div className="navbar">
+      <Navbar className="custom-navbar" >
         <div className="navbar-header">
 
           <NavbarBrand className='navBrand' href="/">Austin Hutchen </NavbarBrand>
