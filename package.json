@@ -26,6 +26,7 @@
     "react-scroll": "^1.9.0",
     "reactstrap": "^9.2.2",
     "slick-carousel": "^1.8.1",
+    "three": "^0.162.0",
     "vercel": "^33.6.1",
     "web-vitals": "^3.5.2"
   },
@@ -59,6 +60,7 @@
     "@babel/eslint-parser": "^7.24.1",
     "@types/node": "^20.11.30",
     "@types/react-slick": "^0.23.13",
+    "@types/three": "^0.162.0",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "TagCloud": "^2.5.0",
