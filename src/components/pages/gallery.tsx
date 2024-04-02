@@ -1,35 +1,35 @@
-import React, { useRef, useEffect }  from 'react';
+import React, { useRef, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 
 
 export const Visualizer: React.FC = () => {
   return (
-    <>
+    <div className='visualizer'>
       <NavBar />
-      <div id="chaos-container" className="jumbotron">
-        <h1 className="hlight">Web Gallery</h1>
-        <p className="lead"> <b> A gallery with live demos of more projects and tutorials, by me! </b> </p>
+      <div >
+        <h1 className="hlight"> Welcome to my fun page!</h1>
+        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
 
         <p className="lead">
           <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p>
 
-        <hr className="my-4"/>
+
+
+
+        <hr className="my-4" />
         <b>
-          <h2> Angular Webcam Streaming interface</h2>
+          <h2 className="hlight"> 4-DIMENSIONAL TESSERACT</h2>
 
         </b>
-
-        <hr className="my-4"/>
-        <b>
-          <h2> 4-DIMENSIONAL TESSERACT</h2>
-
-        </b>
-    <hr/>
-    <Tesseract/>
+        <p style={{fontSize:"1.2em", fontFamily:"-moz-initial"}} >
+          A tesseract is a four-dimensional analog to the cube. It is to a cube as a cube is to a square. Just as the surface of a cube consists of six square faces, the hypersurface of a tesseract consists of eight cubical cells. The tesseract is one of the six convex regular 4-polytopes. Here, I programmed a visualizer using three.js, a three-dimensional software that rotates a cube to project all of its faces.
+        </p>
+        <br />
+        <Tesseract />
       </div>
-    </>
+    </div>
   );
 };
 
@@ -48,18 +48,18 @@ const Tesseract: React.FC = () => {
     ref.current.appendChild(renderer.domElement);
 
     const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
+    const edges = new THREE.EdgesGeometry(geometry);
+    const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 
-    scene.add(cube);
+    scene.add(line);
 
     camera.position.z = 5;
 
     const animate = function () {
       requestAnimationFrame(animate);
 
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+      line.rotation.x += 0.01;
+      line.rotation.y += 0.01;
 
       renderer.render(scene, camera);
     };
@@ -67,7 +67,7 @@ const Tesseract: React.FC = () => {
     animate();
   }, []);
 
-  return <div ref={ref} />;
+  return <div className="tesseract" ref={ref} />;
 };
 
 export default Tesseract;

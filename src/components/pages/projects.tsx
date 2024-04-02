@@ -26,7 +26,7 @@ const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/$
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
-  maps: getImgPath('maps.webp'),
+  maps: getImgPath('maps.png'),
   gesture: getImgPath('gesture.mp4'),
   PLANT_WATERER: getImgPath('PLANT_KERNEL.mp4'),
   encryptc: getImgPath('encryptc.webp'),
@@ -109,8 +109,8 @@ const projectsData: Project[] = [
     images: ["shell"],
     video: [],
   },
- 
-  
+
+
   {
     title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
     link: "https://github.com/austinhutchen/austinscode",
@@ -120,6 +120,14 @@ const projectsData: Project[] = [
     video: ["butterfly"],
   },
   {
+    title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
+    link: "https://github.com/austinhutchen/plant_interface.git",
+    description:
+      "My custom Automatix Plant Irrigation System is a low-cost and power-efficient ESP-8266 powered system that reads data from a custom soil sensor. It then checks the capacitive sensor moisture threshold and decides whether to pump water using a relay and water tube into the plant. I plan to upgrade this project with a solar-powered portable battery and a remote deep sleep switch",
+    images: [],
+    video: ["PLANT_WATERER"],
+  },
+  {
     title: "MALLOC() ALGORITHM (C/BASH)",
     link: "https://github.com/austinhutchen/cMalloc",
     description:
@@ -127,6 +135,16 @@ const projectsData: Project[] = [
     images: ["malloc"],
     video: [],
   },
+  {
+    title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
+    link: "https://github.com/austinhutchen/map-app.git",
+    description:
+      "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
+    images: ["maps"],
+    video: [],
+
+  },
+
 
 
   {
@@ -137,14 +155,7 @@ const projectsData: Project[] = [
     images: ["WEATHER_SENSOR", "weather"],
     video: [],
   },
-  {
-    title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
-    link: "https://github.com/austinhutchen/plant_interface.git",
-    description:
-      "My custom Automatix Plant Irrigation System is a low-cost and power-efficient ESP-8266 powered system that reads data from a custom soil sensor. It then checks the capacitive sensor moisture threshold and decides whether to pump water using a relay and water tube into the plant. I plan to upgrade this project with a solar-powered portable battery and a remote deep sleep switch",
-    images: [],
-    video: ["PLANT_WATERER"],
-  },
+
 
   {
     title: "ZELDA TERMINAL GAME (C++)",
@@ -156,15 +167,7 @@ const projectsData: Project[] = [
 
   },
 
-  {
-    title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
-    link: "https://github.com/austinhutchen/map-app.git",
-    description:
-      "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
-    images: ["maps"],
-    video: [],
 
-  },
 
 
   {
@@ -268,20 +271,20 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
 
 export const Projects: React.FC = () => (
   <>
-  <NavBar />
-  <div className="hlight-mini">
+    <NavBar />
+    <div className="hlight-mini">
 
-    <LazyMotion features={domAnimation}>
+      <LazyMotion features={domAnimation}>
 
 
-      <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
-        <h1 className="hlight">
-          <b>PERSONAL PROJECTS:</b>
-        </h1>
-        <ProjectList />
-      </m.div>
-    </LazyMotion>
-  </div>
+        <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
+          <h1 className="hlight">
+            <b>PERSONAL PROJECTS:</b>
+          </h1>
+          <ProjectList />
+        </m.div>
+      </LazyMotion>
+    </div>
   </>
 );
 

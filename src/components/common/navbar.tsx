@@ -15,6 +15,7 @@ export const NavBar: React.FC = () => {
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.png';
   const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
+  const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.png';
   const icon_size = '30svh';
 
   const toggle = () => setIsOpen(!isOpen);
@@ -63,8 +64,8 @@ export const NavBar: React.FC = () => {
             </NavItem>
               <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
-                <img src={feedback} width={icon_size} height={icon_size}  />
-                Gallery
+                <img src={cube} width={icon_size} height={icon_size}  />
+                Fun Page
               </Button>
             </NavItem>
             <NavItem className="nav-item" style={{ border: '1px solid white' }}>
