@@ -16,7 +16,7 @@ export const NavBar: React.FC = () => {
   const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.png';
-  const icon_size = '30svh';
+  const icon_size = '23vh';
 
   const toggle = () => setIsOpen(!isOpen);
 

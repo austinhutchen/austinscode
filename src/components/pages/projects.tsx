@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { motion, LazyMotion, m, domAnimation } from "framer-motion";
+
 import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -219,11 +219,11 @@ const projectsData: Project[] = [
 ];
 
 const ProjectList: React.FC = () => (
-  <motion.ul initial="hidden" animate="visible" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }} exit={{ opacity: 1 }} style={{ listStyleType: "none" }}>
+  <div className="projectList">
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
-  </motion.ul>
+  </div>
 );
 
 const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
@@ -239,7 +239,7 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
         {project.images && project.images.map((imageName, imgIndex) => (
           <React.Fragment key={imgIndex}>
 
-            <img src={images[imageName]} height="160vh" width="auto" loading="eager" alt={project.title} />
+            <img src={images[imageName]} height="360svh" width="auto" loading="eager" alt={project.title} />
             <br />
           </React.Fragment>
         ))}
@@ -253,7 +253,7 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
               playsInline
               onContextMenu={(e) => e.preventDefault()}
               typeof="video/mp4"
-              height="160vh"
+              height="360svh"
               width="auto"
               preload="metadata"
             />
@@ -273,17 +273,10 @@ export const Projects: React.FC = () => (
   <>
     <NavBar />
     <div className="hlight-mini">
-
-      <LazyMotion features={domAnimation}>
-
-
-        <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
           <h1 className="hlight">
             <b>PERSONAL PROJECTS:</b>
           </h1>
           <ProjectList />
-        </m.div>
-      </LazyMotion>
     </div>
   </>
 );
