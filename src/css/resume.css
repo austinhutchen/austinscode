@@ -16,16 +16,14 @@
   width: auto;
 }
 
-.format-img {
-  height: 36svh;
-  width: 34svh auto; /* Changed from '30svh auto' to '30vh' for width specification */
-}
 
 .resume-body {
   text-align: center;
 }
-.resume {
+.resume img{
     margin: 0 auto;
-    max-height: 100% !important;
-    width: 65svh;
+    max-width: 25vw;
+    max-height: 25vw;
+    border: 0.26vw solid #0BA;
+    margin: 0 auto;
 }

@@ -12,17 +12,7 @@
   touch-action: manipulation;
 }
 
-.projContent {
-  display: grid;
-  -ms-grid-row-align: center;
 
-  justify-content: center;
-  /* Center horizontally */
-  align-items: center;
-  /* Center vertically */
-
-
-}
 
 /* Hover and focus styles for .prev-slick and .next-slick */
 .prev-slick:hover,
@@ -81,7 +71,17 @@ html.has-scroll-smooth {
 
 .projImg {
   max-height: 26vh;
-  max-width: 24vh;
+  max-width: 26vh;
+
+}
+.projContent {
+  display: grid;
+
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+
 
 }
 

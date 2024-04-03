@@ -40,30 +40,7 @@
    }
  }
 
- .projects img,
- video {
-   max-width: 100%;
-   max-height: 50svh;
-   border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA;
- }
 
- .accredidations img,
- video {
-   max-width: 100%;
-   max-height: 50svh;
-   border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA;
+ 
 
- }
-
- .resume img {
-   max-width: 100%;
-   max-height: 50svh;
-   border-radius: 400 / 2;
-   border: 0.26dvh solid #0BA;
-   height: 55svh;
-   max-width: 100%;
-
-   margin: 0 auto;
- }
+ 
