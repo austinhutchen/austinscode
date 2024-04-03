@@ -69,6 +69,9 @@ dependencies:
   web-vitals:
     specifier: ^3.5.2
     version: 3.5.2
+  webpack:
+    specifier: ^5.91.0
+    version: 5.91.0
   webpack-bundle-analyzer:
     specifier: ^4.10.1
     version: 4.10.1
