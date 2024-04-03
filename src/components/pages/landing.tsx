@@ -73,8 +73,11 @@ export const Landing: React.FC = () => {
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 
   return (
-<div className={`animated-div ${shouldAnimate ? 'animate' : ''}`}>
+    <>
+ 
       <NavBar />
+<div className={`animated-div ${shouldAnimate ? 'animate' : ''}`}>
+
       <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
         <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
@@ -115,6 +118,7 @@ export const Landing: React.FC = () => {
         <Spinner />
         <TextSphere />
     </div >
+    </>
   );
 };
 

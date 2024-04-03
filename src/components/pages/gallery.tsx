@@ -5,9 +5,10 @@ import * as THREE from 'three';
 
 export const Visualizer: React.FC = () => {
   return (
+    <>
+    <NavBar />
+
     <div className='visualizer'>
-      <NavBar />
-      <div >
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
 
@@ -29,7 +30,8 @@ export const Visualizer: React.FC = () => {
         <br />
         <Tesseract />
       </div>
-    </div>
+
+    </>
   );
 };
 
