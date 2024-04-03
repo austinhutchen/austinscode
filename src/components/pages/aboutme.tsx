@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { NavBar } from "../common/navbar";
-import {  motion } from "framer-motion";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
@@ -113,17 +112,17 @@ const About: React.FC = () => {
   return (
     <div className="sc">
       <Slider ref={slider} {...settings}>
-        {keys.map((data, index) => (
-          <motion.div key={index} initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 1 }}>
+        {keys.map((data) => (
+          <div className="aboutSlider">
             {data.type === "image" ? (
-              <motion.img
+              <img
                 src={data.url}
                 loading="eager"
                 style={imageStyles}
                 alt="Project Image"
               />
             ) : (
-              <motion.video
+              <video
                 autoPlay
                 loop
                 muted
@@ -146,7 +145,7 @@ const About: React.FC = () => {
                 <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
               </button>
             </fieldset>
-          </motion.div>
+          </div>
         ))}
       </Slider>
     </div>

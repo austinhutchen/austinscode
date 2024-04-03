@@ -1,5 +1,4 @@
 import React from 'react';
-import { AnimatePresence } from 'framer-motion';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Landing } from '../pages/landing';
 import { Resume } from '../pages/resume';
@@ -12,7 +11,6 @@ export const AnimatedRoutes: React.FC = () => {
     const location = useLocation();
     return (
         <div className="App">
-            <AnimatePresence mode='sync'>
                 <Routes location={location}>
                     <Route path="" element={<Landing />} />
                     <Route path="/Resume" element={<Resume />} />
@@ -21,7 +19,6 @@ export const AnimatedRoutes: React.FC = () => {
                     <Route path="/Feedback" element={<Feedback />} />
                     <Route path="/Gallery" element={<Visualizer />} />
                 </Routes>
-            </AnimatePresence>
-        </div>
+å        </div>
     );
 };

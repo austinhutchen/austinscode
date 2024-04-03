@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavBar } from '../common/navbar';
-import { LazyMotion, domAnimation, m } from 'framer-motion';
 
 const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
 
@@ -35,12 +34,7 @@ const data = [inclusion,support]
     <>
       <NavBar />
       <div className="accreditations">
-        <LazyMotion features={domAnimation}>
-          <m.div
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ x: window.innerWidth, transition: { duration: 0 } }}
-          >
+          <div className='feedback'>
             <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
             <br />
             <ul>
@@ -67,8 +61,7 @@ const data = [inclusion,support]
                 </div>
               </li>
             </ul>
-          </m.div>
-        </LazyMotion>
+          </div>
       </div>
     </>
   );
