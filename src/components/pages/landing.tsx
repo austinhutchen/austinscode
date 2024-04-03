@@ -1,4 +1,3 @@
-import { LazyMotion, domAnimation, m } from "framer-motion";
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import TagCloud from "TagCloud";
@@ -70,15 +69,15 @@ const TextSphere: React.FC = () => {
 
 export const Landing: React.FC = () => {
   const nav = useNavigate();
+  const shouldAnimate:boolean =true ;
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
 
   return (
-    <LazyMotion features={domAnimation}>
+<div className={`animated-div ${shouldAnimate ? 'animate' : ''}`}>
       <NavBar />
       <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
         <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
-      <m.div initial={{ width: 0 }} animate={{ width: "100%" }} exit={{ x: window.innerWidth, transition: { duration: 0 } }}>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
 
@@ -115,8 +114,7 @@ export const Landing: React.FC = () => {
         </div>
         <Spinner />
         <TextSphere />
-      </m.div >
-    </LazyMotion >
+    </div >
   );
 };
 
