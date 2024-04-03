@@ -54,7 +54,7 @@ html{
   list-style-type: none;
   opacity: 0;
   transition-timing-function:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation: fadeIn 0.6s ease-in-out forwards;
+  animation: fadeIn 0.655s ease-in-out forwards;
 }
 .aboutSlider{
   opacity: 0;

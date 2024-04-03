@@ -100,7 +100,7 @@ const About: React.FC = () => {
     dots: true,
   };
 
-  const slider = useRef<Slider>(null);
+  const slider:React.RefObject<Slider> = useRef<Slider>(null);
 
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
     if (slider?.current) {
@@ -155,12 +155,12 @@ export const Aboutme: React.FC = () => {
   return (
     <>
       <NavBar />
-     
-          <h1 className="hlight">
-            <b>ABOUT:</b>
-          </h1>
 
-  
+      <h1 className="hlight">
+        <b>ABOUT:</b>
+      </h1>
+
+
       <About />
     </>
   );

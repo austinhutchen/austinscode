@@ -10,11 +10,13 @@ export const Visualizer: React.FC = () => {
 
     <div className='visualizer'>
         <h1 className="hlight"> Welcome to my fun page!</h1>
-        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
+        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> 
+        <br/>
+        <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 
-        <p className="lead">
-          <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p>
+
+      
 
 
 
