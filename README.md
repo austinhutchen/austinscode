@@ -8,35 +8,35 @@
 
 <hr/>
  <u> <h2> Local File Structure: </h2> </u> <br/>
-|____src
-| |____App.tsx
-| |____.DS_Store
-| |____css
-| | |____dimensions.css
-| | |____.DS_Store
-| | |____resume.css
-| | |____slider.css
-| | |____navBar.css
-| | |____spinner.css
-| | |____fonts.css
-| | |____TextSphere.css
-| |____reportWebVitals.jsx
-| |____App.css
-| |____index.css
-| |____components
-| | |____.DS_Store
-| | |____common
-| | | |____navbar.tsx
-| | | |____symbols.tsx
-| | |____pages
-| | | |____projects.tsx
-| | | |____gallery.tsx
-| | | |____aboutme.tsx
-| | | |____resume.tsx
-| | | |____sub
-| | | | |____subProjects.tsx
-| | | |____landing.tsx
-| | | |____feedback.tsx
-| | |____base
-| | | |____AnimatedRoutes.tsx
-| |____index.jsx
+|____src <br/>
+| |____App.tsx <br/>
+| |____.DS_Store <br/>
+| |____css <br/>
+| | |____dimensions.css <br/>
+| | |____.DS_Store <br/>
+| | |____resume.css <br/>
+| | |____slider.css <br/>
+| | |____navBar.css <br/>
+| | |____spinner.css <br/>
+| | |____fonts.css <br/>
+| | |____TextSphere.css <br/>
+| |____reportWebVitals.jsx <br/>
+| |____App.css <br/>
+| |____index.css <br/>
+| |____components <br/>
+| | |____.DS_Store <br/>
+| | |____common <br/>
+| | | |____navbar.tsx <br/>
+| | | |____symbols.tsx <br/>
+| | |____pages <br/>
+| | | |____projects.tsx <br/>
+| | | |____gallery.tsx <br/>
+| | | |____aboutme.tsx <br/>
+| | | |____resume.tsx <br/>
+| | | |____sub <br/>
+| | | | |____subProjects.tsx <br/>
+| | | |____landing.tsx <br/>
+| | | |____feedback.tsx <br/>
+| | |____base <br/>
+| | | |____AnimatedRoutes.tsx <br/>
+| |____index.jsx <br/>
