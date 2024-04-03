@@ -10,8 +10,10 @@ const resume = getImgPath('Resume.webp');
 
 export const Resume: React.FC = () => {
     return (
+        <>
+                    <NavBar />
+
         <div className="resumePage">
-            <NavBar />
 
 
             <h1 className="hlight">
@@ -160,6 +162,7 @@ export const Resume: React.FC = () => {
 
             </ul>
         </div>
+        </>
     );
 
 
