@@ -22,10 +22,7 @@ box-sizing: border-box;
   radial-gradient(at 55% 22%, hsla(130,87%,65%,1) 0px, transparent 50%);
   
 }
-video{
-display: block;
-margin: 0 auto;
-}
+
 html{
   font-size: calc(1rem + 0.5vw);
 }
@@ -44,6 +41,12 @@ html{
   }
 }
 .visualizer{
+  opacity: 0;
+  transition-timing-function:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+.projectList{
+  list-style-type: none;
   opacity: 0;
   transition-timing-function:  cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation: fadeIn 0.5s ease-in-out forwards;
