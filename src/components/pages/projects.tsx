@@ -239,12 +239,13 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
         {project.images && project.images.map((imageName, imgIndex) => (
           <React.Fragment key={imgIndex}>
 
-            <img src={images[imageName]} height="360svh" width="auto" loading="eager" alt={project.title} />
+            <img src={images[imageName]} className="projImg"
+loading="eager" alt={project.title} />
             <br />
           </React.Fragment>
         ))}
         {project.video && project.video.map((videoName, videoIndex) => (
-          <React.Fragment key={videoIndex}>
+          <React.Fragment  key={videoIndex}>
             <video
               src={images[videoName]}
               loop
@@ -253,8 +254,7 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
               playsInline
               onContextMenu={(e) => e.preventDefault()}
               typeof="video/mp4"
-              height="360svh"
-              width="auto"
+              className="projVid"
               preload="metadata"
             />
           </React.Fragment>

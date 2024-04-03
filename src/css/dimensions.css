@@ -1,5 +1,6 @@
 /* Shared styles for .prev-slick and .next-slick */
-.prev-slick, .next-slick {
+.prev-slick,
+.next-slick {
   background-color: #07c;
   box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
   color: #fff;
@@ -10,15 +11,19 @@
   text-align: center;
   touch-action: manipulation;
 }
-.projContent{
-  display:grid;
--ms-grid-row-align: center;
-  
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+
+.projContent {
+  display: grid;
+  -ms-grid-row-align: center;
+
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
 
 
 }
+
 /* Hover and focus styles for .prev-slick and .next-slick */
 .prev-slick:hover,
 .next-slick:hover,
@@ -54,18 +59,30 @@ html.has-scroll-smooth {
 .style-table {
   margin: 0 auto;
 }
+
 .projects img,
 .accredidations img,
-.projects video
-{
-  border-radius: 200/2; /* To create a circular border */
-  border: 0.12em 0.12em #0BA; /* Adjusted border width unit */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+.projects video {
+  border-radius: 200/2;
+  /* To create a circular border */
+  border: 0.12em 0.12em #0BA;
+  /* Adjusted border width unit */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
 }
 
+.projVid {
+  max-height: 26vh;
+  max-width: 26vh;
 
+}
+
+.projImg {
+  max-height: 26vh;
+  max-width: 24vh;
+
+}
 
 /* Additional styles for list items */
-
-
