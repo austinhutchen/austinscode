@@ -22,7 +22,9 @@ box-sizing: border-box;
   radial-gradient(at 55% 22%, hsla(130,87%,65%,1) 0px, transparent 50%);
   
 }
-
+.collapse-animation {
+  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 html{
   font-size: calc(1rem + 0.5vw);
 }
