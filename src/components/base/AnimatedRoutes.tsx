@@ -23,3 +23,4 @@ export const AnimatedRoutes: React.FC = () => {
         </div>
     );
 };
+  

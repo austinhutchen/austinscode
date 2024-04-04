@@ -30,7 +30,7 @@ export const NavBar: React.FC = () => {
           <NavbarToggler className="navbar-toggler" onClick={toggle} />
         </div>
 
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse isOpen={isOpen} navbar className="collapse-animaiton">
           <Nav className="mr-auto d-flex justify-content-center align-items-center" navbar>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/')}>

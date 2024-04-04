@@ -12,6 +12,7 @@ const TextSphere: React.FC = () => {
   useEffect(() => {
     const container = containerRef.current;
     const texts = [
+      "Code by me!",
       "Typescript",
       "Network Engineering",
       "PHP",
@@ -34,7 +35,6 @@ const TextSphere: React.FC = () => {
       "SQL",
       "PHP",
       "GraphQL",
-      "C#",
       "React Native",
       "and more!.."
     ];
@@ -90,15 +90,17 @@ export const Landing: React.FC = () => {
 
                 <img src={github} style={{
                   maxWidth: "3svh",
-                  margin: 0,
-                  padding: 0
                 }} />
 
               </a>
               </b>
             </h3>
 
-            <button
+    
+          </div>
+        </div>
+    
+        <button
               style={{ marginBottom: '0.2em' }}
               className="btn btn-success"
               type="button"
@@ -113,9 +115,10 @@ export const Landing: React.FC = () => {
             <br />
             <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=12&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" />
             <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
-          </div>
-        </div>
+            <div className="aside">
         <Spinner />
+
+        </div>
         <TextSphere />
     </div >
     </>
