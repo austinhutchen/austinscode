@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Routes } from "./components/base/Routes";
+import { Router } from "./components/base/Router";
 import { HashRouter } from "react-router-dom";
 import './App.css';
 // main app
@@ -10,7 +10,7 @@ class MainApp extends Component {
   render() {
     return (
       <HashRouter>
-        <Routes />
+        <Router />
       </HashRouter>
     );
   }
