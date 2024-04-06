@@ -26,8 +26,7 @@ export const Visualizer: React.FC = () => {
         </p>
         </b>
 
-        <iframe src="https://open.spotify.com/embed/album/1ZnqCVE0cAk7qpZt4eXqjT?utm_source=generator&theme=0" width="100%" height="550" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <br/>
+        <iframe  src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="100%" height="480"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <br/>
 
 
 
