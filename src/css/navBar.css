@@ -128,9 +128,6 @@ a:hover {
   animation: fadeIn 0.4s forwards;
 }
 
-.collapse-animation {
-  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
 
 .navbar-header {
   display: flex;
@@ -162,6 +159,15 @@ a:hover {
   }
   .navbar-header, .custom-navbar,.navBrand {
     max-width: 80%; /* Reduce the max-width */
+    
+  }
+  #line1, #line2, #line3 {
+    animation: none;
+  
+    width: 8vw;
+    height: 0.9vw;
+    background-color: #fff; /* Change to your desired color */
+    margin: 2.3vw 0vw;
   }
 }
 .navBrand {
