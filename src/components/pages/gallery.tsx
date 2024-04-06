@@ -31,15 +31,13 @@ export const Visualizer: React.FC = () => {
 
 
 
-        <hr className="my-4" />
         <b>
-          <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / CUBE PROJECTION</h2>
+          <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
 
         </b>
         <p style={{fontSize:"1.2em", fontFamily:"-moz-initial"}} >
           A tesseract is a four-dimensional analog to the cube. It is to a cube as a cube is to a square. Just as the surface of a cube consists of six square faces, the hypersurface of a tesseract consists of eight cubical cells. The tesseract is one of the six convex regular 4-polytopes. Here, I programmed a visualizer using three.js, a three-dimensional software that rotates a cube to project all of its faces.
         </p>
-        <br />
         <Tesseract />
         
 

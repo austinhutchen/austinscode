@@ -35,9 +35,101 @@ a:hover {
   color: hotpink;
 }
 
-.navbar-toggler-icon {
-  animation: linesIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+.custom-navbar-toggler {
+  border: none;
+  background: transparent;
+  color:white;
+  outline: none;
+}
+
+#line1, #line2, #line3 {
+  animation: none;
+
+  width: 33px;
+  height: 4px;
+  background-color: #fff; /* Change to your desired color */
+  margin: 17px 8px;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-5px, -6px);
+  }
+}
+
+#line3.line-open {
+  animation: rotateIn 0.4s forwards;
+}
+
+#line1.line-open {
+  animation: rotateOut 0.4s forwards;
+}
+
+#line3.line-close {
+  animation: rotateIn 0.4s reverse forwards;
+}
+
+#line1.line-close {
+  animation: rotateOut 0.4s reverse forwards;
+}
+
+@keyframes rotateOut {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-5px, 6px);
+  }
+}
+
+
+#line2.line-open{
+  animation: fadeOut 0.4s forwards;
+}
+
+#line2.line-close {
+  animation: fadeIn 0.4s forwards;
+}
+
+.collapse-animation {
+  transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .navbar-header {
