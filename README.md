@@ -1,6 +1,6 @@
 <h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Diamond</i> <b> 13.5❗️💎☕️🎉👨🏾‍💻 </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
-<br/>  <i> Diamond </i>Bundle Size: <b> 120KB </b>
+<br/>  <i> Diamond </i>Bundle Size: <b> 202KB </b>
 <br/> Link: <b> https://austinhutchen.vercel.app </b>
  </h3>
  <img src ="https://github.com/austinhutchen/austinscode/assets/93489691/e1a761ab-9025-442f-a739-b883f5b69745"/>
