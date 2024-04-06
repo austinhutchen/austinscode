@@ -45,10 +45,10 @@ a:hover {
 #line1, #line2, #line3 {
   animation: none;
 
-  width: 33px;
-  height: 4px;
+  width: 2vw;
+  height: 0.15vw;
   background-color: #fff; /* Change to your desired color */
-  margin: 17px 8px;
+  margin: 0.65vw 0.5vw;
 }
 
 @keyframes rotateIn {
