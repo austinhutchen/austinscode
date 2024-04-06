@@ -8,7 +8,7 @@ import { Feedback } from '../pages/feedback';
 import { Visualizer } from '../pages/gallery';
 
 
-export const Routes: React.FC = () => {
+export const Router: React.FC = () => {
     const location = useLocation();
     return (
         <div className="App">
