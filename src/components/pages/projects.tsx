@@ -193,7 +193,7 @@ const projectsData: Project[] = [
       "ENCRYPTED TEXT EDITOR (C++)",
     link: "https://github.com/austinhutchen/encrypt.C.git",
     description:
-      "A command line text editor interface, with local save as .txt and full file traversal capability using pointers. The program was able to also fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
+      "A command line text editor interface, with the ability to save text data to a local file on the user's computer. The program utilized pointers and vectors for file traversal capability. Added in the last release (2021) was the ability to fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
     images: ["encryptc"],
     video: [],
   },
@@ -240,12 +240,12 @@ const ProjectItem: React.FC<ProjectItemProps> = memo(({ project }) => (
           <React.Fragment key={imgIndex}>
 
             <img src={images[imageName]} className="projImg"
-loading="eager" alt={project.title} />
+              loading="eager" alt={project.title} />
             <br />
           </React.Fragment>
         ))}
         {project.video && project.video.map((videoName, videoIndex) => (
-          <React.Fragment  key={videoIndex}>
+          <React.Fragment key={videoIndex}>
             <video
               src={images[videoName]}
               loop
@@ -273,10 +273,10 @@ export const Projects: React.FC = () => (
   <>
     <NavBar />
     <div className="hlight-mini">
-          <h1 className="hlight">
-            <b>PERSONAL PROJECTS:</b>
-          </h1>
-          <ProjectList />
+      <h1 className="hlight">
+        <b>PERSONAL PROJECTS:</b>
+      </h1>
+      <ProjectList />
     </div>
   </>
 );
