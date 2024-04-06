@@ -8,7 +8,7 @@ import { Feedback } from '../pages/feedback';
 import { Visualizer } from '../pages/gallery';
 
 
-export const AnimatedRoutes: React.FC = () => {
+export const Routes: React.FC = () => {
     const location = useLocation();
     return (
         <div className="App">
