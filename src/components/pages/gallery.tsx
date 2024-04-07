@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
+import AudioVisualizer from "./sub/AudioVisualizer" ;
 import * as THREE from 'three';
 
 
@@ -17,7 +18,15 @@ export const Visualizer: React.FC = () => {
         </p>
 
         <hr className="my-4" />
+        <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
+        <b>
 
+        <p style={{fontSize:"0.9em", fontFamily:"-moz-initial"}} >
+          A program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program uses the Web Audio API to capture the microphone input and then uses the fast fourier transform to decompose the audio spectrum into its constituent frequencies. The program then displays the audio spectrum in an HTML canvas element.
+        </p>
+        </b>
+<AudioVisualizer />
+    <br/>
         <h2 className="hlight"> FAVORITE ALBUM PLAYER</h2>
         <b>
 
