@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 declare global {
   interface Window { webkitAudioContext: typeof AudioContext }
 }
@@ -39,11 +39,11 @@ const AudioVisualizer = () => {
           let barHeight;
           let x = 0;
 
-          for(let i = 0; i < bufferLength; i++) {
+          for (let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i];
 
-            ctx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
-            ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight/2);
+            ctx.fillStyle = 'rgb(' + (barHeight + 100) + ',50,50)';
+            ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
 
             x += barWidth + 1;
           }
@@ -57,7 +57,7 @@ const AudioVisualizer = () => {
   return <canvas ref={canvasRef} />;
 };
 
-export  const TimeDomainVisualizer = () => {
+export const TimeDomainVisualizer = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -99,11 +99,11 @@ export  const TimeDomainVisualizer = () => {
           const sliceWidth = canvas.width * 1.0 / bufferLength;
           let x = 0;
 
-          for(let i = 0; i < bufferLength; i++) {
+          for (let i = 0; i < bufferLength; i++) {
             const v = dataArray[i] / 128.0;
-            const y = v * canvas.height/2;
+            const y = v * canvas.height / 2;
 
-            if(i === 0) {
+            if (i === 0) {
               ctx.moveTo(x, y);
             } else {
               ctx.lineTo(x, y);
@@ -112,7 +112,7 @@ export  const TimeDomainVisualizer = () => {
             x += sliceWidth;
           }
 
-          ctx.lineTo(canvas.width, canvas.height/2);
+          ctx.lineTo(canvas.width, canvas.height / 2);
           ctx.stroke();
         };
 
@@ -122,6 +122,83 @@ export  const TimeDomainVisualizer = () => {
   }, []);
 
   return <canvas ref={canvasRef} />;
+};
+// Star Map Component
+const StarMap = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Set the background to black
+    ctx.fillStyle = 'black';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw stars on the canvas (this is a simplification)
+    for (let i = 0; i < 1000; i++) {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      ctx.fillStyle = 'white';
+      ctx.fillRect(x, y, 1, 1);
+    }
+  }, []);
+
+  return <canvas ref={canvasRef} />;
+};
+
+// Plant Growth Simulator Component
+const PlantGrowthSimulator = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [plantHeight, setPlantHeight] = useState(0);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Create a gradient background
+    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    gradient.addColorStop(0, 'green');
+    gradient.addColorStop(1, 'blue');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw a plant on the canvas (this is a simplification)
+    ctx.beginPath();
+    ctx.moveTo(canvas.width / 2, canvas.height);
+    ctx.lineTo(canvas.width / 2, canvas.height - plantHeight);
+    ctx.strokeStyle = 'green';
+    ctx.stroke();
+  }, [plantHeight]);
+
+  useEffect(() => {
+    // Grow the plant over time
+    const intervalId = setInterval(() => {
+      setPlantHeight(prevHeight => prevHeight + 1);
+    }, 1000); // Increase the plant height by 1 every second
+
+    return () => {
+      clearInterval(intervalId); // Clean up the interval on unmount
+    };
+  }, []);
+
+  return <canvas ref={canvasRef} />;
+};
+
+// Main Component
+export const NatureComponent = () => {
+  return (
+    <div>
+      <StarMap />
+      <PlantGrowthSimulator />
+    </div>
+  );
 };
 
 

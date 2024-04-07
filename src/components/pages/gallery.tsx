@@ -1,7 +1,7 @@
 import React, { useRef, useEffect} from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
+import AudioVisualizer, { NatureComponent, TimeDomainVisualizer } from './sub/AudioVisualizer';
 export const Visualizer: React.FC = () => {
   return (
     <>
@@ -10,11 +10,19 @@ export const Visualizer: React.FC = () => {
       <div className='visualizer'>
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b>
-          <br />
+        <hr className="my-4" />
+        <b>
+          <h2 className="hlight"> PLANT GROWTH SIMULATOR & GALAXY STAR MAP </h2>
+          <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
+            A plant growth simulator that slowly grows a plant, and a galaxy map that displays the positions of stars in the sky on an HTMl canvas. 
+          </p>
+        </b>
+
+<NatureComponent/>
 
         </p>
 
-        <hr className="my-4" />
+     
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
         <b>
           <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
@@ -34,9 +42,7 @@ export const Visualizer: React.FC = () => {
         </b>
 
         <iframe src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="100%" height="480" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <br />
-
-
-
+     
         <b>
           <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
 
