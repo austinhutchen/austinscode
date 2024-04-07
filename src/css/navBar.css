@@ -156,18 +156,20 @@ a:hover {
 @media (max-width: 600px) {
   .navBrand {
     font-size: 0.1em; /* Reduce the font size */
+    max-width: 65%;
   }
-  .navbar-header, .custom-navbar,.navBrand {
-    max-width: 80%; /* Reduce the max-width */
-    
+  
+  .custom-navbar{
+    max-width: 78%; /* Reduce the max-width */
+
   }
   #line1, #line2, #line3 {
     animation: none;
   
     width: 8vw;
-    height: 0.9vw;
+    height: 1vw;
     background-color: #fff; /* Change to your desired color */
-    margin: 2.3vw 0vw;
+    margin: 1.8vw 0vw;
   }
 }
 .navBrand {
