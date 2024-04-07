@@ -19,9 +19,8 @@ export const Visualizer: React.FC = () => {
         <hr className="my-4" />
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
         <b>
-
         <p style={{fontSize:"0.9em", fontFamily:"-moz-initial"}} >
-          Enable microphone input to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program uses the Web Audio API to capture the microphone input and then uses the fast fourier transform to decompose the audio spectrum into its constituent frequencies. The program then displays the audio spectrum in an HTML canvas element.
+          Enable microphone input to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
         </p>
         </b>
 <AudioVisualizer />
