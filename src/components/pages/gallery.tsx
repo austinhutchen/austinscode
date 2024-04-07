@@ -20,7 +20,7 @@ export const Visualizer: React.FC = () => {
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
         <b>
         <p style={{fontSize:"0.9em", fontFamily:"-moz-initial"}} >
-          Enable microphone input to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
+          <h3 class="hlight-mini">Enable microphone input </h3> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
         </p>
         </b>
 <AudioVisualizer />
