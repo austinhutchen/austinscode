@@ -1,9 +1,7 @@
-import React, { Suspense, useRef, useEffect, lazy } from 'react';
+import React, { useRef, useEffect} from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-
-const AudioVisualizer = lazy(() => import('./sub/AudioVisualizer'));
-const TimeDomainVisualizer = lazy(() => import('./sub/AudioVisualizer'));
+import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
 export const Visualizer: React.FC = () => {
   return (
     <>
@@ -23,10 +21,9 @@ export const Visualizer: React.FC = () => {
             Enable microphone input to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
           </p>
         </b>
-        <Suspense fallback={<div>Loading...</div>}>
           <AudioVisualizer />
           <TimeDomainVisualizer />
-        </Suspense>
+      
         <br />
         <h2 className="hlight"> FAVORITE ALBUM PLAYER</h2>
         <b>

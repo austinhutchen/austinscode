@@ -12,9 +12,9 @@ const AudioVisualizer = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 1024; // Reduce fftSize for better performance
     const bufferLength = analyser.frequencyBinCount;
-    const dataArray = new Uint8Array(bufferLength);
+    const dataArray = new Uint8Array(bufferLength); // Create dataArray once
 
     navigator.mediaDevices.getUserMedia({ audio: true })
       .then(stream => {
@@ -30,7 +30,7 @@ const AudioVisualizer = () => {
         const draw = () => {
           requestAnimationFrame(draw);
 
-          analyser.getByteFrequencyData(dataArray);
+          analyser.getByteFrequencyData(dataArray); // Reuse dataArray
 
           ctx.fillStyle = 'rgb(0, 0, 0)';
           ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -39,11 +39,11 @@ const AudioVisualizer = () => {
           let barHeight;
           let x = 0;
 
-          for (let i = 0; i < bufferLength; i++) {
+          for(let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i];
 
-            ctx.fillStyle = 'rgb(' + (barHeight + 100) + ',50,50)';
-            ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
+            ctx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
+            ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight/2);
 
             x += barWidth + 1;
           }
@@ -56,6 +56,7 @@ const AudioVisualizer = () => {
 
   return <canvas ref={canvasRef} />;
 };
+
 export  const TimeDomainVisualizer = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -67,7 +68,7 @@ export  const TimeDomainVisualizer = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 1024;
     const bufferLength = analyser.fftSize;
     const dataArray = new Uint8Array(bufferLength);
 
