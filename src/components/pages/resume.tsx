@@ -95,7 +95,7 @@ export const Resume: React.FC = () => {
                     <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                 </h1>
                 <br />
-                <img height="120svh" width="auto" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
+                <img height="auto" width="80%" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
 
                 <hr />
                 <li >
