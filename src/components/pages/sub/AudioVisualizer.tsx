@@ -1,50 +1,58 @@
 import  { useEffect, useRef } from 'react';
-
+declare global {
+  interface Window { webkitAudioContext: typeof AudioContext }
+}
 const AudioVisualizer = () => {
  const canvasRef = useRef<HTMLCanvasElement>(null);
-  useEffect(() => {
-    const audioContext = new (window.AudioContext || window.AudioContext)();
-    const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 256;
-    const bufferLength = analyser.frequencyBinCount;
-    const dataArray = new Uint8Array(bufferLength);
+ useEffect(() => {
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+    console.error('Web Audio API not supported in this browser');
+    return;
+  }
 
-    navigator.mediaDevices.getUserMedia({ audio: true })
-      .then(stream => {
-     
-        const source = audioContext.createMediaStreamSource(stream);
-        source.connect(analyser);
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  const analyser = audioContext.createAnalyser();
+  analyser.fftSize = 256;
+  const bufferLength = analyser.frequencyBinCount;
+  const dataArray = new Uint8Array(bufferLength);
 
-        const canvas = canvasRef.current;
-         if(!canvas) return;
-        const ctx = canvas.getContext('2d');
+  navigator.mediaDevices.getUserMedia({ audio: true })
+    .then(stream => {
+      const source = audioContext.createMediaStreamSource(stream);
+      source.connect(analyser);
 
-        const draw = () => {
-          requestAnimationFrame(draw);
+      const canvas = canvasRef.current;
+      if (!canvas) return;
 
-          analyser.getByteFrequencyData(dataArray);
-          if(!ctx) return;
-          ctx.fillStyle = 'rgb(0, 0, 0)';
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
+      const ctx = canvas.getContext('2d');
+      if (!ctx) return;
 
-          const barWidth = (canvas.width / bufferLength) * 2.5;
-          let barHeight;
-          let x = 0;
+      const draw = () => {
+        requestAnimationFrame(draw);
 
-          for(let i = 0; i < bufferLength; i++) {
-            barHeight = dataArray[i];
+        analyser.getByteFrequencyData(dataArray);
 
-            ctx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
-            ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight/2);
+        ctx.fillStyle = 'rgb(0, 0, 0)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            x += barWidth + 1;
-          }
-        };
+        const barWidth = (canvas.width / bufferLength) * 2.5;
+        let barHeight;
+        let x = 0;
 
-        draw();
-      })
-      .catch(err => console.log(err));
-  }, []);
+        for(let i = 0; i < bufferLength; i++) {
+          barHeight = dataArray[i];
+
+          ctx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
+          ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight/2);
+
+          x += barWidth + 1;
+        }
+      };
+
+      draw();
+    })
+    .catch(err => console.log(err));
+}, []);
 
   return <canvas ref={canvasRef} />;
 };
