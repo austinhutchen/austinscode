@@ -124,8 +124,10 @@ export const TimeDomainVisualizer = () => {
   return <canvas ref={canvasRef} />;
 };
 // Star Map Component
+// Star Map Component
 const StarMap = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [sunrise, setSunrise] = useState(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -134,8 +136,16 @@ const StarMap = () => {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set the background to black
-    ctx.fillStyle = 'black';
+    // Create a radial gradient for the sunrise
+    const gradient = ctx.createRadialGradient(
+      canvas.width / 2, canvas.height, sunrise,
+      canvas.width / 2, canvas.height, canvas.height
+    );
+    gradient.addColorStop(0, 'yellow');
+    gradient.addColorStop(1, 'black');
+
+    // Set the background to the sunrise gradient
+    ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Draw stars on the canvas (this is a simplification)
@@ -145,15 +155,26 @@ const StarMap = () => {
       ctx.fillStyle = 'white';
       ctx.fillRect(x, y, 1, 1);
     }
+  }, [sunrise]);
+
+  useEffect(() => {
+    // Animate the sunrise
+    const intervalId = setInterval(() => {
+      setSunrise(prevSunrise => prevSunrise + 1);
+    }, 100); // Increase the sunrise radius by 1 every 100ms
+
+    return () => {
+      clearInterval(intervalId); // Clean up the interval on unmount
+    };
   }, []);
 
   return <canvas ref={canvasRef} />;
 };
 
-// Plant Growth Simulator Component
 const PlantGrowthSimulator = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [plantHeight, setPlantHeight] = useState(0);
+  const [watering, setWatering] = useState(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -180,16 +201,25 @@ const PlantGrowthSimulator = () => {
   useEffect(() => {
     // Grow the plant over time
     const intervalId = setInterval(() => {
-      setPlantHeight(prevHeight => prevHeight + 1);
-    }, 1000); // Increase the plant height by 1 every second
+      setPlantHeight(prevHeight => prevHeight + (watering ? 3 : 1));
+    }, 1000);
 
     return () => {
       clearInterval(intervalId); // Clean up the interval on unmount
     };
-  }, []);
+  }, [watering]);
 
-  return <canvas ref={canvasRef} />;
+  return (
+    <div>
+      <canvas ref={canvasRef} />
+      <br/>
+      <button onClick={() => setWatering(w => !w)}>
+        {watering ? 'Stop watering' : 'Water the plant'}
+      </button>
+    </div>
+  );
 };
+
 
 // Main Component
 export const NatureComponent = () => {
