@@ -2,7 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 declare global {
   interface Window { webkitAudioContext: typeof AudioContext }
 }
-const AudioVisualizer = () => {
+type AudioVisualizerProps = {
+  stream: MediaStream | null;
+  setStream: React.Dispatch<React.SetStateAction<MediaStream | null>>;
+};
+const AudioVisualizer:React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -57,7 +61,7 @@ const AudioVisualizer = () => {
   return <canvas ref={canvasRef} />;
 };
 
-export const TimeDomainVisualizer = () => {
+export const TimeDomainVisualizer:React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
