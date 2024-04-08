@@ -7,6 +7,7 @@ import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import "../../css/slider.css";
 
+
 type Images = Record<string, string>;
 
 interface Project {

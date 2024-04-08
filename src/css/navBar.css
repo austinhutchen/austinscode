@@ -141,13 +141,13 @@ a:hover {
 .custom-navbar {
   display: flex;
   margin: auto;
-  background-color: rgba(3, 3, 3, 0.055);
+  background-color: rgba(0, 0, 0, 0.05);
   align-items: center;
   display: flex;
   justify-content: center;
   top: 0;
   /* Position at the top */
-  animation: slideIn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slideIn 0.5s cubic-bezier(.24,.51,.8,.94) both;
   z-index: 1000;
   max-width: 100%;
   /* Ensure the navbar is above other elements */
