@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import AudioVisualizer, { NatureComponent, TimeDomainVisualizer } from './sub/AudioVisualizer';
+import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
 export const Visualizer: React.FC = () => {
   return (
     <>
@@ -9,7 +9,7 @@ export const Visualizer: React.FC = () => {
 
       <div className='visualizer'>
         <h1 className="hlight"> Welcome to my fun page!</h1>
-        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b>
+        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
           <hr className="my-4" />
           
 
@@ -32,7 +32,7 @@ export const Visualizer: React.FC = () => {
           </p>
         </b>
 
-        <iframe src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="100%" height="440" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <br />
+        <iframe src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="100%" height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <br />
 
         <b>
           <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
