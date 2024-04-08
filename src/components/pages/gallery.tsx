@@ -11,16 +11,7 @@ export const Visualizer: React.FC = () => {
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b>
           <hr className="my-4" />
-          <b>
-            <h2 className="hlight"> PLANT GROWTH SIMULATOR & GALAXY STAR MAP </h2>
-            <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-              A plant growth simulator that slowly grows a plant, and a galaxy map that displays the positions of stars in the sky on an HTMl canvas.
-            </p>
-          </b>
-
-          <NatureComponent />
-
-        </p>
+          
 
 
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
