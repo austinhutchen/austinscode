@@ -12,7 +12,7 @@ const AudioVisualizer = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 1024; // Reduce fftSize for better performance
+    analyser.fftSize = 512; // Reduce fftSize for better performance
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength); // Create dataArray once
 
@@ -68,7 +68,7 @@ export const TimeDomainVisualizer = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 1024;
+    analyser.fftSize = 512;
     const bufferLength = analyser.fftSize;
     const dataArray = new Uint8Array(bufferLength);
 
