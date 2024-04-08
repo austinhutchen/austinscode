@@ -1,8 +1,24 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
 export const Visualizer: React.FC = () => {
+  const [stream, setStream] = useState<MediaStream | null>(null);
+
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+
+    return () => {
+      window.onbeforeunload = null;
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+  }, [stream]);
   return (
     <>
       <NavBar />
@@ -20,8 +36,8 @@ export const Visualizer: React.FC = () => {
             <h4 className='hlight-mini'>Enable microphone input</h4>  to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
           </p>
         </b>
-        <AudioVisualizer />
-        <TimeDomainVisualizer />
+        <AudioVisualizer stream={stream} setStream={setStream} />
+      <TimeDomainVisualizer stream={stream} setStream={setStream} />
 
         <br />
         <h2 className="hlight"> FAVORITE ALBUM PLAYER</h2>
