@@ -13,7 +13,7 @@ const TextSphere: React.FC = () => {
     const container = containerRef.current;
     const texts = [
       "Code by me!",
-      "Typescript",
+      "Typescript", 
       "Network Engineering",
       "PHP",
       "Go",
@@ -110,6 +110,19 @@ export const Landing: React.FC = () => {
               }}
             >
               More About Me
+              <HiArrowNarrowRight size={'1em'} className="ml-3" />
+            </button>
+            <br />
+            <button
+              style={{ marginBottom: '0.2em' }}
+              className="btn btn-success"
+              type="button"
+              id="navbar"
+              onClick={() => {
+                nav('/Gallery');
+              }}
+            >
+              Fun page!
               <HiArrowNarrowRight size={'1em'} className="ml-3" />
             </button>
             <br />

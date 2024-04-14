@@ -156,7 +156,7 @@ a:hover {
 @media (max-width: 600px) {
   .navBrand {
     font-size: 0.1em; /* Reduce the font size */
-    max-width: 65%;
+    max-width: 67%;
   }
   
   .custom-navbar{
