@@ -17,7 +17,7 @@ export const NavBar: React.FC = () => {
   const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.png';
-  const icon_size = '23vh';
+  const icon_size = '20vw';
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -46,8 +46,8 @@ export const NavBar: React.FC = () => {
 
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
 
-        <Collapse isOpen={isOpen} navbar >
-          <Nav className="mr-auto d-flex justify-content-center align-items-center" navbar>
+        <Collapse isOpen={isOpen} navbar classname="navFlex">
+          <Nav className="mr-auto d-flex justify-content-center align-items-center nav-horizontal" navbar>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/')}>
                 <img src={home} width={icon_size} height={icon_size} />
@@ -66,17 +66,17 @@ export const NavBar: React.FC = () => {
                 Projects
               </Button>
             </NavItem>
-         
+
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
                 <img src={resume} width={icon_size} height={icon_size} />
                 Resume
               </Button>
             </NavItem>
-   <NavItem className="nav-item">
+            <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
                 <img src={cube} width={icon_size} height={icon_size} />
-                Fun Page
+                FunPage
               </Button>
             </NavItem>
             <NavItem className="nav-item">
@@ -85,31 +85,31 @@ export const NavBar: React.FC = () => {
                 Feedback
               </Button>
             </NavItem>
-            <NavItem className="nav-item" style={{ border: '1px solid white' }}>
+            <NavItem className="nav-item" >
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size} />
                 Github
               </a>
             </NavItem>
-            <NavItem style={{ border: '1px solid white' }} className="nav-item">
+            <NavItem className="nav-item">
               <a href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
                 Instagram
               </a>
             </NavItem>
-            <NavItem className="nav-item" style={{ border: '1px solid white' }}>
+            <NavItem className="nav-item" >
               <a href="https://leetcode.com/austinhutchen/" target="_blank">
                 <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" />
                 Leetcode
               </a>
             </NavItem>
-            <NavItem className="nav-item" style={{ border: '1px solid white' }} >
+            <NavItem className="nav-item" >
               <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank">
                 <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon" />
                 Linkedin
               </a>
             </NavItem>
-            <NavItem className="nav-item" style={{ border: '1px solid white' }}>
+            <NavItem className="nav-item" >
               <a href="https://austinhutchen.medium.com/" target="_blank">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" />
                 Blog
