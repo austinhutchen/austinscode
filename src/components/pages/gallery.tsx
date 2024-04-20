@@ -26,29 +26,20 @@ export const Visualizer: React.FC = () => {
       <div className='visualizer'>
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
-          <hr className="my-4" />
-          
+        <hr className="my-4" />
+
 
 
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
         <b>
           <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-            <h4 className='hlight-mini'>Enable microphone input</h4>  to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
+            <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
           </p>
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
-      <TimeDomainVisualizer stream={stream} setStream={setStream} />
+        <TimeDomainVisualizer stream={stream} setStream={setStream} />
 
         <br />
-        <h2 className="hlight"> FAVORITE ALBUM PLAYER</h2>
-        <b>
-
-          <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-            A spotify web player that displays my currently most played album and allows for interactive play. I embedded the code itself within an iframe to work on this website!
-          </p>
-        </b>
-
-        <iframe src="https://open.spotify.com/embed/album/3RQQmkQEvNCY4prGKE6oc5?utm_source=generator" width="100%" height="420" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <br />
 
         <b>
           <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
