@@ -10,7 +10,7 @@
  
  
   ],
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "theme_color": "#5F9EA0",
   "background_color": "#5F9EA0"
