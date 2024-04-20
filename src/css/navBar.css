@@ -156,6 +156,10 @@ a:hover {
   .nav-horizontal {
     flex-direction:row ;
   }
+  .custom-navbar{
+    max-width: fit-content; /* Reduce the max-width */
+    transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); /* Add this line */
+  }
 }
 @media (max-width: 820px) {
   .navBrand {

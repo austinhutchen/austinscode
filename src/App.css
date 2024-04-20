@@ -6,23 +6,34 @@ box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 340;
   color: white;
-  font-size: larger;
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
 
   background-color:hsla(207,0%,0%,1);
-  background-image:
-  radial-gradient(at 7% 94%, hsla(236,81%,62%,1) 0px, transparent 50%),
+  background-image: radial-gradient(at 7% 94%, hsla(236,81%,62%,1) 0px, transparent 50%),
   radial-gradient(at 84% 57%, hsla(346,76%,67%,1) 0px, transparent 50%),
   radial-gradient(at 95% 18%, hsla(23,65%,60%,1) 0px, transparent 50%),
   radial-gradient(at 15% 1%, hsla(353,92%,69%,1) 0px, transparent 50%),
   radial-gradient(at 13% 1%, hsla(211,68%,67%,1) 0px, transparent 50%),
   radial-gradient(at 79% 29%, hsla(281,60%,73%,1) 0px, transparent 50%),
-  radial-gradient(at 55% 22%, hsla(130,87%,65%,1) 0px, transparent 50%);
+  radial-gradient(at 55% 22%, hsla(130,87%,65%,1) 0px, transparent 50%) /* Muted gradient */;
+  animation: gradientAnimation 15s ease infinite; /* Animation for smooth transition */
+
+  /*; */
   
 }
-
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%; /* Start position */
+  }
+  50% {
+      background-position: 100% 50%; /* Middle position */
+  }
+  100% {
+      background-position: 0% 50%; /* End position */
+  }
+}
 html{
   font-size: calc(1rem + 0.5vw);
 }

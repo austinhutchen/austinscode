@@ -22,8 +22,8 @@
 }
 .resume img{
     margin: 0 auto;
-    max-width: 25svw;
-    max-height: 25svw;
+    width:auto;
+    height: 5svh;
     border: 0.26vw solid #0BA;
     margin: 0 auto;
 }
