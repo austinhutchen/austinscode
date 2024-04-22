@@ -42,6 +42,14 @@ export const Visualizer: React.FC = () => {
         <br />
 
         <b>
+          <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
+
+        </b>
+        <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
+The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature.</p>
+        <LorenzAttractor />
+        <br />
+        <b>
           <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
 
         </b>
@@ -55,6 +63,71 @@ export const Visualizer: React.FC = () => {
 
     </>
   );
+};
+
+const LorenzAttractor = () => {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    ref.current?.appendChild(renderer.domElement);
+
+    const geometry = new THREE.BufferGeometry();
+    const positions = [];
+
+    // Lorenz Attractor parameters
+    const a = 10, b = 28, c = 8 / 3;
+    let x = 0.1, y = 0, z = 0;
+
+    for (let i = 0; i < 10000; i++) {
+      const dx = a * (y - x);
+      const dy = x * (b - z) - y;
+      const dz = x * y - c * z;
+
+      x += dx * 0.01;
+      y += dy * 0.01;
+      z += dz * 0.01;
+
+      positions.push(x, y, z);
+    }
+
+    geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+
+    const material = new THREE.LineBasicMaterial({ color: 0xffffff });
+    const line = new THREE.Line(geometry, material);
+
+    scene.add(line);
+
+    camera.position.z = 50;
+    let animationId: number;
+
+    const animate = function () {
+      animationId = requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+    };
+
+    const onWindowResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener('resize', onWindowResize, false);
+
+    animate();
+
+    return () => {
+      window.removeEventListener('resize', onWindowResize);
+      cancelAnimationFrame(animationId);
+      ref.current?.removeChild(renderer.domElement);
+    };
+  }, []);
+
+  return <div className="lorenz-attractor" ref={ref} />;
 };
 
 const Tesseract: React.FC = () => {
@@ -107,4 +180,4 @@ const Tesseract: React.FC = () => {
 
   return <div className="tesseract" ref={ref} />;
 };
-export default Tesseract;
+export default LorenzAttractor;

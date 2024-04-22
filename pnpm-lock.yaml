@@ -22,10 +22,10 @@ importers:
         specifier: ^14.5.2
         version: 14.5.2(@testing-library/dom@10.0.0)
       '@types/react':
-        specifier: ^17.0.80
+        specifier: ^17.0.2
         version: 17.0.80
       '@types/react-dom':
-        specifier: ^17.0.25
+        specifier: ^17.0.2
         version: 17.0.25
       '@types/react-router-dom':
         specifier: ^5.3.3
