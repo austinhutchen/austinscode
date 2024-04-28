@@ -18,7 +18,7 @@ const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.png';
 // Define image and video URLs directly in the keys array
 const keys = [
   {
-    desc: "Welcome! I'm a software engineer who builds multi-page PHP and Typescript-based software applications, and I have plenty of hobbies! ",
+    desc: "Welcome! I'm a software engineer who likes to tinker with electronic circuits and code Typescript-based software applications, and I have plenty of hobbies! ",
     url: me,
     type: "image"
   },

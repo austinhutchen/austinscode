@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
+/* ADD GUI CONTROLS FOR USERS*/
 export const Visualizer: React.FC = () => {
   const [stream, setStream] = useState<MediaStream | null>(null);
 
@@ -23,7 +24,7 @@ export const Visualizer: React.FC = () => {
     <>
       <NavBar />
 
-      <div className='visualizer'>
+      <div className='visualizer' >
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
         <hr className="my-4" />
@@ -130,20 +131,21 @@ const LorenzAttractor = () => {
   return <div className="lorenz-attractor" ref={ref} />;
 };
 
+
+
 const Tesseract: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!ref.current) return;
+const geometry = new THREE.PlaneGeometry(1, 1);
 
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer();
-
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({antialias:true});
     renderer.setSize(window.innerWidth, window.innerHeight);
     ref.current.appendChild(renderer.domElement);
 
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
     const edges = new THREE.EdgesGeometry(geometry);
     const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 
