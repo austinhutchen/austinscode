@@ -27,6 +27,8 @@ export const Visualizer: React.FC = () => {
       <div className='visualizer' >
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
+        <div>
+          <iframe src="https://giphy.com/embed/l4FGyCRpqs7WNEAla" ></iframe></div>
         <hr className="my-4" />
 
 
@@ -47,7 +49,7 @@ export const Visualizer: React.FC = () => {
 
         </b>
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature.</p>
+          The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature.</p>
         <LorenzAttractor />
         <br />
         <b>
@@ -138,11 +140,11 @@ const Tesseract: React.FC = () => {
 
   useEffect(() => {
     if (!ref.current) return;
-const geometry = new THREE.PlaneGeometry(1, 1);
+    const geometry = new THREE.PlaneGeometry(1, 1);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({antialias:true});
+    const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     ref.current.appendChild(renderer.domElement);
 
