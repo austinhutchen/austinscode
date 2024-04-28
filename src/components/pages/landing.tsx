@@ -81,7 +81,7 @@ export const Landing: React.FC = () => {
       <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
         <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
       </h2>
-      <div style={{width:"100%;height:0;padding-bottom:100%;position:relative;"}}><iframe src="https://giphy.com/embed/zPbnEgxsPJOJSD3qfr" width="100%" height="100%"  allowFullScreen></iframe></div>
+      <div ><iframe src="https://giphy.com/embed/zPbnEgxsPJOJSD3qfr" width="100%" height="100%"  allowFullScreen></iframe></div>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
 
