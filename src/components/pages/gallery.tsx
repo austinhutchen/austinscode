@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import  {AudioVisualizer, TimeDomainVisualizer } from './sub/AudioVisualizer';
+import { sin, complex, Complex } from 'mathjs';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { AudioVisualizer, TimeDomainVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
 export const Visualizer: React.FC = () => {
   const [stream, setStream] = useState<MediaStream | null>(null);
@@ -41,20 +43,22 @@ export const Visualizer: React.FC = () => {
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
         <TimeDomainVisualizer stream={stream} setStream={setStream} />
-        <br/>
+        <br />
 
 
         <b>
-          <h2 className="hlight"> RIEMANN ZETA FUNCTION</h2>
+          <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
         </b>
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-          The Zeta function.
+          The sine function, as defined as a function of complex numbers.
         </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Riemann_zeta_function.gif?20180922070425"/>
-        <br/>
-        <Zeta3DVisualizer  />
-<br/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
+        <br />
+        <div style={{ maxWidth: '80%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80%' }}>
+          <Sine3DVisualizer />
+        </div>
+        <br />
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
 
@@ -135,24 +139,17 @@ const LorenzAttractor = () => {
   return <div className="lorenz-attractor" ref={ref} />;
 };
 
-
-export const Zeta3DVisualizer: React.FC = () => {
+export const Sine3DVisualizer: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
-  function zeta(s:any, terms = 100) {
-    let sum = 0;
-    for (let n = 1; n <= terms; n++) {
-      sum += Math.pow(n, -s);
-    }
-    return sum;
-  }
-  useEffect(() => {
-    if (!ref.current) return;
 
+  useEffect(() => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
+    const controls = new OrbitControls(camera, renderer.domElement);
+
     renderer.setSize(window.innerWidth, window.innerHeight);
-    ref.current.appendChild(renderer.domElement);
+    ref.current?.appendChild(renderer.domElement);
 
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(100 * 100 * 3); // 100 vertices along the x-axis, 100 along the z-axis, 3 coordinates per vertex
@@ -161,7 +158,8 @@ export const Zeta3DVisualizer: React.FC = () => {
       for (let z = 0; z < 100; z++) {
         const index = (x * 100 + z) * 3;
         positions[index] = x - 50;
-        positions[index + 1] = Math.abs(zeta(x / 10)) * 10; // Use the real part of the Zeta function
+        const sinValue = sin(complex(x / 10, z / 10)) as Complex;
+        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10; // Use the magnitude of the sine function
         positions[index + 2] = z - 50;
       }
     }
@@ -176,10 +174,12 @@ export const Zeta3DVisualizer: React.FC = () => {
 
     const animate = () => {
       requestAnimationFrame(animate);
+      controls.update(); // you need to update the controls in your animation loop
 
       const positions = points.geometry.attributes.position.array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
-        positions[i + 1] = Math.abs(zeta((positions[i] + performance.now() / 1000) / 10)) * 10;
+        const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 10, positions[i + 2] / 10)) as Complex;
+        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10;
       }
 
       points.geometry.attributes.position.needsUpdate = true;
@@ -190,7 +190,7 @@ export const Zeta3DVisualizer: React.FC = () => {
     animate();
   }, []);
 
-  return <div className="zeta-3d-visualizer" ref={ref} />;
+  return <div className="sine-3d-visualizer" ref={ref} />;
 };
 
 export default LorenzAttractor;
