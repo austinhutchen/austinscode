@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import AudioVisualizer, { TimeDomainVisualizer } from './sub/AudioVisualizer';
+import  {AudioVisualizer, TimeDomainVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
 export const Visualizer: React.FC = () => {
   const [stream, setStream] = useState<MediaStream | null>(null);
@@ -41,9 +41,20 @@ export const Visualizer: React.FC = () => {
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
         <TimeDomainVisualizer stream={stream} setStream={setStream} />
+        <br/>
 
-        <br />
 
+        <b>
+          <h2 className="hlight"> RIEMANN ZETA FUNCTION</h2>
+
+        </b>
+        <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
+          The Zeta function.
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Riemann_zeta_function.gif?20180922070425"/>
+        <br/>
+        <Zeta3DVisualizer  />
+<br/>
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
 
@@ -52,15 +63,6 @@ export const Visualizer: React.FC = () => {
           The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature.</p>
         <LorenzAttractor />
         <br />
-        <b>
-          <h2 className="hlight"> 4-DIMENSIONAL TESSERACT / 3-D CUBE PROJECTION</h2>
-
-        </b>
-        <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-          A tesseract is a four-dimensional analog to the cube. It is to a cube as a cube is to a square. Just as the surface of a cube consists of six square faces, the hypersurface of a tesseract consists of eight cubical cells.  Here, I programmed a visualizer using three.js, which is a three-dimensional software that I used to rotate a cube to rotate and projects all of its faces into a four-dimensional tesseract representation.
-        </p>
-        <Tesseract />
-
 
       </div>
 
@@ -134,13 +136,17 @@ const LorenzAttractor = () => {
 };
 
 
-
-const Tesseract: React.FC = () => {
+export const Zeta3DVisualizer: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
-
+  function zeta(s:any, terms = 100) {
+    let sum = 0;
+    for (let n = 1; n <= terms; n++) {
+      sum += Math.pow(n, -s);
+    }
+    return sum;
+  }
   useEffect(() => {
     if (!ref.current) return;
-    const geometry = new THREE.PlaneGeometry(1, 1);
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -148,40 +154,43 @@ const Tesseract: React.FC = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     ref.current.appendChild(renderer.domElement);
 
-    const edges = new THREE.EdgesGeometry(geometry);
-    const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+    const geometry = new THREE.BufferGeometry();
+    const positions = new Float32Array(100 * 100 * 3); // 100 vertices along the x-axis, 100 along the z-axis, 3 coordinates per vertex
 
-    scene.add(line);
+    for (let x = 0; x < 100; x++) {
+      for (let z = 0; z < 100; z++) {
+        const index = (x * 100 + z) * 3;
+        positions[index] = x - 50;
+        positions[index + 1] = Math.abs(zeta(x / 10)) * 10; // Use the real part of the Zeta function
+        positions[index + 2] = z - 50;
+      }
+    }
 
-    camera.position.z = 5;
-    let animationId: number;
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-    const animate = function () {
-      animationId = requestAnimationFrame(animate);
+    const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.1 });
+    const points = new THREE.Points(geometry, material);
+    scene.add(points);
 
-      line.rotation.x += 0.01;
-      line.rotation.y += 0.01;
+    camera.position.z = 100;
+
+    const animate = () => {
+      requestAnimationFrame(animate);
+
+      const positions = points.geometry.attributes.position.array as Float32Array;
+      for (let i = 0; i < positions.length; i += 3) {
+        positions[i + 1] = Math.abs(zeta((positions[i] + performance.now() / 1000) / 10)) * 10;
+      }
+
+      points.geometry.attributes.position.needsUpdate = true;
 
       renderer.render(scene, camera);
     };
 
-    const onWindowResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
-
-    window.addEventListener('resize', onWindowResize, false);
-
     animate();
-
-    return () => {
-      window.removeEventListener('resize', onWindowResize);
-      cancelAnimationFrame(animationId);
-      ref.current?.removeChild(renderer.domElement);
-    };
   }, []);
 
-  return <div className="tesseract" ref={ref} />;
+  return <div className="zeta-3d-visualizer" ref={ref} />;
 };
+
 export default LorenzAttractor;
