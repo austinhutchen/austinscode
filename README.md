@@ -1,4 +1,4 @@
-<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Herbal</i> <b> 14.4 🧉🍵 </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Herbal</i> <b> 14.5 🧉🍵 </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
 <br/>  <i> Diamond </i>Bundle Size: <b> 262KB </b>
 <br/> Link: <b> https://austinhutchen.vercel.app </b>
