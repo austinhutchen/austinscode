@@ -38,7 +38,7 @@
   },
   "scripts": {
     "analyze": "node analyzer.js",
-    "deploy": "pnpm run build; vercel --prod; gh-pages -d build",
+    "deploy": "pnpm run build; vercel --prod;",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
