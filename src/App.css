@@ -38,6 +38,16 @@ box-sizing: border-box;
 html{
   font-size: calc(1rem + 0.5vw);
 }
+.nerdGif iframe{
+  width: 100% !important ; 
+  height: 14svh !important;
+}
+.nerdGif{
+  align-items: center;
+  justify-content:center;
+  display: flex;
+
+}
 .landing{
   width: 0;
   transition: width 0.5s ease-out; /* Adjust duration and easing function as needed */
