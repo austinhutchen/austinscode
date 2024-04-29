@@ -287,7 +287,11 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
   return (
     <div>
-      <h3 className="hlight-mini">{project.title}</h3>
+      <h3 className="hlight-mini">
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
+          {project.title}
+          </a>
+       </h3>
       <br />
       {project.media.map((mediaItem, index) => {
         if (mediaItem.type === 'video') {
