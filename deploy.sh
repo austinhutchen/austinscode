@@ -1,2 +1,1 @@
 exec pnpm run deploy
-```
