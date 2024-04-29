@@ -18,6 +18,8 @@
     "css-loader": "^7.1.1",
     "dependabot": "^0.1.1",
     "express": "^4.19.2",
+    "math.js": "^1.1.46",
+    "mathjs": "^12.4.2",
     "postcss-loader": "^8.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
