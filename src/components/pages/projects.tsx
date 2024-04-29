@@ -30,7 +30,7 @@ const images: Images = {
   gesture: getImgPath('gesture.mp4'),
   PLANT_WATERER: getImgPath('PLANT_KERNEL.mp4'),
   encryptc: getImgPath('encryptc.webp'),
-  wled2: getImgPath('wled2.mp4'),
+  wled2: getImgPath('WLED2.mp4'),
   my_interface: getImgPath('interface.webp'),
   notable: getImgPath('journalapp.webp'),
   weather: getImgPath('WEATHER.webp'),
@@ -290,8 +290,8 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
       <h3 className="hlight-mini">
         <a href={project.link} target="_blank" rel="noopener noreferrer">
           {project.title}
-          </a>
-       </h3>
+        </a>
+      </h3>
       <br />
       {project.media.map((mediaItem, index) => {
         if (mediaItem.type === 'video') {
