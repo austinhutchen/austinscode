@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react'; import React from 'react';
 declare global {
   interface Window { webkitAudioContext: typeof AudioContext }
 }
@@ -6,7 +6,7 @@ type AudioVisualizerProps = {
   stream: MediaStream | null;
   setStream: React.Dispatch<React.SetStateAction<MediaStream | null>>;
 };
-const AudioVisualizer:React.FC<AudioVisualizerProps> = () => {
+export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -61,7 +61,7 @@ const AudioVisualizer:React.FC<AudioVisualizerProps> = () => {
   return <canvas ref={canvasRef} />;
 };
 
-export const TimeDomainVisualizer:React.FC<AudioVisualizerProps> = () => {
+export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -127,113 +127,3 @@ export const TimeDomainVisualizer:React.FC<AudioVisualizerProps> = () => {
 
   return <canvas ref={canvasRef} />;
 };
-// Star Map Component
-// Star Map Component
-const StarMap = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [sunrise, setSunrise] = useState(0);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    // Create a radial gradient for the sunrise
-    const gradient = ctx.createRadialGradient(
-      canvas.width / 2, canvas.height, sunrise,
-      canvas.width / 2, canvas.height, canvas.height
-    );
-    gradient.addColorStop(0, 'yellow');
-    gradient.addColorStop(1, 'black');
-
-    // Set the background to the sunrise gradient
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    // Draw stars on the canvas (this is a simplification)
-    for (let i = 0; i < 1000; i++) {
-      const x = Math.random() * canvas.width;
-      const y = Math.random() * canvas.height;
-      ctx.fillStyle = 'white';
-      ctx.fillRect(x, y, 1, 1);
-    }
-  }, [sunrise]);
-
-  useEffect(() => {
-    // Animate the sunrise
-    const intervalId = setInterval(() => {
-      setSunrise(prevSunrise => prevSunrise + 1);
-    }, 100); // Increase the sunrise radius by 1 every 100ms
-
-    return () => {
-      clearInterval(intervalId); // Clean up the interval on unmount
-    };
-  }, []);
-
-  return <canvas ref={canvasRef} />;
-};
-
-const PlantGrowthSimulator = () => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [plantHeight, setPlantHeight] = useState(0);
-  const [watering, setWatering] = useState(false);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    // Create a gradient background
-    const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    gradient.addColorStop(0, 'green');
-    gradient.addColorStop(1, 'blue');
-    ctx.fillStyle = gradient;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    // Draw a plant on the canvas (this is a simplification)
-    ctx.beginPath();
-    ctx.moveTo(canvas.width / 2, canvas.height);
-    ctx.lineTo(canvas.width / 2, canvas.height - plantHeight);
-    ctx.strokeStyle = 'green';
-    ctx.stroke();
-  }, [plantHeight]);
-
-  useEffect(() => {
-    // Grow the plant over time
-    const intervalId = setInterval(() => {
-      setPlantHeight(prevHeight => prevHeight + (watering ? 3 : 1));
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalId); // Clean up the interval on unmount
-    };
-  }, [watering]);
-
-  return (
-    <div>
-      <canvas ref={canvasRef} />
-      <br/>
-      <button onClick={() => setWatering(w => !w)}>
-        {watering ? 'Stop watering' : 'Water the plant'}
-      </button>
-    </div>
-  );
-};
-
-
-// Main Component
-export const NatureComponent = () => {
-  return (
-    <div>
-      <StarMap />
-      <PlantGrowthSimulator />
-    </div>
-  );
-};
-
-
-export default AudioVisualizer;
