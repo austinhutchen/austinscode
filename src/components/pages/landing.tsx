@@ -81,10 +81,8 @@ export const Landing: React.FC = () => {
         <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
           <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
         </h2>
-        <div ><iframe height="50%" width="auto" title="math" src="https://giphy.com/embed/zPbnEgxsPJOJSD3qfr" allowFullScreen></iframe>
-
+        <div className="nerdGif"><iframe title="math" src="https://giphy.com/embed/zPbnEgxsPJOJSD3qfr" allowFullScreen></iframe>
         </div>
-        <br />
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
 
@@ -117,7 +115,6 @@ export const Landing: React.FC = () => {
           <HiArrowNarrowRight size={'1em'} className="ml-3" />
         </button>
         <br />
-        <Spinner />
 
         <button
           style={{ marginBottom: '0.2em' }}
@@ -132,6 +129,8 @@ export const Landing: React.FC = () => {
           <HiArrowNarrowRight size={'1em'} className="ml-3" />
         </button>
         <br />
+        <Spinner />
+
         <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=12&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" />
         <img height="150vh" width="auto" src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
         <div className="aside">
