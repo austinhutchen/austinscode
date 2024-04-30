@@ -256,7 +256,7 @@ a:active {
 }
 
 .nav-icon {
-  border-image-source: url('../../public/fast_imgs/border.png');
+  border-image-source: url('../../public/fast_imgs/border.webp');
   border-image-width: 6svh;
 }
 
