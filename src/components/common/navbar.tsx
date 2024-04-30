@@ -10,12 +10,14 @@ export const NavBar: React.FC = () => {
   const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
   const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
   const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
+  const facebook = process.env.PUBLIC_URL + '/fast_imgs/Facebook.png';
   const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
   const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
   const about = process.env.PUBLIC_URL + '/fast_imgs/About.png';
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.png';
   const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
+
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.png';
   const icon_size = '20vw';
 
@@ -94,6 +96,12 @@ export const NavBar: React.FC = () => {
               <a href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
                 Instagram
+              </a>
+            </NavItem>
+            <NavItem className="nav-item" >
+              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank">
+                <img src={facebook} width={icon_size} height={icon_size} className="nav-icon" />
+                Facebook
               </a>
             </NavItem>
             <NavItem className="nav-item" >
