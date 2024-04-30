@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavBar } from '../common/navbar';
 
-const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.png';
+const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.webp';
 
 const inclusion = process.env.PUBLIC_URL+'/fast_imgs/inclusion.webp';
 const support = process.env.PUBLIC_URL+'/fast_imgs/support.webp';
@@ -26,7 +26,6 @@ const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
 );
 
  export const Feedback: React.FC = () => {
-  const mathPhDStudents = rec_letter;
 
 const data = [inclusion,support]
 
@@ -44,7 +43,7 @@ const data = [inclusion,support]
                 </h2>
                 <br />
                 <img
-                  src={mathPhDStudents}
+                  src={rec_letter}
                   style={{ maxHeight: "65svh", maxWidth: "100%" }}
                   loading="eager"
                   alt="Math_PhD_Students_Letter"
