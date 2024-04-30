@@ -70,7 +70,7 @@ const TextSphere: React.FC = () => {
 export const Landing: React.FC = () => {
   const nav = useNavigate();
   const shouldAnimate: boolean = true;
-  const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
+  const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
 
   return (
     <>
