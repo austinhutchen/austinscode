@@ -20,9 +20,7 @@
 .resume-body {
   text-align: center;
 }
-.resume img{
-    margin: 0 auto;
-    width:auto;
+.resume {
     height: 5svh;
     border: 0.26vw solid #0BA;
     margin: 0 auto;

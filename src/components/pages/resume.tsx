@@ -4,7 +4,7 @@ const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/$
 
 
 
-const resume = getImgPath('Resume.webp');
+const resume = getImgPath('resume.webp');
 
 
 
