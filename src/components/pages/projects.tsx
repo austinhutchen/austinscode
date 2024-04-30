@@ -26,7 +26,7 @@ const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/$
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
-  maps: getImgPath('maps.png'),
+  maps: getImgPath('maps.webp'),
   gesture: getImgPath('gesture.mp4'),
   PLANT_WATERER: getImgPath('PLANT_KERNEL.mp4'),
   encryptc: getImgPath('encryptc.webp'),
@@ -40,8 +40,8 @@ const images: Images = {
   actix: getImgPath('concurrency-model.webp'),
   game: getImgPath('game1.webp'),
   nano2: getImgPath('nano2.mp4'),
-  firecam: getImgPath('firecam.jpg'),
-  malloc: getImgPath('malloc.png'),
+  firecam: getImgPath('firecam.webp'),
+  malloc: getImgPath('malloc.webp'),
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4')
   // Add other images here

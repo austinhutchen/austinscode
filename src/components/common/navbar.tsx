@@ -6,19 +6,19 @@ export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isToggled, setIsToggled] = useState(false); // Add this line
   const nav = useNavigate();
-  const github = process.env.PUBLIC_URL + '/fast_imgs/github.png';
-  const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.png';
-  const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.png';
-  const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.png';
-  const facebook = process.env.PUBLIC_URL + '/fast_imgs/Facebook.png';
-  const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.png';
-  const home = process.env.PUBLIC_URL + '/fast_imgs/home.png';
-  const about = process.env.PUBLIC_URL + '/fast_imgs/About.png';
-  const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.png';
-  const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.png';
-  const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.png';
+  const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
+  const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.webp';
+  const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.webp';
+  const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.webp';
+  const facebook = process.env.PUBLIC_URL + '/fast_imgs/Facebook.webp';
+  const medium = process.env.PUBLIC_URL + '/fast_imgs/Medium.webp';
+  const home = process.env.PUBLIC_URL + '/fast_imgs/home.webp';
+  const about = process.env.PUBLIC_URL + '/fast_imgs/About.webp';
+  const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.webp';
+  const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.webp';
+  const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
 
-  const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.png';
+  const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
   const icon_size = '20vw';
 
   const toggle = () => {
