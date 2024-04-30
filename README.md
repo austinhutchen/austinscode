@@ -8,24 +8,33 @@
 
 <hr/>
  <u> <h2> Local File Structure: </h2> </u> <br/>
+|____upgrade.sh <br/>
+|____start.sh <br/>
+|____dependabot.yml <br/>
+|____.idea <br/>
+| |____.idea.resumejs.dir <br/>
+| | |____.idea <br/>
+| | | |____indexLayout.xml <br/>
+| | | |____encodings.xml <br/>
+| | | |____vcs.xml <br/>
+| | | |____.gitignore <br/>
 |____src <br/>
 | |____App.tsx <br/>
 | |____.DS_Store <br/>
 | |____css <br/>
 | | |____dimensions.css <br/>
-| | |____.DS_Store <br/>
 | | |____resume.css <br/>
 | | |____slider.css <br/>
 | | |____navBar.css <br/>
 | | |____spinner.css <br/>
 | | |____fonts.css <br/>
-| | |____TextSphere.css <br/>
+| | |____TextSphere.css <br/> 
 | |____reportWebVitals.jsx <br/>
 | |____App.css <br/>
 | |____index.css <br/>
 | |____components <br/>
 | | |____.DS_Store <br/>
-| | |____common <br/>
+| | |____common <br/> 
 | | | |____navbar.tsx <br/>
 | | | |____symbols.tsx <br/>
 | | |____pages <br/>
@@ -34,9 +43,9 @@
 | | | |____aboutme.tsx <br/>
 | | | |____resume.tsx <br/>
 | | | |____sub <br/>
-| | | | |____subProjects.tsx <br/>
+| | | | |____AudioVisualizer.tsx <br/>
 | | | |____landing.tsx <br/>
 | | | |____feedback.tsx <br/>
 | | |____base <br/>
-| | | |____AnimatedRoutes.tsx <br/>
+| | | |____Router.tsx <br/>
 | |____index.jsx <br/>
