@@ -31,3 +31,5 @@ do
 done
 
 echo -e $output | column -t -s ', '
+{ pnpm outdated; }	
+printf "done \n";
