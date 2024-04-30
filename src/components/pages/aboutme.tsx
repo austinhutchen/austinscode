@@ -94,13 +94,12 @@ const About: React.FC = () => {
     arrows: true,
     slidesToScroll: 1,
     infinite: true,
-    loading: 'progressive',
-    fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     dots: true,
   };
 
-  const slider:React.RefObject<Slider> = useRef<Slider>(null);
+  const slider: React.RefObject<Slider> = useRef<Slider>(null);
+
 
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
     if (slider?.current) {
@@ -111,12 +110,11 @@ const About: React.FC = () => {
   return (
     <div className="sc">
       <Slider ref={slider} {...settings}>
-        {keys.map((data) => (
-          <div className="aboutSlider">
+        {keys.map((data, index) => (
+          <div className="aboutSlider" key={index}>
             {data.type === "image" ? (
               <img
                 src={data.url}
-                loading="lazy"
                 style={imageStyles}
                 alt="Project Image"
               />
@@ -127,7 +125,7 @@ const About: React.FC = () => {
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
-                preload="auto"
+                preload="metadata"
                 style={videoStyles}
                 src={data.url}
               />
@@ -149,8 +147,8 @@ const About: React.FC = () => {
       </Slider>
     </div>
   );
-};
 
+}
 export const Aboutme: React.FC = () => {
   return (
     <>
@@ -165,4 +163,3 @@ export const Aboutme: React.FC = () => {
     </>
   );
 };
-
