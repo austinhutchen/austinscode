@@ -116,7 +116,7 @@ const About: React.FC = () => {
             {data.type === "image" ? (
               <img
                 src={data.url}
-                loading="eager"
+                loading="lazy"
                 style={imageStyles}
                 alt="Project Image"
               />
