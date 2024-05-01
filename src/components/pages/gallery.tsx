@@ -53,7 +53,7 @@ export const Visualizer: React.FC = () => {
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
           The sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, a javascript library. 
         </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" className="projimg" />
+        <img className="projImg" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
         <br />
         <div >
           <Sine3DVisualizer />
@@ -64,7 +64,8 @@ export const Visualizer: React.FC = () => {
 
         </b>
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-          The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature.</p>
+          The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
+          <img className="projImg" src="https://community.wolfram.com//c/portal/getImageAttachment?filename=ezgif-3-3cf45e6291.gif&userId=20103"/>
         <LorenzAttractor />
         <br />
 
@@ -79,7 +80,7 @@ const LorenzAttractor = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight) , 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
 
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -120,7 +121,7 @@ const LorenzAttractor = () => {
     };
 
     const onWindowResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.aspect = (window.innerWidth / window.innerHeight );
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
@@ -147,8 +148,8 @@ export const Sine3DVisualizer: React.FC = () => {
     const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     const controls = new OrbitControls(camera, renderer.domElement);
-    const width = ((ref.current?.clientWidth||0)/2) || 0; // Set to the width of the parent element
-    const height = 300; // Set to the height of your content
+    const width = ((ref.current?.clientWidth||0)/3) || 0; // Set to the width of the parent element
+    const height = 400; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
@@ -160,7 +161,7 @@ export const Sine3DVisualizer: React.FC = () => {
         const index = (x * 100 + z) * 3;
         positions[index] = x - 50;
         const sinValue = sin(complex(x / 10, z / 10)) as Complex;
-        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 14; // Use the magnitude of the sine function
+        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 7; // Use the magnitude of the sine function
         positions[index + 2] = z - 50;
       }
     }
@@ -180,7 +181,7 @@ export const Sine3DVisualizer: React.FC = () => {
       const positions = points.geometry.attributes.position.array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
         const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 5, positions[i + 2] / 5)) as Complex;
-        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10;
+        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 7;
       }
 
       points.geometry.attributes.position.needsUpdate = true;
