@@ -51,11 +51,11 @@ export const Visualizer: React.FC = () => {
 
         </b>
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-          The sine function, as defined as a function of complex numbers.
+          The sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, a javascript library. 
         </p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
         <br />
-        <div style={{ maxWidth: '80%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80%' }}>
+        <div >
           <Sine3DVisualizer />
         </div>
         <br />
@@ -144,22 +144,23 @@ export const Sine3DVisualizer: React.FC = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     const controls = new OrbitControls(camera, renderer.domElement);
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    const width = ((ref.current?.clientWidth||0)/2) || 0; // Set to the width of the parent element
+    const height = 300; // Set to the height of your content
+    renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
     const geometry = new THREE.BufferGeometry();
-    const positions = new Float32Array(100 * 100 * 3); // 100 vertices along the x-axis, 100 along the z-axis, 3 coordinates per vertex
+    const positions = new Float32Array(150 * 150 * 3); // 100 vertices along the x-axis, 100 along the z-axis, 3 coordinates per vertex
 
     for (let x = 0; x < 100; x++) {
       for (let z = 0; z < 100; z++) {
         const index = (x * 100 + z) * 3;
         positions[index] = x - 50;
         const sinValue = sin(complex(x / 10, z / 10)) as Complex;
-        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10; // Use the magnitude of the sine function
+        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 14; // Use the magnitude of the sine function
         positions[index + 2] = z - 50;
       }
     }
@@ -170,7 +171,7 @@ export const Sine3DVisualizer: React.FC = () => {
     const points = new THREE.Points(geometry, material);
     scene.add(points);
 
-    camera.position.z = 100;
+    camera.position.z = 50;
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -178,7 +179,7 @@ export const Sine3DVisualizer: React.FC = () => {
 
       const positions = points.geometry.attributes.position.array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
-        const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 10, positions[i + 2] / 10)) as Complex;
+        const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 5, positions[i + 2] / 5)) as Complex;
         positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10;
       }
 
