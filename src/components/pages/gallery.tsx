@@ -53,7 +53,7 @@ export const Visualizer: React.FC = () => {
         <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
           The sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, a javascript library. 
         </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" className="projimg" />
         <br />
         <div >
           <Sine3DVisualizer />
