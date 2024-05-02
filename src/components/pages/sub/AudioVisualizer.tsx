@@ -16,7 +16,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048; // Reduce fftSize for better performance
+    analyser.fftSize = 1024; // Reduce fftSize for better performance
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength); // Create dataArray once
 
@@ -72,7 +72,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 1024;
     const bufferLength = analyser.fftSize;
     const dataArray = new Uint8Array(bufferLength);
 
