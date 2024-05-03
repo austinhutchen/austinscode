@@ -54,7 +54,7 @@ export const Visualizer: React.FC = () => {
 
         </b>
         <p style={{ fontSize: "1em" }} >
-          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. Tap and scroll to move around the function in 3-d!
+          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. <br/> <h3 className="hlight-mini">  Tap and scroll on the box to move around the function in 3-d!</h3>
         </p>
         <img className="projImg" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
         <br />
