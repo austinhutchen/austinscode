@@ -37,7 +37,7 @@ export const Visualizer: React.FC = () => {
 
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
         <b>
-          <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
+          <p style={{ fontSize: "0.9em" }} >
             <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
           </p>
         </b>
@@ -53,8 +53,8 @@ export const Visualizer: React.FC = () => {
           <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
         </b>
-        <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
-          The sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, a javascript library. 
+        <p style={{ fontSize: "1em" }} >
+          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. Tap and scroll to move around the function in 3-d!
         </p>
         <img className="projImg" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
         <br />
@@ -66,7 +66,7 @@ export const Visualizer: React.FC = () => {
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
 
         </b>
-        <p style={{ fontSize: "0.9em", fontFamily: "-moz-initial" }} >
+        <p style={{ fontSize: "1em" }} >
           The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
           <img className="projImg" src="https://community.wolfram.com//c/portal/getImageAttachment?filename=ezgif-3-3cf45e6291.gif&userId=20103"/>
         <LorenzAttractor />
@@ -85,8 +85,9 @@ const LorenzAttractor = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight) , 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    const width = ref.current?.clientWidth || 0; // Set to the width of the parent element
+    const height = 350; // Set to the height of your content
+    renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
     const geometry = new THREE.BufferGeometry();
@@ -115,7 +116,7 @@ const LorenzAttractor = () => {
 
     scene.add(line);
 
-    camera.position.z = 50;
+    camera.position.z = 89;
     let animationId: number;
 
     const animate = function () {
@@ -151,8 +152,8 @@ export const Sine3DVisualizer: React.FC = () => {
     const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     const controls = new OrbitControls(camera, renderer.domElement);
-    const width = ((ref.current?.clientWidth||0)/3) || 0; // Set to the width of the parent element
-    const height = 400; // Set to the height of your content
+    const width = ((ref.current?.clientWidth||0)/2) || 0; // Set to the width of the parent element
+    const height = 150; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
@@ -164,7 +165,7 @@ export const Sine3DVisualizer: React.FC = () => {
         const index = (x * 100 + z) * 3;
         positions[index] = x - 50;
         const sinValue = sin(complex(x / 10, z / 10)) as Complex;
-        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 7; // Use the magnitude of the sine function
+        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 5; // Use the magnitude of the sine function
         positions[index + 2] = z - 50;
       }
     }
@@ -184,7 +185,7 @@ export const Sine3DVisualizer: React.FC = () => {
       const positions = points.geometry.attributes.position.array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
         const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 5, positions[i + 2] / 5)) as Complex;
-        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 7;
+        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10;
       }
 
       points.geometry.attributes.position.needsUpdate = true;
