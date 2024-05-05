@@ -86,37 +86,32 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
+        const sliceWidth:number = 2; // Add this line
 
         const draw = () => {
           requestAnimationFrame(draw);
 
           analyser.getByteTimeDomainData(dataArray);
 
+          // Shift the canvas to the left
+          const imageData = ctx.getImageData(sliceWidth, 0, canvas.width - sliceWidth, canvas.height);
+          ctx.putImageData(imageData, 0, 0);
+
+          // Clear the rightmost area of the canvas
           ctx.fillStyle = 'rgb(200, 200, 200)';
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
+          ctx.fillRect(canvas.width - sliceWidth, 0, sliceWidth, canvas.height);
 
           ctx.lineWidth = 2;
           ctx.strokeStyle = 'rgb(0, 0, 0)';
 
           ctx.beginPath();
 
-          const sliceWidth = canvas.width * 1.0 / bufferLength;
-          let x = 0;
+          const v = dataArray[dataArray.length - 1] / 128.0;
+          const y = v * canvas.height / 2;
 
-          for (let i = 0; i < bufferLength; i++) {
-            const v = dataArray[i] / 128.0;
-            const y = v * canvas.height / 2;
-
-            if (i === 0) {
-              ctx.moveTo(x, y);
-            } else {
-              ctx.lineTo(x, y);
-            }
-
-            x += sliceWidth;
-          }
-
-          ctx.lineTo(canvas.width, canvas.height / 2);
+          // Draw the new line segment at the right edge of the canvas
+          ctx.moveTo(canvas.width - sliceWidth, canvas.height / 2);
+          ctx.lineTo(canvas.width, y);
           ctx.stroke();
         };
 
