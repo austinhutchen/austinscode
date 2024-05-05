@@ -16,7 +16,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 1024; // Reduce fftSize for better performance
+    analyser.fftSize = 512; // Reduce fftSize for better performance
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength); // Create dataArray once
 
@@ -76,54 +76,65 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
     const bufferLength = analyser.fftSize;
     const dataArray = new Uint8Array(bufferLength);
 
-    navigator.mediaDevices.getUserMedia({ 
+    navigator.mediaDevices.getUserMedia({
       audio: true
     })
-    .then(stream => {
-      const source = audioContext.createMediaStreamSource(stream);
-      
-      const gainNode = audioContext.createGain();
-      gainNode.gain.value = 2; // increase the volume by a factor of 2
-      source.connect(gainNode);
-      gainNode.connect(analyser);
-    
-      const canvas = canvasRef.current;
-      if (!canvas) return;
-    
-      const ctx = canvas.getContext('2d');
-      if (!ctx) return;
-      const sliceWidth:number = 2; // Add this line
-    
-      const draw = () => {
-        requestAnimationFrame(draw);
-    
-        analyser.getByteTimeDomainData(dataArray);
-    
-        // Shift the canvas to the left
-        const imageData = ctx.getImageData(sliceWidth, 0, canvas.width - sliceWidth, canvas.height);
-        ctx.putImageData(imageData, 0, 0);
-    
-        // Clear the rightmost area of the canvas
-        ctx.fillStyle = 'rgb(200, 200, 200)';
-        ctx.fillRect(canvas.width - sliceWidth, 0, sliceWidth, canvas.height);
-    
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = 'rgb(0, 0, 0)';
-    
-        ctx.beginPath();
-    
-        const v = dataArray[dataArray.length - 1] / 128.0;
-        const y = v * canvas.height / 2;
-    
-        // Draw the new line segment at the right edge of the canvas
-        ctx.moveTo(canvas.width - sliceWidth, canvas.height / 2);
-        ctx.lineTo(canvas.width, y);
-        ctx.stroke();
-      };
-    
-      draw();
-    })
-    .catch(err => console.log(err));
+      .then(stream => {
+        const source = audioContext.createMediaStreamSource(stream);
+
+        const gainNode = audioContext.createGain();
+        gainNode.gain.value = 6; // increase the volume by a factor of 2
+        source.connect(gainNode);
+        gainNode.connect(analyser);
+
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+        const sliceWidth:number = (canvas.width / bufferLength) * 6.5;
+        // Create an offscreen canvas
+        const offscreenCanvas = document.createElement('canvas');
+        offscreenCanvas.width = canvas.width;
+        offscreenCanvas.height = canvas.height;
+        const offscreenCtx = offscreenCanvas.getContext('2d');
+
+        const draw = () => {
+          requestAnimationFrame(draw);
+        
+          analyser.getByteTimeDomainData(dataArray);
+        
+          if (!offscreenCtx) {
+            return;
+          }
+        
+          // Draw the previous frame of the canvas to the left of the new slice
+          offscreenCtx.drawImage(offscreenCanvas, -sliceWidth, 0);
+        
+          // Clear the rightmost area of the offscreen canvas
+          offscreenCtx.fillStyle = 'rgb(200, 200, 200)';
+          offscreenCtx.fillRect(offscreenCanvas.width - sliceWidth, 0, sliceWidth, offscreenCanvas.height);
+        
+          offscreenCtx.lineWidth = 2;
+          offscreenCtx.strokeStyle = 'rgb(0, 0, 0)';
+        
+          offscreenCtx.beginPath();
+        
+          const v = dataArray[dataArray.length - 1] / 128.0;
+          const y = v * offscreenCanvas.height / 2;
+        
+          // Draw the new line segment at the right edge of the offscreen canvas
+          offscreenCtx.moveTo(offscreenCanvas.width - sliceWidth, offscreenCanvas.height / 2);
+          offscreenCtx.lineTo(offscreenCanvas.width, y);
+          offscreenCtx.stroke();
+        
+          // Copy the offscreen canvas onto the displayed canvas
+          ctx.drawImage(offscreenCanvas, 0, 0);
+        };
+        
+        draw();
+      })
+      .catch(err => console.log(err));
   }, []);
 
   return <canvas ref={canvasRef} />;
