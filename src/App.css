@@ -67,6 +67,11 @@ html{
     opacity: 1;
   }
 }
+.iframe-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 .sine-3d-visualizer{
   display:flex;
   justify-content: center;

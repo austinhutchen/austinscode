@@ -47,14 +47,19 @@ export const Visualizer: React.FC = () => {
         <h1>
           <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
         </h1>
-        <iframe style= {{border: "0", width: "100%", height: "42px"}} src="https://bandcamp.com/EmbeddedPlayer/album=289676725/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://jpegmafia.bandcamp.com/album/lp">LP! by JPEGMAFIA</a></iframe>
-
+        <div className='iframe-container'>
+          <div className='iframe-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <iframe style={{ border: "0", width: "100%", height: "4vh", objectFit: "contain" }} src="https://bandcamp.com/EmbeddedPlayer/album=289676725/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
+              <a href="https://jpegmafia.bandcamp.com/album/lp">LP! by JPEGMAFIA</a>
+            </iframe>
+          </div>
+        </div>
         <b>
           <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
         </b>
         <p style={{ fontSize: "1em" }} >
-          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. <br/> <h3 className="hlight-mini">  Tap and scroll on the box to move around the function in 3-d!</h3>
+          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. <br /> <h3 className="hlight-mini">  Tap and scroll on the box to move around the function in 3-d!</h3>
         </p>
         <img className="projImg" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
         <br />
@@ -68,7 +73,7 @@ export const Visualizer: React.FC = () => {
         </b>
         <p style={{ fontSize: "1em" }} >
           The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
-          <img className="projImg" src="https://community.wolfram.com//c/portal/getImageAttachment?filename=ezgif-3-3cf45e6291.gif&userId=20103"/>
+        <img className="projImg" src="https://community.wolfram.com//c/portal/getImageAttachment?filename=ezgif-3-3cf45e6291.gif&userId=20103" />
         <LorenzAttractor />
         <br />
 
@@ -83,7 +88,7 @@ const LorenzAttractor = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight) , 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight), 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
     const width = ref.current?.clientWidth || 0; // Set to the width of the parent element
     const height = 350; // Set to the height of your content
@@ -125,7 +130,7 @@ const LorenzAttractor = () => {
     };
 
     const onWindowResize = () => {
-      camera.aspect = (window.innerWidth / window.innerHeight );
+      camera.aspect = (window.innerWidth / window.innerHeight);
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
@@ -152,7 +157,7 @@ export const Sine3DVisualizer: React.FC = () => {
     const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     const controls = new OrbitControls(camera, renderer.domElement);
-    const width = ((ref.current?.clientWidth||0)/2) || 0; // Set to the width of the parent element
+    const width = ((ref.current?.clientWidth || 0) / 2) || 0; // Set to the width of the parent element
     const height = 150; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
