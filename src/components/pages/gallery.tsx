@@ -49,7 +49,7 @@ export const Visualizer: React.FC = () => {
         </h1>
         <div className='iframe-container'>
           <div className='iframe-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <iframe style={{ border: "0", width: "100%", height: "4vh", objectFit: "contain" }} src="https://bandcamp.com/EmbeddedPlayer/album=289676725/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
+            <iframe style={{ border: "0", width: "100%", height: "6vh", objectFit: "contain" }} src="https://bandcamp.com/EmbeddedPlayer/album=289676725/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless>
               <a href="https://jpegmafia.bandcamp.com/album/lp">LP! by JPEGMAFIA</a>
             </iframe>
           </div>
