@@ -59,6 +59,7 @@ html{
 .App-link {
   color: #61dafb;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
