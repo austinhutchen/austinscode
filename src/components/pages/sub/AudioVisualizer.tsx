@@ -83,7 +83,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
         const source = audioContext.createMediaStreamSource(stream);
 
         const gainNode = audioContext.createGain();
-        gainNode.gain.value = 6; // increase the volume by a factor of 2
+        gainNode.gain.value = 5.0; // increase the volume by a factor of 2
         source.connect(gainNode);
         gainNode.connect(analyser);
 
@@ -92,7 +92,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
-        const sliceWidth:number = (canvas.width / bufferLength) * 10.0;
+        const sliceWidth:number = (canvas.width / bufferLength) * 7.0;
         // Create an offscreen canvas
         const offscreenCanvas = document.createElement('canvas');
         offscreenCanvas.width = canvas.width;
