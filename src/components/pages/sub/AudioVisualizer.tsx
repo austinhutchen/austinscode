@@ -92,7 +92,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
-        const sliceWidth:number = (canvas.width / bufferLength) * 7.0;
+        const sliceWidth:number = (canvas.width / bufferLength) * 8.0;
         // Create an offscreen canvas
         const offscreenCanvas = document.createElement('canvas');
         offscreenCanvas.width = canvas.width;
