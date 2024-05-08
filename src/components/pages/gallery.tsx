@@ -47,10 +47,10 @@ export const Visualizer: React.FC = () => {
         <h1>
           <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
         </h1>
-       
-          <div  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <iframe width="35%" src="https://open.spotify.com/embed/album/5rVlqi2fHOmWB764N8PsWF?utm_source=generator"  height="100%" ></iframe>
-          </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <iframe width="100%" src="https://open.spotify.com/embed/album/5rVlqi2fHOmWB764N8PsWF?utm_source=generator" height="100%" ></iframe>
+        </div>
         <b>
           <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
