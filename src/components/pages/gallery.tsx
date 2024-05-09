@@ -49,8 +49,7 @@ export const Visualizer: React.FC = () => {
         </h1>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <iframe width="100%" src="https://open.spotify.com/embed/album/5rVlqi2fHOmWB764N8PsWF?utm_source=generator" height="100%" ></iframe>
-        </div>
+        <iframe  src="https://open.spotify.com/embed/album/5rVlqi2fHOmWB764N8PsWF?utm_source=generator" width="100%" height="352"   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        </div>
         <b>
           <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
