@@ -42,7 +42,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           ctx.fillStyle = 'rgba(0, 0, 0,0.1)';
           ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-          const barWidth = (canvas.width / bufferLength) * 2;
+          const barWidth = 1;
           let barHeight;
           let x = 0;
 
