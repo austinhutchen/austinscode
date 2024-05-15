@@ -39,7 +39,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
 
           analyser.getByteFrequencyData(dataArray);
 
-          ctx.fillStyle = 'rgb(0, 0, 0)';
+          ctx.fillStyle = 'rgba(0, 0, 0,0.00000001)';
           ctx.fillRect(0, 0, canvas.width, canvas.height);
 
           const barWidth = (canvas.width / bufferLength) * 2;
@@ -49,7 +49,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           for (let i = 0; i < bufferLength; i++) {
             barHeight = dataArray[i];
 
-            ctx.fillStyle = barHeight > 5 ? 'rgb(255, 255, 255)' : 'rgb(0, 0, 0)'; // Set color to white if barHeight is greater than 128, else black
+            ctx.fillStyle = barHeight > 1 ? 'rgb(150, 255, 255)' : 'rgb(0, 0, 0)'; // Set color to white if barHeight is greater than 128, else black
 
             ctx.beginPath();
             ctx.rect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
@@ -78,7 +78,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 4096;
+    analyser.fftSize = 8192;
     const bufferLength = analyser.fftSize;
     const dataArray = new Uint8Array(bufferLength);
 
@@ -98,7 +98,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
-        const sliceWidth: number = Math.floor((canvas.width / bufferLength) * 11);
+        const sliceWidth: number =  1;
         // Create an offscreen canvas
         const offscreenCanvas = document.createElement('canvas');
         offscreenCanvas.width = canvas.width;
