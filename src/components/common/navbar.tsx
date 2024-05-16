@@ -15,7 +15,7 @@ export const NavBar: React.FC = () => {
   const home = process.env.PUBLIC_URL + '/fast_imgs/home.webp';
   const about = process.env.PUBLIC_URL + '/fast_imgs/About.webp';
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.webp';
-  const resume = process.env.PUBLIC_URL + '/fast_imgs/resume.webp';
+  const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
 
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
