@@ -87,7 +87,7 @@ export const Landing: React.FC = () => {
           <div className="flex flex-col justify-center h-full">
 
             <h3 className="intro">
-              As a Computer Science & Mathematics student at CU Boulder (BSc 2025), I specialize in Agile software development, database engineering, digital marketing, and Search Engine Optimization. My expertise extends to embedded engineering, and I find joy in teaching Calculus. Proficient in Typescript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
+              As a Computer Science & Mathematics student at CU Boulder (BSc 2025), I specialize in Agile software development, database engineering, SEO, and cybersecurity. My expertise extends to embedded engineering, and I find joy in teaching Calculus. Proficient in Typescript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
                 Click me!
 
                 <img src={github} style={{
