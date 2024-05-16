@@ -43,7 +43,8 @@ const images: Images = {
   firecam: getImgPath('firecam.webp'),
   malloc: getImgPath('malloc.webp'),
   matrix: getImgPath('matrix.mp4'),
-  sine: getImgPath('sinMic.mp4')
+  sine: getImgPath('sinMic.mp4'),
+  arduino: getImgPath('arduino.mp4')
   // Add other images here
 };
 
@@ -66,6 +67,17 @@ const projectsData: Project[] = [
     media: [
       { 'type': 'video', 'src': images['wled2'] },
       { 'type': 'video', 'src': images['matrix'] }
+
+    ]
+
+  },
+  {
+    title: "ARDUINO SCROLLING LED REAL TIME CLOCK (C)",
+    link: "https://github.com/austinhutchen/RTC_LED.git",
+    description:
+      "An arduino offline scrolling 12x8 LED matrix Real Time Clock program, which I wrote using C and the arudino's onboard battery RTC module for timekeeping. The text scrolled across a 12x8 LED matrix using code I wrote.",
+    media: [
+      { 'type': 'video', 'src': images['arduino'] }
 
     ]
 

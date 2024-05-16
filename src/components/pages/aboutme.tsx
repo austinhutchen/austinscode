@@ -8,7 +8,7 @@ const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
-const family = process.env.PUBLIC_URL + '/fast_imgs/family.webp';
+const family = process.env.PUBLIC_URL + '/fast_imgs/me.webp';
 const mimi = process.env.PUBLIC_URL + '/fast_imgs/mimi.webp';
 const liv = process.env.PUBLIC_URL + '/fast_imgs/liv.webp';
 const solder = process.env.PUBLIC_URL + '/fast_imgs/SOLDER.mp4';
@@ -48,6 +48,11 @@ const keys = [
     type: "video"
   },
   {
+    desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
+    url: family,
+    type: "image"
+  },
+  {
     desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
     url: mimi,
     type: "image"
@@ -57,11 +62,7 @@ const keys = [
     url: math,
     type: "image"
   },
-  {
-    desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
-    url: family,
-    type: "image"
-  },
+
   {
     desc: "I love to make electronics and art with my girlfriend!",
     url: liv,

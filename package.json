@@ -86,7 +86,6 @@
   "overrides": {
     "@react-pdf/renderer": {
       "react": "^18.0.0"
-    },
-    "typescript": "^5.4.4"
+    }
   }
 }
