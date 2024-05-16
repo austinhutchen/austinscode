@@ -1,4 +1,6 @@
-import { useEffect, useRef } from 'react'; import React from 'react';
+import { useEffect, useRef, useState } from 'react'; 
+import React from 'react';
+
 declare global {
   interface Window { webkitAudioContext: typeof AudioContext }
 }
@@ -10,59 +12,66 @@ type AudioVisualizerProps = {
 
 export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [stream, setStream] = useState<MediaStream | null>(null);
+  
   useEffect(() => {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
       console.error('Web Audio API not supported in this browser');
       return;
     }
 
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 8192; // Reduce fftSize for better performance
-    const bufferLength = analyser.frequencyBinCount;
-    const dataArray = new Uint8Array(bufferLength); // Create dataArray once
-
     navigator.mediaDevices.getUserMedia({ audio: true })
-      .then(stream => {
-        const source = audioContext.createMediaStreamSource(stream);
-
-        source.connect(analyser); // Connect the source to the GainNode
-
-        const canvas = canvasRef.current;
-        if (!canvas) return;
-
-        const ctx = canvas.getContext('2d');
-        if (!ctx) return;
-
-        const draw = () => {
-          requestAnimationFrame(draw);
-
-          analyser.getByteFrequencyData(dataArray);
-
-          ctx.fillStyle = 'rgba(0, 0, 0,0.1)';
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-          const barWidth = 1;
-          let barHeight;
-          let x = 0;
-
-          for (let i = 0; i < bufferLength; i++) {
-            barHeight = dataArray[i];
-
-            ctx.fillStyle = barHeight > 1 ? 'rgb(150, 255, 255)' : 'rgb(0, 0, 0)'; // Set color to white if barHeight is greater than 128, else black
-
-            ctx.beginPath();
-            ctx.rect(x, canvas.height - barHeight / 2, barWidth, barHeight / 2);
-            ctx.fill();
-
-            x += barWidth + 1;
-          }
-        };
-
-        draw();
-      })
-      .catch(err => console.log(err));
+      .then(setStream)
+      .catch(console.error);
   }, []);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas || !stream) return;
+  
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+          const analyser = audioContext.createAnalyser();
+          analyser.fftSize = 8192; // Reduce fftSize for better performance
+          const bufferLength = analyser.frequencyBinCount;
+          const dataArray = new Uint8Array(bufferLength); // Create dataArray once
+  
+          const source = audioContext.createMediaStreamSource(stream);
+          source.connect(analyser); // Connect the source to the GainNode
+  
+          const ctx = canvas.getContext('2d');
+          if (!ctx) return;
+  
+          const draw = () => {
+            requestAnimationFrame(draw);
+            analyser.getByteFrequencyData(dataArray);
+            ctx.fillStyle = 'rgba(0, 0, 0,0.000001)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+            const barWidth = (canvas.width / bufferLength) * 2.5;
+            let barHeight;
+            let x = 0;
+  
+            for(let i = 0; i < bufferLength; i++) {
+              barHeight = dataArray[i]/2;
+              ctx.fillStyle = 'rgb(' + (barHeight+100) + ',50,50)';
+              ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight);
+  
+              x += barWidth + 1;
+            }
+          };
+  
+          draw();
+        }
+      });
+    });
+  
+    observer.observe(canvas);
+  
+    return () => observer.unobserve(canvas);
+  }, [stream]);
 
   return <canvas ref={canvasRef} />;
 };
