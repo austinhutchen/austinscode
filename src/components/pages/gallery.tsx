@@ -5,6 +5,8 @@ import { sin, complex, Complex } from 'mathjs';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { AudioVisualizer, TimeDomainVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
+const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
+
 export const Visualizer: React.FC = () => {
   const [stream, setStream] = useState<MediaStream | null>(null);
 
@@ -22,6 +24,8 @@ export const Visualizer: React.FC = () => {
       }
     };
   }, [stream]);
+  const FFT = getImgPath('FFT.webp');
+
   return (
     <>
       <NavBar />
@@ -36,9 +40,13 @@ export const Visualizer: React.FC = () => {
 
 
         <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
+        <br />
+        <img className="projImg" src={FFT} alt="Fast Fourier Transform" />
+
         <b>
+
           <p style={{ fontSize: "0.9em" }} >
-            <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
+            <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
           </p>
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
@@ -49,7 +57,7 @@ export const Visualizer: React.FC = () => {
         </h1>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <iframe  src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="100%" height="152"   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
+          <iframe src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
         <b>
           <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
