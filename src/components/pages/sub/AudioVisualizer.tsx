@@ -34,6 +34,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser = audioContext.createAnalyser();
+           analyser.smoothingTimeConstant=0;
           analyser.fftSize = 8192; // Reduce fftSize for better performance
           const bufferLength = analyser.frequencyBinCount;
           const dataArray = new Uint8Array(bufferLength); // Create dataArray once
