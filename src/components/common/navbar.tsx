@@ -19,7 +19,7 @@ export const NavBar: React.FC = () => {
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
 
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
-  const icon_size = '20vw';
+  const icon_size = '25vw';
 
   const toggle = () => {
     setIsOpen(!isOpen);

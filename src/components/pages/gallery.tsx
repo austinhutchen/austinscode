@@ -25,7 +25,7 @@ export const Visualizer: React.FC = () => {
     };
   }, [stream]);
   const FFT = getImgPath('FFT.webp');
-
+  const proj2 = getImgPath('proj2.gif');
   return (
     <>
       <NavBar />
@@ -33,8 +33,9 @@ export const Visualizer: React.FC = () => {
       <div className='visualizer' >
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
-        <div>
-          <iframe src="https://giphy.com/embed/l4FGyCRpqs7WNEAla" ></iframe></div>
+        <div className="nerdGif">
+        <img src ={proj2}/>
+        </div>
         <hr className="my-4" />
 
 
@@ -92,7 +93,7 @@ const LorenzAttractor = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / window.innerHeight), 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(90, (window.innerWidth / window.innerHeight), 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
     const width = ref.current?.clientWidth || 0; // Set to the width of the parent element
     const height = 400; // Set to the height of your content
@@ -125,7 +126,7 @@ const LorenzAttractor = () => {
 
     scene.add(line);
 
-    camera.position.z = 89;
+    camera.position.z = 90;
     let animationId: number;
 
     const animate = function () {
@@ -158,11 +159,11 @@ export const Sine3DVisualizer: React.FC = () => {
 
   useEffect(() => {
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(70, 1, 0.1, 2000);
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     const controls = new OrbitControls(camera, renderer.domElement);
     const width = ((ref.current?.clientWidth || 0) / 2) || 0; // Set to the width of the parent element
-    const height = 150; // Set to the height of your content
+    const height = 170; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
@@ -174,14 +175,14 @@ export const Sine3DVisualizer: React.FC = () => {
         const index = (x * 100 + z) * 3;
         positions[index] = x - 50;
         const sinValue = sin(complex(x / 10, z / 10)) as Complex;
-        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 5; // Use the magnitude of the sine function
+        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10; // Use the magnitude of the sine function
         positions[index + 2] = z - 50;
       }
     }
 
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
-    const material = new THREE.PointsMaterial({ color: 0xffffff, size: 0.1 });
+    const material = new THREE.PointsMaterial({ color: 0xffff1A, size: 0.1 });
     const points = new THREE.Points(geometry, material);
     scene.add(points);
 
@@ -194,7 +195,7 @@ export const Sine3DVisualizer: React.FC = () => {
       const positions = points.geometry.attributes.position.array as Float32Array;
       for (let i = 0; i < positions.length; i += 3) {
         const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 5, positions[i + 2] / 5)) as Complex;
-        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10;
+        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 13;
       }
 
       points.geometry.attributes.position.needsUpdate = true;
