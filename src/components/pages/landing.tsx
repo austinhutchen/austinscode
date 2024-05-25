@@ -71,7 +71,7 @@ export const Landing: React.FC = () => {
   const nav = useNavigate();
   const shouldAnimate: boolean = true;
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
-
+  const intro = process.env.PUBLIC_URL + '/fast_imgs/nerdy.gif';
   return (
     <>
 
@@ -81,7 +81,7 @@ export const Landing: React.FC = () => {
         <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
           <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
         </h2>
-        <div className="nerdGif"><iframe title="math" src="https://giphy.com/embed/zPbnEgxsPJOJSD3qfr" allowFullScreen></iframe>
+        <div className="nerdGif"><img title="math" src={intro} />
         </div>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
