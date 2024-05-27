@@ -148,11 +148,16 @@ export const Resume: React.FC = () => {
                 <br />
 
                 <h1 className="hlight">
-                    <b><i> FULL RESUME ( in progress)</i></b>
+                <b><i> FULL RESUME ( in progress)</i></b> 
+                <br/>
+                <a href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf` }download>click me!</a>
                 </h1>
                 <br />
                 <div className="resume">
+                    
                     <img src={resume} />
+
+
                 </div>
 
 
