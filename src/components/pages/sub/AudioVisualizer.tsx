@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'; 
+import { useEffect, useRef, useState } from 'react';
 import React from 'react';
 
 declare global {
@@ -13,7 +13,7 @@ type AudioVisualizerProps = {
 export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [stream, setStream] = useState<MediaStream | null>(null);
-  
+
   useEffect(() => {
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
       console.error('Web Audio API not supported in this browser');
@@ -28,49 +28,49 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || !stream) return;
-  
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser = audioContext.createAnalyser();
-           analyser.smoothingTimeConstant=0;
+          analyser.smoothingTimeConstant = 0.4;
           analyser.fftSize = 8192; // Reduce fftSize for better performance
           const bufferLength = analyser.frequencyBinCount;
           const dataArray = new Uint8Array(bufferLength); // Create dataArray once
-  
+
           const source = audioContext.createMediaStreamSource(stream);
           source.connect(analyser); // Connect the source to the GainNode
-  
+
           const ctx = canvas.getContext('2d');
           if (!ctx) return;
-  
+
           const draw = () => {
             requestAnimationFrame(draw);
             analyser.getByteFrequencyData(dataArray);
             ctx.fillStyle = 'rgba(0, 0, 0,0.1)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-  
-            const barWidth:number = Math.ceil(canvas.width / bufferLength);
+
+            const barWidth: number = Math.ceil(canvas.width / bufferLength);
             let barHeight;
             let x = 0;
-  
-            for(let i = 0; i < bufferLength; i++) {
-              barHeight = dataArray[i]/1.5;
+
+            for (let i = 0; i < bufferLength; i++) {
+              barHeight = dataArray[i] / 1.5;
               ctx.fillStyle = 'rgba(173,216,240,1)';
-              ctx.fillRect(x,canvas.height-barHeight/2,barWidth,barHeight);
-  
+              ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight);
+
               x += barWidth + 1;
             }
           };
-  
+
           draw();
         }
       });
     });
-  
+
     observer.observe(canvas);
-  
+
     return () => observer.unobserve(canvas);
   }, [stream]);
 
@@ -108,7 +108,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
 
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
-        const sliceWidth: number =  1;
+        const sliceWidth: number = 1;
         // Create an offscreen canvas
         const offscreenCanvas = document.createElement('canvas');
         offscreenCanvas.width = canvas.width;
