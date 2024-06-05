@@ -34,14 +34,18 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser = audioContext.createAnalyser();
-          analyser.smoothingTimeConstant = 0.4;
+          analyser.smoothingTimeConstant = 0.2;
           analyser.fftSize = 8192; // Reduce fftSize for better performance
+          // Create a BiquadFilterNode
+          const filter = audioContext.createBiquadFilter();
+          filter.type = 'lowpass'; // set the filter type to low-pass
+          filter.frequency.value = 500; // s
           const bufferLength = analyser.frequencyBinCount;
           const dataArray = new Uint8Array(bufferLength); // Create dataArray once
 
           const source = audioContext.createMediaStreamSource(stream);
           source.connect(analyser); // Connect the source to the GainNode
-
+          filter.connect(analyser); // connect the filter to the analyser
           const ctx = canvas.getContext('2d');
           if (!ctx) return;
 
@@ -87,6 +91,9 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
     }
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const filter = audioContext.createBiquadFilter();
+    filter.type = 'lowpass'; // set the filter type to low-pass
+    filter.frequency.value = 350; // set th
     const analyser = audioContext.createAnalyser();
     analyser.fftSize = 8192;
     const bufferLength = analyser.fftSize;
@@ -99,9 +106,11 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
         const source = audioContext.createMediaStreamSource(stream);
 
         const gainNode = audioContext.createGain();
+
         gainNode.gain.value = 3.0; // increase the volume by a factor of 2
         source.connect(gainNode);
         gainNode.connect(analyser);
+        filter.connect(analyser); // connect the filter to the analyser
 
         const canvas = canvasRef.current;
         if (!canvas) return;
