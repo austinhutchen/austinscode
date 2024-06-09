@@ -66,15 +66,21 @@ html.has-scroll-smooth {
 .projVid {
   max-height: 26vh;
   max-width: 26vh;
-  border: 0.08em solid #0BA;
+  border: 0.04em solid #0BA;
 
 }
 
 .projImg {
   max-height: 26vh;
   max-width: 26vh;
-  border: 0.08em solid #0BA;
+  border: 0.04em solid #0BA;
 }
+
+@media (min-width: 768px) {
+
+  
+}
+
 .projContent {
   display: grid;
 

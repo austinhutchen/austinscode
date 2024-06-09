@@ -119,18 +119,20 @@ html {
 @keyframes fadein {
   0% {
     opacity: 0;
-    transform: translateY(-40px);
+    transform: translateX(-40px);
   }
-
+  50%{
+    opacity: 0.5;
+  }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.projItm {
+.fadeSide {
 
-  animation: fadein 1.4s ease-in-out forwards;
+  animation: fadein 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 
 }
 
