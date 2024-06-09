@@ -31,7 +31,10 @@ html {
   /*; */
 
 }
+.animateLand{
+  animation: fadeSide 1.3s ease-in-out forwards;
 
+}
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -116,7 +119,7 @@ html {
 
 }
 
-@keyframes fadein {
+@keyframes fadeSide {
   0% {
     opacity: 0;
     transform: translateX(-40px);
@@ -132,7 +135,7 @@ html {
 
 .fadeSide {
 
-  animation: fadein 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation: fadeSide 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 
 }
 

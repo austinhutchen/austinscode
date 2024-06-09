@@ -79,12 +79,12 @@ const keys = [
 // Common styles for image and video components
 const imageStyles = {
   borderRadius: '10%',
-  border: '0.45svh solid #0BA',
+  border: '0.2vh solid #0BA',
 };
 
 const videoStyles = {
   borderRadius: '10%',
-  border: '0.45vh solid #0BA',
+  border: '0.2vh solid #0BA',
 };
 
 const About: React.FC = () => {
@@ -132,7 +132,7 @@ const About: React.FC = () => {
               />
             )}
 
-            <fieldset>
+            <fieldset style={{ maxWidth: '30%', margin: '0 auto' }}>
               <p style={{ color: 'cornsilk', fontSize: "2svh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
                 <b className="legend">{data.desc}</b>
               </p>

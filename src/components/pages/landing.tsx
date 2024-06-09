@@ -69,15 +69,13 @@ const TextSphere: React.FC = () => {
 
 export const Landing: React.FC = () => {
   const nav = useNavigate();
-  const shouldAnimate: boolean = true;
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
   const intro = process.env.PUBLIC_URL + '/fast_imgs/nerdy.gif';
   return (
     <>
 
       <NavBar />
-      <div className={`animated-div ${shouldAnimate ? 'animate' : ''}`}>
-
+      <div className='animateLand'>
         <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
           <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
         </h2>
