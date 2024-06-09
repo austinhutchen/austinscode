@@ -48,7 +48,7 @@ const keys = [
     type: "video"
   },
   {
-    desc: "I love spending time with my family. Without their support and love, I wouldn't be where I am today.",
+    desc: "I love spending time with my family.",
     url: family,
     type: "image"
   },
@@ -79,12 +79,12 @@ const keys = [
 // Common styles for image and video components
 const imageStyles = {
   borderRadius: '10%',
-  border: '0.45svh solid #0BA',
+  border: '0.15vh solid #0BA',
 };
 
 const videoStyles = {
   borderRadius: '10%',
-  border: '0.45vh solid #0BA',
+  border: '0.15vh solid #0BA',
 };
 
 const About: React.FC = () => {
