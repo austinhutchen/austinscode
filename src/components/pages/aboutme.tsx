@@ -79,12 +79,12 @@ const keys = [
 // Common styles for image and video components
 const imageStyles = {
   borderRadius: '10%',
-  border: '0.2vh solid #0BA',
+  border: '0.45svh solid #0BA',
 };
 
 const videoStyles = {
   borderRadius: '10%',
-  border: '0.2vh solid #0BA',
+  border: '0.45vh solid #0BA',
 };
 
 const About: React.FC = () => {
@@ -132,17 +132,24 @@ const About: React.FC = () => {
               />
             )}
 
-            <fieldset style={{ maxWidth: '30%', margin: '0 auto' }}>
-              <p style={{ color: 'cornsilk', fontSize: "2svh", fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif", fontWeight: 350 }}>
+            <fieldset className="projDesc" >
+              <p style={{
+                color: 'cornsilk',
+                fontSize: "2svh",
+                fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif",
+                fontWeight: 350,
+                textAlign: 'center',
+              }}>
                 <b className="legend">{data.desc}</b>
               </p>
-              <button onClick={() => handleSliderNavigation('prev')}>
-                <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
-              </button>
-              <button onClick={() => handleSliderNavigation('next')}>
-                <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
-              </button>
+
             </fieldset>
+            <button onClick={() => handleSliderNavigation('prev')}>
+              <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
+            </button>
+            <button onClick={() => handleSliderNavigation('next')}>
+              <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
+            </button>
           </div>
         ))}
       </Slider>
