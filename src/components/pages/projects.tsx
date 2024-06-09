@@ -306,37 +306,40 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         </a>
       </h3>
       <br />
-      {project.media.map((mediaItem, index) => {
-        if (mediaItem.type === 'video') {
-          return (
-            <video
-              key={mediaItem.src}
-              ref={el => mediaRefs.current[index] = el}
-              data-src={mediaItem.src}
-              autoPlay
-              className="projVid"
-              muted
-              playsInline
-              loop
-            />
-          );
-        } else if (mediaItem.type === 'image') {
-          return (
-            <img
-              className="projImg"
-              key={mediaItem.src}
-              ref={el => mediaRefs.current[index] = el}
+      <div className="projItm">
 
-              data-src={mediaItem.src}
-              alt={project.title}
-            />
-          );
-        } else {
-          return null;
-        }
-      })}
-      <br />
-      <p>{project.description}</p>
+        {project.media.map((mediaItem, index) => {
+          if (mediaItem.type === 'video') {
+            return (
+              <video
+                key={mediaItem.src}
+                ref={el => mediaRefs.current[index] = el}
+                data-src={mediaItem.src}
+                autoPlay
+                className="projVid"
+                muted
+                playsInline
+                loop
+              />
+            );
+          } else if (mediaItem.type === 'image') {
+            return (
+              <img
+                className="projImg"
+                key={mediaItem.src}
+                ref={el => mediaRefs.current[index] = el}
+
+                data-src={mediaItem.src}
+                alt={project.title}
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
+        <br />
+        <p>{project.description}</p>
+      </div>
     </div>
   );
 };
