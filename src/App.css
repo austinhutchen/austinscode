@@ -31,10 +31,12 @@ html {
   /*; */
 
 }
-.animateLand{
+
+.animateLand {
   animation: fadeSide 1.3s ease-in-out forwards;
 
 }
+
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -51,7 +53,20 @@ html {
     /* End position */
   }
 }
+.projDesc{
+  text-align: center;
+  display:flex;
+  align-items: center;
+  margin:auto;
+  justify-content: center;
+  max-width: 54%;
+}
+@media  (max-width: 600px) {
+.projDesc{
+  max-width: 80%;
+}
 
+}
 
 .nerdGif {
   display: flex;
@@ -124,9 +139,11 @@ html {
     opacity: 0;
     transform: translateX(-40px);
   }
-  50%{
+
+  50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);

@@ -340,10 +340,13 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           return null;
         }
       })}
-      <div className="fadeSide" style={{ maxWidth: '30%', margin: '0 auto', border:'3px 0' }}>
-        <br />
-        <p>{project.description}</p>
+      <div className="projDesc">
+        <div className="fadeSide" style={{ margin: '0 auto', border: '3px 0' }}>
+          <br />
+          <p>{project.description}</p>
+        </div>
       </div>
+
     </div>
   );
 };
