@@ -82,8 +82,8 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
       vercel:
-        specifier: ^34.2.4
-        version: 34.2.4
+        specifier: ^34.2.5
+        version: 34.2.5
       web-vitals:
         specifier: ^3.5.2
         version: 3.5.2
@@ -1777,8 +1777,8 @@ packages:
   '@vercel/hydrogen@1.0.2':
     resolution: {integrity: sha512-/Q2MKk1GfOuZAnkE9jQexjtUQqanbY65R+xtJWd9yKIgwcfRI1hxiNH3uXyVM5AvLoY+fxxULkSuxDtUKpkJpQ==}
 
-  '@vercel/next@4.2.14':
-    resolution: {integrity: sha512-CBeaXIGS7mOgFSH429HRjIOxJBbtiQW6gf1mz/rIQoNcZjSxhfe+nMAxfkDlXAzCsGQVFbzVR9omnijTFbC79w==}
+  '@vercel/next@4.2.15':
+    resolution: {integrity: sha512-SBwn8m10eg6NIkwTwKEFKtbK3o+uF5yT5mljZ7pGWMSC/CiQEhe/V9kJLfoe87PGkVVWm3uU9zvMIDqsyuxV/Q==}
 
   '@vercel/nft@0.27.0':
     resolution: {integrity: sha512-W5pValyhToK9hbgEUAM6sLRUIl1I++RsFnXKHXtND50P1+vZ+OYPCzq1OOz0Ok6ghK6aOwae8G/rEAXkLedC+w==}
@@ -6732,8 +6732,8 @@ packages:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
 
-  vercel@34.2.4:
-    resolution: {integrity: sha512-C6YQrshh+gpNngQf0Nj1Uhopj/hhxmsBaUKBj1M8vmY8p8d3EmgZ+Q/6erjnqY+S7+QLkEtp0st6wZ7VhA+hJQ==}
+  vercel@34.2.5:
+    resolution: {integrity: sha512-ngHi9iGvnI5bUkY8Ky5DEQYyZ3pqAAKZ9a2XNaCdA4pMlLo8pq/cZlkE6eSlplhWPH9aFF2fnQARa/5cN3yemg==}
     engines: {node: '>= 16'}
     hasBin: true
 
@@ -9160,7 +9160,7 @@ snapshots:
       '@vercel/static-config': 3.0.0
       ts-morph: 12.0.0
 
-  '@vercel/next@4.2.14':
+  '@vercel/next@4.2.15':
     dependencies:
       '@vercel/nft': 0.27.0
     transitivePeerDependencies:
@@ -15073,13 +15073,13 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vercel@34.2.4:
+  vercel@34.2.5:
     dependencies:
       '@vercel/build-utils': 8.2.1
       '@vercel/fun': 1.1.0
       '@vercel/go': 3.1.1
       '@vercel/hydrogen': 1.0.2
-      '@vercel/next': 4.2.14
+      '@vercel/next': 4.2.15
       '@vercel/node': 3.1.6
       '@vercel/python': 4.3.0
       '@vercel/redwood': 2.0.9
