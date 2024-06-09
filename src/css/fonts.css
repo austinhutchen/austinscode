@@ -26,9 +26,8 @@ h4, h3 {
 
 /* Styling for fieldset and legend */
 fieldset {
-  border: 0.2em solid #CCA;
-  border-radius: 1vw;
-  box-shadow: 0.1em 0.1em 0.1em 0.1em #CCA;
+
+
 }
 
 .legend {
