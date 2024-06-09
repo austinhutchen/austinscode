@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
 const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
-const me = process.env.PUBLIC_URL + '/fast_imgs/me4.webp';
+const me = process.env.PUBLIC_URL + '/fast_imgs/selfie.jpeg';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
@@ -18,7 +18,7 @@ const github = process.env.PUBLIC_URL + '/fast_imgs/GITHUBME.webp';
 // Define image and video URLs directly in the keys array
 const keys = [
   {
-    desc: "Welcome! I'm a software engineer who likes to tinker with electronic circuits and code Typescript-based software applications, and I have plenty of hobbies! ",
+    desc: "Welcome! I'm a Computer and Software engineer who likes to tinker with electronic circuits and code Typescript-based software applications, and I have plenty of hobbies! ",
     url: me,
     type: "image"
   },
@@ -154,12 +154,13 @@ export const Aboutme: React.FC = () => {
   return (
     <>
       <NavBar />
-
-      <h1 className="hlight">
-        <b>ABOUT:</b>
-      </h1>
+      <div className="fadeSide">
 
 
+        <h1 className="hlight">
+          <b>ABOUT:</b>
+        </h1>
+      </div>
       <About />
     </>
   );

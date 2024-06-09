@@ -300,43 +300,47 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
   return (
     <div>
-      <h3 className="hlight-mini">
-        <a href={project.link} target="_blank" rel="noopener noreferrer">
-          {project.title}
-        </a>
-      </h3>
-      <br />
-      <div className="projItm">
+      <div className="fadeSide">
+        <h3 className="hlight-mini">
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.title}
+          </a>
+        </h3>
+        <br />
+      </div>
 
-        {project.media.map((mediaItem, index) => {
-          if (mediaItem.type === 'video') {
-            return (
-              <video
-                key={mediaItem.src}
-                ref={el => mediaRefs.current[index] = el}
-                data-src={mediaItem.src}
-                autoPlay
-                className="projVid"
-                muted
-                playsInline
-                loop
-              />
-            );
-          } else if (mediaItem.type === 'image') {
-            return (
-              <img
-                className="projImg"
-                key={mediaItem.src}
-                ref={el => mediaRefs.current[index] = el}
 
-                data-src={mediaItem.src}
-                alt={project.title}
-              />
-            );
-          } else {
-            return null;
-          }
-        })}
+
+      {project.media.map((mediaItem, index) => {
+        if (mediaItem.type === 'video') {
+          return (
+            <video
+              key={mediaItem.src}
+              ref={el => mediaRefs.current[index] = el}
+              data-src={mediaItem.src}
+              autoPlay
+              className="projVid"
+              muted
+              playsInline
+              loop
+            />
+          );
+        } else if (mediaItem.type === 'image') {
+          return (
+            <img
+              className="projImg"
+              key={mediaItem.src}
+              ref={el => mediaRefs.current[index] = el}
+
+              data-src={mediaItem.src}
+              alt={project.title}
+            />
+          );
+        } else {
+          return null;
+        }
+      })}
+      <div className="fadeSide">
         <br />
         <p>{project.description}</p>
       </div>
