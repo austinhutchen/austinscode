@@ -140,7 +140,7 @@ export const TimeDomainVisualizer: React.FC<AudioVisualizerProps> = () => {
           offscreenCtx.fillStyle = 'rgb(200, 200, 200)';
           offscreenCtx.fillRect(offscreenCanvas.width - sliceWidth, 0, sliceWidth, offscreenCanvas.height);
 
-          offscreenCtx.lineWidth = 2;
+          offscreenCtx.lineWidth = 1.3;
           offscreenCtx.strokeStyle = 'rgb(0, 0, 0)';
 
           offscreenCtx.beginPath();

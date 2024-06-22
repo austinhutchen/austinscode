@@ -21,6 +21,17 @@ export const Resume: React.FC = () => {
                 </h1>
 
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
+                <h2 className="hlight-mini">
+                        <b>
+                            <u> Embedded Software Engineer (FormFactor) May 2024- August 2024</u>
+                        </b>
+                    </h2>
+                    <li>
+                        < h3  >
+                            Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in the patented quantum computer.
+                        </h3>
+                    </li>
+                    <br />
                     <h2 className="hlight-mini">
                         <b>
                             <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>

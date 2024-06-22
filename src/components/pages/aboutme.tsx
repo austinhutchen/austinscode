@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
 const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
-const me = process.env.PUBLIC_URL + '/fast_imgs/selfie.jpeg';
+const me = process.env.PUBLIC_URL + '/fast_imgs/me5.JPG';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
@@ -98,16 +98,12 @@ const About: React.FC = () => {
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     dots: true,
   };
-
   const slider: React.RefObject<Slider> = useRef<Slider>(null);
-
-
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
     if (slider?.current) {
       direction === 'prev' ? slider.current.slickPrev() : slider.current.slickNext();
     }
   };
-
   return (
     <div className="sc">
       <Slider ref={slider} {...settings}>
@@ -131,7 +127,6 @@ const About: React.FC = () => {
                 src={data.url}
               />
             )}
-
             <fieldset className="projDesc" >
               <p style={{
                 color: 'cornsilk',
@@ -142,7 +137,6 @@ const About: React.FC = () => {
               }}>
                 <b className="legend">{data.desc}</b>
               </p>
-
             </fieldset>
             <button onClick={() => handleSliderNavigation('prev')}>
               <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
@@ -157,13 +151,12 @@ const About: React.FC = () => {
   );
 
 }
+
 export const Aboutme: React.FC = () => {
   return (
     <>
       <NavBar />
       <div className="fadeSide">
-
-
         <h1 className="hlight">
           <b>ABOUT:</b>
         </h1>

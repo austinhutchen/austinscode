@@ -267,9 +267,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
-
     mediaRefs.current = mediaRefs.current.slice(0, project.media.length);
-
     for (const mediaRef of mediaRefs.current) {
       if (mediaRef) {
         const observer = new IntersectionObserver((entries) => {
@@ -287,17 +285,14 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
             }
           });
         }, { rootMargin: '-10px' });
-
         observer.observe(mediaRef);
         observers.push(observer);
       }
     }
-
     return () => {
       observers.forEach(observer => observer.disconnect());
     };
   }, [project]);
-
   return (
     <div>
       <div className="fadeSide">
@@ -308,9 +303,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         </h3>
         <br />
       </div>
-
-
-
       {project.media.map((mediaItem, index) => {
         if (mediaItem.type === 'video') {
           return (
