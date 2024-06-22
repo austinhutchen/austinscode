@@ -16,15 +16,12 @@ html {
   overflow-y: auto;
 
   background-color: hsla(207, 0%, 0%, 1);
-  background-image: radial-gradient(at 7% 94%, hsla(236, 81%, 62%, 1) 0px, transparent 50%),
-    radial-gradient(at 84% 57%, hsla(346, 76%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 95% 18%, hsla(23, 65%, 60%, 1) 0px, transparent 50%),
-    radial-gradient(at 15% 1%, hsla(353, 92%, 69%, 1) 0px, transparent 50%),
-    radial-gradient(at 13% 1%, hsla(211, 68%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 29%, hsla(281, 60%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 55% 22%, hsla(130, 87%, 65%, 1) 0px, transparent 50%)
-    /* Muted gradient */
-  ;
+  background-image:
+    radial-gradient(circle at 10% 20%, #FFD700, transparent 50%),
+    radial-gradient(circle at 90% 80%, #FF69B4, transparent 50%),
+    radial-gradient(circle at 50% 50%, #87CEFA, transparent 50%),
+    radial-gradient(circle at 20% 80%, #32CD32, transparent 50%),
+    radial-gradient(circle at 80% 10%, #BA55D3, transparent 50%);
   animation: gradientAnimation 15s ease infinite;
   /* Animation for smooth transition */
 
@@ -38,26 +35,30 @@ html {
 }
 
 @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-    /* Start position */
+
+  0%,
+  100% {
+    background-position: 0% 50%, 100% 50%, 50% 50%, 20% 80%, 80% 10%;
+  }
+
+  25% {
+    background-position: 50% 100%, 0% 50%, 100% 50%, 40% 60%, 60% 20%;
   }
 
   50% {
-    background-position: 100% 50%;
-    /* Middle position */
+    background-position: 100% 0%, 50% 100%, 0% 50%, 60% 40%, 40% 80%;
   }
 
-  100% {
-    background-position: 0% 50%;
-    /* End position */
+  75% {
+    background-position: 50% 0%, 100% 50%, 50% 100%, 80% 20%, 20% 60%;
   }
 }
-.projDesc{
+
+.projDesc {
   text-align: center;
-  display:flex;
+  display: flex;
   align-items: center;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   max-width: 54%;
 }
@@ -122,26 +123,31 @@ html {
 
 
 
-.aboutSlider {
+.aboutSlider {}
 
-}
-.landImage{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.landImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  max-width:fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+
   margin: auto;
-  height:auto;
+  height: auto;
 }
-@media  (max-width: 650px) {
-  .projDesc{
+
+@media (max-width: 650px) {
+  .projDesc {
     max-width: 80%;
   }
-  .landImage img{
-    max-width: 60%;
+
+  .landImage img {
+    max-width: 100%;
+    flex-direction: column;
   }
-  }
+}
+
 @keyframes fadeSide {
   0% {
     opacity: 0;

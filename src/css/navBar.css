@@ -204,14 +204,13 @@ a:active {
 
 
 
-
 .nav-item {
-  color: rgba(0, 128, 0, 0.8);
+  background: rgba(0, 128, 0, 0.2);
   /* green with 0.8 opacity */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   /* text shadow */
-  border-width: 1vw;
+
 }
 
 /* Styles for .banner */
