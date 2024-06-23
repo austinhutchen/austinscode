@@ -1,6 +1,6 @@
 /* Shared styles for .hlight and .hlight-mini */
 .hlight, .hlight-mini {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(0, 128, 0, 0.5) 65%); /* Increase the opacity of the green color */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(0, 128, 0, 0.3) 65%); /* Increase the opacity of the green color */
   display: inline;
   color: rgba(245, 245, 220, 1); /* Make the text color smoother */
 
@@ -9,7 +9,7 @@
 
 /* Common styles for h4 and h3 */
 h4, h3 {
-  text-shadow: 2px 2px 3px rgba(0.8, 0.8, 0.8, 0.8);
+  text-shadow: 2px 2px 3px rgba(0.8, 0.8, 0.8, 0.9);
   font-size: 0.98em;
 }
 
