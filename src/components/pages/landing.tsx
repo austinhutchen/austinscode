@@ -89,7 +89,7 @@ export const Landing: React.FC = () => {
                 Click me!
 
                 <img src={github} style={{
-                  maxWidth: "3svh",
+                  maxWidth: "3vh",
                 }} />
 
               </a>

@@ -16,7 +16,7 @@ html {
   overflow-y: auto;
 
   background-color: hsla(207, 0%, 0%, 1);
-  background-image: radial-gradient(circle, rgba(198,30,186,1) 3%, rgba(24,176,80,1) 50%, rgba(212,14,84,1) 100%);
+  background-image: radial-gradient(circle, rgba(198, 30, 186, 1) 3%, rgba(24, 176, 80, 1) 50%, rgba(212, 14, 84, 1) 100%);
   animation: gradientAnimation 15s ease infinite;
   /* Animation for smooth transition */
 
@@ -137,9 +137,13 @@ html {
     max-width: 80%;
   }
 
+  .landImage {
+    flex-direction: column;
+  }
+
   .landImage img {
     max-width: 100%;
-    flex-direction: column;
+
   }
 }
 
