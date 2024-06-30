@@ -76,7 +76,7 @@ export const Landing: React.FC = () => {
 
       <NavBar />
       <div className='animateLand'>
-        <h2 className="hlight-mini" style={{ paddingTop: '3svw', fontSize: '4.0svh' }}>
+        <h2 className="hlight-mini" style={{ paddingTop: '5vw', fontSize: '3.6vh' }}>
           <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
         </h2>
         <div className="nerdGif"><img title="math" src={intro} />
@@ -88,7 +88,7 @@ export const Landing: React.FC = () => {
               As a Computer Science and Mathematics student at CU Boulder (BSc 2025), I specialize in Agile software development, database engineering, SEO, and cybersecurity. My expertise extends to embedded engineering, and I find joy in teaching Calculus. Proficient in Typescript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
                 Click me!
 
-                <img src={github} style={{
+                <img src={github} title="GitHub" style={{
                   maxWidth: "3vh",
                 }} />
 
