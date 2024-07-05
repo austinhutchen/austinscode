@@ -3,7 +3,7 @@ import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 import { sin, complex, Complex } from 'mathjs';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { AudioVisualizer, TimeDomainVisualizer } from './sub/AudioVisualizer';
+import { AudioVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
@@ -52,7 +52,6 @@ export const Visualizer: React.FC = () => {
           </p>
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
-        <TimeDomainVisualizer stream={stream} setStream={setStream} />
         <br />
         <h1>
           <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
