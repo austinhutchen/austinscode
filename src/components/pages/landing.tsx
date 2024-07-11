@@ -83,23 +83,17 @@ export const Landing: React.FC = () => {
         </div>
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
-
             <h3 className="intro">
               As a Computer Science and Mathematics student at CU Boulder (BSc 2025), I specialize in Agile software development, database engineering, SEO, and cybersecurity. My expertise extends to embedded engineering, and I find joy in teaching Calculus. Proficient in Typescript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
                 Click me!
-
                 <img src={github} title="GitHub" style={{
                   maxWidth: "3vh",
                 }} />
-
               </a>
               </b>
             </h3>
-
-
           </div>
         </div>
-
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -113,7 +107,6 @@ export const Landing: React.FC = () => {
           <HiArrowNarrowRight size={'1em'} className="ml-3" />
         </button>
         <br />
-
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -132,10 +125,7 @@ export const Landing: React.FC = () => {
           <img src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
           <TextSphere />
         </div>
-
         <Spinner />
-
-
       </div >
     </>
   );

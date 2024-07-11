@@ -1,1 +1,1 @@
-{ vercel build; npm run build;npm run deploy; }
+{ vercel build; pnpm run build; pnpm run deploy; }

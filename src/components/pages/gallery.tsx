@@ -1,8 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import { sin, complex, Complex } from 'mathjs';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { AudioVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
@@ -35,7 +33,7 @@ export const Visualizer: React.FC = () => {
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
         <div className="nerdGif">
-        <img src ={proj2}/>
+          <img src={proj2} />
         </div>
         <hr className="my-4" />
 
@@ -59,22 +57,9 @@ export const Visualizer: React.FC = () => {
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <iframe src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
-        <b>
-          <h2 className="hlight"> COMPLEX PLANE SINE </h2>
 
-        </b>
-        <p style={{ fontSize: "1em" }} >
-          The 3-dimensional sine function, as defined as a function of complex numbers. All of the mathematics is done in code, by me. Involved is linear algebra in three dimensions, and texture / mesh mapping I coded using three.js, which is a javascript library. <br /> <h3 className="hlight-mini">  Tap and scroll on the box to move around the function in 3-d!</h3>
-        </p>
-        <img className="projImg" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/ComplexSinInATimeAxe.gif" />
-        <br />
-        <div >
-          <Sine3DVisualizer />
-        </div>
-        <br />
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
-
         </b>
         <p style={{ fontSize: "1em" }} >
           The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
@@ -152,61 +137,6 @@ const LorenzAttractor = () => {
   }, []);
 
   return <div className="lorenz-attractor" ref={ref} />;
-};
-
-export const Sine3DVisualizer: React.FC = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(70, 1, 0.1, 2000);
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    const controls = new OrbitControls(camera, renderer.domElement);
-    const width = ((ref.current?.clientWidth || 0) / 2) || 0; // Set to the width of the parent element
-    const height = 170; // Set to the height of your content
-    renderer.setSize(width, height);
-    ref.current?.appendChild(renderer.domElement);
-
-    const geometry = new THREE.BufferGeometry();
-    const positions = new Float32Array(150 * 150 * 3); // 100 vertices along the x-axis, 100 along the z-axis, 3 coordinates per vertex
-
-    for (let x = 0; x < 100; x++) {
-      for (let z = 0; z < 100; z++) {
-        const index = (x * 100 + z) * 3;
-        positions[index] = x - 50;
-        const sinValue = sin(complex(x / 10, z / 10)) as Complex;
-        positions[index + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 10; // Use the magnitude of the sine function
-        positions[index + 2] = z - 50;
-      }
-    }
-
-    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-
-    const material = new THREE.PointsMaterial({ color: 0xffff1A, size: 0.1 });
-    const points = new THREE.Points(geometry, material);
-    scene.add(points);
-
-    camera.position.z = 50;
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-      controls.update(); // you need to update the controls in your animation loop
-
-      const positions = points.geometry.attributes.position.array as Float32Array;
-      for (let i = 0; i < positions.length; i += 3) {
-        const sinValue = sin(complex((positions[i] + performance.now() / 1000) / 5, positions[i + 2] / 5)) as Complex;
-        positions[i + 1] = Math.sqrt(sinValue.re * sinValue.re + sinValue.im * sinValue.im) * 13;
-      }
-
-      points.geometry.attributes.position.needsUpdate = true;
-
-      renderer.render(scene, camera);
-    };
-
-    animate();
-  }, []);
-
-  return <div className="sine-3d-visualizer" ref={ref} />;
 };
 
 export default LorenzAttractor;
