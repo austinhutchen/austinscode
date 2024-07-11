@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1rem + 0.25vw);
 }
 
 .App {
@@ -63,6 +63,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 2px;
+  box-shadow: inset;
 }
 
 .nerdGif img {
