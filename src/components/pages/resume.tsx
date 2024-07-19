@@ -21,14 +21,14 @@ export const Resume: React.FC = () => {
                 </h1>
 
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
-                <h2 className="hlight-mini">
+                    <h2 className="hlight-mini">
                         <b>
                             <u> Embedded Software Engineer (FormFactor) May 2024- August 2024</u>
                         </b>
                     </h2>
                     <li>
                         < h3  >
-                            Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in the patented quantum computer.
+                            Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
                         </h3>
                     </li>
                     <br />
@@ -56,7 +56,7 @@ export const Resume: React.FC = () => {
                         <h3 >
                             {" "}
                             Made first company sale as Marketing consultant, worked closely with
-                            the software engineering team to achieve forecasted results. See my most popular medium article, and other (science, environment, and tech-related) research pieces written by me on the threat of e-waste
+                            the software engineering team to achieve forecasted results. Wrote several other (science, environment, and tech-related) research articles written on the threat of e-waste and potential solutions
                             <b> <a href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
 "  target="_blank"
                                 rel="noreferrer"> here </a>   </b>                 </h3>
@@ -72,7 +72,7 @@ export const Resume: React.FC = () => {
 
 
                         <h3 >
-                            I have sold, built, and repaired Apple, Linux, and Windows electronics, have handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a className="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
+                            I have sold, built, and repaired Apple, Linux, and Windows electronics and handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a className="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
                                 rel="noreferrer" >
                                 here </a>
                             </b></h3>
@@ -116,7 +116,7 @@ export const Resume: React.FC = () => {
                             <h2 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h2>
                         </a>
 
-                        <h4> Assisted twitter with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
+                        <h4> Assisted twitter (now known as X) with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
 
                     </li>
                     <br />

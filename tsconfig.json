@@ -5,6 +5,7 @@
     "strict": true, // Enable all strict type-checking options
     "module": "commonjs", // Specify module code generation
     "target": "es5", // Specify ECMAScript target version
+    "types": ["node"],
     "moduleResolution": "node", // Specify module resolution strategy
     "allowJs": true,
     "resolveJsonModule": true, // Enable importing JSON modules

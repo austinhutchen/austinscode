@@ -64,7 +64,7 @@ const projectsData: Project[] = [
     title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
     link: "https://github.com/austinhutchen/WledStream.git",
     description:
-      "I used a sound-reactive low-power ESP8266 along with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded, and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music, utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
+      "I used a sound-reactive low-power ESP8266 microcontroller device with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music by utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
     media: [
       { 'type': 'video', 'src': images['wled2'] },
       { 'type': 'video', 'src': images['matrix'] }
@@ -76,7 +76,7 @@ const projectsData: Project[] = [
     title: "ARDUINO SCROLLING LED REAL TIME CLOCK (C)",
     link: "https://github.com/austinhutchen/RTC_LED.git",
     description:
-      "An arduino offline scrolling 12x8 LED matrix Real Time Clock program, which I wrote using C and the arudino's onboard battery RTC module for timekeeping. The text scrolled across a 12x8 LED matrix using code I wrote.",
+      "An arduino offline scrolling 12x8 LED matrix program, which I wrote using C and the arduino's onboard battery RTC (Real Time Clock) module for timekeeping. The text scrolled across a 12x8 LED matrix using code I wrote.",
     media: [
       { 'type': 'video', 'src': images['arduino'] }
 
@@ -87,7 +87,7 @@ const projectsData: Project[] = [
     title: "CALCULATOR APP (DART/FLUTTER/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description:
-      "A calculator app with support for many different functions such as factorials, transcendental functions like cosine that utilise taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
+      "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilise taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
     media: [
       { type: 'image', src: images['calculator'] },
     ],
@@ -97,7 +97,7 @@ const projectsData: Project[] = [
     title: "WEBCAM STREAMING WEB APPLICATION (ANGULAR/TYPESCRIPT/FIREBASE)",
     link: "https://github.com/austinhutchen/angularCamFirebase.git",
     description:
-      "Built a webcam uploader and streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database. I used the typescript programming language for application security and compile-time debug checks. The program took in an instance(frame) of a video uri, converted it into a blob of binary data, and then streamed it to a firebase realtime database. ",
+      "Built a webcam streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database. I used the typescript programming language for application security and compile-time debug checks. The program took in an instance(frame) of a video uri, converted it into a blob of binary data, and then streamed it to a firebase realtime database. ",
     media: [
       { type: 'image', src: images['firecam'] },
     ],
@@ -155,7 +155,7 @@ const projectsData: Project[] = [
     title: "MALLOC() ALGORITHM (C/BASH)",
     link: "https://github.com/austinhutchen/cMalloc",
     description:
-      " This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many of the common problems in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, including a custom shell and several embedded linux projects.",
+      " This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many problems present in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, and included within it a custom shell as well as several embedded linux projects.",
     media: [
       { type: 'image', src: images['malloc'] }
     ],
@@ -177,7 +177,7 @@ const projectsData: Project[] = [
     title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
-      "Used an ESP8266 & DHT11 serial temperature & humidity sensor along with a 7 segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
+      "Used an ESP8266 and DHT11 serial temperature & humidity sensor along with a 7 segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
     media: [
       { type: 'image', src: images['WEATHER_SENSOR'] },
       { type: 'image', src: images['weather'] }
@@ -190,7 +190,7 @@ const projectsData: Project[] = [
     title: "ZELDA TERMINAL GAME (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
-      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a CLI vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
+      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a command-line based vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
     media: [
       { type: 'image', src: images['game'] }
     ]
