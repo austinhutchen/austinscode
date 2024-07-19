@@ -56,13 +56,12 @@ export const Visualizer: React.FC = () => {
         </h1>
 
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <iframe src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
-
+          <iframe src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="80%" max-width="93%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
         <p style={{ fontSize: "1em" }} >
-          The Lorentz attractor is a graph represented by an iterative recursive algorithm that displays chaotic behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
+          The Lorentz attractor is a graph represented by an iterative algorithm that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
         <img className="projImg" src={lorentz} />
         <LorenzAttractor />
         <br />
