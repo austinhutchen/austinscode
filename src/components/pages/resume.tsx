@@ -1,10 +1,8 @@
 import React from 'react';
 import { NavBar } from "../common/navbar";
-const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
 
 
-const resume = getImgPath('resume.webp');
 
 
 
@@ -163,13 +161,7 @@ export const Resume: React.FC = () => {
                         <a href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`} download>click me!</a>
                     </h1>
                     <br />
-                    <div className="resume">
-
-                        <img src={resume} />
-
-
-                    </div>
-
+   
 
 
 

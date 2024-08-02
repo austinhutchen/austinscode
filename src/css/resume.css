@@ -1,8 +1,10 @@
- .projdesc {
+ .projectdesc {
   padding-top: 1.7em;
   color: white;
   font-size: 1.2em;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  max-width: 54%;
+
   font-weight: bold; /* Changed to 'bold' as '1.5em' isn't a valid font-weight value */
 }
 
@@ -13,15 +15,6 @@
 .icon {
   padding-top: 10svh; /* Changed from '1.0672358591248665svh' to '10vh' for clarity */
   height: 5svh;
+
   width: auto;
-}
-
-
-.resume-body {
-  text-align: center;
-}
-.resume {
-    height: 5svh;
-    border: 0.26vw solid #0BA;
-    margin: 0 auto;
 }
