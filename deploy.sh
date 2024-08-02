@@ -1,0 +1,1 @@
+{ exec pnpm run deploy; } 
