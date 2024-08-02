@@ -1,1 +1,1 @@
-{ exec pnpm run deploy; } 
+ exec pnpm run deploy 
