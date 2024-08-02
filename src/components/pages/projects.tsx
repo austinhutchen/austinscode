@@ -346,7 +346,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 export const Projects: React.FC = () => (
   <>
     <NavBar />
-    <div className="hlight-mini">
+    <div >
       <h1 className="hlight">
         <b>PERSONAL PROJECTS:</b>
       </h1>

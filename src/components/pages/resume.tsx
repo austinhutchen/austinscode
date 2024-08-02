@@ -21,22 +21,22 @@ export const Resume: React.FC = () => {
                 </h1>
 
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
-                    <h2 className="hlight-mini">
+                    <a className="hlight">
                         <b>
                             <u> Embedded Software Engineer (FormFactor) May 2024- August 2024</u>
                         </b>
-                    </h2>
+                    </a>
                     <li>
                         < h3  >
                             Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
                         </h3>
                     </li>
                     <br />
-                    <h2 className="hlight-mini">
+                    <a className="hlight">
                         <b>
                             <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                         </b>
-                    </h2>
+                    </a>
                     <li>
                         < h3  >
                             Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
@@ -47,11 +47,11 @@ export const Resume: React.FC = () => {
                         </h3>
                     </li>
                     <br />
-                    <h2 className="hlight-mini">
+                    <a className="hlight">
                         <b>
                             <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                         </b>
-                    </h2>
+                    </a>
                     <li>
                         <h3 >
                             {" "}
@@ -62,11 +62,11 @@ export const Resume: React.FC = () => {
                                 rel="noreferrer"> here </a>   </b>                 </h3>
                     </li>
                     <br />
-                    <h2 className="hlight-mini" >
+                    <a className="hlight" >
                         <b>
                             <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                         </b>
-                    </h2>
+                    </a>
                     <li>
 
 
@@ -82,11 +82,11 @@ export const Resume: React.FC = () => {
                     </li>
                     <br />
 
-                    <h2 className="hlight-mini">
+                    <a className="hlight-mini">
                         <b>
                             <u>Github  Open Source Developer(May 2022 -  Now 2023)</u>
                         </b>
-                    </h2>
+                    </a>
 
                     <li>
 
@@ -106,15 +106,15 @@ export const Resume: React.FC = () => {
                         <b><i> OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
                     </h1>
                     <br />
-                    <img height="auto" width="80%" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
+                    <img height="200vh" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
 
                     <hr />
                     <li >
 
-                        <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
-                            rel="noreferrer">
-                            <h2 className="hlight"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </h2>
-                        </a>
+
+                            <a className="hlight" href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
+                            rel="noreferrer"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </a>
+                    
 
                         <h4> Assisted twitter (now known as X) with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
 
@@ -122,10 +122,9 @@ export const Resume: React.FC = () => {
                     <br />
                     <li>
 
-                        <a href="https://leetcode.com/austinhutchen/" target="_blank"
-                            rel="noreferrer" >
-                            <h2 className="hlight-mini"> <b> LEETCODE </b> </h2>
-                        </a>
+                 
+                            <a href="https://leetcode.com/austinhutchen/" target="_blank"
+                            rel="noreferrer" className="hlight"> <b> LEETCODE </b> </a>
 
                         <h4>I love leetcode </h4>
 
@@ -135,7 +134,7 @@ export const Resume: React.FC = () => {
 
                         <a href="https://leetcode.com/austinhutchen/" target="_blank"
                             rel="noreferrer" >
-                            <h2 className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </h2>
+                            <a className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </a>
 
                         </a>
 
@@ -147,7 +146,7 @@ export const Resume: React.FC = () => {
                     <li>
                         <a href="https://gardenschoolfoundation.org/" target="_blank"
                             rel="noreferrer" >
-                            <h2 className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </h2>
+                            <a className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </a>
 
                         </a>
 
