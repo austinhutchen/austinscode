@@ -76,7 +76,7 @@ export const Landing: React.FC = () => {
 
       <NavBar />
       <div className='animateLand'>
-        <h2 className="hlight-mini" style={{ paddingTop: '5vw', fontSize: '3.6vh' }}>
+        <h2 className="hlight-mini" style={{ paddingTop: '4vw', fontSize: '3.6vh' }}>
           <b>Welcome to my website! I'm Austin, a Software Engineer & Computer Optimization Nerd.</b>
         </h2>
         <div className="nerdGif"><img title="math" src={intro} />
