@@ -84,7 +84,7 @@ export const Landing: React.FC = () => {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
             <h3 className="intro">
-              As a Computer Science and Mathematics student at CU Boulder (BSc 2025), I specialize in Agile software development, database engineering, SEO, and cybersecurity. My expertise extends to embedded engineering, and I find joy in teaching Calculus. Proficient in Typescript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
+            As a Computer Science student (BSc 2025) and natural tinkerer, I excel at large-scale software development, enjoy building complex IoT (Internet of Things) systems, experimenting with audio circuits, and reading mathematics in my free time. I have also found joy in teaching Calculus 2 in the Learning Assistant Program at the University of Colorado Boulder and building an in-house ModBus C# Library for FormFactor Boulder, a quantum computing solutions company. Proficient in TypeScript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open-source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
                 Click me!
                 <img src={github} title="GitHub" style={{
                   maxWidth: "3vh",
