@@ -51,12 +51,6 @@ export const Visualizer: React.FC = () => {
         </b>
         <AudioVisualizer stream={stream} setStream={setStream} />
         <br />
-        <h1>
-          <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
-        </h1>
-
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <iframe src="https://open.spotify.com/embed/album/6dtDTbVBQ9QwsNaqEnjsOT?utm_source=generator" width="80%" max-width="93%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>       </div>
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
@@ -65,6 +59,12 @@ export const Visualizer: React.FC = () => {
         <img className="projImg" src={lorentz} />
         <LorenzAttractor />
         <br />
+        <h1>
+          <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
+        </h1>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <iframe style={{ border: 0, width: '350px', height: '470px' }} src="https://bandcamp.com/EmbeddedPlayer/album=3063479108/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://jpegmafia.bandcamp.com/album/i-lay-down-my-life-for-you">I LAY DOWN MY LIFE FOR YOU by JPEGMAFIA</a></iframe>
+        </div>
 
       </div>
 
@@ -79,7 +79,7 @@ const LorenzAttractor = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(90, (window.innerWidth / window.innerHeight), 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    const width = ref.current?.clientWidth || 0; // Set to the width of the parent element
+    const width = (400); // Set to the width of the parent element
     const height = 400; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);

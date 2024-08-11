@@ -24,60 +24,52 @@ export const Resume: React.FC = () => {
                             <u> Embedded Software Engineer (FormFactor) May 2024- August 2024</u>
                         </b>
                     </a>
-                    <li>
-                        < h3  >
-                            Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
-                        </h3>
-                    </li>
+                    < h3  >
+                        Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
+                    </h3>
                     <br />
                     <a className="hlight">
                         <b>
                             <u>Calculus 2 Course Assistant (University Of Colorado Boulder) (January 2023 - May 2023)</u>
                         </b>
                     </a>
-                    <li>
-                        < h3  >
-                            Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
-                            hours every week to assist learning of course material.{" "}
+                    < h3  >
+                        Taught and assisted with CALCULUS 2 (MATH 2300) alongside faculty at CU boulder. Also held office
+                        hours every week to assist learning of course material.{" "}
 
-                            Recieved 97% positive feedback from 63 participants on end of
-                            semester survey.
-                        </h3>
-                    </li>
+                        Recieved 97% positive feedback from 63 participants on end of
+                        semester survey.
+                    </h3>
                     <br />
                     <a className="hlight">
                         <b>
                             <u>Mobius Materials, Marketing Consultant (Summer 2020-Fall 2020)</u>
                         </b>
                     </a>
-                    <li>
-                        <h3 >
-                            {" "}
-                            Made first company sale as Marketing consultant, worked closely with
-                            the software engineering team to achieve forecasted results. Wrote several other (science, environment, and tech-related) research articles written on the threat of e-waste and potential solutions
-                            <b> <a href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
+                    <h3 >
+                        {" "}
+                        Made first company sale as Marketing consultant, worked closely with
+                        the software engineering team to achieve forecasted results. Wrote several other (science, environment, and tech-related) research articles written on the threat of e-waste and potential solutions
+                        <b> <a href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb
 "  target="_blank"
-                                rel="noreferrer"> here </a>   </b>                 </h3>
-                    </li>
+                            rel="noreferrer"> here </a>   </b>                 </h3>
                     <br />
                     <a className="hlight" >
                         <b>
                             <u>Ebay Electronics Repairs + Reseller (May 2018 -  Now 2023)</u>
                         </b>
                     </a>
-                    <li>
 
 
 
-                        <h3 >
-                            I have sold, built, and repaired Apple, Linux, and Windows electronics and handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a className="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
-                                rel="noreferrer" >
-                                here </a>
-                            </b></h3>
+                    <h3 >
+                        I have sold, built, and repaired Apple, Linux, and Windows electronics and handled over 50 total customer sales to-date with 100% positive feedback rate from 45 customers on ebay. Also handle macbook, iphone, and ipad repairs, as well as Windows PC build requests. You can see more at my account <b>   <a className="projdesc" href="https://www.ebay.com/usr/gadgetsllcc" target="_blank"
+                            rel="noreferrer" >
+                            here </a>
+                        </b></h3>
 
 
 
-                    </li>
                     <br />
 
                     <a className="hlight-mini">
@@ -86,16 +78,14 @@ export const Resume: React.FC = () => {
                         </b>
                     </a>
 
-                    <li>
 
 
-                        <h3 >
-                            I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and    <a href="https://github.com/austinhutchen" target="_blank"
-                                rel="noreferrer"> <b><i><u> much more! </u></i> </b>  </a>
-                        </h3>
+                    <h3 >
+                        I contribute to various open source projects and build many of my own, which you can see displayed in detail on my projects page. Of those I have contributed to are Twitter, The Official CU Boulder MATH Github, and    <a href="https://github.com/austinhutchen" target="_blank"
+                            rel="noreferrer"> <b><i><u> much more! </u></i> </b>  </a>
+                    </h3>
 
 
-                    </li>
 
 
 
@@ -107,52 +97,44 @@ export const Resume: React.FC = () => {
                     <img height="200vh" width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false" style={{ marginTop: '0.25em', marginBottom: '0.25em' }} />
 
                     <hr />
-                    <li >
 
 
-                            <a className="hlight" href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
-                            rel="noreferrer"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </a>
-                    
+                    <a className="hlight" href="https://github.com/twitter/the-algorithm/issues/162" target="_blank"
+                        rel="noreferrer"> <b> TWITTER COMPILER OPTIMIZATIONS</b> </a>
 
-                        <h4> Assisted twitter (now known as X) with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
 
-                    </li>
+                    <h4> Assisted twitter (now known as X) with vectorizing their code for IEE floating point parallelism, which can significantly speed up buildtime and runtime. You can read my full contribution at the link. </h4>
+
                     <br />
-                    <li>
 
-                 
-                            <a href="https://leetcode.com/austinhutchen/" target="_blank"
-                            rel="noreferrer" className="hlight"> <b> LEETCODE </b> </a>
 
-                        <h4>I love leetcode </h4>
+                    <a href="https://leetcode.com/austinhutchen/" target="_blank"
+                        rel="noreferrer" className="hlight"> <b> LEETCODE </b> </a>
 
-                    </li>
+                    <h4>I love leetcode </h4>
+
                     <br />
-                    <li>
 
-                        <a href="https://leetcode.com/austinhutchen/" target="_blank"
-                            rel="noreferrer" >
-                            <a className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </a>
+                    <a href="https://leetcode.com/austinhutchen/" target="_blank"
+                        rel="noreferrer" >
+                        <a className="hlight-mini"> <b> READING PARTNERS FOUNDATION </b> </a>
 
-                        </a>
+                    </a>
 
 
-                        <h4 >
-                            Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
-                    </li>
+                    <h4 >
+                        Volunteered as an Elementary Reading & Writing & Math tutor under the Reading Partners foundation in los angeles.  </h4>
                     <br />
-                    <li>
-                        <a href="https://gardenschoolfoundation.org/" target="_blank"
-                            rel="noreferrer" >
-                            <a className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </a>
+                    <a href="https://gardenschoolfoundation.org/" target="_blank"
+                        rel="noreferrer" >
+                        <a className="hlight-mini"> <b> GARDEN SCHOOL FOUNDATION</b> </a>
 
-                        </a>
+                    </a>
 
-                        <h4 >
-                            Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
+                    <h4 >
+                        Volunteered after school hours to work on a community garden for underrepresented minority groups at Wilshire Crest Elementary, and facilitate meaningful interactions with the natural environment in an urban setting. You can read more about the GSF mission by clicking the above link. </h4>
 
 
-                    </li>
                     <br />
 
                     <h1 className="hlight">
@@ -161,7 +143,7 @@ export const Resume: React.FC = () => {
                         <a href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`} download>click me!</a>
                     </h1>
                     <br />
-   
+
 
 
 
