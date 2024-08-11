@@ -84,16 +84,13 @@ export const Landing: React.FC = () => {
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
           <div className="flex flex-col justify-center h-full">
             <h3 className="intro">
-            As a Computer Science student (BSc 2025) and natural tinkerer, I excel at large-scale software development, enjoy building complex IoT (Internet of Things) systems, experimenting with audio circuits, and reading mathematics in my free time. I have also found joy in teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder, and building an in-house ModBus C# Library for <a href="https://www.formfactor.com"> FormFactor Boulder</a> (a cryogenic quantum computing solutions company). Proficient in TypeScript, PHP, C#, React (including React Native), and C++, I actively contribute to emerging open-source projects. <b>Let’s connect and explore new opportunities! 🚀🌟     <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
-                Click me!
-                <img src={github} title="GitHub" style={{
-                  maxWidth: "3vh",
-                }} />
-              </a>
-              </b>
-            </h3>
-          </div>
-        </div>
+              As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, enjoy building complex IoT systems, experimenting with audio circuits, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder. Additionally, I personally developed a proprietary <a href="https://github.com/HPDinc/ConnectionsBase">ModBus C# library</a>  for <a href="https://www.formfactor.com">FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, I actively contribute to emerging open-source projects. Let’s connect and explore new opportunities! 🚀🌟 <a href="https://github.com/austinhutchen" rel="noopener noreferrer"> GitHub</a>
+              <img src={github} title="GitHub" style={{
+                maxWidth: "3vh",
+              }} />
+        </h3>
+      </div>
+    </div >
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
