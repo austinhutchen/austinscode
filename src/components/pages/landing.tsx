@@ -81,16 +81,18 @@ export const Landing: React.FC = () => {
         </h2>
         <div className="nerdGif"><img title="math" src={intro} />
         </div>
-        <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-          <div className="flex flex-col justify-center h-full">
-            <h3 className="intro">
-              As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, enjoy building complex IoT systems, experimenting with audio circuits, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder. Additionally, I personally developed a proprietary <a href="https://github.com/HPDinc/ConnectionsBase">ModBus C# library</a>  for <a href="https://www.formfactor.com">FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, I actively contribute to emerging open-source projects. Let’s connect and explore new opportunities! 🚀🌟 <a href="https://github.com/austinhutchen" rel="noopener noreferrer"> GitHub</a>
-              <img src={github} title="GitHub" style={{
-                maxWidth: "3vh",
-              }} />
-        </h3>
-      </div>
-    </div >
+            <div className='intro'>
+            <p >
+              As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, enjoy building complex IoT systems, experimenting with audio circuits, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder. Additionally, I personally developed a proprietary
+              <a href="https://github.com/HPDinc/ConnectionsBase"> ModBus C# library </a> for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, I actively contribute to emerging open-source projects. Let’s connect below and explore new opportunities! 🚀🌟 
+            </p>
+            </div>
+            <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
+            <img src={github} title="GitHub" style={{
+              maxWidth: "10vw",
+            }} />
+       </a>
+       <br/>
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"

@@ -54,14 +54,12 @@ export const Visualizer: React.FC = () => {
         <p style={{ fontSize: "1em" }} >
           The Lorentz attractor is a graph represented by an iterative algorithm that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
         <img className="projImg" src={lorentz} />
+        <div className='lorentz'>
+
         <LorenzAttractor />
-        <br />
-        <h1>
-          <b> <h2 className="hlight"> CURRENTLY LISTENING</h2> </b>
-        </h1>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <iframe style={{ border: 0, width: '350px', height: '470px' }} src="https://bandcamp.com/EmbeddedPlayer/album=3063479108/size=large/bgcol=333333/linkcol=e99708/tracklist=false/transparent=true/" seamless><a href="https://jpegmafia.bandcamp.com/album/i-lay-down-my-life-for-you">I LAY DOWN MY LIFE FOR YOU by JPEGMAFIA</a></iframe>
         </div>
+        <br />
+      
 
       </div>
 
@@ -76,8 +74,8 @@ const LorenzAttractor = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(90, (window.innerWidth / window.innerHeight), 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    const width = (400); // Set to the width of the parent element
-    const height = 400; // Set to the height of your content
+    const width = 600; // Set to the width of the parent element
+    const height = 450; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 
@@ -107,7 +105,7 @@ const LorenzAttractor = () => {
 
     scene.add(line);
 
-    camera.position.z = 90;
+    camera.position.z = 70;
     let animationId: number;
 
     const animate = function () {
