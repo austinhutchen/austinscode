@@ -1,28 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef,  useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
-import { AudioVisualizer } from './sub/AudioVisualizer';
 /* ADD GUI CONTROLS FOR USERS*/
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
 export const Visualizer: React.FC = () => {
-  const [stream, setStream] = useState<MediaStream | null>(null);
 
-  useEffect(() => {
-    window.onbeforeunload = () => {
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
-      }
-    };
-
-    return () => {
-      window.onbeforeunload = null;
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
-      }
-    };
-  }, [stream]);
-  const FFT = getImgPath('FFT.webp');
+ 
   const lorentz = getImgPath('lorentz.gif');
   return (
     <>
@@ -36,18 +20,8 @@ export const Visualizer: React.FC = () => {
 
 
 
-        <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
-        <br />
-        <img className="projImg" src={FFT} alt="Fast Fourier Transform" />
+       
 
-        <b>
-
-          <p style={{ fontSize: "0.9em" }} >
-            <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
-          </p>
-        </b>
-        <AudioVisualizer stream={stream} setStream={setStream} />
-        <br />
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
@@ -56,10 +30,10 @@ export const Visualizer: React.FC = () => {
         <img className="projImg" src={lorentz} />
         <div className='lorentz'>
 
-        <LorenzAttractor />
+          <LorenzAttractor />
         </div>
         <br />
-      
+
 
       </div>
 

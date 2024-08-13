@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-
+import { AudioVisualizer } from "./sub/AudioVisualizer";
+import { useState } from "react";
 import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -343,15 +344,47 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   );
 };
 
-export const Projects: React.FC = () => (
-  <>
-    <NavBar />
-    <div >
-      <h1 className="hlight">
-        <b>PERSONAL PROJECTS:</b>
-      </h1>
-      <ProjectList />
-    </div>
-  </>
-);
+export const Projects: React.FC = () => {
+  const [stream, setStream] = useState<MediaStream | null>(null);
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+
+    return () => {
+      window.onbeforeunload = null;
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+  }, [stream]);
+  return (
+    <>
+      <NavBar />
+      <div >
+        <h1 className="hlight">
+          <b>PERSONAL PROJECTS:</b>
+        </h1>
+
+        <div className="header">
+          <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
+          <br />
+          <img className="projImg" src={images.FFT} alt="Fast Fourier Transform" />
+          <b>
+            <p style={{ fontSize: "0.9em" }} >
+              <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
+            </p>
+          </b>
+          <AudioVisualizer stream={stream} setStream={setStream} />
+          <br />
+        </div>
+
+        <ProjectList />
+      </div>
+    </>
+  )
+
+};
 
