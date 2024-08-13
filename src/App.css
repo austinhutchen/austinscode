@@ -88,7 +88,9 @@ html {
     opacity: 1;
   }
 }
-
+.landImage img{
+ max-width: 70vw;
+}
 .iframe-container {
   display: flex;
   justify-content: center;
