@@ -23,7 +23,6 @@ export const Visualizer: React.FC = () => {
     };
   }, [stream]);
   const FFT = getImgPath('FFT.webp');
-  const proj2 = getImgPath('proj2.gif');
   const lorentz = getImgPath('lorentz.gif');
   return (
     <>
@@ -32,9 +31,7 @@ export const Visualizer: React.FC = () => {
       <div className='visualizer' >
         <h1 className="hlight"> Welcome to my fun page!</h1>
         <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
-        <div className="nerdGif">
-          <img src={proj2} />
-        </div>
+
         <hr className="my-4" />
 
 
