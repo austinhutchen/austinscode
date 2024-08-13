@@ -1,11 +1,17 @@
 /* Shared styles for .hlight and .hlight-mini */
-.hlight, .hlight-mini {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(0, 128, 0, 0.3) 65%); /* Increase the opacity of the green color */
+/* Shared styles for .hlight and .hlight-mini */
+.hlight, 
+.hlight-mini {
+  color: rgba(245, 245, 220, 1); /* Smoother text color */
+  text-shadow: 
+    1px 1px 0 rgba(0, 128, 0, 0.5), /* Green outline with shadow effect */
+    -1px 1px 0 rgba(0, 128, 0, 0.5),
+    1px -1px 0 rgba(0, 128, 0, 0.5),
+    -1px -1px 0 rgba(0, 128, 0, 0.5);
+  -webkit-text-stroke: 1px rgba(0, 128, 0, 0.5); /* Green outline */
   display: inline;
-  color: rgba(245, 245, 220, 1); /* Make the text color smoother */
-  text-shadow: 1px 1px 1px rgba(0.8, 0.8, 0.8, 1); /* Make the text shadow smoother */
+  background: none; /* Remove background */
 }
-
 /* Common styles for h4 and h3 */
 h4, h3 {
   text-shadow: 2px 2px 3px rgba(0.8, 0.8, 0.8, 0.9);
