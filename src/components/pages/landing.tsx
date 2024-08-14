@@ -112,10 +112,10 @@ export const Landing: React.FC = () => {
           type="button"
           id="navbar"
           onClick={() => {
-            nav('/Gallery');
+            nav('/Projects');
           }}
         >
-          Fun page!
+          Projects!
           <HiArrowNarrowRight size={'1em'} className="ml-3" />
         </button>
         <br />

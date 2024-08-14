@@ -46,7 +46,6 @@ const images: Images = {
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4'),
   arduino: getImgPath('arduino.mp4'),
-  FFT: getImgPath('FFT.webp'),
   // Add other images here
 };
 
@@ -369,9 +368,8 @@ export const Projects: React.FC = () => {
         </h1>
 
         <div className="header">
-          <h2 className="hlight"> MICROPHONE SPECTRUM DECOMPOSITION</h2>
+          <h2 className="hlight"> Microphone Fast Fourier Transform</h2>
           <br />
-          <img className="projImg" src={images.FFT} alt="Fast Fourier Transform" />
           <b>
             <p style={{ fontSize: "0.9em" }} >
               <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
