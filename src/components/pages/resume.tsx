@@ -21,7 +21,7 @@ export const Resume: React.FC = () => {
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
                     <a className="hlight">
                         <b>
-                            <u> Embedded Software Engineer (FormFactor) May 2024- August 2024</u>
+                            <u> Embedded Software Engineer Intern(FormFactor) May 2024- August 2024</u>
                         </b>
                     </a>
                     < h3  >
