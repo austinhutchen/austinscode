@@ -280,15 +280,3 @@ a:active {
   border-image-source: url('../../public/fast_imgs/border.webp');
   border-image-width: 6svh;
 }
-
-.intro {
-  margin-top: 0.3em;
-  color: #F3ECEC;
-  /* Lighter color for better contrast against purple */
-  font-size: 1.0rem;
-  /* Use rem units for your font sizes */
-  border-width: 400/2;
-  text-shadow: gold 3px 3px 5px;
-  /* Dark text shadow for contrast */
-  /* Adjusted text-shadow for better readability */
-}

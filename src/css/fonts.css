@@ -29,6 +29,27 @@ h4, h3 {
 
 }
 
+
+.intro {
+  margin-top: 0.3em;
+  color: #F3ECEC;
+  /* Lighter color for better contrast against purple */
+  /* Use rem units for your font sizes */
+  text-align: center;
+  display: inline;
+  align-items: center;
+  text-shadow: gold 3px 3px 5px;
+  /* Dark text shadow for contrast */
+  /* Adjusted text-shadow for better readability */
+}
+
+.intro h2,h3{
+  font-size: 1.0rem;
+  font-kerning: normal;
+max-width: 54%;
+  margin: auto;
+  justify-content: center;
+}
 /* Styling for fieldset and legend */
 fieldset {
 
