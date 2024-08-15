@@ -81,18 +81,19 @@ export const Landing: React.FC = () => {
         </h2>
         <div className="nerdGif"><img title="math" src={intro} />
         </div>
-            <div className='intro'>
-            <p >
-              As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, enjoy building complex IoT systems, experimenting with audio circuits, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder. Additionally, I personally developed a proprietary
-              <a href="https://github.com/HPDinc/ConnectionsBase"> ModBus C# library </a> for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, I actively contribute to emerging open-source projects. Let’s connect below and explore new opportunities! 🚀🌟 
-            </p>
-            </div>
-            <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
-            <img src={github} title="GitHub" style={{
-              maxWidth: "10vw",
-            }} />
-       </a>
-       <br/>
+        <div className='intro'>
+          <h2>
+            As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, enjoy building complex IoT systems, experimenting with audio circuits, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the Learning Assistant Program at the University of Colorado Boulder. Additionally, I personally developed a proprietary
+            <a href="https://github.com/HPDinc/ConnectionsBase"> ModBus C# library </a> for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, I actively contribute to emerging open-source projects. Let’s connect below and explore new opportunities! 🚀🌟
+          </h2>
+
+        </div>
+        <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
+          <img src={github} title="GitHub" style={{
+            maxWidth: "10vw",
+          }} />
+        </a>
+        <br />
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -103,7 +104,7 @@ export const Landing: React.FC = () => {
           }}
         >
           More About Me
-          <HiArrowNarrowRight size={'1em'} className="ml-3" />
+          <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
         <br />
         <button
@@ -115,15 +116,14 @@ export const Landing: React.FC = () => {
             nav('/Projects');
           }}
         >
-          Projects!
-          <HiArrowNarrowRight size={'1em'} className="ml-3" />
+          My Projects!
+          <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
         <br />
         <div className="landImage">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=austinhutchen&hide_progress=true&langs_count=12&theme=react&hide=cmake,html,css,Objective-C++" alt="GitHub Stats" />
-          <img src="https://github-readme-stats.vercel.app/api?username=austinhutchen&show_icons=true&theme=gruvbox&include_all_commits=false" alt="GitHub Stats" />
-          <TextSphere />
+        
         </div>
+        <TextSphere/>
         <Spinner />
       </div >
     </>

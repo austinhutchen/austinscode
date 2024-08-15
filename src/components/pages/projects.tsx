@@ -367,7 +367,7 @@ export const Projects: React.FC = () => {
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
-        <div className="header">
+        <div className="fadeSide">
           <h2 className="hlight"> Microphone Fast Fourier Transform</h2>
           <br />
           <b>
