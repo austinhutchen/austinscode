@@ -1,19 +1,25 @@
 /* Shared styles for .hlight and .hlight-mini */
 /* Shared styles for .hlight and .hlight-mini */
-.hlight, 
+.hlight,
 .hlight-mini {
-  color: rgba(245, 245, 220, 1); /* Smoother text color */
-  text-shadow: 
-    1px 1px 0 rgba(0, 128, 0, 0.5), /* Green outline with shadow effect */
+  color: rgba(245, 245, 220, 1);
+  /* Smoother text color */
+  text-shadow:
+    1px 1px 0 rgba(0, 128, 0, 0.5),
+    /* Green outline with shadow effect */
     -1px 1px 0 rgba(0, 128, 0, 0.5),
     1px -1px 0 rgba(0, 128, 0, 0.5),
     -1px -1px 0 rgba(0, 128, 0, 0.5);
-  -webkit-text-stroke: 1px rgba(0, 128, 0, 0.5); /* Green outline */
+  -webkit-text-stroke: 1px rgba(0, 128, 0, 0.5);
+  /* Green outline */
   display: inline;
-  background: none; /* Remove background */
+  background: none;
+  /* Remove background */
 }
+
 /* Common styles for h4 and h3 */
-h4, h3 {
+h4,
+h3 {
   text-shadow: 2px 2px 3px rgba(0.8, 0.8, 0.8, 0.9);
   font-size: 0.98em;
 }
@@ -25,7 +31,8 @@ h4, h3 {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 350;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Use a darker color and larger blur radius */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Use a darker color and larger blur radius */
 
 }
 
@@ -43,23 +50,20 @@ h4, h3 {
   /* Adjusted text-shadow for better readability */
 }
 
-.intro h2,h3{
+.intro h2,
+h3 {
   font-size: 1.0rem;
   font-kerning: normal;
-max-width: 54%;
+  max-width: 80%;
   margin: auto;
   justify-content: center;
 }
+
 /* Styling for fieldset and legend */
-fieldset {
-
-
-}
+fieldset {}
 
 .legend {
   /* For better legibility against the box-shadow */
   text-shadow: 2px 3px 5px rgba(0.8, 0.8, 0.8, 0.8);
 
 }
-
-
