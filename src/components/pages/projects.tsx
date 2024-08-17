@@ -367,14 +367,16 @@ export const Projects: React.FC = () => {
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
-        <div className="fadeSide">
-          <h2 className="hlight"> Microphone Fast Fourier Transform</h2>
-          <br />
-          <b>
-            <p style={{ fontSize: "0.9em" }} >
-              <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
-            </p>
-          </b>
+          <div className="projDesc">
+            <div className="fadeSide" style={{ margin: '0 auto', border: '3px 0' }}>
+              <h2 className="hlight"> Microphone Fast Fourier Transform</h2>
+              <br />
+              <b>
+                <p style={{ fontSize: "0.9em" }} >
+                  <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the spotify player interface below! This is an embedded web program that uses the fast fourier transform algorithm above to decompose the audio spectrum of a microphone input. The program then displays the audio spectrum in an HTML canvas element.
+                </p>
+              </b>
+            </div>
           <AudioVisualizer stream={stream} setStream={setStream} />
           <br />
         </div>
