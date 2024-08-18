@@ -2,7 +2,6 @@ import React, { useRef,  useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 /* ADD GUI CONTROLS FOR USERS*/
-const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 
 export const Visualizer: React.FC = () => {
 
