@@ -7,7 +7,6 @@ const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/$
 export const Visualizer: React.FC = () => {
 
  
-  const lorentz = getImgPath('lorentz.gif');
   return (
     <>
       <NavBar />
@@ -27,7 +26,6 @@ export const Visualizer: React.FC = () => {
         </b>
         <p style={{ fontSize: "1em" }} >
           The Lorentz attractor is a graph represented by an iterative algorithm that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
-        <img className="projImg" src={lorentz} />
         <div className='lorentz'>
 
           <LorenzAttractor />
