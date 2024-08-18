@@ -33,12 +33,12 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser: AnalyserNode = audioContext.createAnalyser();
-          analyser.smoothingTimeConstant = 0.2;
-          analyser.fftSize = 8192; // Reduce fftSize for better performance
+          analyser.smoothingTimeConstant = 0.4;
+          analyser.fftSize = 8192*2; // Reduce fftSize for better performance
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
-          filter.type = 'lowpass'; // set the filter type to low-pass
-          filter.frequency.value = 500; // s
+          filter.type = 'highpass'; // set the filter type to low-pass
+          filter.frequency.value = 400; // s
           const bufferLength = analyser.frequencyBinCount;
           const dataArray: Uint8Array = new Uint8Array(bufferLength); // Create dataArray once
 
@@ -51,7 +51,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           const draw = () => {
             requestAnimationFrame(draw);
             analyser.getByteFrequencyData(dataArray);
-            ctx.fillStyle = 'rgba(0, 0, 0,0.1)';
+            ctx.fillStyle = 'rgb(0, 0, 0)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             const barWidth: number = Math.ceil(canvas.width / bufferLength);
@@ -78,7 +78,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   }, [stream]);
   return <><button style={{}} onClick={getUserMedia}>Click & Speak! </button>
     <br />
-    <canvas ref={canvasRef} style={{ width: '80vw', height: '25vh', borderRadius: '10px', border: '2px solid #000' }} />
+    <canvas ref={canvasRef} style={{ width: '60vw', height: '40vh', borderRadius: '10px', border: '2px solid #000' }} />
 
   </>
 
