@@ -45,8 +45,8 @@ const LorenzAttractor = () => {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(90, (window.innerWidth / window.innerHeight), 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    const width = 600; // Set to the width of the parent element
-    const height = 450; // Set to the height of your content
+    const width = 450; // Set to the width of the parent element
+    const height = 340; // Set to the height of your content
     renderer.setSize(width, height);
     ref.current?.appendChild(renderer.domElement);
 

@@ -33,7 +33,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser: AnalyserNode = audioContext.createAnalyser();
-          analyser.smoothingTimeConstant = 0.4;
+          analyser.smoothingTimeConstant = 0.1;
           analyser.fftSize = 8192*2; // Reduce fftSize for better performance
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
@@ -78,7 +78,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   }, [stream]);
   return <><button style={{}} onClick={getUserMedia}>Click & Speak! </button>
     <br />
-    <canvas ref={canvasRef} style={{ width: '80vw', height: '40vh', borderRadius: '10px', border: '2px solid #000' }} />
+    <canvas ref={canvasRef} style={{ width: '45vw', height: '25vh', borderRadius: '10px', border: '2px solid #000' }} />
 
   </>
 
