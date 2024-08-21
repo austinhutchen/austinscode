@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 
 const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
-const me = process.env.PUBLIC_URL + '/fast_imgs/me5.JPG';
+const me = process.env.PUBLIC_URL + '/fast_imgs/meWork.png';
 const coding = process.env.PUBLIC_URL + '/fast_imgs/coding.webp';
 const systems = process.env.PUBLIC_URL + '/fast_imgs/systems.webp';
 const math = process.env.PUBLIC_URL + '/fast_imgs/IMG_0913.webp';
