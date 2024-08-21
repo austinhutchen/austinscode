@@ -19,7 +19,7 @@ export const NavBar: React.FC = () => {
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
 
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
-  const icon_size = '25vw';
+  const icon_size = '34vw';
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -52,7 +52,10 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/')}>
                 <img src={home} width={icon_size} height={icon_size} />
-                Home
+                <h3>
+                  Home
+                </h3>
+
               </Button>
             </NavItem >
             <NavItem className="nav-item">
@@ -87,39 +90,53 @@ export const NavBar: React.FC = () => {
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey' }} href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size} />
-                Github
+                <h4>
+                  Github
+                </h4>
+
               </a>
             </NavItem>
             <NavItem className="nav-item">
-              <a style={{ border: '1px solid grey' }} href="https://www.instagram.com/austinscode/" target="_blank">
+              <a href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
-                Instagram
+                <h4>
+                  Electronics & Programming Instagram
+                </h4>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey' }} href="https://www.facebook.com/austinhutchen/reels/" target="_blank">
+              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank">
                 <img src={facebook} width={icon_size} height={icon_size} className="nav-icon" />
-                Facebook
+                <h4>
+                  Facebook
+                </h4>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey', borderRadius:'2px' }} href="https://leetcode.com/austinhutchen/" target="_blank">
+              <a href="https://leetcode.com/austinhutchen/" target="_blank">
                 <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" />
-                Leetcode
+                <h4>
+                  Leetcode
+                </h4>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey', borderRadius:'2px' }} href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank">
+              <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank">
                 <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon" />
-                Linkedin
+                <h4>
+                  LinkedIn
+                </h4>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey', borderRadius:'2px'}} href="https://austinhutchen.medium.com/" target="_blank">
+              <a href="https://austinhutchen.medium.com/" target="_blank">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" />
-                Blog
+                <h4>
+                  Blog
+                </h4>
+
               </a>
             </NavItem>
           </Nav>
