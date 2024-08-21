@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { NavBar } from "../common/navbar";
 import Slider from "react-slick";
 import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
+import "../../css/slider.css";
 
 const tinker = process.env.PUBLIC_URL + '/fast_imgs/tinker.webp';
 const me = process.env.PUBLIC_URL + '/fast_imgs/meWork.png';
@@ -106,7 +107,6 @@ const About: React.FC = () => {
               <img
                 src={data.url}
                 alt="Project Image"
-                loading='lazy'
               />
             ) : (
               <video
@@ -116,6 +116,7 @@ const About: React.FC = () => {
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
+              
                 src={data.url}
               />
             )}
