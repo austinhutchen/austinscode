@@ -77,15 +77,7 @@ const keys = [
 ];
 
 // Common styles for image and video components
-const imageStyles = {
-  borderRadius: '10%',
-  border: '0.15vh solid #0BA',
-};
 
-const videoStyles = {
-  borderRadius: '10%',
-  border: '0.15vh solid #0BA',
-};
 
 const About: React.FC = () => {
   const settings = {
@@ -95,6 +87,7 @@ const About: React.FC = () => {
     arrows: true,
     slidesToScroll: 1,
     infinite: true,
+    fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
     dots: true,
   };
@@ -112,8 +105,8 @@ const About: React.FC = () => {
             {data.type === "image" ? (
               <img
                 src={data.url}
-                style={imageStyles}
                 alt="Project Image"
+                loading='lazy'
               />
             ) : (
               <video
@@ -123,7 +116,6 @@ const About: React.FC = () => {
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
-                style={videoStyles}
                 src={data.url}
               />
             )}

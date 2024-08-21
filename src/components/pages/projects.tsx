@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { AudioVisualizer } from "./sub/AudioVisualizer";
+import { AudioVisualizer } from "../common/AudioVisualizer";
 import { useState } from "react";
 import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
