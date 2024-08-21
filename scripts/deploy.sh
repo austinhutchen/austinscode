@@ -1,1 +1,1 @@
- { pnpm run predeploy; pnpm run deploy; } 
+ pnpm run predeploy; pnpm run deploy;
