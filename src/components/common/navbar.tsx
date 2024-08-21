@@ -102,7 +102,7 @@ export const NavBar: React.FC = () => {
               <a href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
                 <h4>
-                  Electronics & Programming Instagram
+                  Engineering Instagram
                 </h4>
               </a>
             </NavItem>
@@ -131,7 +131,7 @@ export const NavBar: React.FC = () => {
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a href="https://austinhutchen.medium.com/" target="_blank">
+              <a style={{ border: '1px solid grey', borderRadius: '2px' }} href="https://austinhutchen.medium.com/" target="_blank">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" />
                 <h4>
                   Blog
