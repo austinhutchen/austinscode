@@ -19,7 +19,7 @@ export const NavBar: React.FC = () => {
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
 
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
-  const icon_size = '34vw';
+  const icon_size = '31vw';
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -92,50 +92,38 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item" >
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size} />
-                <h4>
-                  Github
-                </h4>
+                Github
 
               </a>
             </NavItem>
             <NavItem className="nav-item">
               <a href="https://www.instagram.com/austinscode/" target="_blank">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
-                <h4>
-                  Engineering Instagram
-                </h4>
+                Instagram
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank">
                 <img src={facebook} width={icon_size} height={icon_size} className="nav-icon" />
-                <h4>
-                  Facebook
-                </h4>
+                Facebook
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://leetcode.com/austinhutchen/" target="_blank">
                 <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" />
-                <h4>
-                  Leetcode
-                </h4>
+                Leetcode
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank">
                 <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon" />
-                <h4>
-                  LinkedIn
-                </h4>
+                LinkedIn
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a style={{ border: '1px solid grey', borderRadius: '2px' }} href="https://austinhutchen.medium.com/" target="_blank">
+              <a href="https://austinhutchen.medium.com/" target="_blank">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" />
-                <h4>
-                  Blog
-                </h4>
+                Blog
 
               </a>
             </NavItem>

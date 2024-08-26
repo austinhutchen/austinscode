@@ -12,7 +12,8 @@
    video {
      height: 43svh;
      margin: 0 auto;
-     max-height: 45svh;
+     max-width: 60vw;
+     max-height: 55vh;
      border-radius: 20%;
      border-width: 2vw;
 
@@ -34,8 +35,9 @@
    video {
      height: 44vh;
      margin: 0 auto;
-     max-height: 50svh;
-     border-radius: 20%;
+     max-width: 60vw;
+     max-height: 55vh;
+     border-radius: 10%;
      border-width: 2vw;
 
    }
