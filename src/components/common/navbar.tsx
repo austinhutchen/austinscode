@@ -43,10 +43,8 @@ export const NavBar: React.FC = () => {
     <div >
       <Navbar className="custom-navbar" >
         <div className="navbar-header">
-
           <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
-
         <Collapse isOpen={isOpen} navbar className="navFlex">
           <Nav className="mr-auto d-flex justify-content-center align-items-center nav-horizontal" navbar>
             <NavItem className="nav-item">
@@ -55,7 +53,6 @@ export const NavBar: React.FC = () => {
                 <h3>
                   Home
                 </h3>
-
               </Button>
             </NavItem >
             <NavItem className="nav-item">
@@ -93,38 +90,36 @@ export const NavBar: React.FC = () => {
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size} />
                 Github
-
               </a>
             </NavItem>
             <NavItem className="nav-item">
-              <a href="https://www.instagram.com/austinscode/" target="_blank">
+              <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" />
                 Instagram
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank">
+              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_size} height={icon_size} className="nav-icon" />
                 Facebook
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a href="https://leetcode.com/austinhutchen/" target="_blank">
+              <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
                 <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" />
                 Leetcode
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank">
+              <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon" />
                 LinkedIn
               </a>
             </NavItem>
             <NavItem className="nav-item" >
-              <a href="https://austinhutchen.medium.com/" target="_blank">
+              <a href="https://austinhutchen.medium.com/" target="_blank" rel="noopener noreferrer">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" />
                 Blog
-
               </a>
             </NavItem>
           </Nav>
