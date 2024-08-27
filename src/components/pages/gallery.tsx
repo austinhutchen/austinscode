@@ -1,11 +1,11 @@
-import React, { useRef,  useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { NavBar } from '../common/navbar';
 import * as THREE from 'three';
 /* ADD GUI CONTROLS FOR USERS*/
 
 export const Visualizer: React.FC = () => {
 
- 
+
   return (
     <>
       <NavBar />
@@ -18,18 +18,23 @@ export const Visualizer: React.FC = () => {
 
 
 
-       
+
 
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
-        <p style={{ fontSize: "1em" }} >
-          The Lorentz attractor is a graph represented by an iterative algorithm that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of such chaotic behavior is weather in nature. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js. </p>
+        
+        <div style={{  display: 'grid', margin:'auto', flexDirection:'row', justifyContent: 'center', alignItems:'center',maxWidth: '60vw', textAlign: 'center' }}>
+        <h4 className="lead" >
+            The Lorentz attractor is a graph represented by an iterative algorithm that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of chaotic behavior that can generate this object is weather prediction at critial points. To generate this behavior, I wrote the code for the recursive algorithms and programmed it into a 3d modeling software, three.js.
+          </h4>
+        </div>
+       
+          <hr/>
         <div className='lorentz'>
-
+        
           <LorenzAttractor />
         </div>
-        <br />
 
 
       </div>
@@ -54,7 +59,7 @@ const LorenzAttractor = () => {
     const positions = [];
 
     // Lorenz Attractor parameters
-    const a = 10, b = 28, c = 8 / 3;
+    const a = 10, b = 28, c = 16 / 3;
     let x = 0.1, y = 0, z = 0;
 
     for (let i = 0; i < 10000; i++) {
