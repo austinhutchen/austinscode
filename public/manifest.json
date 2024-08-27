@@ -1,15 +1,6 @@
 {
   "short_name": "austinscode",
-  "name": "austin's portfolio",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    }
- 
- 
-  ],
+  "name": "austinscode",
   "start_url": "/austinscode",
   "display": "standalone",
   "theme_color": "#5F9EA0",
