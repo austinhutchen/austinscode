@@ -17,7 +17,7 @@ export const NavBar: React.FC = () => {
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.webp';
   const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
-
+  const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
   const icon_size = '31vw';
 
@@ -44,12 +44,15 @@ export const NavBar: React.FC = () => {
       <Navbar className="custom-navbar" >
         <div className="navbar-header">
           <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
+
+          <img className="clickIcon" width={"40vw"} height={"40vw"} src={clickme}/>
+
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
         <Collapse isOpen={isOpen} navbar className="navFlex">
           <Nav className="mr-auto d-flex justify-content-center align-items-center nav-horizontal" navbar>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/')}>
-                <img src={home} width={icon_size} height={icon_size} alt="home"/>
+                <img src={home} width={icon_size} height={icon_size} alt="home" />
                 <h3>
                   Home
                 </h3>
@@ -70,25 +73,25 @@ export const NavBar: React.FC = () => {
 
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
-                <img src={resume} width={icon_size} height={icon_size} alt="resume"/>
+                <img src={resume} width={icon_size} height={icon_size} alt="resume" />
                 Resume
               </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
-                <img src={cube} width={icon_size} height={icon_size} alt="cube"/>
+                <img src={cube} width={icon_size} height={icon_size} alt="cube" />
                 Fun
               </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Feedback')}>
-                <img src={feedback} width={icon_size} height={icon_size} alt="feedback"/>
+                <img src={feedback} width={icon_size} height={icon_size} alt="feedback" />
                 Feedback
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
-                <img src={github} width={icon_size} height={icon_size} alt="GitHub"/>
+                <img src={github} width={icon_size} height={icon_size} alt="GitHub" />
                 Github
               </a>
             </NavItem>
@@ -106,13 +109,13 @@ export const NavBar: React.FC = () => {
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
-                <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" alt ="leetcode" />
+                <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" alt="leetcode" />
                 Leetcode
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://www.linkedin.com/in/austin-hutchen-4b5b181a6/" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon"alt ="LinkedIn" />
+                <img src={linkedin} width={icon_size} height={icon_size} className="nav-icon" alt="LinkedIn" />
                 LinkedIn
               </a>
             </NavItem>
