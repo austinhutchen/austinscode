@@ -21,11 +21,11 @@ export const Resume: React.FC = () => {
                 <ul style={{ paddingTop: '0.3em' }} className="projectdesc" >
                     <a className="hlight">
                         <b>
-                            <u> Embedded Software Engineer Intern(FormFactor) May 2024- August 2024</u>
+                            <u> Backend Software Engineer Intern(FormFactor) May 2024- August 2024</u>
                         </b>
                     </a>
                     < h3  >
-                        Built a ModBus ASCII and RTU simulator for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
+                        Built an RS232 C# Nuget library implemenation of ModBus ASCII/RTU drivers and simulators for use in quantum computing instruments at <a href="https://www.formfactor.com/">FormFactor</a>. Also worked alongside the larger team to draft engineering decisions for approaching 0 degrees kelvin, for use in Boulder FormFactor's in-built quantum computer.
                     </h3>
                     <br />
                     <a className="hlight">
