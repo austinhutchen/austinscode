@@ -3,7 +3,6 @@ import React from 'react';
 
 declare global {
   interface Window { webkitAudioContext: typeof AudioContext }
-
 }
 
 type AudioVisualizerProps = {
@@ -34,10 +33,10 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser: AnalyserNode = audioContext.createAnalyser();
           analyser.smoothingTimeConstant = 0.1;
-          analyser.fftSize = 8192*2; // Reduce fftSize for better performance
+          analyser.fftSize = 8192 * 2; // Reduce fftSize for better performance
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
-          filter.type = 'highpass'; // set the filter type to low-pass
+          filter.type = 'lowpass'; // set the filter type to low-pass
           filter.frequency.value = 400; // s
           const bufferLength = analyser.frequencyBinCount;
           const dataArray: Uint8Array = new Uint8Array(bufferLength); // Create dataArray once

@@ -37,7 +37,6 @@ const data = [inclusion,support]
             <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
             <br />
             <ul>
-              <li>
                 <h2 className="hlight-mini">
                   <b><i><u>Letter of Rec from MATH PHD Ezzedine El Sai:</u></i></b>
                 </h2>
@@ -48,9 +47,8 @@ const data = [inclusion,support]
                   loading="eager"
                   alt="Math_PhD_Students_Letter"
                 />
-              </li>
+                <br />
 
-              <li>
                 <h2 className="hlight-mini">
                   <b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b>
                 </h2>
@@ -58,7 +56,6 @@ const data = [inclusion,support]
                 <div>
                   <ImageList images={data} />
                 </div>
-              </li>
             </ul>
           </div>
       </div>
