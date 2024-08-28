@@ -154,9 +154,11 @@ a:hover {
   /* Ensure the navbar is above other elements */
   border-radius: 8vw;
 }
-.clickIcon{
+
+.clickIcon {
   transform: rotate(270deg);
 }
+
 @media not (max-width: 820px) {
 
   #line1,
