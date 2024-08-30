@@ -30,7 +30,7 @@
     "slick-carousel": "^1.8.1",
     "three": "^0.167.1",
     "typescript": "^5.5.4",
-    "vercel": "^37.1.2",
+    "vercel": "^37.2.1",
     "web-vitals": "^4.2.3",
     "webpack": "^5.94.0",
     "webpack-bundle-analyzer": "^4.10.2",
