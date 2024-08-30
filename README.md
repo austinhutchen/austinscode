@@ -8,34 +8,45 @@
 
 <hr/>
  <u> <h2> Local File Structure: </h2> </u> <br/>
-|____src <br/>
-| |____App.tsx <br/>
-| |____.DS_Store <br/>
-| |____css <br/>
-| | |____dimensions.css <br/>
-| | |____resume.css <br/>
-| | |____slider.css <br/>
-| | |____navBar.css <br/>
-| | |____spinner.css <br/>
-| | |____fonts.css <br/>
-| | |____TextSphere.css <br/>
-| |____reportWebVitals.jsx <br/>
-| |____App.css <br/>
-| |____index.css <br/>
-| |____components <br/>
-| | |____.DS_Store <br/>
-| | |____common <br/>
-| | | |____navbar.tsx <br/>
-| | | |____symbols.tsx <br/>
-| | |____pages <br/>
-| | | |____projects.tsx <br/>
-| | | |____gallery.tsx <br/>
-| | | |____aboutme.tsx <br/>
-| | | |____resume.tsx <br/>
-| | | |____sub <br/>
-| | | | |____AudioVisualizer.tsx <br/>
-| | | |____landing.tsx <br/>
-| | | |____feedback.tsx <br/>
-| | |____base <br/>
-| | | |____Router.tsx <br/>
-| |____index.jsx <br/>
+── scripts
+│   ├── build.sh
+│   ├── clean.sh
+│   ├── deploy.sh
+│   ├── findLargestFiles.sh
+│   ├── resetProject.sh
+│   ├── start.sh
+│   ├── update.sh
+│   └── upgrade.sh
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── components
+│   │   ├── base
+│   │   │   └── Router.tsx
+│   │   ├── common
+│   │   │   ├── AudioVisualizer.tsx
+│   │   │   ├── navbar.tsx
+│   │   │   ├── symbols.tsx
+│   │   │   └── webCam.tsx
+│   │   └── pages
+│   │       ├── aboutme.tsx
+│   │       ├── feedback.tsx
+│   │       ├── gallery.tsx
+│   │       ├── landing.tsx
+│   │       ├── projects.tsx
+│   │       └── resume.tsx
+│   ├── css
+│   │   ├── TextSphere.css
+│   │   ├── dimensions.css
+│   │   ├── fonts.css
+│   │   ├── navBar.css
+│   │   ├── resume.css
+│   │   ├── slider.css
+│   │   └── spinner.css
+│   ├── index.css
+│   ├── index.jsx
+│   └── reportWebVitals.jsx
+├── tsconfig.json
+└── webpack.config.js
+
+
