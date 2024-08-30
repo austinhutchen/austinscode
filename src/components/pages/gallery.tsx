@@ -59,7 +59,7 @@ const LorenzAttractor = () => {
     const positions = [];
 
     // Lorenz Attractor parameters
-    const a = 10, b = 28, c = 16 / 3;
+    const a = 10, b = 28, c = 8 / 3;
     let x = 0.1, y = 0, z = 0;
 
     for (let i = 0; i < 10000; i++) {
