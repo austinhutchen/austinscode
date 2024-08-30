@@ -83,7 +83,7 @@ export const Landing: React.FC = () => {
         </div>
         <div className='intro'>
           <h2>
-            As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, experimenting with audio circuits, enjoy building complex IoT systems, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the <a href="https://www.colorado.edu/program/learningassistant/">Learning Assistant Program  </a> at the University of Colorado Boulder. Additionally, I personally developed a proprietary
+            As a natural tinkerer and Computer Science student (BSc 2025), I excel at large-scale software development, experimenting with analog electronic circuits, enjoy building complex IoT systems, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the <a href="https://www.colorado.edu/program/learningassistant/">Learning Assistant Program  </a> at the University of Colorado Boulder. Additionally, I personally developed a proprietary
             <a href="https://github.com/HPDinc/ConnectionsBase"> ModBus C# library </a> for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, <a> I actively contribute to emerging open-source projects.</a> Let’s connect below and explore new opportunities! 🚀🌟
           </h2>
 
