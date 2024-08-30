@@ -8,45 +8,45 @@
 
 <hr/>
  <u> <h2> Local File Structure: </h2> </u> <br/>
-── scripts
-│   ├── build.sh
-│   ├── clean.sh
-│   ├── deploy.sh
-│   ├── findLargestFiles.sh
-│   ├── resetProject.sh
-│   ├── start.sh
-│   ├── update.sh
-│   └── upgrade.sh
-├── src
-│   ├── App.css
-│   ├── App.tsx
-│   ├── components
-│   │   ├── base
-│   │   │   └── Router.tsx
-│   │   ├── common
-│   │   │   ├── AudioVisualizer.tsx
-│   │   │   ├── navbar.tsx
-│   │   │   ├── symbols.tsx
-│   │   │   └── webCam.tsx
-│   │   └── pages
-│   │       ├── aboutme.tsx
-│   │       ├── feedback.tsx
-│   │       ├── gallery.tsx
-│   │       ├── landing.tsx
-│   │       ├── projects.tsx
-│   │       └── resume.tsx
-│   ├── css
-│   │   ├── TextSphere.css
-│   │   ├── dimensions.css
-│   │   ├── fonts.css
-│   │   ├── navBar.css
-│   │   ├── resume.css
-│   │   ├── slider.css
-│   │   └── spinner.css
-│   ├── index.css
-│   ├── index.jsx
-│   └── reportWebVitals.jsx
-├── tsconfig.json
-└── webpack.config.js
+── scripts <br/>
+│   ├── build.sh <br/>
+│   ├── clean.sh <br/>
+│   ├── deploy.sh <br/>
+│   ├── findLargestFiles.sh <br/>
+│   ├── resetProject.sh <br/>
+│   ├── start.sh <br/>
+│   ├── update.sh <br/>
+│   └── upgrade.sh <br/>
+├── src <br/>
+│   ├── App.css <br/>
+│   ├── App.tsx <br/>
+│   ├── components <br/>
+│   │   ├── base <br/>
+│   │   │   └── Router.tsx <br/>
+│   │   ├── common <br/>
+│   │   │   ├── AudioVisualizer.tsx <br/>
+│   │   │   ├── navbar.tsx <br/>
+│   │   │   ├── symbols.tsx <br/>
+│   │   │   └── webCam.tsx <br/>
+│   │   └── pages <br/>
+│   │       ├── aboutme.tsx <br/>
+│   │       ├── feedback.tsx <br/>
+│   │       ├── gallery.tsx <br/>
+│   │       ├── landing.tsx <br/>
+│   │       ├── projects.tsx <br/>
+│   │       └── resume.tsx <br/>
+│   ├── css <br/>
+│   │   ├── TextSphere.css <br/>
+│   │   ├── dimensions.css <br/>
+│   │   ├── fonts.css <br/>
+│   │   ├── navBar.css <br/>
+│   │   ├── resume.css <br/>
+│   │   ├── slider.css <br/>
+│   │   └── spinner.css <br/>
+│   ├── index.css <br/>
+│   ├── index.jsx <br/>
+│   └── reportWebVitals.jsx <br/>
+├── tsconfig.json <br/>
+└── webpack.config.js <br/>
 
 
