@@ -8,7 +8,7 @@ type Images = Record<string, string>;
 
 const images: Images = {
   tinker: getImgPath("tinker.webp"),
-  me: getImgPath("austinselfie.jpg"),
+  me: getImgPath("austinselfie.webp"),
   coding: getImgPath("coding.webp"),
   systems: getImgPath("systems.webp"),
   math: getImgPath("mathBook.webp"),
