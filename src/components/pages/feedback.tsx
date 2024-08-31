@@ -38,7 +38,7 @@ const data = [inclusion,support]
             <br />
             <ul>
                 <h2 className="hlight-mini">
-                  <b><i><u>Letter of Rec from MATH PHD Ezzedine El Sai:</u></i></b>
+                  <b><i><u>Letter of Rec from CU Boulder Math PHD/Instructor Ezzedine El Sai:</u></i></b>
                 </h2>
                 <br />
                 <img
