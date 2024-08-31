@@ -56,7 +56,7 @@ export const Visualizer: React.FC = () => {
         <div className='projimg'>
           <img style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh',maxWidth: '30vw', textAlign: 'center' }} src={images.bipolaroutput} />
           <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh', maxWidth: '30vw', textAlign: 'center' }}src={images.transformer} />
-          <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', transform:'rotate(90deg)',alignItems: 'center', maxHeight:'30vh', maxWidth: '30vw', textAlign: 'center' }}src={images.volts} />
+          <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', transform:'rotate(90deg)',alignItems: 'center', maxHeight:'25vh', maxWidth: '30vw', textAlign: 'center' }}src={images.volts} />
 
         </div>
 
