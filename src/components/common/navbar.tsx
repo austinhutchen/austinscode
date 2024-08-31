@@ -45,7 +45,7 @@ export const NavBar: React.FC = () => {
         <div className="navbar-header">
           <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
 
-          <img className="clickIcon"  width={"55vw"} height={"70vh"} src={clickme}/>
+          <img className="clickIcon" width={"55vw"} height={"70vh"} src={clickme} />
 
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
         <Collapse isOpen={isOpen} navbar className="navFlex">
@@ -67,7 +67,7 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Projects')}>
                 <img src={projects} width={icon_size} height={icon_size} alt="projects" />
-                Projects
+                Software
               </Button>
             </NavItem>
 
@@ -80,7 +80,7 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
                 <img src={cube} width={icon_size} height={icon_size} alt="cube" />
-                Fun
+                Circuits
               </Button>
             </NavItem>
             <NavItem className="nav-item">
