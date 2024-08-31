@@ -58,9 +58,9 @@ export const Visualizer: React.FC = () => {
 
           </div>
         </div>
-      
-
-
+      <br/>
+      <br/>
+<hr/>
         </div>
 
       </div>
