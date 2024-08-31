@@ -16,10 +16,6 @@ export const Visualizer: React.FC = () => {
 
         <hr className="my-4" />
 
-
-
-
-
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
