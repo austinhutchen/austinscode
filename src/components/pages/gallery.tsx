@@ -12,7 +12,7 @@ export const Visualizer: React.FC = () => {
 
       <div className='visualizer' >
         <h1 className="hlight"> Welcome to my fun page!</h1>
-        <p className="lead"> <b> This page contains a gallery with live demos of more projects and tutorials, by me! </b> </p>
+        <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
 
         <hr className="my-4" />
 
@@ -26,7 +26,7 @@ export const Visualizer: React.FC = () => {
         
         <div style={{  display: 'grid', margin:'auto', flexDirection:'row', justifyContent: 'center', alignItems:'center',maxWidth: '70vw', textAlign: 'center' }}>
         <h4 className="lead" >
-            The Lorentz attractor is a graph plotted by a system of solutions to the lorentz equations, that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of chaotic behavior that can generate this object is the behavior of weather prediction algorithms, which can erraticly fail to predict the weather at critial points. To plot this behavior, I wrote the code for the recursive algorithms and programmed the differential equations into a 3d modeling software, three.js.
+            The Lorentz attractor is a graph plotted by a system of solutions to the lorentz equations, that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of chaotic behavior that can generate this object is the behavior of weather prediction algorithms, which can erraticly fail to predict the weather at critical points. To plot this behavior, I wrote the code for the recursive algorithms and programmed the differential equations into a 3d modeling software, three.js.
           </h4>
         </div>
        
