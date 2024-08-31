@@ -31,6 +31,9 @@ export const Visualizer: React.FC = () => {
 
           <LorenzAttractor />
         </div>
+
+
+        <hr />
         <b>
           <h2 className="hlight"> AUDIO BIPOLAR POWER SUPPLY </h2>
         </b>
@@ -41,7 +44,7 @@ export const Visualizer: React.FC = () => {
           </h4>
         </div>
 
-        <hr />
+        
         <div className='projimg'>
           <img src=''>
           </img>
