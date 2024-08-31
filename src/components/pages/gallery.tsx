@@ -8,7 +8,9 @@ export const Visualizer: React.FC = () => {
   type Images = Record<string, string>;
   const images: Images = {
     bipolaroutput: getImgPath('bipolarPSUoutput.webp'),
-    transformer: getImgPath('audiotransformer.JPG')
+    transformer: getImgPath('audiotransformer.JPG'),
+    DC: getImgPath('DCvoltage.webp')
+
     // Add other images here
   };
 
@@ -54,6 +56,8 @@ export const Visualizer: React.FC = () => {
         <div className='projimg'>
           <img style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh',maxWidth: '30vw', textAlign: 'center' }} src={images.bipolaroutput} />
           <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh', maxWidth: '30vw', textAlign: 'center' }}src={images.transformer} />
+          <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh', maxWidth: '30vw', textAlign: 'center' }}src={images.DC} />
+
         </div>
 
       </div>
