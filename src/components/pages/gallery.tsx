@@ -4,7 +4,13 @@ import * as THREE from 'three';
 /* ADD GUI CONTROLS FOR USERS*/
 
 export const Visualizer: React.FC = () => {
-
+  const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
+  type Images = Record<string, string>;
+  const images: Images = {
+    bipolaroutput: getImgPath('bipolarPSUoutput.webp'),
+    transformer: getImgPath('audiotransformer.JPG')
+    // Add other images here
+  };
 
   return (
     <>
@@ -35,7 +41,7 @@ export const Visualizer: React.FC = () => {
 
         <hr />
         <b>
-          <h2 className="hlight"> AUDIO BIPOLAR POWER SUPPLY </h2>
+          <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
         </b>
 
         <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxWidth: '70vw', textAlign: 'center' }}>
@@ -44,10 +50,10 @@ export const Visualizer: React.FC = () => {
           </h4>
         </div>
 
-        
+
         <div className='projimg'>
-          <img src=''>
-          </img>
+          <img style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh',maxWidth: '30vw', textAlign: 'center' }} src={images.bipolaroutput} />
+          <img  style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxHeight:'30vh', maxWidth: '30vw', textAlign: 'center' }}src={images.transformer} />
         </div>
 
       </div>
