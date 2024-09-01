@@ -23,6 +23,20 @@ export const Visualizer: React.FC = () => {
         <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
 
         <hr className="my-4" />
+        <b>
+          <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
+        </b>
+
+        <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxWidth: '70vw', textAlign: 'center' }}>
+          <h4 className="lead" >
+            I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+          </h4>
+          <div className='fadeSide'>
+          <div className='projimg' style={{ display: 'flex', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+            <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
+            <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
+            <img src={images.volts} style={{ maxHeight: '20vh', maxWidth: '30vw', transform:'rotate(90deg)'}} />
+            <hr />
 
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
@@ -41,21 +55,7 @@ export const Visualizer: React.FC = () => {
         </div>
 
 
-        <hr />
-        <b>
-          <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
-        </b>
-
-        <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxWidth: '70vw', textAlign: 'center' }}>
-          <h4 className="lead" >
-            I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
-          </h4>
-          <div className='fadeSide'>
-          <div className='projimg' style={{ display: 'flex', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
-            <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-            <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-            <img src={images.volts} style={{ maxHeight: '20vh', maxWidth: '30vw', transform:'rotate(90deg)'}} />
-
+       
           </div>
         </div>
       <br/>
