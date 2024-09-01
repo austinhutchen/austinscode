@@ -10,7 +10,10 @@
 
 
  <u> <h2> Local File Structure: </h2> </u> <br/>
-── scripts <br/>
+│   ├── index.html <br/>
+│   ├── manifest.json <br/>
+│   └── robots.txt <br/>
+├── scripts <br/>
 │   ├── build.sh <br/>
 │   ├── clean.sh <br/>
 │   ├── deploy.sh <br/>
@@ -50,5 +53,5 @@
 │   └── reportWebVitals.jsx <br/>
 ├── tsconfig.json <br/>
 └── webpack.config.js <br/>
-
-
+<hr/>
+96 directories, 176 files
