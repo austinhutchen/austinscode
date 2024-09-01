@@ -31,17 +31,17 @@ export const Visualizer: React.FC = () => {
         I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
       </h4>
       <br />
-      <div className='fadeSide'>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent:'center' }}>
-          <img src={images.bipolaroutput} className="projImg" />
-          <img src={images.transformer} className="projImg"
-          />
-          <img src={images.volts} className="projImg"
-            style={{ rotate: '90deg' }} />
-          <img src={images.schematic} className="projImg"
-            style={{ rotate: '90deg' }} />
+      <div className="projectList">
+        <div className='fadeSide'>
+            <img src={images.schematic} className="projImg" style={{ rotate: '90deg' }} />
+            <br />
+            <img src={images.bipolaroutput} className="projImg" />
+            <img src={images.transformer} className="projImg" />
+            <br />
+            <img src={images.volts} className="projImg" style={{ rotate: '90deg' }} />
 
         </div>
+
         <br />
       </div>
       <hr />
