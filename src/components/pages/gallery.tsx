@@ -27,36 +27,36 @@ export const Visualizer: React.FC = () => {
           <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
         </b>
 
-          <h4 className="lead" >
-            I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
-          </h4>
-          <div className='fadeSide'>
-              <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-              <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-              <img src={images.volts} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
-          </div>
-          <hr />
-          <b>
-            <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
-          </b>
-
-          <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxWidth: '70vw', textAlign: 'center' }}>
-            <h4 className="lead" >
-              The Lorentz attractor is a graph plotted by a system of solutions to the lorentz equations, that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of chaotic behavior that can generate this object is the behavior of weather prediction algorithms, which can erraticly fail to predict the weather at critical points. To plot this behavior, I wrote the code for the recursive algorithms and programmed the differential equations into a 3d modeling software, three.js.
-            </h4>
-          </div>
-
-          <hr />
-          <div className='lorentz'>
-
-            <LorenzAttractor />
-          </div>
-
-
-          <br />
-          <br />
-          <hr />
+        <h4 className="lead" >
+          I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+        </h4>
+        <div className='fadeSide'>
+          <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
+          <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
+          <img src={images.volts} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
         </div>
+        <hr />
+        <b>
+          <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
+        </b>
+
+        <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', maxWidth: '70vw', textAlign: 'center' }}>
+          <h4 className="lead" >
+            The Lorentz attractor is a graph plotted by a system of solutions to the lorentz equations, that can visually be seen here displaying seemingly "chaotic" and random behavior. One example of chaotic behavior that can generate this object is the behavior of weather prediction algorithms, which can erraticly fail to predict the weather at critical points. To plot this behavior, I wrote the code for the recursive algorithms and programmed the differential equations into a 3d modeling software, three.js.
+          </h4>
+        </div>
+
+        <hr />
+        <div className='lorentz'>
+
+          <LorenzAttractor />
+        </div>
+
+
+        <br />
+        <br />
+        <hr />
+      </div>
 
 
     </>
