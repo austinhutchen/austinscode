@@ -27,7 +27,6 @@ export const Visualizer: React.FC = () => {
           <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
         </b>
 
-        <div style={{ display: 'grid', margin: 'auto', flexDirection: 'row', justifyContent: 'center', alignItems: 'center',  textAlign: 'center' }}>
           <h4 className="lead" >
             I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
           </h4>
@@ -59,7 +58,6 @@ export const Visualizer: React.FC = () => {
           <hr />
         </div>
 
-      </div>
 
     </>
   );
