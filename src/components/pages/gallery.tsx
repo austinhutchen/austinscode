@@ -35,6 +35,8 @@ export const Visualizer: React.FC = () => {
           <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
           <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
           <img src={images.volts} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
+          <img src={images.schematic} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
+
         </div>
         <hr />
         <b>
