@@ -18,27 +18,35 @@ export const Visualizer: React.FC = () => {
     <>
       <NavBar />
 
-      <div className='visualizer' >
-        <h1 className="hlight"> Welcome to my fun page!</h1>
-        <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
+      <h1 className="hlight"> Welcome to my fun page!</h1>
+      <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
 
-        <hr className="my-4" />
+      <hr className="my-4" />
 
-        <b>
-          <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
-        </b>
+      <b>
+        <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
+      </b>
 
-        <h4 className="lead" >
-          I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
-        </h4>
-        <div className='fadeSide'>
-          <img src={images.bipolaroutput} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-          <img src={images.transformer} style={{ maxHeight: '30vh', maxWidth: '30vw', }} />
-          <img src={images.volts} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
-          <img src={images.schematic} style={{ maxHeight: '30vh', maxWidth: '30vw' }} />
+      <h4 className="lead" >
+        I built a bipolar power supply circuit from scratch using a 24VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+      </h4>
+      <br />
+      <div className='fadeSide'>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent:'center' }}>
+          <img src={images.bipolaroutput} className="projImg" />
+          <img src={images.transformer} className="projImg"
+          />
+          <img src={images.volts} className="projImg"
+            style={{ rotate: '90deg' }} />
+          <img src={images.schematic} className="projImg"
+            style={{ rotate: '90deg' }} />
 
         </div>
-        <hr />
+        <br />
+      </div>
+      <hr />
+      <div className='visualizer' >
+
         <b>
           <h2 className="hlight"> LORENTZ ATTRACTOR </h2>
         </b>
