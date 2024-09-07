@@ -333,7 +333,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         }
       })}
       <div className="projDesc">
-        <div className="fadeSide" style={{ margin: '0 auto', border: '3px 0' }}>
+        <div className="fadeSide" style={{ margin: '0 auto'}}>
           <br />
           <p>{project.description}</p>
         </div>
@@ -368,7 +368,7 @@ export const Projects: React.FC = () => {
         </h1>
 
           <div className="projDesc">
-            <div className="fadeSide" style={{ margin: '0 auto', border: '3px 0' }}>
+            <div className="fadeSide" style={{ margin: '0 auto' }}>
               <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
               <br />
               <b>
