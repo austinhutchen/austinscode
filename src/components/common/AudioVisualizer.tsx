@@ -37,6 +37,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
           filter.type = 'bandpass'; // set the filter type to low-pass
+          filter.frequency.value = 300; // 
           const bufferLength = analyser.frequencyBinCount;
           const dataArray: Uint8Array = new Uint8Array(bufferLength); // Create dataArray once
 
