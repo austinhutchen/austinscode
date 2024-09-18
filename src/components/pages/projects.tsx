@@ -377,7 +377,9 @@ export const Projects: React.FC = () => {
                 </p>
               </b>
             </div>
-          <AudioVisualizer stream={stream} setStream={setStream} />
+            <div className="FFT">
+            <AudioVisualizer stream={stream} setStream={setStream} />
+            </div>
           <br />
         </div>
 

@@ -36,8 +36,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
           analyser.fftSize = 8192 * 2; // Reduce fftSize for better performance
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
-          filter.type = 'lowpass'; // set the filter type to low-pass
-          filter.frequency.value = 400; // s
+          filter.type = 'bandpass'; // set the filter type to low-pass
           const bufferLength = analyser.frequencyBinCount;
           const dataArray: Uint8Array = new Uint8Array(bufferLength); // Create dataArray once
 
@@ -77,7 +76,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   }, [stream]);
   return <><button style={{}} onClick={getUserMedia}>Click & Speak! </button>
     <br />
-    <canvas ref={canvasRef} style={{ width: '45vw', height: '25vh', borderRadius: '10px', border: '2px solid #000' }} />
+    <canvas ref={canvasRef} style={{ width: '45vw', height: '35vh', borderRadius: '3px', border: '1px solid #0FF' }} />
 
   </>
 
