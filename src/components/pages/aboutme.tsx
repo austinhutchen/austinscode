@@ -8,14 +8,14 @@ type Images = Record<string, string>;
 
 const images: Images = {
   tinker: getImgPath("tinker.webp"),
-  me: getImgPath("austinselfie.webp"),
+  me: getImgPath("austin.JPG"),
   coding: getImgPath("coding.webp"),
   systems: getImgPath("systems.webp"),
   math: getImgPath("mathBook.webp"),
-  family : getImgPath("me.webp"),
-  mimi : getImgPath("mimi.webp"),
+  family: getImgPath("me.webp"),
+  mimi: getImgPath("mimi.webp"),
   solder: getImgPath("SOLDER.mp4"),
-  liv: getImgPath("liv.webp"),
+  liv: getImgPath("livandAustin.webp"),
   nature: getImgPath("nature.webp"),
   github: getImgPath("GITHUBME.webp")
   // Add other images here
@@ -23,7 +23,7 @@ const images: Images = {
 
 
 // Define image and video URLs directly in the keys array
- const keys = [
+const keys = [
   {
     desc: "Welcome! I'm Austin, a Computer and Software engineer who likes to tinker with electronic circuits and code Typescript-based software applications, and I have plenty of hobbies! ",
     url: images.me,
@@ -55,6 +55,16 @@ const images: Images = {
     type: "video"
   },
   {
+    desc: "I love to make electronics and art with my girlfriend!",
+    url: images.livandAustin,
+    type: "image"
+  },
+  {
+    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
+    url: images.math,
+    type: "image"
+  },
+  {
     desc: "I love spending time with my family.",
     url: images.family,
     type: "image"
@@ -64,17 +74,9 @@ const images: Images = {
     url: images.mimi,
     type: "image"
   },
-  {
-    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
-    url: images.math,
-    type: "image"
-  },
 
-  {
-    desc: "I love to make electronics and art with my girlfriend!",
-    url: images.liv,
-    type: "image"
-  },
+
+
   {
     desc: "I love to spend time out in nature!",
     url: images.nature,
@@ -122,7 +124,7 @@ const About: React.FC = () => {
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
-              
+
                 src={data.url}
               />
             )}

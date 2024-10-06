@@ -1,1 +1,1 @@
-exec pnpm upgrade --latest
+exec pnpm upgrade --latest -D

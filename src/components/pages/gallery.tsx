@@ -22,7 +22,8 @@ export const Visualizer: React.FC = () => {
       <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
 
       <hr className="my-4" />
-
+      <h1>What I've been listening to while soldering lately: (code embedded within iframe)</h1>
+      <iframe  src="https://open.spotify.com/embed/track/6k4fYUOeon4DzSuoppDsbO?utm_source=generator" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       <b>
         <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
       </b>
