@@ -56,7 +56,7 @@ const keys = [
   },
   {
     desc: "I love to make electronics and art with my girlfriend!",
-    url: images.livandAustin,
+    url: images.liv,
     type: "image"
   },
   {
