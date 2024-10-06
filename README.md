@@ -1,10 +1,9 @@
-<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Espresso</i> <b> 16.0 ☕️☕️ </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Espresso</i> <b> 16.3 ☕️☕️ </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u> 
   <hr/>
 <br/>  <i> Espresso File sizes after gzip: <br/>
-  205.9 kB  build/static/js/main.ebf077bc.js <br/>
+  80 kB  build/static/js/main.ebf077bc.js <br/>
   7.44 kB   build/static/css/main.b2e55e1d.css <br/>
-  2.69 kB   build/static/js/364.6989ee77.chunk.js <br/>
  Link: <b> https://austinscode.vercel.app </b>
 <hr/>
 
