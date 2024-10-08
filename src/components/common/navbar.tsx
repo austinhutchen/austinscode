@@ -61,56 +61,78 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/AboutMe')}>
                 <img src={about} width={icon_size} height={icon_size} alt="about" />
+                <h3>
                 About
+                </h3>
+
               </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Projects')}>
                 <img src={projects} width={icon_size} height={icon_size} alt="projects" />
+                <h3>
                 Software
+                </h3>
+
               </Button>
             </NavItem>
 
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
                 <img src={resume} width={icon_size} height={icon_size} alt="resume" />
+                <h3>
                 Resume
+                </h3>
               </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
                 <img src={cube} width={icon_size} height={icon_size} alt="cube" />
+                <h3>
                 Circuits
+                </h3>
+                
               </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Feedback')}>
                 <img src={feedback} width={icon_size} height={icon_size} alt="feedback" />
+                <h3>
                 Feedback
+                </h3>
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_size} height={icon_size} alt="GitHub" />
+                <h3>
                 Github
+                </h3>
               </a>
             </NavItem>
             <NavItem className="nav-item">
               <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
                 <img src={instagram} width={icon_size} height={icon_size} className="nav-icon" alt="instagram" />
+                <h3>
                 Instagram
+                </h3>
+
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_size} height={icon_size} className="nav-icon" alt="facebook" />
+                <h3>
                 Facebook
+                </h3>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
               <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
                 <img src={leetcode} width={icon_size} height={icon_size} className="nav-icon" alt="leetcode" />
+                <h3>
                 Leetcode
+                </h3>
               </a>
             </NavItem>
             <NavItem className="nav-item" >
@@ -122,7 +144,9 @@ export const NavBar: React.FC = () => {
             <NavItem className="nav-item" >
               <a href="https://austinhutchen.medium.com/" target="_blank" rel="noopener noreferrer">
                 <img src={medium} width={icon_size} height={icon_size} className="nav-icon" alt="Blog" />
+                <h3>
                 Blog
+                </h3>
               </a>
             </NavItem>
           </Nav>
