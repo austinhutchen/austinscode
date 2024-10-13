@@ -2,189 +2,125 @@ import React from 'react';
 import { NavBar } from "../common/navbar";
 
 export const Resume: React.FC = () => {
-  return (
-    <>
-      <NavBar />
-      <div className="min-h-screen">
-        <div className="container mx-auto p-6 rounded-lg shadow-lg mt-8">
+    return (
+        <>
 
-          <p className="text-lg text-gray-600 mb-8">
-            Embedded Software Engineer | Web Developer
-          </p>
 
-          {/* Work Experience */}
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-            Direct Work Experience
-          </h2>
-          <ul className="space-y-8">
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Backend Software Engineer Intern (FormFactor) May 2024 - August 2024
-              </h3>
-              <p className="text-gray-700">
-                Built an RS232 C# NuGet library implementing ModBus ASCII/RTU drivers and simulators for quantum computing instruments at{" "}
+            <NavBar />
+            <div className="p-4 text-center">
                 <a
-                  href="https://www.formfactor.com/"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
+                    href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
+                    download
+                    className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
                 >
-                  FormFactor
+                    Download Full Resume (PDF)
                 </a>
-                . Collaborated with the team on engineering decisions for approaching 0 degrees Kelvin in their quantum computer.
-              </p>
-            </li>
+            </div>
+            <div className="resumePage p-6 mx-auto rounded-lg shadow-lg">
+                <h1 className="hlight">
+                    <b>DIRECT WORK EXPERIENCE</b>
+                </h1>
 
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Calculus 2 Course Assistant (University of Colorado Boulder) January 2023 - May 2023
-              </h3>
-              <p className="text-gray-700">
-                Assisted with MATH 2300 (Calculus 2) instruction and held office hours. Received 97% positive feedback from 63 participants in the semester-end survey.
-              </p>
-            </li>
+                <ul style={{ paddingTop: '0.3em' }} className="projectdesc">
+                    <li>
+                        <a className="hlight">
+                            <b><u>Backend Software Engineer Intern (FormFactor) May 2024 - August 2024</u></b>
+                        </a>
+                        <h3>
+                            Built an RS232 C# NuGet library implementation of ModBus ASCII/RTU drivers and simulators for quantum computing instruments at
+                            <a href="https://www.formfactor.com/">FormFactor</a>. Worked with the team to draft engineering decisions for operations at near-zero Kelvin for their quantum computer.
+                        </h3>
+                    </li>
 
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Marketing Consultant (Mobius Materials) Summer 2020 - Fall 2020
-              </h3>
-              <p className="text-gray-700">
-                Achieved the first company sale and collaborated with the engineering team. Authored research articles on e-waste, including{" "}
-                <a
-                  href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  this piece
+                    <br />
+                    <li>
+                        <a className="hlight">
+                            <b><u>Calculus 2 Course Assistant (University of Colorado Boulder) January 2023 - May 2023</u></b>
+                        </a>
+                        <h3>
+                            Taught and assisted with Calculus 2 (MATH 2300), held office hours weekly, and received 97% positive feedback from 63 students.
+                        </h3>
+                    </li>
+
+                    <br />
+                    <li>
+                        <a className="hlight">
+                            <b><u>Mobius Materials, Marketing Consultant (Summer 2020 - Fall 2020)</u></b>
+                        </a>
+                        <h3>
+                            Made the first company sale and collaborated with the software engineering team to meet targets. Authored several research articles on e-waste solutions, including
+                            <a href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb" target="_blank" rel="noreferrer">
+                                this piece
+                            </a>.
+                        </h3>
+                    </li>
+
+                    <br />
+                    <li>
+                        <a className="hlight">
+                            <b><u>Ebay Electronics Repairs + Reseller (May 2018 - Now)</u></b>
+                        </a>
+                        <h3>
+                            Sold and repaired Apple, Linux, and Windows electronics, completing over 50 sales with 100% positive feedback. View my account
+                            <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noreferrer">here</a>.
+                        </h3>
+                    </li>
+
+                    <br />
+                    <li>
+                        <a className="hlight-mini">
+                            <b><u>GitHub Open Source Developer (May 2022 - Now)</u></b>
+                        </a>
+                        <h3>
+                            Contributed to various open-source projects, including Twitter’s algorithm optimization, CU Boulder repositories, and more. See my work
+                            <a href="https://github.com/austinhutchen" target="_blank" rel="noreferrer"><b><i><u>here</u></i></b></a>.
+                        </h3>
+                    </li>
+                </ul>
+
+                <h1 className="hlight">
+                    <b><i>OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK</i></b>
+                </h1>
+
+                <img
+                    height="200vh"
+                    width="100%"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
+                    style={{ marginTop: '0.25em', marginBottom: '0.25em' }}
+                />
+
+                <hr />
+
+                <a href="https://github.com/twitter/the-algorithm/issues/162" target="_blank" rel="noreferrer">
+                    <b>TWITTER COMPILER OPTIMIZATIONS</b>
                 </a>
-                .
-              </p>
-            </li>
+                <h4>
+                    Helped optimize Twitter’s (now X) code for floating-point parallelism. See my contribution at the link.
+                </h4>
 
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                eBay Electronics Repairs + Reseller (May 2018 - Present)
-              </h3>
-              <p className="text-gray-700">
-                Sold, built, and repaired electronics, maintaining a 100% positive feedback rate. Check my eBay store{" "}
-                <a
-                  href="https://www.ebay.com/usr/gadgetsllcc"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
+                <br />
+
+                <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noreferrer">
+                    <b>LEETCODE</b>
                 </a>
-                .
-              </p>
-            </li>
+                <h4>Check out my LeetCode solutions here!</h4>
 
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Open Source Developer (May 2022 - Present)
-              </h3>
-              <p className="text-gray-700">
-                Contributed to open-source projects including Twitter's algorithm. See my projects on{" "}
-                <a
-                  href="https://github.com/austinhutchen"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
+                <br />
+
+                <a href="https://gardenschoolfoundation.org/" target="_blank" rel="noreferrer">
+                    <b>GARDEN SCHOOL FOUNDATION</b>
                 </a>
-                .
-              </p>
-            </li>
-          </ul>
+                <h4>
+                    Volunteered to build a community garden at Wilshire Crest Elementary for underrepresented groups.
+                </h4>
 
-          {/* Contributions and Volunteer Work */}
-          <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-4">
-            Open Source Contributions & Volunteer Work
-          </h2>
-          <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
-            alt="GitHub Streak Stats"
-            className="w-full my-4"
-          />
-          <ul className="space-y-8">
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Twitter Compiler Optimizations
-              </h3>
-              <p className="text-gray-700">
-                Helped vectorize Twitter's code for IEEE floating-point parallelism. Read more{" "}
-                <a
-                  href="https://github.com/twitter/the-algorithm/issues/162"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
-                </a>
-                .
-              </p>
-            </li>
-
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                LeetCode
-              </h3>
-              <p className="text-gray-700">
-                Explore my solutions{" "}
-                <a
-                  href="https://leetcode.com/austinhutchen/"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
-                </a>
-                .
-              </p>
-            </li>
-
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Reading Partners Foundation
-              </h3>
-              <p className="text-gray-700">
-                Volunteered as an elementary reading and math tutor in Los Angeles.
-              </p>
-            </li>
-
-            <li>
-              <h3 className="font-semibold text-gray-800 underline">
-                Garden School Foundation
-              </h3>
-              <p className="text-gray-700">
-                Worked on a community garden for underrepresented groups at Wilshire Crest Elementary. Learn more{" "}
-                <a
-                  href="https://gardenschoolfoundation.org/"
-                  className="text-blue-500 hover:underline"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
-                </a>
-                .
-              </p>
-            </li>
-          </ul>
-
-          {/* Download PDF */}
-          <div className="mt-8 text-center">
-            <a
-              href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
-              download
-              className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600"
-            >
-              Download Full Resume (In Progress)
-            </a>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+                <br />
+                <h1 className="hlight">
+                    <a href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`} download>
+                        <b><i>FULL RESUME (in progress)</i></b>
+                    </a>
+                </h1>
+            </div>
+        </>
+    );
 };
