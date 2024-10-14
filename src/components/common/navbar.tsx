@@ -17,7 +17,8 @@ export const NavBar: React.FC = () => {
   const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
-  const cube = process.env.PUBLIC_URL + '/fast_imgs/cube.webp';
+  const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
+  
   const icon_height = '26vh';
   const icon_width = 'auto';
   const toggle = () => {
@@ -84,7 +85,7 @@ export const NavBar: React.FC = () => {
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
-                <img src={cube} width={icon_width} height={icon_height} alt="cube" />
+                <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
                 <h3>
                 Embedded
                 </h3>

@@ -1,14 +1,14 @@
 import React, { useRef } from 'react';
-import { NavBar } from "../common/navbar";
+import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
 import Slider from "react-slick";
-import { HiArrowNarrowRight, HiArrowNarrowLeft } from 'react-icons/hi';
 import "../../css/slider.css";
+import { NavBar } from "../common/navbar";
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 type Images = Record<string, string>;
 
 const images: Images = {
   tinker: getImgPath("tinker.webp"),
-  me: getImgPath("austin.png"),
+  me: getImgPath("austin.webp"),
   coding: getImgPath("coding.webp"),
   systems: getImgPath("systems.webp"),
   math: getImgPath("mathBook.webp"),
