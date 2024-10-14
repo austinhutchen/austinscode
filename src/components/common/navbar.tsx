@@ -63,8 +63,15 @@ export const NavBar: React.FC = () => {
                 <h3>
                 About
                 </h3>
-
               </Button>
+              <NavItem className="nav-item">
+              <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
+                <img src={resume} width={icon_width} height={icon_height} alt="resume" />
+                <h3>
+                Resume
+                </h3>
+              </Button>
+            </NavItem>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Projects')}>
@@ -73,15 +80,6 @@ export const NavBar: React.FC = () => {
                 Software
                 </h3>
 
-              </Button>
-            </NavItem>
-
-            <NavItem className="nav-item">
-              <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
-                <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-                <h3>
-                Resume
-                </h3>
               </Button>
             </NavItem>
             <NavItem className="nav-item">
@@ -93,6 +91,8 @@ export const NavBar: React.FC = () => {
                 
               </Button>
             </NavItem>
+        
+
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Feedback')}>
                 <img src={feedback} width={icon_width} height={icon_height} alt="feedback" />
