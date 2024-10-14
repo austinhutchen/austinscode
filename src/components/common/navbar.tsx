@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Collapse, Navbar, Nav, NavItem, NavbarBrand, Button } from 'reactstrap';
+import { Button, Collapse, Nav, NavItem, Navbar, NavbarBrand } from 'reactstrap';
 import "../../css/navBar.css";
 export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,7 +88,7 @@ export const NavBar: React.FC = () => {
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
                 <img src={cube} width={icon_width} height={icon_height} alt="cube" />
                 <h3>
-                Circuits
+                Embedded
                 </h3>
                 
               </Button>
