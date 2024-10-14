@@ -114,12 +114,6 @@ export const Resume: React.FC = () => {
                     Volunteered to build a community garden at Wilshire Crest Elementary for underrepresented groups.
                 </h4>
 
-                <br />
-                <h1 className="hlight">
-                    <a href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`} download>
-                        <b><i>FULL RESUME (in progress)</i></b>
-                    </a>
-                </h1>
             </div>
         </>
     );
