@@ -18,7 +18,7 @@ export const NavBar: React.FC = () => {
   const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
-  
+
   const icon_height = '26vh';
   const icon_width = 'auto';
   const toggle = () => {
@@ -62,23 +62,23 @@ export const NavBar: React.FC = () => {
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/AboutMe')}>
                 <img src={about} width={icon_width} height={icon_height} alt="about" />
                 <h3>
-                About
-                </h3>
-              </Button>
-              <NavItem className="nav-item">
-              <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
-                <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-                <h3>
-                Resume
+                  About
                 </h3>
               </Button>
             </NavItem>
+            <NavItem className="nav-item">
+              <Button style={{ border: '1px solid white' }} onClick={() => nav('/Resume')}>
+                <img src={resume} width={icon_width} height={icon_height} alt="resume" />
+                <h3>
+                  Resume
+                </h3>
+              </Button>
             </NavItem>
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Projects')}>
                 <img src={projects} width={icon_width} height={icon_height} alt="projects" />
                 <h3>
-                Software
+                  Software
                 </h3>
 
               </Button>
@@ -87,66 +87,66 @@ export const NavBar: React.FC = () => {
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
                 <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
                 <h3>
-                Embedded
+                  Embedded
                 </h3>
-                
+
               </Button>
             </NavItem>
-        
+
 
             <NavItem className="nav-item">
               <Button style={{ border: '1px solid white' }} onClick={() => nav('/Feedback')}>
                 <img src={feedback} width={icon_width} height={icon_height} alt="feedback" />
                 <h3>
-                Feedback
+                  Feedback
                 </h3>
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
-            <Button style={{ border: '1px solid white' }} >
-              <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
-                <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
-                <h3>
-                Github
-                </h3>
-              </a>
+              <Button style={{ border: '1px solid white' }} >
+                <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
+                  <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
+                  <h3>
+                    Github
+                  </h3>
+                </a>
               </Button>
             </NavItem>
             <NavItem className="nav-item">
-            <Button style={{ border: '1px solid white' }} >
-              <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-                <img src={instagram} width={icon_width} height={icon_height} className="nav-icon" alt="instagram" />
-                <h3>
-                Instagram
-                </h3>
+              <Button style={{ border: '1px solid white' }} >
+                <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
+                  <img src={instagram} width={icon_width} height={icon_height} className="nav-icon" alt="instagram" />
+                  <h3>
+                    Instagram
+                  </h3>
 
-              </a>
+                </a>
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
-            <Button style={{ border: '1px solid white' }} >
-              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
-                <img src={facebook} width={icon_width} height={icon_height} className="nav-icon" alt="facebook" />
-                Facebook
-              </a>
+              <Button style={{ border: '1px solid white' }} >
+                <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
+                  <img src={facebook} width={icon_width} height={icon_height} className="nav-icon" alt="facebook" />
+                  Facebook
+                </a>
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
-            <Button style={{ border: '1px solid white' }} >
-              <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
-                <img src={leetcode} width={icon_width} height={icon_height} className="nav-icon" alt="leetcode" />
-                Leetcode
-              </a>
+              <Button style={{ border: '1px solid white' }} >
+                <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
+                  <img src={leetcode} width={icon_width} height={icon_height} className="nav-icon" alt="leetcode" />
+                  Leetcode
+                </a>
               </Button>
             </NavItem>
             <NavItem className="nav-item" >
-            <Button style={{ border: '1px solid white' }} >
-              <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
-                <img src={linkedin} width={icon_width} height={icon_height} className="nav-icon" alt="LinkedIn" />
-                LinkedIn
-              </a>
+              <Button style={{ border: '1px solid white' }} >
+                <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedin} width={icon_width} height={icon_height} className="nav-icon" alt="LinkedIn" />
+                  LinkedIn
+                </a>
               </Button>
-            </NavItem>    
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
