@@ -32,8 +32,8 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
         if (entry.isIntersecting) {
           const audioContext = new (window.AudioContext || window.webkitAudioContext)();
           const analyser: AnalyserNode = audioContext.createAnalyser();
-          analyser.smoothingTimeConstant = 0.1;
-          analyser.fftSize = 8192 * 2; // Reduce fftSize for better performance
+          analyser.smoothingTimeConstant = 0.2;
+          analyser.fftSize = 8192 ; // Reduce fftSize for better performance
           // Create a BiquadFilterNode
           const filter = audioContext.createBiquadFilter();
           filter.type = 'bandpass'; // set the filter type to low-pass
