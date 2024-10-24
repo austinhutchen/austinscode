@@ -142,7 +142,7 @@ a:hover {
 
 .custom-navbar {
   display: flex;
-  margin: auto;
+  margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.05);
   align-items: center;
   justify-content: center;
@@ -150,9 +150,9 @@ a:hover {
   /* Position at the top */
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
-  max-width: 100%;
+  max-width: max-content;
   /* Ensure the navbar is above other elements */
-  border-radius: 8vw;
+  border-radius: 4vw;
 }
 
 .clickIcon {
@@ -276,5 +276,5 @@ a:active {
 
 .nav-icon {
   border-image-source: url('../../public/fast_imgs/border.webp');
-  border-image-width: 6svh;
+  border-image-width: 4svh;
 }
