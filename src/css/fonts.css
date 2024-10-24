@@ -42,8 +42,8 @@ h3 {
 h3 {
   font-size: 1.0rem;
   font-kerning: normal;
-  max-width: 80%;
-  margin: auto;
+  max-width: 90%;
+  margin: 0 auto;
   justify-content: center;
 }
 
