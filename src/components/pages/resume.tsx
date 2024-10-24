@@ -4,7 +4,11 @@ import { NavBar } from "../common/navbar";
 export const Resume: React.FC = () => (
     <>
         <NavBar />
-        <div className="p-4 text-center">
+     
+
+        <div className="resumePage p-6 mx-auto rounded-lg shadow-lg">
+            <SectionHeader title="DIRECT WORK EXPERIENCE" />
+            <div className="p-4 text-center">
             <a
                 href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
                 download
@@ -13,10 +17,6 @@ export const Resume: React.FC = () => (
                 Download Full Resume (PDF)
             </a>
         </div>
-
-        <div className="resumePage p-6 mx-auto rounded-lg shadow-lg">
-            <SectionHeader title="DIRECT WORK EXPERIENCE" />
-
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
                     <li key={index}>
