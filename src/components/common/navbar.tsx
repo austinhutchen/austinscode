@@ -15,11 +15,10 @@ export const NavBar: React.FC = () => {
   const about = process.env.PUBLIC_URL + '/fast_imgs/About.webp';
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.webp';
   const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
-  const feedback = process.env.PUBLIC_URL + '/fast_imgs/feedback.webp';
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = '30vh';
+  const icon_height = '28svh';
   const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -45,7 +44,7 @@ export const NavBar: React.FC = () => {
         <div className="navbar-header">
           <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
 
-          <img className="clickIcon" width={"57vw"} height={"73vh"} src={clickme} />
+          <img className="clickIcon" width={"auto"} height={"80svh"} src={clickme} />
 
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
         <Collapse isOpen={isOpen} navbar className="navFlex">
@@ -90,16 +89,6 @@ export const NavBar: React.FC = () => {
                   Embedded
                 </h3>
 
-              </Button>
-            </NavItem>
-
-
-            <NavItem >
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Feedback')}>
-                <img src={feedback} width={icon_width} height={icon_height} alt="feedback" />
-                <h3>
-                  Feedback
-                </h3>
               </Button>
             </NavItem>
             <NavItem >
