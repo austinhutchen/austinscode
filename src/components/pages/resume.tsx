@@ -65,8 +65,8 @@ export const Resume: React.FC = () => (
     <>
         <NavBar />
 
+        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" style={{maxWidth:'68vw', display:'flex', justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
 
-        <div className="resumePage w-full max-w-6xl mx-auto p-6 rounded-lg shadow-lg">
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
                 <a
@@ -125,15 +125,15 @@ const ExperienceItem: React.FC<{
     period: string;
     description: React.ReactNode;
 }> = ({ position, period, description }) => (
-    <>
-        <h2 className="hlight">
+    <div>
+        <h2 className="hlight" >
             <b>
                 <u>{position}</u> ({period})
             </b>
         </h2>
         <h3>{description}</h3>
         <br />
-    </>
+    </div>
 );
 
 const ContributionLink: React.FC<{ href: string; title: string; description: string }> = ({
@@ -141,9 +141,8 @@ const ContributionLink: React.FC<{ href: string; title: string; description: str
     title,
     description,
 }) => (
-    <div className="resumePage w-full max-w-6xl mx-auto p-6 rounded-lg shadow-lg">
-
-        <a href={href} target="_blank" rel="noreferrer">
+    <div>
+        <a className="fitScreen" href={href} target="_blank" rel="noreferrer">
             <b>{title}</b>
         </a>
         <h4>{description}</h4>
