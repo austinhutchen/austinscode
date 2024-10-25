@@ -19,7 +19,7 @@ export const NavBar: React.FC = () => {
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = '23vh';
+  const icon_height = '30vh';
   const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -45,12 +45,12 @@ export const NavBar: React.FC = () => {
         <div className="navbar-header">
           <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
 
-          <img className="clickIcon" width={"55vw"} height={"70vh"} src={clickme} />
+          <img className="clickIcon" width={"57vw"} height={"73vh"} src={clickme} />
 
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
         <Collapse isOpen={isOpen} navbar className="navFlex">
-          <Nav className="mr-auto d-flex justify-content-center align-items-center nav-horizontal" navbar>
-            <NavItem className="nav-item">
+        <Nav className="mr-auto flex justify-center items-center h-[85svh] overflow-auto">
+        <NavItem className="nav-item">
               <Button style={{ border: '1px solid blue' }} onClick={() => nav('/')}>
                 <img src={home} width={icon_width} height={icon_height} alt="home" />
                 <h3>
@@ -113,37 +113,43 @@ export const NavBar: React.FC = () => {
               </Button>
             </NavItem>
             <NavItem >
-              <Button >
+              <Button style={{ border: '1px solid white' }}>
                 <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
                   <img src={instagram} width={icon_width} height={icon_height}  alt="instagram" />
                   <h3>
                     Instagram
                   </h3>
-
                 </a>
               </Button>
             </NavItem>
             <NavItem >
-              <Button  >
+              <Button style={{ border: '1px solid white' }} >
                 <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                   <img src={facebook} width={icon_width} height={icon_height}  alt="facebook" />
+                  <h3>
                   Facebook
+                  </h3>
                 </a>
               </Button>
             </NavItem>
             <NavItem >
-              <Button >
+              <Button style={{ border: '1px solid white' }}>
                 <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
                   <img src={leetcode} width={icon_width} height={icon_height}  alt="leetcode" />
+                  <h3>
                   Leetcode
+                  </h3>
                 </a>
               </Button>
             </NavItem>
             <NavItem  >
-              <Button  >
+              <Button  style={{ border: '1px solid white' }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
+                  <h3>
                   LinkedIn
+                  </h3>
+                
                 </a>
               </Button>
             </NavItem>
