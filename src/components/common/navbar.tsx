@@ -39,100 +39,79 @@ export const NavBar: React.FC = () => {
     </button>
   );
   return (
-    <div >
-      <Navbar className="custom-navbar" >
-        <div className="navbar-header">
-          <NavbarBrand className='navBrand' id="name" >Austin Hutchen </NavbarBrand>
-
-          <img className="clickIcon" width={"auto"} height={"80svh"} src={clickme} />
-
-          <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
-        <Collapse isOpen={isOpen} navbar className="navFlex">
-        <Nav className="mr-auto flex justify-center items-center h-[95svh] overflow-auto">
-        <NavItem className="nav-item">
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/')}>
-                <img src={home} width={icon_width} height={icon_height} alt="home" />
-                <h3>
-                  Home
-                </h3>
-              </Button>
-            </NavItem >
-            <NavItem className="nav-item">
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/AboutMe')}>
-                <img src={about} width={icon_width} height={icon_height} alt="about" />
-                <h3>
-                  About
-                </h3>
-              </Button>
-            </NavItem>
-            <NavItem className="nav-item">
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Resume')}>
-                <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-                <h3>
-                  Resume
-                </h3>
-              </Button>
-            </NavItem>
-            <NavItem className="nav-item">
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Projects')}>
-                <img src={projects} width={icon_width} height={icon_height} alt="projects" />
-                <h3>
-                  Software
-                </h3>
-
-              </Button>
-            </NavItem>
-            <NavItem className="nav-item">
-              <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Gallery')}>
-                <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
-                <h3>
-                  Embedded
-                </h3>
-
-              </Button>
-            </NavItem>
-            <NavItem >
-              <Button style={{ border: '1px solid white' }} >
-                <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
-                  <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
-                  <h3>
-                    Github
-                  </h3>
+    <div>
+    <Navbar className="custom-navbar">
+      <div className="navbar-header flex justify-start items-center">
+        <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
+        <img className="clickIcon" width="auto" height="80svh" src={clickme} />
+        <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
+      </div>
+      <Collapse isOpen={isOpen} navbar className="navFlex">
+        <Nav className="mr-auto flex flex-col items-center h-[75svh] overflow-auto">
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/')}>
+              <img src={home} width={icon_width} height={icon_height} alt="home" />
+              <h3>Home</h3>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/AboutMe')}>
+              <img src={about} width={icon_width} height={icon_height} alt="about" />
+              <h3>About</h3>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Resume')}>
+              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
+              <h3>Resume</h3>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Projects')}>
+              <img src={projects} width={icon_width} height={icon_height} alt="projects" />
+              <h3>Software</h3>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Gallery')}>
+              <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
+              <h3>Embedded</h3>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
+                <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
+                <h3>Github</h3>
+              </a>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
+                <img src={instagram} width={icon_width} height={icon_height} alt="instagram" />
+                <h3>Instagram</h3>
+              </a>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
+                <img src={facebook} width={icon_width} height={icon_height} alt="facebook" />
+                <h3>Facebook</h3>
+              </a>
+            </Button>
+          </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
+                <img src={leetcode} width={icon_width} height={icon_height} alt="leetcode" />
+                <h3>Leetcode</h3>
                 </a>
               </Button>
             </NavItem>
-            <NavItem >
-              <Button style={{ border: '1px solid white' }}>
-                <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-                  <img src={instagram} width={icon_width} height={icon_height}  alt="instagram" />
-                  <h3>
-                    Instagram
-                  </h3>
-                </a>
-              </Button>
-            </NavItem>
-            <NavItem >
-              <Button style={{ border: '1px solid white' }} >
-                <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
-                  <img src={facebook} width={icon_width} height={icon_height}  alt="facebook" />
-                  <h3>
-                  Facebook
-                  </h3>
-                </a>
-              </Button>
-            </NavItem>
-            <NavItem >
-              <Button style={{ border: '1px solid white' }}>
-                <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
-                  <img src={leetcode} width={icon_width} height={icon_height}  alt="leetcode" />
-                  <h3>
-                  Leetcode
-                  </h3>
-                </a>
-              </Button>
-            </NavItem>
-            <NavItem  >
-              <Button  style={{ border: '1px solid white' }}>
+            <NavItem className="nav-item flex justify-center items-center">
+            <Button  style={{ border: '1px solid white' }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
                   <h3>
