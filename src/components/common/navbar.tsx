@@ -49,7 +49,7 @@ export const NavBar: React.FC = () => {
 
           <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />        </div>
         <Collapse isOpen={isOpen} navbar className="navFlex">
-        <Nav className="mr-auto flex justify-center items-center h-[85svh] overflow-auto">
+        <Nav className="mr-auto flex justify-center items-center h-[95svh] overflow-auto">
         <NavItem className="nav-item">
               <Button style={{ border: '1px solid blue' }} onClick={() => nav('/')}>
                 <img src={home} width={icon_width} height={icon_height} alt="home" />
