@@ -43,7 +43,7 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex justify-start items-center">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" width="auto" height="76vh" src={clickme} />
+        <img className="clickIcon" width="60vw" height="75vh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <Collapse isOpen={isOpen} navbar className="navFlex">
