@@ -1,82 +1,82 @@
 import React from 'react';
 import { NavBar } from "../common/navbar";
 
-const rec_letter = process.env.PUBLIC_URL+'/fast_imgs/REC_LETTER.webp';
+const rec_letter = process.env.PUBLIC_URL + '/fast_imgs/REC_LETTER.webp';
 
-const inclusion = process.env.PUBLIC_URL+'/fast_imgs/inclusion.webp';
-const support = process.env.PUBLIC_URL+'/fast_imgs/support.webp';
+const inclusion = process.env.PUBLIC_URL + '/fast_imgs/inclusion.webp';
+const support = process.env.PUBLIC_URL + '/fast_imgs/support.webp';
 
 
 
 
 const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
-  <ul>
-    {images.map((src, index) => (
-      <li key={`img_${index}`}>
-        <img
-          src={src}
-          className="format-img"
-          style={{ maxHeight: "70svh", maxWidth: "70svh" }}
-          loading="eager"
-          alt={`Image_${index}`}
-        />
-      </li>
-    ))}
-  </ul>
+    <ul>
+        {images.map((src, index) => (
+            <li key={`img_${index}`}>
+                <img
+                    src={src}
+                    className="format-img"
+                    style={{ maxHeight: "70svh", maxWidth: "70svh" }}
+                    loading="eager"
+                    alt={`Image_${index}`}
+                />
+            </li>
+        ))}
+    </ul>
 );
 
- export const Feedback: React.FC = () => {
+export const Feedback: React.FC = () => {
 
-const data = [inclusion,support]
+    const data = [inclusion, support]
 
-  return (
-    <>
-      <div className="accreditations">
-          <div className='feedback'>
-            <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
-            <br />
-            <ul>
-                <h2 className="hlight-mini">
-                  <b><i><u>Letter of Rec from CU Boulder Math PHD/Instructor Ezzedine El Sai:</u></i></b>
-                </h2>
-                <br />
-                <img
-                  src={rec_letter}
-                  style={{ maxHeight: "65svh", maxWidth: "100%" }}
-                  loading="eager"
-                  alt="Math_PhD_Students_Letter"
-                />
-                <br />
+    return (
+        <>
+            <div className="accreditations">
+                <div className='feedback'>
+                    <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
+                    <br />
+                    <ul>
+                        <h2 className="hlight-mini">
+                            <b><i><u>Letter of Rec from CU Boulder Math PHD/Instructor Ezzedine El Sai:</u></i></b>
+                        </h2>
+                        <br />
+                        <img
+                            src={rec_letter}
+                            style={{ maxHeight: "65vh", width: "100%" }}
+                            loading="eager"
+                            alt="Math_PhD_Students_Letter"
+                        />
+                        <br />
 
-                <h2 className="hlight-mini">
-                  <b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b>
-                </h2>
-                <br />
-                <div>
-                  <ImageList images={data} />
+                        <h2 className="hlight-mini">
+                            <b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b>
+                        </h2>
+                        <br />
+                        <div>
+                            <ImageList images={data} />
+                        </div>
+                    </ul>
                 </div>
-            </ul>
-          </div>
-      </div>
-    </>
-  );
+            </div>
+        </>
+    );
 };
 export const Resume: React.FC = () => (
     <>
         <NavBar />
-     
 
-        <div className="resumePage p-6 mx-auto rounded-lg shadow-lg">
+
+        <div className="resumePage w-full mx-auto rounded-lg shadow-lg">
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
-            <div className="p-4 text-center">
-            <a
-                href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
-                download
-                className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
-            >
-                Download Full Resume (PDF)
-            </a>
-        </div>
+            <div className="p-6 text-center">
+                <a
+                    href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
+                    download
+                    className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
+                >
+                    Download Full Resume (PDF)
+                </a>
+            </div>
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
                     <li key={index}>
@@ -91,7 +91,7 @@ export const Resume: React.FC = () => (
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
                 alt="GitHub streak stats"
                 className="my-1"
-                style={{ width: '100%', height: '200px' }}
+                style={{ width: '100%', height: '150px' }}
             />
 
             <ContributionLink
@@ -111,7 +111,7 @@ export const Resume: React.FC = () => (
                 title="GARDEN SCHOOL FOUNDATION"
                 description="Volunteered to build a community garden at Wilshire Crest Elementary for underrepresented groups."
             />
-            <Feedback/>
+            <Feedback />
         </div>
     </>
 );
