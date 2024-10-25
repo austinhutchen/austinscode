@@ -66,7 +66,7 @@ export const Resume: React.FC = () => (
         <NavBar />
 
 
-        <div className="resumePage w-full mx-auto rounded-lg shadow-lg">
+        <div className="resumePage w-full max-w-6xl mx-auto p-6 rounded-lg shadow-lg">
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
                 <a
@@ -141,13 +141,14 @@ const ContributionLink: React.FC<{ href: string; title: string; description: str
     title,
     description,
 }) => (
-    <>
+    <div className="resumePage w-full max-w-6xl mx-auto p-6 rounded-lg shadow-lg">
+
         <a href={href} target="_blank" rel="noreferrer">
             <b>{title}</b>
         </a>
         <h4>{description}</h4>
         <br />
-    </>
+    </div>
 );
 
 const experienceItems = [
