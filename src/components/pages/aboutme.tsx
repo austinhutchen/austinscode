@@ -75,8 +75,6 @@ const keys = [
     type: "image"
   },
 
-
-
   {
     desc: "I love to spend time out in nature!",
     url: images.nature,
@@ -124,7 +122,6 @@ const About: React.FC = () => {
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
-
                 src={data.url}
               />
             )}
