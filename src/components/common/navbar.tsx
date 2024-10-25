@@ -73,7 +73,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Gallery')}>
+            <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Embedded</h3>
             </Button>
