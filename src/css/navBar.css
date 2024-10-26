@@ -135,7 +135,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  max-width: 100%;
+  max-width: max-content;
   /* Add this line */
 
 }
@@ -152,7 +152,7 @@ a:hover {
   z-index: 1000;
   max-width: max-content;
   /* Ensure the navbar is above other elements */
-  border-radius: 4vw;
+  border-radius: 7vw;
 }
 
 .clickIcon {
