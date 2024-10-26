@@ -49,37 +49,37 @@ export const NavBar: React.FC = () => {
       <Collapse isOpen={isOpen} navbar className="navFlex">
         <Nav className="mr-auto flex flex-col items-center h-[84vh] overflow-auto">
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/')}>
+            <Button style={{ border: '2px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/AboutMe')}>
+            <Button style={{ border: '2px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Resume')}>
+            <Button style={{ border: '2px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid blue' }} onClick={() => nav('/Projects')}>
+            <Button style={{ border: '2px solid gold' }} onClick={() => nav('/Projects')}>
               <img src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid white' }} onClick={() => nav('/Gallery')}>
+            <Button style={{ border: '2px solid white' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Embedded</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{ border: '2px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
                 <h3>Github</h3>
