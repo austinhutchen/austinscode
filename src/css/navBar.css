@@ -155,7 +155,8 @@ a:hover {
   /* Ensure the navbar is above other elements */
   border-radius: 7vw;
   width:fit-content;
-  max-width: 100%;
+  width:moz-fit-content;
+  max-width: 90%;
 }
 
 .clickIcon {
