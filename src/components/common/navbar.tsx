@@ -18,8 +18,8 @@ export const NavBar: React.FC = () => {
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = 'auto';
-  const icon_width = '16vw';
+  const icon_height = '16svh';
+  const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!isOpen);
     setIsToggled(true); // Set isToggled to true when the navbar is toggled
@@ -47,7 +47,7 @@ export const NavBar: React.FC = () => {
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <Collapse isOpen={isOpen} navbar className="navFlex">
-        <Nav className="mr-auto flex flex-col items-center h-[84vh] overflow-auto">
+        <Nav className="mr-auto flex flex-col items-center h-[90vh] w-[97vw] ">
           <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '2px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />

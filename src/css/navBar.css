@@ -83,7 +83,9 @@ a:hover {
     transform: translate(-5px, -6px);
   }
 }
-
+.navFlex{
+  max-width: max-content;
+}
 #line3.line-open {
   animation: rotateIn 0.4s forwards;
 }
@@ -181,7 +183,7 @@ a:hover {
   .custom-navbar {
     max-width: -moz-fit-content;
 
-    max-width: fit-content;
+    max-width: max-content;
     /* Reduce the max-width */
     transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     /* Add this line */
@@ -201,7 +203,7 @@ a:hover {
   }
 
   .custom-navbar {
-    max-width: 78%;
+    max-width: max-content;
     /* Reduce the max-width */
 
   }
