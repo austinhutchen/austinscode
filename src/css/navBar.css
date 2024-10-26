@@ -152,9 +152,10 @@ a:hover {
   /* Position at the top */
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
-  max-width: max-content;
   /* Ensure the navbar is above other elements */
   border-radius: 7vw;
+  width:fit-content;
+  max-width: 100%;
 }
 
 .clickIcon {
@@ -181,9 +182,7 @@ a:hover {
   }
 
   .custom-navbar {
-    max-width: -moz-fit-content;
 
-    max-width: max-content;
     /* Reduce the max-width */
     transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     /* Add this line */
