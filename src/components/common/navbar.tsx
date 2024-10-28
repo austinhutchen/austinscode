@@ -43,9 +43,10 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" width="65vw"  height="65vh" src={clickme} />
+        <img className="clickIcon" width="auto"  height="65vh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
+      <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar className="navFlex">
         <Nav className="mr-auto flex flex-col items-center h-[90vh] w-[97vw] ">
           <NavItem className="nav-item flex justify-center items-center">
@@ -117,12 +118,13 @@ export const NavBar: React.FC = () => {
                   <h3>
                   LinkedIn
                   </h3>
-                
                 </a>
               </Button>
             </NavItem>
           </Nav>
         </Collapse>
+      </div>
+     
       </Navbar>
     </div>
   );

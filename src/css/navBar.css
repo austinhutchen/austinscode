@@ -7,6 +7,10 @@ a:visited {
   color: #f1b963;
 }
 
+.collapse-container {
+  max-width: 100%;
+  overflow: hidden;
+}
 
 @keyframes linesIn {
   0% {
