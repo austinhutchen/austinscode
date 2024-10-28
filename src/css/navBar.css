@@ -132,7 +132,6 @@ a:hover {
 
 .navbar-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: auto;
   /* Add this line */
@@ -142,7 +141,7 @@ a:hover {
 .custom-navbar {
   display: flex;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0.07);
   align-items: center;
   justify-content: center;
   top: 0;
@@ -151,10 +150,9 @@ a:hover {
   z-index: 1000;
   /* Ensure the navbar is above other elements */
   border-radius: 7vw;
-  width:max-content;
   max-width: fit-content;
-  width:--moz-max-content;
-  max-width: 95%;
+  max-width: --moz-fit-content;
+
 }
 
 .clickIcon {
@@ -169,11 +167,11 @@ a:hover {
   #line3 {
     animation: none;
 
-    width: 3.8vh;
-    height: 0.4vh;
+    width: 3.9vmax;
+    height: 0.7vh;
     background-color: #fff;
     /* Change to your desired color */
-    margin: 1.0vh 0vh;
+    margin: 1.1vh 1.0vw;
   }
 
   .nav-horizontal {
@@ -206,12 +204,11 @@ a:hover {
   #line2,
   #line3 {
     animation: none;
-
-    width: 3.6vh;
-    height: 0.4vh;
+    width: 3.7vmax;
+    height: 0.5vh;
     background-color: #fff;
     /* Change to your desired color */
-    margin: 1.1vh 0vh;
+    margin: 1.0vh 2vw;
   }
 }
 
