@@ -79,7 +79,7 @@ export const Resume: React.FC = () => (
             </div>
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
-                    <li key={index}>
+                    <li style={{"listStyleType":'none'}}key={index}>
                         <ExperienceItem {...item} />
                     </li>
                 ))}
