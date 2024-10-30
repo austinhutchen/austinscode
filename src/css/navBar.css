@@ -8,7 +8,7 @@ a:visited {
 }
 
 .collapse-container {
-  max-width: 100%;
+  max-width: 80%;
   overflow: hidden;
 }
 
@@ -153,9 +153,9 @@ a:hover {
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 7vw;
+  border-radius: 4vw;
+  width: max-content;
   max-width: fit-content;
-  max-width: --moz-fit-content;
 
 }
 
@@ -171,16 +171,15 @@ a:hover {
   #line3 {
     animation: none;
 
-    width: 3.9vmax;
+    width: 5vw;
     height: 0.7vh;
     background-color: #fff;
     /* Change to your desired color */
-    margin: 1.1vh 1.0vw;
+    margin: 1.1vh 1vw;
   }
 
-  .nav-horizontal {
-    flex-direction: row;
-  }
+
+
 
   .custom-navbar {
 
@@ -208,11 +207,11 @@ a:hover {
   #line2,
   #line3 {
     animation: none;
-    width: 3.7vmax;
+    width: 7vw;
     height: 0.5vh;
     background-color: #fff;
     /* Change to your desired color */
-    margin: 1.0vh 2vw;
+    margin: 1.3vh 1.5vw;
   }
 }
 

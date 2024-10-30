@@ -8,7 +8,6 @@ export const NavBar: React.FC = () => {
   const nav = useNavigate();
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
   const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.webp';
-  const leetcode = process.env.PUBLIC_URL + '/fast_imgs/leetcode.webp';
   const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.webp';
   const facebook = process.env.PUBLIC_URL + '/fast_imgs/Facebook.webp';
   const home = process.env.PUBLIC_URL + '/fast_imgs/home.webp';
@@ -43,12 +42,12 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" width="auto"  height="65vh" src={clickme} />
+        <img className="clickIcon" width="60vw"  height="65vh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <div className='collapse-container'>
-      <Collapse isOpen={isOpen} navbar className="navFlex">
-        <Nav className="mr-auto flex flex-col items-center h-[90vh] w-[97vw] ">
+      <Collapse isOpen={isOpen} navbar >
+        <Nav className="mr-auto flex items-center justify-center h-[90vh] mw-[45vw]  ">
           <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '2px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />
@@ -103,14 +102,7 @@ export const NavBar: React.FC = () => {
               </a>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
-              <a href="https://leetcode.com/austinhutchen/" target="_blank" rel="noopener noreferrer">
-                <img src={leetcode} width={icon_width} height={icon_height} alt="leetcode" />
-                <h3>Leetcode</h3>
-                </a>
-              </Button>
-            </NavItem>
+
             <NavItem className="nav-item flex justify-center items-center">
             <Button  style={{ border: '1px solid white' }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
