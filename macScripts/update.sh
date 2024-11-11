@@ -1,1 +1,0 @@
-exec npm install -g;
