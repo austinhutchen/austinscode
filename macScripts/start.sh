@@ -1,1 +1,0 @@
-exec pnpm run start
