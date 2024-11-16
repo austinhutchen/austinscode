@@ -7,9 +7,11 @@ a:visited {
   color: #f1b963;
 }
 
-.collapse-container {
-  max-width: 80%;
-  overflow: hidden;
+
+.collapse-container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes linesIn {
@@ -154,8 +156,8 @@ a:hover {
   z-index: 1000;
   /* Ensure the navbar is above other elements */
   border-radius: 4vw;
-  width: max-content;
-  max-width: fit-content;
+  width: fit-content;
+  max-width: 90vw;
 
 }
 
@@ -164,56 +166,33 @@ a:hover {
 }
 
 
-@media not (max-width: 820px) {
+
+.custom-navbar {
+
+  /* Reduce the max-width */
+  transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  /* Add this line */
+}
+  .navBrand {
+    font-size: 0.1em;
+    /* Reduce the font size */
+   max-width: 67vw;
+  }
+
+
 
   #line1,
   #line2,
   #line3 {
     animation: none;
-
-    width: 5vw;
+   width:3vw;
+    max-width: 5vw;
     height: 0.7vh;
     background-color: #fff;
     /* Change to your desired color */
     margin: 1.1vh 1vw;
   }
 
-
-
-
-  .custom-navbar {
-
-    /* Reduce the max-width */
-    transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    /* Add this line */
-  }
-
-  .navBrand {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-@media (max-width: 820px) {
-  .navBrand {
-    font-size: 0.1em;
-    /* Reduce the font size */
-    max-width: 67%;
-  }
-
-
-
-  #line1,
-  #line2,
-  #line3 {
-    animation: none;
-    width: 7vw;
-    height: 0.5vh;
-    background-color: #fff;
-    /* Change to your desired color */
-    margin: 1.3vh 1.5vw;
-  }
-}
 
 .navBrand {
   background: linear-gradient(to top, salmon, lightgreen, lightblue);
