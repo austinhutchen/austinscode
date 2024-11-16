@@ -28,7 +28,8 @@
     "vercel": "^37.12.1",
     "web-vitals": "^4.2.4",
     "webpack": "^5.95.0",
-    "webpack-bundle-analyzer": "^4.10.2"
+    "webpack-bundle-analyzer": "^4.10.2",
+    "framer-motion": "*"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
@@ -39,8 +40,8 @@
     "@types/react-slick": "^0.23.13",
     "@types/react-slider": "^1.3.6",
     "@types/three": "^0.169.0",
-    "@typescript-eslint/eslint-plugin": "^8.11.0",
-    "@typescript-eslint/parser": "^8.11.0",
+ "@typescript-eslint/parser": "^8.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
     "TagCloud": "^2.5.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^7.1.2",
@@ -89,8 +90,10 @@
     "framer-motion"
   ],
   "overrides": {
-    "@react-pdf/renderer": {
-      "react": "^18.0.0"
-    }
-  }
+   "eslint": "8.0.0"
+  },
+  "description": "<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Espresso</i> <b> 16.5 ☕️☕️ </b>  <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u>    <hr/> <br/>  <i> Espresso File sizes after gzip: <br/>   80 kB  build/static/js/main.ebf077bc.js <br/>   7.44 kB   build/static/css/main.b2e55e1d.css <br/>  Link: <b> https://austinscode.vercel.app </b> <hr/>",
+  "main": "analyzer.js",
+  "author": "",
+  "license": "ISC"
 }
