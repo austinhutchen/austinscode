@@ -70,7 +70,7 @@ export const Resume: React.FC = () => (
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
                 <a
-                    href={`${process.env.PUBLIC_URL}/fast_imgs/GeneralResume.pdf`}
+                    href={`https://github.com/austinhutchen/resume/blob/master/resume.pdf`}
                     download
                     className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
                 >
