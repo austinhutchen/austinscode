@@ -80,6 +80,10 @@
   "overrides": {
     "eslint": "8.0.0"
   },
+  "resolutions": {
+    "ajv": "6.12.6",
+    "ajv-keywords": "3.5.2"
+  },
   "description": "<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Espresso</i> <b> 16.5 ☕️☕️ </b>  <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u>    <hr/> <br/>  <i> Espresso File sizes after gzip: <br/>   80 kB  build/static/js/main.ebf077bc.js <br/>   7.44 kB   build/static/css/main.b2e55e1d.css <br/>  Link: <b> https://austinscode.vercel.app </b> <hr/>",
   "main": "analyzer.js",
   "author": "",
