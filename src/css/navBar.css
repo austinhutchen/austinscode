@@ -10,8 +10,9 @@ a:visited {
 
 .collapse-container{
   display: grid;
-  justify-content: center;
-  align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr auto;
+
 }
 
 @keyframes linesIn {
@@ -139,6 +140,7 @@ a:hover {
 .navbar-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
   /* Add this line */
 
@@ -155,9 +157,9 @@ a:hover {
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 4vw;
-  width: fit-content;
-  max-width: 90vw;
+  border-radius: 5svw;
+  width: max-content;
+  max-width: 90svw;
 
 }
 
@@ -174,9 +176,9 @@ a:hover {
   /* Add this line */
 }
   .navBrand {
-    font-size: 0.1em;
+    font-size: 0.2em;
     /* Reduce the font size */
-   max-width: 67vw;
+   max-width: 57vw;
   }
 
 
@@ -185,7 +187,7 @@ a:hover {
   #line2,
   #line3 {
     animation: none;
-   width:3vw;
+   width:6vw;
     max-width: 5vw;
     height: 0.7vh;
     background-color: #fff;
