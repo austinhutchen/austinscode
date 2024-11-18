@@ -42,13 +42,13 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" width="60vw"  height="65vh" src={clickme} />
+        <img className="clickIcon" width="auto"  height="65vh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <br/>
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
-        <Nav className="mr-auto flex items-center justify-center h-[90vh] mw-[45vw]  ">
+        <Nav className="mr-auto flex items-center justify-center h-[90vh]   ">
           <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '2px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />

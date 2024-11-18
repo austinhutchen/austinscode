@@ -179,6 +179,8 @@ a:hover {
     font-size: 0.2em;
     /* Reduce the font size */
    max-width: 57vw;
+   min-width: none;
+   
   }
 
 
