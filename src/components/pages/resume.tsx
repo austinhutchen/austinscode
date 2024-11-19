@@ -72,6 +72,8 @@ export const Resume: React.FC = () => (
                 <a
                     href={`https://github.com/austinhutchen/resume/blob/master/resume.pdf`}
                     download
+                    rel='noopener noreferrer'
+                    
                     className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
                 >
                     Download Full Resume (PDF)

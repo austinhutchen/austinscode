@@ -141,7 +141,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   /* Add this line */
 
 }
@@ -158,7 +158,7 @@ a:hover {
   z-index: 1000;
   /* Ensure the navbar is above other elements */
   border-radius: 5svw;
-  width: max-content;
+  width: min-content;
   max-width: 90svw;
 
 }
