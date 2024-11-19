@@ -6,7 +6,7 @@ package-lock.json
 
 # production
 /build
-
+.vercel
 .env
 npm-debug.log*
 yarn-debug.log*
