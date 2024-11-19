@@ -23,14 +23,15 @@ export const Visualizer: React.FC = () => {
 
       <hr className="my-4" />
       <b>
-        <h2 className="hlight"> BIPOLAR AC / DC RECTIFIER POWER SUPPLY </h2>
+        <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>
+      <br />
 
       <h4 className="lead" >
-        I built a bipolar power supply circuit from scratch using a 40VAC 2A center-tapped transformer and a full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+        I built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
       </h4>
       <br />
-      <div className="analogCircuits">
+      <div className="analogCircuits" >
         <img src={images.schematic} className="projImg" />
         <img src={images.bipolaroutput} className="projImg" />
         <img src={images.transformer} className="projImg" />
