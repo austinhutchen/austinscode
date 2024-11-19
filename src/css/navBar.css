@@ -147,7 +147,7 @@ a:hover {
 }
 
 .custom-navbar {
-  display: flex;
+  display: grid;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.07);
   align-items: center;
@@ -157,9 +157,9 @@ a:hover {
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 5svw;
+  border-radius: 3svw;
   width: min-content;
-  max-width: 90svw;
+  max-width: 95svw;
 
 }
 
@@ -176,9 +176,9 @@ a:hover {
   /* Add this line */
 }
   .navBrand {
-    font-size: 0.2em;
+    font-size: 0.4em;
     /* Reduce the font size */
-   max-width: 57vw;
+   max-width: 57svw;
    min-width: none;
    
   }
@@ -189,12 +189,12 @@ a:hover {
   #line2,
   #line3 {
     animation: none;
-   width:6vw;
-    max-width: 5vw;
-    height: 0.7vh;
+   min-width:7svw;
+    max-width: 8svw;
+    height: 1svh;
     background-color: #fff;
     /* Change to your desired color */
-    margin: 1.1vh 1vw;
+    margin: 1.1svh;
   }
 
 
