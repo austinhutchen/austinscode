@@ -74,7 +74,7 @@ export const Resume: React.FC = () => (
                     download
                     rel='noopener noreferrer'
                     
-                    className="text-lg font-bold underline text-blue-600 hover:text-blue-800"
+                    className="text-4xl font-bold underline text-blue-600 hover:text-blue-800"
                 >
                     Download Full Resume (PDF)
                 </a>
