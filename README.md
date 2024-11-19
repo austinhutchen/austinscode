@@ -1,4 +1,4 @@
-<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Espresso</i> <b> 16.5 ☕️☕️ </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>Cappucino</i> <b> 17.0 ☕️☕️ </b> 
 <br/> Original Author: <u><b>Me! (Austin Hutchen) </b></u>  <br/>
   <h2> <b><u> For a dedicated resume, please view: </u></b></h2> <a href="https://github.com/austinhutchen/resume">My resume</a> <br/>
   <hr/>
