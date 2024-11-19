@@ -183,19 +183,44 @@ a:hover {
   }
 
 
+/* Base line styles */
+.line {
+  width: 35px; /* Base width for the hamburger lines */
+  height: 4px; /* Base height for each line */
+  background-color: #fff; /* White color by default */
+  margin: 6px 0; /* Space between lines */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
 
-  #line1,
-  #line2,
-  #line3 {
-    animation: none;
-   min-width:8svw;
-    max-width: 10svw;
-    height: 1vh;
-    background-color: #fff;
-    /* Change to your desired color */
-    margin: 1.1vh;
-  }
+/* Open state styles */
+.line-open {
+  width: 35px; /* Keep the width the same in the open state */
+}
 
+/* Close state styles */
+.line-close {
+  width: 35px; /* Keep the width the same in the close state */
+}
+
+/* Optional adjustments if you want to animate */
+.line-open #line1 {
+  transform: rotate(45deg) translate(5px, 5px); /* Example animation for top line */
+}
+
+.line-open #line3 {
+  transform: rotate(-45deg) translate(5px, -5px); /* Example animation for bottom line */
+}
+
+.line-open #line2 {
+  opacity: 0; /* Hide the middle line on open */
+}
+
+.line-close #line1,
+.line-close #line2,
+.line-close #line3 {
+  transform: none; /* Reset transforms in close state */
+  opacity: 1; /* Make sure lines are visible */
+}
 
 .navBrand {
   background: linear-gradient(to top, salmon, lightgreen, lightblue);

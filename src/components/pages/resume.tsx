@@ -76,7 +76,7 @@ export const Resume: React.FC = () => (
                     
                     className="text-4xl font-bold underline text-blue-600 hover:text-blue-800"
                 >
-                    Download Full Resume (PDF)
+                    View Full Resume (PDF)
                 </a>
             </div>
             <ul className="projectdesc pt-1">

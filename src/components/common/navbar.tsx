@@ -32,9 +32,18 @@ export const NavBar: React.FC = () => {
 
   const CustomNavbarToggler: React.FC<CustomNavbarTogglerProps> = ({ onClick, isOpen }) => (
     <button className="custom-navbar-toggler" onClick={onClick}>
-      <div id="line1" className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} />
-      <div id="line2" className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} />
-      <div id="line3" className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} />
+     <div 
+  id="line1" 
+  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+/>
+<div 
+  id="line2" 
+  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+/>
+<div 
+  id="line3" 
+  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+/>
     </button>
   );
   return (
