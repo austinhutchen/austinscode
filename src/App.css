@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 .analogCircuits{
-  display: flex;
+  display: grid;
+  align-content: center;
   flex-direction: column;
 }
 html {
@@ -20,13 +21,8 @@ html {
   background: radial-gradient(ellipse at 50% 50%, rgba(128, 128, 128, 1) 0%, rgba(175, 80, 76, 1) 13%, rgba(81, 12, 114, 1) 25%, rgba(108, 21, 94, 1) 38%, rgba(57, 17, 93, 1) 50%, rgba(0, 133, 255, 1) 75%, rgba(128, 128, 128, 1) 100%);
 }
 
-.analogCircuits{
-  display: flex;
-  flex-direction: row;
-}
-.FFT{
-  
-}
+
+
 .introText {
   max-width: 99.3vw;
   margin: 0 auto;
