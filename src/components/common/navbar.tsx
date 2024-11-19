@@ -45,7 +45,6 @@ export const NavBar: React.FC = () => {
         <img className="clickIcon" height="65vh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
-      <br/>
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
         <Nav className="mr-auto flex items-center justify-center h-[90vh]   ">
