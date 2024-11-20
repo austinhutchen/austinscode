@@ -32,7 +32,7 @@ export const Visualizer: React.FC = () => {
       </h4>
       <br />
       <div className="analogCircuits" >
-        <img src={images.schematic} className="projImg" />
+        <img src={images.schematic}  id="rotate-180" className="projImg" />
         <img src={images.bipolaroutput} className="projImg" />
         <img src={images.transformer} className="projImg" />
         <img src={images.volts} className="projImg" />
