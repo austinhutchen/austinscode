@@ -10,6 +10,9 @@ code {
     monospace;
 }
 
-.rotate-180 {
-  transform: rotate(180deg);
+#rotate-180 {
+  transform: rotate(90deg);
+/* Optional, ensures the image behaves normally in the layout */
+margin-top: 4svh;
+margin-bottom: 5svh;
 }
