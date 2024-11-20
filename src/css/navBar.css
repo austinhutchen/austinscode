@@ -156,9 +156,9 @@ a:hover {
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 5svw;
+  border-radius: 3svw;
   width: max-content;
-  max-width: 97svw;
+  max-width: 90vw;
 
 }
 
@@ -178,7 +178,7 @@ a:hover {
     font-size: 0.4em;
     /* Reduce the font size */
    max-width: 57svw;
-   min-width: none;
+   min-width: 20svw;
    
   }
 
