@@ -156,9 +156,9 @@ a:hover {
   animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 4svw;
+  border-radius: 5svw;
   width: max-content;
-  max-width: 95svw;
+  max-width: 97svw;
 
 }
 
