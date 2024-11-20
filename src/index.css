@@ -13,6 +13,6 @@ code {
 #rotate-180 {
   transform: rotate(90deg);
 /* Optional, ensures the image behaves normally in the layout */
-margin-top: 4svh;
-margin-bottom: 5svh;
+margin-top: 2svh;
+margin-bottom: 3svh;
 }
