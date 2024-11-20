@@ -46,6 +46,7 @@ a:hover {
   border: none;
   background: transparent;
   color: white;
+  position: relative;
   outline: none;
 }
 
@@ -153,12 +154,11 @@ a:hover {
   align-content: center;
   top: 0;
   /* Position at the top */
-  animation: slideIn 0.5s cubic-bezier(.24, .51, .8, .94) both;
+  animation: slideIn 0.6s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 3svw;
-  width: max-content;
-  max-width: 90vw;
+  border-radius: 5vw;
+  width: min-content;
 
 }
 
@@ -185,21 +185,23 @@ a:hover {
 
 /* Base line styles */
 .line {
-  width: 35px; /* Base width for the hamburger lines */
-  height: 4px; /* Base height for each line */
-  background-color: #fff; /* White color by default */
-  margin: 6px 0; /* Space between lines */
+  height: 0.6vh; /* 0.5% of the viewport height */
+  background-color: #fff; /* White color */
+  margin: 1.3vh 0; /* Space between lines using viewport height */
   transition: all 0.3s ease-in-out; /* Smooth transition */
+
 }
 
 /* Open state styles */
 .line-open {
-  width: 35px; /* Keep the width the same in the open state */
+  transform-origin: center; /* Set a common rotation point */
+  width: 10vw; /* Keep the width the same in the open state */
 }
 
 /* Close state styles */
 .line-close {
-  width: 35px; /* Keep the width the same in the close state */
+  width: 10vw;/* Keep the width the same in the close state */
+  transform: none;
 }
 
 /* Optional adjustments if you want to animate */
