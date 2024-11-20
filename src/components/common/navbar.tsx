@@ -17,7 +17,7 @@ export const NavBar: React.FC = () => {
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = '16svh';
+  const icon_height = '23svh';
   const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!isOpen);
