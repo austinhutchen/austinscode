@@ -51,7 +51,7 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" height="65vh" src={clickme} />
+        <img className="clickIcon" height="65svh" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <div className='collapse-container'>
@@ -88,6 +88,16 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
           <NavItem className="nav-item flex justify-center items-center">
+            <Button  style={{ border: '1px solid white' }}>
+                <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
+                  <h3>
+                  LinkedIn
+                  </h3>
+                </a>
+              </Button>
+            </NavItem>
+          <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
@@ -112,16 +122,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
 
-            <NavItem className="nav-item flex justify-center items-center">
-            <Button  style={{ border: '1px solid white' }}>
-                <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
-                  <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
-                  <h3>
-                  LinkedIn
-                  </h3>
-                </a>
-              </Button>
-            </NavItem>
+          
           </Nav>
         </Collapse>
       </div>
