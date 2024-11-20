@@ -79,6 +79,7 @@ export const Resume: React.FC = () => (
                     View Full Resume (PDF)
                 </a>
             </div>
+         
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
                     <li style={{"listStyleType":'none'}}key={index}>
@@ -88,7 +89,11 @@ export const Resume: React.FC = () => (
             </ul>
 
             <SectionHeader title="OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK" italic />
-
+            <ContributionLink
+                href="https://github.com/twitter/the-algorithm/issues/162"
+                title="TWITTER ALGORITHM OPTIMIZATIONS"
+                description="Optimized the X algorithm for floating-point parallelism."
+            />
             <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
                 alt="GitHub streak stats"
@@ -96,11 +101,7 @@ export const Resume: React.FC = () => (
                 style={{ width: '100%', height: '150px' }}
             />
 
-            <ContributionLink
-                href="https://github.com/twitter/the-algorithm/issues/162"
-                title="TWITTER COMPILER OPTIMIZATIONS"
-                description="Helped optimize Twitter’s (now X) code for floating-point parallelism."
-            />
+     
 
             <ContributionLink
                 href="https://leetcode.com/austinhutchen/"
@@ -202,7 +203,7 @@ const experienceItems = [
         period: "May 2022 - Now",
         description: (
             <>
-                Contributed to open-source projects, including Twitter’s algorithm optimization. See my work{" "}
+                Contributed to open-source projects, including many of my own IOT devices and X algorithm optimization. See my work{" "}
                 <a href="https://github.com/austinhutchen" target="_blank" rel="noreferrer">
                     <b>
                         <i>
@@ -210,6 +211,7 @@ const experienceItems = [
                         </i>
                     </b>
                 </a>.
+             
             </>
         ),
     },
