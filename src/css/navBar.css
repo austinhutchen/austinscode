@@ -157,8 +157,8 @@ a:hover {
   animation: slideIn 0.6s cubic-bezier(.24, .51, .8, .94) both;
   z-index: 1000;
   /* Ensure the navbar is above other elements */
-  border-radius: 5vw;
-  width: min-content;
+  border-radius: 2svw;
+  width: max-content;
 
 }
 
@@ -180,9 +180,9 @@ a:hover {
 
 /* Base line styles */
 .line {
-  height: 0.8svh; /* 0.5% of the viewport height */
+  height: 0.6svh; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
-  margin: 1.3vh 0; /* Space between lines using viewport height */
+  margin: 1.2svh 0; /* Space between lines using viewport height */
   transition: all 0.3s ease-in-out; /* Smooth transition */
 
 }
