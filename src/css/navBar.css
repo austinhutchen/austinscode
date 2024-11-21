@@ -168,12 +168,7 @@ a:hover {
 
 
 
-.custom-navbar {
 
-  /* Reduce the max-width */
-  transition: max-width 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-  /* Add this line */
-}
   .navBrand {
     font-size: 0.4em;
     /* Reduce the font size */
@@ -185,7 +180,7 @@ a:hover {
 
 /* Base line styles */
 .line {
-  height: 0.6vh; /* 0.5% of the viewport height */
+  height: 0.8svh; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
   margin: 1.3vh 0; /* Space between lines using viewport height */
   transition: all 0.3s ease-in-out; /* Smooth transition */
@@ -195,12 +190,12 @@ a:hover {
 /* Open state styles */
 .line-open {
   transform-origin: center; /* Set a common rotation point */
-  width: 10vw; /* Keep the width the same in the open state */
+  width: 6svw; /* Keep the width the same in the open state */
 }
 
 /* Close state styles */
 .line-close {
-  width: 10vw;/* Keep the width the same in the close state */
+  width: 6svw;/* Keep the width the same in the close state */
   transform: none;
 }
 
