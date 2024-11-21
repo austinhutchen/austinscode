@@ -78,7 +78,7 @@ export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
   }, [stream]);
   return <><button style={{}} onClick={getUserMedia}>Click & Speak! </button>
     <br />
-    <canvas ref={canvasRef} style={{ width: '65svw', height: '28svh', border: '0.5px solid #0FF' }} />
+    <canvas ref={canvasRef} style={{ width: '65svw', height: '28svh', border: '0.5px solid #0FF', borderRadius:'3svw' }} />
 
   </>
 
