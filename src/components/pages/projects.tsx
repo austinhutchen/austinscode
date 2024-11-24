@@ -132,7 +132,16 @@ const projectsData: Project[] = [
     ]
   },
 
+  {
+    title: "MOOD MAPS API (JAVASCRIPT/CSS)",
+    link: "https://github.com/austinhutchen/thevibecheck",
+    description:
+      "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
+    media: [
+      { type: 'image', src: images['maps'] }
+    ],
 
+  },
   {
     title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
     link: "https://github.com/austinhutchen/austinscode",
@@ -160,21 +169,12 @@ const projectsData: Project[] = [
       { type: 'image', src: images['malloc'] }
     ],
   },
-  {
-    title: "GOOGLE MAPS CLONE (DART/FLUTTER/C)",
-    link: "https://github.com/austinhutchen/map-app.git",
-    description:
-      "A Google Maps app clone that I coded using Flutter and the Dart framework. Spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps.",
-    media: [
-      { type: 'image', src: images['maps'] }
-    ],
 
-  },
 
 
 
   {
-    title: "WEATHER DETECTION MODULE (C/TYPESCRIPT)",
+    title: "PORTABLE 9V WEATHER DETECTION MODULE (C/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
       "Used an ESP8266 and DHT11 serial temperature & humidity sensor along with a 7 segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
