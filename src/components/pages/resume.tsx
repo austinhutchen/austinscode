@@ -88,12 +88,18 @@ export const Resume: React.FC = () => (
                 ))}
             </ul>
 
-            <SectionHeader title="OPEN SOURCE CONTRIBUTIONS & VOLUNTEER WORK" italic />
+            <SectionHeader title="OPEN SOURCE CONTRIBUTIONS, BUSINESS, & VOLUNTEER WORK" italic />
             <ContributionLink
                 href="https://github.com/twitter/the-algorithm/issues/162"
                 title="TWITTER ALGORITHM OPTIMIZATIONS"
                 description="Optimized the X algorithm for floating-point parallelism."
             />
+            <ContributionLink
+    href="https://www.ebay.com/usr/gadgetsllcc"
+    title="EBAY BUSINESS EXPERIENCE"
+    description="Successfully managed and sold over 72 electronics, including PCs, Windows devices, power supplies, and performed Mac repairs, achieving 100% positive feedback from satisfied customers since high school."
+/>
+
             <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
                 alt="GitHub streak stats"
