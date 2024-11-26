@@ -65,7 +65,7 @@ export const Resume: React.FC = () => (
     <>
         <NavBar />
 
-        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" style={{maxWidth:'68vw', display:'flex', justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
+        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" style={{ maxWidth: '68vw', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
 
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
@@ -73,16 +73,16 @@ export const Resume: React.FC = () => (
                     href={`https://github.com/austinhutchen/resume/blob/master/resume.pdf`}
                     download
                     rel='noopener noreferrer'
-                    
+
                     className="text-4xl font-bold underline text-blue-600 hover:text-blue-800"
                 >
                     View Full Resume (PDF)
                 </a>
             </div>
-         
+
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
-                    <li style={{"listStyleType":'none'}}key={index}>
+                    <li style={{ "listStyleType": 'none' }} key={index}>
                         <ExperienceItem {...item} />
                     </li>
                 ))}
@@ -95,10 +95,10 @@ export const Resume: React.FC = () => (
                 description="Optimized the X algorithm for floating-point parallelism."
             />
             <ContributionLink
-    href="https://www.ebay.com/usr/gadgetsllcc"
-    title="EBAY BUSINESS EXPERIENCE"
-    description="Successfully managed and sold over 72 electronics, including PCs, Windows devices, power supplies, and performed Mac repairs, achieving 100% positive feedback from satisfied customers since high school."
-/>
+                href="https://www.ebay.com/usr/gadgetsllcc"
+                title="EBAY BUSINESS EXPERIENCE"
+                description="Successfully managed and sold over 72 electronics, including PCs, Windows devices, power supplies, and performed Mac repairs, achieving 100% positive feedback from satisfied customers since high school."
+            />
 
             <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
@@ -107,7 +107,7 @@ export const Resume: React.FC = () => (
                 style={{ width: '100%', height: '150px' }}
             />
 
-     
+
 
             <ContributionLink
                 href="https://leetcode.com/austinhutchen/"
@@ -217,7 +217,7 @@ const experienceItems = [
                         </i>
                     </b>
                 </a>.
-             
+
             </>
         ),
     },

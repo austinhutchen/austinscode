@@ -56,7 +56,7 @@ export const NavBar: React.FC = () => {
       </div>
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
-        <Nav className="mr-auto flex items-center justify-center h-[90vh]   ">
+        <Nav className="mr-auto flex items-center justify-center  ">
           <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />
