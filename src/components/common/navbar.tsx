@@ -51,12 +51,12 @@ export const NavBar: React.FC = () => {
     <Navbar className="custom-navbar">
       <div className="navbar-header flex ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
-        <img className="clickIcon" height="65svh" src={clickme} />
+        <img className="clickIcon" height="66px" width="auto" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
       </div>
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
-        <Nav className="mr-auto flex items-center justify-center  ">
+        <Nav >
           <NavItem className="nav-item flex justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />
