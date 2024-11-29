@@ -4,7 +4,6 @@ import { Button, Collapse, Nav, NavItem, Navbar, NavbarBrand } from 'reactstrap'
 import "../../css/navBar.css";
 export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isToggled, setIsToggled] = useState(false); // Add this line
   const nav = useNavigate();
   const github = process.env.PUBLIC_URL + '/fast_imgs/github.webp';
   const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.webp';
@@ -17,16 +16,14 @@ export const NavBar: React.FC = () => {
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = '23svh';
+  const icon_height = '25vh';
   const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!isOpen);
-    setIsToggled(true); // Set isToggled to true when the navbar is toggled
   }
   type CustomNavbarTogglerProps = {
     onClick: () => void; // Define the onClick prop as a function that doesn't return anything
     isOpen: boolean; // Add the isOpen prop
-    isToggled: boolean; // Add the isToggled prop
 
   };
 
@@ -34,25 +31,25 @@ export const NavBar: React.FC = () => {
     <button className="custom-navbar-toggler" onClick={onClick}>
      <div 
   id="line1" 
-  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+  className={`line ${isOpen ? 'line-open' : 'line-close'}`} 
 />
 <div 
   id="line2" 
-  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+  className={`line ${isOpen ? 'line-open' : 'line-close'}`} 
 />
 <div 
   id="line3" 
-  className={`line ${isOpen && isToggled ? 'line-open' : 'line-close'}`} 
+  className={`line ${isOpen ? 'line-open' : 'line-close'}`} 
 />
     </button>
   );
   return (
     <div>
     <Navbar className="custom-navbar">
-      <div className="navbar-header flex ">
+      <div className="navbar-header flex">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
         <img className="clickIcon" height="66px" width="auto" src={clickme} />
-        <CustomNavbarToggler onClick={toggle} isOpen={isOpen} isToggled={isToggled} />
+        <CustomNavbarToggler onClick={toggle} isOpen={isOpen} />
       </div>
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
