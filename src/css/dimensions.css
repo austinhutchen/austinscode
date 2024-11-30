@@ -54,9 +54,7 @@ html.has-scroll-smooth {
 .projects img,
 .accredidations img,
 .projects  {
-  border-radius: 200/2;
   /* To create a circular border */
-  border: 0.12em 0.12em #0BA;
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
@@ -81,7 +79,7 @@ html.has-scroll-smooth {
   max-height: 36vh;
   max-width: 36vw;
   border: 0.15vw solid #0BA;
-
+  border-radius: 200/2;
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
@@ -92,7 +90,7 @@ html.has-scroll-smooth {
   max-height: 36vh;
   max-width: 36vw;
   border: 0.15vw solid #0BA;
-  border-radius:3vw;
+  border-radius:200/2;
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
