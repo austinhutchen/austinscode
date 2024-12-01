@@ -17,9 +17,10 @@
     "react-webcam": "^7.2.0",
     "reactstrap": "^9.2.3",
     "slick-carousel": "^1.8.1",
-    "typescript": "^5.6.3",
-    "webpack": "^5.96.1",
-    "web-vitals": "^4.2.4"
+    "tag-cloud": "^2.0.2",
+    "typescript": "^3.9.10",
+    "web-vitals": "^4.2.4",
+    "webpack": "^5.96.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",
@@ -61,7 +62,6 @@
       "last 1 edge version"
     ]
   },
-
   "description": "My React-loaded website, documenting personal achievements! Website Version: Espresso 16.5 ☕️☕️. Original Author: Me! (Austin Hutchen). Espresso File sizes after gzip: 80 kB build/static/js/main.ebf077bc.js, 7.44 kB build/static/css/main.b2e55e1d.css. Link: https://austinscode.vercel.app",
   "main": "analyzer.js",
   "author": "",
