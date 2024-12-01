@@ -7,6 +7,7 @@ import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
+import "../../css/slider.css";
 
 type Images = Record<string, string>;
 
@@ -47,204 +48,136 @@ const images: Images = {
   arduino: getImgPath('arduino.mp4'),
   // Add other images here
 };
-
 const projectsData: Project[] = [
   {
-    title: "THIS WEBSITE (TYPESCRIPT)",
+    title: "This Website (Typescript)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
       "My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
-    media: [
-      {}
-    ]
+    media: [{}],
   },
-
   {
-    title: "SOUND REACTIVE WIFI LED ANIMATION MATRIX (C/HTML)",
+    title: "Sound Reactive Wifi Led Animation Matrix (C/HTML)",
     link: "https://github.com/austinhutchen/WledStream.git",
     description:
-      "I used a sound-reactive low-power ESP8266 microcontroller device with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music by utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
+      "I used a sound-reactive low-power ESP8266 microcontroller device with an HTTP proxy...",
     media: [
-      { 'type': 'video', 'src': images['wled2'] },
-      { 'type': 'video', 'src': images['matrix'] }
-
-    ]
-
+      { type: "video", src: images["wled2"] },
+      { type: "video", src: images["matrix"] },
+    ],
   },
   {
-    title: "ARDUINO SCROLLING LED REAL TIME CLOCK (C)",
+    title: "Arduino Scrolling Led Real Time Clock (C)",
     link: "https://github.com/austinhutchen/RTC_LED.git",
     description:
-      "An arduino offline scrolling 12x8 LED matrix program, which I wrote using C and the arduino's onboard battery RTC (Real Time Clock) module for timekeeping. The text scrolled across a 12x8 LED matrix using code I wrote.",
-    media: [
-      { 'type': 'video', 'src': images['arduino'] }
-
-    ]
-
+      "An Arduino offline scrolling 12x8 LED matrix program...",
+    media: [{ type: "video", src: images["arduino"] }],
   },
   {
-    title: "CALCULATOR APP (DART/FLUTTER/C)",
+    title: "Calculator App (Dart/Flutter/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description:
-      "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilise taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly flast performance.  Written in C and programmed for IOS.",
-    media: [
-      { type: 'image', src: images['calculator'] },
-    ],
+      "A calculator app with support for many different functions...",
+    media: [{ type: "image", src: images["calculator"] }],
   },
-
-
   {
-    title: "MICROPHONE SOUND SPECTRUM ANALYZER (ANGULAR/TYPESCRIPT)",
+    title: "Microphone Sound Spectrum Analyzer (Angular/Typescript)",
     link: "https://github.com/austinhutchen/austinscode/src/components/pages/sub/AudioVisualizer.tsx",
     description:
-      "A simple microphone spectrum analyzer that displays the soundwaves of your device's microphone input using the Typescript webMedia API, html 2-d canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
-    media: [
-      { type: 'video', src: images['sine'] },
-    ],
+      "A simple microphone spectrum analyzer that displays the soundwaves...",
+    media: [{ type: "video", src: images["sine"] }],
   },
   {
-    title: "ARDUINO NANO BLE GESTURE SENSOR (C++)",
+    title: "Arduino Nano BLE Gesture Sensor (C++)",
     link: "https://github.com/austinhutchen/ArtificalSP.git",
     description:
-      "A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. As seen in the second video, it is also able to recognize distinct RGB values using the onboard sensors. Trained on data provided by the arduino nano ble sense rev2 sensors.",
+      "A machine learning model implemented on an Arduino Nano BLE microcontroller...",
     media: [
-      { type: 'video', src: images['gesture'] },
-      { type: 'video', src: images['nano2'] },
-    ]
-
+      { type: "video", src: images["gesture"] },
+      { type: "video", src: images["nano2"] },
+    ],
   },
   {
-    title: "MINI KERNEL SHELL (C/BASH)",
+    title: "Mini Kernel Shell (C/Bash)",
     link: "https://github.com/austinhutchen/shell.git",
     description:
-      " A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user's local terminal.",
-    media: [
-      { type: 'image', src: images['shell'] }
-    ]
+      "A shell is the user's primary interface into any UNIX/OSX/WINDOWS operating system...",
+    media: [{ type: "image", src: images["shell"] }],
   },
-
   {
-    title: "MOOD MAPS API (JAVASCRIPT/CSS)",
+    title: "Mood Maps Api (Javascript/Css)",
     link: "https://github.com/austinhutchen/thevibecheck",
     description:
-      "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google's Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
-    media: [
-      { type: 'image', src: images['maps'] }
-    ],
-
+      "A Google Maps app interface that returns locations based on your mood...",
+    media: [{ type: "image", src: images["maps"] }],
   },
   {
-    title: "ARDUINO 8-BIT BITMASK ANIMATOR (C)",
+    title: "Arduino 8-Bit Bitmask Animator (C)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
-      "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an arduino uno r3 frame buffer for displaying the images and saving temporarily into local memory. You can see the demo above.",
-    media: [
-      { type: 'video', src: images['butterfly'] }
-    ]
+      "I utilized bit masks to code byte-level animations for embedded systems...",
+    media: [{ type: "video", src: images["butterfly"] }],
   },
   {
-    title: "AUTOMATIC PLANT IRRIGATION SYSTEM (C)",
+    title: "Automatic Plant Irrigation System (C)",
     link: "https://github.com/austinhutchen/plant_interface.git",
     description:
-      "My custom Automatix Plant Irrigation System is a low-cost and power-efficient ESP-8266 powered system that reads data from a custom soil sensor. It then checks the capacitive sensor moisture threshold and decides whether to pump water using a relay and water tube into the plant. I plan to upgrade this project with a solar-powered portable battery and a remote deep sleep switch",
-    media: [
-      { type: 'video', src: images['PLANT_WATERER'] }
-    ]
+      "A low-cost and power-efficient ESP-8266 powered system...",
+    media: [{ type: "video", src: images["PLANT_WATERER"] }],
   },
   {
-    title: "MALLOC() ALGORITHM (C/BASH)",
+    title: "MALLOC() Algorithm (C/Bash)",
     link: "https://github.com/austinhutchen/cMalloc",
     description:
-      " This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many problems present in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, and included within it a custom shell as well as several embedded linux projects.",
-    media: [
-      { type: 'image', src: images['malloc'] }
-    ],
+      "This is a memory algorithm that I coded in C similar to MALLOC()...",
+    media: [{ type: "image", src: images["malloc"] }],
   },
-
-
-
-
   {
-    title: "PORTABLE 9V WEATHER DETECTION MODULE (C/TYPESCRIPT)",
+    title: "Portable 9V Weather Detection Module (C/Typescript)",
     link: "https://github.com/austinhutchen/weather-sense.ts.git",
     description:
-      "Used an ESP8266 and DHT11 serial temperature & humidity sensor along with a 7 segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in c using the platformio platform, and app was coded using typescript, scss, and the react native framework.",
+      "Used an ESP8266 and DHT11 serial temperature & humidity sensor...",
     media: [
-      { type: 'image', src: images['WEATHER_SENSOR'] },
-      { type: 'image', src: images['weather'] }
-    ]
-
+      { type: "image", src: images["WEATHER_SENSOR"] },
+      { type: "image", src: images["weather"] },
+    ],
   },
-
-
   {
-    title: "ZELDA TERMINAL GAME (C++)",
+    title: "Zelda Terminal Game (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",
     description:
-      "One of my first projects. 2,000 total lines of c++ code. A turn-based dungeon crawler with graphics embedded within a command-line based vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
-    media: [
-      { type: 'image', src: images['game'] }
-    ]
-
+      "One of my first projects. A turn-based dungeon crawler...",
+    media: [{ type: "image", src: images["game"] }],
   },
-
-
-
-
   {
-    title: "SOCIAL MEDIA SEARCH ENGINE CLI (PYTHON)",
+    title: "Social Media Search Engine Cli (Python)",
     link: "https://github.com/austinhutchen/redditsearch.git",
     description:
-      "A reddit search engine I built using an older version of python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
-    media: [
-      { type: 'image', src: images['search'] }
-    ],
-
-  }
-  ,
+      "A Reddit search engine I built using an older version of Python...",
+    media: [{ type: "image", src: images["search"] }],
+  },
   {
-    title: "NOTE-SHARING APP (REACT NATIVE / JAVA)",
+    title: "Note-Sharing App (React Native / Java)",
     link: "https://github.com/austinhutchen/notable.git",
     description:
-      "An app made for note-sharing purposes, which utilized the AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
-    media: [
-      { type: 'image', src: images['notable'] }
-    ]
+      "An app made for note-sharing purposes, utilizing AsyncStorage...",
+    media: [{ type: "image", src: images["notable"] }],
   },
-
   {
-    title:
-      "ENCRYPTED TEXT EDITOR (C++)",
+    title: "Encrypted Text Editor (C++)",
     link: "https://github.com/austinhutchen/encrypt.C.git",
     description:
-      "A command line text editor interface, with the ability to save text data to a local file on the user's computer. The program utilized pointers and vectors for file traversal capability. Added in the last release (2021) was the ability to fully encrypt and decrypt into binary encodings from text input. I plan to use huffman encoding to also compress text and other(image, video) formats in the future. Coded fully in c.",
-    media: [
-      { type: 'image', src: images['encryptc'] }
-    ]
+      "A command-line text editor interface with encryption capabilities...",
+    media: [{ type: "image", src: images["encryptc"] }],
   },
-
-
-
-
-
   {
-    title: " MULTITHREADED E-MAIL SERVER BACKEND (RUST)",
+    title: "Multithreaded E-Mail Server Backend (Rust)",
     link: "https://github.com/austinhutchen/newsletter.rs.git",
     description:
-      "Multi-threaded & secure newsletter delivery system coded from the ground up in rust, to accomodate the scaling of requests from users on an ACTIX-WEB powered rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
-    media: [
-      { type: 'image', src: images['actix'] }
-    ]
-
-
+      "A multi-threaded and secure newsletter delivery system coded in Rust...",
+    media: [{ type: "image", src: images["actix"] }],
   },
-
-
-
-
-  // ... (unchanged)
 ];
-
 const ProjectList: React.FC = () => (
   <div className="projectList">
     {projectsData.map((project, index) => (
@@ -287,11 +220,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   return (
     <div>
       <div className="fadeSide">
-        <h3 className="hlight-mini">
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
+       
+  <h2 className="hlight">
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
             {project.title}
           </a>
-        </h3>
+        </h2> 
         <br />
       </div>
       {project.media.map((mediaItem, index) => {
