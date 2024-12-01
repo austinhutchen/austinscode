@@ -18,6 +18,7 @@
     "reactstrap": "^9.2.3",
     "slick-carousel": "^1.8.1",
     "tag-cloud": "^2.0.2",
+    "TagCloud": "^2.5.0",
     "typescript": "^3.9.10",
     "web-vitals": "^4.2.4",
     "webpack": "^5.96.1"
