@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
+
+import React, { useEffect, useRef,useState } from "react";
+
+import ReactWebcam from 'react-webcam';
 import { AudioVisualizer } from "../common/AudioVisualizer";
-import { useState } from "react";
 import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import "../../css/slider.css";
-
 
 type Images = Record<string, string>;
 
@@ -93,15 +93,7 @@ const projectsData: Project[] = [
     ],
   },
 
-  {
-    title: "WEBCAM STREAMING WEB APPLICATION (ANGULAR/TYPESCRIPT/FIREBASE)",
-    link: "https://github.com/austinhutchen/angularCamFirebase.git",
-    description:
-      "Built a webcam streamer web application deployed with vercel that uploads all captured photo and video feed to a custom real-time firebase database. I used the typescript programming language for application security and compile-time debug checks. The program took in an instance(frame) of a video uri, converted it into a blob of binary data, and then streamed it to a firebase realtime database. ",
-    media: [
-      { type: 'image', src: images['firecam'] },
-    ],
-  },
+
   {
     title: "MICROPHONE SOUND SPECTRUM ANALYZER (ANGULAR/TYPESCRIPT)",
     link: "https://github.com/austinhutchen/austinscode/src/components/pages/sub/AudioVisualizer.tsx",
@@ -344,49 +336,64 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 };
 
 export const Projects: React.FC = () => {
-  const [stream, setStream] = useState<MediaStream | null>(null);
-  useEffect(() => {
-    window.onbeforeunload = () => {
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
-      }
-    };
+  const [showWebcam, setShowWebcam] = useState(false);
+  const webcamRef = useRef<ReactWebcam | null>(null);
 
+  const captureImage = () => {
+    const imageSrc = webcamRef.current?.getScreenshot();
+    console.log("Captured image:", imageSrc);
+  };
+
+  const handleShowWebcam = () => {
+    setShowWebcam(true);
+  };
+
+  useEffect(() => {
     return () => {
-      window.onbeforeunload = null;
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
-      }
+      webcamRef.current?.video?.srcObject &&
+        (webcamRef.current?.video?.srcObject as MediaStream).getTracks().forEach((track) => track.stop());
     };
-  }, [stream]);
+  }, []);
+
   return (
-    <>
+    <div>
       <NavBar />
-      <div >
         <h1 className="hlight">
           <b>PERSONAL PROJECTS:</b>
         </h1>
 
-          <div >
             <div className="fadeSide" style={{ margin: '0 auto' }}>
               <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
               <br />
               <b>
-                <p style={{ fontSize: "0.9em" }} >
+                <p className='projDesc' style={{ fontSize: "0.9em" }} >
                   <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
                 </p>
               </b>
             </div>
             <div className="FFT">
-            <AudioVisualizer stream={stream} setStream={setStream} />
+      <AudioVisualizer
+        stream={webcamRef.current?.video?.srcObject as MediaStream | null}
+        setStream={() => {}}
+      />
+<br/>
+              <h2 className="hlight"> Webcam Capture Engine (Typescript)</h2>
+              <br />
+              <b>
+                <p className='projDesc' style={{ fontSize: "0.9em" }} >
+                  <a> <h4 className='hlight-mini'>Enable webcam input</h4> </a> to see your face and apply effects in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decode your devices's streamed video. The program then displays your face to see!                </p>
+              </b>
             </div>
-          <br />
-        </div>
+      {!showWebcam && <button onClick={handleShowWebcam}>Enable Webcam</button>}
 
-        <ProjectList />
-      </div>
-    </>
-  )
+      {showWebcam && (
+        <>
+          <ReactWebcam ref={webcamRef} screenshotFormat="image/jpeg" width={320} height={240} />
+          <button onClick={captureImage}>Capture Photo</button>
+        </>
+      )}
 
+      <ProjectList />
+    </div>
+  );
 };
-
