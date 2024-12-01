@@ -1,23 +1,32 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", // Use "react" for JSX transformation
-    "esModuleInterop": true, // Allow default imports from modules with a default export, even if there's no default export
-    "strict": true, // Enable all strict type-checking options
-    "module": "commonjs", // Specify module code generation
-    "target": "es5", // Specify ECMAScript target version
-    "types": ["node"],
-    "moduleResolution": "node", // Specify module resolution strategy
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "strict": true,
+    "module": "esnext",
+    "target": "es5",
+    "types": [
+      "node"
+    ],
+    "moduleResolution": "node",
     "allowJs": true,
-    "resolveJsonModule": true, // Enable importing JSON modules
-    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
-    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in filenames
-    "noImplicitReturns": true, // Report error when not all code paths in function return a value
-    "noUnusedLocals": true, // Report errors on unused local variables
-    "noUnusedParameters": true, // Report errors on unused parameters
-    "strictNullChecks": true, // Enable strict null checks
-    "skipLibCheck": true // Skip type checking of declaration files
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "isolatedModules": true,
+    "noEmit": true
   },
   "include": [
-    "src" // Include files within the "src" directory for TypeScript compilation
+    "src"
   ]
 }
