@@ -1,31 +1,17 @@
 {
-  "compilerOptions": {
-    "jsx": "preserve",
-    "esModuleInterop": true,
+
+ "compilerOptions": {
+    "jsx": "react-jsx", // For React 17+ with new JSX runtime
+    "target": "esnext",
+    "module": "commonjs",
     "strict": true,
-    "module": "esnext",
-    "target": "es5",
-    "types": [
-      "node"
-    ],
-    "moduleResolution": "node",
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
     "skipLibCheck": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "isolatedModules": true,
-    "noEmit": true
+    "moduleResolution": "node",
+    "resolveJsonModule": true
   },
+
   "include": [
     "src"
   ]
