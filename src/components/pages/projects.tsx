@@ -314,7 +314,8 @@ export const Projects: React.FC = () => {
 
       {showWebcam && (
         <>
-          <ReactWebcam ref={webcamRef} screenshotFormat="image/jpeg" width={320} height={240} />
+          <ReactWebcam ref={webcamRef} screenshotFormat="image/jpeg" className="webCam" />
+          <br/>
           <button onClick={captureImage}>Capture Photo</button>
         </>
       )}
