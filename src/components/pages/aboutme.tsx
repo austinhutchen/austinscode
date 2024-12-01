@@ -91,12 +91,12 @@ const About: React.FC = () => {
     slidesToShow: 1,
     centerMode: true,
     width: '100%',
-    arrows: true,
+    arrows: false,
     slidesToScroll: 1,
     infinite: true,
     fade: true,
     cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
-    dots: true,
+    dots: false,
   };
   const slider: React.RefObject<Slider> = useRef<Slider>(null);
   const handleSliderNavigation = (direction: 'prev' | 'next') => {

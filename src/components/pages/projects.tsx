@@ -7,7 +7,6 @@ import { NavBar } from "../common/navbar";
 import "slick-carousel/slick/slick.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
-import "../../css/slider.css";
 
 type Images = Record<string, string>;
 
@@ -381,7 +380,7 @@ export const Projects: React.FC = () => {
               <br />
               <b>
                 <p className='projDesc' style={{ fontSize: "0.9em" }} >
-                  <a> <h4 className='hlight-mini'>Enable webcam input</h4> </a> to see your face and apply effects in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decode your devices's streamed video. The program then displays your face to see!                </p>
+                  <a> <h4 className='hlight-mini'>Enable webcam input</h4> </a> to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!                </p>
               </b>
             </div>
       {!showWebcam && <button onClick={handleShowWebcam}>Enable Webcam</button>}
