@@ -260,7 +260,71 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     </div>
   );
 };
+// Webcam Selector Component
+const WebcamSelector: React.FC = () => {
+  const [webcams, setWebcams] = useState<MediaDeviceInfo[]>([]);
+  const [selectedDeviceId, setSelectedDeviceId] = useState<string>('');
+  const webcamRef = useRef<ReactWebcam | null>(null);
+  const [stream, setStream] = useState<MediaStream | null>(null);
 
+  useEffect(() => {
+    const getWebcams = async () => {
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const videoDevices = devices.filter(device => device.kind === 'videoinput');
+      setWebcams(videoDevices);
+
+      if (videoDevices.length > 0) {
+        setSelectedDeviceId(videoDevices[0].deviceId);
+      }
+    };
+
+    getWebcams();
+  }, []);
+
+  useEffect(() => {
+    if (selectedDeviceId) {
+      navigator.mediaDevices
+        .getUserMedia({
+          video: { deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined },
+        })
+        .then(newStream => {
+          if (webcamRef.current) {
+            webcamRef.current.video.srcObject = newStream;
+            setStream(newStream);
+          }
+        })
+        .catch((err) => {
+          console.error('Error accessing webcam:', err);
+        });
+    }
+
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+  }, [selectedDeviceId, stream]);
+
+  return (
+    <div>
+      <h3 className="hlight">Select Webcam:</h3> <br/>
+      {webcams.length > 0 && (
+        <select
+          value={selectedDeviceId}
+          onChange={(e) => setSelectedDeviceId(e.target.value)}
+        >
+          {webcams.map((webcam) => (
+            <option key={webcam.deviceId} value={webcam.deviceId}>
+              {webcam.label || `Webcam ${webcam.deviceId}`}
+            </option>
+          ))}
+        </select>
+      )}
+
+         </div>
+  );
+};
+// Main Projects Component
 export const Projects: React.FC = () => {
   const [showWebcam, setShowWebcam] = useState(false);
   const webcamRef = useRef<ReactWebcam | null>(null);
@@ -284,41 +348,54 @@ export const Projects: React.FC = () => {
   return (
     <div>
       <NavBar />
-        <h1 className="hlight">
-          <b>PERSONAL PROJECTS:</b>
-        </h1>
+      <h1 className="hlight">
+        <b>PERSONAL PROJECTS:</b>
+      </h1>
 
-            <div className="fadeSide" style={{ margin: '0 auto' }}>
-              <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
-              <br />
-              <b>
-                <p className='projDesc' style={{ fontSize: "0.9em" }} >
-                  <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
-                </p>
-              </b>
-            </div>
-            <div className="FFT">
+      <div className="fadeSide" style={{ margin: '0 auto' }}>
+        <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
+        <br />
+        <b>
+          <p className='projDesc' style={{ fontSize: "0.9em" }} >
+            <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
+          </p>
+        </b>
+      </div>
+
       <AudioVisualizer
         stream={webcamRef.current?.video?.srcObject as MediaStream | null}
         setStream={() => {}}
       />
 <br/>
-              <h2 className="hlight"> Webcam Capture Engine (Typescript)</h2>
-              <br />
-              <b>
-                <p className='projDesc' style={{ fontSize: "0.9em" }} >
-                  <a> <h4 className='hlight-mini'>Enable webcam input</h4> </a> to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!                </p>
-              </b>
-            </div>
-      {!showWebcam && <button onClick={handleShowWebcam}>Enable Webcam</button>}
+      <h2 className="hlight"> Webcam Capture Engine (Typescript)</h2> <br/>
+<p className="hlight-mini">This project requires webcam permissions to run properly.</p>
+      <WebcamSelector /> {/* Add Webcam Selector here */}
 
-      {showWebcam && (
-        <>
-          <ReactWebcam ref={webcamRef} screenshotFormat="image/jpeg" className="webCam" />
-          <br/>
-          <button onClick={captureImage}>Capture Photo</button>
-        </>
-      )}
+
+      <br/>
+      {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+
+      <br />
+      <b>
+        <p className='projDesc' style={{ fontSize: "0.9em" }} >
+          to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!
+        </p>
+      </b>
+
+
+    {showWebcam && (
+  <>
+    <ReactWebcam
+      ref={webcamRef}
+      screenshotFormat="image/jpeg"
+      className="webCam"
+      videoConstraints={{ facingMode: "environment" }} // Adjust video settings
+      screenshotQuality={0} // Lower quality or none to reduce the preview impact
+    />
+    <br />
+    <button onClick={captureImage}>Capture Photo</button>
+  </>
+)}
 
       <ProjectList />
     </div>
