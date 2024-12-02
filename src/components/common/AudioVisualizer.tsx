@@ -9,78 +9,94 @@ type AudioVisualizerProps = {
   stream: MediaStream | null;
   setStream: React.Dispatch<React.SetStateAction<MediaStream | null>>;
 };
-export const AudioVisualizer: React.FC<AudioVisualizerProps> = () => {
+
+export const AudioVisualizer: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [stream, setStream] = useState<MediaStream | null>(null);
+
   const getUserMedia = () => {
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
-      console.error('Web Audio API not supported in this browser');
-      return;
-    }
-    navigator.mediaDevices.getUserMedia({ audio: true })
+    navigator.mediaDevices
+      .getUserMedia({ audio: true })
       .then(setStream)
       .catch(console.error);
   };
-
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas || !stream) return;
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-          const analyser: AnalyserNode = audioContext.createAnalyser();
-          analyser.smoothingTimeConstant = 0.2;
-          analyser.fftSize = 8192 ; // Reduce fftSize for better performance
-          // Create a BiquadFilterNode
-          const filter = audioContext.createBiquadFilter();
-          filter.type = 'bandpass'; // set the filter type to low-pass
-          // play around with filter ceiling value for voices and music
-          filter.frequency.value = 300; // 
-          const bufferLength = analyser.frequencyBinCount;
-          const dataArray: Uint8Array = new Uint8Array(bufferLength); // Create dataArray once
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const analyser = audioContext.createAnalyser();
+    analyser.fftSize = 2048;
 
-          const source = audioContext.createMediaStreamSource(stream);
-          source.connect(analyser); // Connect the source to the GainNode
-          filter.connect(analyser); // connect the filter to the analyser
-          const ctx = canvas.getContext('2d');
-          if (!ctx) return;
+    const source = audioContext.createMediaStreamSource(stream);
+    source.connect(analyser);
 
-          const draw = () => {
-            requestAnimationFrame(draw);
-            analyser.getByteFrequencyData(dataArray);
-            ctx.fillStyle = 'rgb(0, 0, 0)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+    const bufferLength = analyser.frequencyBinCount;
+    const dataArray = new Uint8Array(bufferLength);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
 
-            const barWidth: number = Math.ceil(canvas.width / bufferLength);
-            let barHeight;
-            let x = 0;
+    const draw = () => {
+      requestAnimationFrame(draw);
 
-            for (let i = 0; i < bufferLength; i++) {
-              barHeight = dataArray[i] / 1.5;
-              ctx.fillStyle = 'rgba(173,216,240,1)';
-              ctx.fillRect(x, canvas.height - barHeight / 2, barWidth, barHeight);
+      analyser.getByteFrequencyData(dataArray);
 
-              x += barWidth + 1;
-            }
-          };
+      // Clear with black background
+      ctx.fillStyle = "black";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-          draw();
-        }
+      // Draw gradient bars
+      const barWidth = canvas.width / bufferLength;
+      let barHeight;
+      let x = 0;
+
+      const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0, "#FF00FF");
+      gradient.addColorStop(0.5, "#00FFFF");
+      gradient.addColorStop(1, "#00FF00");
+
+      ctx.fillStyle = gradient;
+
+      for (let i = 0; i < bufferLength; i++) {
+        barHeight = dataArray[i];
+        ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+        x += barWidth + 1;
+      }
+
+      // Draw frequency labels
+      ctx.font = "12px Arial";
+      ctx.fillStyle = "#FFF";
+      ctx.textAlign = "center";
+      const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
+      frequencies.forEach((freq) => {
+        const pos = (freq / 20000) * canvas.width;
+        ctx.fillText(`${freq} Hz`, pos, canvas.height - 10);
       });
-    });
+    };
 
-    observer.observe(canvas);
+    draw();
 
-    return () => observer.unobserve(canvas);
+    return () => {
+      audioContext.close();
+    };
   }, [stream]);
-  return <><button style={{}} onClick={getUserMedia}>Click & Speak! </button>
-    <br/>
-    <canvas ref={canvasRef} style={{ width: '65svw', height: '28svh', border: '0.5px solid #0FF', borderRadius:'3svw' }} />
 
-  </>
+  return (
+    <>
 
-
+      <canvas
+        ref={canvasRef}
+        width={600}
+        height={400}
+        style={{
+          backgroundColor: "black",
+          border: "1px solid #0FF",
+          borderRadius: "20px", // Rounded corners
+        }}
+      />
+<br/>
+      <button onClick={getUserMedia}>Click & Speak!</button>
+    </>
+  );
 };
