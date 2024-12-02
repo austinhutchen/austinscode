@@ -137,9 +137,11 @@ const ExperienceItem: React.FC<{
     <div>
         <h2 className="hlight" >
             <b>
-                <u>{position}</u> ({period})
+                <u>{position}</u> 
             </b>
         </h2>
+<br/> ({period})
+    <br/>
         <h3>{description}</h3>
         <br />
     </div>
