@@ -35,7 +35,6 @@ export const Feedback: React.FC = () => {
                 <div className='feedback'>
                     <h1 className="hlight"><b>~FEEDBACK~ </b></h1>
                     <br />
-                    <ul>
                         <h2 className="hlight-mini">
                             <b><i><u>Letter of Rec from CU Boulder Math PHD/Instructor Ezzedine El Sai:</u></i></b>
                         </h2>
@@ -55,7 +54,6 @@ export const Feedback: React.FC = () => {
                         <div>
                             <ImageList images={data} />
                         </div>
-                    </ul>
                 </div>
             </div>
         </>
