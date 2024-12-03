@@ -1,3 +1,4 @@
+#!/bin/bash
 {
   rm -rf node_modules
   rm -rf package-lock.json
@@ -8,5 +9,5 @@
   npm install
   npm run predeploy
   npm run deploy
-} &
-echo 'COMPLETED RESET -- AUSTINSCODE'
+}& 
+{ echo 'COMPLETED RESET -- AUSTINSCODE' } 
