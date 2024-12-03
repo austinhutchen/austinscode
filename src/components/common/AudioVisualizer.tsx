@@ -88,8 +88,8 @@ export const AudioVisualizer: React.FC = () => {
 
       <canvas
         ref={canvasRef}
-        width={600}
-        height={400}
+        width={'70vw'}
+        height={'50vh'}
         style={{
           backgroundColor: "black",
           border: "1px solid #0FF",
