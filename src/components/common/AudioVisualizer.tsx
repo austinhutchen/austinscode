@@ -33,7 +33,6 @@ analyser.fftSize = 8192;
 const filter = audioContext.createBiquadFilter();
 filter.type = "lowpass";  // Approximates Chebyshev if you cascade filters
 filter.frequency.value = 1000; // Adjust to the desired cutoff frequency
-filter.Q.value = 0.7; // Quality factor for sharpness control
 
 // Connect nodes
 const source = audioContext.createMediaStreamSource(stream);
