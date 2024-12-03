@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 8192;
 
     const source = audioContext.createMediaStreamSource(stream);
     source.connect(analyser);
