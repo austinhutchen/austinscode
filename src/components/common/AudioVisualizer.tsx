@@ -84,6 +84,7 @@ export const AudioVisualizer: React.FC = () => {
 
   return (
     <>
+    <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
 
       <canvas
         ref={canvasRef}
@@ -96,7 +97,9 @@ export const AudioVisualizer: React.FC = () => {
         }}
       />
 <br/>
+    </div>
+
       <button onClick={getUserMedia}>Click & Speak!</button>
-    </>
+</>
   );
 };
