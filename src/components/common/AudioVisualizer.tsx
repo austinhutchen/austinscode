@@ -25,13 +25,20 @@ export const AudioVisualizer: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas || !stream) return;
 
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 8192;
+const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+const analyser = audioContext.createAnalyser();
+analyser.fftSize = 8192;
 
-    const source = audioContext.createMediaStreamSource(stream);
-    source.connect(analyser);
+// Create a BiquadFilterNode and configure it
+const filter = audioContext.createBiquadFilter();
+filter.type = "lowpass";  // Approximates Chebyshev if you cascade filters
+filter.frequency.value = 1000; // Adjust to the desired cutoff frequency
+filter.Q.value = 0.7; // Quality factor for sharpness control
 
+// Connect nodes
+const source = audioContext.createMediaStreamSource(stream);
+source.connect(filter);
+filter.connect(analyser);
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);
     const ctx = canvas.getContext("2d");
