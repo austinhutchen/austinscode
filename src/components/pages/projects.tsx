@@ -355,6 +355,8 @@ export const Projects: React.FC = () => {
       <div className="fadeSide" style={{ margin: '0 auto' }}>
         <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
         <br />
+        <img src ="https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode/fttaudiodata_en.svg" className="projImg"/>
+        <br/>
         <b>
           <p className='projDesc' style={{ fontSize: "0.9em" }} >
             <a> <h4 className='hlight-mini'>Enable microphone input</h4> </a> to visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
