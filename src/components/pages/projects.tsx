@@ -260,13 +260,14 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     </div>
   );
 };
-// Webcam Selector Component
 const WebcamSelector: React.FC = () => {
   const [webcams, setWebcams] = useState<MediaDeviceInfo[]>([]);
-  const [selectedDeviceId, setSelectedDeviceId] = useState<string>('');
-  const webcamRef = useRef<ReactWebcam | null>(null);
+  const [selectedDeviceId, setSelectedDeviceId] = useState<string | null>(null);
+  const [facingMode, setFacingMode] = useState<'user' | 'environment'>('user');
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   const [stream, setStream] = useState<MediaStream | null>(null);
 
+  // Get the list of available webcams
   useEffect(() => {
     const getWebcams = async () => {
       const devices = await navigator.mediaDevices.enumerateDevices();
@@ -274,43 +275,48 @@ const WebcamSelector: React.FC = () => {
       setWebcams(videoDevices);
 
       if (videoDevices.length > 0) {
-        setSelectedDeviceId(videoDevices[0].deviceId);
+        setSelectedDeviceId(videoDevices[0].deviceId); // Default to the first webcam
       }
     };
 
     getWebcams();
   }, []);
 
+  // Update stream whenever device or facing mode changes
   useEffect(() => {
-    if (selectedDeviceId) {
-      navigator.mediaDevices
-        .getUserMedia({
-          video: { deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined },
-        })
-        .then(newStream => {
-          if (webcamRef.current) {
-            webcamRef.current.video.srcObject = newStream;
-            setStream(newStream);
-          }
-        })
-        .catch((err) => {
-          console.error('Error accessing webcam:', err);
-        });
-    }
+    const getMediaStream = async () => {
+      const constraints = {
+        video: {
+          deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined,
+          facingMode, // Use 'user' for front or 'environment' for back
+        },
+      };
 
-    return () => {
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
+      try {
+        const newStream = await navigator.mediaDevices.getUserMedia(constraints);
+        if (videoRef.current) {
+          videoRef.current.srcObject = newStream;
+        }
+        setStream(newStream);
+      } catch (error) {
+        console.error('Error accessing webcam:', error);
       }
     };
-  }, [selectedDeviceId, stream]);
+
+    // Clean up previous stream
+    if (stream) {
+      stream.getTracks().forEach(track => track.stop());
+    }
+
+    getMediaStream();
+  }, [selectedDeviceId, facingMode]);
 
   return (
     <div>
-      <h3 className="hlight">Select Webcam:</h3> <br/>
+      <h3>Select Webcam or Switch Views:</h3>
       {webcams.length > 0 && (
         <select
-          value={selectedDeviceId}
+          value={selectedDeviceId || ''}
           onChange={(e) => setSelectedDeviceId(e.target.value)}
         >
           {webcams.map((webcam) => (
@@ -321,7 +327,22 @@ const WebcamSelector: React.FC = () => {
         </select>
       )}
 
-         </div>
+      <div style={{ marginTop: '10px' }}>
+        <button onClick={() => setFacingMode('user')}>Switch to Front Camera</button>
+        <button onClick={() => setFacingMode('environment')}>Switch to Back Camera</button>
+      </div>
+
+      <div style={{ marginTop: '10px' }}>
+        <video
+          ref={videoRef}
+          autoPlay
+          playsInline
+          width="640"
+          height="480"
+          style={{ border: '1px solid black' }}
+        />
+      </div>
+    </div>
   );
 };
 // Main Projects Component

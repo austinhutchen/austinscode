@@ -166,7 +166,7 @@ const experienceItems = [
         description: (
             <>
                 Built an RS232 C# NuGet library for ModBus ASCII/RTU drivers and simulators for quantum computing instruments at{" "}
-                <a href="https://www.formfactor.com/">FormFactor</a>. Drafted engineering decisions for near-zero Kelvin operations.
+                <a href="https://www.formfactor.com/">FormFactor</a>. Directly worked alongside the FormFactor Cryo Boulder team in development of FormFactor’s IQ3000 Spin-Qubit quantum computer system.
             </>
         ),
     },
