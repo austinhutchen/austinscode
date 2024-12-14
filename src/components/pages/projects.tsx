@@ -260,14 +260,13 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     </div>
   );
 };
+// Webcam Selector Component
 const WebcamSelector: React.FC = () => {
   const [webcams, setWebcams] = useState<MediaDeviceInfo[]>([]);
-  const [selectedDeviceId, setSelectedDeviceId] = useState<string | null>(null);
-  const [facingMode, setFacingMode] = useState<'user' | 'environment'>('user');
-  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [selectedDeviceId, setSelectedDeviceId] = useState<string>('');
+  const webcamRef = useRef<ReactWebcam | null>(null);
   const [stream, setStream] = useState<MediaStream | null>(null);
 
-  // Get the list of available webcams
   useEffect(() => {
     const getWebcams = async () => {
       const devices = await navigator.mediaDevices.enumerateDevices();
@@ -275,48 +274,43 @@ const WebcamSelector: React.FC = () => {
       setWebcams(videoDevices);
 
       if (videoDevices.length > 0) {
-        setSelectedDeviceId(videoDevices[0].deviceId); // Default to the first webcam
+        setSelectedDeviceId(videoDevices[0].deviceId);
       }
     };
 
     getWebcams();
   }, []);
 
-  // Update stream whenever device or facing mode changes
   useEffect(() => {
-    const getMediaStream = async () => {
-      const constraints = {
-        video: {
-          deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined,
-          facingMode, // Use 'user' for front or 'environment' for back
-        },
-      };
-
-      try {
-        const newStream = await navigator.mediaDevices.getUserMedia(constraints);
-        if (videoRef.current) {
-          videoRef.current.srcObject = newStream;
-        }
-        setStream(newStream);
-      } catch (error) {
-        console.error('Error accessing webcam:', error);
-      }
-    };
-
-    // Clean up previous stream
-    if (stream) {
-      stream.getTracks().forEach(track => track.stop());
+    if (selectedDeviceId) {
+      navigator.mediaDevices
+        .getUserMedia({
+          video: { deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined },
+        })
+        .then(newStream => {
+          if (webcamRef.current) {
+            webcamRef.current.video.srcObject = newStream;
+            setStream(newStream);
+          }
+        })
+        .catch((err) => {
+          console.error('Error accessing webcam:', err);
+        });
     }
 
-    getMediaStream();
-  }, [selectedDeviceId, facingMode]);
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach(track => track.stop());
+      }
+    };
+  }, [selectedDeviceId, stream]);
 
   return (
     <div>
-      <h3>Select Webcam or Switch Views:</h3>
+      <h3 className="hlight">Select Webcam:</h3> <br/>
       {webcams.length > 0 && (
         <select
-          value={selectedDeviceId || ''}
+          value={selectedDeviceId}
           onChange={(e) => setSelectedDeviceId(e.target.value)}
         >
           {webcams.map((webcam) => (
@@ -327,22 +321,7 @@ const WebcamSelector: React.FC = () => {
         </select>
       )}
 
-      <div style={{ marginTop: '10px' }}>
-        <button onClick={() => setFacingMode('user')}>Switch to Front Camera</button>
-        <button onClick={() => setFacingMode('environment')}>Switch to Back Camera</button>
-      </div>
-
-      <div style={{ marginTop: '10px' }}>
-        <video
-          ref={videoRef}
-          autoPlay
-          playsInline
-          width="640"
-          height="480"
-          style={{ border: '1px solid black' }}
-        />
-      </div>
-    </div>
+         </div>
   );
 };
 // Main Projects Component
@@ -394,16 +373,15 @@ export const Projects: React.FC = () => {
 <p className="hlight-mini">This project requires webcam permissions to run properly.</p>
       <WebcamSelector /> {/* Add Webcam Selector here */}
 
-
-      <br/>
-      {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
-
-      <br />
+   <br />
       <b>
         <p className='projDesc' style={{ fontSize: "0.9em" }} >
           to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!
         </p>
       </b>
+      {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+
+   
 
 
     {showWebcam && (
@@ -413,7 +391,7 @@ export const Projects: React.FC = () => {
       screenshotFormat="image/jpeg"
       className="webCam"
       videoConstraints={{ facingMode: "environment" }} // Adjust video settings
-      screenshotQuality={0} // Lower quality or none to reduce the preview impact
+      screenshotQuality={1} // Lower quality or none to reduce the preview impact
     />
     <br />
     <button onClick={captureImage}>Capture Photo</button>

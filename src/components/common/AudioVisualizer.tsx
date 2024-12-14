@@ -98,9 +98,9 @@ filter.connect(analyser);
         style={{
           backgroundColor: "black",
           border: "1px solid #0FF",
-          borderRadius: "20px", // Rounded corners
-          width: '300px',
-            height: '300px'
+          borderRadius: "3vw", // Rounded corners
+          width: '70svw',
+            height: '45svh'
         }}
       />
 <br/>
