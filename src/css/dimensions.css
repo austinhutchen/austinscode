@@ -78,8 +78,8 @@ html.has-scroll-smooth {
 .projImg  {
   max-height: 36vh;
   max-width: 36vw;
-  border: 0.15vw solid #0BA;
-  border-radius: 200/2;
+  border: 0.12em solid #0BA;
+  border-radius: 400/2;
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
@@ -87,10 +87,9 @@ html.has-scroll-smooth {
 }
 
 .projVid{
-  max-height: 36vh;
-  max-width: 36vw;
-  border: 0.15vw solid #0BA;
-  border-radius:200/2;
+ 
+  border: 0.12em solid #0BA;
+  border-radius:400/2;
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
