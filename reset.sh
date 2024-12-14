@@ -9,5 +9,4 @@
   npm install
   npm run predeploy
   npm run deploy
-}& 
-{ echo 'COMPLETED RESET -- AUSTINSCODE' } 
+} &
