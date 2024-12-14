@@ -178,11 +178,11 @@ a:hover {
 
 /* Base line styles */
 .line {
-  height: 8px; /* 0.5% of the viewport height */
+  height: 7px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
-  margin: 10px 0; /* Space between lines using viewport height */
+  margin: 11px 0; /* Space between lines using viewport height */
   transition: all 0.3s ease-in-out; /* Smooth transition */
-  width: 70px;
+  min-width: 55px;
 }
 
 /* Open state styles */
