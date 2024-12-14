@@ -163,13 +163,11 @@ const experienceItems = [
     {
         position: "Backend Software Engineer Intern (FormFactor)",
         period: "May 2024 - August 2024",
-        description: (
-            <>
-                Built an RS232 C# NuGet library for ModBus ASCII/RTU drivers and simulators for quantum computing instruments at{" "}
-                <a href="https://www.formfactor.com/">FormFactor</a>. Directly worked alongside the FormFactor Cryo Boulder team in development of FormFactor’s IQ3000 Spin-Qubit quantum computer system.
-            </>
-        ),
-    },
+      description: (
+  <>
+  Built and tested an RS485 C# NuGet library for ModBus ASCII/RTU drivers and simulators used at{" "}
+<a href="https://www.formfactor.com/" rel="noopener noreferrer">FormFactor</a>. Contributed to development on FormFactor Cryo's IQ-3000 Spin-Qubit quantum computer system, supporting near-zero Kelvin operations. Drafted engineering decisions for system optimization. </>
+),    },
     {
         position: "Calculus 2 Course Assistant (University of Colorado Boulder)",
         period: "January 2023 - May 2023",
