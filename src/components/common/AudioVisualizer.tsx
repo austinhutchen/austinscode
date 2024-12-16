@@ -98,8 +98,8 @@ filter.connect(analyser);
         style={{
           backgroundColor: "black",
           border: "1px solid #0FF",
-          borderRadius: "3vw", // Rounded corners
-          width: '70svw',
+          borderRadius: "2svw", // Rounded corners
+          width: '60svw',
             height: '45svh'
         }}
       />
