@@ -180,9 +180,9 @@ a:hover {
 .line {
   height: 5px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
-  margin: 10px 0; /* Space between lines using viewport height */
+  margin: 13px 0px; /* Space between lines using viewport height */
   transition: all 0.3s ease-in-out; /* Smooth transition */
-  min-width: 45px;
+  min-width: 52px;
 }
 
 /* Open state styles */
