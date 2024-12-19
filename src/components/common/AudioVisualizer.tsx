@@ -71,7 +71,7 @@ filter.connect(analyser);
       }
 
       // Draw frequency labels
-      ctx.font = "12px Arial";
+      ctx.font = "4px Arial";
       ctx.fillStyle = "#FFF";
       ctx.textAlign = "center";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
@@ -99,7 +99,7 @@ filter.connect(analyser);
           backgroundColor: "black",
           border: "1px solid #0FF",
           borderRadius: "2svw", // Rounded corners
-          width: '60svw',
+          width: '50svw',
             height: '45svh'
         }}
       />
