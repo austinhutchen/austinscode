@@ -71,8 +71,9 @@ filter.connect(analyser);
       }
 
       // Draw frequency labels
-      ctx.font = "1.1vmax Arial";
+      ctx.font = "1.1svw Arial";
       ctx.fillStyle = "#FFF";
+      ctx.textAlign = "left";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
       frequencies.forEach((freq) => {
         const pos = (freq / 20000) * canvas.width;
@@ -89,10 +90,11 @@ filter.connect(analyser);
 
   return (
     <>
-    <div style={{display:'grid',alignItems:'center',justifyContent:'center'}}>
+    <div style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
 
       <canvas
         ref={canvasRef}
+    
         style={{
           backgroundColor: "black",
           border: "1px solid #0FF",
