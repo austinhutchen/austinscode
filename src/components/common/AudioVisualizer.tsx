@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 8192;
+analyser.fftSize = 4096;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();
@@ -49,7 +49,9 @@ filter.connect(analyser);
       analyser.getByteFrequencyData(dataArray);
 
       // Clear with black background
-      ctx.fillStyle = "black";
+
+      ctx.fillStyle = "#333333";
+
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw gradient bars
@@ -58,10 +60,14 @@ filter.connect(analyser);
       let x = 0;
 
       const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-      gradient.addColorStop(0, "#FF00FF");
-      gradient.addColorStop(0.5, "#00FFFF");
-      gradient.addColorStop(1, "#00FF00");
+gradient.addColorStop(0, "#FF99FF"); // Light magenta
+gradient.addColorStop(0.5, "#99FFFF"); // Light cyan
+gradient.addColorStop(1, "#99FF99"); // Light green
+ctx.fillStyle = gradient;
 
+// Optional: Add glow for additional contrast
+ctx.shadowBlur = 10;
+ctx.shadowColor = "#FFFFFF"; // Bright white glow
       ctx.fillStyle = gradient;
 
       for (let i = 0; i < bufferLength; i++) {
@@ -71,11 +77,11 @@ filter.connect(analyser);
       }
 
       // Draw frequency labels
-      ctx.font = "1.1vmax Arial";
+      ctx.font = "1.1vmin Arial";
       ctx.fillStyle = "#FFF";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
       frequencies.forEach((freq) => {
-        const pos = (freq / 20000) * canvas.width;
+        const pos = ((freq / 20000) * canvas.width);
         ctx.fillText(`${freq} Hz`, pos, canvas.height - 10);
       });
     };
@@ -94,7 +100,7 @@ filter.connect(analyser);
       <canvas
         ref={canvasRef}
         style={{
-          backgroundColor: "black",
+          backgroundColor: "#333333",
           border: "1px solid #0FF",
           borderRadius: "2svw", // Rounded corners
           width: '42svw',
