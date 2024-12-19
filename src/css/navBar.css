@@ -12,7 +12,6 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-rows: 1fr auto;
-
 }
 
 @keyframes linesIn {
@@ -143,7 +142,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   /* Add this line */
-  max-width: max-content;
+
 }
 
 .custom-navbar {
@@ -269,7 +268,4 @@ a:active {
   position: relative;
 }
 
-.nav-icon {
-  border-image-source: url('../../public/fast_imgs/border.webp');
-  border-image-width: 4svh;
-}
+

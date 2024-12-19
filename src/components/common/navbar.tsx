@@ -9,6 +9,7 @@ export const NavBar: React.FC = () => {
   const instagram = process.env.PUBLIC_URL + '/fast_imgs/Instagram.webp';
   const linkedin = process.env.PUBLIC_URL + '/fast_imgs/LinkedIn.webp';
   const facebook = process.env.PUBLIC_URL + '/fast_imgs/Facebook.webp';
+  const handshake = process.env.PUBLIC_URL + '/fast_imgs/handshake.webp';
   const home = process.env.PUBLIC_URL + '/fast_imgs/home.webp';
   const about = process.env.PUBLIC_URL + '/fast_imgs/About.webp';
   const projects = process.env.PUBLIC_URL + '/fast_imgs/Circuit.webp';
@@ -46,7 +47,7 @@ export const NavBar: React.FC = () => {
   return (
     <div>
     <Navbar className="custom-navbar">
-      <div className="navbar-header flex">
+      <div className="navbar-header ">
         <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
         <img className="clickIcon" height="66px" width="auto" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={isOpen} />
@@ -54,37 +55,37 @@ export const NavBar: React.FC = () => {
       <div className='collapse-container'>
       <Collapse isOpen={isOpen} navbar >
         <Nav >
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
               <img src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
               <img src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Electronics</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button  style={{ border: '1px solid white' }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
@@ -94,7 +95,7 @@ export const NavBar: React.FC = () => {
                 </a>
               </Button>
             </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
@@ -102,7 +103,7 @@ export const NavBar: React.FC = () => {
               </a>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
                 <img src={instagram} width={icon_width} height={icon_height} alt="instagram" />
@@ -110,7 +111,7 @@ export const NavBar: React.FC = () => {
               </a>
             </Button>
           </NavItem>
-          <NavItem className="nav-item flex justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_width} height={icon_height} alt="facebook" />
@@ -118,7 +119,14 @@ export const NavBar: React.FC = () => {
               </a>
             </Button>
           </NavItem>
-
+          <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://boulder.joinhandshake.com/profiles/tr9eud" target="_blank" rel="noopener noreferrer">
+                <img src={handshake} width={icon_width} height={icon_height} alt="handshake" />
+                <h3>Handshake</h3>
+              </a>
+            </Button>
+          </NavItem>
           
           </Nav>
         </Collapse>
