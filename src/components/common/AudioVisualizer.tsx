@@ -77,7 +77,7 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1.3vmin Arial";
+      ctx.font = "1.3vh Arial";
       ctx.fillStyle = "#FFF";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
       frequencies.forEach((freq) => {
