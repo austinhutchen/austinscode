@@ -21,20 +21,9 @@ html {
   background: radial-gradient(ellipse at 50% 50%, rgba(128, 128, 128, 1) 0%, rgba(175, 80, 76, 1) 13%, rgba(81, 12, 114, 1) 25%, rgba(108, 21, 94, 1) 38%, rgba(57, 17, 93, 1) 50%, rgba(0, 133, 255, 1) 75%, rgba(128, 128, 128, 1) 100%);
 }
 
-.webCam{
-width: auto;
-height: 60vw;
-}
 
 .introText {
-  max-width: 99.3vw;
   margin: 0 auto;
-}
-
-.lorentz-attractor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .animateLand {
@@ -50,7 +39,7 @@ height: 60vw;
   align-items: center;
   margin: auto;
   justify-content: center;
-  max-width: 54%;
+  max-width: 54svw;
 }
 
 
@@ -64,7 +53,7 @@ height: 60vw;
 
 
 .nerdGif img {
-  height: 14svh !important;
+  height: 15svh !important;
 }
 
 .lorentz {
@@ -147,20 +136,7 @@ height: 60vw;
   height: auto;
 }
 
-@media (max-width: 650px) {
-  .projDesc {
-    max-width: 80%;
-  }
 
-  .landImage {
-    flex-direction: column;
-  }
-
-  .landImage img {
-    max-width: 100%;
-
-  }
-}
 
 @keyframes fadeSide {
   0% {
