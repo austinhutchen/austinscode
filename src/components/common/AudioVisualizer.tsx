@@ -66,7 +66,7 @@ gradient.addColorStop(1, "#99FF99"); // Light green
 ctx.fillStyle = gradient;
 
 // Optional: Add glow for additional contrast
-ctx.shadowBlur = 10;
+ctx.shadowBlur = 4;
 ctx.shadowColor = "#FFFFFF"; // Bright white glow
       ctx.fillStyle = gradient;
 
@@ -77,7 +77,7 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1.1vmin Arial";
+      ctx.font = "1.3vmin Arial";
       ctx.fillStyle = "#FFF";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
       frequencies.forEach((freq) => {
@@ -96,21 +96,22 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
   return (
     <>
     <div style={{display:'grid',alignItems:'center',justifyContent:'center'}}>
+      <button className="hlight" onClick={getUserMedia}> <h4> Enable Microphone Input</h4></button>
 
       <canvas
         ref={canvasRef}
         style={{
           backgroundColor: "#333333",
           border: "1px solid #0FF",
-          borderRadius: "2svw", // Rounded corners
-          width: '42svw',
-            height: '42svh'
+          borderRadius: "1.5svw", // Rounded corners
+          width: '50vw',
+            height: '35vh'
         }}
       />
 <br/>
     </div>
 
-      <button onClick={getUserMedia}>Click & Speak!</button>
+
 </>
   );
 };
