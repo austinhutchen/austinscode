@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 4096;
+analyser.fftSize = 4096*2;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();
@@ -60,9 +60,9 @@ filter.connect(analyser);
       let x = 0;
 
       const gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-gradient.addColorStop(0, "#FF99FF"); // Light magenta
-gradient.addColorStop(0.5, "#99FFFF"); // Light cyan
-gradient.addColorStop(1, "#99FF99"); // Light green
+gradient.addColorStop(0, "#FF66FF"); // Vibrant magenta
+gradient.addColorStop(0.5, "#66FFFF"); // Vibrant cyan
+gradient.addColorStop(1, "#66FF66"); // Vibrant green
 ctx.fillStyle = gradient;
 
 // Optional: Add glow for additional contrast
@@ -77,7 +77,7 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1.3vh Arial";
+      ctx.font = "1.1svh Arial";
       ctx.fillStyle = "#FFF";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
       frequencies.forEach((freq) => {
@@ -103,8 +103,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
         style={{
           backgroundColor: "#333333",
           border: "1px solid #0FF",
-          borderRadius: "1.5svw", // Rounded corners
-          width: '50vw',
+          borderRadius: "1.0svw", // Rounded corners
+          width: '60svw',
             height: '35vh'
         }}
       />
