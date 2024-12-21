@@ -179,9 +179,9 @@ a:hover {
 .line {
   height: 5px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
-  margin: 10px 0px; /* Space between lines using viewport height */
-  transition: all 0.4s cubic-bezier(.17,.67,.83,.79); /* Smooth transition */
-  min-width: 54px;
+  margin: 11px 1px; /* Space between lines using viewport height */
+  transition: all 0.7s linear; /* Smooth transition */
+  min-width: 57px;
 }
 /* Open state styles */
 .line-open {
