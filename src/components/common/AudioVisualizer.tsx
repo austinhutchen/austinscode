@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 4096*2;
+analyser.fftSize = 4096;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();

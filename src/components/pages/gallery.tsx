@@ -43,8 +43,10 @@ export const Visualizer: React.FC = () => {
 
 
       <br />
-
-
+      <b>
+        <h2 className="hlight"> ADJUSTABLE FREQUENCY BIRD CHIRP GENERATOR (PIEZOELECRIC, SOLAR POWERED)</h2>
+      </b>
+<br/>
     </>
   );
 };
