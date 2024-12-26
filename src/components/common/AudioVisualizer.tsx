@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 2048;
+analyser.fftSize = 8192;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();
@@ -79,7 +79,7 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       // Draw frequency labels
       ctx.font = "1.1svh Arial";
       ctx.fillStyle = "#FFF";
-      const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
+      const frequencies = [0, 500, 1000, 2000, 4000, 8000,16000];
       frequencies.forEach((freq) => {
         const pos = ((freq / 20000) * canvas.width);
         ctx.fillText(`${freq} Hz`, pos, canvas.height - 10);
@@ -105,7 +105,7 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
           border: "1px solid #0FF",
           borderRadius: "1.0svw", // Rounded corners
           width: '60svw',
-            height: '35vh'
+            height: '35svh'
         }}
       />
 <br/>
