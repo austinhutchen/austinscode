@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 4096;
+analyser.fftSize = 2048;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();
@@ -66,7 +66,7 @@ gradient.addColorStop(1, "#66FF66"); // Vibrant green
 ctx.fillStyle = gradient;
 
 // Optional: Add glow for additional contrast
-ctx.shadowBlur = 4;
+ctx.shadowBlur = 1;
 ctx.shadowColor = "#FFFFFF"; // Bright white glow
       ctx.fillStyle = gradient;
 
