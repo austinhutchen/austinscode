@@ -66,9 +66,7 @@ gradient.addColorStop(1, "#66FF66"); // Vibrant green
 ctx.fillStyle = gradient;
 
 // Optional: Add glow for additional contrast
-ctx.shadowBlur = 1;
 ctx.shadowColor = "#FFFFFF"; // Bright white glow
-      ctx.fillStyle = gradient;
 
       for (let i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
@@ -77,12 +75,11 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1.1svh Arial";
-      ctx.fillStyle = "#FFF";
+      ctx.font = "0.8svw Arial";
       const frequencies = [0, 500, 1000, 2000, 4000, 8000,16000];
       frequencies.forEach((freq) => {
         const pos = ((freq / 20000) * canvas.width);
-        ctx.fillText(`${freq} Hz`, pos, canvas.height - 10);
+        ctx.fillText(`${freq} Hz`, pos, canvas.height - 5);
       });
     };
 
@@ -104,8 +101,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
           backgroundColor: "#333333",
           border: "1px solid #0FF",
           borderRadius: "1.0svw", // Rounded corners
-          width: '60svw',
-            height: '35svh'
+          width: '70svw',
+            height: '38svh'
         }}
       />
 <br/>
