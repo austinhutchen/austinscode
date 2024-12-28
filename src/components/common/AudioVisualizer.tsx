@@ -75,9 +75,9 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1vmin Arial";
+      ctx.font = "1vmax Arial";
       const frequencies = [ 500,4000, 8000,16000];
- const spacing = 12; // Minimum spacing between labels
+ const spacing = 10; // Minimum spacing between labels
 
 frequencies.forEach((freq, index) => {
   const pos = ((freq / 20000) * canvas.width);
