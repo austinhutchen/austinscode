@@ -32,17 +32,28 @@ html {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
-
 .projDesc {
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: auto;
-  justify-content: center;
-  max-width: 54svw;
+  max-width: 54vw;
 }
 
+.projDesc div.fadeSide {
+  background-color: #D2B48C; /* Slightly tan color */
+  padding: 20px;
+  border-radius: 10px; /* Rounded edge */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  margin-bottom: 20px;
+}
+
+.projDesc div.fadeSide p {
+  color: #FFFFFF; /* White text for high visibility */
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
 
 .nerdGif {
   display: flex;
