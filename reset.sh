@@ -61,13 +61,9 @@ log "Running deploy script..."
 npm run deploy || { log "Deploy script failed"; exit 1; }
 
 # Optional: Parallelize deployments (uncomment if needed)
-# log "Running parallel deployments..."
-# npm run deploy:production &
-# npm run deploy:staging &
-# wait
+log "Running parallel deployments..."
+npm run deploy:production &
+npm run deploy:staging &
 
-# Notify on completion
-log "Sending deployment notification to Slack..."
-curl -X POST -H 'Content-type: application/json' --data '{"text":"Deployment completed successfully!"}' https://hooks.slack.com/services/your/webhook/url || { log "Failed to send Slack notification"; exit 1; }
 
 log "Deployment script completed successfully!"
