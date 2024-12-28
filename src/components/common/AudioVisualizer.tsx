@@ -75,12 +75,32 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "0.8svw Arial";
-      const frequencies = [0, 500, 1000, 2000, 4000, 8000,16000];
-      frequencies.forEach((freq) => {
-        const pos = ((freq / 20000) * canvas.width);
-        ctx.fillText(`${freq} Hz`, pos, canvas.height - 5);
-      });
+      ctx.font = "1vmin Arial";
+      const frequencies = [ 500,4000, 8000,16000];
+ const spacing = 12; // Minimum spacing between labels
+
+frequencies.forEach((freq, index) => {
+  const pos = ((freq / 20000) * canvas.width);
+  const text = `${freq} Hz`;
+  const textWidth = ctx.measureText(text).width;
+
+  // Ensure text stays within canvas bounds
+  let xPos = Math.min(pos, canvas.width - textWidth - spacing);
+
+  // Avoid overlap with the previous label
+  if (index > 0) {
+    const prevFreq = frequencies[index - 1];
+    const prevPos = ((prevFreq / 20000) * canvas.width);
+    const prevTextWidth = ctx.measureText(`${prevFreq} Hz`).width;
+    const prevXPos = Math.min(prevPos, canvas.width - prevTextWidth - spacing);
+
+    if (xPos < prevXPos + prevTextWidth + spacing) {
+      xPos = prevXPos + prevTextWidth + spacing;
+    }
+  }
+
+  ctx.fillText(text, xPos, canvas.height - 5);
+});
     };
 
     draw();
@@ -101,8 +121,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
           backgroundColor: "#333333",
           border: "1px solid #0FF",
           borderRadius: "1.0svw", // Rounded corners
-          width: '70svw',
-            height: '38svh'
+          width: '100%',
+            height: '40svh'
         }}
       />
 <br/>
