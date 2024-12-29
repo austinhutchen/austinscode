@@ -76,8 +76,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
 
       // Draw frequency labels
       ctx.font = "1vmax Arial";
-      const frequencies = [ 500,4000, 8000,16000];
- const spacing = 10; // Minimum spacing between labels
+      const frequencies = [500,4000, 8000,16000];
+ const spacing = 8; // Minimum spacing between labels
 
 frequencies.forEach((freq, index) => {
   const pos = ((freq / 20000) * canvas.width);
@@ -113,6 +113,7 @@ frequencies.forEach((freq, index) => {
   return (
     <>
     <div style={{display:'grid',alignItems:'center',justifyContent:'center'}}>
+
       <button className="hlight" onClick={getUserMedia}> <h4> Enable Microphone Input</h4></button>
 
       <canvas

@@ -372,15 +372,18 @@ export const Projects: React.FC = () => {
       <WebcamSelector /> {/* Add Webcam Selector here */}
 
 
-      {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+
 
       <br />
-      <b>
-        <p className='projDesc' style={{ fontSize: "0.9em" }} >
+  
+    <div className="projDesc">
+        <div className="fadeSide" style={{ margin: '0 auto'}}>
+          <br />
+                {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+<br/>
           to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!
-        </p>
-      </b>
-
+        </div>
+      </div>
 
     {showWebcam && (
   <>

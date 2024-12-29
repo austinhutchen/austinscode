@@ -42,10 +42,10 @@ html {
 }
 
 .projDesc div.fadeSide {
-  background-color: rgba(210, 180, 140, 0.6); /* Slightly tan with enhanced opacity */
+  background-color: rgba(210, 180, 140, 0.4); /* Slightly tan with enhanced opacity */
   padding: 25px; /* Add more padding for elegance */
   border-radius: 12px; /* Softer rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced drop shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
   margin-bottom: 20px; /* Space between elements */
   border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
   backdrop-filter: blur(6px); /* Adds a glassy effect */
@@ -53,8 +53,8 @@ html {
 
 .projDesc div.fadeSide p {
   color: #FAF9F6; /* Slightly off-white for a softer look */
-  font-size: 20px; /* Slightly larger font for readability */
-  line-height: 1.8; /* Improved line spacing for readability */
+  font-size: 0.9rem; /* Slightly larger font for readability */
+  line-height: 1.4; /* Improved line spacing for readability */
   text-align: center; /* Center-align text */
   font-family: 'Arial', sans-serif; /* Clean, professional font */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow for better contrast */
