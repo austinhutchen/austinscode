@@ -74,7 +74,7 @@ html.has-scroll-smooth {
 }
 
 .projImg  {
-  height: 40svh;
+  height: 46svh;
   width: 40svw;
 
   border: 0.12em solid #0BA;
@@ -99,7 +99,7 @@ html.has-scroll-smooth {
 
 .projVid video{
   width: 50svw;
-   height: 40svh;
+   height: 46svh;
 
 
 }
