@@ -43,10 +43,10 @@ html {
 
 .projDesc div.fadeSide {
   background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
-  padding: 25px; /* Add more padding for elegance */
+  padding: 15px; /* Add more padding for elegance */
   border-radius: 12px; /* Softer rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
-  margin-bottom: 20px; /* Space between elements */
+  margin-bottom: 10px; /* Space between elements */
   border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
   backdrop-filter: blur(6px); /* Adds a glassy effect */
 }

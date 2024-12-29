@@ -74,8 +74,8 @@ html.has-scroll-smooth {
 }
 
 .projImg  {
-  max-height: 36svh;
-  max-width: 36svw;
+  max-height: 40svh;
+  max-width: 40svw;
 
   border: 0.12em solid #0BA;
   border-radius: 200/2;
@@ -86,10 +86,11 @@ html.has-scroll-smooth {
 }
 
 .projVid {
+  border: 0.10em solid #0BA;
 
-
-  border: 0.12em solid #0BA;
   border-radius: 200/2;
+
+
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
@@ -97,8 +98,9 @@ html.has-scroll-smooth {
 }
 
 .projVid video{
-  max-width: 50svw;
-   max-height: 36svh;
+  width: 50svw;
+   height: 40svh;
+
 
 }
 .projContent {
