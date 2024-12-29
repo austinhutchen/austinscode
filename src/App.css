@@ -37,12 +37,12 @@ html {
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 70svw; /* Adjusted for responsiveness */
+  max-width: 75svw; /* Adjusted for responsiveness */
   padding: 20px;
 }
 
 .projDesc div.fadeSide {
-  background-color: rgba(210, 180, 140, 0.4); /* Slightly tan with enhanced opacity */
+  background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
   padding: 25px; /* Add more padding for elegance */
   border-radius: 12px; /* Softer rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
