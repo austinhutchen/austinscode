@@ -27,9 +27,9 @@ export const Visualizer: React.FC = () => {
       </b>
       <br />
 
-      <h4 className="lead" >
+      <p className="projDesc">
         I built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
-      </h4>
+      </p>
       <br />
       <div className="analogCircuits" >
         <img src={images.schematic}  id="rotate-180" className="projImg" />

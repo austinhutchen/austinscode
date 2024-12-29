@@ -357,7 +357,11 @@ export const Projects: React.FC = () => {
         <br />
         <b>
           <p className='projDesc' style={{ fontSize: "0.9em" }} >
-            Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
+            <div className='fadeSide'>
+                          Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
+
+            </div>
+
           </p>
         </b>
       </div>
