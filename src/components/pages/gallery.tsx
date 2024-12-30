@@ -8,7 +8,7 @@ export const Visualizer: React.FC = () => {
   type Images = Record<string, string>;
   const images: Images = {
     bipolaroutput: getImgPath('bipolarPSUoutput.webp'),
-    transformer: getImgPath('IMG_4393.jpeg'),
+    transformer: getImgPath('IMG_4393.webp'),
     volts: getImgPath('DCvoltage.webp'),
     schematic: getImgPath('IMG_4052.webp')
     // Add other images here
