@@ -21,16 +21,20 @@ export const Visualizer: React.FC = () => {
       <h1 className="hlight"> Welcome to my fun page!</h1>
       <p className="lead"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </p>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
-      <hr className="my-4" />
       <b>
         <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>
       <br />
 
       <p className="projDesc">
-        I built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
-      </p>
-      <br />
+
+     <div className="fadeSide">
+ I built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+
+        </div>
+              </p>
+
+             <br />
       <div className="analogCircuits" >
         <img src={images.schematic}  id="rotate-180" className="projImg" />
         <img src={images.bipolaroutput} className="projImg" />
