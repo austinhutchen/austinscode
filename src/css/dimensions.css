@@ -74,8 +74,8 @@ html.has-scroll-smooth {
 }
 
 .projImg  {
-  height: 46svh;
-  width: 40svw;
+  height: 46vh;
+  width: 46vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
   border: 0.10em solid #0BA;
   border-radius: 200/2;
@@ -98,8 +98,8 @@ html.has-scroll-smooth {
 }
 
 .projVid video{
-  width: 50svw;
-   height: 46svh;
+  width: 50vw;
+   height: 46vh;
 
 
 }
