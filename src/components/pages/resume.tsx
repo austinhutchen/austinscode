@@ -12,14 +12,13 @@ const support = process.env.PUBLIC_URL + '/fast_imgs/support.webp';
 const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
     <ul>
         {images.map((src, index) => (
-            <li key={`img_${index}`}>
+            <li           style={{listStyleType:"none"}} key={`img_${index}`}>
                 <img
                     src={src}
-                    className="format-img"
-                    style={{ maxHeight: "70svh", maxWidth: "70svw" }}
-                    loading="eager"
+                    className="letters"
                     alt={`Image_${index}`}
                 />
+        <br/>
             </li>
         ))}
     </ul>
@@ -51,9 +50,8 @@ export const Feedback: React.FC = () => {
                             <b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b>
                         </h2>
                         <br />
-                        <div>
+            
                             <ImageList images={data} />
-                        </div>
                 </div>
             </div>
         </>
