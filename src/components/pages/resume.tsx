@@ -132,7 +132,9 @@ const ExperienceItem: React.FC<{
     period: string;
     description: React.ReactNode;
 }> = ({ position, period, description }) => (
-    <div>
+    <div className="projDesc">
+    < div className="fadeSide">
+
         <h2 className="hlight" >
             <b>
                 <u>{position}</u> 
@@ -140,8 +142,11 @@ const ExperienceItem: React.FC<{
         </h2>
 <br/> ({period})
     <br/>
+    
         <h3>{description}</h3>
         <br />
+            </div>
+
     </div>
 );
 
