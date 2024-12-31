@@ -40,7 +40,9 @@ html {
   max-width: 75svw; /* Adjusted for responsiveness */
   padding: 15px;
 }
-
+.letters{
+max-width:75svw; 
+}
 .projDesc div.fadeSide {
   background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
   padding: 15px; /* Add more padding for elegance */
