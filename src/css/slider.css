@@ -1,45 +1,90 @@
-/* PHONE styles */
- @media all and (max-device-width: 767px) {
-   #name {
-     font-size: 1.9em;
-   }
+/* About section container */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2vh;
+  overflow: hidden;
+}
 
-   .sc p {
-     font-size: 0.60em;
-   }
+/* Slider container */
+.slider {
+  position: relative;
+  width: 90vw;
+  max-width: 80vh; /* Ensures a square-like scaling */
+  height: 60vh;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
-   .aboutSlider img,
-   video {
-     height: 43vh;
-     margin: 0 auto;
-     max-width: 72vw;
-     max-height: 63vh;
-     border-radius: 20%;
-     border-width: 2vw;
+/* Slider inner wrapper for slides */
+.slider-inner {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in-out;
+}
 
-   }
+/* Each slide item */
+.slider-item {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
- }
+/* Images and videos styling */
+.slider-item img,
+.slider-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
 
- /* Default styles */
- @media not all and (max-device-width: 767px) {
-   #name {
-     font-size: 2.4em;
-   }
+/* Navigation arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
-   .sc p {
-     font-size: 1.25em;
-   }
+.slider-arrow.left {
+  left: 1rem;
+}
 
-   .aboutSlider img,
-   video {
-     height: 44vh;
-     margin: 0 auto;
-     max-width: 72vw;
-     max-height: 63vh;
-     border-radius: 10%;
-     border-width: 2vw;
+.slider-arrow.right {
+  right: 1rem;
+}
 
-   }
-
- }
+/* Description section (now below the slider) */
+.slider-desc {
+  margin-top: 1.5vh;
+  width: 80%;
+  text-align: center;
+  font-size: 1.2vw;
+  font-family: 'Gill Sans', Calibri, sans-serif;
+  font-weight: 400;
+  color: cornsilk;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
