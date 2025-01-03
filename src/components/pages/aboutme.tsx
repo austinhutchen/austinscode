@@ -245,7 +245,7 @@ export const Aboutme: React.FC = () => (
   <>
     <NavBar />
     <div style={{ textAlign: "center", margin: "20px 0" }}>
-      <h1 style={{ fontSize: "2rem", fontWeight: "bold" }}>ABOUT:</h1>
+      <h1 className="hlight">ABOUT:</h1>
     </div>
     <div className="aboutImg">
     <About keys={keys} />
