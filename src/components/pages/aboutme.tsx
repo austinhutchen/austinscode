@@ -117,7 +117,7 @@ const About: React.FC = () => {
       style={{
         position: "relative",
         width: "100%",
-        maxHeight: "60svh",
+        
         overflow: "hidden",
         display: "flex",
         borderRadius: '10px',
@@ -130,7 +130,7 @@ const About: React.FC = () => {
         style={{
           display: "flex",
           flexDirection: "row",
-          width: `${keys.length * 100}%`,
+          width: `100%`,
           height: "100%",
           transform: `translateX(-${currentIndex * 100}%)`,
           transition: "transform 0.2s ease-in-out",

@@ -4,7 +4,6 @@ import React, { useEffect, useRef,useState } from "react";
 import ReactWebcam from 'react-webcam';
 import { AudioVisualizer } from "../common/AudioVisualizer";
 import { NavBar } from "../common/navbar";
-import "slick-carousel/slick/slick.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import "../../css/slider.css";
