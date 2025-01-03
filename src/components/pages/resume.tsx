@@ -61,7 +61,7 @@ export const Resume: React.FC = () => (
     <>
         <NavBar />
 
-        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" style={{ maxWidth: '68vw', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg">
 
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
@@ -100,7 +100,7 @@ export const Resume: React.FC = () => (
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
                 alt="GitHub streak stats"
                 className="my-1"
-                style={{ width: '100%', height: '150px' }}
+                style={{ width: '100%', height: '50svh' }}
             />
 
 
