@@ -179,8 +179,8 @@ const About: React.FC = () => {
               <p
                 style={{
                   color: "cornsilk",
-                  fontSize: "1.2rem",
-                  maxWidth: '50svw',
+                  fontSize: "1.0rem",
+                  maxWidth: '90svw',
                   fontFamily: "Gill Sans, Calibri, sans-serif",
                   fontWeight: 350,
                   textAlign: "center"
