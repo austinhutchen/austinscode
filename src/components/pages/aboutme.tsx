@@ -111,49 +111,14 @@ const About: React.FC = () => {
       sliderRef.current.style.transition = "transform 0.5s ease-in-out";
     }
   };
-
-  return (
-    <div
-      style={{
-        position: "relative",
-        width: "100%",
-        
-        overflow: "hidden",
-        display: "flex",
-        borderRadius: '10px',
-        boxShadow: 'inset',
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: `100%`,
-          height: "100%",
-          transform: `translateX(-${currentIndex * 100}%)`,
-          transition: "transform 0.2s ease-in-out",
-        }}
-        ref={sliderRef}
-      >
+return (
+  <div className="about-container">
+    <div className="slider">
+      <div className="slider-inner" ref={sliderRef}>
         {keys.map((data, index) => (
-          <div
-            key={index}
-            style={{
-              flex: "0 0 100%",
-              height: "100%",
-              position: "relative",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="slider-item" key={index}>
             {data.type === "image" ? (
-              <img
-                src={data.url}
-                alt="Project"
-                         />
+              <img src={data.url} alt="Slide" />
             ) : (
               <video
                 autoPlay
@@ -163,84 +128,33 @@ const About: React.FC = () => {
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
                 src={data.url}
-                           />
+              />
             )}
-            <div
-              style={{
-                position: "absolute",
-                bottom: "5%",
-                left: "50%",
-                transform: "translateX(-50%)",
-                backgroundColor: "rgba(0, 0, 0, 0.7)",
-                padding: "10px 20px",
-                borderRadius: "8px",
-              }}
-            >
-              <p
-                style={{
-                  color: "cornsilk",
-                  fontSize: "1.0rem",
-                  maxWidth: '90svw',
-                  fontFamily: "Gill Sans, Calibri, sans-serif",
-                  fontWeight: 350,
-                  textAlign: "center"
-                }}
-              >
-                <b>{data.desc}</b>
-              </p>
-            </div>
           </div>
         ))}
       </div>
-
       <button
+        className="slider-arrow left"
         onClick={() => handleSliderNavigation("prev")}
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "20px",
-          transform: "translateY(-50%)",
-          zIndex: 2,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          color: "white",
-          border: "none",
-          borderRadius: "50%",
-          width: "40px",
-          height: "40px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-        }}
       >
-        <HiArrowNarrowLeft size="1.5rem" />
+        <HiArrowNarrowLeft size="2rem" />
       </button>
       <button
+        className="slider-arrow right"
         onClick={() => handleSliderNavigation("next")}
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: "20px",
-          transform: "translateY(-50%)",
-          zIndex: 2,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          color: "white",
-          border: "none",
-          borderRadius: "50%",
-          width: "40px",
-          height: "40px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
-        }}
       >
-        <HiArrowNarrowRight size="1.5rem" />
+        <HiArrowNarrowRight size="2rem" />
       </button>
     </div>
-  );
+    {/* Moved the description below the slider */}
+    <div className="slider-desc">
+      <p>
+        <b>{keys[currentIndex].desc}</b>
+      </p>
+    </div>
+  </div>
+);
 };
-
 export const Aboutme: React.FC = () => (
   <>
     <NavBar />
