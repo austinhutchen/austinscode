@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavBar } from "../common/navbar";
-
 const rec_letter = process.env.PUBLIC_URL + '/fast_imgs/REC_LETTER.webp';
 
 const inclusion = process.env.PUBLIC_URL + '/fast_imgs/inclusion.webp';
@@ -40,8 +39,7 @@ export const Feedback: React.FC = () => {
                         <br />
                         <img
                             src={rec_letter}
-                            style={{ maxHeight: "75svh", width: "100%" }}
-                            loading="eager"
+                            style={{ width: "100%" }}
                             alt="Math_PhD_Students_Letter"
                         />
                         <br />
@@ -61,7 +59,7 @@ export const Resume: React.FC = () => (
     <>
         <NavBar />
 
-        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg">
+        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" >
 
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
@@ -130,7 +128,7 @@ const ExperienceItem: React.FC<{
     period: string;
     description: React.ReactNode;
 }> = ({ position, period, description }) => (
-    <div className="projDesc">
+    <div className="projDesc" style={{maxWidth:'70svw'}}>
     < div className="fadeSide">
 
         <h2 className="hlight" >
