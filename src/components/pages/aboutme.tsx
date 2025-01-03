@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
 import Slider from "react-slick";
 import "../../css/slider.css";
@@ -85,35 +85,43 @@ const keys = [
 
 // Common styles for image and video components
 
+interface SliderProps {
+  keys: Array<{ type: string; url: string; desc: string }>;
+}
+interface Key {
+  desc: string;
+  url: string;
+  type: 'image' | 'video';
+}
 
-const About: React.FC = () => {
-  const settings = {
-    slidesToShow: 1,
-    centerMode: true,
-    width: '100%',
-    arrows: false,
-    slidesToScroll: 1,
-    infinite: true,
-    fade: true,
-    cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
-    dots: false,
-  };
-  const slider: React.RefObject<Slider> = useRef<Slider>(null);
+interface SliderProps {
+  keys: Key[]; // Define the expected structure of the keys array
+}
+
+const About: React.FC<SliderProps> = ({ keys }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    if (slider?.current) {
-      direction === 'prev' ? slider.current.slickPrev() : slider.current.slickNext();
+    const newIndex =
+      direction === 'prev'
+        ? (currentIndex - 1 + keys.length) % keys.length
+        : (currentIndex + 1) % keys.length;
+    setCurrentIndex(newIndex);
+
+    // Animate sliding
+    if (sliderRef.current) {
+      sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
     }
   };
+
   return (
-    <div className="sc">
-      <Slider ref={slider} {...settings}>
+    <div className="slider-container">
+      <div className="slider" ref={sliderRef}>
         {keys.map((data, index) => (
-          <div className="aboutSlider" key={index}>
-            {data.type === "image" ? (
-              <img
-                src={data.url}
-                alt="Project Image"
-              />
+          <div className="slider-item" key={index}>
+            {data.type === 'image' ? (
+              <img src={data.url} alt="Project Image" />
             ) : (
               <video
                 autoPlay
@@ -125,31 +133,33 @@ const About: React.FC = () => {
                 src={data.url}
               />
             )}
-            <fieldset className="projDesc" >
-              <p style={{
-                color: 'cornsilk',
-                fontSize: "2svh",
-                fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif",
-                fontWeight: 350,
-                textAlign: 'center',
-              }}>
+            <fieldset className="projDesc">
+              <p
+                style={{
+                  color: 'cornsilk',
+                  fontSize: '2svh',
+                  fontFamily:
+                    'Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif',
+                  fontWeight: 350,
+                  textAlign: 'center',
+                }}
+              >
                 <b className="legend">{data.desc}</b>
               </p>
             </fieldset>
-            <button onClick={() => handleSliderNavigation('prev')}>
-              <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
-            </button>
-            <button onClick={() => handleSliderNavigation('next')}>
-              <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
-            </button>
           </div>
         ))}
-      </Slider>
+      </div>
+
+      <button onClick={() => handleSliderNavigation('prev')} className="nav-button prev">
+        <HiArrowNarrowLeft size={'1.9em'} />
+      </button>
+      <button onClick={() => handleSliderNavigation('next')} className="nav-button next">
+        <HiArrowNarrowRight size={'1.9em'} />
+      </button>
     </div>
   );
-
-}
-
+};
 export const Aboutme: React.FC = () => {
   return (
     <>
