@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
-import Slider from "react-slick";
 import "../../css/slider.css";
 import { NavBar } from "../common/navbar";
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
@@ -97,8 +96,7 @@ interface Key {
 interface SliderProps {
   keys: Key[]; // Define the expected structure of the keys array
 }
-
-const About: React.FC<SliderProps> = ({ keys }) => {
+const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
@@ -109,19 +107,54 @@ const About: React.FC<SliderProps> = ({ keys }) => {
         : (currentIndex + 1) % keys.length;
     setCurrentIndex(newIndex);
 
-    // Animate sliding
     if (sliderRef.current) {
       sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+      sliderRef.current.style.transition = "transform 0.5s ease-in-out";
     }
   };
 
   return (
-    <div className="slider-container">
-      <div className="slider" ref={sliderRef}>
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+        maxHeight: "60svh", // Adjust height to fit screen proportionally
+        overflow: "hidden",
+        display: "flex",
+        borderRadius: '10px',
+        boxShadow: 'inset',
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: `${keys.length * 100}%`,
+          height: "100%",
+          transform: `translateX(-${currentIndex * 100}%)`,
+          transition: "transform 0.5s ease-in-out",
+        }}
+        ref={sliderRef}
+      >
         {keys.map((data, index) => (
-          <div className="slider-item" key={index}>
-            {data.type === 'image' ? (
-              <img src={data.url} alt="Project Image" />
+          <div
+            key={index}
+            style={{
+              flex: "0 0 100%",
+              height: "100%",
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            {data.type === "image" ? (
+              <img
+                src={data.url}
+                alt="Project"
+                         />
             ) : (
               <video
                 autoPlay
@@ -131,45 +164,92 @@ const About: React.FC<SliderProps> = ({ keys }) => {
                 onContextMenu={(e) => e.preventDefault()}
                 preload="metadata"
                 src={data.url}
-              />
+                           />
             )}
-            <fieldset className="projDesc">
+            <div
+              style={{
+                position: "absolute",
+                bottom: "5%",
+                left: "50%",
+                transform: "translateX(-50%)",
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                padding: "10px 20px",
+                borderRadius: "8px",
+              }}
+            >
               <p
                 style={{
-                  color: 'cornsilk',
-                  fontSize: '2svh',
-                  fontFamily:
-                    'Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif',
+                  color: "cornsilk",
+                  fontSize: "1.2rem",
+                  maxWidth: '50svw',
+                  fontFamily: "Gill Sans, Calibri, sans-serif",
                   fontWeight: 350,
-                  textAlign: 'center',
+                  textAlign: "center"
                 }}
               >
-                <b className="legend">{data.desc}</b>
+                <b>{data.desc}</b>
               </p>
-            </fieldset>
+            </div>
           </div>
         ))}
       </div>
 
-      <button onClick={() => handleSliderNavigation('prev')} className="nav-button prev">
-        <HiArrowNarrowLeft size={'1.9em'} />
+      <button
+        onClick={() => handleSliderNavigation("prev")}
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "20px",
+          transform: "translateY(-50%)",
+          zIndex: 2,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          width: "40px",
+          height: "40px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+        }}
+      >
+        <HiArrowNarrowLeft size="1.5rem" />
       </button>
-      <button onClick={() => handleSliderNavigation('next')} className="nav-button next">
-        <HiArrowNarrowRight size={'1.9em'} />
+      <button
+        onClick={() => handleSliderNavigation("next")}
+        style={{
+          position: "absolute",
+          top: "50%",
+          right: "20px",
+          transform: "translateY(-50%)",
+          zIndex: 2,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          color: "white",
+          border: "none",
+          borderRadius: "50%",
+          width: "40px",
+          height: "40px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+        }}
+      >
+        <HiArrowNarrowRight size="1.5rem" />
       </button>
     </div>
   );
 };
-export const Aboutme: React.FC = () => {
-  return (
-    <>
-      <NavBar />
-      <div className="fadeSide">
-        <h1 className="hlight">
-          <b>ABOUT:</b>
-        </h1>
-      </div>
-      <About />
-    </>
-  );
-};
+
+export const Aboutme: React.FC = () => (
+  <>
+    <NavBar />
+    <div style={{ textAlign: "center", margin: "20px 0" }}>
+      <h1 style={{ fontSize: "2rem", fontWeight: "bold" }}>ABOUT:</h1>
+    </div>
+    <div className="aboutImg">
+    <About keys={keys} />
+    </div>
+  </>
+);
