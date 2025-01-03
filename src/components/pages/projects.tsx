@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import "../../css/slider.css";
-
 type Images = Record<string, string>;
 
 interface Project {
@@ -23,7 +22,6 @@ interface ProjectItemProps {
 }
 
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
-//const getSubDir = (projName: string) => `/sub/subProj/${projName}`;
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),

@@ -78,8 +78,7 @@ const keys = [
     desc: "I love to spend time out in nature!",
     url: images.nature,
     type: "image"
-  },
-  // ... other items ...
+  }
 ];
 
 // Common styles for image and video components
@@ -118,7 +117,7 @@ const About: React.FC = () => {
       style={{
         position: "relative",
         width: "100%",
-        maxHeight: "60svh", // Adjust height to fit screen proportionally
+        maxHeight: "60svh",
         overflow: "hidden",
         display: "flex",
         borderRadius: '10px',
@@ -134,7 +133,7 @@ const About: React.FC = () => {
           width: `${keys.length * 100}%`,
           height: "100%",
           transform: `translateX(-${currentIndex * 100}%)`,
-          transition: "transform 0.5s ease-in-out",
+          transition: "transform 0.2s ease-in-out",
         }}
         ref={sliderRef}
       >
