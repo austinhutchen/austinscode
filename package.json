@@ -1,6 +1,6 @@
 {
   "name": "austinscode",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "homepage": "https://austinhutchen.github.io/austinscode",
   "private": false,
   "dependencies": {
@@ -60,7 +60,7 @@
       "last 1 edge version"
     ]
   },
-  "description": "My React-loaded website, documenting personal achievements! Website Version: Espresso 16.5 ☕️☕️. Original Author: Me! (Austin Hutchen). Espresso File sizes after gzip: 80 kB build/static/js/main.ebf077bc.js, 7.44 kB build/static/css/main.b2e55e1d.css. Link: https://austinscode.vercel.app",
+  "description": "My React-loaded website, documenting personal achievements! Website Version: Espresso 16.5 ☕️☕️. Original Author: Me! (Austin Hutchen). Espresso File sizes after gzip: 80 kB build/static/js/main.ebf077bc.js, 7.44 kB build/static/css/main.b2e55e1d.css. ",
   "main": "analyzer.js",
   "author": "Austin Hutchen https://github.com/austinhutchen",
   "license": "ISC"
