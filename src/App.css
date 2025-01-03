@@ -40,9 +40,11 @@ html {
   max-width: 75svw; /* Adjusted for responsiveness */
   padding: 15px;
 }
+
 .letters{
 max-width:75svw; 
 }
+
 .projDesc div.fadeSide {
   background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
   padding: 15px; /* Add more padding for elegance */
@@ -110,6 +112,22 @@ max-width:75svw;
   max-width: 70vw;
 }
 
+.aboutImg {
+  display: flex;
+     border-radius: 10px;
+    overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg img{
+  max-height: 50vh;
+  max-width: 60vw;
+border-radius: 10px;
+border: 3px solid teal;
+  box-shadow: inset;
+
+}
 .iframe-container {
   display: flex;
   justify-content: center;
@@ -138,7 +156,7 @@ max-width:75svw;
   /* Center horizontally */
   align-items: center;
 
-  max-width: 72svw;
+  max-width: 78svw;
 
 }
 
@@ -148,9 +166,7 @@ max-width:75svw;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  max-width: -moz-fit-content;
   max-width: fit-content;
-
   margin: auto;
   height: auto;
 }
