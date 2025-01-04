@@ -170,7 +170,7 @@ const projectsData: Project[] = [
   },
  ];
 const ProjectList: React.FC = () => (
-  <div className="projectList">
+  <div className="projVid">
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
