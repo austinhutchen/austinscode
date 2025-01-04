@@ -32,17 +32,37 @@ html {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
-
 .projDesc {
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: auto;
-  justify-content: center;
-  max-width: 54svw;
+  max-width: 75svw; /* Adjusted for responsiveness */
+  padding: 15px;
 }
 
+.letters{
+max-width:75svw; 
+}
+
+.projDesc div.fadeSide {
+  background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
+  padding: 15px; /* Add more padding for elegance */
+  border-radius: 12px; /* Softer rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
+  margin-bottom: 10px; /* Space between elements */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+  backdrop-filter: blur(6px); /* Adds a glassy effect */
+}
+
+.projDesc div.fadeSide p {
+  color: #FAF9F6; /* Slightly off-white for a softer look */
+  font-size: 0.9rem; /* Slightly larger font for readability */
+  line-height: 1.4; /* Improved line spacing for readability */
+  text-align: center; /* Center-align text */
+  font-family: 'Arial', sans-serif; /* Clean, professional font */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow for better contrast */
+}
 
 .nerdGif {
   display: flex;
@@ -92,6 +112,22 @@ html {
   max-width: 70vw;
 }
 
+.aboutImg {
+  display: flex;
+     border-radius: 10px;
+    overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg img{
+  max-height: 50vh;
+  max-width: 60vw;
+border-radius: 10px;
+border: 3px solid teal;
+  box-shadow: inset;
+
+}
 .iframe-container {
   display: flex;
   justify-content: center;
@@ -120,7 +156,7 @@ html {
   /* Center horizontally */
   align-items: center;
 
-  max-width: 72svw;
+  max-width: 78svw;
 
 }
 
@@ -130,9 +166,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  max-width: -moz-fit-content;
   max-width: fit-content;
-
   margin: auto;
   height: auto;
 }

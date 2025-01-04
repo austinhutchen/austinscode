@@ -27,7 +27,7 @@ export const AudioVisualizer: React.FC = () => {
 
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 const analyser = audioContext.createAnalyser();
-analyser.fftSize = 4096;
+analyser.fftSize = 8192;
 
 // Create a BiquadFilterNode and configure it
 const filter = audioContext.createBiquadFilter();
@@ -66,9 +66,7 @@ gradient.addColorStop(1, "#66FF66"); // Vibrant green
 ctx.fillStyle = gradient;
 
 // Optional: Add glow for additional contrast
-ctx.shadowBlur = 4;
 ctx.shadowColor = "#FFFFFF"; // Bright white glow
-      ctx.fillStyle = gradient;
 
       for (let i = 0; i < bufferLength; i++) {
         barHeight = dataArray[i];
@@ -77,13 +75,32 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
       }
 
       // Draw frequency labels
-      ctx.font = "1.1svh Arial";
-      ctx.fillStyle = "#FFF";
-      const frequencies = [0, 500, 1000, 2000, 4000, 8000, 16000];
-      frequencies.forEach((freq) => {
-        const pos = ((freq / 20000) * canvas.width);
-        ctx.fillText(`${freq} Hz`, pos, canvas.height - 10);
-      });
+      ctx.font = "1vmax Arial";
+      const frequencies = [500,4000, 8000,16000];
+ const spacing = 8; // Minimum spacing between labels
+
+frequencies.forEach((freq, index) => {
+  const pos = ((freq / 20000) * canvas.width);
+  const text = `${freq} Hz`;
+  const textWidth = ctx.measureText(text).width;
+
+  // Ensure text stays within canvas bounds
+  let xPos = Math.min(pos, canvas.width - textWidth - spacing);
+
+  // Avoid overlap with the previous label
+  if (index > 0) {
+    const prevFreq = frequencies[index - 1];
+    const prevPos = ((prevFreq / 20000) * canvas.width);
+    const prevTextWidth = ctx.measureText(`${prevFreq} Hz`).width;
+    const prevXPos = Math.min(prevPos, canvas.width - prevTextWidth - spacing);
+
+    if (xPos < prevXPos + prevTextWidth + spacing) {
+      xPos = prevXPos + prevTextWidth + spacing;
+    }
+  }
+
+  ctx.fillText(text, xPos, canvas.height - 5);
+});
     };
 
     draw();
@@ -96,7 +113,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
   return (
     <>
     <div style={{display:'grid',alignItems:'center',justifyContent:'center'}}>
-      <button className="hlight" onClick={getUserMedia}> <h4> Enable Microphone Input</h4></button>
+
+      <button className="hlight" onClick={getUserMedia}> <p className="projDesc"> Enable Microphone Input</p></button>
 
       <canvas
         ref={canvasRef}
@@ -104,8 +122,8 @@ ctx.shadowColor = "#FFFFFF"; // Bright white glow
           backgroundColor: "#333333",
           border: "1px solid #0FF",
           borderRadius: "1.0svw", // Rounded corners
-          width: '60svw',
-            height: '35vh'
+          width: '100%',
+            height: '40svh'
         }}
       />
 <br/>

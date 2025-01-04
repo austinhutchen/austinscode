@@ -1,25 +1,22 @@
 import React from 'react';
 import { NavBar } from "../common/navbar";
+const rec_letter = `${process.env.PUBLIC_URL}/fast_imgs/REC_LETTER.webp`;
 
-const rec_letter = process.env.PUBLIC_URL + '/fast_imgs/REC_LETTER.webp';
-
-const inclusion = process.env.PUBLIC_URL + '/fast_imgs/inclusion.webp';
-const support = process.env.PUBLIC_URL + '/fast_imgs/support.webp';
-
+const inclusion = `${process.env.PUBLIC_URL}/fast_imgs/inclusion.webp`;
+const support = `${process.env.PUBLIC_URL}/fast_imgs/support.webp`;
 
 
 
 const ImageList: React.FC<{ images: string[] }> = ({ images }) => (
     <ul>
         {images.map((src, index) => (
-            <li key={`img_${index}`}>
+            <li           style={{listStyleType:"none"}} key={`img_${index}`}>
                 <img
                     src={src}
-                    className="format-img"
-                    style={{ maxHeight: "70svh", maxWidth: "70svw" }}
-                    loading="eager"
+                    className="letters"
                     alt={`Image_${index}`}
                 />
+        <br/>
             </li>
         ))}
     </ul>
@@ -41,8 +38,7 @@ export const Feedback: React.FC = () => {
                         <br />
                         <img
                             src={rec_letter}
-                            style={{ maxHeight: "75svh", width: "100%" }}
-                            loading="eager"
+                            style={{ width: "100%" }}
                             alt="Math_PhD_Students_Letter"
                         />
                         <br />
@@ -51,9 +47,8 @@ export const Feedback: React.FC = () => {
                             <b><i><u>Student comments from my CALCULUS 2 / MATH 2300 sections @ University Of Colorado Boulder:</u></i></b>
                         </h2>
                         <br />
-                        <div>
+            
                             <ImageList images={data} />
-                        </div>
                 </div>
             </div>
         </>
@@ -63,7 +58,7 @@ export const Resume: React.FC = () => (
     <>
         <NavBar />
 
-        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" style={{ maxWidth: '68vw', display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" >
 
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
             <div className="p-6 text-center">
@@ -102,7 +97,7 @@ export const Resume: React.FC = () => (
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
                 alt="GitHub streak stats"
                 className="my-1"
-                style={{ width: '100%', height: '150px' }}
+                style={{ width: '100%', height: '50svh' }}
             />
 
 
@@ -132,7 +127,9 @@ const ExperienceItem: React.FC<{
     period: string;
     description: React.ReactNode;
 }> = ({ position, period, description }) => (
-    <div>
+    <div className="projDesc" style={{maxWidth:'70svw'}}>
+    < div className="fadeSide">
+
         <h2 className="hlight" >
             <b>
                 <u>{position}</u> 
@@ -140,8 +137,11 @@ const ExperienceItem: React.FC<{
         </h2>
 <br/> ({period})
     <br/>
+    
         <h3>{description}</h3>
         <br />
+            </div>
+
     </div>
 );
 

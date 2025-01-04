@@ -6,7 +6,7 @@
   color: #fff;
   cursor: pointer;
   font-family: "Segoe UI", "Liberation Sans", sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 300;
   text-align: center;
   touch-action: manipulation;
@@ -49,16 +49,7 @@ html.has-scroll-smooth {
   margin: 0 auto;
 }
 
-.projects img,
-.accredidations img,
-.projects  {
-  /* To create a circular border */
-  /* Adjusted border width unit */
-  margin: 0;
-  /* Remove default margin */
-  padding: 0;
-  /* Remove default padding */
-}
+
 
 
 
@@ -74,9 +65,10 @@ html.has-scroll-smooth {
 }
 
 .projImg  {
-  max-height: 36svh;
-  max-width: 36svw;
-  border: 0.12em solid #0BA;
+  height: 46svh;
+  width: 50svw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
+  border: 0.10em solid #0BA;
   border-radius: 200/2;
   /* Adjusted border width unit */
   margin: 0;
@@ -84,20 +76,27 @@ html.has-scroll-smooth {
   padding: 0;
 }
 
-.projVid{
- 
+.projVid {
   border: 0.10em solid #0BA;
-  border-radius:200/2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
+  border-radius: 200/2;
+
+
   /* Adjusted border width unit */
   margin: 0;
   /* Remove default margin */
   padding: 0;
 }
 
+.projVid video{
+  height: 46vh;
+  max-width: 50vw; 
+  object-fit: cover; /* Ensures video fills the container */
 
+
+}
 .projContent {
   display: grid;
-
   justify-content: center;
   /* Center horizontally */
   align-items: center;

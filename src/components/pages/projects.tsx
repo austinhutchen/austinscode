@@ -4,11 +4,9 @@ import React, { useEffect, useRef,useState } from "react";
 import ReactWebcam from 'react-webcam';
 import { AudioVisualizer } from "../common/AudioVisualizer";
 import { NavBar } from "../common/navbar";
-import "slick-carousel/slick/slick.css";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
 import "../../css/slider.css";
-
 type Images = Record<string, string>;
 
 interface Project {
@@ -23,7 +21,6 @@ interface ProjectItemProps {
 }
 
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
-//const getSubDir = (projName: string) => `/sub/subProj/${projName}`;
 const images: Images = {
   shell: getImgPath('shell.webp'),
   calculator: getImgPath('calculator.webp'),
@@ -93,19 +90,20 @@ const projectsData: Project[] = [
       { type: "video", src: images["nano2"] },
     ],
   },
+    {
+    title: "Mood Maps Api (Javascript/Css)",
+    link: "https://thevibecheck.onrender.com",
+    description:
+     "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
+    media: [{ type: "image", src: images["maps"] }],
+  },
   {
     title: "Mini Kernel Shell (C/Bash)",
     link: "https://github.com/austinhutchen/shell.git",
     description: "A shell is the user’s primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user’s local terminal.",
     media: [{ type: "image", src: images["shell"] }],
   },
-  {
-    title: "Mood Maps Api (Javascript/Css)",
-    link: "https://github.com/austinhutchen/thevibecheck",
-    description:
-     "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
-    media: [{ type: "image", src: images["maps"] }],
-  },
+
   {
     title: "Arduino 8-Bit Bitmask Animator (C)",
     link: "https://github.com/austinhutchen/austinscode",
@@ -172,7 +170,7 @@ const projectsData: Project[] = [
   },
  ];
 const ProjectList: React.FC = () => (
-  <div className="projectList">
+  <div className="projVid">
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
@@ -357,7 +355,11 @@ export const Projects: React.FC = () => {
         <br />
         <b>
           <p className='projDesc' style={{ fontSize: "0.9em" }} >
-            Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
+            <div className='fadeSide'>
+                          Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
+
+            </div>
+
           </p>
         </b>
       </div>
@@ -372,15 +374,18 @@ export const Projects: React.FC = () => {
       <WebcamSelector /> {/* Add Webcam Selector here */}
 
 
-      {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+
 
       <br />
-      <b>
-        <p className='projDesc' style={{ fontSize: "0.9em" }} >
+  
+    <div className="projDesc">
+        <div className="fadeSide" style={{ margin: '0 auto'}}>
+          <br />
+                {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
+<br/>
           to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!
-        </p>
-      </b>
-
+        </div>
+      </div>
 
     {showWebcam && (
   <>
