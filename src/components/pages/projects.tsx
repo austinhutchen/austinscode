@@ -170,7 +170,7 @@ const projectsData: Project[] = [
   },
  ];
 const ProjectList: React.FC = () => (
-  <div className="projVid">
+  <div className="projVid" >
     {projectsData.map((project, index) => (
       <ProjectItem key={index} project={project} />
     ))}
@@ -227,7 +227,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               ref={el => mediaRefs.current[index] = el}
               data-src={mediaItem.src}
               autoPlay
-              className="projVid"
               muted
               playsInline
               loop
