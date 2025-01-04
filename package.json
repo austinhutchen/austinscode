@@ -4,7 +4,6 @@
   "homepage": "https://austinhutchen.github.io/austinscode",
   "private": false,
   "dependencies": {
-    "@testing-library/user-event": "^14.5.2",
     "@types/react-router-dom": "^5.3.3",
     "ajv": "^8.17.1",
     "bootstrap": "^5.3.3",
@@ -34,8 +33,8 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^4.6.2",
     "gh-pages": "^6.2.0",
-    "react-icons": "^5.3.0",
     "style-loader": "^4.0.0",
+    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
@@ -60,8 +59,8 @@
       "last 1 edge version"
     ]
   },
-  "description": "My React-loaded website, documenting personal achievements! Website Version: Espresso 16.5 ☕️☕️. Original Author: Me! (Austin Hutchen). Espresso File sizes after gzip: 80 kB build/static/js/main.ebf077bc.js, 7.44 kB build/static/css/main.b2e55e1d.css. Link: https://austinscode.vercel.app",
+  "description": "My React-loaded website, documenting personal achievements! Website Version: Espresso 16.5 ☕️☕️. Original Author: Me! (Austin Hutchen). Espresso File sizes after gzip: 80 kB build/static/js/main.ebf077bc.js, 7.44 kB build/static/css/main.b2e55e1d.css. ",
   "main": "analyzer.js",
-  "author": "",
+  "author": "Austin Hutchen https://github.com/austinhutchen",
   "license": "ISC"
 }

@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi';
-import Slider from "react-slick";
 import "../../css/slider.css";
 import { NavBar } from "../common/navbar";
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
@@ -15,7 +14,7 @@ const images: Images = {
   family: getImgPath("me.webp"),
   mimi: getImgPath("mimi.webp"),
   solder: getImgPath("SOLDER.mp4"),
-  liv: getImgPath("livandAustin.webp"),
+  liv: getImgPath("livandaustin.webp"),
   nature: getImgPath("nature.webp"),
   github: getImgPath("GITHUBME.webp")
   // Add other images here
@@ -79,43 +78,50 @@ const keys = [
     desc: "I love to spend time out in nature!",
     url: images.nature,
     type: "image"
-  },
-  // ... other items ...
+  }
 ];
 
 // Common styles for image and video components
 
+interface SliderProps {
+  keys: Array<{ type: string; url: string; desc: string }>;
+}
+interface Key {
+  desc: string;
+  url: string;
+  type: 'image' | 'video';
+}
 
+interface SliderProps {
+  keys: Key[]; // Define the expected structure of the keys array
+}
 const About: React.FC = () => {
-  const settings = {
-    slidesToShow: 1,
-    centerMode: true,
-    width: '100%',
-    arrows: false,
-    slidesToScroll: 1,
-    infinite: true,
-    fade: true,
-    cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)',
-    dots: false,
-  };
-  const slider: React.RefObject<Slider> = useRef<Slider>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    if (slider?.current) {
-      direction === 'prev' ? slider.current.slickPrev() : slider.current.slickNext();
+    const newIndex =
+      direction === 'prev'
+        ? (currentIndex - 1 + keys.length) % keys.length
+        : (currentIndex + 1) % keys.length;
+    setCurrentIndex(newIndex);
+
+    if (sliderRef.current) {
+      sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+      sliderRef.current.style.transition = "transform 0.5s ease-in-out";
     }
   };
-  return (
-    <div className="sc">
-      <Slider ref={slider} {...settings}>
+return (
+  <div className="about-container">
+    <div className="slider">
+      <div className="slider-inner" ref={sliderRef}>
         {keys.map((data, index) => (
-          <div className="aboutSlider" key={index}>
+          <div className="slider-item" key={index}>
             {data.type === "image" ? (
-              <img
-                src={data.url}
-                alt="Project Image"
-              />
+              <img src={data.url} className="projImg" alt="Slide" />
             ) : (
               <video
+                    className="projVid"
                 autoPlay
                 loop
                 muted
@@ -125,41 +131,39 @@ const About: React.FC = () => {
                 src={data.url}
               />
             )}
-            <fieldset className="projDesc" >
-              <p style={{
-                color: 'cornsilk',
-                fontSize: "2svh",
-                fontFamily: "Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif",
-                fontWeight: 350,
-                textAlign: 'center',
-              }}>
-                <b className="legend">{data.desc}</b>
-              </p>
-            </fieldset>
-            <button onClick={() => handleSliderNavigation('prev')}>
-              <HiArrowNarrowLeft size={'1.9em'} className="ml-3" />
-            </button>
-            <button onClick={() => handleSliderNavigation('next')}>
-              <HiArrowNarrowRight size={'1.9em'} className="ml-3" />
-            </button>
           </div>
         ))}
-      </Slider>
-    </div>
-  );
-
-}
-
-export const Aboutme: React.FC = () => {
-  return (
-    <>
-      <NavBar />
-      <div className="fadeSide">
-        <h1 className="hlight">
-          <b>ABOUT:</b>
-        </h1>
       </div>
-      <About />
-    </>
-  );
+      <button
+        className="slider-arrow left"
+        onClick={() => handleSliderNavigation("prev")}
+      >
+        <HiArrowNarrowLeft size="2rem" />
+      </button>
+      <button
+        className="slider-arrow right"
+        onClick={() => handleSliderNavigation("next")}
+      >
+        <HiArrowNarrowRight size="2rem" />
+      </button>
+    </div>
+    {/* Moved the description below the slider */}
+    <div className="slider-desc">
+      <p>
+        <b>{keys[currentIndex].desc}</b>
+      </p>
+    </div>
+  </div>
+);
 };
+export const Aboutme: React.FC = () => (
+  <>
+    <NavBar />
+    <div style={{ textAlign: "center", margin: "20px 0" }}>
+      <h1 className="hlight">ABOUT:</h1>
+    </div>
+    <div className="aboutImg">
+    <About keys={keys} />
+    </div>
+  </>
+);
