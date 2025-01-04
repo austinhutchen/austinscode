@@ -118,10 +118,9 @@ return (
         {keys.map((data, index) => (
           <div className="slider-item" key={index}>
             {data.type === "image" ? (
-              <img src={data.url} className="projImg" alt="Slide" />
+              <img src={data.url} alt="Slide" />
             ) : (
               <video
-                    className="projVid"
                 autoPlay
                 loop
                 muted
@@ -138,20 +137,23 @@ return (
         className="slider-arrow left"
         onClick={() => handleSliderNavigation("prev")}
       >
-        <HiArrowNarrowLeft size="2rem" />
+        <HiArrowNarrowLeft size="1.2rem" />
       </button>
       <button
         className="slider-arrow right"
         onClick={() => handleSliderNavigation("next")}
       >
-        <HiArrowNarrowRight size="2rem" />
+        <HiArrowNarrowRight size="1.2rem" />
       </button>
     </div>
     {/* Moved the description below the slider */}
-    <div className="slider-desc">
-      <p>
+    <div className="projDesc">
+        <div className="fadeSide">
+             <p >
         <b>{keys[currentIndex].desc}</b>
       </p>
+        </div>
+   
     </div>
   </div>
 );
@@ -162,7 +164,7 @@ export const Aboutme: React.FC = () => (
     <div style={{ textAlign: "center", margin: "20px 0" }}>
       <h1 className="hlight">ABOUT:</h1>
     </div>
-    <div className="aboutImg">
+    <div className="about-container">
     <About keys={keys} />
     </div>
   </>
