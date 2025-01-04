@@ -169,7 +169,7 @@ a:hover {
   .navBrand {
     font-size: 1.4em;
     /* Reduce the font size */
-   max-width: 50vw;
+   max-width: 45vw;
    min-width: 12vw;
    
   }
