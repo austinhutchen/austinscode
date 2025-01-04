@@ -12,12 +12,12 @@
 /* Slider container */
 .about-container .slider {
   position: relative;
-  width: 90vw;
-  max-width: 80vh; /* Ensures a square-like scaling */
-  height: 60vh;
+  width: 90svw;
+  max-width: 80svh; /* Ensures a square-like scaling */
+  height: 50svh;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+
 }
 
 /* Slider inner wrapper for slides */
@@ -40,13 +40,15 @@
 }
 
 /* Images and videos styling */
-.about-container .slider-item img,
-.about-container .slider-item video {
+.about-container img,
+.about-container  video {
   max-width: 56svw;
   height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
-  border:0.8rem navy;
+  border-radius: 2vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
+
+  border:0.8vw navy;
 }
 
 /* Navigation arrows */
@@ -77,8 +79,9 @@
 
 /* Description section (now below the slider) */
 .about-container .slider-desc {
-  margin-top: 1.5vh;
-  width: 80%;
+  margin-top: 1.0vh;
+  max-width: 53svw;
+
   text-align: center;
   font-size: 1.2vw;
   font-family: sans-serif;
