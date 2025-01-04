@@ -92,18 +92,12 @@ interface Key {
   type: 'image' | 'video';
 }
 
-interface SliderProps {
-  keys: Key[]; // Define the expected structure of the keys array
-}
 const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
   const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    const newIndex =
-      direction === 'prev'
-        ? (currentIndex - 1 + keys.length) % keys.length
-        : (currentIndex + 1) % keys.length;
+    const newIndex = direction === 'prev'? (currentIndex - 1 + keys.length) % keys.length : (currentIndex + 1) % keys.length;
     setCurrentIndex(newIndex);
 
     if (sliderRef.current) {
