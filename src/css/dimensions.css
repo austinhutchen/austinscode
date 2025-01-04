@@ -49,16 +49,7 @@ html.has-scroll-smooth {
   margin: 0 auto;
 }
 
-.projects img,
-.accredidations img,
-.projects  {
-  /* To create a circular border */
-  /* Adjusted border width unit */
-  margin: 0;
-  /* Remove default margin */
-  padding: 0;
-  /* Remove default padding */
-}
+
 
 
 
@@ -98,8 +89,9 @@ html.has-scroll-smooth {
 }
 
 .projVid video{
-  width: 50vw;
-   height: 46vh;
+  height: 46vh;
+  max-width: 50vw; 
+  object-fit: cover; /* Ensures video fills the container */
 
 
 }
