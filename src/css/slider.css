@@ -5,31 +5,32 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-
+  padding: 2vh;
+  overflow: hidden;
 }
+
 
 /* Slider container */
-.about-container .slider {
+ .slider {
   position: relative;
-  max-width: 80svh; /* Ensures a square-like scaling */
-  height: 50svh;
+  height: 50svh; 
   overflow: hidden;
-   
-
-
-
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
+  border-radius: 2rem; /* Rounded corners */
 
 }
-
 /* Slider inner wrapper for slides */
 .about-container .slider-inner {
   display: flex;
-  flex-direction: row;
+  z-index: auto; /* Ensure proper stacking */
   height: 100%;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transform: translateX(0%);
   transition: transform 0.5s ease-in-out;
-
 }
 
 /* Each slide item */
@@ -41,12 +42,19 @@
   justify-content: center;
 
 }
+
+.slider-arrow.left {
+  left: -0.000025rem; /* Adjust for better placement */
+}
+
+.slider-arrow.right {
+  right: -0.000025rem; /* Adjust for better placement */
+}
 /* Images and videos styling */
 .about-container img,
 .about-container  video {
 
-  max-width: 60svw;
-  max-height: 60svh;
+  max-height: 50svh;
   object-fit: contain;
 
  border-radius: 3vw;
@@ -57,35 +65,33 @@
 
 /* Navigation arrows */
 .about-container .slider-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
-  display: flex;
+  position: absolute; /* Ensure it's positioned correctly */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Centering adjustment */
+  z-index: 2; /* Ensure it is above other elements */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* White arrow color for contrast */
+  border: none; /* No border */
+  border-radius: 50%; /* Circular shape */
+  width: 4rem; /* Uniform size for arrows */
+  height: 4rem;
+  display: flex; /* Center the arrow icon */
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer; /* Pointer cursor on hover */
 }
 
-.about-container .slider-arrow.left {
-  left: 1rem;
-}
-
-.about-container .slider-arrow.right {
-  right: 1rem;
-}
-
+/* Additional specificity for left and right arrows */
+/* Media query for smaller screens */
 /* Description section (now below the slider) */
-.about-container .slider-desc {
-  margin-top: 1.0vh;
-  max-width: 53svw;
+.slider-desc {
+    position: relative;
 
+  margin-top: 0.5vh;
+  max-width: 45svw;
+display:flex;
+align-items: center;
+justify-content: center;
   text-align: center;
   font-size: 1.2vw;
   font-family: sans-serif;
