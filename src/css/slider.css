@@ -46,11 +46,10 @@
 .about-container  video {
 
   max-width: 60svw;
-  max-height: 55svh;
+  max-height: 60svh;
   object-fit: contain;
 
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
- border-radius: 1svw;
+ border-radius: 3vw;
 
   border: 2px solid navy;
 

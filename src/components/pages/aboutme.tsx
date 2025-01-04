@@ -140,13 +140,13 @@ return (
         className="slider-arrow left"
         onClick={() => handleSliderNavigation("prev")}
       >
-        <HiArrowNarrowLeft size="1.2rem" />
+        <HiArrowNarrowLeft size="2rem" />
       </button>
       <button
         className="slider-arrow right"
         onClick={() => handleSliderNavigation("next")}
       >
-        <HiArrowNarrowRight size="1.2rem" />
+        <HiArrowNarrowRight size="2rem" />
       </button>
     </div>
     {/* Moved the description below the slider */}
