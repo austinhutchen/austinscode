@@ -177,11 +177,11 @@ a:hover {
 
 /* Base line styles */
 .line {
-  height: 5px; /* 0.5% of the viewport height */
+  height: 6px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
   margin: 13px 0px; /* Space between lines using viewport height */
-  transition: all 1s cubic-bezier(.17,.67,.83,.67); /* Smooth transition */
-  min-width: 60px;
+  transition: all 0.7s cubic-bezier(.17,.67,.83,.67); /* Smooth transition */
+  min-width: 55px;
 }
 /* Open state styles */
 .line-open {
@@ -243,24 +243,6 @@ a:active {
 
 
 
-/* Styles for .ribbon-highlight */
-.ribbon-highlight {
-  position: relative;
-  margin: 0.1em;
-}
-
-.ribbon-highlight:before {
-  z-index: -1;
-  left: -0.5em;
-  top: 0.1em;
-  border-width: 1em;
-  border-style: solid;
-  border-color: lightgreen;
-  position: absolute;
-  width: 100%;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
 
 /* Styles for .circle-sketch-highlight */
 .circle-sketch-highlight {
