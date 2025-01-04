@@ -5,8 +5,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 2vh;
-  overflow: hidden;
 }
 
 /* Slider container */
@@ -15,13 +13,13 @@
   width: 90svw;
   max-width: 80svh; /* Ensures a square-like scaling */
   height: 50svh;
-  border-radius: 1rem;
   overflow: hidden;
+   border-radius: 2svw;
+
+
 
 }
- .slider-item{
 
- }
 /* Slider inner wrapper for slides */
 .about-container .slider-inner {
   display: flex;
@@ -30,6 +28,7 @@
   width: 100%;
   transform: translateX(0%);
   transition: transform 0.5s ease-in-out;
+
 }
 
 /* Each slide item */
@@ -39,18 +38,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 /* Images and videos styling */
 .about-container img,
 .about-container  video {
-  max-width: 70svw;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
 
-border: 2px solid navy;
+  max-width: 65vw;
+  max-height: 55vh;
+  object-fit: contain;
+
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid navy;
+
 }
 
 /* Navigation arrows */
