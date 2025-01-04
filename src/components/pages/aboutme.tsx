@@ -118,7 +118,7 @@ return (
         {keys.map((data, index) => (
           <div className="slider-item" key={index}>
             {data.type === "image" ? (
-              <img src={data.url} alt="Slide" />
+              <img src={data.url} className="projImg" alt="Slide" />
             ) : (
               <video
                 autoPlay
