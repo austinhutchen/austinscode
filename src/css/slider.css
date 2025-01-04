@@ -5,16 +5,17 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+
 }
 
 /* Slider container */
 .about-container .slider {
   position: relative;
-  width: 90svw;
   max-width: 80svh; /* Ensures a square-like scaling */
   height: 50svh;
   overflow: hidden;
-   border-radius: 2svw;
+   
+
 
 
 
@@ -40,16 +41,17 @@
   justify-content: center;
 
 }
-
 /* Images and videos styling */
 .about-container img,
 .about-container  video {
 
-  max-width: 65vw;
-  max-height: 55vh;
+  max-width: 60svw;
+  max-height: 55svh;
   object-fit: contain;
 
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+ border-radius: 1svw;
+
   border: 2px solid navy;
 
 }
