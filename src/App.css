@@ -13,7 +13,10 @@ html {
   #name {
      font-size: 1.9em;
    }
-
+.projectslist video{
+  max-width: 40svh;
+  height: 50svh;
+}
 .App {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
