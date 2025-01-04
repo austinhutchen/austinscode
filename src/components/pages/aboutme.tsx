@@ -117,7 +117,8 @@ return (
       <div className="slider-inner" ref={sliderRef}>
         {keys.map((data, index) => (
           <div className="slider-item" key={index}>
-            {data.type === "image" ? (
+              <div className="slider-icon">
+                 {data.type === "image" ? (
               <img src={data.url} alt="Slide" />
             ) : (
               <video
@@ -130,7 +131,9 @@ return (
                 src={data.url}
               />
             )}
-          </div>
+
+              </div>
+                     </div>
         ))}
       </div>
       <button
