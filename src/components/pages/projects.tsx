@@ -278,7 +278,7 @@ useEffect(() => {
         audioStream.getTracks().forEach((track) => track.stop());
       }
     };
-  }, [audioStream]);
+  }, []);
 
     return (
     <div>
@@ -290,16 +290,13 @@ useEffect(() => {
       <div className="fadeSide" style={{ margin: '0 auto' }}>
         <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
         <br />
-        <b>
           <p className='projDesc' style={{ fontSize: "0.9em" }} >
-                          Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
-
+            Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
           </p>
-        </b>
       </div>
 
       <AudioVisualizer
-      AudioVisualizer stream={audioStream}
+       stream={audioStream}
         setStream={setAudioStream}
       />
 <br/>
