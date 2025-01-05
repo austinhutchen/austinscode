@@ -98,8 +98,8 @@ const About: React.FC = () => {
 
 const handleSliderNavigation = (direction: 'prev' | 'next') => {
   const newIndex = direction === 'prev'
-    ? Math.max(0, currentIndex - 1)
-    : Math.min(keys.length - 1, currentIndex + 1);
+    ? ((currentIndex - 1 + keys.length) % keys.length)
+    : ((currentIndex + 1) % keys.length);
   setCurrentIndex(newIndex);
 
   if (sliderRef.current) {
@@ -163,7 +163,7 @@ export const Aboutme: React.FC = () => (
     <div style={{ textAlign: "center", margin: "20px 0" }}>
       <h1 className="hlight">ABOUT:</h1>
     </div>
-    <div className="about-container">
+    <div >
     <About keys={keys} />
     </div>
   </>
