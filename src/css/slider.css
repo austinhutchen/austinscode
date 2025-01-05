@@ -3,12 +3,16 @@
 .slider {
   position: relative;
   height: calc(60vmin - 4rem); /* Fixed height for images and videos */
+  max-width: 50svw;
+  left: 25%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast
-*/
+  background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
+    overflow: hidden; 
 }
 
 .slides {
+   display: flex; /* Positions images side by side */
+  transition: transform 0.5s ease-in-out; /* Smooth sliding */
 }
 .slider-inner {
   transition: transform 0.5s ease-in-out;
