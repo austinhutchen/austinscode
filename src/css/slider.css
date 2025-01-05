@@ -7,6 +7,7 @@
   max-width: 50svw;
   left: 25%;
   box-shadow:inset; 
+  border-radius: 2vw;
   background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
   overflow: hidden; 
 }
@@ -22,12 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
- margin-left: auto;
   & img, & video {
     max-height: 50svh; /* Fixed
 max-height for images and videos */
     max-width: 50svw;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 2vw;
     border: 2px solid navy;
     margin: 0 auto; /* Added this line
