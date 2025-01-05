@@ -10,20 +10,6 @@
  * MIT License - https://github.com/mcc108/TagCloud
  */
 
-/*! exports provided: default */
-
-/*! no static exports found */
-
-/*! react */
-
-/*!******************************!*\
-      !*** ./src/react-webcam.tsx ***!
-      \******************************/
-
-/*!**************************************************************************************!*\
-      !*** external {"root":"React","commonjs2":"react","commonjs":"react","amd":"react"} ***!
-      \**************************************************************************************/
-
 /**
  * @license React
  * react-dom.production.min.js
