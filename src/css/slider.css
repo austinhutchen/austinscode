@@ -2,12 +2,13 @@
 
 .slider {
   position: relative;
-  height: calc(60vmin - 4rem); /* Fixed height for images and videos */
+  width: 100%;
+  height: 50svh;
   max-width: 50svw;
   left: 25%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow:inset; 
   background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
-    overflow: hidden; 
+  overflow: hidden; 
 }
 
 .slides {
@@ -18,7 +19,6 @@
   transition: transform 0.5s ease-in-out;
 }
 .slider-item {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
   & img, & video {
     max-height: 50svh; /* Fixed
 max-height for images and videos */
-    max-width: 40svw;
+    max-width: 50svw;
     object-fit: cover;
     border-radius: 2vw;
     border: 2px solid navy;
@@ -59,7 +59,7 @@ to center the image */
 }
 
 .projDesc {
-  max-width: 45vmin;
+  max-width: 42svw;
   display: flex;
   align-items: center;
   justify-content: center;

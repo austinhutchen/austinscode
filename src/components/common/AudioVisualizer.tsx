@@ -114,7 +114,7 @@ frequencies.forEach((freq, index) => {
     <>
     <div style={{display:'grid',alignItems:'center',justifyContent:'center'}}>
 
-      <button className="hlight" onClick={getUserMedia}> <p className="projDesc"> Enable Microphone Input</p></button>
+      <button className="hlight" onClick={getUserMedia}> Enable Microphone Input</button>
 
       <canvas
         ref={canvasRef}
@@ -123,6 +123,7 @@ frequencies.forEach((freq, index) => {
           border: "1px solid #0FF",
           borderRadius: "1.0svw", // Rounded corners
           width: '100%',
+            maxWidth:'70vw',
             height: '40svh'
         }}
       />
