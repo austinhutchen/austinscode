@@ -96,15 +96,17 @@ const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
-  const handleSliderNavigation = (direction: 'prev' | 'next') => {
-    const newIndex = direction === 'prev'? (currentIndex - 1 + keys.length) % keys.length : (currentIndex + 1) % keys.length;
-    setCurrentIndex(newIndex);
+const handleSliderNavigation = (direction: 'prev' | 'next') => {
+  const newIndex = direction === 'prev'
+    ? Math.max(0, currentIndex - 1)
+    : Math.min(keys.length - 1, currentIndex + 1);
+  setCurrentIndex(newIndex);
 
-    if (sliderRef.current) {
-      sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
-      sliderRef.current.style.transition = "transform 0.5s ease-in-out";
-    }
-  };
+  if (sliderRef.current) {
+    sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+    sliderRef.current.style.transition = "transform 0.5s ease-in-out";
+  }
+};
 return (
   <div className="about-container">
     <div className="slider">

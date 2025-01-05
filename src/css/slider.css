@@ -1,4 +1,3 @@
-/* About section container */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -9,19 +8,16 @@
   overflow: hidden;
 }
 
-
-/* Slider container */
- .slider {
+.slider {
   position: relative;
-  height: 50svh; 
+  height: calc(60vmin - 4rem); /* Fixed height for images and videos */
   overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
-  border-radius: 2rem; /* Rounded corners */
-
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast
+*/
 }
-/* Slider inner wrapper for slides */
-.about-container .slider-inner {
+
+.slider-inner {
   display: flex;
   z-index: auto; /* Ensure proper stacking */
   height: 100%;
@@ -29,69 +25,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transform: translateX(0%);
   transition: transform 0.5s ease-in-out;
 }
 
-/* Each slide item */
-.about-container .slider-item {
+.slider-item {
   flex: 0 0 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  & img, & video {
+    max-height: 50svh; /* Fixed max-height for images and videos */
+    max-width: 40svw;
+    object-fit: contain;
+    border-radius: 2vw;
+    border: 2px solid navy;
+  }
 }
 
-.slider-arrow.left {
-  left: -0.000025rem; /* Adjust for better placement */
-}
-
-.slider-arrow.right {
-  right: -0.000025rem; /* Adjust for better placement */
-}
-/* Images and videos styling */
-.about-container img,
-.about-container  video {
-
-  max-height: 50svh;
-  object-fit: contain;
-
- border-radius: 3vw;
-
-  border: 2px solid navy;
-
-}
-
-/* Navigation arrows */
-.about-container .slider-arrow {
-  position: absolute; /* Ensure it's positioned correctly */
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Centering adjustment */
-  z-index: 2; /* Ensure it is above other elements */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  color: white; /* White arrow color for contrast */
-  border: none; /* No border */
-  border-radius: 50%; /* Circular shape */
-  width: 4rem; /* Uniform size for arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 30%;
+  width: 4rem;
   height: 4rem;
-  display: flex; /* Center the arrow icon */
+  display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer;
+
+  &.left {
+    left: -1rem; /* Fixed position for left arrow */
+  }
+
+  &.right {
+    right: -1rem; /* Fixed position for right arrow */
+  }
 }
 
-/* Additional specificity for left and right arrows */
-/* Media query for smaller screens */
-/* Description section (now below the slider) */
-.slider-desc {
-    position: relative;
-
+.projDesc {
   margin-top: 0.5vh;
-  max-width: 45svw;
-display:flex;
-align-items: center;
-justify-content: center;
+  max-width: 45vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 1.2vw;
   font-family: sans-serif;
