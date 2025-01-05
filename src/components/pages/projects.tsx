@@ -367,37 +367,7 @@ export const Projects: React.FC = () => {
         setStream={() => {}}
       />
 <br/>
-      <h2 className="hlight"> Webcam Capture Engine (Typescript)</h2> <br/>
-<p className="hlight-mini">This project requires webcam permissions to run properly.</p>
-      <WebcamSelector /> {/* Add Webcam Selector here */}
-
-
-
-
-      <br />
-  
-    <div className="projDesc">
-        <div className="fadeSide" style={{ margin: '0 auto'}}>
-          <br />
-                {!showWebcam && <button onClick={handleShowWebcam}><h4 className='hlight-mini'>Enable webcam input</h4> </button>}
-<br/>
-          to see your face and apply effects in real time with the interface below! This is a web program that uses the webMedia API and blob decoding to decode your devices's streamed video. The program then displays your face to see!
-        </div>
-      </div>
-
-    {showWebcam && (
-  <>
-    <ReactWebcam
-      ref={webcamRef}
-      screenshotFormat="image/jpeg"
-      className="webCam"
-      videoConstraints={{ facingMode: "environment" }} // Adjust video settings
-      screenshotQuality={1} // Lower quality or none to reduce the preview impact
-    />
-    <br />
-    <button onClick={captureImage}>Capture Photo</button>
-  </>
-)}
+ 
 
       <ProjectList />
     </div>
