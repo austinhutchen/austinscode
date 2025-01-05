@@ -1,7 +1,6 @@
 
 import React, { useEffect, useRef,useState } from "react";
 
-import ReactWebcam from 'react-webcam';
 import { AudioVisualizer } from "../common/AudioVisualizer";
 import { NavBar } from "../common/navbar";
 import "../../css/dimensions.css";
@@ -257,92 +256,31 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
     </div>
   );
 };
-// Webcam Selector Component
-const WebcamSelector: React.FC = () => {
-  const [webcams, setWebcams] = useState<MediaDeviceInfo[]>([]);
-  const [selectedDeviceId, setSelectedDeviceId] = useState<string>('');
-  const webcamRef = useRef<ReactWebcam | null>(null);
-  const [stream, setStream] = useState<MediaStream | null>(null);
-
-  useEffect(() => {
-    const getWebcams = async () => {
-      const devices = await navigator.mediaDevices.enumerateDevices();
-      const videoDevices = devices.filter(device => device.kind === 'videoinput');
-      setWebcams(videoDevices);
-
-      if (videoDevices.length > 0) {
-        setSelectedDeviceId(videoDevices[0].deviceId);
-      }
-    };
-
-    getWebcams();
-  }, []);
-
-  useEffect(() => {
-    if (selectedDeviceId) {
-      navigator.mediaDevices
-        .getUserMedia({
-          video: { deviceId: selectedDeviceId ? { exact: selectedDeviceId } : undefined },
-        })
-        .then(newStream => {
-          if (webcamRef.current) {
-            webcamRef.current.video.srcObject = newStream;
-            setStream(newStream);
-          }
-        })
-        .catch((err) => {
-          console.error('Error accessing webcam:', err);
-        });
-    }
-
-    return () => {
-      if (stream) {
-        stream.getTracks().forEach(track => track.stop());
-      }
-    };
-  }, [selectedDeviceId, stream]);
-
-  return (
-    <div>
-      <h3 className="hlight">Select Webcam:</h3> <br/>
-      {webcams.length > 0 && (
-        <select
-          value={selectedDeviceId}
-          onChange={(e) => setSelectedDeviceId(e.target.value)}
-        >
-          {webcams.map((webcam) => (
-            <option key={webcam.deviceId} value={webcam.deviceId}>
-              {webcam.label || `Webcam ${webcam.deviceId}`}
-            </option>
-          ))}
-        </select>
-      )}
-
-         </div>
-  );
-};
 // Main Projects Component
 export const Projects: React.FC = () => {
-  const [showWebcam, setShowWebcam] = useState(false);
-  const webcamRef = useRef<ReactWebcam | null>(null);
-
-  const captureImage = () => {
-    const imageSrc = webcamRef.current?.getScreenshot();
-    console.log("Captured image:", imageSrc);
-  };
-
-  const handleShowWebcam = () => {
-    setShowWebcam(true);
-  };
-
-  useEffect(() => {
-    return () => {
-      webcamRef.current?.video?.srcObject &&
-        (webcamRef.current?.video?.srcObject as MediaStream).getTracks().forEach((track) => track.stop());
+    const [audioStream, setAudioStream] = useState<MediaStream | null>(null);
+useEffect(() => {
+    // Request microphone access
+    const getMicrophoneAccess = async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        setAudioStream(stream);
+      } catch (error) {
+        console.error("Error accessing microphone:", error);
+      }
     };
-  }, []);
 
-  return (
+    getMicrophoneAccess();
+
+    // Cleanup: Stop microphone stream when component unmounts
+    return () => {
+      if (audioStream) {
+        audioStream.getTracks().forEach((track) => track.stop());
+      }
+    };
+  }, [audioStream]);
+
+    return (
     <div>
       <NavBar />
       <h1 className="hlight">
@@ -363,8 +301,8 @@ export const Projects: React.FC = () => {
       </div>
 
       <AudioVisualizer
-        stream={webcamRef.current?.video?.srcObject as MediaStream | null}
-        setStream={() => {}}
+      AudioVisualizer stream={audioStream}
+        setStream={setAudioStream}
       />
 <br/>
  
