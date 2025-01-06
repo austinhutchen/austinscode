@@ -290,9 +290,13 @@ useEffect(() => {
       <div className="fadeSide" style={{ margin: '0 auto' }}>
         <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
         <br />
-          <p className='projDesc' style={{ fontSize: "0.9em" }} >
+          <div className='projDesc'>
+          <div className='fadeSide' style={{ margin: '0 auto'}}>
+          <p>
             Visualize this effect in real time with the interface below! This is a web program that uses the fast fourier transform algorithm to decompose your microphone's audio spectrum. The program then displays your voice's audio spectrum in an HTML canvas element, for you to see.
           </p>
+          </div>
+          </div>
       </div>
 
       <AudioVisualizer
