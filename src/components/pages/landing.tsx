@@ -97,7 +97,7 @@ export const Landing: React.FC = () => {
 
         <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
           <img src={github} title="GitHub" style={{
-            maxWidth: "8vw",
+            maxWidth: "6svw",
           }} />
         </a>
         <br />
