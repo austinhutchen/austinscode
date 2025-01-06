@@ -162,11 +162,9 @@ return (
 export const Aboutme: React.FC = () => (
   <>
     <NavBar />
-    <div style={{ textAlign: "center", margin: "20px 0" }}>
+    <div style={{ textAlign: "center" }}>
       <h1 className="hlight">ABOUT:</h1>
     </div>
-    <div >
     <About keys={keys} />
-    </div>
   </>
 );
