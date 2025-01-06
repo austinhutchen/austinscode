@@ -17,8 +17,13 @@ export const NavBar: React.FC = () => {
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
 
-  const icon_height = '25vh';
+  const icon_height = '27svh';
   const icon_width = 'auto';
+const btnStyles = {
+  backgroundImage: "url('/fast_imgs/border.webp')",
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat'
+};
   const toggle = () => {
     setIsOpen(!navOpen);
   }
@@ -56,31 +61,31 @@ export const NavBar: React.FC = () => {
       <Collapse isOpen={navOpen} navbar >
         <Nav >
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
-              <img src={home} width={icon_width} height={icon_height} alt="home" />
+            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
+              <img  src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
+            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
+            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
-              <img src={projects} width={icon_width} height={icon_height} alt="projects" />
+            <Button style={btnStyles}  style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
+              <img  src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
+          <NavItem lassName="nav-item  justify-center items-center">
+            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Electronics</h3>
             </Button>
