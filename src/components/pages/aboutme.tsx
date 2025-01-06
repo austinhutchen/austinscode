@@ -120,6 +120,7 @@ return (
               <video
                 autoPlay
                 loop
+                loading="lazy"
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
