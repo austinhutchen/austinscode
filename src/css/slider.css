@@ -24,12 +24,7 @@
   width: 100%;
 }
 
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Adjust the max width to fit your needs */
-  overflow: hidden;
-}
+
 
 .slider-inner {
   display: flex;
