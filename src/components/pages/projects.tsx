@@ -227,7 +227,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               data-src={mediaItem.src}
               autoPlay
               muted
-              loading="lazy"
               playsInline
               loop
             />
@@ -238,7 +237,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               className="projImg"
               key={mediaItem.src}
               ref={el => mediaRefs.current[index] = el}
-              loading="eager"
               data-src={mediaItem.src}
               alt={project.title}
             />
