@@ -1,34 +1,6 @@
-/* Shared styles for .prev-slick and .next-slick */
-.prev-slick,
-.next-slick {
-  background-color: #07c;
-  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
-  color: #fff;
-  cursor: pointer;
-  font-family: "Segoe UI", "Liberation Sans", sans-serif;
-  font-size: 1.2em;
-  font-weight: 300;
-  text-align: center;
-  touch-action: manipulation;
-}
 
 
 
-/* Hover and focus styles for .prev-slick and .next-slick */
-.prev-slick:hover,
-.next-slick:hover,
-.prev-slick:focus,
-.next-slick:focus {
-  background-color: #07c;
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-}
-
-/* Active styles for .prev-slick and .next-slick */
-.prev-slick:active,
-.next-slick:active {
-  background-color: #0064bd;
-  box-shadow: none;
-}
 
 /* Additional styles */
 html.has-scroll-smooth {
@@ -38,12 +10,6 @@ html.has-scroll-smooth {
 }
 
 
-
-.slides .slick-prev,
-.slides .slick-next {
-  position: absolute;
-  top: 100%;
-}
 
 .style-table {
   margin: 0 auto;
