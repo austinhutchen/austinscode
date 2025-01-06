@@ -2,7 +2,8 @@
 
 .slider {
   position: relative;
-  max-width: 70svw;
+  width: 70svw;
+  height: 53svh;
   max-height: 60svh;
   box-shadow:inset; 
   border-radius: 2vw;
