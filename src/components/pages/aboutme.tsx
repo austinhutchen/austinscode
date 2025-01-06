@@ -115,7 +115,7 @@ return (
           <div className="slider-item" key={index}>
               <div className="slider-icon">
                  {data.type === "image" ? (
-              <img src={data.url} alt="Slide" />
+              <img src={data.url} alt="Slide" loading="eager" />
             ) : (
               <video
                 autoPlay
