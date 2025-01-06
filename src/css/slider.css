@@ -2,8 +2,8 @@
 
 .slider {
   position: relative;
-  width: 50svw;
-  max-height: 50svh;
+  max-width: 70svw;
+  max-height: 60svh;
   box-shadow:inset; 
   border-radius: 2vw;
   background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
@@ -42,7 +42,7 @@
 .slider-icon img,
 .slider-icon video {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -56,16 +56,9 @@
   color: white;
   cursor: pointer;
   z-index: 10;
-  padding: 0.5rem;
+  padding: 0.3rem;
 }
 
-.slider-arrow.left {
-  left: 10px;
-}
-
-.slider-arrow.right {
-  right: 10px;
-}
 
 .projDesc {
   margin-top: 1rem;
