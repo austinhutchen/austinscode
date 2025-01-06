@@ -73,7 +73,7 @@
     max-height: 60svh; /* Fixed
 max-height for images and videos */
     max-width: 60svw;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 2svw;
     border: 2px solid navy;
     margin: 0 auto; /* Added this line
