@@ -170,7 +170,7 @@ a:hover {
   .navBrand {
     font-size: 1.2em;
     /* Reduce the font size */
-   max-width: 50vw;
+   max-width: 35svw;
    min-width: 12vw;
    
   }
@@ -178,11 +178,11 @@ a:hover {
 
 /* Base line styles */
 .line {
-  height: 6px; /* 0.5% of the viewport height */
+  height: 5px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
   margin: 13px 0px; /* Space between lines using viewport height */
   transition: all 0.7s cubic-bezier(.17,.67,.83,.67); /* Smooth transition */
-  min-width: 70px;
+  min-width: 65px;
 }
 /* Open state styles */
 .line-open {
