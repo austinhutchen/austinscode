@@ -132,7 +132,9 @@ return (
                      </div>
         ))}
       </div>
-      <button
+
+    </div>
+            <button
         className="slider-arrow left"
         onClick={() => handleSliderNavigation("prev")}
       >
@@ -144,7 +146,6 @@ return (
       >
         <HiArrowNarrowRight size="2rem" />
       </button>
-    </div>
     {/* Moved the description below the slider */}
     <div className="projDesc">
         <div className="fadeSide">

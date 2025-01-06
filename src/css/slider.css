@@ -3,7 +3,7 @@
 .slider {
   position: relative;
   width: 50svw;
-  height: 50svh;
+  max-height: 50svh;
   box-shadow:inset; 
   border-radius: 2vw;
   background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
