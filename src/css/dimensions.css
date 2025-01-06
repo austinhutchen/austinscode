@@ -78,7 +78,7 @@ html.has-scroll-smooth {
 
 
 .projVid video{
-  max-width: 65svw;
+  max-width: 55svw;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
 
   max-height: 55svh;
