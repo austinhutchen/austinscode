@@ -120,8 +120,8 @@ export const AudioVisualizer: React.FC = () => {
           backgroundColor: '#333333',
           border: '1px solid #0FF',
           borderRadius: '1.0vw',
-          width: '60vw',
-          height: '40vh',
+          width: '60svw',
+          height: '40svh',
         }}
       />
       <br />

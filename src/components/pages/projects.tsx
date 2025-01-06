@@ -238,7 +238,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               className="projImg"
               key={mediaItem.src}
               ref={el => mediaRefs.current[index] = el}
-              loading="lazy"
+              loading="eager"
               data-src={mediaItem.src}
               alt={project.title}
             />
