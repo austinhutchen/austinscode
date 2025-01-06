@@ -38,7 +38,7 @@ export const Feedback: React.FC = () => {
                         <br />
                         <img
                             src={rec_letter}
-                            style={{ width: "100%" }}
+                            style={{ maxWidth: "60svw",height:"60svh" }}
                             alt="Math_PhD_Students_Letter"
                         />
                         <br />
@@ -48,7 +48,7 @@ export const Feedback: React.FC = () => {
                         </h2>
                         <br />
             
-                            <ImageList images={data} />
+                            <ImageList          style={{ maxWidth: "60svw",height:"60svh" }} images={data} />
                 </div>
             </div>
         </>
@@ -127,16 +127,16 @@ const ExperienceItem: React.FC<{
     period: string;
     description: React.ReactNode;
 }> = ({ position, period, description }) => (
-    <div className="projDesc" style={{maxWidth:'70svw'}}>
+    <div className="projDesc" style={{maxWidth:'80svw'}}>
     < div className="fadeSide">
 
-        <h2 className="hlight" >
+        <h3 className="hlight" >
             <b>
                 <u>{position}</u> 
             </b>
-        </h2>
-<br/> ({period})
-    <br/>
+        </h3> 
+<br/> <h3 className="hlight">({period})
+</h3>    <br/>
     
         <h3>{description}</h3>
         <br />
