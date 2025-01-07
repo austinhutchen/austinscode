@@ -192,7 +192,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
               } else if (mediaRef instanceof HTMLVideoElement) {
                 const source = document.createElement('source');
                 source.src = mediaRef.dataset.src || '';
-                mediaRef.loading="lazy";
                 mediaRef.appendChild(source);
                 mediaRef.load();
               }
