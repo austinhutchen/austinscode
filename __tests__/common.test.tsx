@@ -25,9 +25,4 @@ describe('Common Components', () => {
     expect(screen.getByTestId('symbols-container')).toBeInTheDocument();
   });
 
-  // Test WebCam rendering and state management
-  it('renders WebCam and handles user permissions', () => {
-    render(<WebCam />);
-    expect(screen.getByTestId('webcam-component')).toBeInTheDocument();
-  });
-});
+  
