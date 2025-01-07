@@ -32,7 +32,7 @@ html {
 }
 @media (max-width: 768px) {
   .introText {
-    max-width: 98svw; /* Increase max width for mobile */
+    max-width: 99svw; /* Increase max width for mobile */
   }
 }
 .animateLand {
@@ -165,7 +165,7 @@ border: 3px solid teal;
   /* Center horizontally */
   align-items: center;
 
-  max-width: 78svw;
+  max-width: 79svw;
 
 }
 

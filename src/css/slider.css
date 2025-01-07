@@ -2,7 +2,7 @@
 
 .slider {
   position: relative;
-  max-width: 47svw;
+  max-width: 50svw;
   box-shadow:inset; 
   border-radius: 2svw;
   background-color: rgba(255, 255, 255, 0.1); /* Optional background for contrast */
@@ -67,11 +67,10 @@
   align-items: center;
   justify-content: center;
   & img, & video {
- max-height: 45svh;
+ max-height: 50svh;
    border-radius: 2svw;
-    border: 1.3px solid teal;
+    border: 1.5px solid teal;
     object-fit: contain;
-  
     margin: 0 auto; /* Added this line
 to center the image */
   }

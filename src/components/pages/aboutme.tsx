@@ -115,12 +115,11 @@ return (
           <div className="slider-item" key={index}>
               <div className="slider-icon">
                  {data.type === "image" ? (
-              <img src={data.url} alt="Slide" loading="eager" />
+              <img src={data.url} alt="Slide"  loading={index === 0 ? "eager" : "lazy"} />
             ) : (
               <video
                 autoPlay
                 loop
-                loading="lazy"
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
