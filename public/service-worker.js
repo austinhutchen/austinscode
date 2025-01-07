@@ -1,8 +1,11 @@
 const CACHE_NAME = "austinscode-cache-v1";
-const ASSETS_TO_CACHE = [
-  "/fast_imgs/border.webp", // Example image
-  "/fast_imgs/example-image.webp", // Add more images here
-];
+const fs = require("fs");
+const path = require("path");
+
+const imageDir = path.join(__dirname, "public/fast_imgs");
+const images = fs.readdirSync(imageDir).map((file) => `/fast_imgs/${file}`);
+
+console.log("Assets to Cache:", JSON.stringify(images));
 
 // Install the service worker and cache assets
 self.addEventListener("install", (event) => {
