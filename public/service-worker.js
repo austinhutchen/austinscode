@@ -1,5 +1,4 @@
 const CACHE_NAME = "austinscode-cache-v1";
-
 // Fetch the list of assets from the JSON file
 const fetchAssetList = async () => {
   const response = await fetch("/assets-to-cache.json");
