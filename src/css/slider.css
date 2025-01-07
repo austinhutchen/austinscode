@@ -66,8 +66,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+   max-height: 50svh;
+
   & img, & video {
- max-height: 50svh;
+
    border-radius: 2svw;
     border: 1.5px solid teal;
     object-fit: contain;
