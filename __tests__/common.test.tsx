@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { AudioVisualizer } from '../components/common/AudioVisualizer';
 import { NavBar } from '../components/common/navbar';
 import { Symbols } from '../components/common/symbols';
-import WebCam from '../components/common/webCam'; // Assuming default export
+
 
 describe('Common Components', () => {
   // Test AudioVisualizer rendering
