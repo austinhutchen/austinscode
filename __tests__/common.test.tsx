@@ -24,5 +24,5 @@ describe('Common Components', () => {
     render(<Symbols />);
     expect(screen.getByTestId('symbols-container')).toBeInTheDocument();
   });
-
+})
   
