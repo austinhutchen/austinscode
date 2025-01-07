@@ -41,12 +41,13 @@ html {
 
 }
 .projDesc {
+  border-radius: 2svw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 75svw; /* Adjusted for responsiveness */
-  padding: 15px;
+  max-width: 60svw; /* Adjusted for responsiveness */
+  padding: 10px;
 }
 
 .letters{
