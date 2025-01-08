@@ -97,7 +97,7 @@ export const AudioVisualizer: React.FC = () => {
           }
         }
 
-        ctx.fillText(text, xPos, canvas.height - 5);
+        ctx.fillText(text, xPos, canvas.height - 10);
       });
     };
 
@@ -120,8 +120,8 @@ export const AudioVisualizer: React.FC = () => {
           backgroundColor: '#333333',
           border: '1px solid #0FF',
           borderRadius: '1.0vw',
-          width: '60svw',
-          height: '40svh',
+          width: '65svw',
+          height: '45svh',
         }}
       />
       <br />

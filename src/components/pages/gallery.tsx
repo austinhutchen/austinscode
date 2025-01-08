@@ -19,7 +19,7 @@ export const Visualizer: React.FC = () => {
       <NavBar />
 
       <h1 className="hlight"> Welcome to my fun page!</h1> <br/>
-      <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </h3> <hr/>
+      <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
       <b>
