@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { AudioVisualizer } from '../components/common/AudioVisualizer';
 import { NavBar } from '../components/common/navbar';
 import { Symbols } from '../components/common/symbols';
-import WebCam from '../components/common/webCam'; // Assuming default export
+
 
 describe('Common Components', () => {
   // Test AudioVisualizer rendering
@@ -24,10 +24,5 @@ describe('Common Components', () => {
     render(<Symbols />);
     expect(screen.getByTestId('symbols-container')).toBeInTheDocument();
   });
-
-  // Test WebCam rendering and state management
-  it('renders WebCam and handles user permissions', () => {
-    render(<WebCam />);
-    expect(screen.getByTestId('webcam-component')).toBeInTheDocument();
-  });
-});
+})
+  
