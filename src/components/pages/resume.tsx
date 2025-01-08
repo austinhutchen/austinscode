@@ -38,7 +38,7 @@ export const Feedback: React.FC = () => {
                         <br />
                         <img
                             src={rec_letter}
-                            style={{ maxWidth: "60svw",height:"60svh" }}
+                            style={{ width: "100%",height:"55svh", borderRadius:'2svw'}}
                             alt="Math_PhD_Students_Letter"
                         />
                         <br />
@@ -48,7 +48,7 @@ export const Feedback: React.FC = () => {
                         </h2>
                         <br />
             
-                            <ImageList          style={{ maxWidth: "60svw",height:"60svh" }} images={data} />
+                            <ImageList          style={{ maxWidth: "60svw",height:"60svh", borderRadius: '2svw' }} images={data} />
                 </div>
             </div>
         </>
