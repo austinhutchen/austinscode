@@ -3,7 +3,8 @@
 }
 .analogCircuits{
   display: grid;
-  align-content: center;
+  align-items:center;
+  justify-content:center;
   flex-direction: column;
 }
 html {
@@ -19,7 +20,7 @@ html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 340;
   color: white;
-  height: 100vh;
+  height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
   background: radial-gradient(ellipse at 50% 50%, rgba(128, 128, 128, 1) 0%, rgba(175, 80, 76, 1) 13%, rgba(81, 12, 114, 1) 25%, rgba(108, 21, 94, 1) 38%, rgba(57, 17, 93, 1) 50%, rgba(0, 133, 255, 1) 75%, rgba(128, 128, 128, 1) 100%);
@@ -32,7 +33,7 @@ html {
 }
 @media (max-width: 768px) {
   .introText {
-    max-width: 99svw; /* Increase max width for mobile */
+    max-width: 100svw; /* Increase max width for mobile */
   }
 }
 .animateLand {
@@ -40,13 +41,14 @@ html {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
+
 .projDesc {
   border-radius: 2svw;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 65svw; /* Adjusted for responsiveness */
+  max-width: 75svw; /* Adjusted for responsiveness */
   padding: 10px;
 }
 
