@@ -26,23 +26,22 @@ export const Visualizer: React.FC = () => {
       </b>
       <br />
 
-      <p className="projDesc">
+     
 
-     <div className="fadeSide">
- I built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+     <div className="projDesc">
+<div className="fadeSide">
 
+          <p> Built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+          </p>
+</div>     
+</div>
+<br/>
+        <div className="analogCircuits" >
+        <img src={images.schematic}  className="projImg" id="rotate-180" />
+        <img src={images.bipolaroutput} className="projImg"/>
+        <img src={images.transformer} className="projImg"/>
+        <img src={images.volts} className="projImg"/>
         </div>
-              </p>
-
-             <br />
-      <div className="analogCircuits" >
-        <img src={images.schematic}  id="rotate-180" className="projImg" />
-        <img src={images.bipolaroutput} className="projImg" />
-        <img src={images.transformer} className="projImg" />
-        <img src={images.volts} className="projImg" />
-      </div>
-
-
 
 
 
