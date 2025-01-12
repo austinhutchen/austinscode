@@ -53,11 +53,7 @@ const keys = [
     url: images.solder,
     type: "video"
   },
-  {
-    desc: "I love to make electronics and art with my girlfriend!",
-    url: images.liv,
-    type: "image"
-  },
+
   {
     desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
     url: images.math,
