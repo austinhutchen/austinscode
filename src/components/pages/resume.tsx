@@ -38,7 +38,7 @@ export const Feedback: React.FC = () => {
                         <br />
                         <img
                             src={rec_letter}
-                            style={{ width: "100%",height:"65svh", borderRadius:'2svw'}}
+                            style={{ width: "100%",height:"70svh", borderRadius:'2svw'}}
                             alt="Math_PhD_Students_Letter"
                         />
                         <br />
