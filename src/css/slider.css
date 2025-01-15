@@ -36,9 +36,7 @@
 
 .slider-icon img,
 .slider-icon video {
-  height: 100%;
-  width: 100%;
-  max-height: 45svh;
+
      border: 0.08rem solid tan;
    border-radius: 1.3svmin;
 }
@@ -69,7 +67,8 @@
 
   & img, & video {
 
- 
+   max-width: 60svw;
+  max-height: 45svh;
 
     object-fit: contain;
     margin: 0 auto; /* Added this line
