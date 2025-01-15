@@ -110,11 +110,11 @@ const handleSliderNavigation = (direction: 'prev' | 'next') => {
     setTimeout(() => {
       // Update the transform for sliding
       sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
-      sliderRef.current.style.transition = "transform 0.5s ease-in-out";
+      sliderRef.current.style.transition = "opacity 0.5s ease-in-out";
 
       // Fade in the next slide
       nextSlide.style.opacity = "1";
-      nextSlide.style.transition = "opacity 0.1s ease-in-out";
+      nextSlide.style.transition = "opacity 0.5s ease-in-out";
 
       // Update the current index
       setCurrentIndex(newIndex);
