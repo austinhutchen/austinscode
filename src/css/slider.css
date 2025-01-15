@@ -1,5 +1,3 @@
-
-
 .slider {
   position: relative;
   box-shadow:inset; 
@@ -8,12 +6,16 @@
 
 .slides {
    display: flex; /* Positions images side by side */
-  transition: transform 0.5s ; /* Smooth sliding */
+ transition: transform 0.5s, opacity 0.5s; ; /* Smooth sliding */
   animation-name: fadeSide;
+    animation-duration: 0.5s; /* Match the transition duration */
+
 }
 .slider-inner {
-  transition: transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
     animation-name: fadeSide;
+      animation-duration: 0.5s; /* Match the transition duration */
+
 }.about-container {
   display: flex;
   flex-direction: column;
@@ -21,11 +23,12 @@
   width: 100%;
 }
 
-
-
 .slider-inner {
   display: flex;
-  transition: transform 0.5s fadeSide;
+  transition: transform 0.5s, opacity 0.5s;
+    animation-name: fadeSide;
+  animation-duration: 0.5s; /* Match the transition duration */
+
   width: 100%; /* Important for responsive scaling */
 }
 
@@ -56,7 +59,6 @@
   padding: 0.2rem;
 }
 
-
 .projDesc {
   margin-top: 0.5rem;
   text-align: center;
@@ -65,7 +67,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 
   & img, & video {
 
