@@ -68,8 +68,8 @@
 
   & img, & video {
 
-    border: 0.05rem solid tan;
-   border-radius: 1.3svw;
+    border: 0.08rem solid tan;
+   border-radius: 1.3svmin;
 
     object-fit: contain;
     margin: 0 auto; /* Added this line
