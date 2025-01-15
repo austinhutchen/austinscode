@@ -2,7 +2,6 @@
 
 .slider {
   position: relative;
-  width: 70svw;
   box-shadow:inset; 
   overflow: hidden; 
 }
@@ -37,9 +36,11 @@
 
 .slider-icon img,
 .slider-icon video {
-  max-width: 55svw;
   height: 100%;
+  width: 100%;
   max-height: 45svh;
+     border: 0.08rem solid tan;
+   border-radius: 1.3svmin;
 }
 
 .slider-arrow {
@@ -68,8 +69,7 @@
 
   & img, & video {
 
-    border: 0.08rem solid tan;
-   border-radius: 1.3svmin;
+ 
 
     object-fit: contain;
     margin: 0 auto; /* Added this line
