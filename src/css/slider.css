@@ -8,10 +8,12 @@
 
 .slides {
    display: flex; /* Positions images side by side */
-  transition: transform 0.5s ease-in-out; /* Smooth sliding */
+  transition: transform 0.5s ; /* Smooth sliding */
+  animation-name: fadeSide;
 }
 .slider-inner {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s;
+    animation-name: fadeSide;
 }.about-container {
   display: flex;
   flex-direction: column;
@@ -23,7 +25,7 @@
 
 .slider-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s fadeSide;
   width: 100%; /* Important for responsive scaling */
 }
 
