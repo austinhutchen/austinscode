@@ -68,7 +68,7 @@
 
   & img, & video {
 
-    border: 0.4svw solid teal;
+    border: 0.05rem solid tan;
    border-radius: 1.3svw;
 
     object-fit: contain;
