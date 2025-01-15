@@ -91,18 +91,37 @@ interface Key {
 const About: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const sliderRef = useRef<HTMLDivElement | null>(null);
-
 const handleSliderNavigation = (direction: 'prev' | 'next') => {
   const newIndex = direction === 'prev'
     ? ((currentIndex - 1 + keys.length) % keys.length)
     : ((currentIndex + 1) % keys.length);
-  setCurrentIndex(newIndex);
 
   if (sliderRef.current) {
-    sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
-    sliderRef.current.style.transition = "transform 0.5s ease-in-out";
+    // Get the current slide
+    const slides = sliderRef.current.children;
+    const currentSlide = slides[currentIndex];
+    const nextSlide = slides[newIndex];
+
+    // Fade out the current slide
+    currentSlide.style.opacity = "0";
+    currentSlide.style.transition = "opacity 0.5s ease-in-out";
+
+    // After the fade-out effect completes, update the slide position
+    setTimeout(() => {
+      // Update the transform for sliding
+      sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+      sliderRef.current.style.transition = "transform 0.5s ease-in-out";
+
+      // Fade in the next slide
+      nextSlide.style.opacity = "1";
+      nextSlide.style.transition = "opacity 0.1s ease-in-out";
+
+      // Update the current index
+      setCurrentIndex(newIndex);
+    }, 500); // Match the duration of the fade-out transition
   }
 };
+
 return (
   <div className="about-container">
     <div className="slider">
