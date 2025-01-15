@@ -97,14 +97,7 @@ export const NavBar: React.FC = () => {
                 </a>
               </Button>
             </NavItem>
-                   <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
-              <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
-                <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
-                <h3>Ebay</h3>
-              </a>
-            </Button>
-          </NavItem>
+            
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
@@ -126,6 +119,14 @@ export const NavBar: React.FC = () => {
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_width} height={icon_height} alt="facebook" />
                 <h3>Facebook</h3>
+              </a>
+            </Button>
+          </NavItem>
+                     <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
+                <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
+                <h3>Ebay</h3>
               </a>
             </Button>
           </NavItem>
