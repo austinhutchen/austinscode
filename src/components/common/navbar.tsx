@@ -16,14 +16,10 @@ export const NavBar: React.FC = () => {
   const resume = process.env.PUBLIC_URL + '/fast_imgs/Resume.webp';
   const clickme = process.env.PUBLIC_URL + '/fast_imgs/giphy.webp';
   const microChip = process.env.PUBLIC_URL + '/fast_imgs/microchip.webp';
-
+const ebay = process.env.PUBLC_URL + '/fast_imgs/ebay.webp';
   const icon_height = '27svh';
   const icon_width = 'auto';
-const btnStyles = {
-  backgroundImage: "url('/fast_imgs/border.webp')",
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
-};
+
   const toggle = () => {
     setIsOpen(!navOpen);
   }
@@ -61,31 +57,31 @@ const btnStyles = {
       <Collapse isOpen={navOpen} navbar >
         <Nav >
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
+            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
               <img  src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
+            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
+            <Button  style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={btnStyles}  style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
+            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
               <img  src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
           <NavItem lassName="nav-item  justify-center items-center">
-            <Button style={btnStyles} style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
+            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Electronics</h3>
             </Button>
@@ -100,6 +96,14 @@ const btnStyles = {
                 </a>
               </Button>
             </NavItem>
+                   <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ border: '1px solid white' }}>
+              <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
+                <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
+                <h3>Ebay</h3>
+              </a>
+            </Button>
+          </NavItem>
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ border: '1px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
