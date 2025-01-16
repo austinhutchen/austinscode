@@ -104,21 +104,21 @@ const handleSliderNavigation = (direction: 'prev' | 'next') => {
 
     // Fade out the current slide
     currentSlide.style.opacity = "0";
-    currentSlide.style.transition = "opacity 0.5s ease-out";
+    currentSlide.style.transition = "opacity 0.4s ease-out";
 
     // After the fade-out effect completes, update the slide position
     setTimeout(() => {
       // Update the transform for sliding
       sliderRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
-      sliderRef.current.style.transition = "opacity 0.5s ease-in";
+      sliderRef.current.style.transition = "opacity 0.4s ease-in";
 
       // Fade in the next slide
       nextSlide.style.opacity = "1";
-      nextSlide.style.transition = "opacity 0.5s ease-in";
+      nextSlide.style.transition = "opacity 0.4s ease-in";
 
       // Update the current index
       setCurrentIndex(newIndex);
-    }, 500); // Match the duration of the fade-out transition
+    }, 400); // Match the duration of the fade-out transition
   }
 };
 
