@@ -58,37 +58,37 @@ export const NavBar: React.FC = () => {
       <Collapse isOpen={navOpen} navbar >
         <Nav >
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.2)',border: '1px solid gold' }} onClick={() => nav('/')}>
               <img  src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.2)',border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button  style={{ border: '1px solid gold' }} onClick={() => nav('/Resume')}>
+            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.2)',border: '1px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Projects')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.2)',border: '1px solid gold' }} onClick={() => nav('/Projects')}>
               <img  src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
           <NavItem lassName="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
+            <Button style={{backgroundColor:'rgba(255, 0, 0, 0.2)', border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Electronics</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button  style={{ border: '1px solid white' }}>
+            <Button  style={{ backgroundColor:'rgba(255,0,0,0.2)',border: '1px solid white' }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
                   <img src={linkedin} width={icon_width} height={icon_height}  alt="LinkedIn" />
                   <h3>
@@ -99,7 +99,7 @@ export const NavBar: React.FC = () => {
             </NavItem>
             
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{ backgroundColor:'rgba(255,0,0,0.2)',border: '1px solid white' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
                 <h3>Github</h3>
@@ -107,7 +107,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{ backgroundColor:'rgba(255,0,0,0.2)',border: '1px solid white' }}>
               <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
                 <img src={instagram} width={icon_width} height={icon_height} alt="instagram" />
                 <h3>Instagram</h3>
@@ -115,7 +115,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{backgroundColor:'rgba(255,0,0,0.2)', border: '1px solid white' }}>
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_width} height={icon_height} alt="facebook" />
                 <h3>Facebook</h3>
@@ -123,7 +123,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
                      <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{ backgroundColor:'rgba(255,0,0,0.2)',border: '1px solid white' }}>
               <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
                 <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
                 <h3>Ebay</h3>
@@ -131,7 +131,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ border: '1px solid white' }}>
+            <Button style={{ backgroundColor:'rgba(255,0,0,0.2)',border: '1px solid white' }}>
               <a href="https://boulder.joinhandshake.com/profiles/tr9eud" target="_blank" rel="noopener noreferrer">
                 <img src={handshake} width={icon_width} height={icon_height} alt="handshake" />
                 <h3>Handshake</h3>
