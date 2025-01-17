@@ -58,31 +58,31 @@ export const NavBar: React.FC = () => {
       <Collapse isOpen={navOpen} navbar >
         <Nav >
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.4)',border: '1px solid gold' }} onClick={() => nav('/')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/')}>
               <img  src={home} width={icon_width} height={icon_height} alt="home" />
               <h3>Home</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.4)',border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.4)',border: '1px solid gold' }} onClick={() => nav('/Resume')}>
+            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/Resume')}>
               <img src={resume} width={icon_width} height={icon_height} alt="resume" />
               <h3>Resume</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.4)',border: '1px solid gold' }} onClick={() => nav('/Projects')}>
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/Projects')}>
               <img  src={projects} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
           <NavItem lassName="nav-item  justify-center items-center">
-            <Button style={{backgroundColor:'rgba(255, 0, 0, 0.4)', border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
+            <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
               <h3>Electronics</h3>
             </Button>
