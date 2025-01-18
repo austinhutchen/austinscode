@@ -10,37 +10,41 @@
 
 
  <u> <h2> Local File Structure: </h2> </u> <br/>
-── src <br/>
-│   ├── App.css <br/>
-│   ├── App.tsx <br/>
-│   ├── components <br/>
-│   │   ├── base <br/>
-│   │   │   └── Router.tsx <br/>
-│   │   ├── common <br/>
-│   │   │   ├── AudioVisualizer.tsx <br/>
-│   │   │   ├── navbar.tsx <br/>
-│   │   │   ├── symbols.tsx <br/>
-│   │   │   └── webCam.tsx <br/>
-│   │   └── pages <br/>
-│   │       ├── aboutme.tsx <br/>
-│   │       ├── gallery.tsx <br/>
-│   │       ├── landing.tsx <br/>
-│   │       ├── projects.tsx <br/>
-│   │       └── resume.tsx <br/>
-│   ├── css <br/>
-│   │   ├── TextSphere.css <br/>
-│   │   ├── dimensions.css <br/>
-│   │   ├── fonts.css <br/>
-│   │   ├── navBar.css <br/>
-│   │   ├── slider.css <br/>
-│   │   └── spinner.css <br/>
-│   ├── index.css <br/>
-│   ├── index.html <br/>
-│   ├── index.jsx <br/>
-│   └── reportWebVitals.jsx <br/>
-├── tsconfig.json <br/>
-└── webpack.config.js <br/>
-
-15 directories, 161 files <br/>
-<hr/>
-96 directories, 176 files
+├── eslint.config.mjs<br>
+├── generate-cache.js<br>
+├── package.json<br>
+├── public<br>
+│   ├── assets-to-cache.json<br>
+│   ├── index.html<br>
+│   ├── manifest.json<br>
+│   ├── robots.txt<br>
+│   └── service-worker.js<br>
+├── src<br>
+│   ├── App.css<br>
+│   ├── App.tsx<br>
+│   ├── components<br>
+│   │   ├── base<br>
+│   │   │   └── Router.tsx<br>
+│   │   ├── common<br>
+│   │   │   ├── AudioVisualizer.tsx<br>
+│   │   │   ├── navbar.tsx<br>
+│   │   │   └── symbols.tsx<br>
+│   │   └── pages<br>
+│   │       ├── aboutme.tsx<br>
+│   │       ├── gallery.tsx<br>
+│   │       ├── landing.tsx<br>
+│   │       ├── projects.tsx<br>
+│   │       └── resume.tsx<br>
+│   ├── css<br>
+│   │   ├── TextSphere.css<br>
+│   │   ├── dimensions.css<br>
+│   │   ├── fonts.css<br>
+│   │   ├── navBar.css<br>
+│   │   ├── slider.css<br>
+│   │   └── spinner.css<br>
+│   ├── index.css<br>
+│   ├── index.html<br>
+│   ├── index.jsx<br>
+│   └── reportWebVitals.jsx<br>
+├── tsconfig.json<br>
+└── webpack.config.js<br>
