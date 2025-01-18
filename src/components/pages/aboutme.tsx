@@ -164,7 +164,7 @@ return (
     {/* Moved the description below the slider */}
     <div className="projDesc">
         <div className="fadeSide">
-             <p className="introText" >
+             <p  >
         {keys[currentIndex].desc}
       </p>
         </div>
