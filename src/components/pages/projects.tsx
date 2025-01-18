@@ -209,6 +209,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
   }, [project]);
   return (
     <div>
+      <div className="projDesc">
       <div className="fadeSide">
        
   <h2 className="hlight">
@@ -245,7 +246,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
           return null;
         }
       })}
-      <div className="projDesc">
         <div className="fadeSide" style={{ margin: '0 auto'}}>
           <br />
           <p>{project.description}</p>
