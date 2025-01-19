@@ -56,7 +56,7 @@ html {
 max-width:65svw; 
 }
 
-.projDesc div.fadeSide {
+.projDesc .fadeSide {
   background-color: rgba(210, 180, 140, 0.3); /* Slightly tan with enhanced opacity */
   padding: 15px; /* Add more padding for elegance */
   border-radius: 12px; /* Softer rounded corners */
@@ -66,9 +66,9 @@ max-width:65svw;
   backdrop-filter: blur(6px); /* Adds a glassy effect */
 }
 
-.projDesc div.fadeSide p {
+.projDesc .fadeSide p {
   color: #FAF9F6; /* Slightly off-white for a softer look */
-  font-size: 0.9rem; /* Slightly larger font for readability */
+  font-size: 0.95rem; /* Slightly larger font for readability */
   line-height: 1.4; /* Improved line spacing for readability */
   text-align: center; /* Center-align text */
   font-family: 'Arial', sans-serif; /* Clean, professional font */
