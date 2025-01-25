@@ -50,7 +50,7 @@ export const NavBar: React.FC = () => {
     <div>
     <Navbar className="custom-navbar">
       <div className="navbar-header ">
-        <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
+        <NavbarBrand className="navBrand" id="name">Austin Olivier</NavbarBrand>
         <img className="clickIcon" height="66px" width="auto" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={navOpen} />
       </div>
