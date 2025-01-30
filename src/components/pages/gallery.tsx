@@ -12,7 +12,8 @@ export const Visualizer: React.FC = () => {
     volts: getImgPath('DCvoltage.webp'),
     schematic: getImgPath('IMG_4052.webp'),
     oscillator: getImgPath('OSC.webp'),
-    osc2: getImgPath('OSC2.webp')
+    osc2: getImgPath('OSC2.webp'),
+    sqr: getImgPath('Sqr.webp')
     // Add other images here
   };
 
@@ -36,8 +37,9 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
       <div className="analogCircuits">
-          <img src={images.oscillator} className="projImg"  style={{maxWidth:"48svw"}} />
-        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"48svw"}} />
+          <img src={images.oscillator} className="projImg"  style={{maxWidth:"50svw"}} />
+        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"50svw"}} />
+              <img src={images.sqr} className="projImg"  style={{maxWidth:"50svw"}} />
 
       </div>
       
