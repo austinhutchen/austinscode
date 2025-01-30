@@ -179,6 +179,10 @@ export const Aboutme: React.FC = () => (
     <div style={{ textAlign: "center" }}>
       <h1 className="hlight">ABOUT:</h1>
     </div>
+        <div className="projDesc">
+        <div className="fadeSide">
     <About keys={keys} />
+    </div>
+    </div>
   </>
 );
