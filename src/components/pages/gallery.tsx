@@ -35,11 +35,12 @@ export const Visualizer: React.FC = () => {
 </div>     
 </div>
 <br/>
-        <div className="analogCircuits" >
-        <img src={images.oscillator} className="projImg"/>
-        <img src ={images.osc2} classname="projImg"/>
-        </div>
+      <div className="analogCircuits">
+          <img src={images.oscillator} style={{maxWidth:"50svw"}} />
+        <img src={images.osc2}  style={{maxWidth:"50svw"}} />
 
+      </div>
+      
 <br/>
 
       <b>
