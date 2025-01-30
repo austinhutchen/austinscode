@@ -1,4 +1,4 @@
-const CACHE_NAME = "austinscode-cache-v1";
+const CACHE_NAME = "austinscode-cache-v2";
 
 // Define a function to fetch asset list from the JSON file
 const fetchAssetList = async () => {
