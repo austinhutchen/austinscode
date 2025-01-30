@@ -35,7 +35,7 @@ export const AudioVisualizer: React.FC = () => {
     // Create a BiquadFilterNode and configure it
     const filter = audioContext.createBiquadFilter();
     filter.type = 'lowpass'; // Approximates Chebyshev if you cascade filters
-    filter.frequency.value = 900; // Adjust to the desired cutoff frequency
+    filter.frequency.value = 1000; // Adjust to the desired cutoff frequency
 
     // Connect nodes
     const source = audioContext.createMediaStreamSource(stream);
@@ -76,8 +76,8 @@ export const AudioVisualizer: React.FC = () => {
       }
 
       // Draw frequency labels
-      ctx.font = '1vmax Arial';
-      const frequencies = [0,500, 4000, 8000, 16000];
+      ctx.font = '0.95vmax Arial';
+      const frequencies = [500, 4000, 8000, 16000];
       const spacing = 8; // Minimum spacing between labels
 
       frequencies.forEach((freq, index) => {
