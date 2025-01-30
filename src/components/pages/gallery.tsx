@@ -10,7 +10,8 @@ export const Visualizer: React.FC = () => {
     bipolaroutput: getImgPath('bipolarPSUoutput.webp'),
     transformer: getImgPath('IMG_4393.webp'),
     volts: getImgPath('DCvoltage.webp'),
-    schematic: getImgPath('IMG_4052.webp')
+    schematic: getImgPath('IMG_4052.webp'),
+    oscillator: getImgPath('OSC.webp')
     // Add other images here
   };
 
@@ -22,6 +23,23 @@ export const Visualizer: React.FC = () => {
       <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
+           <b>
+        <h2 className="hlight"> ADJUSTABLE FREQUENCY 6.5MHZ QUARTZ OSCILLATOR (CD40106BE)</h2>
+      </b>
+        <div className="projDesc">
+<div className="fadeSide">
+
+          <p> Built a 6MHZ quartz crystal 12V Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer">CD40106BE SHMIDT TRIGGR Inverter. </a>
+          </p>
+</div>     
+</div>
+<br/>
+        <div className="analogCircuits" >
+        <img src={images.oscillator} className="projImg"/>
+        </div>
+
+<br/>
+
       <b>
         <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>
@@ -47,10 +65,6 @@ export const Visualizer: React.FC = () => {
 
 
       <br />
-      <b>
-        <h2 className="hlight"> ADJUSTABLE FREQUENCY BIRD CHIRP GENERATOR (PIEZOELECRIC, SOLAR POWERED)</h2>
-      </b>
-<br/>
     </>
   );
 };
