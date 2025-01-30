@@ -36,8 +36,8 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
       <div className="analogCircuits">
-          <img src={images.oscillator} className="projImg"  style={{maxWidth:"38svw"}} />
-        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"38svw"}} />
+          <img src={images.oscillator} className="projImg"  style={{maxWidth:"45svw"}} />
+        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"45svw"}} />
 
       </div>
       
