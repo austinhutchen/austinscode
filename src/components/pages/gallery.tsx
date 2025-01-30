@@ -30,14 +30,14 @@ export const Visualizer: React.FC = () => {
         <div className="projDesc">
 <div className="fadeSide">
 
-          <p> Built a 6MHZ 12V Damped Square Wave Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer">CD40106BE SHMIDT TRIGGR Inverter. </a>
+          <p> Built a 6MHZ 12V Damped Square Wave oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer">CD40106BE Schmidt Trigger IC </a> and 6.5MHZ quartz crystal. Thanks to the usage of a quartz crystal, the oscillator is highly precise, and can be used as a clock for other devices. 
           </p>
 </div>     
 </div>
 <br/>
       <div className="analogCircuits">
-          <img src={images.oscillator} className="projImg"  style={{maxWidth:"45svw"}} />
-        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"45svw"}} />
+          <img src={images.oscillator} className="projImg"  style={{maxWidth:"48svw"}} />
+        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"48svw"}} />
 
       </div>
       
