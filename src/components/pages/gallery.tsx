@@ -37,9 +37,9 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
       <div className="analogCircuits">
-          <img src={images.oscillator} className="projImg"  style={{maxWidth:"50svw"}} />
-        <img src={images.osc2} className="projImg"  id="rotate-180" style={{maxWidth:"50svw"}} />
-              <img src={images.sqr} className="projImg"  style={{maxWidth:"50svw"}} />
+          <img loading="lazy" src={images.oscillator} className="projImg" />
+        <img src={images.osc2} className="projImg"  id="rotate-180" />
+              <img src={images.sqr} className="projImg"  />
 
       </div>
       
@@ -61,10 +61,9 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
         <div className="analogCircuits" >
-        <img src={images.schematic}  className="projImg" />
-        <img src={images.bipolaroutput} className="projImg"/>
-        <img src={images.transformer} className="projImg"/>
-        <img src={images.volts} className="projImg"/>
+        <img loading="lazy"  src={images.schematic}  className="projImg" />
+        <img loading="lazy" src={images.bipolaroutput} className="projImg"/>
+        <img loading="lazy" src={images.volts} className="projImg"/>
         </div>
 
 
