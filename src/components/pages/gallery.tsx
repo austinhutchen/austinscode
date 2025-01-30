@@ -11,7 +11,8 @@ export const Visualizer: React.FC = () => {
     transformer: getImgPath('IMG_4393.webp'),
     volts: getImgPath('DCvoltage.webp'),
     schematic: getImgPath('IMG_4052.webp'),
-    oscillator: getImgPath('OSC.webp')
+    oscillator: getImgPath('OSC.webp'),
+    osc2: getImgPath('OSC2.webp')
     // Add other images here
   };
 
@@ -29,13 +30,14 @@ export const Visualizer: React.FC = () => {
         <div className="projDesc">
 <div className="fadeSide">
 
-          <p> Built a 6MHZ quartz crystal 12V Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer">CD40106BE SHMIDT TRIGGR Inverter. </a>
+          <p> Built a 6MHZ 12V Damped Square Wave Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer">CD40106BE SHMIDT TRIGGR Inverter. </a>
           </p>
 </div>     
 </div>
 <br/>
         <div className="analogCircuits" >
         <img src={images.oscillator} className="projImg"/>
+        <img src ={images.osc2} classname="projImg"/>
         </div>
 
 <br/>
