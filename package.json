@@ -39,7 +39,7 @@
   },
   "scripts": {
     "generate-cache": "node generate-cache.js",
-    "build": "npm run generate-cache && react-scripts build",
+    "build": "react-scripts build && npm run generate-cache",
     "analyze": "node analyzer.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
