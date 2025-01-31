@@ -16,9 +16,14 @@ html.has-scroll-smooth {
 }
 
 
+.projDesc{
+  text-shadow: 2px 2px 4px black; 
+}
 
-
-
+#rotate-90{
+  transform: rotate(90deg);
+  max-height: 40svh;
+}
 
 .analogCircuits {
   display: grid;

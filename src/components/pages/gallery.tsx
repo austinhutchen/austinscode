@@ -21,12 +21,12 @@ export const Visualizer: React.FC = () => {
     <>
       <NavBar />
 
-      <h1 className="hlight"> Welcome to my fun page!</h1> <br/>
+      <h1 className="hlight"> Welcome to my Lab!</h1> <br/>
       <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
            <b>
-        <h2 className="hlight"> ADJUSTABLE FREQUENCY 6.5MHZ QUARTZ OSCILLATOR (CD40106BE)</h2>
+        <h2 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h2>
       </b>
         <div className="projDesc">
 <div className="fadeSide">
@@ -38,7 +38,7 @@ export const Visualizer: React.FC = () => {
 <br/>
       <div className="analogCircuits">
           <img loading="lazy" src={images.oscillator} className="projImg" />
-        <img src={images.osc2} className="projImg"  id="rotate-180" />
+        <img src={images.osc2} className="projImg" id="rotate-90"  />
               <img src={images.sqr} className="projImg"  />
 
       </div>
