@@ -18,6 +18,7 @@ export const NavBar: React.FC = () => {
   const clickme = url + '/fast_imgs/giphy.webp';
   const microChip = url+ '/fast_imgs/microchip.webp';
   const ebay = url+ '/fast_imgs/ebay.webp';
+  const youtube = url + '/fast_imgs/youtube.webp';
   const icon_height = '27svh';
   const icon_width = 'auto';
 
@@ -135,7 +136,15 @@ export const NavBar: React.FC = () => {
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' }}>
               <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
                 <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
-                <h3>Ebay</h3>
+                <h3>Business</h3>
+              </a>
+            </Button>
+          </NavItem>
+               <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' }}>
+              <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
+                <img src={youtube} width={icon_width} height={icon_height} alt="youtube" />
+                <h3>Youtube</h3>
               </a>
             </Button>
           </NavItem>
