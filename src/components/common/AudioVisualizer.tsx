@@ -30,7 +30,7 @@ export const AudioVisualizer: React.FC = () => {
     audioContextRef.current = audioContext;
 
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 4096;
+    analyser.fftSize = 8192;
 
     // Create a BiquadFilterNode and configure it
     const filter = audioContext.createBiquadFilter();
@@ -97,7 +97,7 @@ export const AudioVisualizer: React.FC = () => {
           }
         }
 
-        ctx.fillText(text, xPos, canvas.height - 10);
+        ctx.fillText(text, xPos, canvas.height - 5);
       });
     };
 
