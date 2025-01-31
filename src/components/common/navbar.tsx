@@ -64,18 +64,19 @@ export const NavBar: React.FC = () => {
               <h3>Home</h3>
             </Button>
           </NavItem>
+               <NavItem className="nav-item  justify-center items-center">
+            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/Resume')}>
+              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
+              <h3>Resume</h3>
+            </Button>
+          </NavItem>
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
               <h3>About</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item  justify-center items-center">
-            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/Resume')}>
-              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-              <h3>Resume</h3>
-            </Button>
-          </NavItem>
+         
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold' }} onClick={() => nav('/Projects')}>
               <img  src={projects} width={icon_width} height={icon_height} alt="projects" />

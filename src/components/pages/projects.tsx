@@ -257,26 +257,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 // Main Projects Component
 export const Projects: React.FC = () => {
     const [audioStream, setAudioStream] = useState<MediaStream | null>(null);
-useEffect(() => {
     // Request microphone access
-    const getMicrophoneAccess = async () => {
-      try {
-        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        setAudioStream(stream);
-      } catch (error) {
-        console.error("Error accessing microphone:", error);
-      }
-    };
-
-    getMicrophoneAccess();
-
-    // Cleanup: Stop microphone stream when component unmounts
-    return () => {
-      if (audioStream) {
-        audioStream.getTracks().forEach((track) => track.stop());
-      }
-    };
-  }, []);
 
     return (
     <div>
