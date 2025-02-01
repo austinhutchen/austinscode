@@ -16,7 +16,7 @@ export const NavBar: React.FC = () => {
   const projects = url+ '/fast_imgs/Circuit.webp';
   const resume = url + '/fast_imgs/Resume.webp';
   const clickme = url + '/fast_imgs/giphy.webp';
-  const microChip = url+ '/fast_imgs/microchip.webp';
+  const transistor = url+ '/fast_imgs/transistor.webp';
   const ebay = url+ '/fast_imgs/ebay.webp';
   const youtube = url + '/fast_imgs/youtube.webp';
   const icon_height = '27svh';
@@ -85,8 +85,8 @@ export const NavBar: React.FC = () => {
           </NavItem>
           <NavItem lassName="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
-              <img src={microChip} width={icon_width} height={icon_height} alt="cube" />
-              <h3>Lab</h3>
+              <img src={transistor} width={icon_width} height={icon_height} alt="cube" />
+              <h3>Analog</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">

@@ -37,9 +37,9 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
       <div className="analogCircuits">
-          <img loading="lazy" src={images.oscillator} className="projImg" />
-        <img src={images.osc2} id="rotate-90"  className="projImg"  />
-              <img src={images.sqr} className="projImg"  />
+          <img loading="eager" src={images.oscillator} className="projImg" />
+        <img loading="eager" src={images.osc2} id="rotate-90"  className="projImg"  />
+              <img loading="eager" src={images.sqr} className="projImg"  />
 
       </div>
       

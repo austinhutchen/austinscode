@@ -35,13 +35,13 @@ html.has-scroll-smooth {
 }
 
 .projImg  {
-  max-height: 52svh;
-  max-width: 52svw;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Enhanced drop shadow for depth */
   border: 0.10em solid #0BA;
   border-radius: 1vw;
   /* Adjusted border width unit */
   margin: 0;
+   max-height: 61svh;
+max-width:61svw;
   /* Remove default margin */
   padding: 0;
 }
