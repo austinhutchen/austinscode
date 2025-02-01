@@ -59,7 +59,7 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
         <div className="analogCircuits" >
-        <video src={images.waterer}  autoPlay className="projImg" >
+        <video src={images.waterer} playsinline webkit-playsinline loop muted controls autoPlay className="projImg" >
         </video>
          </div>
 
