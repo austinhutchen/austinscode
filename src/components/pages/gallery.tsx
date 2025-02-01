@@ -13,7 +13,8 @@ export const Visualizer: React.FC = () => {
     schematic: getImgPath('IMG_4052.webp'),
     oscillator: getImgPath('OSC.webp'),
     osc2: getImgPath('OSC2.webp'),
-    sqr: getImgPath('Sqr.webp')
+    sqr: getImgPath('Sqr.webp'),
+    waterer: getImgPath('PLANT_KERNEL.mp4')
     // Add other images here
   };
 
@@ -44,6 +45,24 @@ export const Visualizer: React.FC = () => {
       </div>
       
 <br/>
+    <b>
+        <h2 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM </h2>
+      </b>
+      <br />
+
+     <div className="projDesc">
+<div className="fadeSide">
+
+
+          <p> Built a plant waterer kernel with an ESP32 microcontroller and 7V Relay water tube pump that opened or closed to push water into the plant. It made this decision depending on the moisture threshold reading from a capacative soil moisture detector.          </p>
+</div>     
+</div>
+<br/>
+        <div className="analogCircuits" >
+        <video src={images.waterer}  autoPlay className="projImg" >
+        </video>
+         </div>
+
 
     
        <b>

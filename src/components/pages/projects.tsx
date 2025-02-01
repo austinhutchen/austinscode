@@ -25,7 +25,6 @@ const images: Images = {
   calculator: getImgPath('calculator.webp'),
   maps: getImgPath('maps.webp'),
   gesture: getImgPath('gesture.mp4'),
-  PLANT_WATERER: getImgPath('PLANT_KERNEL.mp4'),
   encryptc: getImgPath('encryptc.webp'),
   wled2: getImgPath('WLED2.mp4'),
   my_interface: getImgPath('interface.webp'),
@@ -109,12 +108,7 @@ const projectsData: Project[] = [
     description: "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an Arduino Uno R3 frame buffer for displaying the images and saving temporarily into local memory",
     media: [{ type: "video", src: images["butterfly"] }],
   },
-  {
-    title: "Automatic Plant Irrigation System (C)",
-    link: "https://github.com/austinhutchen/plant_interface.git",
-    description: "My custom Automatix Plant Irrigation System is a low-cost and power-efficient ESP-8266 powered system that reads data from a custom soil sensor. It then checks the capacitive sensor moisture threshold and decides whether to pump water using a relay and water tube into the plant.",
-    media: [{ type: "video", src: images["PLANT_WATERER"] }],
-  },
+
  {
     title: "Malloc() Algorithm (C/Bash)",
     link: "https://github.com/austinhutchen/cMalloc",

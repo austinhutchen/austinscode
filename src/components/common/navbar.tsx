@@ -86,7 +86,7 @@ export const NavBar: React.FC = () => {
           <NavItem lassName="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold' }} onClick={() => nav('/Gallery')}>
               <img src={transistor} width={icon_width} height={icon_height} alt="cube" />
-              <h3>Analog</h3>
+              <h3>Circuits</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
