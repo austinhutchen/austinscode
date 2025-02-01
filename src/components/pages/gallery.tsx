@@ -46,7 +46,7 @@ export const Visualizer: React.FC = () => {
       
 <br/>
     <b>
-        <h3 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM </h3>
+        <h2 className="hlight"> ESP32 AUTOMATIC PLANT IRRIGATION SYSTEM </h2>
       </b>
       <br />
 
@@ -54,7 +54,7 @@ export const Visualizer: React.FC = () => {
 <div className="fadeSide">
 
 
-          <p> Built a plant waterer kernel with an ESP32 microcontroller and 7V Relay water tube pump that opened or closed to push water into the plant. It made this decision depending on the moisture threshold reading from a capacative soil moisture detector.          </p>
+          <p> Built a <a href="https://github.com/austinhutchen/autoIrrigation32">plant waterer kernel </a>with an ESP32 microcontroller and 7V Relay water tube pump that opened or closed to push water into the plant. It made this decision depending on the moisture threshold reading from a capacative soil moisture detector.          </p>
 </div>     
 </div>
 <br/>
