@@ -46,7 +46,7 @@ export const Visualizer: React.FC = () => {
       
 <br/>
     <b>
-        <h2 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM </h2>
+        <h3 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM </h3>
       </b>
       <br />
 
@@ -59,7 +59,7 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
         <div className="analogCircuits" >
-        <video src={images.waterer} playsinline webkit-playsinline loop muted controls autoPlay className="projImg" >
+        <video autoPlay src={images.waterer} playsInline webkit-playsinline loop muted controls  className="projImg" >
         </video>
          </div>
 
