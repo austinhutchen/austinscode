@@ -161,7 +161,7 @@ const ContributionLink: React.FC<{ href: string; title: string; description: str
 
 const experienceItems = [
     {
-        position: "Backend Software Engineer Intern (FormFactor)",
+        position: "Embedded Software Engineer Intern (FormFactor)",
         period: "May 2024 - August 2024",
       description: (
   <>
@@ -175,11 +175,12 @@ const experienceItems = [
             "Taught and assisted with Calculus 2 (MATH 2300), held office hours weekly, and received 97% positive feedback from 63 students.",
     },
     {
-        position: "Marketing Consultant (Mobius Materials)",
-        period: "Summer 2020 - Fall 2020",
+        position: "Digital Marketing Consultant (Mobius Materials)",
+        period: "Summer 2021 - Fall 2021",
         description: (
             <>
-                Made the first company sale and collaborated with engineers to meet targets. Authored research articles on e-waste, including{" "}
+                Led digital marketing campaigns leading to the first company sale. Analyzed google analytics traffic data, collaborated with software engineers and founder to meet reach targets. Authored research articles on e-waste, including{" "}
+
                 <a
                     href="https://mobiusblogr.medium.com/why-sustainability-ultimately-begins-and-ends-with-e-waste-and-not-paper-straws-c06612cbefeb"
                     target="_blank"

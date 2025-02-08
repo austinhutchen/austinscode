@@ -40,7 +40,7 @@ const images: Images = {
   malloc: getImgPath('malloc.webp'),
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4'),
-  arduino: getImgPath('arduino.mp4'),
+  arduino: getImgPath('arduino.mp4')
   // Add other images here
 };
 const projectsData: Project[] = [

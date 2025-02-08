@@ -97,7 +97,7 @@ export const AudioVisualizer: React.FC = () => {
           }
         }
 
-        ctx.fillText(text, xPos, canvas.height - 5);
+        ctx.fillText(text, xPos, canvas.height - 10);
       });
     };
 

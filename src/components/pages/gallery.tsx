@@ -64,7 +64,7 @@ export const Visualizer: React.FC = () => {
          </div>
 
 
-    
+    <br/>
        <b>
         <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>
