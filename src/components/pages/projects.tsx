@@ -40,7 +40,8 @@ const images: Images = {
   malloc: getImgPath('malloc.webp'),
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4'),
-  arduino: getImgPath('arduino.mp4')
+  arduino: getImgPath('arduino.mp4'),
+  ecommerce: getImgPath('emarket.webp')
   // Add other images here
 };
 const projectsData: Project[] = [
@@ -73,6 +74,15 @@ const projectsData: Project[] = [
     description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly fast performance. Written in C and programmed for IOS.",
     media: [{ type: "image", src: images["calculator"] }],
   },
+    {
+    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
+    link: "https://dlor.vercel.app/",
+    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
+    media: [
+      { type: "image", src: images["ecommerce"] }
+    ],
+  },
+
   {
     title: "Microphone Sound Spectrum Analyzer (Angular/Typescript)",
     link: "https://github.com/austinhutchen/austinscode/src/components/pages/sub/AudioVisualizer.tsx",
