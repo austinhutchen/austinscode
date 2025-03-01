@@ -26,26 +26,7 @@ export const Visualizer: React.FC = () => {
       <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog circuits, and short tutorials by me! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
-         <b>
-        <h2 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h2>
-      </b>  
-        <div className="projDesc">
-<div className="fadeSide">
-
-          <p> Built my own 12-Volt 6MHZ Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer"> Schmidt Trigger Inverter IC </a> and a 6.5MHZ quartz crystal. Thanks to the usage of a quartz crystal, the oscillator is highly precise, and can be used as a digital reference clock for other devices. 
-          </p>
-</div>     
-</div>
-<br/>
-      <div className="analogCircuits">
-          <img loading="eager" src={images.oscillator} className="projImg" />
-        <img loading="eager" src={images.osc2} id="rotate-90"  className="projImg"  />
-              <img loading="eager" src={images.sqr} className="projImg"  />
-
-      </div>
-      
-<br/>
-    <b>
+          <b>
         <h2 className="hlight"> ESP32 AUTOMATIC PLANT IRRIGATION SYSTEM </h2>
       </b>
       <br />
@@ -65,6 +46,26 @@ export const Visualizer: React.FC = () => {
 
 
     <br/>
+         <b>
+        <h2 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h2>
+      </b>  
+        <div className="projDesc">
+<div className="fadeSide">
+
+          <p> Built my own 12-Volt 6MHZ Colpitts oscillator circuit with a <a href="https://github.com/austinhutchen/datasheets/blob/main/docs/CD40106BE.pdf" rel="noopener noreferrer"> Schmidt Trigger Inverter IC </a> and a 6.5MHZ quartz crystal. Thanks to the usage of a quartz crystal, the oscillator is highly precise, and can be used as a digital reference clock for other devices. It generates a true AC square wave with zero crossings, as shown below. 
+          </p>
+</div>     
+</div>
+<br/>
+      <div className="analogCircuits">
+          <img loading="eager" src={images.oscillator} className="projImg" />
+        <img loading="eager" src={images.osc2} id="rotate-90"  className="projImg"  />
+              <img loading="eager" src={images.sqr} className="projImg"  />
+
+      </div>
+      
+<br/>
+
        <b>
         <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>

@@ -166,7 +166,7 @@ const experienceItems = [
       description: (
   <>
   Built and tested an RS485 C# NuGet library for <a href="https://www.modbus.org/docs/Modbus_Messaging_Implementation_Guide_V1_0b.pdf" rel="noopener noreferrer">ModBus ASCII/RTU </a> drivers and simulators used at{" "}
-<a href="https://www.formfactor.com/" rel="noopener noreferrer">FormFactor</a>. Contributed to development on FormFactor Cryo's IQ-3000 Spin-Qubit quantum computer system, supporting near-zero Kelvin operations. Drafted engineering decisions for system optimization. </>
+<a href="https://www.formfactor.com/" rel="noopener noreferrer">FormFactor</a>. Contributed to development on FormFactor Cryo's IQ-3000 Spin-Qubit quantum computer system, supporting near-zero Kelvin operations. In meeting with Cryo team, drafted engineering decisions for system optimization. </>
 ),    },
     {
         position: "Calculus 2 Course Assistant (University of Colorado Boulder)",

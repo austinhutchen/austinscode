@@ -84,7 +84,7 @@ const projectsData: Project[] = [
   },
 
   {
-    title: "Microphone Sound Spectrum Analyzer (Angular/Typescript)",
+    title: "FM Spectrum Analyzer (Angular/Typescript)",
     link: "https://github.com/austinhutchen/austinscode/src/components/pages/sub/AudioVisualizer.tsx",
     description:"A simple microphone spectrum analyzer that displays the soundwaves of your device’s microphone input using the Typescript webMedia API, html 2D canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
     media: [{ type: "video", src: images["sine"] }],
