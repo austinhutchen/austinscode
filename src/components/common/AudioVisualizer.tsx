@@ -77,7 +77,7 @@ export const AudioVisualizer: React.FC = () => {
 
       // Draw frequency labels
       ctx.font = '0.95vmax Arial';
-      const frequencies = [500, 4000, 8000, 16000];
+      const frequencies = [0,500, 4000, 8000, 16000];
       const spacing = 8; // Minimum spacing between labels
 
       frequencies.forEach((freq, index) => {
