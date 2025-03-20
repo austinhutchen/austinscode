@@ -112,7 +112,7 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white', borderRadius:'1.3svw' }}>
               <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-                <img src={instagram} width={icon_width} height={icon_height} alt="instagram" />
+                <img src={instagram} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="instagram" />
                 <h3>Instagram</h3>
               </a>
             </Button>
@@ -120,7 +120,7 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255,0,0,0.4)', border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
-                <img src={facebook} width={icon_width} height={icon_height} alt="facebook" />
+                <img src={facebook} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="facebook" />
                 <h3>Facebook</h3>
               </a>
             </Button>
@@ -129,7 +129,7 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://boulder.joinhandshake.com/profiles/tr9eud" target="_blank" rel="noopener noreferrer">
-                <img src={handshake} width={icon_width} height={icon_height} alt="handshake" />
+                <img src={handshake} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="handshake" />
                 <h3>Handshake</h3>
               </a>
             </Button>
@@ -137,7 +137,7 @@ export const NavBar: React.FC = () => {
                   <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
-                <img src={ebay} width={icon_width} height={icon_height} alt="ebay" />
+                <img src={ebay} width={icon_width} style={{borderRadius:'1.3svw' }}  height={icon_height} alt="ebay" />
                 <h3>Business</h3>
               </a>
             </Button>
@@ -146,8 +146,8 @@ export const NavBar: React.FC = () => {
           </NavItem>
                                   <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white', borderRadius:'1.3svw' }}>
-              <a href="https://pin.it/7kmNxYz2B" target="_blank" rel="noopener noreferrer">
-                <img src={pinterest} width={icon_width} height={icon_height} alt="pinterest" />
+              <a href="https://www.pinterest.com/austinhutchen/_pins/" target="_blank" rel="noopener noreferrer">
+                <img src={pinterest} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="pinterest" />
                 <h3>Pinterest</h3>
               </a>
             </Button>
@@ -156,7 +156,7 @@ export const NavBar: React.FC = () => {
                <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://www.youtube.com/@sinewaveaddict" target="_blank" rel="noopener noreferrer">
-                <img src={youtube} width={icon_width} height={icon_height} alt="youtube" />
+                <img src={youtube} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="youtube" />
                 <h3>Youtube</h3>
               </a>
             </Button>

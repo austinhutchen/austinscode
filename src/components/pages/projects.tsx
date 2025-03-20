@@ -271,7 +271,7 @@ export const Projects: React.FC = () => {
       </h1>
 
       <div className="fadeSide" style={{ margin: '0 auto', textShadow: "2px 2px 4px black" }}>
-             <h2 className="hlight"> Microphone Fast Fourier Transform (Typescript)</h2>
+             <h2 className="hlight"> Mic Sound Spectrum Analyzer (Typescript)</h2>
 
         <br />
           <div className='projDesc'>
