@@ -101,7 +101,7 @@ export const AudioVisualizer: React.FC = () => {
       });
     };
 
-    draw();
+    requestAnimationFrame(draw);
 
     return () => {
       audioContext.close();
