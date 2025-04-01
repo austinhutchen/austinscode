@@ -75,14 +75,7 @@ const projectsData: Project[] = [
     description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly fast performance. Written in C and programmed for IOS.",
     media: [{ type: "image", src: images["calculator"] }],
   },
-    {
-    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
-    link: "https://dlor.vercel.app/",
-    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
-    media: [
-      { type: "image", src: images["ecommerce"] }
-    ],
-  },
+
 
   {
     title: "FM Spectrum Analyzer (Angular/Typescript)",
@@ -96,6 +89,14 @@ const projectsData: Project[] = [
     description:
     "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
     media: [{type:"video", src: images["webcam"]}],
+  },
+      {
+    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
+    link: "https://dlor.vercel.app/",
+    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
+    media: [
+      { type: "image", src: images["ecommerce"] }
+    ],
   },
   {
     title: "Arduino Nano BLE Gesture Sensor (C++)",
