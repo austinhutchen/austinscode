@@ -90,6 +90,13 @@ const projectsData: Project[] = [
     description:"A simple microphone spectrum analyzer that displays the soundwaves of your device’s microphone input using the Typescript webMedia API, html 2D canvas, Angular framework, and a Fast Fourier Transform typescript implementation. I made this because I love playing music, and seeing the frequency spectrum decomposition of the sound live.",
     media: [{ type: "video", src: images["sine"] }],
   },
+    {
+    title: "Photobooth App (Typescript, FEAN stack)",
+    link: "https://github.com/austinhutchen/webCam",
+    description:
+    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
+    media: [{type:"video", src: images["webcam"]}],
+  },
   {
     title: "Arduino Nano BLE Gesture Sensor (C++)",
     link: "https://github.com/austinhutchen/ArtificalSP.git",
@@ -101,7 +108,7 @@ const projectsData: Project[] = [
   },
 
     {
-    title: "Mood Maps Api (Javascript/Css)",
+    title: "Mood Maps (Javascript/CSS)",
     link: "https://thevibecheck.onrender.com",
     description:
      "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
@@ -113,13 +120,7 @@ const projectsData: Project[] = [
     description: "A shell is the user’s primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user’s local terminal.",
     media: [{ type: "image", src: images["shell"] }],
   },
-    {
-    title: "Photobooth App (Typescript, FEAN stack)",
-    link: "https://github.com/austinhutchen/webCam",
-    description:
-    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
-    media: [{type:"video", src: images["webcam"]}],
-  },
+
   {
     title: "Arduino 8-Bit Bitmask Animator (C)",
     link: "https://github.com/austinhutchen/austinscode",
