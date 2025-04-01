@@ -41,7 +41,8 @@ const images: Images = {
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4'),
   arduino: getImgPath('arduino.mp4'),
-  ecommerce: getImgPath('emarket.webp')
+  ecommerce: getImgPath('emarket.webp'),
+  webcam: getImgPath('webCam.mp4')
   // Add other images here
 };
 const projectsData: Project[] = [
@@ -98,6 +99,7 @@ const projectsData: Project[] = [
       { type: "video", src: images["nano2"] },
     ],
   },
+
     {
     title: "Mood Maps Api (Javascript/Css)",
     link: "https://thevibecheck.onrender.com",
@@ -111,7 +113,13 @@ const projectsData: Project[] = [
     description: "A shell is the user’s primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user’s local terminal.",
     media: [{ type: "image", src: images["shell"] }],
   },
-
+    {
+    title: "Photobooth App (Typescript, FEAN stack)",
+    link: "https://github.com/austinhutchen/webCam",
+    description:
+    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
+    media: [{type:"video", src: images["webcam"]}],
+  },
   {
     title: "Arduino 8-Bit Bitmask Animator (C)",
     link: "https://github.com/austinhutchen/austinscode",
@@ -171,6 +179,7 @@ const projectsData: Project[] = [
       "A multi-threaded and secure newsletter delivery system coded from the ground up in Rust, to accommodate the scaling of requests from users on an ACTIX-WEB powered Rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
     media: [{ type: "image", src: images["actix"] }],
   },
+
  ];
 const ProjectList: React.FC = () => (
   <div className="projVid" >
