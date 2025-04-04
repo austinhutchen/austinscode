@@ -79,7 +79,7 @@ export const NavBar: React.FC = () => {
               <h3>Projects</h3>
             </Button>
           </NavItem>
-          <NavItem lassName="nav-item  justify-center items-center">
+          <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Gallery')}>
               <img src={transistor} width={icon_width} height={icon_height} alt="cube" />
               <h3>Lab</h3>
@@ -145,23 +145,8 @@ export const NavBar: React.FC = () => {
 
 
           </NavItem>
-                                  <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white', borderRadius:'1.3svw' }}>
-              <a href="https://www.pinterest.com/austinhutchen/_pins/" target="_blank" rel="noopener noreferrer">
-                <img src={pinterest} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="pinterest" />
-                <h3>Pinterest</h3>
-              </a>
-            </Button>
-          </NavItem>
-
-               <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
-              <a href="https://www.youtube.com/@sinewaveaddict" target="_blank" rel="noopener noreferrer">
-                <img src={youtube} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="youtube" />
-                <h3>Youtube</h3>
-              </a>
-            </Button>
-          </NavItem>
+     
+          
           </Nav>
         </Collapse>
       </div>
