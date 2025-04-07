@@ -62,6 +62,14 @@ const projectsData: Project[] = [
       { type: "video", src: images["matrix"] },
     ],
   },
+     {
+    title: "Photobooth App (Typescript, FEAN stack)",
+    link: "https://github.com/austinhutchen/webCam",
+    description:
+    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
+    media: [{type:"video", src: images["webcam"]}],
+  },
+
   {
     title: "Arduino Scrolling Led Real Time Clock (C)",
     link: "https://github.com/austinhutchen/RTC_LED.git",
@@ -83,13 +91,7 @@ const projectsData: Project[] = [
     description:"A simple microphone spectrum analyzer that displays the soundwaves of your device’s microphone input using the Typescript webMedia API, html 2D canvas, Angular framework. I made this because I love playing music, and seeing the sine waves fluctuate live.",
     media: [{ type: "video", src: images["sine"] }],
   },
-    {
-    title: "Photobooth App (Typescript, FEAN stack)",
-    link: "https://github.com/austinhutchen/webCam",
-    description:
-    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
-    media: [{type:"video", src: images["webcam"]}],
-  },
+ 
       {
     title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
     link: "https://dlor.vercel.app/",

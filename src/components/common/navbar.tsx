@@ -72,11 +72,16 @@ export const NavBar: React.FC = () => {
               <h3>About</h3>
             </Button>
           </NavItem>
-         
+                      <NavItem className="nav-item  justify-center items-center">
+            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Resume')}>
+              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
+              <h3>Resume</h3>
+            </Button>
+          </NavItem>
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Projects')}>
               <img  src={projects} width={icon_width} height={icon_height} alt="projects" />
-              <h3>Software</h3>
+              <h3>Embedded</h3>
             </Button>
           </NavItem>
           <NavItem className="nav-item  justify-center items-center">
@@ -85,12 +90,7 @@ export const NavBar: React.FC = () => {
               <h3>Lab</h3>
             </Button>
           </NavItem>
-                     <NavItem className="nav-item  justify-center items-center">
-            <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Resume')}>
-              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-              <h3>Resume</h3>
-            </Button>
-          </NavItem>
+        
           <NavItem className="nav-item  justify-center items-center">
             <Button  style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white', borderRadius:'1.3svw'  }}>
                 <a href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/" target="_blank" rel="noopener noreferrer">
