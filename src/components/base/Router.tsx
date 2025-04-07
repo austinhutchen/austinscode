@@ -6,7 +6,6 @@ import { Projects } from '../pages/projects';
 import { Aboutme } from '../pages/aboutme';
 import { Visualizer } from '../pages/gallery';
 
-
 export const Router: React.FC = () => {
     const location = useLocation();
     return (

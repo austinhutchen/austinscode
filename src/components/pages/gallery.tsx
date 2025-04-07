@@ -35,7 +35,7 @@ export const Visualizer: React.FC = () => {
 <div className="fadeSide">
 
 
-          <p> Built a <a href="https://github.com/austinhutchen/autoIrrigation32">plant waterer system </a>with an ESP32 microcontroller and 7V Relay water tube pump that opened or closed to push water into the plant. It made this decision depending on the moisture threshold reading from a capacative soil moisture detector.          </p>
+          <p> Built a <a href="https://github.com/austinhutchen/autoIrrigation32">plant waterer system </a>with an ESP32 microcontroller and 7V Relay water tube pump that opened or closed to push water into the plant. It made this decision depending on the moisture threshold reading from a capacative soil moisture detector. It also has an option for battery powered operation, in which a 9V battery can power the system for a full week.          </p>
 </div>     
 </div>
 <br/>
@@ -69,7 +69,6 @@ export const Visualizer: React.FC = () => {
        <b>
         <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
       </b>
-      <br />
 
      <div className="projDesc">
 <div className="fadeSide">
@@ -81,9 +80,9 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
         <div className="analogCircuits" >
-        <img loading="lazy"  id="rotate-90" src={images.schematic}  className="projImg" />
-        <img loading="lazy" src={images.bipolaroutput} className="projImg"/>
-        <img loading="lazy" src={images.volts} className="projImg"/>
+        <img  id="rotate-90" src={images.schematic}  className="projImg" />
+        <img  src={images.bipolaroutput} className="projImg"/>
+        <img src={images.volts} className="projImg"/>
         </div>
 
 
