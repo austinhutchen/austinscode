@@ -26,9 +26,17 @@ html {
 background: radial-gradient(ellipse at 50% 50%, rgba(128, 128, 128, 1) 0%, rgba(175, 80, 76, 1) 13%, rgba(81, 12, 114, 1) 25%, rgba(108, 21, 94, 1) 38%, rgba(57, 17, 93, 1) 50%, rgba(0, 133, 255, 1) 75%, rgba(128, 128, 128, 1) 100%);
 }
 
-.introText {
-  margin: 0 auto;
-  max-width: 65svw;
+
+
+
+.introGlow h2{
+    color: #FAF9F6; /* Slightly off-white for a softer look */
+  font-size: 0.96rem; /* Slightly larger font for readability */
+  text-align: center; /* Center-align text */
+  font-family: 'Open Sans'; /* Clean, professional font */
+  font-weight: 500;
+    line-height: 1.6;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
 }
 @media (max-width: 768px) {
   .introText {
@@ -47,7 +55,7 @@ background: radial-gradient(ellipse at 50% 50%, rgba(128, 128, 128, 1) 0%, rgba(
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 65svw; /* Adjusted for responsiveness */
+  max-width: 70svw; /* Adjusted for responsiveness */
   padding: 10px;
 }
 

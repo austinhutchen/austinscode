@@ -2,6 +2,7 @@
 import React, { useEffect, useRef,useState } from "react";
 
 import { AudioVisualizer } from "../common/AudioVisualizer";
+import {FunctionGrapher} from "../common/FunctionGrapher";
 import { NavBar } from "../common/navbar";
 import "../../css/dimensions.css";
 import "../../css/fonts.css";
@@ -301,7 +302,7 @@ algorithm to decompose your microphone's audio spectrum. The program then displa
         setStream={setAudioStream}
       />
 <br/>
- 
+<FunctionGrapher/> 
 
       <ProjectList />
     </div>
