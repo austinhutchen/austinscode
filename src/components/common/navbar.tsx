@@ -19,7 +19,7 @@ export const NavBar: React.FC = () => {
   const ebay = `${url}/fast_imgs/ebay.webp`;
   const pinterest = `${url}/fast_imgs/pinterest.webp`;
   const youtube = `${url}/fast_imgs/youtube.webp`;
-  const software = `${url}/fast_imgs/SW.png`;
+  const software = `${url}/fast_imgs/webDev.webp`;
   const icon_height = '27svh';
   const icon_width = 'auto';
 

@@ -11,7 +11,7 @@ const images: Images = {
   coding: getImgPath("coding.webp"),
   systems: getImgPath("systems.webp"),
   math: getImgPath("mathBook.webp"),
-  family: getImgPath("family.png"),
+  family: getImgPath("family.webp"),
   mimi: getImgPath("mimi.webp"),
   solder: getImgPath("SOLDER.mp4"),
   nature: getImgPath("nature.webp"),

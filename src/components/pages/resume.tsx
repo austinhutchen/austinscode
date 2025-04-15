@@ -165,6 +165,17 @@ const experienceItems = [
 <a href="https://www.formfactor.com/" rel="noopener noreferrer">FormFactor</a>. Contributed to development on FormFactor Cryo's IQ-3000 Spin-Qubit quantum computer system, supporting near-zero Kelvin operations. In meeting with Cryo team, drafted engineering decisions for system optimization. </>
 ),    },
     {
+   position: 'POS associate (The Outreach Team)',
+   period:'Mar 2024 - April 2024',
+   description: (
+   <>
+Worked directly with staff on <a rel="noopener noreferrer" href="https://www.theoutreachteam.net/">The Outreach Team</a> on a two-month campaign to gather signatures for a proposition meant to increase the availability of affordable housing in Long Beach.
+   </>
+
+   ),
+
+  },
+    {
         position: "Calculus 2 Course Assistant (University of Colorado Boulder)",
         period: "January 2023 - May 2023",
         description:
@@ -187,17 +198,7 @@ const experienceItems = [
             </>
         ),
     },
-  {
-   position: 'POS associate (The Outreach Team)',
-   period:'Mar 2024 - April 2024',
-   description: (
-   <>
-Worked directly with staff on <a rel="noopener noreferrer" href="https://www.theoutreachteam.net/">The Outreach Team</a> on a two-month campaign to gather signatures for a proposition meant to increase the availability of affordable housing in Long Beach.
-   </>
 
-   ),
-
-  },
     {
         position: "Electronics Repairs & Reseller (eBay)",
         period: "May 2018 - Now",
