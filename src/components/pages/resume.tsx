@@ -87,11 +87,7 @@ export const Resume: React.FC = () => (
                 title="TWITTER ALGORITHM OPTIMIZATIONS"
                 description="Optimized the X algorithm for floating-point parallelism."
             />
-            <ContributionLink
-                href="https://www.ebay.com/usr/gadgetsllcc"
-                title="EBAY BUSINESS EXPERIENCE"
-                description="Successfully managed and sold over 72 electronics, including PCs, Windows devices, power supplies, and performed Mac repairs, achieving 100% positive feedback from satisfied customers since high school."
-            />
+   
 
             <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
@@ -191,12 +187,23 @@ const experienceItems = [
             </>
         ),
     },
+  {
+   position: 'POS associate (The Outreach Team)',
+   period:'Mar 2024 - April 2024',
+   description: (
+   <>
+Worked directly with staff on <a rel="noopener noreferrer" href="https://www.theoutreachteam.net/">The Outreach Team</a> on a two-month campaign to gather signatures for a proposition meant to increase the availability of affordable housing in Long Beach.
+   </>
+
+   ),
+
+  },
     {
         position: "Electronics Repairs & Reseller (eBay)",
         period: "May 2018 - Now",
         description: (
             <>
-                Sold and repaired Apple, Linux, and Windows devices, completing over 50 sales with 100% positive feedback. View my account{" "}
+                Sold and repaired Apple, Linux, and Windows devices, completing over 72 sales with 100% positive feedback, and $7,000 lifetime revenue. View my account{" "}
                 <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noreferrer">
                     here
                 </a>.

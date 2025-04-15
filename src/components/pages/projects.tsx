@@ -240,6 +240,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
         if (mediaItem.type === 'video') {
           return (
             <video
+              className="projImg"
               key={mediaItem.src}
               ref={el => mediaRefs.current[index] = el}
               data-src={mediaItem.src}

@@ -124,9 +124,20 @@ export const Landing: React.FC = () => {
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
         <br />
-        <div className="landImage">
-
-        </div>
+           <button
+          style={{ marginBottom: '0.2em' }}
+          className="btn btn-success"
+          type="button"
+          id="navbar"
+          onClick={() => {
+            nav('/Resume');
+          }}
+        >
+          My Resume!
+          <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
+        </button>
+        <br />
+        
         <TextSphere />
         <Spinner />
       </div >
