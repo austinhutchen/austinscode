@@ -31,12 +31,12 @@ export const FunctionGrapher: React.FC = () => {
        <a rel="noopener noreferrer" href="https://github.com/austinhutchen/functionGrapher">  <h2 className="hlight"> Function Graphing Engine (Typescript DESMOS clone)</h2></a>
       <div className="projDesc">
 <div className="fadeSide">
-      <p>A function graphing engine to graph 2-d functions. </p>
+      <p>A function plotting engine to graph 2-d functions. </p>
         </div>
       </div>
 
 
-    <div style={{ display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',overflow:'hidden',borderRadius:'20px',border:'1.1px solid white',  overflow: 'hidden'}}>
+    <div style={{ display:'inline-block',flexDirection:'column',justifyContent:'center',alignItems:'center',overflow:'hidden',borderRadius:'2svw',border:'2px solid white',  overflow: 'hidden'}}>
 
 
       <form onSubmit={handleSubmit}>
@@ -63,7 +63,7 @@ export const FunctionGrapher: React.FC = () => {
           },
         ]}
         layout={{ title: `Plot of f(x) = ${expression}` }}
-        style={{width: "95vw", height: "55svh" }}
+        style={{width: "75svw", height: "55svh" }}
       />
     </div>
     </>
