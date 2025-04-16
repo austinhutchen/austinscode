@@ -22,12 +22,12 @@ export const Visualizer: React.FC = () => {
     <>
       <NavBar />
 
-      <h1 className="hlight"> Welcome to my Lab!</h1> <br/>
+      <h2 className="hlight"> Welcome to my Lab!</h2> <br/>
       <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog/digital circuits, and short tutorials by me! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
           <b>
-        <h2 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM (ESP32) </h2>
+        <h1 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM (ESP32) </h1>
       </b>
       <br />
 
@@ -47,7 +47,7 @@ export const Visualizer: React.FC = () => {
 
     <br/>
          <b>
-        <h2 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h2>
+        <h1 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h1>
       </b>  
         <div className="projDesc">
 <div className="fadeSide">
@@ -80,14 +80,13 @@ export const Visualizer: React.FC = () => {
 </div>
 <br/>
         <div className="analogCircuits" >
-        <img  id="rotate-90" src={images.schematic}  className="projImg" />
+        <img  id="rotate-90" style={{maxHeight:'40svh'}} src={images.schematic}  className="projImg" />
         <img  src={images.bipolaroutput} className="projImg"/>
         <img src={images.volts} className="projImg"/>
         </div>
 
 
 
-      <br />
     </>
   );
 };

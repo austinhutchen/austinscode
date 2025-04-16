@@ -76,7 +76,7 @@ export const Landing: React.FC = () => {
     <>
 
       <NavBar />
-      <div className='animateLand'>
+      <div className='animateLand' style={{maxWidth: '70svw',margin: '0 auto',display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'center',textAlign: 'center'}}>
   
         <div className="introText">
         <h2 className="hlight-mini">
