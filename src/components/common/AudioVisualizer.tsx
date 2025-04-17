@@ -31,9 +31,7 @@ export const AudioVisualizer: React.FC = () => {
     const analyser = audioContext.createAnalyser();
     analyser.fftSize = 4096;
 const lowpass = audioContext.createBiquadFilter();
-lowpass.type = 'lowpass';
-lowpass.frequency.value = 16000; // Allow almost full range
-lowpass.Q.value = 0.7;
+lowpass.type = 'bandpass';
 const source = audioContext.createMediaStreamSource(stream);
 source.connect(lowpass);
 lowpass.connect(analyser);    
