@@ -29,7 +29,7 @@ export const AudioVisualizer: React.FC = () => {
     audioContextRef.current = audioContext;
 
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 2048;
+    analyser.fftSize = 4096;
 analyser.smoothingTimeConstant = 0.85;
  const lowpass = audioContext.createBiquadFilter();
 lowpass.type = 'lowpass';
