@@ -29,14 +29,20 @@ export const AudioVisualizer: React.FC = () => {
     audioContextRef.current = audioContext;
 
     const analyser = audioContext.createAnalyser();
-    analyser.fftSize = 8192;
+    analyser.fftSize = 2048;
 
-    const filter = audioContext.createBiquadFilter();
-    filter.type = 'lowpass';
-    filter.frequency.value = 8000;
+ const lowpass = audioContext.createBiquadFilter();
+lowpass.type = 'lowpass';
+lowpass.frequency.value = 8000;
+
+const highpass = audioContext.createBiquadFilter();
+highpass.type = 'highpass';
+highpass.frequency.value = 80;
     const source = audioContext.createMediaStreamSource(stream);
-    source.connect(filter);
-    filter.connect(analyser);
+source.connect(highpass);
+highpass.connect(lowpass);
+lowpass.connect(analyser);
+
 
     const bufferLength = analyser.frequencyBinCount;
     const dataArray = new Uint8Array(bufferLength);

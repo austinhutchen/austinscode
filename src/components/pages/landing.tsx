@@ -76,7 +76,7 @@ export const Landing: React.FC = () => {
     <>
 
       <NavBar />
-      <div className='animateLand' style={{maxWidth: '70svw',margin: '0 auto',display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'center',textAlign: 'center'}}>
+      <div className='animateLand' style={{maxWidth: '83svw',margin: '0 auto',display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'center',textAlign: 'center'}}>
   
         <div className="introText">
         <h2 className="hlight-mini">
@@ -97,7 +97,6 @@ export const Landing: React.FC = () => {
           width: "9svw",
           }} />
         </a>
-        <br />
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -110,7 +109,6 @@ export const Landing: React.FC = () => {
           More About Me
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
-        <br />
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -123,7 +121,6 @@ export const Landing: React.FC = () => {
           My Projects!
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
-        <br />
            <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
