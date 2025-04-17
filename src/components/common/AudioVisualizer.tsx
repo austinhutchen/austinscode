@@ -20,9 +20,10 @@ export const AudioVisualizer: React.FC = () => {
       console.error('Error accessing microphone:', error);
     }
   };
+    const canvas = canvasRef.current;
 
   useEffect(() => {
-    const canvas = canvasRef.current;
+
     if (!canvas || !stream) return;
 
     const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
@@ -110,7 +111,7 @@ lowpass.connect(analyser);
       audioContext.close();
       stream.getTracks().forEach((track) => track.stop());
     };
-  }, [stream]);
+  }, [stream, canvas, audioContextRef]);
 
   return (
     <div style={{ display: 'grid', alignItems: 'center', justifyContent: 'center' }}>
