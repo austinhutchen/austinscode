@@ -157,7 +157,6 @@ a:hover {
   z-index: 1000;
   /* Ensure the navbar is above other elements */
   width: min-content !important;
-
 }
 
 .clickIcon {

@@ -76,7 +76,7 @@ max-width:65svw;
 .projDesc .fadeSide p {
   color: #FAF9F6; /* Slightly off-white for a softer look */
   font-size: 0.95rem; /* Slightly larger font for readability */
-  line-height: 1.4; /* Improved line spacing for readability */
+  line-height: 1.2; /* Improved line spacing for readability */
   text-align: center; /* Center-align text */
   font-family: 'Arial', sans-serif; /* Clean, professional font */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow for better contrast */
