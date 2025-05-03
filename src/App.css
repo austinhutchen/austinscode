@@ -23,10 +23,9 @@ html {
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
-
-background: #134E5E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #23074d;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 

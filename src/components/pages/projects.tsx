@@ -51,7 +51,7 @@ const projectsData: Project[] = [
     title: "This Website (Typescript)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
-      "My website is designed to be mobile-first, and optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
+      "My website is programmed from the ground up to be mobile-first, optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
     media: [{}],
   },
   {
@@ -93,14 +93,7 @@ const projectsData: Project[] = [
     media: [{ type: "video", src: images["sine"] }],
   },
  
-      {
-    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
-    link: "https://dlor.vercel.app/",
-    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
-    media: [
-      { type: "image", src: images["ecommerce"] }
-    ],
-  },
+   
   {
     title: "Arduino Nano BLE Gesture Sensor (C++)",
     link: "https://github.com/austinhutchen/ArtificalSP.git",
@@ -131,7 +124,14 @@ const projectsData: Project[] = [
     description: "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an Arduino Uno R3 frame buffer for displaying the images and saving temporarily into local memory",
     media: [{ type: "video", src: images["butterfly"] }],
   },
-
+   {
+    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
+    link: "https://dlor.vercel.app/",
+    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
+    media: [
+      { type: "image", src: images["ecommerce"] }
+    ],
+  },
  {
     title: "Malloc() Algorithm (C/Bash)",
     link: "https://github.com/austinhutchen/cMalloc",
