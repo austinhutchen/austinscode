@@ -106,7 +106,7 @@ export const FunctionGrapher: React.FC = () => {
       </a>
       <div className="projDesc">
         <div className="fadeSide">
-          <p>A function plotting engine to graph 2-d functions. </p>
+          <p>A function plotting engine to graph 2-d functions and <a rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Mandelbrot_set">parametric fractals. </a></p>
         </div>
       </div>
 
