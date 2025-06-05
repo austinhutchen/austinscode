@@ -58,10 +58,8 @@ const keys = [
     type: "image"
   },
 
-
-
   {
-    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Group Theory.",
+    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Set Theory.",
     url: images.math,
     type: "image"
   },
