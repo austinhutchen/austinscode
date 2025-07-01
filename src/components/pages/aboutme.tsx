@@ -20,11 +20,7 @@ const images: Images = {
 
 
 const keys = [
-  {
-    desc: "Welcome! I'm Austin, a Computer and Software engineer who likes to tinker with electronic circuits and build software applications! ",
-    url: images.me,
-    type: "image"
-  },
+
   {
     desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials at St. Elmo Village, at the age of 11. I also learned arts and crafts in this village, which gave me a natural inclination towards teaching, poetry, and the arts.",
     url: images.tinker,
@@ -55,7 +51,7 @@ const keys = [
   },
 
   {
-    desc: "I like to read mathematics from my collected library in my free time. I have particular interest in Calculus, Boolean & Linear Algebra, and Set Theory.",
+    desc: "I like to read mathematics from my collected library in my free time. I have particular interest in Calculus, and Set Theory.",
     url: images.math,
     type: "image"
   },

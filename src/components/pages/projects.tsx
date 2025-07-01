@@ -54,15 +54,7 @@ const projectsData: Project[] = [
       "My website is programmed from the ground up to be mobile-first, optimized to run well on any device with an internet connection! Click the title text for a link to the source code.",
     media: [{}],
   },
-  {
-    title: "Sound Reactive Wifi Led Animation Matrix (C/HTML)",
-    link: "https://github.com/austinhutchen/WledStream.git",
-    description: "I used a sound-reactive low-power ESP8266 microcontroller device with an HTTP proxy, an I2S MEMS microphone breakout, and a 16x16 LED matrix to display various animations. I flashed a WLED binary directly onto the ESP8266. Additionally, I have a later version based on the Espressif ESP32, which is low-power and portable. This version features an 8x8 matrix and an option for battery power. Images can be uploaded and the display can be controlled wirelessly via a Wi-Fi app, an HTTP proxy, or an infrared receiver. Furthermore, it can respond with different bounce effects to music by utilizing the Fast Fourier Transform Signal Decomposition algorithm!",
-    media: [
-      { type: "video", src: images["wled2"] },
-      { type: "video", src: images["matrix"] },
-    ],
-  },
+
  
 
   {
@@ -120,34 +112,8 @@ const projectsData: Project[] = [
       "One of my first projects. A turn-based dungeon crawler with graphics embedded within a command-line based vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
     media: [{ type: "image", src: images["game"] }],
   },
-  {
-    title: "Social Media Search Engine CLI (Python)",
-    link: "https://github.com/austinhutchen/redditsearch.git",
-    description:
-      "A Reddit search engine I built using an older version of Python, that functioned using a binary search algorithm to quickly retrieve data at a user's query, such as the top post of the week, top users using a given search term, and many other options. Functioned entirely inside a virtual environment in the user's local terminal.",
-    media: [{ type: "image", src: images["search"] }],
-  },
-  {
-    title: "Note-Sharing App (React Native / Java)",
-    link: "https://github.com/austinhutchen/notable.git",
-    description:
-      "An app made for note-sharing purposes, utilizing AsyncStorage library to interface with iPhone and Android local cache storage. The app prompted the user with daily quotes fetched from an API and stored journal entries in the user's local cache system.",
-    media: [{ type: "image", src: images["notable"] }],
-  },
-  {
-    title: "Encrypted Text Editor (C++)",
-    link: "https://github.com/austinhutchen/encrypt.C.git",
-    description:
-      "A command-line text editor interface with the ability to save text data to a local file on the user's computer. The program utilized pointers and vectors for file traversal capability. Added in the last release (2021) was the ability to fully encrypt and decrypt into binary encodings from text input. I plan to use Huffman encoding to also compress text and other (image, video) formats in the future. Coded fully in C.",
-    media: [{ type: "image", src: images["encryptc"] }],
-  },
-  {
-    title: "Multithreaded E-Mail Server Backend (Rust)",
-    link: "https://github.com/austinhutchen/newsletter.rs.git",
-    description:
-      "A multi-threaded and secure newsletter delivery system coded from the ground up in Rust, to accommodate the scaling of requests from users on an ACTIX-WEB powered Rust server backend. Extensive testing and test cases are packaged, and were used to practice multithreading on server-based routing tasks.",
-    media: [{ type: "image", src: images["actix"] }],
-  },
+
+
 
  ];
 const ProjectList: React.FC = () => (
