@@ -104,14 +104,7 @@ const projectsData: Project[] = [
     description: "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an Arduino Uno R3 frame buffer for displaying the images and saving temporarily into local memory",
     media: [{ type: "video", src: images["butterfly"] }],
   },
-   {
-    title: "Modern Ecommerce Fashion Site (Typescript & Angular)",
-    link: "https://dlor.vercel.app/",
-    description: "Made at the request of a client. Functions as an ecommerce marketplace with several layers, transitions, and animations built in.",
-    media: [
-      { type: "image", src: images["ecommerce"] }
-    ],
-  },
+
  {
     title: "Malloc() Algorithm (C/Bash)",
     link: "https://github.com/austinhutchen/cMalloc",
