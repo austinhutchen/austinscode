@@ -98,11 +98,7 @@ export const Resume: React.FC = () => (
 
 
 
-            <ContributionLink
-                href="https://leetcode.com/austinhutchen/"
-                title="LEETCODE"
-                description="Check out my LeetCode solutions!"
-            />
+           
 
             <ContributionLink
                 href="https://gardenschoolfoundation.org/"

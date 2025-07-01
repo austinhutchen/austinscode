@@ -51,7 +51,7 @@ const projectsData: Project[] = [
     title: "This Website (Typescript)",
     link: "https://github.com/austinhutchen/austinscode",
     description:
-      "My website is programmed from the ground up to be mobile-first, optimized to run well on any device with an internet connection! Click the title text for a link to the source code. You can see even more on my projects on my Programming Instagram.",
+      "My website is programmed from the ground up to be mobile-first, optimized to run well on any device with an internet connection! Click the title text for a link to the source code.",
     media: [{}],
   },
   {
@@ -66,26 +66,12 @@ const projectsData: Project[] = [
  
 
   {
-    title: "Arduino Scrolling Led Real Time Clock (C)",
-    link: "https://github.com/austinhutchen/RTC_LED.git",
-    description:
- "An Arduino offline scrolling 12x8 LED matrix program, which I wrote using C and the arduino’s onboard battery RTC (Real Time Clock) module for timekeeping. The text scrolled across a 12x8 LED matrix using code I wrote.",
-    media: [{ type: "video", src: images["arduino"] }],
-  },
-  {
     title: "Calculator App (Dart/Flutter/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly fast performance. Written in C and programmed for IOS.",
     media: [{ type: "image", src: images["calculator"] }],
   },
 
-
-  {
-    title: "Sine Wave Analyzer (Angular/Typescript)",
-    link: "https://github.com/austinhutchen/austinscode/src/components/pages/sub/AudioVisualizer.tsx",
-    description:"A simple microphone spectrum analyzer that displays the soundwaves of your device’s microphone input using the Typescript webMedia API, html 2D canvas, Angular framework. I made this because I love playing music, and seeing the sine waves fluctuate live.",
-    media: [{ type: "video", src: images["sine"] }],
-  },
  
    
   {
@@ -102,7 +88,7 @@ const projectsData: Project[] = [
     title: "Mood Maps (Javascript/CSS)",
     link: "https://github.com/mali7617/thevibecheck",
     description:
-     "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
+     "A Google Maps app interface that was built using Javascript, handlebars, and a SQL backend. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
     media: [{ type: "image", src: images["maps"] }],
   },
   {
@@ -133,16 +119,7 @@ const projectsData: Project[] = [
       "This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many problems present in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, and included within it a custom shell as well as several embedded Linux projects.",
     media: [{ type: "image", src: images["malloc"] }],
   },
-  {
-    title: "Portable 9v Weather Detection Module (C/Typescript)",
-    link: "https://github.com/austinhutchen/weather-sense.ts.git",
-    description:
-      "Used an ESP8266 and DHT11 serial temperature & humidity sensor along with a 7-segment display with 9V of portable battery power to display real-time local temperature & humidity information over wifi to a react app, while displaying bit transmission on the segmented display. Includes a custom thermistor-checked data correction algorithm on the DHT11 for fixing imprecise temperature measurements. Embedded instructions coded fully in C using the platformio platform, and app was coded using TypeScript, SCSS, and the React Native framework.",
-    media: [
-      { type: "image", src: images["WEATHER_SENSOR"] },
-      { type: "image", src: images["weather"] },
-    ],
-  },
+
   {
     title: "Zelda Terminal Game (C++)",
     link: "https://github.com/austinhutchen/levelquest.git",

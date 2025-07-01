@@ -67,14 +67,14 @@ export const Visualizer: React.FC = () => {
 <br/>
 
        <b>
-        <h2 className="hlight"> BIPOLAR LINEAR POWER SUPPLY </h2>
+        <h2 className="hlight"> DUAL LINEAR POWER SUPPLY </h2>
       </b>
 
      <div className="projDesc">
 <div className="fadeSide">
 
 
-          <p> Built a <a href="https://youtu.be/mOO_zLV8Ddk?si=PzATqeKqisUna1-b" rel="noopener noreferrer"> linear bipolar power supply circuit </a>using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+          <p> Built a linear power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
           </p>
 </div>     
 </div>

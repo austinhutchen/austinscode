@@ -8,7 +8,7 @@ type Mode = "function" | "mandelbrot" | "tinkerbell";
 
 export const FunctionGrapher: React.FC = () => {
   const [mode, setMode] = useState<Mode>("function");
-  const [expression, setExpression] = useState<string>("sin(x)");
+  const [expression, setExpression] = useState<string>("cos(x)");
   const [xValues, setXValues] = useState<number[]>([]);
   const [yValues, setYValues] = useState<number[]>([]);
   const [zValues, setZValues] = useState<number[][]>([]);

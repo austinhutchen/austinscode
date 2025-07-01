@@ -1,9 +1,8 @@
 {
-  "short_name": "austinscode",
+  "short_name": "austinbuilds",
   "name": "austinscode",
   "start_url": "/austinscode",
   "display": "standalone",
   "theme_color": "#5F9EA0",
-  "orientation": "portrait-primary",
-  "background_color": "#5F9EA0"
+  "orientation": "portrait-primary"
 }
