@@ -21,7 +21,7 @@ const images: Images = {
 
 const keys = [
   {
-    desc: "Welcome! I'm Austin, a Computer and Software engineer who likes to tinker with electronic circuits and code Typescript-based software applications, and I have plenty of hobbies! ",
+    desc: "Welcome! I'm Austin, a Computer and Software engineer who likes to tinker with electronic circuits and build software applications! ",
     url: images.me,
     type: "image"
   },
@@ -46,20 +46,16 @@ const keys = [
     url: images.solder,
     type: "video"
   },
-  {
-    desc: "I enjoy building websites like this one, apps like the ones on my projects page, and working with server scripts on the backend. ",
-    url: images.github,
-    type: "image"
-  },
+
 
   {
-    desc: "I also spend time building embedded systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
+    desc: "I also spend time building systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
     url: images.systems,
     type: "image"
   },
 
   {
-    desc: "I read mathematics from my personally collected library in my free time. I have particular fascinations with Calculus, Boolean & Linear Algebra, and Set Theory.",
+    desc: "I like to read mathematics from my collected library in my free time. I have particular interest in Calculus, Boolean & Linear Algebra, and Set Theory.",
     url: images.math,
     type: "image"
   },

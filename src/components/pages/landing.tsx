@@ -80,23 +80,18 @@ export const Landing: React.FC = () => {
   
         <div className="introText">
         <h2 className="hlight-mini">
-          <b>Welcome to my website! I'm Austin, an Embedded Software Engineer and Computer Optimization Nerd.</b>
+          <b>Welcome to my website! I'm Austin, a Full-Stack Software Engineer and Computer Optimization Nerd.</b>
         </h2>
-        <div className="nerdGif"><img title="math" src={intro} />
-        </div>
+
           <div className="intro">
               <h2>
-              As a natural tinkerer and Computer Science student (BSc 2026), I excel at large-scale software development, building electronic circuits, IoT systems, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the <a href="https://www.colorado.edu/program/learningassistant/">Learning Assistant Program  </a> at the University of Colorado Boulder. Additionally, I personally developed a proprietary
-              <a href="https://modbus.org/docs/Modbus_over_serial_line_V1.pdf"> ModBus C#  </a> implementation for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, <a> I actively contribute to emerging open-source projects.</a> Let’s connect below and explore new opportunities! 🚀🌟
+              As a natural tinker and Computer Science student (BSc 2026), I enjoy large-scale software development, building electronic circuits, IoT systems, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the <a href="https://www.colorado.edu/program/learningassistant/">Learning Assistant Program  </a> at the University of Colorado Boulder. Most recently, I personally developed a proprietary
+              <a href="https://modbus.org/docs/Modbus_over_serial_line_V1.pdf"> ModBus C#  </a> implementation for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, PHP, C#, React Native, and C++, <a> I actively contribute to emerging open-source projects.</a> Let’s connect and explore new opportunities! 🌟
             </h2>
           </div>
                  </div>
 
-        <a href="https://github.com/austinhutchen" rel="noopener noreferrer">
-          <img src={github} title="GitHub" style={{
-          width: "9svw",
-          }} />
-        </a>
+      
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"

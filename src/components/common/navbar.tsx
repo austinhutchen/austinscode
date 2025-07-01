@@ -7,22 +7,20 @@ export const NavBar: React.FC = () => {
   const nav = useNavigate();
   const url = process.env.PUBLIC_URL;
   const github = `${url}/fast_imgs/github.webp`;
-  const instagram = `${url}/fast_imgs/Instagram.webp`;
   const linkedin = `${url}/fast_imgs/LinkedIn.webp`;
   const facebook = `${url}/fast_imgs/Facebook.webp`;
   const handshake = `${url}/fast_imgs/handshake.webp`;
-  const home = `${url}/fast_imgs/home.webp`;
-  const about = `${url}/fast_imgs/About.webp`;
+  const home = `${url}/fast_imgs/Home.png`;
+  const about = `${url}/fast_imgs/horus.gif`;
   const resume = `${url}/fast_imgs/Resume.webp`;
   const clickme = `${url}/fast_imgs/giphy.webp`;
   const transistor = `${url}/fast_imgs/transistor.webp`;
   const ebay = `${url}/fast_imgs/ebay.webp`;
   const pinterest = `${url}/fast_imgs/pinterest.webp`;
   const youtube = `${url}/fast_imgs/youtube.webp`;
-  const software = `${url}/fast_imgs/webdev.png`;
+  const software = `${url}/fast_imgs/webDev.png`;
   const icon_height = '27svh';
   const icon_width = 'auto';
-
   const toggle = () => {
     setIsOpen(!navOpen);
   }
@@ -52,7 +50,7 @@ export const NavBar: React.FC = () => {
     <div>
     <Navbar className="custom-navbar">
       <div className="navbar-header ">
-        <NavbarBrand className="navBrand" id="name">Austin Hutchen</NavbarBrand>
+        <NavbarBrand className="navBrand" id="name">Austin Morozane</NavbarBrand>
         <img className="clickIcon" height="66px" width="auto" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={navOpen} />
       </div>
@@ -110,14 +108,7 @@ export const NavBar: React.FC = () => {
               </a>
             </Button>
           </NavItem>
-          <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white', borderRadius:'1.3svw' }}>
-              <a href="https://www.instagram.com/austinscode/" target="_blank" rel="noopener noreferrer">
-                <img src={instagram} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="instagram" />
-                <h3>Instagram</h3>
-              </a>
-            </Button>
-          </NavItem>
+        
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255,0,0,0.4)', border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">

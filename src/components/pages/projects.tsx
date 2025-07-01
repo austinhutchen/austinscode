@@ -44,8 +44,8 @@ const images: Images = {
   arduino: getImgPath('arduino.mp4'),
   ecommerce: getImgPath('emarket.webp'),
   webcam: getImgPath('webCam.mp4')
-  // Add other images here
 };
+
 const projectsData: Project[] = [
   {
     title: "This Website (Typescript)",
@@ -63,13 +63,7 @@ const projectsData: Project[] = [
       { type: "video", src: images["matrix"] },
     ],
   },
-     {
-    title: "Photobooth App (Typescript, FEAN stack)",
-    link: "https://github.com/austinhutchen/webCam",
-    description:
-    "A secure web interface to take or edit photos and videos. Inspired by PhotoBooth for Mac, and uses amazon firebase storage to store the blob data. ",
-    media: [{type:"video", src: images["webcam"]}],
-  },
+ 
 
   {
     title: "Arduino Scrolling Led Real Time Clock (C)",
@@ -106,7 +100,7 @@ const projectsData: Project[] = [
 
     {
     title: "Mood Maps (Javascript/CSS)",
-    link: "https://thevibecheck.onrender.com",
+    link: "https://github.com/mali7617/thevibecheck",
     description:
      "A Google Maps app interface that I coded using Javascript. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
     media: [{ type: "image", src: images["maps"] }],
@@ -276,7 +270,6 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ project }) => {
 // Main Projects Component
 export const Projects: React.FC = () => {
     const [audioStream, setAudioStream] = useState<MediaStream | null>(null);
-    // Request microphone access
 
     return (
     <div>

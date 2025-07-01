@@ -23,7 +23,7 @@ export const Visualizer: React.FC = () => {
       <NavBar />
 
       <h2 className="hlight"> Welcome to my Lab!</h2> <br/>
-      <h3 className="hlight"> <b> This page contains a gallery with live demos of more projects, analog/digital circuits, and short tutorials by me! </b> </h3> <br/>
+      <h3 className="hlight"> <b> This page contains live demos of more projects, circuits, and tutorials by me! More audio circuits coming soon! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
           <b>
@@ -74,7 +74,7 @@ export const Visualizer: React.FC = () => {
 <div className="fadeSide">
 
 
-          <p> Built a linear bipolar power supply circuit using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
+          <p> Built a <a href="https://youtu.be/mOO_zLV8Ddk?si=PzATqeKqisUna1-b" rel="noopener noreferrer"> linear bipolar power supply circuit </a>using a 40VAC 2A center-tapped transformer and a diode-grid full-wave rectifier for +/-/ground DC voltage interfacing. I built the circuit using a full bridge rectifier array of diodes, and 16 AWG high-current wire. I built this to use for an audio amplifier project, which needed a bipolar power supply for the most clean and precise audio operation.
           </p>
 </div>     
 </div>
