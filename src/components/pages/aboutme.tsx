@@ -32,13 +32,9 @@ const keys = [
     url: images.family,
     type: "image"
   },
+
   {
-    desc: "Today in my free time, I love to optimize and build software! I practice leetcode frequently to refine my understanding of algorithms and enjoy comparing their runtime complexities. Check out my solutions! ",
-    url: images.coding,
-    type: "image"
-  },
-  {
-    desc: "I love to solder! Soldering has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
+    desc: "I love soldering! It has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
     url: images.solder,
     type: "video"
   },

@@ -60,7 +60,7 @@ const projectsData: Project[] = [
   {
     title: "Calculator App (Dart/Flutter/C)",
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
-    description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas for blazingly fast performance. Written in C and programmed for IOS.",
+    description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas. Written in C and programmed for IOS.",
     media: [{ type: "image", src: images["calculator"] }],
   },
 
