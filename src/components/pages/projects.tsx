@@ -82,28 +82,11 @@ const projectsData: Project[] = [
     media: [{ type: "image", src: images["shell"] }],
   },
 
-  {
-    title: "Arduino 8-Bit Bitmask Animator (C)",
-    link: "https://github.com/austinhutchen/austinscode",
-    description: "I utilized bit masks to code byte-level animations for embedded systems using general 16x2 I2C interfacing LCDs. The animations utilized an Arduino Uno R3 frame buffer for displaying the images and saving temporarily into local memory",
-    media: [{ type: "video", src: images["butterfly"] }],
-  },
+ 
 
- {
-    title: "Malloc() Algorithm (C/Bash)",
-    link: "https://github.com/austinhutchen/cMalloc",
-    description:
-      "This is a memory algorithm that I coded in C similar to MALLOC(), that utilized specialized allocation and free functions to allocate and deallocate memory in a custom heap. The algorithm was also able to properly handle many problems present in any computing device with an allocation system, such as memory fragmentation and defragmentation. I implemented the algorithm several times on different platforms, and included within it a custom shell as well as several embedded Linux projects.",
-    media: [{ type: "image", src: images["malloc"] }],
-  },
 
-  {
-    title: "Zelda Terminal Game (C++)",
-    link: "https://github.com/austinhutchen/levelquest.git",
-    description:
-      "One of my first projects. A turn-based dungeon crawler with graphics embedded within a command-line based vector display matrix. Used to practice foundations of object-oriented programming, memory reference, and messing around with vectors and the cstd::io library.",
-    media: [{ type: "image", src: images["game"] }],
-  },
+
+
 
 
 
