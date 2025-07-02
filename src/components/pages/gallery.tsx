@@ -14,7 +14,8 @@ export const Visualizer: React.FC = () => {
     oscillator: getImgPath('OSC.webp'),
     osc2: getImgPath('OSC2.webp'),
     sqr: getImgPath('Sqr.webp'),
-    waterer: getImgPath('PLANT_KERNEL.mp4')
+    waterer: getImgPath('PLANT_KERNEL.mp4'),
+    wall : getImgPath('WLED2.mp4')
     // Add other images here
   };
 
@@ -26,7 +27,7 @@ export const Visualizer: React.FC = () => {
       <h3 className="hlight"> <b> This page contains live demos of more projects, circuits, and tutorials by me! More audio circuits coming soon! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
-          <b>
+                 <b>
         <h1 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM (ESP32) </h1>
       </b>
       <br />
@@ -46,6 +47,27 @@ export const Visualizer: React.FC = () => {
 
 
     <br/>
+              <b>
+        <h1 className="hlight"> ASYNC LED WALL(ESP32) </h1>
+      </b>
+      <br />
+
+     <div className="projDesc">
+<div className="fadeSide">
+
+
+          <p> Flashed an ESP32 microcontroller with <a href="https://kno.wled.ge/" rel="noopener noreferrer">WLED</a> and used a custom application, along with a 16x16 LED matrix to control effects. Wired for 9V operation.</p>
+</div>     
+</div>
+<br/>
+        <div className="analogCircuits" >
+        <video autoPlay src={images.wall} playsInline webkit-playsinline loop muted controls  className="projImg" >
+        </video>
+         </div>
+
+
+    <br/>
+
          <b>
         <h1 className="hlight"> 6.5MHZ QUARTZ CRYSTAL OSCILLATOR (CD40106BE)</h1>
       </b>  
