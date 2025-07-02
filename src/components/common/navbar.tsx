@@ -104,7 +104,7 @@ export const NavBar: React.FC = () => {
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://github.com/austinhutchen" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
-                <h3>Github</h3>
+                <h3>Source</h3>
               </a>
             </Button>
           </NavItem>

@@ -66,15 +66,7 @@ const projectsData: Project[] = [
 
  
    
-  {
-    title: "Arduino Nano BLE Gesture Sensor (C++)",
-    link: "https://github.com/austinhutchen/ArtificalSP.git",
-    description:"A machine learning model implemented on an Arduino Nano BLE microcontroller that can sense and respond to various distinct Left-Right-Up-Down gestures. As seen in the second video, it is also able to recognize distinct RGB values using the onboard sensors. Trained on data provided by the Arduino Nano BLE sense rev2 sensors.",
-    media: [
-      { type: "video", src: images["gesture"] },
-      { type: "video", src: images["nano2"] },
-    ],
-  },
+ 
 
     {
     title: "Mood Maps (Javascript/CSS)",
