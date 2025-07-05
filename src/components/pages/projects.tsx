@@ -75,6 +75,7 @@ const projectsData: Project[] = [
      "A Google Maps app interface that was built using Javascript, handlebars, and a SQL backend. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
     media: [{ type: "image", src: images["maps"] }],
   },
+
   {
     title: "Mini Kernel Shell (C/Bash)",
     link: "https://github.com/austinhutchen/shell.git",
@@ -82,13 +83,21 @@ const projectsData: Project[] = [
     media: [{ type: "image", src: images["shell"] }],
   },
 
- 
+  {
+    title: "Note App (Javascript/CSS)",
+    link: "https://github.com/mali7617/thevibecheck",
+    description:
+     "A Note app interface that was initially built using Javascript, and styled with css. Stored note data in the users local cache using the localStorage API. ",
+    media: [{ type: "image", src: images["notable"] }],
+  },
 
-
-
-
-
-
+  {
+    title: "webCam App (Typescript/CSS)",
+    link: "https://github.com/mali7617/thevibecheck",
+    description:
+     "A webCam interface that was initially built using Typescript, and used the FEAN stack to efficiently store data in FireBase. Compressed image and video into BLOB formats for server storage.",
+    media: [{ type: "video", src: images["webcam"] }],
+  }
 
  ];
 const ProjectList: React.FC = () => (

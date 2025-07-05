@@ -15,7 +15,8 @@ export const Visualizer: React.FC = () => {
     osc2: getImgPath('OSC2.webp'),
     sqr: getImgPath('Sqr.webp'),
     waterer: getImgPath('PLANT_KERNEL.mp4'),
-    wall : getImgPath('WLED2.mp4')
+    wall : getImgPath('WLED2.mp4'),
+    ai: getImgPath('nano2.mp4')
     // Add other images here
   };
 
@@ -62,6 +63,26 @@ export const Visualizer: React.FC = () => {
 <br/>
         <div className="analogCircuits" >
         <video autoPlay src={images.wall} playsInline webkit-playsinline loop muted controls  className="projImg" >
+        </video>
+         </div>
+
+
+    <br/>
+  <b>
+        <h1 className="hlight"> BOT W/ COLOR SENSE (ARDUINO NANO REV2)</h1>
+      </b>
+      <br />
+
+     <div className="projDesc">
+<div className="fadeSide">
+
+
+          <p> Trained an Arduino Nano microcontroller with <a href="https://kno.wled.ge/" rel="noopener noreferrer">an ML model</a> and used the serial terminal to interface with gyroscope and color sensing data.</p>
+</div>     
+</div>
+<br/>
+        <div className="analogCircuits" >
+        <video autoPlay src={images.ai} playsInline webkit-playsinline loop muted controls  className="projImg" >
         </video>
          </div>
 

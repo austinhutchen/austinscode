@@ -24,11 +24,9 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
 background: #23074d;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to
-bottom, #4a00e0, #cc5333); /* Chrome 10-25,
-Safari 5.1-6 */
-  background: linear-gradient(to bottom,
-#4a00e0, #cc5333); /* W3C, IE 10+/ Edge,
+ background: linear-gradient(to bottom,
+  #4a00e0 0%,
+  #cc5333 calc(100% + 2px)); /* W3C, IE 10+/ Edge,
 Firefox 16+, Chrome 26 */}
 
 
