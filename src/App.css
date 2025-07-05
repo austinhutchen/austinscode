@@ -24,21 +24,24 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
 background: #23074d;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+  background: -webkit-linear-gradient(to
+bottom, #4a00e0, #cc5333); /* Chrome 10-25,
+Safari 5.1-6 */
+  background: linear-gradient(to bottom,
+#4a00e0, #cc5333); /* W3C, IE 10+/ Edge,
+Firefox 16+, Chrome 26 */}
 
 
 
 
 .introGlow h2{
     color: #FAF9F6; /* Slightly off-white for a softer look */
-  font-size: 0.96rem; /* Slightly larger font for readability */
+  font-size: 1rem; /* Slightly larger font for readability */
   text-align: center; /* Center-align text */
   font-family: 'Open Sans'; /* Clean, professional font */
   font-weight: 500;
-    line-height: 1.6;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Soft shadow */
+    line-height: 2.5;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 @media (max-width: 768px) {
   .introText {

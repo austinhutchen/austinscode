@@ -86,7 +86,7 @@ export const Landing: React.FC = () => {
           <div className="intro">
               <h2>
               As a natural tinker and Computer Science student (BSc 2027), I enjoy large-scale software development, building electronic circuits, IoT systems, and reading mathematics. I’ve also enjoyed teaching Calculus 2 through the <a href="https://www.colorado.edu/program/learningassistant/">Learning Assistant Program  </a> at the University of Colorado Boulder. Most recently, I personally developed a proprietary
-              <a href="https://modbus.org/docs/Modbus_over_serial_line_V1.pdf"> ModBus C#  </a> implementation for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, C#, React Native, and C++, <a> I actively contribute to emerging open-source projects.</a>🌟
+              <a href="https://modbus.org/docs/Modbus_over_serial_line_V1.pdf"> ModBus C#  </a> implementation for <a href="https://www.formfactor.com"> FormFactor Boulder </a>, a cryogenic quantum computing solutions company. Proficient in TypeScript, C#, React Native, and C++, <a> I actively contribute to emerging open-source projects.</a>
             </h2>
           </div>
                  </div>
@@ -101,7 +101,7 @@ export const Landing: React.FC = () => {
             nav('/AboutMe');
           }}
         >
-          More About Me
+           About Me
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
         <button

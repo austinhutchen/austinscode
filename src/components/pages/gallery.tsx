@@ -28,7 +28,7 @@ export const Visualizer: React.FC = () => {
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
                  <b>
-        <h1 className="hlight"> AUTOMATIC PLANT IRRIGATION SYSTEM (ESP32) </h1>
+        <h1 className="hlight"> PLANT IRRIGATION SYSTEM (ESP32) </h1>
       </b>
       <br />
 
