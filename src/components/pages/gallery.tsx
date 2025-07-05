@@ -69,7 +69,7 @@ export const Visualizer: React.FC = () => {
 
     <br/>
   <b>
-        <h1 className="hlight"> BOT W/ COLOR SENSE (ARDUINO NANO REV2)</h1>
+        <h1 className="hlight"> BOT W/ COLOR + MOTION SENSE (ARDUINO NANO REV2) </h1>
       </b>
       <br />
 
