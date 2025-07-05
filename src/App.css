@@ -23,11 +23,11 @@ html {
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
-background: #23074d;  /* fallback for old browsers */
- background: linear-gradient(to bottom,
-  #4a00e0 0%,
-  #cc5333 calc(100% + 2px)); /* W3C, IE 10+/ Edge,
-Firefox 16+, Chrome 26 */}
+background: linear-gradient(to bottom,
+    #4a00e0 0%,
+    #cc5333 calc(100% - (1px / 100%) * 100%)
+  );
+  }
 
 
 
@@ -38,8 +38,8 @@ Firefox 16+, Chrome 26 */}
   text-align: center; /* Center-align text */
   font-family: 'Open Sans'; /* Clean, professional font */
   font-weight: 500;
-    line-height: 2.5;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    line-height: 3.5;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 @media (max-width: 768px) {
   .introText {
