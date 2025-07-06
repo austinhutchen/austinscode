@@ -52,7 +52,7 @@ const keys = [
     type: "image"
   },
    {
-    desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could code around them forever. ",
+    desc: "I love spending time with my cats! Cats are the most calming pets to be around, in my opinion. I could relax with them forever. ",
     url: images.mimi,
     type: "image"
   },
