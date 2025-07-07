@@ -88,18 +88,6 @@ export const Resume: React.FC = () => (
                 description="Optimized the X algorithm for floating-point parallelism."
             />
    
-
-            <img
-                src="https://github-readme-streak-stats.herokuapp.com/?user=austinhutchen&theme=highcontrast&hide_border=false"
-                alt="GitHub streak stats"
-                className="my-1"
-                style={{ width: '100%', height: '20svh' }}
-            />
-
-
-
-           
-
             <ContributionLink
                 href="https://gardenschoolfoundation.org/"
                 title="GARDEN SCHOOL FOUNDATION"
