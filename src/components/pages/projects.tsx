@@ -77,13 +77,6 @@ const projectsData: Project[] = [
   },
 
   {
-    title: "Mini Kernel Shell (C/Bash)",
-    link: "https://github.com/austinhutchen/shell.git",
-    description: "A shell is the user’s primary interface into any UNIX/OSX/WINDOWS operating system. Coding this provided me with a wealth of systems and UNIX knowledge. The kernel implemented killing and starting of processes, and functioned inside the user’s local terminal.",
-    media: [{ type: "image", src: images["shell"] }],
-  },
-
-  {
     title: "Note App (Javascript/CSS)",
     link: "https://github.com/mali7617/thevibecheck",
     description:
