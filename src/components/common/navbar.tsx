@@ -10,7 +10,7 @@ export const NavBar: React.FC = () => {
   const linkedin = `${url}/fast_imgs/LinkedIn.webp`;
   const facebook = `${url}/fast_imgs/Facebook.webp`;
   const handshake = `${url}/fast_imgs/handshake.webp`;
-  const home = `${url}/fast_imgs/Home.png`;
+  const home = `${url}/fast_imgs/tme.jpg`;
   const about = `${url}/fast_imgs/horus.gif`;
   const resume = `${url}/fast_imgs/Resume.webp`;
   const clickme = `${url}/fast_imgs/giphy.webp`;
