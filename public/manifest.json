@@ -1,7 +1,7 @@
 {
   "short_name": "austinscode",
   "name": "Austin's Code",
-  "start_url": "/",
+  "start_url": "./austinscode",
   "display": "standalone",
   "theme_color": "#5F9EA0",
   "orientation": "portrait-primary"
