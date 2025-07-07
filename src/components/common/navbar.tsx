@@ -111,7 +111,7 @@ export const NavBar: React.FC = () => {
         
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255,0,0,0.4)', border: '1px solid white' , borderRadius:'1.3svw' }}>
-              <a href="https://www.facebook.com/austinhutchen/reels/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/austinmorozane/" target="_blank" rel="noopener noreferrer">
                 <img src={facebook} width={icon_width} style={{borderRadius:'1.3svw' }} height={icon_height} alt="facebook" />
                 <h3>Facebook</h3>
               </a>
