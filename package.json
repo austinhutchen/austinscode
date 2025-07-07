@@ -1,7 +1,7 @@
 {
   "name": "austinscode",
   "version": "4.0.0",
-  "homepage": "https://austinmorozane.github.io/austinscode/index.html",
+  "homepage": "https://austinmorozane.github.io/austinscode/",
   "private": false,
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
