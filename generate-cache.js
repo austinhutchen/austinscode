@@ -4,10 +4,8 @@ const crypto = require("crypto");
 
 // Configuration
 const imageDir = path.join(__dirname, "build/fast_imgs"); // Ensure images are copied to
-build
 const buildCssDir = path.join(__dirname, "build/static/css"); // React build CSS path
 const outputFile = path.join(__dirname, "public/assets-to-cache.json");
-const ttlMinutes = 30; // Cache expiration time in minutes
 
 function getFilesWithHash(directory, basePath) {
   return fs.existsSync(directory)
