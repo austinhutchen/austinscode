@@ -82,14 +82,6 @@ const projectsData: Project[] = [
     description:
      "A Note app interface that was initially built using Javascript, and styled with css. Stored note data in the users local cache using the localStorage API. ",
     media: [{ type: "image", src: images["notable"] }],
-  },
-
-  {
-    title: "webCam App (Typescript/CSS)",
-    link: "https://github.com/mali7617/thevibecheck",
-    description:
-     "A webCam interface that was initially built using Typescript, and used the FEAN stack to efficiently store data in FireBase. Compressed image and video into BLOB formats for server storage.",
-    media: [{ type: "video", src: images["webcam"] }],
   }
 
  ];
