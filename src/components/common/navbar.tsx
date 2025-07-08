@@ -118,17 +118,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
 
-                  <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
-              <a href="https://www.ebay.com/usr/gadgetsllcc" target="_blank" rel="noopener noreferrer">
-                <img src={ebay} width={icon_width} style={{borderRadius:'1.3svw' }}  height={icon_height} alt="ebay" />
-                <h3>Business</h3>
-              </a>
-            </Button>
-
-
-          </NavItem>
-     
+       
           
           </Nav>
         </Collapse>
