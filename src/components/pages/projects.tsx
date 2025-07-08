@@ -42,8 +42,7 @@ const images: Images = {
   matrix: getImgPath('matrix.mp4'),
   sine: getImgPath('sinMic.mp4'),
   arduino: getImgPath('arduino.mp4'),
-  ecommerce: getImgPath('emarket.webp'),
-  webcam: getImgPath('webCam.mp4')
+  ecommerce: getImgPath('emarket.webp')
 };
 
 const projectsData: Project[] = [
