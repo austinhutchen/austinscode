@@ -71,7 +71,7 @@ export const Resume: React.FC = () => (
                 ))}
             </ul>
 
-            <SectionHeader title="OPEN SOURCE CONTRIBUTIONS, BUSINESS, & VOLUNTEER WORK" italic />
+            <SectionHeader title="VOLUNTEER WORK" italic />
             <ContributionLink
                 href="https://github.com/twitter/the-algorithm/issues/162"
                 title="TWITTER ALGORITHM OPTIMIZATIONS"
