@@ -25,7 +25,7 @@ html {
   overflow-y: auto;
 background: linear-gradient(to bottom,
     #4a00e0 0%,
-    #cc5333 calc(100% - (1px / 100%) * 100%)
+    #cc5333 calc(100% - (2px / 100%) * 100%)
   );
   }
 
