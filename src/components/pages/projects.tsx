@@ -61,19 +61,11 @@ const projectsData: Project[] = [
     link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
     description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas. Written in C and programmed for IOS.",
     media: [{ type: "image", src: images["calculator"] }],
-  },
+  }
 
  
    
- 
 
-    {
-    title: "Mood Maps (Javascript/CSS)",
-    link: "https://github.com/mali7617/thevibecheck",
-    description:
-     "A Google Maps app interface that was built using Javascript, handlebars, and a SQL backend. Working on a team, I spent the most time organizing and dealing with location data from Google’s Maps API endpoint and building a usable interface similar to Google Maps, that returns locations nearby based on your mood.",
-    media: [{ type: "image", src: images["maps"] }],
-  }
 
 
 
