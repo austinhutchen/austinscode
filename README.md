@@ -1,12 +1,8 @@
-<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website Version: <i>LOCKED IN</i> <b> 23.0 </b> 
+<h2>My React-loaded website, documenting personal achievements!</h2>  <h3>Website 
 <br/> Original Author: <u><b>Me! <a rel="noopener noreferrer"href="https://www.linkedin.com/in/austin-hutchen-15440a1b2/">(Austin Hutchen) </a></b></u>  <br/>
   <h2> <b><u> For a dedicated resume, please view: </u></b></h2> <a href="https://github.com/austinhutchen/resume">My resume</a> <br/>
   <hr/>
-<br/>  <i> Espresso File sizes after gzip: <br/>
-  80 kB  build/static/js/main.ebf077bc.js <br/>
-  7.44 kB   build/static/css/main.b2e55e1d.css <br/>
- Link: <b> <a href="https://austinhutchen.github.io/austinscode/">Visit my website</a> </b>
-<hr/>
+
 
 
  <u> <h2> Local File Structure: </h2> </u> <br/>
