@@ -101,7 +101,7 @@ export const FunctionGrapher: React.FC = () => {
 
   return (
     <>
-      <a rel="noopener noreferrer" href="https://github.com/austinhutchen/functionGrapher">
+      <a rel="noopener noreferrer" href="https://github.com/austinhutchen/austinscode/tree/master/src/components/common">
         <h2 className="hlight"> Function Graphing Engine (Typescript DESMOS clone)</h2>
       </a>
       <div className="projDesc">
