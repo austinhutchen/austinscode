@@ -16,7 +16,7 @@ export const NavBar: React.FC = () => {
   const transistor = `${url}/fast_imgs/transistor.webp`;
   const youtube = `${url}/fast_imgs/youtube.webp`;
   const software = `${url}/fast_imgs/webDev.png`;
-  const lotus = `${url}/fast_imgs/lotus.png`;
+  const lotus = `${url}/fast_imgs/Lotus.png`;
   const icon_height = '27svh';
   const icon_width = 'auto';
   const toggle = () => {
