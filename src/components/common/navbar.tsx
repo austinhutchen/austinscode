@@ -9,16 +9,14 @@ export const NavBar: React.FC = () => {
   const github = `${url}/fast_imgs/github.webp`;
   const linkedin = `${url}/fast_imgs/LinkedIn.webp`;
   const facebook = `${url}/fast_imgs/Facebook.webp`;
-  const handshake = `${url}/fast_imgs/handshake.webp`;
   const home = `${url}/fast_imgs/tme.jpg`;
   const about = `${url}/fast_imgs/horus.gif`;
   const clickme = `${url}/fast_imgs/giphy.webp`;
   const transistor = `${url}/fast_imgs/transistor.webp`;
-  const youtube = `${url}/fast_imgs/youtube.webp`;
   const software = `${url}/fast_imgs/webDev.png`;
   const lotus = `${url}/fast_imgs/lotus.png`;
-  const icon_height = '27svh';
-  const icon_width = 'auto';
+  const icon_height = '23svh';
+  const icon_width = '20svw';
   const toggle = () => {
     setIsOpen(!navOpen);
   }
@@ -58,14 +56,13 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/')}>
               <img  src={home} width={icon_width} height={icon_height} alt="home" />
-              <h3>Home</h3>
             </Button>
           </NavItem>
         
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
-              <h3>About</h3>
+              <h3>Details</h3>
             </Button>
           </NavItem>
                       <NavItem className="nav-item  justify-center items-center">
@@ -83,7 +80,7 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Gallery')}>
               <img src={transistor} width={icon_width} height={icon_height} alt="cube" />
-              <h3>Digital</h3>
+              <h3>lab</h3>
             </Button>
           </NavItem>
         

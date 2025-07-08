@@ -148,7 +148,7 @@ a:hover {
 .custom-navbar {
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.07);
-  border-radius: 3svw;
+  border-radius: 2svw;
   align-content: center;
   justify-content:center;
   top: 0;
@@ -157,6 +157,7 @@ a:hover {
   z-index: 1000;
   /* Ensure the navbar is above other elements */
   width: min-content !important;
+  min-width: 20svw;
 }
 
 .clickIcon {
