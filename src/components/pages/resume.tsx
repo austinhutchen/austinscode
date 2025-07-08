@@ -60,7 +60,7 @@ export const Resume: React.FC = () => (
 
         <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" >
 
-            <SectionHeader title="DIRECT WORK EXPERIENCE" />
+            <SectionHeader title="SAMPLE" />
    
 
             <ul className="projectdesc pt-1">
