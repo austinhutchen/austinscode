@@ -148,7 +148,7 @@ a:hover {
 .custom-navbar {
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.07);
-  border-radius:6vw;
+  border-radius: 3svw;
   align-content: center;
   justify-content:center;
   top: 0;
@@ -167,20 +167,20 @@ a:hover {
 
 
   .navBrand {
-    font-size: 1.4em;
+    font-size: 1.2em;
     /* Reduce the font size */
-   max-width: 20svw;
+   max-width: 40svw;
    
   }
 
 
 /* Base line styles */
 .line {
-  height: 3px; /* 0.5% of the viewport height */
+  height: 5px; /* 0.5% of the viewport height */
   background-color: #fff; /* White color */
-  margin: 15px 0px; /* Space between lines using viewport height */
-  transition: all 0.9s cubic-bezier(.17,.67,.83,.67); /* Smooth transition */
-  min-width: 55px;
+  margin: 14px 0px; /* Space between lines using viewport height */
+  transition: all 0.7s cubic-bezier(.17,.67,.83,.67); /* Smooth transition */
+  min-width: 60px;
 }
 /* Open state styles */
 .line-open {
