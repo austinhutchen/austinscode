@@ -12,13 +12,11 @@ export const NavBar: React.FC = () => {
   const handshake = `${url}/fast_imgs/handshake.webp`;
   const home = `${url}/fast_imgs/tme.jpg`;
   const about = `${url}/fast_imgs/horus.gif`;
-  const resume = `${url}/fast_imgs/Resume.webp`;
   const clickme = `${url}/fast_imgs/giphy.webp`;
   const transistor = `${url}/fast_imgs/transistor.webp`;
-  const ebay = `${url}/fast_imgs/ebay.webp`;
-  const pinterest = `${url}/fast_imgs/pinterest.webp`;
   const youtube = `${url}/fast_imgs/youtube.webp`;
   const software = `${url}/fast_imgs/webDev.png`;
+  const lotus = `${url}/fast_imgs/lotus.png`;
   const icon_height = '27svh';
   const icon_width = 'auto';
   const toggle = () => {
@@ -72,11 +70,11 @@ export const NavBar: React.FC = () => {
           </NavItem>
                       <NavItem className="nav-item  justify-center items-center">
             <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Resume')}>
-              <img src={resume} width={icon_width} height={icon_height} alt="resume" />
-              <h3>Experience</h3>
+              <img src={lotus} width={icon_width} height={icon_height} alt="resume" />
+              <h3>More</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item  justify-center items-center">
+              <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Projects')}>
               <img  src={software} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
