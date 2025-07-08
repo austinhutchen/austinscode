@@ -6,29 +6,18 @@ const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/$
 type Images = Record<string, string>;
 
 const images: Images = {
-  tinker: getImgPath("tinker.webp"),
-  me: getImgPath("austin.webp"),
   coding: getImgPath("coding.webp"),
   systems: getImgPath("systems.webp"),
   math: getImgPath("mathBook.webp"),
-  family: getImgPath("me.webp"),
   mimi: getImgPath("mimi.webp"),
   solder: getImgPath("SOLDER.mp4"),
   nature: getImgPath("nature.webp"),
-  github: getImgPath("GITHUBME.webp")
 };
 
 
 const keys = [
 
-  {
-    desc: "Ever since I was little, I have loved to experiment with electronics. Here is a 3-volt windmill I built out of wood and craft materials at St. Elmo Village, at the age of 11. I also learned arts and crafts in this village, which gave me a natural inclination towards teaching, poetry, and the arts.",
-    url: images.tinker,
-    type: "image"
-  },
-  
-
-
+ 
   {
     desc: "I love soldering! It has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
     url: images.solder,
