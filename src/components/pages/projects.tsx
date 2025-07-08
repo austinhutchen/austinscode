@@ -22,27 +22,6 @@ interface ProjectItemProps {
 
 const getImgPath = (imageName: string) => `${process.env.PUBLIC_URL}/fast_imgs/${imageName}`;
 const images: Images = {
-  shell: getImgPath('shell.webp'),
-  calculator: getImgPath('calculator.webp'),
-  maps: getImgPath('maps.webp'),
-  gesture: getImgPath('gesture.mp4'),
-  encryptc: getImgPath('encryptc.webp'),
-  wled2: getImgPath('WLED2.mp4'),
-  my_interface: getImgPath('interface.webp'),
-  notable: getImgPath('journalapp.webp'),
-  weather: getImgPath('WEATHER.webp'),
-  butterfly: getImgPath('animate.mp4'),
-  WEATHER_SENSOR: getImgPath('ESP_WEATHER.webp'),
-  search: getImgPath('PYCLI.webp'),
-  actix: getImgPath('concurrency-model.webp'),
-  game: getImgPath('game1.webp'),
-  nano2: getImgPath('nano2.mp4'),
-  firecam: getImgPath('firecam.webp'),
-  malloc: getImgPath('malloc.webp'),
-  matrix: getImgPath('matrix.mp4'),
-  sine: getImgPath('sinMic.mp4'),
-  arduino: getImgPath('arduino.mp4'),
-  ecommerce: getImgPath('emarket.webp')
 };
 
 const projectsData: Project[] = [
@@ -53,20 +32,6 @@ const projectsData: Project[] = [
       "My website is programmed from the ground up to be mobile-first, optimized to run well on any device with an internet connection! Click the title text for a link to the source code.",
     media: [{}],
   },
-
- 
-
-  {
-    title: "Calculator App (Dart/Flutter/C)",
-    link: "https://github.com/austinhutchen/FASTCALCAPP.c.git",
-    description: "A calculator app with support for many different functions like factorials, transcendental functions like cosine that utilize Taylor series polynomial approximations for efficiency, and bit-level square root formulas. Written in C and programmed for IOS.",
-    media: [{ type: "image", src: images["calculator"] }],
-  }
-
- 
-   
-
-
 
 
  ];
@@ -164,11 +129,11 @@ export const Projects: React.FC = () => {
     return (
     <div>
       <NavBar />
-      <h1 className="hlight">
-        <b>PERSONAL PROJECTS:</b>
-      </h1>
+   
 
-      <div className="fadeSide" style={{ margin: '0 auto', textShadow: "2px 2px 4px black" }}>
+     
+      <ProjectList />
+       <div className="fadeSide" style={{ margin: '0 auto', textShadow: "2px 2px 4px black" }}>
              <h2 className="hlight"> <a href="https://github.com/austinhutchen/austinscode/tree/master/src/components/common" rel="noopener noreferrer">FM Sound Spectrum Analyzer </a> </h2>
         <br />
           <div className='projDesc'>
@@ -180,15 +145,16 @@ algorithm to decompose your microphone's audio spectrum. The program then displa
           </div>
           </div>
       </div>
-
-      <AudioVisualizer
+    
+<br/>
+        <AudioVisualizer
        stream={audioStream}
         setStream={setAudioStream}
       />
-<br/>
+
 <FunctionGrapher/> 
 
-      <ProjectList />
+
     </div>
   );
 };
