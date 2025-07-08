@@ -56,19 +56,20 @@ export const NavBar: React.FC = () => {
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/')}>
               <img  src={home} width={icon_width} height={icon_height} alt="home" />
+                  <h3>Home</h3>
             </Button>
           </NavItem>
         
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
-              <h3>Details</h3>
+              <h3>Hobbies</h3>
             </Button>
           </NavItem>
                       <NavItem className="nav-item  justify-center items-center">
             <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Resume')}>
               <img src={lotus} width={icon_width} height={icon_height} alt="resume" />
-              <h3>More</h3>
+              <h3>About</h3>
             </Button>
           </NavItem>
               <NavItem className="nav-item  justify-center items-center">
