@@ -15,7 +15,7 @@ export const NavBar: React.FC = () => {
   const transistor = `${url}/fast_imgs/transistor.webp`;
   const software = `${url}/fast_imgs/webDev.png`;
   const lotus = `${url}/fast_imgs/lotus.png`;
-  const icon_height = '24svh';
+  const icon_height = '28svh';
   const icon_width = 'auto';
   const toggle = () => {
     setIsOpen(!navOpen);
@@ -46,7 +46,7 @@ export const NavBar: React.FC = () => {
     <div>
     <Navbar className="custom-navbar">
       <div className="navbar-header ">
-        <NavbarBrand className="navBrand" id="name">Austin Morozane</NavbarBrand>
+        <NavbarBrand className="navBrand" id="name">Austin M</NavbarBrand>
         <img className="clickIcon" height="66px" width="auto" src={clickme} />
         <CustomNavbarToggler onClick={toggle} isOpen={navOpen} />
       </div>
