@@ -61,17 +61,7 @@ export const Resume: React.FC = () => (
         <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" >
 
             <SectionHeader title="DIRECT WORK EXPERIENCE" />
-            <div className="p-6 text-center">
-                <a
-                    href={`https://github.com/austinhutchen/resume/blob/master/resume.pdf`}
-                    download
-                    rel='noopener noreferrer'
-
-                    className="text-4xl font-bold underline text-blue-600 hover:text-blue-800"
-                >
-                    View Full Resume (PDF)
-                </a>
-            </div>
+   
 
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
