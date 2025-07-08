@@ -27,11 +27,7 @@ const keys = [
     type: "image"
   },
   
- {
-    desc: "I love spending time with my family. We are Afro-Indigenous, and although living with limited means, we love to give back to the earth.",
-    url: images.family,
-    type: "image"
-  },
+
 
   {
     desc: "I love soldering! It has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
