@@ -65,6 +65,12 @@ export const NavBar: React.FC = () => {
               <h3>Info</h3>
             </Button>
           </NavItem> 
+               <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Projects')}>
+              <img  src={software} width={icon_width} height={icon_height} alt="projects" />
+              <h3>Software</h3>
+            </Button>
+          </NavItem>
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/AboutMe')}>
               <img src={about} width={icon_width} height={icon_height} alt="about" />
@@ -72,12 +78,7 @@ export const NavBar: React.FC = () => {
             </Button>
           </NavItem>
                          
-              <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Projects')}>
-              <img  src={software} width={icon_width} height={icon_height} alt="projects" />
-              <h3>Software</h3>
-            </Button>
-          </NavItem>
+             
           
           <NavItem className="nav-item  justify-center items-center">
             <Button style={{backgroundColor:'rgba(255, 0, 0, 0.5)', border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Gallery')}>

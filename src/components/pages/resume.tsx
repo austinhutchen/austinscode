@@ -60,9 +60,6 @@ export const Resume: React.FC = () => (
 
         <div className="resumePage mx-auto p-6 rounded-lg shadow-lg" >
 
-            <SectionHeader title="SAMPLE" />
-   
-
             <ul className="projectdesc pt-1">
                 {experienceItems.map((item, index) => (
                     <li style={{ "listStyleType": 'none' }} key={index}>
@@ -78,11 +75,6 @@ export const Resume: React.FC = () => (
                 description="Optimized the X algorithm for floating-point parallelism."
             />
    
-            <ContributionLink
-                href="https://gardenschoolfoundation.org/"
-                title="GARDEN SCHOOL FOUNDATION"
-                description="Volunteered to build a community garden at Wilshire Crest Elementary for underrepresented groups."
-            />
             <Feedback />
         </div>
     </>
@@ -131,7 +123,7 @@ const ContributionLink: React.FC<{ href: string; title: string; description: str
 
 const experienceItems = [
     {
-        position: "Embedded Software Engineer Intern (FormFactor)",
+        position: "Software Engineer Intern (FormFactor)",
         period: "May 2024 - August 2024",
       description: (
   <>
@@ -175,7 +167,7 @@ Worked directly with staff on <a rel="noopener noreferrer" href="https://www.the
 
     {
         position: "Electronics Repairs & Reseller (eBay)",
-        period: "May 2018 - Now",
+        period: "May 2018 - 2022",
         description: (
             <>
                 Sold and repaired Apple, Linux, and Windows devices, completing over 72 sales with 100% positive feedback, and $7,000 lifetime revenue. View my account{" "}
@@ -187,11 +179,11 @@ Worked directly with staff on <a rel="noopener noreferrer" href="https://www.the
     },
     {
         position: "Open Source Developer (GitHub)",
-        period: "May 2022 - Now",
+        period: "May 2022 - May 2025",
         description: (
             <>
                 Contributed to open-source projects, including many of my own IOT devices and X algorithm optimization. See my work{" "}
-                <a href="https://github.com/austinhutchen" target="_blank" rel="noreferrer">
+                <a href="https://github.com/austinmorozane" target="_blank" rel="noopener noreferrer">
                     <b>
                         <i>
                             <u>here</u>
