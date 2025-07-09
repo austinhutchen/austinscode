@@ -90,20 +90,6 @@ export const Landing: React.FC = () => {
             </h2>
           </div>
                  </div>
-
-      
-        <button
-          style={{ marginBottom: '0.2em' }}
-          className="btn btn-success"
-          type="button"
-          id="navbar"
-          onClick={() => {
-            nav('/AboutMe');
-          }}
-        >
-           About Me
-          <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
-        </button>
         <button
           style={{ marginBottom: '0.2em' }}
           className="btn btn-success"
@@ -113,7 +99,7 @@ export const Landing: React.FC = () => {
             nav('/Projects');
           }}
         >
-          My Projects!
+          Projects!
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
            <button
@@ -125,7 +111,7 @@ export const Landing: React.FC = () => {
             nav('/Resume');
           }}
         >
-          My Resume!
+          Resume!
           <HiArrowNarrowRight size={'0.8em'} className="ml-3" />
         </button>
         <br />
