@@ -102,7 +102,7 @@ return (
           <div className="slider-item" key={index}>
               <div className="slider-icon">
                  {data.type === "image" ? (
-              <img src={data.url} loading="lazy" alt="Slide" />
+              <img src={data.url} alt="Slide" />
             ) : (
               <video
                 autoPlay
@@ -110,6 +110,7 @@ return (
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
+                preload={"metadata"}
                 src={data.url}
               />
             )}
