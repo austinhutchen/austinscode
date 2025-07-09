@@ -26,7 +26,7 @@ const keys = [
 
 
   {
-    desc: "I also spend time building systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and make scripts using PHP and C.",
+    desc: "I also spend time building systems to automate daily tasks. I use recycled e-waste for some project materials to save the planet, and implement scripts with C.",
     url: images.systems,
     type: "image"
   },
@@ -102,7 +102,7 @@ return (
           <div className="slider-item" key={index}>
               <div className="slider-icon">
                  {data.type === "image" ? (
-              <img src={data.url} alt="Slide" />
+              <img src={data.url} loading="lazy" alt="Slide" />
             ) : (
               <video
                 autoPlay
@@ -110,7 +110,6 @@ return (
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
-                preload="metadata"
                 src={data.url}
               />
             )}
