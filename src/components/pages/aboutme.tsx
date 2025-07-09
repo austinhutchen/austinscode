@@ -21,7 +21,8 @@ const keys = [
   {
     desc: "I love soldering! It has allowed me to create my own PCBS, and build embedded systems with common and recycled parts.",
     url: images.solder,
-    type: "video"
+    type: "video",
+    link: ""
   },
 
 
@@ -102,7 +103,7 @@ return (
           <div className="slider-item" key={index}>
               <div className="slider-icon">
                  {data.type === "image" ? (
-              <img src={data.url} alt="Slide" />
+              <img src={data.url} loading="lazy" alt="Slide" />
             ) : (
               <video
                 autoPlay
@@ -110,8 +111,8 @@ return (
                 muted
                 playsInline
                 onContextMenu={(e) => e.preventDefault()}
-                preload={"metadata"}
                 src={data.url}
+                preload= {"metadata"}
               />
             )}
 
