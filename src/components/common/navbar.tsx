@@ -59,24 +59,26 @@ export const NavBar: React.FC = () => {
                   <h3>Home</h3>
             </Button>
           </NavItem>
+                 <NavItem className="nav-item  justify-center items-center">
+            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/AboutMe')}>
+              <img src={about} width={icon_width} height={icon_height} alt="about" />
+              <h3>Hobbies</h3>
+            </Button>
+          </NavItem>
         <NavItem className="nav-item  justify-center items-center">
             <Button  style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Resume')}>
               <img src={lotus} width={icon_width} height={icon_height} alt="resume" />
               <h3>Info</h3>
             </Button>
           </NavItem> 
+            
                <NavItem className="nav-item  justify-center items-center">
             <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/Projects')}>
               <img  src={software} width={icon_width} height={icon_height} alt="projects" />
               <h3>Software</h3>
             </Button>
           </NavItem>
-          <NavItem className="nav-item  justify-center items-center">
-            <Button style={{ backgroundColor:'rgba(255, 0, 0, 0.5)',border: '1px solid gold', borderRadius:'1.3svw'  }} onClick={() => nav('/AboutMe')}>
-              <img src={about} width={icon_width} height={icon_height} alt="about" />
-              <h3>Hobbies</h3>
-            </Button>
-          </NavItem>
+         
                          
              
           
@@ -91,7 +93,7 @@ export const NavBar: React.FC = () => {
             <Button style={{ backgroundColor:'rgba(255,0,0,0.4)',border: '1px solid white' , borderRadius:'1.3svw' }}>
               <a href="https://github.com/austinmorozane" target="_blank" rel="noopener noreferrer">
                 <img src={github} width={icon_width} height={icon_height} alt="GitHub" />
-                <h3>GH</h3>
+                <h3>Source</h3>
               </a>
             </Button>
           </NavItem>
