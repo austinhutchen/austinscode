@@ -9,7 +9,7 @@ export const NavBar: React.FC = () => {
   const github = `${url}/fast_imgs/github.webp`;
   const linkedin = `${url}/fast_imgs/LinkedIn.webp`;
   const facebook = `${url}/fast_imgs/Facebook.webp`;
-  const home = `${url}/fast_imgs/tme.jpg`;
+  const home = `${url}/fast_imgs/home.png`;
   const about = `${url}/fast_imgs/horus.gif`;
   const clickme = `${url}/fast_imgs/giphy.webp`;
   const transistor = `${url}/fast_imgs/transistor.webp`;
