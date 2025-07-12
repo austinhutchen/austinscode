@@ -24,8 +24,6 @@ export const Visualizer: React.FC = () => {
     <>
       <NavBar />
 
-      <h2 className="hlight"> Welcome to my Lab!</h2> <br/>
-      <h3 className="hlight"> <b> This page contains live demos of more projects, circuits, and tutorials by me! More audio circuits coming soon! </b> </h3> <br/>
      <a href="https://github.com/austinhutchen/circuits" rel="nopener noreferrer"><h3>Full repository with all circuit schematics in PDF format</h3></a>
       <br/>
                  <b>
@@ -68,19 +66,6 @@ export const Visualizer: React.FC = () => {
 
 
     <br/>
-  <b>
-        <h1 className="hlight"> BOT W/ COLOR + MOTION SENSE (ARDUINO NANO REV2) </h1>
-      </b>
-      <br />
-
-     <div className="projDesc">
-<div className="fadeSide">
-
-
-          <p> Trained an Arduino Nano microcontroller with <a href="https://kno.wled.ge/" rel="noopener noreferrer">an ML model</a> and used the serial terminal to interface with gyroscope and color sensing data.</p>
-</div>     
-</div>
-<br/>
         <div className="analogCircuits" >
         <video autoPlay src={images.ai} playsInline webkit-playsinline loop muted controls  className="projImg" >
         </video>
