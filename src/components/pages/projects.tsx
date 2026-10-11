@@ -75,7 +75,7 @@ const projectsData: Project[] = [
   {
   title : "Reddit Search API ",
   link:"https://github.com/austinmorozane/socialsearch.py",
-  description: "A reddit search engine that displays data collected in real-time based on the search keyword, direct search of an input, or topic.",
+  description: "A reddit search engine that displays data collected in real-time based on the search keyword, direct search of a subreddit, or random topic.",
   media:[
   {type:"image",src:images["pycli"]}
   ]
