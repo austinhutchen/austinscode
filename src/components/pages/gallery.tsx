@@ -16,6 +16,7 @@ export const Visualizer: React.FC = () => {
     waterer_2: getImgPath('plantwaterer.jpg'),
     wall : getImgPath('WLED2.mp4'),
     wall_2 : getImgPath('matrix.mp4'),
+    wall_3: getImgPath('WLED3.mp4'),
     gesture: getImgPath('gesture.mp4'),
     nano2: getImgPath('nano2.mp4'),
     clock: getImgPath('LED_CLOCK.mp4'),
@@ -67,6 +68,8 @@ export const Visualizer: React.FC = () => {
         <video autoPlay src={images.wall} playsInline webkit-playsinline loop muted controls  className="projImg" >
         </video>
         <video autoPlay src={images.wall_2} playsInline webkit-playsinline loop muted controls className="projImg">
+        </video>
+        <video autoPlay src={images.wall_3} playsInline webkit-playsinline loop muted controls className="projImg">
         </video>
          </div>
       <br/>

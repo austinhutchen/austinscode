@@ -30,7 +30,8 @@ calculator: getImgPath('calculator.webp'),
   CLI_EDIT: getImgPath("CLI_EDIT.webp"),
   wavPlay: getImgPath('sinMic.mp4'),
   eCommerce_1: getImgPath('statue.webp'),
-  eCommerce_3: getImgPath('cart.webp')
+  eCommerce_3: getImgPath('cart.webp'),
+  pycli: getImgPath('pycli.webp')
 };
 
 const projectsData: Project[] = [
@@ -70,6 +71,14 @@ const projectsData: Project[] = [
     media:[
       {type:"image", src:images["CLI_EDIT"]}
     ]
+  },
+  {
+  title : "Reddit Search API ",
+  link:"https://github.com/austinmorozane/socialsearch.py",
+  description: "A reddit search engine that displays data collected in real-time based on the search keyword, direct search of an input, or topic.",
+  media:[
+  {type:"image",src:images["pycli"]}
+  ]
   },
    {
     title: "Ecommerce Website (Typescript)",
