@@ -24,18 +24,18 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
 
-background: conic-gradient(from 90deg, rgba(7, 68, 74, 1.000) 0.000deg, rgba(28, 88, 66, 1.000) 90.000deg, rgba(71, 112, 64, 1.000) 180.000deg, rgba(128, 138, 70, 1.000) 270.000deg, rgba(188, 165, 82, 1.000) 360.000deg); 
+  background: conic-gradient(from 0.30turn at 55% 40%,#f69d3c, 10deg, #3f87a6, 350deg, #ebf8e1);
 }
 
 
 
 .introGlow h2{
-    color: #FAF9F6; /* Slightly off-white for a softer look */
-  font-size: 1.8rem; /* Slightly larger font for readability */
+  color: #FAF9F9; /* Slightly off-white for a softer look */
+  font-size: 2.0rem; /* Slightly larger font for readability */
   text-align: center; /* Center-align text */
   font-family: 'Open Sans'; /* Clean, professional font */
   font-weight: 1000;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  text-shadow: 3px 3px 9px rgba(0, 0, 0, 0.4); /* Soft shadow */
 }
 @media (max-width: 768px) {
   .introText {
