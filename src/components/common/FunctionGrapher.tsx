@@ -17,7 +17,7 @@ export const FunctionGrapher: React.FC = () => {
       const expr = compile(exprText);
       const xs = range(-10, 10, 0.1).toArray() as number[];
       const ys = xs.map((x) => expr.evaluate({ x }));
-      const zs = range(-10,10,0.1).toArray() as number[];
+      const zs = [];
       setXValues(xs);
       setYValues(ys);
       setZValues(zs);
@@ -43,6 +43,9 @@ export const FunctionGrapher: React.FC = () => {
       const xs = range(-10,0,10).toArray() as number[];
       const ys = xs.map((x)=>expr.evaluate({x}));
       const zs = range(-10,10,0.1).toArray() as number[];
+      setXValues(xs);
+      setYValues(ys);
+      setZValues(zs);
     }
     catch (err){
       alert("Error in expression: "+ err);
@@ -93,7 +96,7 @@ export const FunctionGrapher: React.FC = () => {
             </label>
           )
           }
-          {mode=="Draw3D"&&(
+          {mode==="Draw3D"&&(
           <label>
           f(x,y)={" "}
           <input
@@ -127,7 +130,7 @@ export const FunctionGrapher: React.FC = () => {
                 z: zValues,
                 type:"surface",
                 mode:"3D",
-                marker: {color: "red"}
+                marker: {color: "red"},
                 }, 
                 ]
           }
@@ -135,7 +138,7 @@ export const FunctionGrapher: React.FC = () => {
             title:
               mode === "function"
                 ? `Plot of f(x) = ${expression}`
-                : " ",
+                : `Plot of f(x,y) = ${expression}`,
             xaxis: { title: mode === "function" ? "x" : undefined },
             yaxis: { title: mode === "function" ? "f(x)" : undefined },
           }}
